@@ -22,11 +22,14 @@ DOCS_DIR = ROOT_DIR / "docs"
 # Legacy path — used only for one-time migration
 _LEGACY_ARTICLES_FILE = DATA_DIR / "articles.json"
 
-SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
-SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
-EMAIL_SENDER = os.getenv("EMAIL_SENDER", "")
+SMTP_HOST = os.getenv("SMTP_HOST", "").strip() or "smtp.gmail.com"
+try:
+    SMTP_PORT = int(os.getenv("SMTP_PORT", "").strip() or "587")
+except ValueError:
+    SMTP_PORT = 587
+EMAIL_SENDER = os.getenv("EMAIL_SENDER", "").strip()
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "")
-EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER", "")
+EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER", "").strip()
 
 
 def load_feeds_config() -> dict[str, Any]:

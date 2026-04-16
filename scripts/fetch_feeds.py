@@ -3,10 +3,13 @@
 from __future__ import annotations
 
 import logging
+import socket
 import sys
 from typing import Any
 
 import feedparser
+
+_FEED_TIMEOUT_SECONDS = 30
 
 from scripts.config import load_feeds_config, get_tag_keywords, get_settings
 from scripts.utils import (
@@ -97,11 +100,15 @@ def fetch_all_feeds() -> list[dict[str, Any]]:
         url = feed_cfg["url"]
         logger.info("Fetching feed: %s (%s)", name, url)
 
+        prev_timeout = socket.getdefaulttimeout()
         try:
+            socket.setdefaulttimeout(_FEED_TIMEOUT_SECONDS)
             parsed = feedparser.parse(url)
         except Exception as exc:
             logger.error("Failed to fetch %s: %s", name, exc)
             continue
+        finally:
+            socket.setdefaulttimeout(prev_timeout)
 
         if parsed.bozo and not parsed.entries:
             logger.warning(

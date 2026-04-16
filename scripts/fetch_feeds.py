@@ -1,4 +1,4 @@
-"""Fetch articles from configured RSS feeds."""
+"""Fetch articles from configured RSS feeds with full content extraction."""
 
 from __future__ import annotations
 
@@ -23,23 +23,43 @@ logger = logging.getLogger(__name__)
 def _apply_tags(text: str, tag_keywords: dict[str, list[str]]) -> list[str]:
     """Return matching tag names when any keyword appears in text."""
     lower = text.lower()
-    return sorted({tag for tag, keywords in tag_keywords.items() if any(kw in lower for kw in keywords)})
+    return sorted({
+        tag for tag, keywords in tag_keywords.items()
+        if any(kw in lower for kw in keywords)
+    })
 
 
-def _parse_entry(entry: Any, source_name: str, tag_keywords: dict[str, list[str]]) -> dict[str, Any] | None:
+def _extract_full_content(entry: Any) -> str:
+    """Pull the richest content available from a feedparser entry."""
+    if hasattr(entry, "content") and entry.content:
+        for c in entry.content:
+            if c.get("type", "") in ("text/html", "text/plain"):
+                return strip_html(c.get("value", ""))
+            return strip_html(c.get("value", ""))
+
+    raw = entry.get("summary") or entry.get("description") or ""
+    return strip_html(raw)
+
+
+def _parse_entry(
+    entry: Any, source_name: str, tag_keywords: dict[str, list[str]]
+) -> dict[str, Any] | None:
     """Convert a single feedparser entry to our normalised schema."""
     title = (entry.get("title") or "").strip()
     link = (entry.get("link") or "").strip()
     if not title or not link:
         return None
 
-    raw_summary = entry.get("summary") or entry.get("description") or ""
-    summary = truncate(strip_html(raw_summary), 400)
+    full_content = _extract_full_content(entry)
+    summary = truncate(
+        full_content.split("\n")[0] if full_content else title,
+        400,
+    )
 
     published_raw = entry.get("published") or entry.get("updated") or ""
     published_dt = parse_date(published_raw)
 
-    searchable = f"{title} {summary}"
+    searchable = f"{title} {full_content}"
     tags = _apply_tags(searchable, tag_keywords)
 
     return {
@@ -49,6 +69,7 @@ def _parse_entry(entry: Any, source_name: str, tag_keywords: dict[str, list[str]
         "link": link,
         "published": published_dt.isoformat(),
         "summary": summary,
+        "full_content": full_content,
         "tags": tags,
         "day": published_dt.strftime("%Y-%m-%d"),
     }
@@ -58,7 +79,6 @@ def fetch_all_feeds() -> list[dict[str, Any]]:
     """Fetch every configured feed and return a flat list of articles."""
     config = load_feeds_config()
     tag_keywords = get_tag_keywords(config)
-    settings = get_settings(config)
     feeds = config["feeds"]
 
     articles: list[dict[str, Any]] = []
@@ -76,7 +96,9 @@ def fetch_all_feeds() -> list[dict[str, Any]]:
             continue
 
         if parsed.bozo and not parsed.entries:
-            logger.warning("Feed %s returned no entries (bozo: %s)", name, parsed.bozo_exception)
+            logger.warning(
+                "Feed %s returned no entries (bozo: %s)", name, parsed.bozo_exception
+            )
             continue
 
         count = 0

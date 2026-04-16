@@ -56,7 +56,7 @@ def get_settings(config: dict[str, Any] | None = None) -> dict[str, Any]:
         "max_articles_per_page": 50,
         "email_max_articles": 15,
         "site_title": "Threat Brief",
-        "site_description": "Daily cybersecurity news aggregator",
+        "site_description": "Daily cybersecurity intelligence briefing",
         "site_base_url": "",
     }
     if config is None:

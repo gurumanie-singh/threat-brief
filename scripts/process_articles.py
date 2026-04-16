@@ -1,4 +1,4 @@
-"""Merge newly fetched articles with existing data, deduplicate, prune old entries, and archive."""
+"""Merge fetched articles with existing data, enrich, deduplicate, prune, and archive."""
 
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ from scripts.config import (
     load_feeds_config,
     get_settings,
 )
+from scripts.enrich import enrich_article
 from scripts.fetch_feeds import fetch_all_feeds
 from scripts.utils import load_json, save_json, now_utc, today_str
 
@@ -23,7 +24,8 @@ def merge_articles(
     existing: list[dict[str, Any]],
     incoming: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    """Merge incoming into existing, deduplicating by article id."""
+    """Merge incoming into existing, deduplicating by article id.
+    Incoming articles overwrite existing ones to pick up enrichment updates."""
     index: dict[str, dict[str, Any]] = {a["id"]: a for a in existing}
     for article in incoming:
         index[article["id"]] = article
@@ -54,7 +56,7 @@ def archive_today(articles: list[dict[str, Any]]) -> None:
 
 
 def process() -> list[dict[str, Any]]:
-    """Full pipeline: fetch → merge → prune → save → archive."""
+    """Full pipeline: fetch → enrich → merge → prune → save → archive."""
     config = load_feeds_config()
     settings = get_settings(config)
 
@@ -63,7 +65,17 @@ def process() -> list[dict[str, Any]]:
     logger.info("Existing articles: %d", len(existing))
 
     incoming = fetch_all_feeds()
-    merged = merge_articles(existing, incoming)
+
+    logger.info("Enriching %d incoming articles…", len(incoming))
+    enriched: list[dict[str, Any]] = []
+    for article in incoming:
+        try:
+            enriched.append(enrich_article(article))
+        except Exception as exc:
+            logger.warning("Enrichment failed for '%s': %s", article.get("title", "?"), exc)
+            enriched.append(article)
+
+    merged = merge_articles(existing, enriched)
     logger.info("After merge: %d articles", len(merged))
 
     pruned = prune_old(merged, settings["max_article_age_days"])
@@ -79,6 +91,8 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     articles = process()
     print(f"Processed {len(articles)} articles total")
+    enriched = sum(1 for a in articles if a.get("sections"))
+    print(f"  {enriched} with enriched sections")
 
 
 if __name__ == "__main__":

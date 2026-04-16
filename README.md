@@ -1,41 +1,52 @@
-# ⚡ Threat Brief
+# Threat Brief
 
-**Automated daily cybersecurity news aggregator and email notifier.**
+**Automated daily cybersecurity intelligence briefing.**
 
-Threat Brief fetches headlines from top cybersecurity RSS feeds, deduplicates and tags them, publishes a static site to GitHub Pages (updated every 2 hours), and sends a single daily email digest — all powered by GitHub Actions with zero backend servers and zero paid services.
+Threat Brief aggregates headlines from top cybersecurity RSS feeds, enriches each article with structured analysis sections, publishes a premium editorial-style static site to GitHub Pages (updated every 2 hours), and sends a single daily email digest — all powered by GitHub Actions with zero servers and zero cost.
 
 ---
 
 ## How It Works
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    GitHub Actions (cron)                     │
-│                                                             │
-│  ┌──────────────┐   ┌──────────────┐   ┌────────────────┐  │
-│  │ fetch_feeds   │──▶│ process_     │──▶│ generate_site  │  │
-│  │ (RSS parse)   │   │ articles     │   │ (Jinja2→HTML)  │  │
-│  └──────────────┘   │ (merge/dedup)│   └───────┬────────┘  │
-│                      └──────┬───────┘           │           │
-│                             │                   │           │
-│                      ┌──────▼───────┐   ┌───────▼────────┐  │
-│                      │ data/        │   │ docs/          │  │
-│                      │ articles.json│   │ (GitHub Pages) │  │
-│                      └──────────────┘   └────────────────┘  │
-│                                                             │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │ send_email (daily cron, once per day, SMTP/Gmail)    │   │
-│  └──────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────┘
+RSS Feeds
+    │
+    ▼
+┌───────────────┐     ┌─────────────┐     ┌─────────────────┐
+│  fetch_feeds   │────▶│   enrich    │────▶│ process_articles │
+│  (feedparser)  │     │ (sections,  │     │  (merge, dedup,  │
+│                │     │  severity,  │     │   prune, save)   │
+│                │     │  CVEs)      │     │                  │
+└───────────────┘     └─────────────┘     └────────┬────────┘
+                                                    │
+                                                    ▼
+                                            data/articles.json
+                                                    │
+                          ┌─────────────────────────┼────────────────┐
+                          ▼                         ▼                ▼
+                  ┌───────────────┐        ┌──────────────┐   ┌──────────┐
+                  │ generate_site │        │  send_email   │   │  archive │
+                  │ (Jinja2→HTML) │        │  (SMTP)       │   │  (JSON)  │
+                  └───────┬───────┘        └──────────────┘   └──────────┘
+                          │
+                          ▼
+                    docs/ (GitHub Pages)
+                    ├── index.html
+                    ├── articles/{id}.html
+                    ├── daily/{date}.html
+                    └── archive/index.html
 ```
 
-### Data Flow
+### Content Enrichment Pipeline
 
-1. **Fetch** — RSS feeds listed in `feeds.yaml` are parsed with `feedparser`.
-2. **Process** — New articles are merged with existing ones in `data/articles.json`. Duplicates are detected via a hash of normalized title + canonical URL. Articles older than 7 days are pruned.
-3. **Tag** — Each article is auto-tagged by keyword matching (zero-day, ransomware, CVE, etc.) against its title and summary.
-4. **Generate** — Jinja2 templates produce a static site under `docs/` (index, daily pages, archive).
-5. **Email** — Once per day, the top headlines are formatted into an HTML email and sent via SMTP. A marker file in `data/sent/` prevents duplicate sends.
+Each article goes through deterministic enrichment (no paid APIs):
+
+1. **Full content extraction** — captures the richest content available from each RSS entry
+2. **CVE detection** — regex extraction of CVE identifiers from title and content
+3. **CVSS scoring** — detects CVSS scores when present in text
+4. **Severity inference** — classifies as critical / high / medium / low based on CVSS scores, keywords, and context
+5. **Structured sections** — generates Overview, Technical Details, Impact, Mitigation, and Additional Context by classifying sentences and supplementing with tag-based analysis
+6. **Email summary** — produces a concise 2-4 sentence summary stating what happened, what's affected, and the severity
 
 ---
 
@@ -44,35 +55,39 @@ Threat Brief fetches headlines from top cybersecurity RSS feeds, deduplicates an
 ```
 threat-brief/
 ├── .github/workflows/
-│   ├── update-site.yml        # Runs every 2 hours: fetch → process → generate → deploy
-│   └── daily-email.yml        # Runs once daily: fetch → process → email
+│   ├── update-site.yml           # Every 2 hours: fetch → enrich → generate → deploy
+│   └── daily-email.yml           # Once daily: fetch → enrich → email
 ├── scripts/
 │   ├── __init__.py
-│   ├── config.py              # Central config, loads feeds.yaml + env vars
-│   ├── utils.py               # Hashing, date parsing, JSON I/O, text helpers
-│   ├── fetch_feeds.py         # RSS fetcher and normalizer
-│   ├── process_articles.py    # Merge, dedup, prune, archive
-│   ├── generate_site.py       # Static site generator (Jinja2 → docs/)
-│   └── send_email.py          # Daily email sender (SMTP)
+│   ├── config.py                 # Central config from feeds.yaml + env vars
+│   ├── utils.py                  # Hashing, dates, JSON I/O, text cleaning
+│   ├── enrich.py                 # Content enrichment: sections, severity, CVEs
+│   ├── fetch_feeds.py            # RSS fetcher with full content extraction
+│   ├── process_articles.py       # Merge, enrich, dedup, prune, archive
+│   ├── generate_site.py          # Static site generator (Jinja2 → docs/)
+│   └── send_email.py             # Daily email sender (SMTP)
 ├── templates/
-│   ├── index.html             # Homepage template
-│   ├── day.html               # Daily briefing page template
-│   ├── archive_index.html     # Archive listing template
-│   ├── article_card.html      # Reusable article card partial
-│   └── email.html             # HTML email template
+│   ├── base.html                 # Shared layout (nav, footer, fonts, assets)
+│   ├── index.html                # Homepage with day-grouped article cards
+│   ├── day.html                  # Daily briefing page
+│   ├── article.html              # Individual article page with sections
+│   ├── archive_index.html        # Archive listing with day cards
+│   ├── email.html                # HTML email template
+│   ├── style.css                 # Design system stylesheet
+│   └── app.js                    # Theme toggle, filters, scroll reveal
 ├── data/
-│   ├── articles.json          # Current article database
-│   ├── archive/               # Daily JSON snapshots (YYYY-MM-DD.json)
-│   └── sent/                  # Email sent markers (YYYY-MM-DD.sent)
-├── docs/                      # GitHub Pages root
-│   ├── index.html
-│   ├── assets/
-│   │   ├── style.css
-│   │   └── app.js
-│   ├── daily/                 # Per-day HTML pages
-│   └── archive/
-│       └── index.html
-├── feeds.yaml                 # Feed URLs, tag keywords, and settings
+│   ├── articles.json             # Current article database (enriched)
+│   ├── archive/                  # Daily JSON snapshots
+│   └── sent/                     # Email sent markers
+├── docs/                         # GitHub Pages root
+│   ├── index.html                # Homepage
+│   ├── articles/                 # Individual article pages
+│   ├── daily/                    # Per-day briefing pages
+│   ├── archive/index.html        # Archive
+│   └── assets/
+│       ├── style.css
+│       └── app.js
+├── feeds.yaml                    # Feeds, tag keywords, settings
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -99,7 +114,7 @@ Go to **Settings → Secrets and variables → Actions → New repository secret
 | `EMAIL_PASSWORD` | Gmail **App Password** (not your login password — see below) |
 | `EMAIL_RECEIVER` | Recipient email address |
 
-**Optional secrets** (defaults to Gmail):
+Optional (defaults to Gmail):
 
 | Secret | Default |
 |---|---|
@@ -108,60 +123,49 @@ Go to **Settings → Secrets and variables → Actions → New repository secret
 
 ### 3. Enable GitHub Pages
 
-1. Go to **Settings → Pages**.
-2. Under **Source**, select **Deploy from a branch**.
-3. Set branch to `main` and folder to `/docs`.
-4. Click **Save**.
+1. **Settings → Pages**
+2. Source: **Deploy from a branch**
+3. Branch: `main`, Folder: `/docs`
+4. **Save**
 
-Your site will be live at `https://YOUR_USERNAME.github.io/threat-brief/`.
+Site will be live at `https://YOUR_USERNAME.github.io/threat-brief/`
 
-### 4. Enable GitHub Actions
+### 4. Update `site_base_url`
 
-Actions are enabled by default on new repos. If they're disabled:
-
-1. Go to **Settings → Actions → General**.
-2. Select **Allow all actions and reusable workflows**.
-3. Click **Save**.
-
-### 5. Trigger the First Run
-
-1. Go to the **Actions** tab.
-2. Click **Update Site** in the left sidebar.
-3. Click **Run workflow → Run workflow**.
-
-This fetches feeds, processes articles, and generates the site. Within a few minutes your GitHub Pages site will show live cybersecurity news.
-
-### 6. Update `site_base_url` (for email links)
-
-Edit `feeds.yaml` and set:
+Edit `feeds.yaml`:
 
 ```yaml
 settings:
   site_base_url: "https://YOUR_USERNAME.github.io/threat-brief"
 ```
 
-This makes "Read more" links in the daily email point to your GitHub Pages site.
+This makes email "Read more" links point to your hosted article pages.
+
+### 5. Trigger the First Run
+
+1. Go to **Actions** tab
+2. Click **Update Site** → **Run workflow**
+
+Within minutes, your site will show live cybersecurity news with full article pages.
 
 ---
 
 ## Gmail App Password Setup
 
-**Do not use your normal Gmail password.** Google blocks sign-ins from "less secure apps" by default.
+**Never use your normal Gmail password.**
 
-1. Go to [myaccount.google.com](https://myaccount.google.com/).
-2. Navigate to **Security → 2-Step Verification** (enable it if not already on).
-3. Go to **Security → App passwords** (or search "App passwords" in settings).
-4. Select **Mail** and **Other (Custom name)**, enter "Threat Brief".
-5. Click **Generate**. Copy the 16-character password.
-6. Use this as your `EMAIL_PASSWORD` GitHub Secret.
-
-> **Security note:** App passwords grant full email access. Never commit them to the repository. Store them only in GitHub Secrets.
+1. Go to [myaccount.google.com](https://myaccount.google.com/)
+2. **Security → 2-Step Verification** (enable if needed)
+3. **Security → App passwords**
+4. Select **Mail**, enter "Threat Brief"
+5. Copy the 16-character password
+6. Use this as your `EMAIL_PASSWORD` GitHub Secret
 
 ---
 
 ## Customizing Feeds
 
-Edit `feeds.yaml` to add, remove, or modify RSS feeds:
+Edit `feeds.yaml` to add/remove RSS feeds:
 
 ```yaml
 feeds:
@@ -169,11 +173,9 @@ feeds:
     url: https://example.com/rss.xml
 ```
 
-Changes take effect on the next scheduled (or manual) workflow run.
-
 ### Tag Keywords
 
-Tags are automatically applied when any keyword appears in an article's title or summary. Edit the `tag_keywords` section in `feeds.yaml`:
+Articles are auto-tagged when keywords appear in their title or content:
 
 ```yaml
 tag_keywords:
@@ -186,66 +188,71 @@ tag_keywords:
 
 ## How Deduplication Works
 
-Each article gets a stable ID computed as:
+Each article gets a stable ID:
 
 ```
 SHA-256( normalize(title) + "|" + canonicalize(url) )[:16]
 ```
 
-- **Title normalization**: lowercased, accents stripped, whitespace collapsed.
-- **URL canonicalization**: scheme + host + path (no query params, fragments, or trailing slashes), lowercased.
-
-This ensures the same article from different feeds (or with minor URL variations) is stored only once.
+Title normalization strips accents, lowercases, and collapses whitespace. URL canonicalization removes query params, fragments, and trailing slashes.
 
 ---
 
 ## How Duplicate Emails Are Prevented
 
-Before sending, `send_email.py` checks for a marker file at `data/sent/YYYY-MM-DD.sent`. If it exists, the email is skipped. After a successful send, the marker is created and committed back to the repository.
+`send_email.py` checks for `data/sent/YYYY-MM-DD.sent` before sending. After a successful send, the marker is created and committed to the repo.
+
+---
+
+## Article Page Structure
+
+Each article gets a dedicated page with:
+
+1. **Header** — title, source, date, severity badge, tags, CVE references
+2. **Overview** — what happened and why it matters
+3. **Technical Details** — vulnerability type, attack method, CVE details
+4. **Impact** — who's affected, severity assessment, CVSS score
+5. **Mitigation** — patches, workarounds, defensive actions
+6. **Additional Context** — threat landscape trends, related incidents
+7. **Source Link** — external link to the original article
+
+Content is generated deterministically from RSS data using keyword classification and tag-based contextual analysis.
 
 ---
 
 ## Local Development
 
-### Setup
-
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
 
-### Run Each Script
-
-```bash
-# Fetch and process feeds
+# Full pipeline
 python -m scripts.process_articles
 
-# Generate the static site
+# Generate site
 python -m scripts.generate_site
 
-# Preview the site (Python built-in server)
+# Preview
 cd docs && python -m http.server 8000
 # Open http://localhost:8000
+```
 
-# Test email (requires env vars)
+### Test individual modules
+
+```bash
+python -m scripts.fetch_feeds          # Fetch only
+python -m scripts.process_articles     # Fetch + enrich + save
+python -m scripts.generate_site        # Generate from existing data
+```
+
+### Test email locally
+
+```bash
 export EMAIL_SENDER="you@gmail.com"
 export EMAIL_PASSWORD="your-app-password"
 export EMAIL_RECEIVER="recipient@example.com"
 python -m scripts.send_email
-```
-
-### Test Individual Modules
-
-```bash
-# Fetch only (no merge/save)
-python -m scripts.fetch_feeds
-
-# Process (fetch + merge + prune + save)
-python -m scripts.process_articles
-
-# Generate site from existing data
-python -m scripts.generate_site
 ```
 
 ---
@@ -254,9 +261,8 @@ python -m scripts.generate_site
 
 Both workflows support `workflow_dispatch`:
 
-1. Go to **Actions** tab on GitHub.
-2. Select the workflow (**Update Site** or **Daily Email**).
-3. Click **Run workflow**.
+1. **Actions** tab → select workflow
+2. Click **Run workflow**
 
 ---
 
@@ -264,34 +270,20 @@ Both workflows support `workflow_dispatch`:
 
 | Problem | Solution |
 |---|---|
-| **Actions not running** | Check Settings → Actions → General. Ensure workflows are allowed. |
-| **Email not sending** | Verify GitHub Secrets are set. Check Actions logs for SMTP errors. Confirm you're using a Gmail App Password, not your regular password. |
-| **GitHub Pages 404** | Ensure Pages source is set to `main` branch, `/docs` folder. Wait a few minutes after deployment. |
-| **No articles showing** | Manually trigger the Update Site workflow. Check Actions logs for feed fetch errors. Some feeds may be temporarily down. |
-| **Duplicate articles** | This is handled automatically by the dedup hash. If you see duplicates, the articles likely have different titles or URLs across feeds. |
-| **Old articles not pruning** | Adjust `max_article_age_days` in `feeds.yaml` settings. |
-| **YAML syntax error** | Validate `feeds.yaml` at [yamllint.com](https://www.yamllint.com/) or run `python -c "import yaml; yaml.safe_load(open('feeds.yaml'))"`. |
-
----
-
-## GitHub Pages URL Pattern
-
-After enabling Pages, your site structure will be:
-
-```
-https://YOUR_USERNAME.github.io/threat-brief/                  → Latest headlines
-https://YOUR_USERNAME.github.io/threat-brief/daily/2026-04-15.html → Daily page
-https://YOUR_USERNAME.github.io/threat-brief/archive/          → Archive index
-```
+| Actions not running | Settings → Actions → General → Allow all actions |
+| Email not sending | Verify secrets. Check logs for SMTP errors. Use Gmail App Password. |
+| Pages 404 | Set Pages source to `main` / `/docs`. Wait a few minutes. |
+| No articles | Trigger Update Site manually. Check logs for feed errors. |
+| Old articles not pruning | Adjust `max_article_age_days` in feeds.yaml |
 
 ---
 
 ## Security Notes
 
-- **No credentials in code.** All secrets are stored in GitHub Secrets and injected as environment variables at runtime.
-- **App passwords only.** Never use your primary Google account password.
-- **Public repo visibility.** Article data and the generated site are public. No private or sensitive information is stored.
-- **Workflow permissions.** Both workflows only request `contents: write` to commit data/site updates back to the repo.
+- No credentials in code — all secrets stored in GitHub Secrets
+- App passwords only — never use primary account passwords
+- Article data is public — no sensitive information stored
+- Workflows request only `contents: write` permission
 
 ---
 

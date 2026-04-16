@@ -6,20 +6,29 @@
   <title>{{ site_title }} — {{ day }}</title>
   <!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->
 </head>
-<body style="margin:0;padding:0;background-color:#0f1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0f1117;">
+<body style="margin:0;padding:0;background-color:#0d0d0c;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0d0d0c;">
     <tr>
-      <td align="center" style="padding:24px 16px;">
+      <td align="center" style="padding:24px 12px;">
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
 
           <!-- Header -->
           <tr>
-            <td style="padding:20px 24px;border-bottom:1px solid #2a2d3a;">
-              <h1 style="margin:0;font-size:22px;color:#e2e4ea;font-weight:700;">
-                ⚡ {{ site_title }}
+            <td style="padding:28px 28px 20px;border-bottom:1px solid rgba(255,255,255,0.08);">
+              <h1 style="margin:0;font-size:24px;color:#f0f0ec;font-weight:700;letter-spacing:-0.02em;">
+                {{ site_title }}
               </h1>
-              <p style="margin:6px 0 0;font-size:13px;color:#8b8fa3;">
-                Daily briefing — {{ day }}
+              <p style="margin:8px 0 0;font-size:13px;color:#5a5a56;letter-spacing:0.08em;text-transform:uppercase;">
+                Daily Briefing — {{ day }}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:20px 28px 8px;">
+              <p style="margin:0;font-size:14px;color:#9a9a94;line-height:1.6;">
+                {{ articles|length }} article{{ "s" if articles|length != 1 else "" }} from today's cybersecurity landscape. Each summary links to the full analysis on the Threat Brief website.
               </p>
             </td>
           </tr>
@@ -27,39 +36,65 @@
           <!-- Articles -->
           {% for article in articles %}
           <tr>
-            <td style="padding:16px 24px;border-bottom:1px solid #1e2130;">
-              <h3 style="margin:0 0 4px;font-size:15px;font-weight:600;">
-                <a href="{{ article.link }}" style="color:#e2e4ea;text-decoration:none;" target="_blank">{{ article.title }}</a>
-              </h3>
-              <p style="margin:0 0 6px;font-size:12px;color:#8b8fa3;">
-                {{ article.source }} · {{ article.day }}
-              </p>
-              <p style="margin:0 0 8px;font-size:14px;color:#a5a9c4;line-height:1.5;">
-                {{ article.summary[:200] }}
-              </p>
-              {% if article.tags %}
-              <p style="margin:0 0 4px;font-size:11px;color:#6c72cb;">
-                {% for tag in article.tags %}{{ tag }}{% if not loop.last %} · {% endif %}{% endfor %}
-              </p>
-              {% endif %}
-              {% if base_url %}
-              <a href="{{ base_url }}/daily/{{ day }}.html#{{ article.id }}" style="font-size:13px;color:#8f94e8;" target="_blank">Read more →</a>
-              {% else %}
-              <a href="{{ article.link }}" style="font-size:13px;color:#8f94e8;" target="_blank">Read more →</a>
-              {% endif %}
+            <td style="padding:16px 28px;{% if not loop.last %}border-bottom:1px solid rgba(255,255,255,0.05);{% endif %}">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    {% if article.severity %}
+                    <span style="font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:100px;
+                      {% if article.severity == 'critical' %}background:rgba(239,68,68,0.12);color:#ef4444;
+                      {% elif article.severity == 'high' %}background:rgba(249,115,22,0.12);color:#f97316;
+                      {% elif article.severity == 'medium' %}background:rgba(234,179,8,0.12);color:#eab308;
+                      {% else %}background:rgba(34,197,94,0.12);color:#22c55e;{% endif %}
+                    ">{{ article.severity }}</span>
+                    <span style="font-size:12px;color:#5a5a56;">&nbsp;·&nbsp;</span>
+                    {% endif %}
+                    <span style="font-size:12px;font-weight:500;color:#9a9a94;">{{ article.source }}</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:6px;">
+                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:15px;font-weight:600;color:#f0f0ec;text-decoration:none;line-height:1.4;" target="_blank">
+                      {{ article.title }}
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:6px;">
+                    <p style="margin:0;font-size:13px;color:#9a9a94;line-height:1.55;">
+                      {{ article.email_summary or article.summary }}
+                    </p>
+                  </td>
+                </tr>
+                {% if article.tags %}
+                <tr>
+                  <td style="padding-top:8px;">
+                    <span style="font-size:11px;color:#6b8fff;">
+                      {% for tag in article.tags %}{{ tag }}{% if not loop.last %} · {% endif %}{% endfor %}
+                    </span>
+                  </td>
+                </tr>
+                {% endif %}
+                <tr>
+                  <td style="padding-top:8px;">
+                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:12px;font-weight:500;color:#6b8fff;text-decoration:none;" target="_blank">Read full analysis →</a>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
           {% endfor %}
 
           <!-- Footer -->
           <tr>
-            <td style="padding:20px 24px;text-align:center;">
+            <td style="padding:28px;text-align:center;border-top:1px solid rgba(255,255,255,0.08);">
               {% if base_url %}
-              <a href="{{ base_url }}/daily/{{ day }}.html" style="display:inline-block;padding:10px 24px;background-color:#6c72cb;color:#fff;border-radius:5px;font-size:14px;font-weight:600;text-decoration:none;" target="_blank">
+              <a href="{{ base_url }}/daily/{{ day }}.html" style="display:inline-block;padding:12px 28px;background-color:#6b8fff;color:#fff;border-radius:100px;font-size:14px;font-weight:500;text-decoration:none;" target="_blank">
                 View full briefing
               </a>
+              <br><br>
               {% endif %}
-              <p style="margin:16px 0 0;font-size:12px;color:#8b8fa3;">
+              <p style="margin:0;font-size:12px;color:#5a5a56;">
                 {{ site_title }} — auto-generated from public RSS feeds
               </p>
             </td>

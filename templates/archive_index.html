@@ -1,51 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site_title }} — Archive</title>
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1><span>⚡</span> {{ site_title }}</h1>
-      <nav>
-        <a href="../index.html">Latest</a>
-        <a href="index.html">Archive</a>
-      </nav>
+{% extends "base.html" %}
+
+{% block title %}{{ site_title }} — Archive{% endblock %}
+
+{% block content %}
+<div class="section-inner">
+  <div class="page-hero">
+    <div class="hero-label">
+      <span class="hero-label-dot"></span>
+      archive
     </div>
-  </header>
+    <h1 class="hero-title">past <em>briefings.</em></h1>
+    <p class="hero-desc">
+      Browse previous days of cybersecurity intelligence. Each day's briefing is preserved as a permanent record.
+    </p>
+  </div>
 
-  <main class="container">
-    <h2 class="day-heading">Archive</h2>
-
-    {% if days %}
-    <table class="archive-table">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Articles</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for entry in days %}
-        <tr>
-          <td><a href="../daily/{{ entry.day }}.html">{{ entry.day }}</a></td>
-          <td>{{ entry.count }} article{{ "s" if entry.count != 1 else "" }}</td>
-        </tr>
+  {% if days %}
+  <div class="archive-grid">
+    {% for entry in days %}
+    <a href="{{ prefix }}daily/{{ entry.day }}.html" class="archive-day-card">
+      <div class="archive-day-date">{{ entry.day }}</div>
+      <div class="archive-day-count">{{ entry.count }} article{{ "s" if entry.count != 1 else "" }}</div>
+      {% if entry.top_tags %}
+      <div class="archive-day-tags">
+        {% for tag in entry.top_tags[:4] %}
+        <span class="tag">{{ tag }}</span>
         {% endfor %}
-      </tbody>
-    </table>
-    {% else %}
-    <p style="color: var(--text-muted); margin-top: 2rem;">No archived days yet.</p>
-    {% endif %}
-  </main>
-
-  <footer>
-    <div class="container">
-      {{ site_title }} · auto-generated from public RSS feeds
-    </div>
-  </footer>
-</body>
-</html>
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <div class="empty-state-icon">◇</div>
+    <p>No archived days yet. This page will be populated after the first feed fetch.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

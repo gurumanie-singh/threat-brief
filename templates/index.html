@@ -1,86 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site_title }}</title>
-  <meta name="description" content="{{ site_description }}">
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1><span>⚡</span> {{ site_title }}</h1>
-      <nav>
-        <a href="index.html">Latest</a>
-        <a href="archive/index.html">Archive</a>
-      </nav>
+{% extends "base.html" %}
+
+{% block title %}{{ site_title }} — Daily Cybersecurity Intelligence{% endblock %}
+
+{% block content %}
+<div class="section-inner">
+  <div class="page-hero">
+    <div class="hero-label">
+      <span class="hero-label-dot"></span>
+      updated {{ generated_at }}
     </div>
-  </header>
+    <h1 class="hero-title">cybersecurity<br>intelligence, <em>daily.</em></h1>
+    <p class="hero-desc">
+      Curated threat intelligence from trusted sources — auto-aggregated, tagged, and structured for fast situational awareness.
+    </p>
+  </div>
 
-  <main class="container">
-    <div class="layout">
-      <div class="content">
-        {% set all_tags = [] %}
-        {% for a in articles %}
-          {% for t in a.tags %}
-            {% if t not in all_tags %}
-              {% if all_tags.append(t) %}{% endif %}
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
+  {% set all_tags = [] %}
+  {% for a in articles %}
+    {% for t in a.tags %}
+      {% if t not in all_tags %}
+        {% if all_tags.append(t) %}{% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
 
-        {% if all_tags %}
-        <div class="filter-bar">
-          {% for tag in all_tags|sort %}
-          <button class="filter-btn" data-tag="{{ tag }}">{{ tag }}</button>
-          {% endfor %}
-        </div>
-        {% endif %}
+  {% if all_tags %}
+  <div class="filter-bar">
+    {% for tag in all_tags|sort %}
+    <button class="filter-btn" data-tag="{{ tag }}">{{ tag }}</button>
+    {% endfor %}
+  </div>
+  {% endif %}
 
-        <p class="day-heading">Latest cybersecurity news — updated {{ generated_at }}</p>
+  {% for day_str, day_articles in days_grouped %}
+  <div class="day-group">
+    <h2 class="day-group-title">
+      {{ day_str }}
+      <span class="day-group-count">{{ day_articles|length }} article{{ "s" if day_articles|length != 1 else "" }}</span>
+    </h2>
+  </div>
 
-        {% for article in articles %}
-        <div class="article-card" id="{{ article.id }}" data-tags="{{ article.tags|join(',') }}">
-          <h3><a href="{{ article.link }}" target="_blank" rel="noopener">{{ article.title }}</a></h3>
-          <div class="article-meta">
-            <span class="source">{{ article.source }}</span> · {{ article.day }}
-          </div>
-          <p class="article-summary">{{ article.summary }}</p>
-          {% if article.tags %}
-          <div class="tags">
-            {% for tag in article.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-          {% endif %}
-        </div>
-        {% endfor %}
-
-        {% if not articles %}
-        <p style="color: var(--text-muted); margin-top: 2rem;">
-          No articles yet. The next scheduled fetch will populate this page.
-        </p>
-        {% endif %}
-      </div>
-
-      <aside class="sidebar">
-        <h4>Recent Days</h4>
-        <ul class="day-list">
-          {% for d in days %}
-          <li><a href="daily/{{ d }}.html">{{ d }}</a></li>
-          {% endfor %}
-        </ul>
-      </aside>
+  {% for article in day_articles %}
+  <a href="articles/{{ article.id }}.html" class="article-card" data-tags="{{ article.tags|join(',') }}">
+    <div class="card-top">
+      <span class="card-source">{{ article.source }}</span>
+      <span class="card-date">{{ article.day }}</span>
+      {% if article.severity %}
+      <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
+      {% endif %}
     </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      {{ site_title }} · auto-generated from public RSS feeds · <a href="https://github.com">source on GitHub</a>
+    <h3 class="card-title">{{ article.title }}</h3>
+    <p class="card-summary">{{ article.email_summary or article.summary }}</p>
+    <div class="card-footer">
+      {% for tag in article.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
     </div>
-  </footer>
+  </a>
+  {% endfor %}
+  {% endfor %}
 
-  <script src="assets/app.js"></script>
-</body>
-</html>
+  {% if not articles %}
+  <div class="empty-state">
+    <div class="empty-state-icon">◇</div>
+    <p>No articles yet. The next scheduled GitHub Actions run will populate this page automatically.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

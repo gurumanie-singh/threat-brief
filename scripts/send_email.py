@@ -44,31 +44,50 @@ def mark_sent(day: str) -> None:
     logger.info("Marked email as sent for %s", day)
 
 
-def _build_plain_text(articles: list[dict[str, Any]], day: str, base_url: str) -> str:
-    lines = [f"Threat Brief — {day}", "=" * 40, ""]
-    day_url = f"{base_url}/daily/{day}.html" if base_url else ""
+def _build_plain_text(
+    articles: list[dict[str, Any]], day: str, base_url: str
+) -> str:
+    lines = [
+        f"THREAT BRIEF — {day}",
+        "=" * 44,
+        f"{len(articles)} articles from today's cybersecurity landscape.",
+        "",
+    ]
     for i, a in enumerate(articles, 1):
+        summary = a.get("email_summary") or a.get("summary", "")
+        severity = a.get("severity")
+
         lines.append(f"{i}. {a['title']}")
-        lines.append(f"   {a['summary'][:200]}")
+        if severity:
+            lines.append(f"   Severity: {severity.upper()}")
+        lines.append(f"   {summary[:300]}")
         lines.append(f"   Source: {a['source']}")
-        if day_url:
-            lines.append(f"   Read more: {day_url}#{a['id']}")
+
+        if base_url:
+            lines.append(f"   Read more: {base_url}/articles/{a['id']}.html")
         else:
             lines.append(f"   Link: {a['link']}")
         lines.append("")
-    if day_url:
-        lines.extend(["", f"Full briefing: {day_url}"])
+
+    if base_url:
+        lines.extend(["", f"Full briefing: {base_url}/daily/{day}.html"])
     return "\n".join(lines)
 
 
-def _build_html(articles: list[dict[str, Any]], day: str, settings: dict[str, Any]) -> str:
+def _build_html(
+    articles: list[dict[str, Any]], day: str, settings: dict[str, Any]
+) -> str:
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
         autoescape=True,
     )
     tpl = env.get_template("email.html")
-    base_url = settings.get("site_base_url", "")
-    return tpl.render(articles=articles, day=day, base_url=base_url, site_title=settings["site_title"])
+    return tpl.render(
+        articles=articles,
+        day=day,
+        base_url=settings.get("site_base_url", ""),
+        site_title=settings["site_title"],
+    )
 
 
 def send_email() -> bool:
@@ -89,10 +108,12 @@ def send_email() -> bool:
     config = load_feeds_config()
     settings = get_settings(config)
     articles = load_json(ARTICLES_FILE)
-    todays = [a for a in articles if a["day"] == day]
 
+    todays = [a for a in articles if a["day"] == day]
     if not todays:
-        all_articles = sorted(articles, key=lambda a: a["published"], reverse=True)
+        all_articles = sorted(
+            articles, key=lambda a: a["published"], reverse=True
+        )
         todays = all_articles[:settings["email_max_articles"]]
         if not todays:
             logger.warning("No articles available to send")

@@ -1,4 +1,4 @@
-"""Shared utility functions: hashing, date helpers, JSON I/O."""
+"""Shared utility functions: hashing, date helpers, JSON I/O, text cleaning."""
 
 from __future__ import annotations
 
@@ -42,15 +42,28 @@ def article_id(title: str, link: str) -> str:
 # ── HTML cleaning ───────────────────────────────────────────────────
 
 _TAG_RE = re.compile(r"<[^>]+>")
+_ENTITY_MAP = {
+    "&amp;": "&", "&lt;": "<", "&gt;": ">",
+    "&quot;": '"', "&apos;": "'", "&nbsp;": " ",
+    "&#39;": "'", "&#x27;": "'", "&#34;": '"',
+}
 _ENTITY_RE = re.compile(r"&[#\w]+;")
 
 
+def _replace_entity(match: re.Match) -> str:
+    return _ENTITY_MAP.get(match.group(0), " ")
+
+
 def strip_html(text: str) -> str:
-    """Remove HTML tags and common entities, returning plain text."""
+    """Remove HTML tags and common entities, returning clean plain text."""
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"</p>", "\n\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"</li>", "\n", text, flags=re.IGNORECASE)
     text = _TAG_RE.sub(" ", text)
-    text = _ENTITY_RE.sub(" ", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    text = _ENTITY_RE.sub(_replace_entity, text)
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 
 def truncate(text: str, max_chars: int = 280) -> str:
@@ -69,6 +82,15 @@ def now_utc() -> datetime:
 
 def today_str() -> str:
     return now_utc().strftime("%Y-%m-%d")
+
+
+def format_date_human(date_str: str) -> str:
+    """Convert 'YYYY-MM-DD' to 'April 15, 2026' style."""
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        return dt.strftime("%B %-d, %Y")
+    except (ValueError, AttributeError):
+        return date_str
 
 
 def parse_date(date_str: str | None) -> datetime:

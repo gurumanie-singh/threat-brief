@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} — {{ site_title }}{% endblock %}
+
+{% block content %}
+<div class="section-inner">
+  <div class="article-page">
+    <a href="{{ prefix }}daily/{{ article.day }}.html" class="back-link">← {{ article.day }} briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">{{ article.source }}</span>
+        <span class="card-date">{{ article.day }}</span>
+        {% if article.severity %}
+        <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
+        {% endif %}
+      </div>
+
+      <h1 class="title">{{ article.title }}</h1>
+
+      {% if article.email_summary %}
+      <p class="subtitle">{{ article.email_summary }}</p>
+      {% endif %}
+
+      {% if article.tags %}
+      <div class="article-tags">
+        {% for tag in article.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if article.cves %}
+      <ul class="article-cve-list">
+        {% for cve in article.cves %}
+        <li class="article-cve">{{ cve }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </header>
+
+    <div class="article-body">
+      {% if sections.overview %}
+      <div class="article-section">
+        <div class="article-section-label">Overview</div>
+        <div class="article-section-content">
+          {{ sections.overview | paragraphs }}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if sections.technical %}
+      <div class="article-section">
+        <div class="article-section-label">Technical Details</div>
+        <div class="article-section-content">
+          {{ sections.technical | paragraphs }}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if sections.impact %}
+      <div class="article-section">
+        <div class="article-section-label">Impact</div>
+        <div class="article-section-content">
+          {{ sections.impact | paragraphs }}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if sections.mitigation %}
+      <div class="article-section">
+        <div class="article-section-label">Mitigation</div>
+        <div class="article-section-content">
+          {{ sections.mitigation | paragraphs }}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if sections.context %}
+      <div class="article-section">
+        <div class="article-section-label">Additional Context</div>
+        <div class="article-section-content">
+          {{ sections.context | paragraphs }}
+        </div>
+      </div>
+      {% endif %}
+
+      <a href="{{ article.link }}" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at {{ article.source }}</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

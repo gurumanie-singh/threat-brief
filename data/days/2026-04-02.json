@@ -1,0 +1,136 @@
+[
+  {
+    "id": "b8a4327bdbbbc336",
+    "title": "Yokogawa CENTUM VP",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-02",
+    "published": "2026-04-02T12:00:00+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-02",
+    "cves": [
+      "CVE-2025-7741"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. The following versions of Yokogawa CENTUM VP are affected:\n\n \n CENTUM VP >=R5.01.00|\n\n CENTUM VP >=R6.01.00|\n\n CENTUM VP vR7.01.00 (CVE-2025-7741)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4 \n Yokogawa \n Yokogawa CENTUM VP \n Use of Hard-coded Password \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Japan\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-7741 \n \n Affected products contain a hardcoded password for the user account (PROG) used for CENTUM Authentication Mode within the system. Under the following conditions, there is a risk that an attacker could log in as the PROG user.",
+      "technical": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. Additionally, exploiting this vulnerability requires an attacker to already have access to the HIS screen controls. Recommended Practices \n CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time.\n\nReferenced vulnerabilities: CVE-2025-7741.",
+      "impact": "The following versions of Yokogawa CENTUM VP are affected:\n\n \n CENTUM VP >=R5.01.00|\n\n CENTUM VP >=R6.01.00|\n\n CENTUM VP vR7.01.00 (CVE-2025-7741)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4 \n Yokogawa \n Yokogawa CENTUM VP \n Use of Hard-coded Password \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Japan\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-7741 \n \n Affected products contain a hardcoded password for the user account (PROG) used for CENTUM Authentication Mode within the system. Therefore, for properly permission-controlled targets of operation and monitoring, even if an attacker logs in as the PROG user, the risk of critical operations or configuration changes being performed is considered low. View CVE Details \n\n \n Affected Products \n Yokogawa CENTUM VP \n \n Vendor: \nYokogawa \n Product Version: \nYokogawa CENTUM VP: >=R5.01.00|<R5.04.20, Yokogawa CENTUM VP: >=R6.01.00|<R6.12.00, Yokogawa CENTUM VP: vR7.01.00 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nYokogawa recommends users applying the following mitigations to affected versions:\n\n Vendor fix \nCENTUM VP R5.01.00 to R5.04.20: Change the user authentication mode to Windows Authentication Mode.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "View CVE Details \n\n \n Affected Products \n Yokogawa CENTUM VP \n \n Vendor: \nYokogawa \n Product Version: \nYokogawa CENTUM VP: >=R5.01.00|<R5.04.20, Yokogawa CENTUM VP: >=R6.01.00|<R6.12.00, Yokogawa CENTUM VP: vR7.01.00 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nYokogawa recommends users applying the following mitigations to affected versions:\n\n Vendor fix \nCENTUM VP R5.01.00 to R5.04.20: Change the user authentication mode to Windows Authentication Mode. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Therefore, for properly permission-controlled targets of operation and monitoring, even if an attacker logs in as the PROG user, the risk of critical operations or configuration changes being performed is considered low. Vendor fix \nCENTUM VP R7.01.00: Apply patch software R7.01.10.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. Tracked as CVE-2025-7741.",
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e69ae414d1a99603",
+    "title": "Siemens SICAM 8 Products",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-01",
+    "published": "2026-04-02T12:00:00+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-04-02",
+    "cves": [
+      "CVE-2026-27663",
+      "CVE-2026-27664"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens SICAM 8 Products are affected:\n\n \n CPCI85 Central Processing/Communication vers:intdot/<26.10 (CVE-2026-27663, CVE-2026-27664)\n\n RTUM85 RTU Base vers:intdot/<26.10 (CVE-2026-27663)\n\n SICORE Base system vers:intdot/<26.10.0 (CVE-2026-27664)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Siemens \n Siemens SICAM 8 Products \n Allocation of Resources Without Limits or Throttling, Out-of-bounds Write \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-27663 \n \n The affected application contains denial-of-service (DoS) vulnerability. The remote operation mode is susceptible to a resource exhaustion condition when subjected to a high volume of requests.",
+      "technical": "View CVE Details \n\n \n Affected Products \n Siemens SICAM 8 Products \n \n Vendor: \nSiemens \n Product Version: \nCPCI85 Central Processing/Communication, RTUM85 RTU Base \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUpdate to V26.10 or later version The firmware RTUM85 V26.10 is present within “CP-8010/CP-8012 Package” V26.10 https://support.industry.siemens.com/cs/ww/en/view/109972894/ and also within “SICAM S8000 Package” V26.10 https://support.industry.siemens.com/cs/document/109818240\n\n Vendor fix \nUpdate to V26.10 or later version The firmware CPCI85 V26.10 is present within “CP-8031/CP-8050 Package” V26.10 https://support.industry.siemens.com/cs/ww/en/view/109804985/ and also within “SICAM EGS Package” V26.10 https://support.industry.siemens.com/cs/document/109972536/\n\n \n Relevant CWE: CWE-770 Allocation of Resources Without Limits or Throttling \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H \n \n \n \n \n \n \n \n CVE-2026-27664 \n \n The affected application contains an out-of-bounds write vulnerability while parsing specially crafted XML inputs. The following versions of Siemens SICAM 8 Products are affected:\n\n \n CPCI85 Central Processing/Communication vers:intdot/<26.10 (CVE-2026-27663, CVE-2026-27664)\n\n RTUM85 RTU Base vers:intdot/<26.10 (CVE-2026-27663)\n\n SICORE Base system vers:intdot/<26.10.0 (CVE-2026-27664)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Siemens \n Siemens SICAM 8 Products \n Allocation of Resources Without Limits or Throttling, Out-of-bounds Write \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-27663 \n \n The affected application contains denial-of-service (DoS) vulnerability. Recommended Practices \n CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability. View CSAF \n\n Summary \n Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions.\n\nReferenced vulnerabilities: CVE-2026-27663, CVE-2026-27664.",
+      "impact": "The following versions of Siemens SICAM 8 Products are affected:\n\n \n CPCI85 Central Processing/Communication vers:intdot/<26.10 (CVE-2026-27663, CVE-2026-27664)\n\n RTUM85 RTU Base vers:intdot/<26.10 (CVE-2026-27663)\n\n SICORE Base system vers:intdot/<26.10.0 (CVE-2026-27664)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Siemens \n Siemens SICAM 8 Products \n Allocation of Resources Without Limits or Throttling, Out-of-bounds Write \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-27663 \n \n The affected application contains denial-of-service (DoS) vulnerability. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CSAF \n\n Summary \n Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. View CSAF \n\n Summary \n Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. View CVE Details \n\n \n Affected Products \n Siemens SICAM 8 Products \n \n Vendor: \nSiemens \n Product Version: \nCPCI85 Central Processing/Communication, RTUM85 RTU Base \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUpdate to V26.10 or later version The firmware RTUM85 V26.10 is present within “CP-8010/CP-8012 Package” V26.10 https://support.industry.siemens.com/cs/ww/en/view/109972894/ and also within “SICAM S8000 Package” V26.10 https://support.industry.siemens.com/cs/document/109818240\n\n Vendor fix \nUpdate to V26.10 or later version The firmware CPCI85 V26.10 is present within “CP-8031/CP-8050 Package” V26.10 https://support.industry.siemens.com/cs/ww/en/view/109804985/ and also within “SICAM EGS Package” V26.10 https://support.industry.siemens.com/cs/document/109972536/\n\n \n Relevant CWE: CWE-770 Allocation of Resources Without Limits or Throttling \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H \n \n \n \n \n \n \n \n CVE-2026-27664 \n \n The affected application contains an out-of-bounds write vulnerability while parsing specially crafted XML inputs.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
+      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. Tracked as CVE-2026-27663, CVE-2026-27664.",
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "9b01fc0fdee5352e",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/04/02/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "published": "2026-04-02T12:00:00+00:00",
+    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-02",
+    "cves": [
+      "CVE-2026-3502"
+    ],
+    "cvss": null,
+    "severity": null,
+    "vendors": [],
+    "action_required": false,
+    "sections": {
+      "overview": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-3502 TrueConf Client Download of Code Without Integrity Check Vulnerability \n\n \n This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.",
+      "technical": "CVE-2026-3502 TrueConf Client Download of Code Without Integrity Check Vulnerability \n\n \n This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nReferenced vulnerabilities: CVE-2026-3502.",
+      "impact": "CVE-2026-3502 TrueConf Client Download of Code Without Integrity Check Vulnerability \n\n \n This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.",
+      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
+      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+    },
+    "email_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-3502.",
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "96f2d7ec2554f131",
+    "title": "Hitachi Energy Ellipse",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-03",
+    "published": "2026-04-02T12:00:00+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-02",
+    "cves": [
+      "CVE-2025-10492"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Hitachi Energy is aware of a Jasper Report vulnerability that affects the Ellipse product versions mentioned in this document below. This vulnerability can be exploited to carry out remote code execution (RCE) attack on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.",
+      "technical": "This vulnerability can be exploited to carry out remote code execution (RCE) attack on the product. The following versions of Hitachi Energy Ellipse are affected:\n\n \n Ellipse vers:Ellipse/<=9.0.50 (CVE-2025-10492)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Hitachi Energy \n Hitachi Energy Ellipse \n Deserialization of Untrusted Data \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-10492 \n \n A vulnerability exists in Jasper Report third party component that is used for creating custom reports in Ellipse product. A Java deserialization vulnerability has been discovered in Jaspersoft Library. Relevant CWE: CWE-502 Deserialization of Untrusted Data \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9.8 \n CRITICAL \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Hitachi Energy PSIRT reported this vulnerability to CISA.\n\nReferenced vulnerabilities: CVE-2025-10492.",
+      "impact": "The following versions of Hitachi Energy Ellipse are affected:\n\n \n Ellipse vers:Ellipse/<=9.0.50 (CVE-2025-10492)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Hitachi Energy \n Hitachi Energy Ellipse \n Deserialization of Untrusted Data \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-10492 \n \n A vulnerability exists in Jasper Report third party component that is used for creating custom reports in Ellipse product. View CVE Details \n\n \n Affected Products \n Hitachi Energy Ellipse \n \n Vendor: \nHitachi Energy \n Product Version: \nEllipse versions 9.0.50 and prior \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nSince the vulnerability exists in Jasper Report component that is external to Ellipse application, restrict the loading of external custom reports created by end users by allowing only trusted Jasper reports generated by the system administrator. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "General Mitigation Factors \n Recommended security practices and firewall configurations can help protect a process control network from attacks that originate from outside the network. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Such practices include that process control systems are physically protected from direct access by unauthorized personnel, have no direct connections to the Internet, and are separated from other networks by means of a firewall system that has a minimal number of ports exposed, and others that have to be evaluated case by case.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
+      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Hitachi Energy is aware of a Jasper Report vulnerability that affects the Ellipse product versions mentioned in this document below. Tracked as CVE-2025-10492.",
+    "related_sources": [],
+    "highlighted": false
+  }
+]

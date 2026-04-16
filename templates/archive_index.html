@@ -49,19 +49,4 @@
   </div>
   {% endif %}
 </div>
-
-<script>
-(function() {
-  var input = document.getElementById("archiveSearch");
-  if (!input) return;
-  var cards = document.querySelectorAll(".archive-day-card");
-  input.addEventListener("input", function() {
-    var q = input.value.trim().toLowerCase();
-    cards.forEach(function(card) {
-      var data = card.dataset.search || "";
-      card.style.display = !q || data.indexOf(q) !== -1 ? "" : "none";
-    });
-  });
-})();
-</script>
 {% endblock %}

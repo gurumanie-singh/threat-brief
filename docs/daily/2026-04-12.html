@@ -30,10 +30,17 @@
     </div>
     <h1 class="hero-title">12 April 2026</h1>
     <p class="hero-desc">
-      1 article from the day's cybersecurity landscape.
+      2 articles from the day's cybersecurity landscape.
     </p>
   </div>
 
+  <div class="landscape-summary">
+    <div class="landscape-title">Day's Threat Landscape</div>
+    <ul class="landscape-bullets">
+      <li>1 critical-severity issue detected with active exploitation reported</li>
+      <li>1 item requires immediate action — patches or mitigations available</li>
+    </ul>
+  </div>
 
   <div class="search-bar">
     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -42,12 +49,24 @@
   </div>
 
   <div class="filter-section">
+    <div class="filter-row-label">Severity</div>
+    <div class="filter-row">
+      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+    </div>
 
+    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+    </div>
 
     <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
     <div class="filter-row">
       <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
     </div>
   </div>
 
@@ -68,6 +87,28 @@
     <div class="card-footer">
       <span class="tag">breach</span>
       <span class="tag">malware</span>
+    </div>
+  </a>
+  <a href="../articles/9899b05aa64fd427.html"
+     class="article-card action-required"
+     data-tags="cve,exploit,patch,vulnerability"
+     data-vendors="Adobe"
+     data-severity="critical"
+     data-title="adobe patches actively exploited acrobat reader flaw cve-2026-34621">
+    <div class="card-top">
+      <span class="card-source">The Hacker News</span>
+      <span class="card-date">12 April 2026</span>
+      <span class="card-severity critical">critical</span>
+      <span class="card-action-badge">Action Required</span>
+    </div>
+    <h3 class="card-title">Adobe Patches Actively Exploited Acrobat Reader Flaw CVE-2026-34621</h3>
+    <p class="card-summary">Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild. Tracked as CVE-2026-34621. Severity is rated critical.</p>
+    <div class="card-footer">
+      <span class="vendor-tag">Adobe</span>
+      <span class="tag">cve</span>
+      <span class="tag">exploit</span>
+      <span class="tag">patch</span>
+      <span class="tag">vulnerability</span>
     </div>
   </a>
 

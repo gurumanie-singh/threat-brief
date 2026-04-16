@@ -243,9 +243,9 @@ def extract_top_threats(articles: list[dict[str, Any]], max_items: int = 6) -> l
                         phrase_counter[phrase] += 1
                         phrase_articles.setdefault(phrase, []).append(a["id"])
 
-    for cve in a.get("cves", []):
-        phrase_counter[cve.lower()] += 1
-        phrase_articles.setdefault(cve.lower(), []).append(a["id"])
+        for cve in a.get("cves", []):
+            phrase_counter[cve.lower()] += 1
+            phrase_articles.setdefault(cve.lower(), []).append(a["id"])
 
     seen_ids: set[str] = set()
     results: list[dict[str, Any]] = []

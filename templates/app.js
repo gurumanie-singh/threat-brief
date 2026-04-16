@@ -163,6 +163,20 @@
     }
   }
 
+  /* ── Archive search ───────────────────────────────── */
+
+  var archiveInput = document.getElementById("archiveSearch");
+  if (archiveInput) {
+    var archiveCards = document.querySelectorAll(".archive-day-card");
+    archiveInput.addEventListener("input", function () {
+      var q = archiveInput.value.trim().toLowerCase();
+      archiveCards.forEach(function (card) {
+        var data = card.dataset.search || "";
+        card.style.display = !q || data.indexOf(q) !== -1 ? "" : "none";
+      });
+    });
+  }
+
   /* ── Scroll reveal (minimal, disabled on mobile) ── */
 
   if (window.innerWidth >= 640) {

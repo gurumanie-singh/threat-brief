@@ -18,7 +18,7 @@ from typing import Any
 from jinja2 import Environment, FileSystemLoader
 
 from scripts.config import (
-    ARTICLES_FILE,
+    DAYS_DIR,
     TEMPLATES_DIR,
     EMAIL_SENDER,
     EMAIL_PASSWORD,
@@ -31,7 +31,7 @@ from scripts.config import (
 )
 from scripts.enrich import generate_landscape_bullets
 from scripts.scheduler import get_local_today, should_send_email, mark_email_sent
-from scripts.utils import load_json, format_date_human
+from scripts.utils import load_day, load_all_days, format_date_human
 
 logger = logging.getLogger(__name__)
 
@@ -172,12 +172,12 @@ def _prepare_articles(day: str) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     config = load_feeds_config()
     settings = get_settings(config)
     personalization = get_personalization(config)
-    articles = load_json(ARTICLES_FILE)
 
-    todays = [a for a in articles if a["day"] == day]
+    todays = load_day(DAYS_DIR, day)
     if not todays:
-        all_articles = sorted(articles, key=lambda a: a["published"], reverse=True)
-        todays = all_articles[:settings["email_max_articles"]]
+        all_articles = load_all_days(DAYS_DIR)
+        todays = sorted(all_articles, key=lambda a: a.get("published", ""), reverse=True)
+        todays = todays[:settings["email_max_articles"]]
 
     if not todays:
         return [], settings

@@ -7,7 +7,7 @@ import json
 import logging
 import re
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse, urlunparse
@@ -32,10 +32,20 @@ _EMOJI_RE = re.compile(
     re.UNICODE,
 )
 
+_SAFE_URL_SCHEMES = frozenset({"http", "https"})
+
 
 def strip_emoji(text: str) -> str:
     """Remove all emoji characters from text."""
     return _EMOJI_RE.sub("", text).strip()
+
+
+def is_safe_url(url: str) -> bool:
+    """Reject non-http(s) URLs to prevent javascript: or data: XSS in hrefs."""
+    try:
+        return urlparse(url).scheme.lower() in _SAFE_URL_SCHEMES
+    except Exception:
+        return False
 
 
 # -- Text normalisation ------------------------------------------------------
@@ -132,7 +142,75 @@ def parse_date(date_str: str | None) -> datetime:
         return now_utc()
 
 
-# -- JSON I/O ---------------------------------------------------------------
+# -- Per-day JSON I/O -------------------------------------------------------
+
+def _day_path(days_dir: Path, day_str: str) -> Path:
+    return days_dir / f"{day_str}.json"
+
+
+def load_day(days_dir: Path, day_str: str) -> list[dict[str, Any]]:
+    """Load a single day file, returning [] on missing or corrupt."""
+    path = _day_path(days_dir, day_str)
+    if not path.exists():
+        return []
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        return data if isinstance(data, list) else []
+    except (json.JSONDecodeError, OSError) as exc:
+        logger.warning("Failed to load %s: %s", path, exc)
+        return []
+
+
+def save_day(days_dir: Path, day_str: str, articles: list[dict[str, Any]]) -> None:
+    """Atomically write a day file."""
+    days_dir.mkdir(parents=True, exist_ok=True)
+    path = _day_path(days_dir, day_str)
+    tmp = path.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(articles, fh, indent=2, default=str, ensure_ascii=False)
+        fh.write("\n")
+    tmp.replace(path)
+
+
+def list_day_files(days_dir: Path) -> list[tuple[str, Path]]:
+    """Return sorted list of (day_str, path) for all day JSON files."""
+    if not days_dir.exists():
+        return []
+    pairs = []
+    for p in days_dir.glob("*.json"):
+        day_str = p.stem
+        if len(day_str) == 10 and day_str[4] == "-" and day_str[7] == "-":
+            pairs.append((day_str, p))
+    pairs.sort(key=lambda x: x[0], reverse=True)
+    return pairs
+
+
+def load_all_days(days_dir: Path) -> list[dict[str, Any]]:
+    """Load and merge all per-day files into a single sorted list."""
+    all_articles: list[dict[str, Any]] = []
+    for day_str, path in list_day_files(days_dir):
+        all_articles.extend(load_day(days_dir, day_str))
+    all_articles.sort(key=lambda a: a.get("published", ""), reverse=True)
+    return all_articles
+
+
+def load_days_range(
+    days_dir: Path, start_date: str, end_date: str | None = None
+) -> list[dict[str, Any]]:
+    """Load articles from day files within [start_date, end_date]."""
+    articles: list[dict[str, Any]] = []
+    for day_str, path in list_day_files(days_dir):
+        if day_str < start_date:
+            continue
+        if end_date and day_str > end_date:
+            continue
+        articles.extend(load_day(days_dir, day_str))
+    articles.sort(key=lambda a: a.get("published", ""), reverse=True)
+    return articles
+
+
+# -- Legacy JSON I/O (kept for migration) -----------------------------------
 
 def load_json(path: Path) -> list[dict[str, Any]]:
     """Load a JSON file, returning [] on missing or corrupt file."""

@@ -7,10 +7,12 @@ build/
 .eggs/
 *.egg
 .env
+.env.*
 .venv/
 venv/
 env/
 *.log
+*.tmp
 .DS_Store
 Thumbs.db
 *.swp
@@ -18,3 +20,7 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+.cursor/
+
+# Legacy monolithic data file (migrated to data/days/)
+data/articles.json

@@ -11,6 +11,7 @@ import feedparser
 from scripts.config import load_feeds_config, get_tag_keywords, get_settings
 from scripts.utils import (
     article_id,
+    is_safe_url,
     parse_date,
     strip_html,
     strip_emoji,
@@ -36,7 +37,10 @@ def _extract_full_content(entry: Any) -> str:
         for c in entry.content:
             if c.get("type", "") in ("text/html", "text/plain"):
                 return strip_emoji(strip_html(c.get("value", "")))
-            return strip_emoji(strip_html(c.get("value", "")))
+        # Fall back to first content entry regardless of type
+        first_val = entry.content[0].get("value", "") if entry.content else ""
+        if first_val:
+            return strip_emoji(strip_html(first_val))
 
     raw = entry.get("summary") or entry.get("description") or ""
     return strip_emoji(strip_html(raw))
@@ -49,6 +53,9 @@ def _parse_entry(
     title = strip_emoji((entry.get("title") or "").strip())
     link = (entry.get("link") or "").strip()
     if not title or not link:
+        return None
+    if not is_safe_url(link):
+        logger.warning("Rejected unsafe URL scheme in '%s': %s", title[:60], link[:80])
         return None
 
     full_content = _extract_full_content(entry)

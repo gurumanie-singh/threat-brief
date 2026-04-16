@@ -1,0 +1,35 @@
+[
+  {
+    "id": "b0a40e7a0febb438",
+    "title": "‘CanisterWorm’ Springs Wiper Attack Targeting Iran",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/",
+    "published": "2026-03-23T15:43:04+00:00",
+    "summary": "A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran s time zone or have Farsi set as the default language.",
+    "tags": [
+      "breach",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-03-23",
+    "cves": [],
+    "cvss": null,
+    "severity": null,
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "sections": {
+      "overview": "A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran s time zone or have Farsi set as the default language. Experts say the wiper campaign against Iran materialized this past weekend and came from a relatively new cybercrime group known as TeamPCP . In December 2025, the group began compromising corporate cloud environments using a self-propagating worm that went after exposed Docker APIs, Kubernetes clusters, Redis servers, and the React2Shell vulnerability.",
+      "technical": "In December 2025, the group began compromising corporate cloud environments using a self-propagating worm that went after exposed Docker APIs, Kubernetes clusters, Redis servers, and the React2Shell vulnerability. In a profile of TeamPCP published in January, the security firm Flare  said the group weaponizes exposed control planes rather than exploiting endpoints, predominantly targeting cloud infrastructure over end-user devices, with Azure (61%) and AWS (36%) accounting for 97% of compromised servers. TeamPCP s strength does not come from novel exploits or original malware, but from the large-scale automation and integration of well-known attack techniques, Flare s Assaf Morag wrote . On March 19, TeamPCP executed a supply chain attack against the vulnerability scanner Trivy from Aqua Security , injecting credential-stealing malware into official releases on GitHub actions.",
+      "impact": "In a profile of TeamPCP published in January, the security firm Flare  said the group weaponizes exposed control planes rather than exploiting endpoints, predominantly targeting cloud infrastructure over end-user devices, with Azure (61%) and AWS (36%) accounting for 97% of compromised servers. TeamPCP then attempted to move laterally through victim networks, siphoning authentication credentials and extorting victims over Telegram. Aqua Security said it has since removed the harmful files, but the security firm Wiz notes the attackers were able to publish malicious versions that snarfed SSH keys, cloud credentials, Kubernetes tokens and cryptocurrency wallets from users.",
+      "mitigation": "The group industrializes existing vulnerabilities, misconfigurations, and recycled tooling into a cloud-native exploitation platform that turns exposed infrastructure into a self-propagating criminal ecosystem. On March 19, TeamPCP executed a supply chain attack against the vulnerability scanner Trivy from Aqua Security , injecting credential-stealing malware into official releases on GitHub actions. In a blog post published on Sunday, Eriksen said if the wiper component detects that the victim is in Iran and has access to a Kubernetes cluster, it will destroy data on every node in that cluster. Aikido refers to TeamPCP s infrastructure as CanisterWorm because the group orchestrates their campaigns using an Internet Computer Protocol (ICP) canister a system of tamperproof, blockchain-based smart contracts that combine both code and data.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
+      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+    },
+    "email_summary": "A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran s time zone or have Farsi set as the default language. Experts say the wiper campaign against Iran materialized this past weekend and came from a relatively new cybercrime group known as TeamPCP .",
+    "related_sources": [],
+    "highlighted": false
+  }
+]

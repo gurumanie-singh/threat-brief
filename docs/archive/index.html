@@ -71,7 +71,7 @@
       <div class="archive-day-date">2026-04-13</div>
       <div class="archive-day-human">13 April 2026</div>
       <div class="archive-day-meta">
-        <span class="archive-day-count">11 articles</span>
+        <span class="archive-day-count">12 articles</span>
         <span class="card-severity critical">critical</span>
       </div>
       <div class="archive-day-tags">
@@ -81,15 +81,18 @@
         <span class="tag">zero-day</span>
       </div>
     </a>
-    <a href="../daily/2026-04-12.html" class="archive-day-card" data-search="2026-04-12 12 april 2026 breach malware">
+    <a href="../daily/2026-04-12.html" class="archive-day-card" data-search="2026-04-12 12 april 2026 breach malware cve exploit">
       <div class="archive-day-date">2026-04-12</div>
       <div class="archive-day-human">12 April 2026</div>
       <div class="archive-day-meta">
-        <span class="archive-day-count">1 article</span>
+        <span class="archive-day-count">2 articles</span>
+        <span class="card-severity critical">critical</span>
       </div>
       <div class="archive-day-tags">
         <span class="tag">breach</span>
         <span class="tag">malware</span>
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
       </div>
     </a>
     <a href="../daily/2026-04-11.html" class="archive-day-card" data-search="2026-04-11 11 april 2026 vulnerability">
@@ -192,6 +195,19 @@
       <div class="archive-day-meta">
         <span class="archive-day-count">4 articles</span>
         <span class="card-severity low">low</span>
+      </div>
+      <div class="archive-day-tags">
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">vulnerability</span>
+      </div>
+    </a>
+    <a href="../daily/2026-04-01.html" class="archive-day-card" data-search="2026-04-01 1 april 2026 cve exploit malware vulnerability">
+      <div class="archive-day-date">2026-04-01</div>
+      <div class="archive-day-human">1 April 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">1 article</span>
       </div>
       <div class="archive-day-tags">
         <span class="tag">cve</span>
@@ -325,21 +341,6 @@
     </a>
   </div>
 </div>
-
-<script>
-(function() {
-  var input = document.getElementById("archiveSearch");
-  if (!input) return;
-  var cards = document.querySelectorAll(".archive-day-card");
-  input.addEventListener("input", function() {
-    var q = input.value.trim().toLowerCase();
-    cards.forEach(function(card) {
-      var data = card.dataset.search || "";
-      card.style.display = !q || data.indexOf(q) !== -1 ? "" : "none";
-    });
-  });
-})();
-</script>
   </main>
 
   <footer class="site-footer">

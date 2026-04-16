@@ -14,12 +14,13 @@ logger = logging.getLogger(__name__)
 ROOT_DIR = Path(__file__).resolve().parent.parent
 FEEDS_FILE = ROOT_DIR / "feeds.yaml"
 DATA_DIR = ROOT_DIR / "data"
-ARTICLES_FILE = DATA_DIR / "articles.json"
-ARCHIVE_DIR = DATA_DIR / "archive"
-SENT_DIR = DATA_DIR / "sent"
+DAYS_DIR = DATA_DIR / "days"
 STATE_FILE = DATA_DIR / "state.json"
 TEMPLATES_DIR = ROOT_DIR / "templates"
 DOCS_DIR = ROOT_DIR / "docs"
+
+# Legacy path — used only for one-time migration
+_LEGACY_ARTICLES_FILE = DATA_DIR / "articles.json"
 
 SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
@@ -49,7 +50,8 @@ def get_settings(config: dict[str, Any] | None = None) -> dict[str, Any]:
         "timezone": "UTC",
         "active_days": 7,
         "max_retention_days": 30,
-        "max_articles_per_page": 50,
+        "max_articles_per_day": 20,
+        "max_articles_per_page": 30,
         "email_max_articles": 15,
         "site_title": "Threat Brief",
         "site_description": "Daily cybersecurity intelligence briefing",

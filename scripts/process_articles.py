@@ -1,22 +1,31 @@
-"""Merge fetched articles with existing data, enrich, group, prune, and archive.
+"""Incremental article processing with per-day JSON storage.
 
-Data lifecycle:
+Storage layout:
+  data/days/YYYY-MM-DD.json  -- each day's articles (max ~20 per file)
+
+Lifecycle:
   0-7 days   -> active (shown on homepage)
-  7-30 days  -> archive (browsable, stored in data/archive/)
-  >30 days   -> deleted from articles.json + archive JSON + generated pages
+  7-30 days  -> archive (browsable via archive pages)
+  >30 days   -> deleted automatically
+
+Key optimisations over the previous monolithic approach:
+  - Only new articles are enriched (existing articles are left untouched)
+  - full_content is stripped before storage (saves ~40% per article)
+  - Only changed day files are written (minimal git diff)
+  - Per-day files cap at max_articles_per_day
 """
 
 from __future__ import annotations
 
 import logging
 import sys
+from collections import defaultdict
 from datetime import timedelta
-from pathlib import Path
 from typing import Any
 
 from scripts.config import (
-    ARTICLES_FILE,
-    ARCHIVE_DIR,
+    DAYS_DIR,
+    _LEGACY_ARTICLES_FILE,
     load_feeds_config,
     get_settings,
     get_vendor_keywords,
@@ -24,107 +33,148 @@ from scripts.config import (
 )
 from scripts.enrich import enrich_article, group_articles
 from scripts.fetch_feeds import fetch_all_feeds
-from scripts.utils import load_json, save_json, now_utc, today_str
+from scripts.utils import (
+    load_day, save_day, list_day_files, load_json,
+    now_utc,
+)
 
 logger = logging.getLogger(__name__)
 
-
-def merge_articles(
-    existing: list[dict[str, Any]],
-    incoming: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """Merge incoming into existing, deduplicating by article id."""
-    index: dict[str, dict[str, Any]] = {a["id"]: a for a in existing}
-    new_count = 0
-    for article in incoming:
-        if article["id"] not in index:
-            new_count += 1
-        index[article["id"]] = article
-    if new_count:
-        logger.info("  %d genuinely new articles added", new_count)
-    return sorted(index.values(), key=lambda a: a["published"], reverse=True)
+_SEVERITY_RANK = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 
 
-def prune_old(articles: list[dict[str, Any]], max_days: int) -> list[dict[str, Any]]:
-    """Remove articles older than max_days."""
-    cutoff = (now_utc() - timedelta(days=max_days)).strftime("%Y-%m-%d")
-    kept = [a for a in articles if a["day"] >= cutoff]
-    removed = len(articles) - len(kept)
-    if removed:
-        logger.info("Pruned %d articles older than %s (%d-day retention)", removed, cutoff, max_days)
-    return kept
-
-
-def archive_today(articles: list[dict[str, Any]]) -> None:
-    """Save a daily snapshot of today's articles."""
-    day = today_str()
-    todays = [a for a in articles if a["day"] == day]
-    if not todays:
-        logger.info("No articles for %s to archive", day)
+def _migrate_legacy(max_retention_days: int) -> None:
+    """One-time migration: split monolithic articles.json into per-day files."""
+    if not _LEGACY_ARTICLES_FILE.exists():
         return
-    archive_path = ARCHIVE_DIR / f"{day}.json"
-    save_json(archive_path, todays)
-    logger.info("Archived %d articles to %s", len(todays), archive_path.name)
+
+    logger.info("Migrating legacy articles.json to per-day files...")
+    articles = load_json(_LEGACY_ARTICLES_FILE)
+    if not articles:
+        _LEGACY_ARTICLES_FILE.unlink(missing_ok=True)
+        return
+
+    by_day: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for a in articles:
+        a.pop("full_content", None)
+        by_day[a["day"]].append(a)
+
+    cutoff = (now_utc() - timedelta(days=max_retention_days)).strftime("%Y-%m-%d")
+    written = 0
+    for day_str, day_articles in by_day.items():
+        if day_str < cutoff:
+            continue
+        save_day(DAYS_DIR, day_str, day_articles)
+        written += 1
+
+    _LEGACY_ARTICLES_FILE.unlink(missing_ok=True)
+    logger.info("Migration complete: %d day files written, legacy file removed", written)
 
 
-def cleanup_old_archives(max_days: int) -> int:
-    """Delete archive JSON files older than max_days. Returns count deleted."""
-    if not ARCHIVE_DIR.exists():
-        return 0
+def _strip_for_storage(article: dict[str, Any]) -> dict[str, Any]:
+    """Remove transient fields that don't need to be persisted."""
+    article.pop("full_content", None)
+    return article
+
+
+def _rank_article(a: dict[str, Any]) -> tuple[int, int, str]:
+    """Sort key: severity asc (critical first), action_required desc, then recency."""
+    sev = _SEVERITY_RANK.get(a.get("severity") or "", 99)
+    action = 0 if a.get("action_required") else 1
+    return (sev, action, a.get("published", ""))
+
+
+def cleanup_old_days(max_days: int) -> int:
+    """Delete per-day files older than max_days. Returns count deleted."""
     cutoff = (now_utc() - timedelta(days=max_days)).strftime("%Y-%m-%d")
     deleted = 0
-    for path in sorted(ARCHIVE_DIR.glob("*.json")):
-        day_str = path.stem
+    for day_str, path in list_day_files(DAYS_DIR):
         if day_str < cutoff:
             path.unlink()
             deleted += 1
-            logger.info("Deleted old archive %s", path.name)
+            logger.info("Deleted expired day file %s", path.name)
     return deleted
 
 
 def process() -> list[dict[str, Any]]:
-    """Full pipeline: fetch -> enrich -> merge -> group -> prune -> save -> archive -> cleanup."""
+    """Incremental pipeline: fetch -> enrich new -> merge per-day -> prune -> save."""
     config = load_feeds_config()
     settings = get_settings(config)
     vendor_kw = get_vendor_keywords(config)
     personalization = get_personalization(config)
     max_retention = settings.get("max_retention_days", 30)
+    max_per_day = settings.get("max_articles_per_day", 20)
 
-    logger.info("Loading existing articles from %s", ARTICLES_FILE)
-    existing = load_json(ARTICLES_FILE)
-    logger.info("Existing articles: %d", len(existing))
+    _migrate_legacy(max_retention)
 
     incoming = fetch_all_feeds()
 
-    logger.info("Enriching %d incoming articles...", len(incoming))
-    enriched: list[dict[str, Any]] = []
-    for article in incoming:
-        try:
-            enriched.append(enrich_article(article, vendor_kw, personalization))
-        except Exception as exc:
-            logger.warning("Enrichment failed for '%s': %s", article.get("title", "?"), exc)
-            enriched.append(article)
+    retention_cutoff = (now_utc() - timedelta(days=max_retention)).strftime("%Y-%m-%d")
+    incoming_by_day: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for a in incoming:
+        if a["day"] >= retention_cutoff:
+            incoming_by_day[a["day"]].append(a)
 
-    merged = merge_articles(existing, enriched)
-    logger.info("After merge: %d articles", len(merged))
+    total_new = 0
+    total_stored = 0
+    days_written = 0
 
-    pre_group = len(merged)
-    merged = group_articles(merged)
-    grouped_count = pre_group - len(merged)
-    if grouped_count:
-        logger.info("Story grouping consolidated %d duplicates", grouped_count)
+    for day_str, day_incoming in sorted(incoming_by_day.items()):
+        existing = load_day(DAYS_DIR, day_str)
+        existing_ids = {a["id"] for a in existing}
 
-    pruned = prune_old(merged, max_retention)
-    logger.info("After prune (%d-day retention): %d articles", max_retention, len(pruned))
+        new_articles: list[dict[str, Any]] = []
+        for article in day_incoming:
+            if article["id"] in existing_ids:
+                continue
+            try:
+                enriched = enrich_article(article, vendor_kw, personalization)
+                new_articles.append(_strip_for_storage(enriched))
+            except Exception as exc:
+                logger.warning("Enrichment failed for '%s': %s", article.get("title", "?"), exc)
+                new_articles.append(_strip_for_storage(article))
 
-    save_json(ARTICLES_FILE, pruned)
-    archive_today(pruned)
+        if not new_articles:
+            total_stored += len(existing)
+            continue
 
-    old_cleaned = cleanup_old_archives(max_retention)
-    if old_cleaned:
-        logger.info("Cleaned %d archive files older than %d days", old_cleaned, max_retention)
+        total_new += len(new_articles)
+        merged = existing + new_articles
 
-    return pruned
+        merged = group_articles(merged)
+        merged.sort(key=_rank_article)
+        if len(merged) > max_per_day:
+            logger.info("Day %s: capped from %d to %d articles", day_str, len(merged), max_per_day)
+            merged = merged[:max_per_day]
+
+        save_day(DAYS_DIR, day_str, merged)
+        days_written += 1
+        total_stored += len(merged)
+
+    logger.info(
+        "Processing complete: %d new articles across %d day files (%d total stored)",
+        total_new, days_written, total_stored,
+    )
+
+    deleted = cleanup_old_days(max_retention)
+    if deleted:
+        logger.info("Lifecycle: removed %d day files older than %d days", deleted, max_retention)
+
+    # Also clean legacy archive dir if empty
+    from scripts.config import DATA_DIR
+    archive_dir = DATA_DIR / "archive"
+    if archive_dir.exists():
+        for old_file in archive_dir.glob("*.json"):
+            old_file.unlink()
+        # Remove .gitkeep if it's the only thing left, but keep the dir
+    
+    return _load_all_current()
+
+
+def _load_all_current() -> list[dict[str, Any]]:
+    """Load all articles from per-day files for downstream consumers."""
+    from scripts.utils import load_all_days
+    return load_all_days(DAYS_DIR)
 
 
 def main() -> None:
@@ -134,6 +184,8 @@ def main() -> None:
     enriched = sum(1 for a in articles if a.get("sections"))
     grouped = sum(1 for a in articles if a.get("related_sources"))
     action = sum(1 for a in articles if a.get("action_required"))
+    days = len(set(a["day"] for a in articles))
+    print(f"  {days} day files")
     print(f"  {enriched} with enriched sections")
     print(f"  {grouped} with related sources (grouped)")
     print(f"  {action} flagged as action-required")

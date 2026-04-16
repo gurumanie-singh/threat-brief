@@ -16,11 +16,9 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from scripts.config import DATA_DIR, load_feeds_config
+from scripts.config import STATE_FILE, load_feeds_config
 
 logger = logging.getLogger(__name__)
-
-STATE_FILE = DATA_DIR / "state.json"
 EXECUTION_HOUR = 7  # 07:00 - 07:59 local time
 
 

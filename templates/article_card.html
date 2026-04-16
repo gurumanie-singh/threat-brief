@@ -1,0 +1,15 @@
+{# Reusable article card partial — included by index.html and day.html #}
+<div class="article-card" id="{{ article.id }}" data-tags="{{ article.tags|join(',') }}">
+  <h3><a href="{{ article.link }}" target="_blank" rel="noopener">{{ article.title }}</a></h3>
+  <div class="article-meta">
+    <span class="source">{{ article.source }}</span> · {{ article.day }}
+  </div>
+  <p class="article-summary">{{ article.summary }}</p>
+  {% if article.tags %}
+  <div class="tags">
+    {% for tag in article.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

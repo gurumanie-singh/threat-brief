@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site_title }} — {{ day }}</title>
+  <!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#0f1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0f1117;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:20px 24px;border-bottom:1px solid #2a2d3a;">
+              <h1 style="margin:0;font-size:22px;color:#e2e4ea;font-weight:700;">
+                ⚡ {{ site_title }}
+              </h1>
+              <p style="margin:6px 0 0;font-size:13px;color:#8b8fa3;">
+                Daily briefing — {{ day }}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Articles -->
+          {% for article in articles %}
+          <tr>
+            <td style="padding:16px 24px;border-bottom:1px solid #1e2130;">
+              <h3 style="margin:0 0 4px;font-size:15px;font-weight:600;">
+                <a href="{{ article.link }}" style="color:#e2e4ea;text-decoration:none;" target="_blank">{{ article.title }}</a>
+              </h3>
+              <p style="margin:0 0 6px;font-size:12px;color:#8b8fa3;">
+                {{ article.source }} · {{ article.day }}
+              </p>
+              <p style="margin:0 0 8px;font-size:14px;color:#a5a9c4;line-height:1.5;">
+                {{ article.summary[:200] }}
+              </p>
+              {% if article.tags %}
+              <p style="margin:0 0 4px;font-size:11px;color:#6c72cb;">
+                {% for tag in article.tags %}{{ tag }}{% if not loop.last %} · {% endif %}{% endfor %}
+              </p>
+              {% endif %}
+              {% if base_url %}
+              <a href="{{ base_url }}/daily/{{ day }}.html#{{ article.id }}" style="font-size:13px;color:#8f94e8;" target="_blank">Read more →</a>
+              {% else %}
+              <a href="{{ article.link }}" style="font-size:13px;color:#8f94e8;" target="_blank">Read more →</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:20px 24px;text-align:center;">
+              {% if base_url %}
+              <a href="{{ base_url }}/daily/{{ day }}.html" style="display:inline-block;padding:10px 24px;background-color:#6c72cb;color:#fff;border-radius:5px;font-size:14px;font-weight:600;text-decoration:none;" target="_blank">
+                View full briefing
+              </a>
+              {% endif %}
+              <p style="margin:16px 0 0;font-size:12px;color:#8b8fa3;">
+                {{ site_title }} — auto-generated from public RSS feeds
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site_title }} — {{ day }}</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><span>⚡</span> {{ site_title }}</h1>
+      <nav>
+        <a href="../index.html">Latest</a>
+        <a href="../archive/index.html">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="layout">
+      <div class="content">
+        {% set all_tags = [] %}
+        {% for a in articles %}
+          {% for t in a.tags %}
+            {% if t not in all_tags %}
+              {% if all_tags.append(t) %}{% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+        {% if all_tags %}
+        <div class="filter-bar">
+          {% for tag in all_tags|sort %}
+          <button class="filter-btn" data-tag="{{ tag }}">{{ tag }}</button>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <p class="day-heading">Briefing for {{ day }}</p>
+
+        {% for article in articles %}
+        <div class="article-card" id="{{ article.id }}" data-tags="{{ article.tags|join(',') }}">
+          <h3><a href="{{ article.link }}" target="_blank" rel="noopener">{{ article.title }}</a></h3>
+          <div class="article-meta">
+            <span class="source">{{ article.source }}</span> · {{ article.day }}
+          </div>
+          <p class="article-summary">{{ article.summary }}</p>
+          {% if article.tags %}
+          <div class="tags">
+            {% for tag in article.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        {% if not articles %}
+        <p style="color: var(--text-muted); margin-top: 2rem;">No articles for this date.</p>
+        {% endif %}
+      </div>
+
+      <aside class="sidebar">
+        <h4>Recent Days</h4>
+        <ul class="day-list">
+          {% for d in days %}
+          <li><a href="{{ d }}.html">{{ d }}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      {{ site_title }} · auto-generated from public RSS feeds
+    </div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

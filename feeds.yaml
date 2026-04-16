@@ -1,0 +1,110 @@
+# ──────────────────────────────────────────────
+# Threat Brief — RSS Feed Configuration
+# ──────────────────────────────────────────────
+# Add or remove feeds below. Each entry needs:
+#   name  — human-readable source label
+#   url   — full RSS/Atom feed URL
+#
+# After editing, the next scheduled GitHub Actions
+# run will pick up the changes automatically.
+# ──────────────────────────────────────────────
+
+feeds:
+  - name: The Hacker News
+    url: https://feeds.feedburner.com/TheHackersNews
+
+  - name: Krebs on Security
+    url: https://krebsonsecurity.com/feed/
+
+  - name: BleepingComputer
+    url: https://www.bleepingcomputer.com/feed/
+
+  - name: Dark Reading
+    url: https://www.darkreading.com/rss.xml
+
+  - name: Threatpost
+    url: https://threatpost.com/feed/
+
+  - name: CISA Alerts
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+
+# ──────────────────────────────────────────────
+# Tag keywords — articles are auto-tagged when
+# the title or summary contains these terms.
+# ──────────────────────────────────────────────
+
+tag_keywords:
+  zero-day:
+    - zero-day
+    - zero day
+    - 0-day
+    - 0day
+  ransomware:
+    - ransomware
+    - ransom
+  malware:
+    - malware
+    - trojan
+    - worm
+    - backdoor
+    - rootkit
+    - spyware
+    - adware
+    - botnet
+    - rat
+    - infostealer
+    - keylogger
+  phishing:
+    - phishing
+    - spear-phishing
+    - smishing
+    - vishing
+    - social engineering
+  cve:
+    - cve-
+    - "cve "
+  vulnerability:
+    - vulnerability
+    - vulnerabilities
+    - rce
+    - remote code execution
+    - sql injection
+    - xss
+    - cross-site
+    - buffer overflow
+    - privilege escalation
+  breach:
+    - breach
+    - data leak
+    - data exposure
+    - compromised
+    - stolen data
+  exploit:
+    - exploit
+    - proof of concept
+    - poc
+    - weaponized
+  apt:
+    - apt
+    - advanced persistent threat
+    - nation-state
+    - state-sponsored
+  patch:
+    - patch
+    - security update
+    - hotfix
+    - firmware update
+
+# ──────────────────────────────────────────────
+# Settings
+# ──────────────────────────────────────────────
+
+settings:
+  max_article_age_days: 7
+  max_articles_per_page: 50
+  email_max_articles: 15
+  site_title: Threat Brief
+  site_description: Daily cybersecurity news aggregator
+  # Set this to your GitHub Pages base URL after enabling Pages.
+  # Example: https://yourusername.github.io/threat-brief
+  site_base_url: ""

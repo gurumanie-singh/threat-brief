@@ -142,7 +142,7 @@ def process() -> list[dict[str, Any]]:
         merged = existing + new_articles
 
         merged = group_articles(merged)
-        merged.sort(key=_rank_article)
+        merged.sort(key=lambda a: a.get("published", ""), reverse=True)
         if len(merged) > max_per_day:
             logger.info("Day %s: capped from %d to %d articles", day_str, len(merged), max_per_day)
             merged = merged[:max_per_day]

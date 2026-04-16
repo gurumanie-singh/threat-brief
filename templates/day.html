@@ -73,7 +73,7 @@
      data-title="{{ article.title|lower }}">
     <div class="card-top">
       <span class="card-source">{{ article.source }}</span>
-      <span class="card-date">{{ article.day|human_date }}</span>
+      <span class="card-date">{{ article.published|article_time }}</span>
       {% if article.severity %}
       <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
       {% endif %}

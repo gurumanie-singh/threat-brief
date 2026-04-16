@@ -127,6 +127,18 @@ def format_date_human(date_str: str) -> str:
         return date_str
 
 
+def format_datetime_local(iso_str: str, tz: Any) -> str:
+    """Convert ISO datetime to '15 April 2026, 14:00' in given timezone."""
+    try:
+        dt = datetime.fromisoformat(iso_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        dt_local = dt.astimezone(tz)
+        return f"{dt_local.day} {dt_local.strftime('%B')} {dt_local.year}, {dt_local.strftime('%H:%M')}"
+    except (ValueError, AttributeError, TypeError):
+        return iso_str
+
+
 def parse_date(date_str: str | None) -> datetime:
     """Best-effort date parse; falls back to now."""
     if not date_str:

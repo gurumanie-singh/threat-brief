@@ -132,5 +132,39 @@
     "email_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-33634.",
     "related_sources": [],
     "highlighted": false
+  },
+  {
+    "id": "bc0f50d27e402af4",
+    "title": "OpenCode Systems OC Messaging and Custom Messaging Gateway",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-085-02",
+    "published": "2026-03-26T12:00:00+00:00",
+    "fetched_at": "2026-04-16T21:44:00.841242+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-03-26",
+    "cves": [
+      "CVE-2025-70614"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": false,
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. The following versions of OC Messaging and Custom Messaging Gateway are affected:\n\n \n OC Messaging 6.32.2 (CVE-2025-70614)\n\n Custom Messaging Gateway 6.32.2 (CVE-2025-70614)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.1 \n OpenCode Systems \n OC Messaging and Custom Messaging Gateway \n Improper Access Control \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Communications\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Bulgaria\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-70614 \n \n OpenCode Systems Custom Messaging Gateway 6.32.2 contains a web access vulnerability allowing one authenticated user to gain access to another authenticated user's messages via a crafted identifier parameter. View CVE Details \n\n \n Affected Products \n OC Messaging and Custom Messaging Gateway \n \n Vendor: \nOpenCode Systems \n Product Version: \nOpenCode Systems OC Messaging: 6.32.2, OpenCode Systems Custom Messaging Gateway: 6.32.2 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe vulnerability was identified by OpenCode Systems on January 5, 2026 and remediated on January 6, 2026 with the release of version 6.33.11.",
+      "technical": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. The following versions of OC Messaging and Custom Messaging Gateway are affected:\n\n \n OC Messaging 6.32.2 (CVE-2025-70614)\n\n Custom Messaging Gateway 6.32.2 (CVE-2025-70614)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.1 \n OpenCode Systems \n OC Messaging and Custom Messaging Gateway \n Improper Access Control \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Communications\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Bulgaria\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-70614 \n \n OpenCode Systems Custom Messaging Gateway 6.32.2 contains a web access vulnerability allowing one authenticated user to gain access to another authenticated user's messages via a crafted identifier parameter. Recommended Practices \n CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time.\n\nReferenced vulnerabilities: CVE-2025-70614.",
+      "impact": "The following versions of OC Messaging and Custom Messaging Gateway are affected:\n\n \n OC Messaging 6.32.2 (CVE-2025-70614)\n\n Custom Messaging Gateway 6.32.2 (CVE-2025-70614)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.1 \n OpenCode Systems \n OC Messaging and Custom Messaging Gateway \n Improper Access Control \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Communications\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Bulgaria\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-70614 \n \n OpenCode Systems Custom Messaging Gateway 6.32.2 contains a web access vulnerability allowing one authenticated user to gain access to another authenticated user's messages via a crafted identifier parameter. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. CISA also recommends users take the following measures to protect themselves from social engineering attacks:\n\n Do not click web links or open attachments in unsolicited email messages.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. Tracked as CVE-2025-70614.",
+    "related_sources": [],
+    "highlighted": false
   }
 ]

@@ -177,6 +177,10 @@
     });
   }
 
+  /* ── Hourly auto-refresh ──────────────────────────── */
+
+  setTimeout(function () { location.reload(); }, 60 * 60 * 1000);
+
   /* ── Scroll reveal (minimal, disabled on mobile) ── */
 
   if (window.innerWidth >= 640) {

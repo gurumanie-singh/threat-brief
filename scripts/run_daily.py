@@ -1,17 +1,14 @@
-"""Unified daily pipeline entry point.
+"""Daily email pipeline entry point.
 
-Called by the GitHub Actions workflow every 30 minutes. The scheduler
-decides whether the current invocation should actually execute based on
-the user's configured timezone and the persistent state in state.json.
+Called by the daily email GitHub Actions workflow every 30 minutes. The
+scheduler decides whether the current invocation falls within the 07:00
+local-time window for sending the daily digest email.
 
-Flow:
+The hourly site-update workflow handles fetching, processing, and site
+generation separately. This script is responsible ONLY for:
   1. Check schedule gate (timezone + dedup)
-  2. Fetch, enrich, merge, group, prune articles
-  3. Generate static site + clean stale pages
-  4. Mark pipeline run complete in state
-  5. Check email gate (dedup)
-  6. Send email if not yet sent today
-  7. Mark email sent in state
+  2. Send email if not yet sent today
+  3. Mark state accordingly
 """
 
 from __future__ import annotations
@@ -26,8 +23,6 @@ from scripts.scheduler import (
     mark_run_complete,
     mark_email_sent,
 )
-from scripts.process_articles import process
-from scripts.generate_site import generate_site
 from scripts.send_email import send_email_now
 
 logger = logging.getLogger(__name__)
@@ -44,25 +39,20 @@ def main() -> None:
     if not run_ok:
         return
 
-    articles = process()
-    logger.info("Pipeline: %d articles processed", len(articles))
-
-    generate_site()
-
-    mark_run_complete()
-
     email_ok, email_reason = should_send_email()
     if email_ok:
         logger.info("Email: sending daily digest...")
         success = send_email_now()
         if success:
             mark_email_sent()
+            mark_run_complete()
         else:
-            logger.warning("Email: send failed -- will retry next eligible run")
+            logger.warning("Email: send failed -- will retry next eligible trigger")
     else:
         logger.info("Email: %s", email_reason)
+        mark_run_complete()
 
-    logger.info("Daily pipeline finished")
+    logger.info("Daily email pipeline finished")
 
 
 if __name__ == "__main__":

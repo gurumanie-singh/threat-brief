@@ -14,6 +14,7 @@ Cleans up stale generated pages for articles/days that no longer exist.
 
 from __future__ import annotations
 
+import json
 import logging
 import shutil
 import sys
@@ -26,6 +27,7 @@ from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup
 
 from scripts.config import (
+    DATA_DIR,
     DAYS_DIR,
     DOCS_DIR,
     TEMPLATES_DIR,
@@ -35,9 +37,9 @@ from scripts.config import (
 from scripts.enrich import generate_landscape_bullets, extract_top_threats
 from scripts.utils import (
     load_all_days, list_day_files, load_day,
-    format_date_human, now_utc,
+    format_date_human, format_datetime_local, now_utc,
 )
-from scripts.scheduler import get_local_today
+from scripts.scheduler import get_local_today, get_timezone, local_now
 
 logger = logging.getLogger(__name__)
 
@@ -80,6 +82,8 @@ def _setup_jinja(settings: dict[str, Any]) -> Environment:
     env.globals["site_base_url"] = settings.get("site_base_url", "")
     env.filters["paragraphs"] = _paragraphs_filter
     env.filters["human_date"] = format_date_human
+    tz = get_timezone()
+    env.filters["article_time"] = lambda iso_str: format_datetime_local(iso_str, tz)
     return env
 
 
@@ -90,6 +94,20 @@ def _copy_static_assets() -> None:
         src = TEMPLATES_DIR / filename
         if src.exists():
             shutil.copy2(src, dst / filename)
+
+
+def _write_last_updated(iso_str: str, human: str, timezone_str: str) -> None:
+    """Write site freshness metadata to data/last_updated.json."""
+    path = DATA_DIR / "last_updated.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    data = {
+        "updated_at_iso": iso_str,
+        "updated_at_human": human,
+        "timezone": timezone_str,
+    }
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(data, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
 
 
 def _cleanup_stale_pages(
@@ -131,6 +149,14 @@ def generate_site() -> None:
     today = get_local_today()
     today_human = format_date_human(today)
 
+    now_local = local_now()
+    last_updated_human = (
+        f"{now_local.day} {now_local.strftime('%B')} {now_local.year}, "
+        f"{now_local.strftime('%H:%M')}"
+    )
+    last_updated_iso = now_local.isoformat()
+    _write_last_updated(last_updated_iso, last_updated_human, str(get_timezone()))
+
     active_cutoff = (now_utc() - timedelta(days=active_days_count)).strftime("%Y-%m-%d")
     active_articles = [a for a in articles if a["day"] >= active_cutoff]
 
@@ -170,6 +196,7 @@ def generate_site() -> None:
         days_grouped=homepage_days,
         generated_at=today,
         generated_at_human=today_human,
+        last_updated_human=last_updated_human,
         landscape_bullets=landscape_bullets,
         top_threats=top_threats,
         all_tags=all_tags,

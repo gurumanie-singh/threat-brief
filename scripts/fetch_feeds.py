@@ -79,6 +79,7 @@ def _parse_entry(
         "source": source_name,
         "link": link,
         "published": published_dt.isoformat(),
+        "fetched_at": now_utc().isoformat(),
         "summary": summary,
         "full_content": full_content,
         "tags": tags,

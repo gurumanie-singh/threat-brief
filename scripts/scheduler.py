@@ -73,10 +73,10 @@ def should_run(force: bool = False) -> tuple[bool, str]:
     Returns (should_execute, human_reason).
 
     Logic:
-      1. If already ran today -> skip (even if forced, to prevent double processing)
-      2. If force=True -> run (for manual workflow_dispatch)
-      3. If local hour == EXECUTION_HOUR -> run
-      4. Otherwise -> skip
+      1. If force=True -> run (manual workflow_dispatch always works)
+      2. If already ran today -> skip
+      3. If local hour < EXECUTION_HOUR -> skip (too early, wait for window)
+      4. Otherwise -> run (first trigger at or after EXECUTION_HOUR)
     """
     tz = get_timezone()
     now = datetime.now(tz)
@@ -85,16 +85,16 @@ def should_run(force: bool = False) -> tuple[bool, str]:
     state = load_state()
     last_run = state.get("last_run_date", "")
 
+    if force:
+        return True, f"Manual trigger for {today} at {current_time} {tz}"
+
     if last_run == today:
         return False, f"Already ran today ({today} {tz})"
 
-    if force:
-        return True, f"Manual trigger for {today}"
-
-    if now.hour != EXECUTION_HOUR:
+    if now.hour < EXECUTION_HOUR:
         return False, (
-            f"Outside window (now {current_time} {tz}, "
-            f"target {EXECUTION_HOUR:02d}:00-{EXECUTION_HOUR:02d}:59)"
+            f"Too early (now {current_time} {tz}, "
+            f"waiting for {EXECUTION_HOUR:02d}:00)"
         )
 
     return True, f"Executing for {today} at {current_time} {tz}"

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-08</title>
+  <title>Threat Brief — 8 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,319 +22,546 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">8 April 2026</h1>
+      <span class="brief-sub">15 articles</span>
     </div>
-    <h1 class="hero-title">8 April 2026</h1>
-    <p class="hero-desc">
-      15 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>3 critical-severity issues detected with active exploitation reported</li>
-      <li>AWS ecosystem affected by multiple advisories</li>
-      <li>Several new data breach disclosures reported</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/ca8d72cab289e412.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="new chaos variant targets misconfigured cloud deployments, adds socks proxy">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">8 April 2026, 12:51</span>
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
+      </div>
     </div>
-    <h3 class="card-title">New Chaos Variant Targets Misconfigured Cloud Deployments, Adds SOCKS Proxy</h3>
-    <p class="card-summary">Cybersecurity researchers have flagged a new variant ofmalware called Chaosthat&#39;scapable of hitting misconfigured cloud deployments, marking an expansion of the botnet&#39;s targeting infrastructure.
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="new chaos variant targets misconfigured cloud deployments, adds socks proxy"
+       data-id="ca8d72cab289e412"
+       data-published="2026-04-08T23:21:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T23:21:00+05:30" title="8 April 2026, 12:51">8 April 2026, 12:51</time>
+      </div>
+      <h3 class="card-title">New Chaos Variant Targets Misconfigured Cloud Deployments, Adds SOCKS Proxy</h3>
+      <p class="card-summary">Cybersecurity researchers have flagged a new variant ofmalware called Chaosthat&#39;scapable of hitting misconfigured cloud deployments, marking an expansion of the botnet&#39;s targeting infrastructure.
 &#34;Chaos malware is increasingly targeting misconfigured cloud deployments, expanding beyond its traditional focus on routers and edge devices,&#34; Darktrace said in a new report.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/77513aa4bdb07d33.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="masjesu botnet emerges as ddos-for-hire service targeting global iot devices">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">8 April 2026, 11:30</span>
     </div>
-    <h3 class="card-title">Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices</h3>
-    <p class="card-summary">Cybersecurity researchers have lifted the curtain on a stealthy botnet that&#39;s designed for distributed denial-of-service (DDoS) attacks. Called Masjesu, the botnet has been advertised via Telegram as a DDoS-for-hire service since it first surfaced in 2023.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have flagged a new variant ofmalware called Chaosthat&#39;scapable of hitting misconfigured cloud deployments, marking an expansion of the botnet&#39;s targeting infrastructure.</p></div>
+      <div class="detail-links">
+        <a href="../articles/ca8d72cab289e412.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/new-chaos-variant-targets-misconfigured.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/2e07cfcac2bfe094.html"
-     class="article-card"
-     data-tags="ransomware"
-     data-vendors=""
-     data-severity=""
-     data-title="threat actors get crafty with emojis to escape detection">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 15:21</span>
-    </div>
-    <h3 class="card-title">Threat Actors Get Crafty With Emojis to Escape Detection</h3>
-    <p class="card-summary">When  means &#34;bot available,&#34;  signifies &#34;toolkit,&#34; or  translates to &#34;big ransom,&#34; bad actors can evade filters and keep it all on the down-low.</p>
-    <div class="card-footer">
-      <span class="tag">ransomware</span>
-    </div>
-  </a>
-  <a href="../articles/f458ffb03f24818d.html"
-     class="article-card"
-     data-tags="vulnerability"
-     data-vendors=""
-     data-severity=""
-     data-title="ai-led remediation crisis prompts hackerone to pause bug bounties">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 14:47</span>
-    </div>
-    <h3 class="card-title">AI-Led Remediation Crisis Prompts HackerOne to Pause Bug Bounties</h3>
-    <p class="card-summary">Discovery used to be the bottleneck for open source bugs, but with automated discovery, remediation&#39;s the bottleneck, which bounties don&#39;t fund.</p>
-    <div class="card-footer">
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/b1a040eb9484beae.html"
-     class="article-card"
-     data-tags="apt,malware,phishing"
-     data-vendors=""
-     data-severity=""
-     data-title="apt28 deploys prismex malware in campaign targeting ukraine and nato allies">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="masjesu botnet emerges as ddos-for-hire service targeting global iot devices"
+       data-id="77513aa4bdb07d33"
+       data-published="2026-04-08T22:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T22:00:00+05:30" title="8 April 2026, 11:30">8 April 2026, 11:30</time>
+      </div>
+      <h3 class="card-title">Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices</h3>
+      <p class="card-summary">Cybersecurity researchers have lifted the curtain on a stealthy botnet that&#39;s designed for distributed denial-of-service (DDoS) attacks. Called Masjesu, the botnet has been advertised via Telegram as a DDoS-for-hire service since it first surfaced in 2023.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">8 April 2026, 08:50</span>
     </div>
-    <h3 class="card-title">APT28 Deploys PRISMEX Malware in Campaign Targeting Ukraine and NATO Allies</h3>
-    <p class="card-summary">The Russian threat actor known as APT28 (aka Forest Blizzard and Pawn Storm) has been linked to a fresh spear-phishing campaign targeting Ukraine and its allies to deploy a previously undocumented malware suite codenamed PRISMEX.
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have lifted the curtain on a stealthy botnet that&#39;s designed for distributed denial-of-service (DDoS) attacks. Called Masjesu, the botnet has been advertised via Telegram as a DDoS-for-hire service since it first surfaced in 2023. It&#39;s capable of targeting a wide range of IoT devices, such as routers and gateways, spanning multiple architectures. &#34;Built for</p></div>
+      <div class="detail-links">
+        <a href="../articles/77513aa4bdb07d33.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/masjesu-botnet-emerges-as-ddos-for-hire.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity=""
+       data-title="threat actors get crafty with emojis to escape detection"
+       data-id="2e07cfcac2bfe094"
+       data-published="2026-04-08T20:21:32+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T20:21:32+00:00" title="8 April 2026, 15:21">8 April 2026, 15:21</time>
+      </div>
+      <h3 class="card-title">Threat Actors Get Crafty With Emojis to Escape Detection</h3>
+      <p class="card-summary">When  means &#34;bot available,&#34;  signifies &#34;toolkit,&#34; or  translates to &#34;big ransom,&#34; bad actors can evade filters and keep it all on the down-low.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>When  means &#34;bot available,&#34;  signifies &#34;toolkit,&#34; or  translates to &#34;big ransom,&#34; bad actors can evade filters and keep it all on the down-low.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2e07cfcac2bfe094.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/emojis-power-covert-threat-actor-communications" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity=""
+       data-title="ai-led remediation crisis prompts hackerone to pause bug bounties"
+       data-id="f458ffb03f24818d"
+       data-published="2026-04-08T19:47:32+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T19:47:32+00:00" title="8 April 2026, 14:47">8 April 2026, 14:47</time>
+      </div>
+      <h3 class="card-title">AI-Led Remediation Crisis Prompts HackerOne to Pause Bug Bounties</h3>
+      <p class="card-summary">Discovery used to be the bottleneck for open source bugs, but with automated discovery, remediation&#39;s the bottleneck, which bounties don&#39;t fund.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Discovery used to be the bottleneck for open source bugs, but with automated discovery, remediation&#39;s the bottleneck, which bounties don&#39;t fund.</p></div>
+      <div class="detail-links">
+        <a href="../articles/f458ffb03f24818d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/ai-led-remediation-crisis-prompts-hackerone-pause-bug-bounties" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity=""
+       data-title="apt28 deploys prismex malware in campaign targeting ukraine and nato allies"
+       data-id="b1a040eb9484beae"
+       data-published="2026-04-08T19:20:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T19:20:00+05:30" title="8 April 2026, 08:50">8 April 2026, 08:50</time>
+      </div>
+      <h3 class="card-title">APT28 Deploys PRISMEX Malware in Campaign Targeting Ukraine and NATO Allies</h3>
+      <p class="card-summary">The Russian threat actor known as APT28 (aka Forest Blizzard and Pawn Storm) has been linked to a fresh spear-phishing campaign targeting Ukraine and its allies to deploy a previously undocumented malware suite codenamed PRISMEX.
 &#34;PRISMEX combines advanced steganography, component object model (COM) hijacking, and legitimate cloud service abuse for command-and-control,&#34; Trend Micro.</p>
-    <div class="card-footer">
-      <span class="tag">apt</span>
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
-    </div>
-  </a>
-  <a href="../articles/c2287cf2c6778b0d.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="shrinking the iam attack surface through identity visibility and intelligence platforms (ivip)">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">8 April 2026, 06:30</span>
     </div>
-    <h3 class="card-title">Shrinking the IAM Attack Surface through Identity Visibility and Intelligence Platforms (IVIP)</h3>
-    <p class="card-summary">The Fragmented State of Modern Enterprise Identity
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Russian threat actor known as APT28 (aka Forest Blizzard and Pawn Storm) has been linked to a fresh spear-phishing campaign targeting Ukraine and its allies to deploy a previously undocumented malware suite codenamed PRISMEX.</p></div>
+      <div class="detail-links">
+        <a href="../articles/b1a040eb9484beae.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/apt28-deploys-prismex-malware-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="shrinking the iam attack surface through identity visibility and intelligence platforms (ivip)"
+       data-id="c2287cf2c6778b0d"
+       data-published="2026-04-08T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T17:00:00+05:30" title="8 April 2026, 06:30">8 April 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Shrinking the IAM Attack Surface through Identity Visibility and Intelligence Platforms (IVIP)</h3>
+      <p class="card-summary">The Fragmented State of Modern Enterprise Identity
 Enterprise IAM is approaching a breaking point. As organizations scale, identity becomes increasingly fragmented across thousands of applications, decentralized teams, machine identities, and autonomous systems.</p>
-    <div class="card-footer">
-    </div>
-  </a>
-  <a href="../articles/ce4963fb4432e60d.html"
-     class="article-card"
-     data-tags="breach"
-     data-vendors=""
-     data-severity=""
-     data-title="fraud rockets higher in mobile-first latin america">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 10:45</span>
-    </div>
-    <h3 class="card-title">Fraud Rockets Higher in Mobile-First Latin America</h3>
-    <p class="card-summary">Cyber-fraudsters move quickly from compromised devices to account takeover to funds transfer, shifting money before many financial institutions can react.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
-    </div>
-  </a>
-  <a href="../articles/cfd2389e222dc4ce.html"
-     class="article-card"
-     data-tags="vulnerability,zero-day"
-     data-vendors="AWS,Apple,Cisco"
-     data-severity="critical"
-     data-title="anthropic&#39;s claude mythos finds thousands of zero-day flaws across major systems">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">8 April 2026, 04:16</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Anthropic&#39;s Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems</h3>
-    <p class="card-summary">Artificial Intelligence (AI) company Anthropic announced a new cybersecurity initiative called Project Glasswing that will use a preview version of its new frontier model, Claude Mythos, to find and address security vulnerabilities. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Apple</span>
-      <span class="vendor-tag">Cisco</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Fragmented State of Modern Enterprise Identity Enterprise IAM is approaching a breaking point. As organizations scale, identity becomes increasingly fragmented across thousands of applications, decentralized teams, machine identities, and autonomous systems. The result is Identity Dark Matter: identity activity that sits outside the visibility of centralized IAM and</p></div>
+      <div class="detail-links">
+        <a href="../articles/c2287cf2c6778b0d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/shrinking-iam-attack-surface-through.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/7175269a41d33e35.html"
-     class="article-card"
-     data-tags=""
-     data-vendors="AWS"
-     data-severity=""
-     data-title="full sail university to open ibm cyber defense range powered by aws and cloud range on campus">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="breach"
+       data-vendors=""
+       data-severity=""
+       data-title="fraud rockets higher in mobile-first latin america"
+       data-id="ce4963fb4432e60d"
+       data-published="2026-04-08T15:45:11+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T15:45:11+00:00" title="8 April 2026, 10:45">8 April 2026, 10:45</time>
+      </div>
+      <h3 class="card-title">Fraud Rockets Higher in Mobile-First Latin America</h3>
+      <p class="card-summary">Cyber-fraudsters move quickly from compromised devices to account takeover to funds transfer, shifting money before many financial institutions can react.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 09:43</span>
     </div>
-    <h3 class="card-title">Full Sail University to Open IBM Cyber Defense Range Powered by AWS and Cloud Range on Campus</h3>
-    <p class="card-summary">Full Sail University to Open IBM Cyber Defense Range Powered by AWS and Cloud Range on Campus.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cyber-fraudsters move quickly from compromised devices to account takeover to funds transfer, shifting money before many financial institutions can react.</p></div>
+      <div class="detail-links">
+        <a href="../articles/ce4963fb4432e60d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/fraud-mobile-first-latin-america" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/ee530dcca9767dc5.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="niobium introduces the fog">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 09:22</span>
-    </div>
-    <h3 class="card-title">Niobium Introduces The Fog</h3>
-    <p class="card-summary">Niobium Introduces The Fog.</p>
-    <div class="card-footer">
-    </div>
-  </a>
-  <a href="../articles/03771291c46e0497.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="pluralsight launches secureready to help organizations build job-ready cybersecurity teams">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 09:08</span>
-    </div>
-    <h3 class="card-title">Pluralsight Launches SecureReady to Help Organizations Build Job-Ready Cybersecurity Teams</h3>
-    <p class="card-summary">Pluralsight Launches SecureReady to Help Organizations Build Job-Ready Cybersecurity Teams.</p>
-    <div class="card-footer">
-    </div>
-  </a>
-  <a href="../articles/74bd0b56af936528.html"
-     class="article-card"
-     data-tags="breach,malware"
-     data-vendors=""
-     data-severity="critical"
-     data-title="iranian threat actors disrupt us critical infrastructure via exposed plcs">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 08:46</span>
-      <span class="card-severity critical">critical</span>
-    </div>
-    <h3 class="card-title">Iranian Threat Actors Disrupt US Critical Infrastructure via Exposed PLCs</h3>
-    <p class="card-summary">Attackers compromised Internet-facing OT devices and caused file and display manipulation, operational disruption, and financial losses across sectors. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/3844de73ed011135.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="n. korean hackers spread 1,700 malicious packages across npm, pypi, go, rust">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability,zero-day"
+       data-vendors="AWS,Apple,Cisco"
+       data-severity="critical"
+       data-title="anthropic&#39;s claude mythos finds thousands of zero-day flaws across major systems"
+       data-id="cfd2389e222dc4ce"
+       data-published="2026-04-08T14:46:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-04-08T14:46:00+05:30" title="8 April 2026, 04:16">8 April 2026, 04:16</time>
+      </div>
+      <h3 class="card-title">Anthropic&#39;s Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems</h3>
+      <p class="card-summary">Artificial Intelligence (AI) company Anthropic announced a new cybersecurity initiative called Project Glasswing that will use a preview version of its new frontier model, Claude Mythos, to find and address security vulnerabilities. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">8 April 2026, 02:47</span>
     </div>
-    <h3 class="card-title">N. Korean Hackers Spread 1,700 Malicious Packages Across npm, PyPI, Go, Rust</h3>
-    <p class="card-summary">The North Korea-linked persistent campaign known as Contagious Interview has spread its tentacles by publishing malicious packages targeting the Go, Rust, and PHP ecosystems.
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Artificial Intelligence (AI) company Anthropic announced a new cybersecurity initiative called Project Glasswing that will use a preview version of its new frontier model, Claude Mythos, to find and address security vulnerabilities. The model will be used by a small set of organizations, including Amazon Web Services, Apple, Broadcom, Cisco, CrowdStrike,&amp;</p></div>
+      <div class="detail-links">
+        <a href="../articles/cfd2389e222dc4ce.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors="AWS"
+       data-severity=""
+       data-title="full sail university to open ibm cyber defense range powered by aws and cloud range on campus"
+       data-id="7175269a41d33e35"
+       data-published="2026-04-08T14:43:49+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-04-08T14:43:49+00:00" title="8 April 2026, 09:43">8 April 2026, 09:43</time>
+      </div>
+      <h3 class="card-title">Full Sail University to Open IBM Cyber Defense Range Powered by AWS and Cloud Range on Campus</h3>
+      <p class="card-summary">Full Sail University to Open IBM Cyber Defense Range Powered by AWS and Cloud Range on Campus.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Full Sail University to Open IBM Cyber Defense Range Powered by AWS and Cloud Range on Campus</p></div>
+      <div class="detail-links">
+        <a href="../articles/7175269a41d33e35.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/full-sail-university-ibm-cyber-defense-range-aws-cloud-range" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="niobium introduces the fog"
+       data-id="ee530dcca9767dc5"
+       data-published="2026-04-08T14:22:33+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T14:22:33+00:00" title="8 April 2026, 09:22">8 April 2026, 09:22</time>
+      </div>
+      <h3 class="card-title">Niobium Introduces The Fog</h3>
+      <p class="card-summary">Niobium Introduces The Fog.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Niobium Introduces The Fog. Niobium Introduces The Fog</p></div>
+      <div class="detail-links">
+        <a href="../articles/ee530dcca9767dc5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/endpoint-security/niobium-introduces-the-fog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="pluralsight launches secureready to help organizations build job-ready cybersecurity teams"
+       data-id="03771291c46e0497"
+       data-published="2026-04-08T14:08:22+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T14:08:22+00:00" title="8 April 2026, 09:08">8 April 2026, 09:08</time>
+      </div>
+      <h3 class="card-title">Pluralsight Launches SecureReady to Help Organizations Build Job-Ready Cybersecurity Teams</h3>
+      <p class="card-summary">Pluralsight Launches SecureReady to Help Organizations Build Job-Ready Cybersecurity Teams.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Pluralsight Launches SecureReady to Help Organizations Build Job-Ready Cybersecurity Teams</p></div>
+      <div class="detail-links">
+        <a href="../articles/03771291c46e0497.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/remote-workforce/pluralsight-launches-secureready-cybersecurity-teams" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="critical"
+       data-title="iranian threat actors disrupt us critical infrastructure via exposed plcs"
+       data-id="74bd0b56af936528"
+       data-published="2026-04-08T13:46:29+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-08T13:46:29+00:00" title="8 April 2026, 08:46">8 April 2026, 08:46</time>
+      </div>
+      <h3 class="card-title">Iranian Threat Actors Disrupt US Critical Infrastructure via Exposed PLCs</h3>
+      <p class="card-summary">Attackers compromised Internet-facing OT devices and caused file and display manipulation, operational disruption, and financial losses across sectors. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers compromised Internet-facing OT devices and caused file and display manipulation, operational disruption, and financial losses across sectors.</p></div>
+      <div class="detail-links">
+        <a href="../articles/74bd0b56af936528.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/ics-ot-security/iranian-threat-actors-us-critical-infrastructure-exposed-plcs" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="n. korean hackers spread 1,700 malicious packages across npm, pypi, go, rust"
+       data-id="3844de73ed011135"
+       data-published="2026-04-08T13:17:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-08T13:17:00+05:30" title="8 April 2026, 02:47">8 April 2026, 02:47</time>
+      </div>
+      <h3 class="card-title">N. Korean Hackers Spread 1,700 Malicious Packages Across npm, PyPI, Go, Rust</h3>
+      <p class="card-summary">The North Korea-linked persistent campaign known as Contagious Interview has spread its tentacles by publishing malicious packages targeting the Go, Rust, and PHP ecosystems.
 &#34;The threat actor&#39;s packages were designed to impersonate legitimate developer tooling [...], while quietly functioning as malware loaders, extending Contagious Interview’s established playbook into a coordinated.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/a16e0de7ec06cc95.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,vulnerability"
-     data-vendors="Ivanti"
-     data-severity=""
-     data-title="cisa adds one known exploited vulnerability to catalog">
-    <div class="card-top">
-      <span class="card-source">CISA Alerts</span>
-      <span class="card-date">8 April 2026, 07:00</span>
-    </div>
-    <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
-    <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-1340.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Ivanti</span>
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/5d82adb4d16e40a9.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity="critical"
-     data-title="iran-linked hackers disrupt u.s. critical infrastructure by targeting internet-exposed plcs">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 23:23</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Iran-Linked Hackers Disrupt U.S. Critical Infrastructure by Targeting Internet-Exposed PLCs</h3>
-    <p class="card-summary">Iran-affiliated cyber actors are targeting internet-facing operational technology (OT) devices across critical infrastructures in the U.S., including programmable logic controllers (PLCs), cybersecurity and intelligence agencies warned Tuesday.
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The North Korea-linked persistent campaign known as Contagious Interview has spread its tentacles by publishing malicious packages targeting the Go, Rust, and PHP ecosystems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3844de73ed011135.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Ivanti"
+       data-severity=""
+       data-title="cisa adds one known exploited vulnerability to catalog"
+       data-id="a16e0de7ec06cc95"
+       data-published="2026-04-08T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-04-08T12:00:00+00:00" title="8 April 2026, 07:00">8 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-1340.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-1340 Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability</p>
+<p>This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a16e0de7ec06cc95.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/04/08/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="critical"
+       data-title="iran-linked hackers disrupt u.s. critical infrastructure by targeting internet-exposed plcs"
+       data-id="5d82adb4d16e40a9"
+       data-published="2026-04-08T09:53:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-08T09:53:00+05:30" title="7 April 2026, 23:23">7 April 2026, 23:23</time>
+      </div>
+      <h3 class="card-title">Iran-Linked Hackers Disrupt U.S. Critical Infrastructure by Targeting Internet-Exposed PLCs</h3>
+      <p class="card-summary">Iran-affiliated cyber actors are targeting internet-facing operational technology (OT) devices across critical infrastructures in the U.S., including programmable logic controllers (PLCs), cybersecurity and intelligence agencies warned Tuesday.
 &#34;These attacks have led to diminished PLC functionality, manipulation of display data and, in some cases, operational disruption and financial. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
     </div>
-  </a>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Iran-affiliated cyber actors are targeting internet-facing operational technology (OT) devices across critical infrastructures in the U.S., including programmable logic controllers (PLCs), cybersecurity and intelligence agencies warned Tuesday.</p></div>
+      <div class="detail-links">
+        <a href="../articles/5d82adb4d16e40a9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
 
 </div>
   </main>

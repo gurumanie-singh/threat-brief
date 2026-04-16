@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-06</title>
+  <title>Threat Brief — 6 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,184 +22,292 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">6 April 2026</h1>
+      <span class="brief-sub">7 articles</span>
     </div>
-    <h1 class="hero-title">6 April 2026</h1>
-    <p class="hero-desc">
-      7 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>1 critical-severity issue detected with active exploitation reported</li>
-      <li>1 item requires immediate action — patches or mitigations available</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/6869293eae5578ab.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="ai-assisted supply chain attack targets github">
-    <div class="card-top">
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="ai-assisted supply chain attack targets github"
+       data-id="6869293eae5578ab"
+       data-published="2026-04-06T21:38:53+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-06T21:38:53+00:00" title="6 April 2026, 16:38">6 April 2026, 16:38</time>
+      </div>
+      <h3 class="card-title">AI-Assisted Supply Chain Attack Targets GitHub</h3>
+      <p class="card-summary">PRT-scan is the second campaign in recent months where a threat actor appears to have leveraged AI for automated targeting of a widespread GitHub misconfiguration.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">6 April 2026, 16:38</span>
     </div>
-    <h3 class="card-title">AI-Assisted Supply Chain Attack Targets GitHub</h3>
-    <p class="card-summary">PRT-scan is the second campaign in recent months where a threat actor appears to have leveraged AI for automated targeting of a widespread GitHub misconfiguration.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>PRT-scan is the second campaign in recent months where a threat actor appears to have leveraged AI for automated targeting of a widespread GitHub misconfiguration.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6869293eae5578ab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/ai-assisted-supply-chain-attack-targets-github" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/2e58095857e3913c.html"
-     class="article-card"
-     data-tags="phishing"
-     data-vendors=""
-     data-severity=""
-     data-title="axios attack shows how complex social engineering is industrialized">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity=""
+       data-title="axios attack shows how complex social engineering is industrialized"
+       data-id="2e58095857e3913c"
+       data-published="2026-04-06T20:55:44+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-06T20:55:44+00:00" title="6 April 2026, 15:55">6 April 2026, 15:55</time>
+      </div>
+      <h3 class="card-title">Axios Attack Shows How Complex Social Engineering Is Industrialized</h3>
+      <p class="card-summary">The attack on the popular NPM package Axios is just one of many targeting maintainers and has shone a light on how threat actors can scale sophisticated social engineering campaigns.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">6 April 2026, 15:55</span>
     </div>
-    <h3 class="card-title">Axios Attack Shows How Complex Social Engineering Is Industrialized</h3>
-    <p class="card-summary">The attack on the popular NPM package Axios is just one of many targeting maintainers and has shone a light on how threat actors can scale sophisticated social engineering campaigns.</p>
-    <div class="card-footer">
-      <span class="tag">phishing</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The attack on the popular NPM package Axios is just one of many targeting maintainers and has shone a light on how threat actors can scale sophisticated social engineering campaigns.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2e58095857e3913c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/axios-attack-complex-social-engineering-industrialized" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/cf4ad0f8355c3407.html"
-     class="article-card action-required"
-     data-tags="cve,exploit,patch,vulnerability,zero-day"
-     data-vendors="Fortinet"
-     data-severity="critical"
-     data-title="fortinet issues emergency patch for forticlient zero-day">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors="Fortinet"
+       data-severity="critical"
+       data-title="fortinet issues emergency patch for forticlient zero-day"
+       data-id="cf4ad0f8355c3407"
+       data-published="2026-04-06T20:24:19+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-04-06T20:24:19+00:00" title="6 April 2026, 15:24">6 April 2026, 15:24</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Fortinet Issues Emergency Patch for FortiClient Zero-Day</h3>
+      <p class="card-summary">The authentication bypass flaw, tracked as CVE-2026-35616, is the latest in a series of Fortinet vulnerabilities that have been exploited in the wild. Tracked as CVE-2026-35616. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <div class="card-related">Also: CISA Alerts</div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">6 April 2026, 15:24</span>
-      <span class="card-severity critical">critical</span>
-      <span class="card-action-badge">Action Required</span>
     </div>
-    <h3 class="card-title">Fortinet Issues Emergency Patch for FortiClient Zero-Day</h3>
-    <p class="card-summary">The authentication bypass flaw, tracked as CVE-2026-35616, is the latest in a series of Fortinet vulnerabilities that have been exploited in the wild. Tracked as CVE-2026-35616. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Fortinet</span>
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The authentication bypass flaw, tracked as CVE-2026-35616, is the latest in a series of Fortinet vulnerabilities that have been exploited in the wild.</p></div>
+      <div class="detail-links">
+        <a href="../articles/cf4ad0f8355c3407.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/fortinet-emergency-patch-forticlient-zero-day" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-    <div class="card-related">Also covered by: CISA Alerts</div>
-  </a>
-  <a href="../articles/62e334f391c0e270.html"
-     class="article-card"
-     data-tags="exploit,malware"
-     data-vendors=""
-     data-severity=""
-     data-title="automated credential harvesting campaign exploits react2shell flaw">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="exploit,malware"
+       data-vendors=""
+       data-severity=""
+       data-title="automated credential harvesting campaign exploits react2shell flaw"
+       data-id="62e334f391c0e270"
+       data-published="2026-04-06T15:31:09+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-06T15:31:09+00:00" title="6 April 2026, 10:31">6 April 2026, 10:31</time>
+      </div>
+      <h3 class="card-title">Automated Credential Harvesting Campaign Exploits React2Shell Flaw</h3>
+      <p class="card-summary">An emerging threat cluster tracked as UAT-10608 is exploiting vulnerable Web-exposed Next.js apps and using an automated tool to exfiltrate credentials, secrets, and other system data.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">6 April 2026, 10:31</span>
     </div>
-    <h3 class="card-title">Automated Credential Harvesting Campaign Exploits React2Shell Flaw</h3>
-    <p class="card-summary">An emerging threat cluster tracked as UAT-10608 is exploiting vulnerable Web-exposed Next.js apps and using an automated tool to exfiltrate credentials, secrets, and other system data.</p>
-    <div class="card-footer">
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An emerging threat cluster tracked as UAT-10608 is exploiting vulnerable Web-exposed Next.js apps and using an automated tool to exfiltrate credentials, secrets, and other system data.</p></div>
+      <div class="detail-links">
+        <a href="../articles/62e334f391c0e270.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/automated-credential-harvesting-campaign-react2shell" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/c26e184b94b884d3.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="shadow ai in healthcare is here to stay">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="shadow ai in healthcare is here to stay"
+       data-id="c26e184b94b884d3"
+       data-published="2026-04-06T14:07:50+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-06T14:07:50+00:00" title="6 April 2026, 09:07">6 April 2026, 09:07</time>
+      </div>
+      <h3 class="card-title">Shadow AI in Healthcare Is Here to Stay</h3>
+      <p class="card-summary">Medical professionals are not going to stop using AI tools to manage growing workloads. Organizations should prioritize bolstering security protocols to limit their blast radius.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">6 April 2026, 09:07</span>
     </div>
-    <h3 class="card-title">Shadow AI in Healthcare Is Here to Stay</h3>
-    <p class="card-summary">Medical professionals are not going to stop using AI tools to manage growing workloads. Organizations should prioritize bolstering security protocols to limit their blast radius.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Medical professionals are not going to stop using AI tools to manage growing workloads. Organizations should prioritize bolstering security protocols to limit their blast radius.</p></div>
+      <div class="detail-links">
+        <a href="../articles/c26e184b94b884d3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/shadow-ai-in-healthcare-is-here-to-stay" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/299f27eef8c1693e.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="owasp genai security project gets update, new tools matrix">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="owasp genai security project gets update, new tools matrix"
+       data-id="299f27eef8c1693e"
+       data-published="2026-04-06T13:49:27+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-06T13:49:27+00:00" title="6 April 2026, 08:49">6 April 2026, 08:49</time>
+      </div>
+      <h3 class="card-title">OWASP GenAI Security Project Gets Update, New Tools Matrix</h3>
+      <p class="card-summary">In recognition of 21 generative AI risks, the standards group recommends that companies take separate but linked approaches to defending GenAI and agentic AI systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">6 April 2026, 08:49</span>
     </div>
-    <h3 class="card-title">OWASP GenAI Security Project Gets Update, New Tools Matrix</h3>
-    <p class="card-summary">In recognition of 21 generative AI risks, the standards group recommends that companies take separate but linked approaches to defending GenAI and agentic AI systems.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>In recognition of 21 generative AI risks, the standards group recommends that companies take separate but linked approaches to defending GenAI and agentic AI systems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/299f27eef8c1693e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/owasp-genai-security-project-update-matrix" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/14b04e52b8518c65.html"
-     class="article-card"
-     data-tags="breach,malware,ransomware,vulnerability"
-     data-vendors="Adobe"
-     data-severity=""
-     data-title="germany doxes “unkn,” head of ru ransomware gangs revil, gandcrab">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="breach,malware,ransomware,vulnerability"
+       data-vendors="Adobe"
+       data-severity=""
+       data-title="germany doxes “unkn,” head of ru ransomware gangs revil, gandcrab"
+       data-id="14b04e52b8518c65"
+       data-published="2026-04-06T02:07:17+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-04-06T02:07:17+00:00" title="5 April 2026, 21:07">5 April 2026, 21:07</time>
+      </div>
+      <h3 class="card-title">Germany Doxes “UNKN,” Head of RU Ransomware Gangs REvil, GandCrab</h3>
+      <p class="card-summary">An elusive hacker who went by the handle UNKN and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">Krebs on Security</span>
-      <span class="card-date">5 April 2026, 21:07</span>
     </div>
-    <h3 class="card-title">Germany Doxes “UNKN,” Head of RU Ransomware Gangs REvil, GandCrab</h3>
-    <p class="card-summary">An elusive hacker who went by the handle UNKN and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Adobe</span>
-      <span class="tag">breach</span>
-      <span class="tag">malware</span>
-      <span class="tag">ransomware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An elusive hacker who went by the handle UNKN and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021. Shchukin was named as UNKN (a.k.a.</p></div>
+      <div class="detail-links">
+        <a href="../articles/14b04e52b8518c65.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

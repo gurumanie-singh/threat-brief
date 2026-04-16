@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-03-27</title>
+  <title>Threat Brief — 27 March 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,69 +22,89 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">27 March 2026</h1>
+      <span class="brief-sub">1 article</span>
     </div>
-    <h1 class="hero-title">27 March 2026</h1>
-    <p class="hero-desc">
-      1 article from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>1 high-severity advisory published today</li>
-    </ul>
-  </div>
-
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-high" data-filter-group="severity" data-filter-value="high">high</button>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+      </ul>
     </div>
+  </div>
 
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/269859db7096deec.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,vulnerability"
-     data-vendors=""
-     data-severity="high"
-     data-title="cisa adds one known exploited vulnerability to catalog">
-    <div class="card-top">
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa adds one known exploited vulnerability to catalog"
+       data-id="269859db7096deec"
+       data-published="2026-03-27T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-03-27T12:00:00+00:00" title="27 March 2026, 07:00">27 March 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2025-53521. Severity is rated high.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">27 March 2026, 07:00</span>
-      <span class="card-severity high">high</span>
     </div>
-    <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
-    <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2025-53521. Severity is rated high.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-53521 F5 BIG-IP Remote Code Execution Vulnerability</p>
+<p>This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.</p></div>
+      <div class="detail-links">
+        <a href="../articles/269859db7096deec.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/03/27/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

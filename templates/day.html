@@ -1,100 +1,130 @@
 {% extends "base.html" %}
 
-{% block title %}{{ site_title }} — {{ day }}{% endblock %}
+{% block title %}{{ site_title }} — {{ day_human }}{% endblock %}
 
 {% block content %}
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="{{ prefix }}index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="{{ prefix }}index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">{{ day_human }}</h1>
+      <span class="brief-sub">{{ articles|length }} article{{ "s" if articles|length != 1 else "" }}</span>
     </div>
-    <h1 class="hero-title">{{ day_human }}</h1>
-    <p class="hero-desc">
-      {{ articles|length }} article{{ "s" if articles|length != 1 else "" }} from the day's cybersecurity landscape.
-    </p>
   </div>
 
   {% if landscape_bullets %}
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      {% for bullet in landscape_bullets %}
-      <li>{{ bullet }}</li>
-      {% endfor %}
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        {% for bullet in landscape_bullets %}
+        <li>{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
   {% endif %}
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    {% if all_severities %}
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-filters" id="quickFilters">
       {% for sev in all_severities %}
-      <button class="filter-btn severity-{{ sev }}" data-filter-group="severity" data-filter-value="{{ sev }}">{{ sev }}</button>
+      <button class="qf-btn qf-{{ sev }}" data-filter-group="severity" data-filter-value="{{ sev }}">{{ sev }}</button>
       {% endfor %}
+      {% if all_vendors or all_tags %}
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
+      {% endif %}
     </div>
-    {% endif %}
-
-    {% if all_vendors %}
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      {% for vendor in all_vendors[:12] %}
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="{{ vendor }}">{{ vendor }}</button>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if all_tags %}
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      {% for tag in all_tags %}
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="{{ tag }}">{{ tag }}</button>
-      {% endfor %}
-    </div>
-    {% endif %}
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  {% for article in articles %}
-  <a href="{{ prefix }}articles/{{ article.id }}.html"
-     class="article-card{% if article.action_required %} action-required{% endif %}"
-     data-tags="{{ article.tags|join(',') }}"
-     data-vendors="{{ article.vendors|default([])|join(',') }}"
-     data-severity="{{ article.severity or '' }}"
-     data-title="{{ article.title|lower }}">
-    <div class="card-top">
-      <span class="card-source">{{ article.source }}</span>
-      <span class="card-date">{{ article.published|article_time }}</span>
-      {% if article.severity %}
-      <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
-      {% endif %}
-      {% if article.action_required %}
-      <span class="card-action-badge">Action Required</span>
-      {% endif %}
+  {% if all_vendors or all_tags %}
+  <div class="adv-filters" id="advFilters" hidden>
+    {% if all_vendors %}
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        {% for vendor in all_vendors[:12] %}
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="{{ vendor }}">{{ vendor }}</button>
+        {% endfor %}
+      </div>
     </div>
-    <h3 class="card-title">{{ article.title }}</h3>
-    <p class="card-summary">{{ article.email_summary or article.summary }}</p>
-    <div class="card-footer">
-      {% for vendor in article.vendors|default([]) %}
-      <span class="vendor-tag">{{ vendor }}</span>
-      {% endfor %}
-      {% for tag in article.tags %}
-      <span class="tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
-    {% if article.related_sources %}
-    <div class="card-related">Also covered by: {{ article.related_sources|map(attribute='source')|join(', ') }}</div>
     {% endif %}
-  </a>
+    {% if all_tags %}
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        {% for tag in all_tags %}
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="{{ tag }}">{{ tag }}</button>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% for article in articles %}
+  <div class="article-card{% if article.action_required %} card--action{% endif %}{% if article.severity %} card--{{ article.severity }}{% endif %}"
+       data-tags="{{ article.tags|join(',') }}"
+       data-vendors="{{ article.vendors|default([])|join(',') }}"
+       data-severity="{{ article.severity or '' }}"
+       data-title="{{ article.title|lower }}"
+       data-id="{{ article.id }}"
+       data-published="{{ article.published }}"
+       data-action="{{ 'true' if article.action_required else '' }}">
+    <div class="card-body">
+      <div class="card-meta">
+        {% if article.severity %}
+        <span class="sev-badge sev-{{ article.severity }}">{{ article.severity }}</span>
+        {% endif %}
+        {% for vendor in article.vendors|default([]) %}
+        {% if loop.index <= 2 %}<span class="vtag">{{ vendor }}</span>{% endif %}
+        {% endfor %}
+        <time class="meta-time" data-iso="{{ article.published }}" title="{{ article.published|article_time }}">{{ article.published|article_time }}</time>
+        {% if article.action_required %}
+        <span class="action-badge">Action</span>
+        {% endif %}
+      </div>
+      <h3 class="card-title">{{ article.title }}</h3>
+      <p class="card-summary">{{ article.email_summary or article.summary }}</p>
+      <div class="card-bottom">
+        {% if article.sections %}
+        <div class="card-hints">
+          {% if article.sections.technical %}<span class="sec-hint">Technical</span>{% endif %}
+          {% if article.sections.impact %}<span class="sec-hint">Impact</span>{% endif %}
+          {% if article.sections.mitigation %}<span class="sec-hint">Mitigation</span>{% endif %}
+        </div>
+        {% endif %}
+        <div class="card-tags">
+          {% for tag in article.tags[:4] %}
+          <span class="ttag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% if article.related_sources %}
+      <div class="card-related">Also: {{ article.related_sources|map(attribute='source')|join(', ') }}</div>
+      {% endif %}
+      <span class="card-source">{{ article.source }}</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      {% if article.sections and article.sections.overview %}
+      <div class="detail-text">{{ article.sections.overview|paragraphs }}</div>
+      {% endif %}
+      <div class="detail-links">
+        <a href="{{ prefix }}articles/{{ article.id }}.html" class="detail-read">Read full analysis →</a>
+        <a href="{{ article.link }}" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   {% endfor %}
 
   {% if not articles %}

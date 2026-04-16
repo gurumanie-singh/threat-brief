@@ -178,6 +178,17 @@ def generate_site() -> None:
     if not todays_articles and all_days_grouped:
         todays_articles = all_days_grouped[0][1]
 
+    severity_counts: dict[str, int] = {}
+    action_count = 0
+    for a in todays_articles:
+        sev = a.get("severity")
+        if sev:
+            severity_counts[sev] = severity_counts.get(sev, 0) + 1
+        if a.get("action_required"):
+            action_count += 1
+
+    tz_abbr = now_local.strftime("%Z") or str(get_timezone())
+
     landscape_bullets = generate_landscape_bullets(todays_articles)
 
     cutoff_7d = (now_utc() - timedelta(days=7)).strftime("%Y-%m-%d")
@@ -197,6 +208,11 @@ def generate_site() -> None:
         generated_at=today,
         generated_at_human=today_human,
         last_updated_human=last_updated_human,
+        last_updated_iso=last_updated_iso,
+        timezone_abbr=tz_abbr,
+        severity_counts=severity_counts,
+        action_count=action_count,
+        total_today=len(todays_articles),
         landscape_bullets=landscape_bullets,
         top_threats=top_threats,
         all_tags=all_tags,

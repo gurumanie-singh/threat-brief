@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-03-26</title>
+  <title>Threat Brief — 26 March 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,174 +22,328 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">26 March 2026</h1>
+      <span class="brief-sub">5 articles</span>
     </div>
-    <h1 class="hero-title">26 March 2026</h1>
-    <p class="hero-desc">
-      5 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>1 item requires immediate action — patches or mitigations available</li>
-      <li>Multiple phishing campaigns identified targeting enterprises</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-low" data-filter-group="severity" data-filter-value="low">low</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/757ecfa89a519a68.html"
-     class="article-card action-required"
-     data-tags="cve,exploit,malware,phishing,vulnerability"
-     data-vendors=""
-     data-severity="low"
-     data-title="wago gmbh &amp; co. kg industrial managed switches">
-    <div class="card-top">
-      <span class="card-source">CISA Alerts</span>
-      <span class="card-date">26 March 2026, 07:00</span>
-      <span class="card-severity low">low</span>
-      <span class="card-action-badge">Action Required</span>
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
     </div>
-    <h3 class="card-title">WAGO GmbH &amp; Co. KG Industrial Managed Switches</h3>
-    <p class="card-summary">View CSAF 
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="wago gmbh &amp; co. kg industrial managed switches"
+       data-id="757ecfa89a519a68"
+       data-published="2026-03-26T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-03-26T12:00:00+00:00" title="26 March 2026, 07:00">26 March 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">WAGO GmbH &amp; Co. KG Industrial Managed Switches</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface, leading to full compromise of the device. Tracked as CVE-2026-3587.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/6dccd11090d58363.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,patch,phishing,vulnerability"
-     data-vendors="Microsoft"
-     data-severity="low"
-     data-title="ptc windchill product lifecycle management">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">26 March 2026, 07:00</span>
-      <span class="card-severity low">low</span>
     </div>
-    <h3 class="card-title">PTC Windchill Product Lifecycle Management</h3>
-    <p class="card-summary">View CSAF 
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface, leading to full compromise of the device. The following versions of WAGO GmbH &amp; Co. KG Industrial Managed Switches are affected:</p>
+<p>WAGO Firmware versions prior to V1.2.1.S0 WAGO_Hardware_852-1812 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.1.S0 WAGO_Hardware_852-1813 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.3.S0 WAGO_Hardware_852-1813/000-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.1.S0 WAGO_Hardware_852-1816 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.8.S0 WAGO_Hardware_852-303 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.0.S0 WAGO_Hardware_852-1305 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.0.S0 WAGO_Hardware_852-1305/000-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.0.S0 WAGO_Hardware_852-1505/000-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.1.9.S0 WAGO_Hardware_852-1505 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.0.6.S0 WAGO_Hardware_852-602 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.0.6.S0 WAGO_Hardware_852-603 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.5.S0 WAGO_Hardware_852-1605 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.1.S0 WAGO_Hardware_852-1812/010-000 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.1.S0 WAGO_Hardware_852-1813/010-000 (CVE-2026-3587)</p>
+<p>WAGO Firmware versions prior to V1.2.1.S0 WAGO_Hardware_852-1816/010-000 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.0.6.S0 WAGO_Hardware_852-602 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.0.6.S0 WAGO_Hardware_852-603 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.1.9.S0 WAGO_Hardware_852-1505 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.0.S0 WAGO_Hardware_852-1305 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.0.S0 WAGO_Hardware_852-1305/000-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.0.S0 WAGO_Hardware_852-1505/000-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1812 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1813 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1816 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1812/010-000 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1813/010-000 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1816/010-000 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.3.S0 WAGO_Hardware_852-1813/000-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.5.S0 WAGO_Hardware_852-1605 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.8.S0 WAGO_Hardware_852-303 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S0 WAGO_Hardware_852-1813/010-001 (CVE-2026-3587)</p>
+<p>WAGO Firmware version V1.2.1.S1 WAGO_Hardware_852-1813/010-001 (CVE-2026-3587)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 10   WAGO   WAGO GmbH &amp; Co.</p></div>
+      <div class="detail-links">
+        <a href="../articles/757ecfa89a519a68.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-085-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="ptc windchill product lifecycle management"
+       data-id="6dccd11090d58363"
+       data-published="2026-03-26T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-03-26T12:00:00+00:00" title="26 March 2026, 07:00">26 March 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">PTC Windchill Product Lifecycle Management</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  Successful exploitation of this vulnerability could allow an attacker to achieve remote code execution. Tracked as CVE-2026-4681.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">patch</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/5cd8c9d740fda74c.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,phishing,vulnerability"
-     data-vendors=""
-     data-severity="low"
-     data-title="opencode systems oc messaging and ussd gateway">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">26 March 2026, 07:00</span>
-      <span class="card-severity low">low</span>
     </div>
-    <h3 class="card-title">OpenCode Systems OC Messaging and USSD Gateway</h3>
-    <p class="card-summary">View CSAF 
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to achieve remote code execution. The following versions of PTC Windchill Product Lifecycle Management are affected:</p>
+<p>Windchill PDMLink 11.0_M030 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 11.1_M020 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 11.2.1.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 12.0.2.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 12.1.2.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 13.0.2.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 13.1.0.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 13.1.1.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 13.1.2.0 (CVE-2026-4681)</p>
+<p>Windchill PDMLink 13.1.3.0 (CVE-2026-4681)</p>
+<p>FlexPLM 11.0_M030 (CVE-2026-4681)</p>
+<p>FlexPLM 11.1_M020 (CVE-2026-4681)</p>
+<p>FlexPLM 11.2.1.0 (CVE-2026-4681)</p>
+<p>FlexPLM 12.0.0.0 (CVE-2026-4681)</p>
+<p>FlexPLM 12.0.2.0 (CVE-2026-4681)</p>
+<p>FlexPLM 12.0.3.0 (CVE-2026-4681)</p>
+<p>FlexPLM 12.1.2.0 (CVE-2026-4681)</p>
+<p>FlexPLM 12.1.3.0 (CVE-2026-4681)</p>
+<p>FlexPLM 13.0.2.0 (CVE-2026-4681)</p>
+<p>FlexPLM 13.0.3.0 (CVE-2026-4681)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 10   PTC   PTC Windchill Product Lifecycle Management   Improper Control of Generation of Code (&#39;Code Injection&#39;)           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-4681     A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6dccd11090d58363.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-085-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="opencode systems oc messaging and ussd gateway"
+       data-id="5cd8c9d740fda74c"
+       data-published="2026-03-26T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-03-26T12:00:00+00:00" title="26 March 2026, 07:00">26 March 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">OpenCode Systems OC Messaging and USSD Gateway</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. Tracked as CVE-2025-70614.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/9288e1deb2f4a84f.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,vulnerability"
-     data-vendors=""
-     data-severity=""
-     data-title="cisa adds one known exploited vulnerability to catalog">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">26 March 2026, 07:00</span>
     </div>
-    <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
-    <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-33634.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. The following versions of OpenCode Systems OC Messaging and USSD Gateway are affected:</p>
+<p>OC Messaging 6.32.2 (CVE-2025-70614)</p>
+<p>USSD Gateway 6.32.2 (CVE-2025-70614)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 8.1   OpenCode Systems   OpenCode Systems OC Messaging and USSD Gateway   Improper Access Control           Background     Critical Infrastructure Sectors: Communications</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Bulgaria</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-70614     OpenCode Systems Custom Messaging Gateway 6.32.2 contains a web access vulnerability allowing one authenticated user to gain access to another authenticated user&#39;s messages via a crafted identifier parameter. View CVE Details</p>
+<p>Affected Products   OpenCode Systems OC Messaging and USSD Gateway     Vendor:  OpenCode Systems   Product Version:  OpenCode Systems OC Messaging: 6.32.2, OpenCode Systems USSD Gateway: 6.32.2   Product Status:  known_affected       Remediations   Mitigation  The vulnerability was identified by OpenCode Systems on January 5, 2026 and remediated on January 6, 2026 with the release of version 6.33.11.</p></div>
+      <div class="detail-links">
+        <a href="../articles/5cd8c9d740fda74c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-085-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/bc0f50d27e402af4.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,phishing,vulnerability"
-     data-vendors=""
-     data-severity="low"
-     data-title="opencode systems oc messaging and custom messaging gateway">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity=""
+       data-title="cisa adds one known exploited vulnerability to catalog"
+       data-id="9288e1deb2f4a84f"
+       data-published="2026-03-26T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-03-26T12:00:00+00:00" title="26 March 2026, 07:00">26 March 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-33634.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">26 March 2026, 07:00</span>
-      <span class="card-severity low">low</span>
     </div>
-    <h3 class="card-title">OpenCode Systems OC Messaging and Custom Messaging Gateway</h3>
-    <p class="card-summary">View CSAF 
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-33634 Aqua Security Trivy Embedded Malicious Code Vulnerability</p>
+<p>This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.</p></div>
+      <div class="detail-links">
+        <a href="../articles/9288e1deb2f4a84f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/03/26/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="opencode systems oc messaging and custom messaging gateway"
+       data-id="bc0f50d27e402af4"
+       data-published="2026-03-26T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-03-26T12:00:00+00:00" title="26 March 2026, 07:00">26 March 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">OpenCode Systems OC Messaging and Custom Messaging Gateway</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. Tracked as CVE-2025-70614.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
     </div>
-  </a>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an authenticated low-privileged user to gain access to SMS messages outside of their authorized tenant scope via a crafted company or tenant identifier parameter. The following versions of OC Messaging and Custom Messaging Gateway are affected:</p>
+<p>OC Messaging 6.32.2 (CVE-2025-70614)</p>
+<p>Custom Messaging Gateway 6.32.2 (CVE-2025-70614)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 8.1   OpenCode Systems   OC Messaging and Custom Messaging Gateway   Improper Access Control           Background     Critical Infrastructure Sectors: Communications</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Bulgaria</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-70614     OpenCode Systems Custom Messaging Gateway 6.32.2 contains a web access vulnerability allowing one authenticated user to gain access to another authenticated user&#39;s messages via a crafted identifier parameter. View CVE Details</p>
+<p>Affected Products   OC Messaging and Custom Messaging Gateway     Vendor:  OpenCode Systems   Product Version:  OpenCode Systems OC Messaging: 6.32.2, OpenCode Systems Custom Messaging Gateway: 6.32.2   Product Status:  known_affected       Remediations   Mitigation  The vulnerability was identified by OpenCode Systems on January 5, 2026 and remediated on January 6, 2026 with the release of version 6.33.11.</p></div>
+      <div class="detail-links">
+        <a href="../articles/bc0f50d27e402af4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-085-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
 
 </div>
   </main>

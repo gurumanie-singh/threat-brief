@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-15</title>
+  <title>Threat Brief — 15 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,442 +22,743 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">15 April 2026</h1>
+      <span class="brief-sub">21 articles</span>
     </div>
-    <h1 class="hero-title">15 April 2026</h1>
-    <p class="hero-desc">
-      21 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>6 critical-severity issues detected with active exploitation reported</li>
-      <li>3 items require immediate action — patches or mitigations available</li>
-      <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
-      <li>Several new data breach disclosures reported</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>6 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
-      <button class="filter-btn severity-high" data-filter-group="severity" data-filter-value="high">high</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/6c17c2fbb0ecffef.html"
-     class="article-card"
-     data-tags="malware,phishing"
-     data-vendors=""
-     data-severity=""
-     data-title="n8n webhooks abused since october 2025 to deliver malware via phishing emails">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">15 April 2026, 12:09</span>
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
+      </div>
     </div>
-    <h3 class="card-title">n8n Webhooks Abused Since October 2025 to Deliver Malware via Phishing Emails</h3>
-    <p class="card-summary">Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity=""
+       data-title="n8n webhooks abused since october 2025 to deliver malware via phishing emails"
+       data-id="6c17c2fbb0ecffef"
+       data-published="2026-04-15T22:39:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T22:39:00+05:30" title="15 April 2026, 12:09">15 April 2026, 12:09</time>
+      </div>
+      <h3 class="card-title">n8n Webhooks Abused Since October 2025 to Deliver Malware via Phishing Emails</h3>
+      <p class="card-summary">Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.
 &#34;By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
-    </div>
-  </a>
-  <a href="../articles/05de7bc8c1ebebad.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity="critical"
-     data-title="critical mcp integration flaw puts nginx at risk">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">15 April 2026, 16:45</span>
-      <span class="card-severity critical">critical</span>
-    </div>
-    <h3 class="card-title">Critical MCP Integration Flaw Puts NGINX at Risk</h3>
-    <p class="card-summary">Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/9260c0d097d68be1.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="navigating the unique security risks of asia&#39;s digital supply chain">
-    <div class="card-top">
-      <span class="card-source">Dark Reading</span>
-      <span class="card-date">15 April 2026, 14:30</span>
-    </div>
-    <h3 class="card-title">Navigating the Unique Security Risks of Asia&#39;s Digital Supply Chain</h3>
-    <p class="card-summary">Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.</p>
-    <div class="card-footer">
-    </div>
-  </a>
-  <a href="../articles/8d84f462b0131fe0.html"
-     class="article-card action-required"
-     data-tags="exploit,vulnerability"
-     data-vendors=""
-     data-severity="critical"
-     data-title="critical nginx ui auth bypass flaw now actively exploited in the wild">
-    <div class="card-top">
-      <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 17:35</span>
-      <span class="card-severity critical">critical</span>
-      <span class="card-action-badge">Action Required</span>
-    </div>
-    <h3 class="card-title">Critical Nginx UI auth bypass flaw now actively exploited in the wild</h3>
-    <p class="card-summary">A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">exploit</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/d542854aaf8ed95b.html"
-     class="article-card action-required"
-     data-tags="cve,exploit,vulnerability"
-     data-vendors=""
-     data-severity="critical"
-     data-title="actively exploited nginx-ui flaw (cve-2026-33032) enables full nginx server takeover">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">15 April 2026, 07:56</span>
-      <span class="card-severity critical">critical</span>
-      <span class="card-action-badge">Action Required</span>
     </div>
-    <h3 class="card-title">Actively Exploited nginx-ui Flaw (CVE-2026-33032) Enables Full Nginx Server Takeover</h3>
-    <p class="card-summary">A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. Tracked as CVE-2026-33032. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6c17c2fbb0ecffef.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/n8n-webhooks-abused-since-october-2025.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/c69a80ade8c2b694.html"
-     class="article-card"
-     data-tags="cve,patch,vulnerability"
-     data-vendors="AWS,Adobe,Fortinet,Microsoft,SAP"
-     data-severity="critical"
-     data-title="april patch tuesday fixes critical flaws across sap, adobe, microsoft, fortinet, and more">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">15 April 2026, 07:37</span>
-      <span class="card-severity critical">critical</span>
-    </div>
-    <h3 class="card-title">April Patch Tuesday Fixes Critical Flaws Across SAP, Adobe, Microsoft, Fortinet, and More</h3>
-    <p class="card-summary">A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April&#39;s Patch Tuesday releases. Tracked as CVE-2026-27681. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Adobe</span>
-      <span class="vendor-tag">Fortinet</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="vendor-tag">SAP</span>
-      <span class="tag">cve</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/6e5327252b54761e.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors="Google"
-     data-severity=""
-     data-title="new agingfly malware used in attacks on ukraine govt, hospitals">
-    <div class="card-top">
-      <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 16:57</span>
-    </div>
-    <h3 class="card-title">New AgingFly malware used in attacks on Ukraine govt, hospitals</h3>
-    <p class="card-summary">A new malware family named &#39;AgingFly&#39; has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...].</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Google</span>
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/41931f001ee1570b.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="deterministic + agentic ai: the architecture exposure validation requires">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">15 April 2026, 06:30</span>
-    </div>
-    <h3 class="card-title">Deterministic + Agentic AI: The Architecture Exposure Validation Requires</h3>
-    <p class="card-summary">Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/2c415518211f55ab.html"
-     class="article-card"
-     data-tags="breach,malware"
-     data-vendors=""
-     data-severity=""
-     data-title="wordpress plugin suite hacked to push malware to thousands of sites">
-    <div class="card-top">
-      <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 15:33</span>
-    </div>
-    <h3 class="card-title">WordPress plugin suite hacked to push malware to thousands of sites</h3>
-    <p class="card-summary">More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...].</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
-      <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/c9b6b5f363c37c14.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="prepping for &#39;q-day&#39;: why quantum risk management should start now">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical mcp integration flaw puts nginx at risk"
+       data-id="05de7bc8c1ebebad"
+       data-published="2026-04-15T21:45:18+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-15T21:45:18+00:00" title="15 April 2026, 16:45">15 April 2026, 16:45</time>
+      </div>
+      <h3 class="card-title">Critical MCP Integration Flaw Puts NGINX at Risk</h3>
+      <p class="card-summary">Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">15 April 2026, 10:12</span>
     </div>
-    <h3 class="card-title">Prepping for &#39;Q-Day&#39;: Why Quantum Risk Management Should Start Now</h3>
-    <p class="card-summary">Quantum computers are coming and may impact systems in unexpected ways, and it will &#34;take years to be fully quantum-safe, if ever,&#34; cryptography expert warns.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.</p></div>
+      <div class="detail-links">
+        <a href="../articles/05de7bc8c1ebebad.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/critical-mcp-integration-flaw-nginx-risk" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/28f266e5445a99f6.html"
-     class="article-card"
-     data-tags=""
-     data-vendors="Google,Microsoft"
-     data-severity=""
-     data-title="audit: big tech often ignores ca privacy law opt-out requests">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="navigating the unique security risks of asia&#39;s digital supply chain"
+       data-id="9260c0d097d68be1"
+       data-published="2026-04-15T19:30:47+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T19:30:47+00:00" title="15 April 2026, 14:30">15 April 2026, 14:30</time>
+      </div>
+      <h3 class="card-title">Navigating the Unique Security Risks of Asia&#39;s Digital Supply Chain</h3>
+      <p class="card-summary">Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">15 April 2026, 09:38</span>
     </div>
-    <h3 class="card-title">Audit: Big Tech Often Ignores CA Privacy Law Opt-Out Requests</h3>
-    <p class="card-summary">Google, Meta, and Microsoft about half the time don&#39;t comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Google</span>
-      <span class="vendor-tag">Microsoft</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.</p></div>
+      <div class="detail-links">
+        <a href="../articles/9260c0d097d68be1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/navigating-unique-security-risks-asias-digital-supply-chain" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0c22eaa9cc3de14f.html"
-     class="article-card action-required"
-     data-tags="exploit,malware,patch,vulnerability,zero-day"
-     data-vendors="AWS,Microsoft"
-     data-severity="critical"
-     data-title="microsoft issues patches for sharepoint zero-day and 168 other new vulnerabilities">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical nginx ui auth bypass flaw now actively exploited in the wild"
+       data-id="8d84f462b0131fe0"
+       data-published="2026-04-15T18:35:09-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-15T18:35:09-04:00" title="15 April 2026, 17:35">15 April 2026, 17:35</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Critical Nginx UI auth bypass flaw now actively exploited in the wild</h3>
+      <p class="card-summary">A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/8d84f462b0131fe0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/critical-nginx-ui-auth-bypass-flaw-now-actively-exploited-in-the-wild/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="actively exploited nginx-ui flaw (cve-2026-33032) enables full nginx server takeover"
+       data-id="d542854aaf8ed95b"
+       data-published="2026-04-15T18:26:00+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-15T18:26:00+05:30" title="15 April 2026, 07:56">15 April 2026, 07:56</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Actively Exploited nginx-ui Flaw (CVE-2026-33032) Enables Full Nginx Server Takeover</h3>
+      <p class="card-summary">A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. Tracked as CVE-2026-33032. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">15 April 2026, 03:40</span>
-      <span class="card-severity critical">critical</span>
-      <span class="card-action-badge">Action Required</span>
     </div>
-    <h3 class="card-title">Microsoft Issues Patches for SharePoint Zero-Day and 168 Other New Vulnerabilities</h3>
-    <p class="card-summary">Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. The vulnerability in question is CVE-2026-33032 (CVSS score: 9.8), an authentication bypass vulnerability that enables threat actors to seize control of the Nginx service. It has been codenamed MCPwn by Pluto Security. &#34;</p></div>
+      <div class="detail-links">
+        <a href="../articles/d542854aaf8ed95b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/b9a4932061705a4a.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="signed software abused to deploy antivirus-killing scripts">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors="AWS,Adobe,Fortinet,Microsoft,SAP"
+       data-severity="critical"
+       data-title="april patch tuesday fixes critical flaws across sap, adobe, microsoft, fortinet, and more"
+       data-id="c69a80ade8c2b694"
+       data-published="2026-04-15T18:07:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-04-15T18:07:00+05:30" title="15 April 2026, 07:37">15 April 2026, 07:37</time>
+      </div>
+      <h3 class="card-title">April Patch Tuesday Fixes Critical Flaws Across SAP, Adobe, Microsoft, Fortinet, and More</h3>
+      <p class="card-summary">A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April&#39;s Patch Tuesday releases. Tracked as CVE-2026-27681. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April&#39;s Patch Tuesday releases. Topping the list is an SQL injection vulnerability impacting SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-27681, CVSS score: 9.9) that could result in the execution of arbitrary database</p></div>
+      <div class="detail-links">
+        <a href="../articles/c69a80ade8c2b694.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity=""
+       data-title="new agingfly malware used in attacks on ukraine govt, hospitals"
+       data-id="6e5327252b54761e"
+       data-published="2026-04-15T17:57:17-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-15T17:57:17-04:00" title="15 April 2026, 16:57">15 April 2026, 16:57</time>
+      </div>
+      <h3 class="card-title">New AgingFly malware used in attacks on Ukraine govt, hospitals</h3>
+      <p class="card-summary">A new malware family named &#39;AgingFly&#39; has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 12:59</span>
     </div>
-    <h3 class="card-title">Signed software abused to deploy antivirus-killing scripts</h3>
-    <p class="card-summary">A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...].</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A new malware family named &#39;AgingFly&#39; has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/6e5327252b54761e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-agingfly-malware-used-in-attacks-on-ukraine-govt-hospitals/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/a08796f987cee509.html"
-     class="article-card"
-     data-tags="zero-day"
-     data-vendors="AWS,Microsoft"
-     data-severity="critical"
-     data-title="microsoft pays $2.3m for cloud and ai flaws at zero day quest">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="deterministic + agentic ai: the architecture exposure validation requires"
+       data-id="41931f001ee1570b"
+       data-published="2026-04-15T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T17:00:00+05:30" title="15 April 2026, 06:30">15 April 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Deterministic + Agentic AI: The Architecture Exposure Validation Requires</h3>
+      <p class="card-summary">Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions. Pentera’s AI Security and Exposure Report 2026 reflects that momentum: every CISO surveyed</p></div>
+      <div class="detail-links">
+        <a href="../articles/41931f001ee1570b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/deterministic-agentic-ai-architecture.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity=""
+       data-title="wordpress plugin suite hacked to push malware to thousands of sites"
+       data-id="2c415518211f55ab"
+       data-published="2026-04-15T16:33:50-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T16:33:50-04:00" title="15 April 2026, 15:33">15 April 2026, 15:33</time>
+      </div>
+      <h3 class="card-title">WordPress plugin suite hacked to push malware to thousands of sites</h3>
+      <p class="card-summary">More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 11:20</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Microsoft pays $2.3M for cloud and AI flaws at Zero Day Quest</h3>
-    <p class="card-summary">Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year&#39;s Zero Day Quest hacking contest. [...]. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/2c415518211f55ab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/wordpress-plugin-suite-hacked-to-push-malware-to-thousands-of-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0d8829965d3b334f.html"
-     class="article-card"
-     data-tags="breach,patch,vulnerability"
-     data-vendors="AWS,Microsoft"
-     data-severity=""
-     data-title="microsoft, salesforce patch ai agent data leak flaws">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="prepping for &#39;q-day&#39;: why quantum risk management should start now"
+       data-id="c9b6b5f363c37c14"
+       data-published="2026-04-15T15:12:01+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T15:12:01+00:00" title="15 April 2026, 10:12">15 April 2026, 10:12</time>
+      </div>
+      <h3 class="card-title">Prepping for &#39;Q-Day&#39;: Why Quantum Risk Management Should Start Now</h3>
+      <p class="card-summary">Quantum computers are coming and may impact systems in unexpected ways, and it will &#34;take years to be fully quantum-safe, if ever,&#34; cryptography expert warns.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">15 April 2026, 07:00</span>
     </div>
-    <h3 class="card-title">Microsoft, Salesforce Patch AI Agent Data Leak Flaws</h3>
-    <p class="card-summary">Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">breach</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Quantum computers are coming and may impact systems in unexpected ways, and it will &#34;take years to be fully quantum-safe, if ever,&#34; cryptography expert warns.</p></div>
+      <div class="detail-links">
+        <a href="../articles/c9b6b5f363c37c14.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/preparing-q-day-quantum-risk-management" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/b7861aed217ccd44.html"
-     class="article-card"
-     data-tags="exploit,vulnerability"
-     data-vendors="Microsoft"
-     data-severity="high"
-     data-title="cisa flags windows task host vulnerability as exploited in attacks">
-    <div class="card-top">
-      <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 09:51</span>
-      <span class="card-severity high">high</span>
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors="Google,Microsoft"
+       data-severity=""
+       data-title="audit: big tech often ignores ca privacy law opt-out requests"
+       data-id="28f266e5445a99f6"
+       data-published="2026-04-15T14:38:53+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T14:38:53+00:00" title="15 April 2026, 09:38">15 April 2026, 09:38</time>
+      </div>
+      <h3 class="card-title">Audit: Big Tech Often Ignores CA Privacy Law Opt-Out Requests</h3>
+      <p class="card-summary">Google, Meta, and Microsoft about half the time don&#39;t comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
     </div>
-    <h3 class="card-title">CISA flags Windows Task Host vulnerability as exploited in attacks</h3>
-    <p class="card-summary">CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]. Severity is rated high.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">exploit</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Google, Meta, and Microsoft about half the time don&#39;t comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.</p></div>
+      <div class="detail-links">
+        <a href="../articles/28f266e5445a99f6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/audit-big-tech-ignores-data-collection-requests" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/b3fca0a597673a96.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="rolling networks: securing the transportation sector">
-    <div class="card-top">
-      <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 09:00</span>
-    </div>
-    <h3 class="card-title">Rolling Networks: Securing the Transportation Sector</h3>
-    <p class="card-summary">Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA&#39;s Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...].</p>
-    <div class="card-footer">
-    </div>
-  </a>
-  <a href="../articles/7a0fe29ec1c6cdac.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors="Microsoft"
-     data-severity=""
-     data-title="openai launches gpt-5.4-cyber with expanded access for security teams">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,malware,patch,vulnerability,zero-day"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="microsoft issues patches for sharepoint zero-day and 168 other new vulnerabilities"
+       data-id="0c22eaa9cc3de14f"
+       data-published="2026-04-15T14:10:00+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T14:10:00+05:30" title="15 April 2026, 03:40">15 April 2026, 03:40</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Microsoft Issues Patches for SharePoint Zero-Day and 168 Other New Vulnerabilities</h3>
+      <p class="card-summary">Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">14 April 2026, 23:30</span>
     </div>
-    <h3 class="card-title">OpenAI Launches GPT-5.4-Cyber with Expanded Access for Security Teams</h3>
-    <p class="card-summary">OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that&#39;s specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Of these 169 vulnerabilities, 157 are rated Important, eight are rated Critical, three are rated Moderate, and one is rated Low in severity. Ninety-three of the flaws are</p></div>
+      <div class="detail-links">
+        <a href="../articles/0c22eaa9cc3de14f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/microsoft-issues-patches-for-sharepoint.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="signed software abused to deploy antivirus-killing scripts"
+       data-id="b9a4932061705a4a"
+       data-published="2026-04-15T13:59:30-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T13:59:30-04:00" title="15 April 2026, 12:59">15 April 2026, 12:59</time>
+      </div>
+      <h3 class="card-title">Signed software abused to deploy antivirus-killing scripts</h3>
+      <p class="card-summary">A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/b9a4932061705a4a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/signed-software-abused-to-deploy-antivirus-killing-scripts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="zero-day"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="microsoft pays $2.3m for cloud and ai flaws at zero day quest"
+       data-id="a08796f987cee509"
+       data-published="2026-04-15T12:20:21-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T12:20:21-04:00" title="15 April 2026, 11:20">15 April 2026, 11:20</time>
+      </div>
+      <h3 class="card-title">Microsoft pays $2.3M for cloud and AI flaws at Zero Day Quest</h3>
+      <p class="card-summary">Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year&#39;s Zero Day Quest hacking contest. [...]. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year&#39;s Zero Day Quest hacking contest. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/a08796f987cee509.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-pays-23-million-for-cloud-and-ai-flaws-at-zero-day-quest/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="breach,patch,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity=""
+       data-title="microsoft, salesforce patch ai agent data leak flaws"
+       data-id="0d8829965d3b334f"
+       data-published="2026-04-15T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T12:00:00+00:00" title="15 April 2026, 07:00">15 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Microsoft, Salesforce Patch AI Agent Data Leak Flaws</h3>
+      <p class="card-summary">Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0d8829965d3b334f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/microsoft-salesforce-patch-ai-agent-data-leak-flaws" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="cisa flags windows task host vulnerability as exploited in attacks"
+       data-id="b7861aed217ccd44"
+       data-published="2026-04-15T10:51:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T10:51:05-04:00" title="15 April 2026, 09:51">15 April 2026, 09:51</time>
+      </div>
+      <h3 class="card-title">CISA flags Windows Task Host vulnerability as exploited in attacks</h3>
+      <p class="card-summary">CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]. Severity is rated high.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/b7861aed217ccd44.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-windows-task-host-vulnerability-as-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="rolling networks: securing the transportation sector"
+       data-id="b3fca0a597673a96"
+       data-published="2026-04-15T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-15T10:00:10-04:00" title="15 April 2026, 09:00">15 April 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Rolling Networks: Securing the Transportation Sector</h3>
+      <p class="card-summary">Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA&#39;s Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA&#39;s Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/b3fca0a597673a96.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/rolling-networks-securing-the-transportation-sector/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity=""
+       data-title="openai launches gpt-5.4-cyber with expanded access for security teams"
+       data-id="7a0fe29ec1c6cdac"
+       data-published="2026-04-15T10:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T10:00:00+05:30" title="14 April 2026, 23:30">14 April 2026, 23:30</time>
+      </div>
+      <h3 class="card-title">OpenAI Launches GPT-5.4-Cyber with Expanded Access for Security Teams</h3>
+      <p class="card-summary">OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that&#39;s specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.
 &#34;The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">malware</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
     </div>
-  </a>
-  <a href="../articles/7858923731c2ce61.html"
-     class="article-card"
-     data-tags="patch"
-     data-vendors="Microsoft"
-     data-severity=""
-     data-title="microsoft: april updates trigger bitlocker key prompts on some servers">
-    <div class="card-top">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that&#39;s specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.</p></div>
+      <div class="detail-links">
+        <a href="../articles/7a0fe29ec1c6cdac.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity=""
+       data-title="microsoft: april updates trigger bitlocker key prompts on some servers"
+       data-id="7858923731c2ce61"
+       data-published="2026-04-15T07:41:35-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T07:41:35-04:00" title="15 April 2026, 06:41">15 April 2026, 06:41</time>
+      </div>
+      <h3 class="card-title">Microsoft: April updates trigger BitLocker key prompts on some servers</h3>
+      <p class="card-summary">Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
       <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 06:41</span>
     </div>
-    <h3 class="card-title">Microsoft: April updates trigger BitLocker key prompts on some servers</h3>
-    <p class="card-summary">Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...].</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">patch</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/7858923731c2ce61.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-some-windows-servers-ask-for-bitlocker-key-after-april-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/1f441bc673ccfe04.html"
-     class="article-card"
-     data-tags=""
-     data-vendors="Microsoft"
-     data-severity=""
-     data-title="microsoft fixes bug behind windows server 2025 automatic upgrades">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity=""
+       data-title="microsoft fixes bug behind windows server 2025 automatic upgrades"
+       data-id="1f441bc673ccfe04"
+       data-published="2026-04-15T06:24:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T06:24:53-04:00" title="15 April 2026, 05:24">15 April 2026, 05:24</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes bug behind Windows Server 2025 automatic upgrades</h3>
+      <p class="card-summary">Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to &#34;unexpectedly&#34; upgrade to Windows Server 2025. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">BleepingComputer</span>
-      <span class="card-date">15 April 2026, 05:24</span>
     </div>
-    <h3 class="card-title">Microsoft fixes bug behind Windows Server 2025 automatic upgrades</h3>
-    <p class="card-summary">Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to &#34;unexpectedly&#34; upgrade to Windows Server 2025. [...].</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to &#34;unexpectedly&#34; upgrade to Windows Server 2025. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/1f441bc673ccfe04.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-behind-windows-server-2025-automatic-upgrades/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/044119cea07585f0.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors="Microsoft"
-     data-severity=""
-     data-title="microsoft bets $10b to boost japan&#39;s ai, cybersecurity">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity=""
+       data-title="microsoft bets $10b to boost japan&#39;s ai, cybersecurity"
+       data-id="044119cea07585f0"
+       data-published="2026-04-15T00:00:08+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-15T00:00:08+00:00" title="14 April 2026, 19:00">14 April 2026, 19:00</time>
+      </div>
+      <h3 class="card-title">Microsoft Bets $10B to Boost Japan&#39;s AI, Cybersecurity</h3>
+      <p class="card-summary">The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">14 April 2026, 19:00</span>
     </div>
-    <h3 class="card-title">Microsoft Bets $10B to Boost Japan&#39;s AI, Cybersecurity</h3>
-    <p class="card-summary">The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.</p></div>
+      <div class="detail-links">
+        <a href="../articles/044119cea07585f0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/microsoft-bets-10-billion-to-boost-japan-s-ai-cybersecurity" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

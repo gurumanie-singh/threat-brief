@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-03</title>
+  <title>Threat Brief — 3 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,169 +22,278 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">3 April 2026</h1>
+      <span class="brief-sub">7 articles</span>
     </div>
-    <h1 class="hero-title">3 April 2026</h1>
-    <p class="hero-desc">
-      7 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>1 critical-severity issue detected</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/d8464524a1fe1da5.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="inconsistent privacy labels don&#39;t tell users what they are getting">
-    <div class="card-top">
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="inconsistent privacy labels don&#39;t tell users what they are getting"
+       data-id="d8464524a1fe1da5"
+       data-published="2026-04-03T21:05:07+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-03T21:05:07+00:00" title="3 April 2026, 16:05">3 April 2026, 16:05</time>
+      </div>
+      <h3 class="card-title">Inconsistent Privacy Labels Don&#39;t Tell Users What They Are Getting</h3>
+      <p class="card-summary">Data privacy labels are a great idea for mobile apps, but the current versions just aren&#39;t good enough.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 16:05</span>
     </div>
-    <h3 class="card-title">Inconsistent Privacy Labels Don&#39;t Tell Users What They Are Getting</h3>
-    <p class="card-summary">Data privacy labels are a great idea for mobile apps, but the current versions just aren&#39;t good enough.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Data privacy labels are a great idea for mobile apps, but the current versions just aren&#39;t good enough.</p></div>
+      <div class="detail-links">
+        <a href="../articles/d8464524a1fe1da5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/data-privacy/inconsistent-privacy-labels-not-enough" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/f7c4ec63916dc463.html"
-     class="article-card"
-     data-tags="patch"
-     data-vendors="Apple"
-     data-severity=""
-     data-title="apple breaks precedent, patches darksword for ios 18">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="patch"
+       data-vendors="Apple"
+       data-severity=""
+       data-title="apple breaks precedent, patches darksword for ios 18"
+       data-id="f7c4ec63916dc463"
+       data-published="2026-04-03T17:08:57+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-04-03T17:08:57+00:00" title="3 April 2026, 12:08">3 April 2026, 12:08</time>
+      </div>
+      <h3 class="card-title">Apple Breaks Precedent, Patches DarkSword for iOS 18</h3>
+      <p class="card-summary">Even organizations with users unwilling or unable to adopt iOS 26 can now protect themselves from a severe mobile OS-cracking tool.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 12:08</span>
     </div>
-    <h3 class="card-title">Apple Breaks Precedent, Patches DarkSword for iOS 18</h3>
-    <p class="card-summary">Even organizations with users unwilling or unable to adopt iOS 26 can now protect themselves from a severe mobile OS-cracking tool.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Apple</span>
-      <span class="tag">patch</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Even organizations with users unwilling or unable to adopt iOS 26 can now protect themselves from a severe mobile OS-cracking tool.</p></div>
+      <div class="detail-links">
+        <a href="../articles/f7c4ec63916dc463.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/endpoint-security/apple-patches-darksword-ios-18" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/a7eb8d1980eae0ac.html"
-     class="article-card"
-     data-tags="breach"
-     data-vendors=""
-     data-severity=""
-     data-title="blast radius of teampcp attacks expands amid hacker infighting">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="breach"
+       data-vendors=""
+       data-severity=""
+       data-title="blast radius of teampcp attacks expands amid hacker infighting"
+       data-id="a7eb8d1980eae0ac"
+       data-published="2026-04-03T15:11:16+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-03T15:11:16+00:00" title="3 April 2026, 10:11">3 April 2026, 10:11</time>
+      </div>
+      <h3 class="card-title">Blast Radius of TeamPCP Attacks Expands Amid Hacker Infighting</h3>
+      <p class="card-summary">As organizations disclose breaches tied to TeamPCP&#39;s supply chain attacks, ShinyHunters and Lapsus$ are getting involved, taking credit, and creating a murky situation for enterprises.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 10:11</span>
     </div>
-    <h3 class="card-title">Blast Radius of TeamPCP Attacks Expands Amid Hacker Infighting</h3>
-    <p class="card-summary">As organizations disclose breaches tied to TeamPCP&#39;s supply chain attacks, ShinyHunters and Lapsus$ are getting involved, taking credit, and creating a murky situation for enterprises.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>As organizations disclose breaches tied to TeamPCP&#39;s supply chain attacks, ShinyHunters and Lapsus$ are getting involved, taking credit, and creating a murky situation for enterprises.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a7eb8d1980eae0ac.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/teampcp-attacks-hacker-infighting" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/518aa6fc582b883d.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="picking up &#39;skull vibrations&#39;? could be xr headset authentication">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="picking up &#39;skull vibrations&#39;? could be xr headset authentication"
+       data-id="518aa6fc582b883d"
+       data-published="2026-04-03T13:30:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-03T13:30:00+00:00" title="3 April 2026, 08:30">3 April 2026, 08:30</time>
+      </div>
+      <h3 class="card-title">Picking Up &#39;Skull Vibrations&#39;? Could Be XR Headset Authentication</h3>
+      <p class="card-summary">&#34;Skull vibration harmonics generated by vital signs&#34; can be used to sign in to VR, AR, and MR headsets, according to emerging research.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 08:30</span>
     </div>
-    <h3 class="card-title">Picking Up &#39;Skull Vibrations&#39;? Could Be XR Headset Authentication</h3>
-    <p class="card-summary">&#34;Skull vibration harmonics generated by vital signs&#34; can be used to sign in to VR, AR, and MR headsets, according to emerging research.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>&#34;Skull vibration harmonics generated by vital signs&#34; can be used to sign in to VR, AR, and MR headsets, according to emerging research.</p></div>
+      <div class="detail-links">
+        <a href="../articles/518aa6fc582b883d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/remote-workforce/skull-vibrations-could-be-xr-headset-authentication" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/99ffd258529453e9.html"
-     class="article-card"
-     data-tags="vulnerability"
-     data-vendors=""
-     data-severity="critical"
-     data-title="claude source code leak highlights big supply chain missteps">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="claude source code leak highlights big supply chain missteps"
+       data-id="99ffd258529453e9"
+       data-published="2026-04-03T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-03T13:00:00+00:00" title="3 April 2026, 08:00">3 April 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Claude Source Code Leak Highlights Big Supply Chain Missteps</h3>
+      <p class="card-summary">Or, why the software supply chain should be treated as critical infrastructure with guardrails built in at every layer. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 08:00</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Claude Source Code Leak Highlights Big Supply Chain Missteps</h3>
-    <p class="card-summary">Or, why the software supply chain should be treated as critical infrastructure with guardrails built in at every layer. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Or, why the software supply chain should be treated as critical infrastructure with guardrails built in at every layer.</p></div>
+      <div class="detail-links">
+        <a href="../articles/99ffd258529453e9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/source-code-leaks-highlight-lack-supply-chain-oversight" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/d72bf186a95757c7.html"
-     class="article-card"
-     data-tags="vulnerability"
-     data-vendors=""
-     data-severity=""
-     data-title="chainguard unveils factory 2.0 to automate hardening the software supply chain">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity=""
+       data-title="chainguard unveils factory 2.0 to automate hardening the software supply chain"
+       data-id="d72bf186a95757c7"
+       data-published="2026-04-03T12:57:28+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-03T12:57:28+00:00" title="3 April 2026, 07:57">3 April 2026, 07:57</time>
+      </div>
+      <h3 class="card-title">Chainguard Unveils Factory 2.0 to Automate Hardening the Software Supply Chain</h3>
+      <p class="card-summary">The rebuilt Chainguard platform adds deeper security designed to continuously reconcile open source artifacts across containers, libraries, agent skills, and GitHub Actions.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 07:57</span>
     </div>
-    <h3 class="card-title">Chainguard Unveils Factory 2.0 to Automate Hardening the Software Supply Chain</h3>
-    <p class="card-summary">The rebuilt Chainguard platform adds deeper security designed to continuously reconcile open source artifacts across containers, libraries, agent skills, and GitHub Actions.</p>
-    <div class="card-footer">
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The rebuilt Chainguard platform adds deeper security designed to continuously reconcile open source artifacts across containers, libraries, agent skills, and GitHub Actions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/d72bf186a95757c7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/chainguard-factory-automate-hardening-software-supply-chain" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/915aadb269f884f8.html"
-     class="article-card"
-     data-tags="malware,vulnerability"
-     data-vendors="Microsoft"
-     data-severity=""
-     data-title="crowdstrike next-gen siem can now ingest microsoft defender telemetry">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity=""
+       data-title="crowdstrike next-gen siem can now ingest microsoft defender telemetry"
+       data-id="915aadb269f884f8"
+       data-published="2026-04-03T11:53:15+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-03T11:53:15+00:00" title="3 April 2026, 06:53">3 April 2026, 06:53</time>
+      </div>
+      <h3 class="card-title">CrowdStrike Next-Gen SIEM Can Now Ingest Microsoft Defender Telemetry</h3>
+      <p class="card-summary">Once CrowdStrike&#39;s nemesis, Microsoft is now a collaborator. A shared interest in Formula 1 helped thaw the years-long fierce rivalry.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">3 April 2026, 06:53</span>
     </div>
-    <h3 class="card-title">CrowdStrike Next-Gen SIEM Can Now Ingest Microsoft Defender Telemetry</h3>
-    <p class="card-summary">Once CrowdStrike&#39;s nemesis, Microsoft is now a collaborator. A shared interest in Formula 1 helped thaw the years-long fierce rivalry.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Once CrowdStrike&#39;s nemesis, Microsoft is now a collaborator. A shared interest in Formula 1 helped thaw the years-long fierce rivalry.</p></div>
+      <div class="detail-links">
+        <a href="../articles/915aadb269f884f8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/endpoint-security/crowdstrike-falcon-ingest-microsoft-defender-telemetry" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

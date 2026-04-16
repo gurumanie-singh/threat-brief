@@ -46,11 +46,26 @@
       {% if article.cves %}
       <ul class="article-cve-list">
         {% for cve in article.cves %}
-        <li class="article-cve">{{ cve }}</li>
+        <li class="article-cve" data-cve="{{ cve }}">{{ cve }}<button class="cve-copy" title="Copy CVE" aria-label="Copy {{ cve }}"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
         {% endfor %}
       </ul>
       {% endif %}
     </header>
+
+    {% if article.email_summary or article.action_required %}
+    <div class="quick-take">
+      <div class="quick-take-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Quick Take
+      </div>
+      {% if article.email_summary %}
+      <p class="quick-take-text">{{ article.email_summary }}</p>
+      {% endif %}
+      {% if article.action_required and article.sections and article.sections.mitigation %}
+      <p class="quick-take-action">Action recommended — see Mitigation section below.</p>
+      {% endif %}
+    </div>
+    {% endif %}
 
     <div class="article-body">
       {% if sections.overview %}

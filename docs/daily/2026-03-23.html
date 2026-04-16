@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-03-23</title>
+  <title>Threat Brief — 23 March 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,65 +22,85 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">23 March 2026</h1>
+      <span class="brief-sub">1 article</span>
     </div>
-    <h1 class="hero-title">23 March 2026</h1>
-    <p class="hero-desc">
-      1 article from the day's cybersecurity landscape.
-    </p>
   </div>
 
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/b0a40e7a0febb438.html"
-     class="article-card"
-     data-tags="breach,exploit,malware,vulnerability"
-     data-vendors="AWS,Microsoft"
-     data-severity=""
-     data-title="‘canisterworm’ springs wiper attack targeting iran">
-    <div class="card-top">
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="breach,exploit,malware,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity=""
+       data-title="‘canisterworm’ springs wiper attack targeting iran"
+       data-id="b0a40e7a0febb438"
+       data-published="2026-03-23T15:43:04+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-03-23T15:43:04+00:00" title="23 March 2026, 10:43">23 March 2026, 10:43</time>
+      </div>
+      <h3 class="card-title">‘CanisterWorm’ Springs Wiper Attack Targeting Iran</h3>
+      <p class="card-summary">A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran s time zone or have Farsi set as the default language. Experts say the wiper campaign against Iran materialized this past weekend and came from a relatively new cybercrime group known as TeamPCP .</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">Krebs on Security</span>
-      <span class="card-date">23 March 2026, 10:43</span>
     </div>
-    <h3 class="card-title">‘CanisterWorm’ Springs Wiper Attack Targeting Iran</h3>
-    <p class="card-summary">A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran s time zone or have Farsi set as the default language. Experts say the wiper campaign against Iran materialized this past weekend and came from a relatively new cybercrime group known as TeamPCP .</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">breach</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran s time zone or have Farsi set as the default language. Experts say the wiper campaign against Iran materialized this past weekend and came from a relatively new cybercrime group known as TeamPCP . In December 2025, the group began compromising corporate cloud environments using a self-propagating worm that went after exposed Docker APIs, Kubernetes clusters, Redis servers, and the React2Shell vulnerability.</p></div>
+      <div class="detail-links">
+        <a href="../articles/b0a40e7a0febb438.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

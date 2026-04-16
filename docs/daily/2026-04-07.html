@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-07</title>
+  <title>Threat Brief — 7 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,354 +22,593 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">7 April 2026</h1>
+      <span class="brief-sub">18 articles</span>
     </div>
-    <h1 class="hero-title">7 April 2026</h1>
-    <p class="hero-desc">
-      18 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>5 critical-severity issues detected with active exploitation reported</li>
-      <li>2 items require immediate action — patches or mitigations available</li>
-      <li>Microsoft ecosystem affected by multiple advisories</li>
-      <li>Elevated ransomware activity reported across multiple sources</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>5 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
-      <button class="filter-btn severity-high" data-filter-group="severity" data-filter-value="high">high</button>
-      <button class="filter-btn severity-low" data-filter-group="severity" data-filter-value="low">low</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/15b60518d0f09f24.html"
-     class="article-card"
-     data-tags="apt,breach,exploit"
-     data-vendors=""
-     data-severity=""
-     data-title="russian state-linked apt28 exploits soho routers in global dns hijacking campaign">
-    <div class="card-top">
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="apt,breach,exploit"
+       data-vendors=""
+       data-severity=""
+       data-title="russian state-linked apt28 exploits soho routers in global dns hijacking campaign"
+       data-id="15b60518d0f09f24"
+       data-published="2026-04-07T22:18:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T22:18:00+05:30" title="7 April 2026, 11:48">7 April 2026, 11:48</time>
+      </div>
+      <h3 class="card-title">Russian State-Linked APT28 Exploits SOHO Routers in Global DNS Hijacking Campaign</h3>
+      <p class="card-summary">The Russia-linked threat actor known as APT28 (aka Forest Blizzard) has been linked to a new campaign that has compromised insecure MikroTik and TP-Link routers and modified their settings to turn them into malicious infrastructure under their control as part of a cyber espionage campaign since at least May 2025. The large-scale exploitation campaign has been codenamed.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 11:48</span>
     </div>
-    <h3 class="card-title">Russian State-Linked APT28 Exploits SOHO Routers in Global DNS Hijacking Campaign</h3>
-    <p class="card-summary">The Russia-linked threat actor known as APT28 (aka Forest Blizzard) has been linked to a new campaign that has compromised insecure MikroTik and TP-Link routers and modified their settings to turn them into malicious infrastructure under their control as part of a cyber espionage campaign since at least May 2025. The large-scale exploitation campaign has been codenamed.</p>
-    <div class="card-footer">
-      <span class="tag">apt</span>
-      <span class="tag">breach</span>
-      <span class="tag">exploit</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Russia-linked threat actor known as APT28 (aka Forest Blizzard) has been linked to a new campaign that has compromised insecure MikroTik and TP-Link routers and modified their settings to turn them into malicious infrastructure under their control as part of a cyber espionage campaign since at least May 2025. The large-scale exploitation campaign has been codenamed</p></div>
+      <div class="detail-links">
+        <a href="../articles/15b60518d0f09f24.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/429b3cb8bf63057e.html"
-     class="article-card"
-     data-tags="exploit,malware"
-     data-vendors=""
-     data-severity=""
-     data-title="[webinar] how to close identity gaps in 2026 before ai exploits enterprise risk">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="exploit,malware"
+       data-vendors=""
+       data-severity=""
+       data-title="[webinar] how to close identity gaps in 2026 before ai exploits enterprise risk"
+       data-id="429b3cb8bf63057e"
+       data-published="2026-04-07T21:59:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T21:59:00+05:30" title="7 April 2026, 11:29">7 April 2026, 11:29</time>
+      </div>
+      <h3 class="card-title">[Webinar] How to Close Identity Gaps in 2026 Before AI Exploits Enterprise Risk</h3>
+      <p class="card-summary">In the rapid evolution of the 2026 threat landscape, a frustrating paradox has emerged for CISOs and security leaders: Identity programs are maturing, yet the risk is actually increasing. According to new research from the Ponemon Institute, hundreds of applications within the typical enterprise remain disconnected from centralized identity systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 11:29</span>
     </div>
-    <h3 class="card-title">[Webinar] How to Close Identity Gaps in 2026 Before AI Exploits Enterprise Risk</h3>
-    <p class="card-summary">In the rapid evolution of the 2026 threat landscape, a frustrating paradox has emerged for CISOs and security leaders: Identity programs are maturing, yet the risk is actually increasing. According to new research from the Ponemon Institute, hundreds of applications within the typical enterprise remain disconnected from centralized identity systems.</p>
-    <div class="card-footer">
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>In the rapid evolution of the 2026 threat landscape, a frustrating paradox has emerged for CISOs and security leaders: Identity programs are maturing, yet the risk is actually increasing. According to new research from the Ponemon Institute, hundreds of applications within the typical enterprise remain disconnected from centralized identity systems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/429b3cb8bf63057e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/webinar-how-to-close-identity-gaps-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/344ff91ca739d140.html"
-     class="article-card"
-     data-tags="cve,vulnerability"
-     data-vendors=""
-     data-severity="high"
-     data-title="docker cve-2026-34040 lets attackers bypass authorization and gain host access">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="docker cve-2026-34040 lets attackers bypass authorization and gain host access"
+       data-id="344ff91ca739d140"
+       data-published="2026-04-07T20:45:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-04-07T20:45:00+05:30" title="7 April 2026, 10:15">7 April 2026, 10:15</time>
+      </div>
+      <h3 class="card-title">Docker CVE-2026-34040 Lets Attackers Bypass Authorization and Gain Host Access</h3>
+      <p class="card-summary">A high-severity security vulnerability has been disclosed in Docker Engine that could permit an attacker to bypass authorization plugins (AuthZ) under specific circumstances. Tracked as CVE-2024-41110, CVE-2026-34040. Severity is rated high.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 10:15</span>
-      <span class="card-severity high">high</span>
     </div>
-    <h3 class="card-title">Docker CVE-2026-34040 Lets Attackers Bypass Authorization and Gain Host Access</h3>
-    <p class="card-summary">A high-severity security vulnerability has been disclosed in Docker Engine that could permit an attacker to bypass authorization plugins (AuthZ) under specific circumstances. Tracked as CVE-2024-41110, CVE-2026-34040. Severity is rated high.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A high-severity security vulnerability has been disclosed in Docker Engine that could permit an attacker to bypass authorization plugins (AuthZ) under specific circumstances. The vulnerability, tracked as CVE-2026-34040 (CVSS score: 8.8), stems from an incomplete fix for CVE-2024-41110, a maximum-severity vulnerability in the same component that came to light in July 2024. &#34;</p></div>
+      <div class="detail-links">
+        <a href="../articles/344ff91ca739d140.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/docker-cve-2026-34040-lets-attackers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/eb2f92acafb4dcec.html"
-     class="article-card"
-     data-tags="exploit,ransomware,vulnerability,zero-day"
-     data-vendors="Microsoft"
-     data-severity="critical"
-     data-title="storm-1175 deploys medusa ransomware at &#39;high velocity&#39;">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,ransomware,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="storm-1175 deploys medusa ransomware at &#39;high velocity&#39;"
+       data-id="eb2f92acafb4dcec"
+       data-published="2026-04-07T20:15:07+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-07T20:15:07+00:00" title="7 April 2026, 15:15">7 April 2026, 15:15</time>
+      </div>
+      <h3 class="card-title">Storm-1175 Deploys Medusa Ransomware at &#39;High Velocity&#39;</h3>
+      <p class="card-summary">Microsoft says the financially motivated cybercrime group has exploited n-day and zero-day vulnerabilities in campaigns predicated on speed. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">7 April 2026, 15:15</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Storm-1175 Deploys Medusa Ransomware at &#39;High Velocity&#39;</h3>
-    <p class="card-summary">Microsoft says the financially motivated cybercrime group has exploited n-day and zero-day vulnerabilities in campaigns predicated on speed. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">exploit</span>
-      <span class="tag">ransomware</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft says the financially motivated cybercrime group has exploited n-day and zero-day vulnerabilities in campaigns predicated on speed.</p></div>
+      <div class="detail-links">
+        <a href="../articles/eb2f92acafb4dcec.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/storm-1175-medusa-ransomware-high-velocity" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/68e6bd4277c8ff7d.html"
-     class="article-card"
-     data-tags="patch"
-     data-vendors=""
-     data-severity=""
-     data-title="grafana patches ai bug that could have leaked user data">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="patch"
+       data-vendors=""
+       data-severity=""
+       data-title="grafana patches ai bug that could have leaked user data"
+       data-id="68e6bd4277c8ff7d"
+       data-published="2026-04-07T19:52:26+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T19:52:26+00:00" title="7 April 2026, 14:52">7 April 2026, 14:52</time>
+      </div>
+      <h3 class="card-title">Grafana Patches AI Bug That Could Have Leaked User Data</h3>
+      <p class="card-summary">By hiding malicious instructions on an attacker-controlled Web page, AI could ingest orders that appear benign but return sensitive data to the attacker&#39;s server.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">7 April 2026, 14:52</span>
     </div>
-    <h3 class="card-title">Grafana Patches AI Bug That Could Have Leaked User Data</h3>
-    <p class="card-summary">By hiding malicious instructions on an attacker-controlled Web page, AI could ingest orders that appear benign but return sensitive data to the attacker&#39;s server.</p>
-    <div class="card-footer">
-      <span class="tag">patch</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>By hiding malicious instructions on an attacker-controlled Web page, AI could ingest orders that appear benign but return sensitive data to the attacker&#39;s server.</p></div>
+      <div class="detail-links">
+        <a href="../articles/68e6bd4277c8ff7d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/grafana-patches-ai-bug-leaked-user-data" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/1d19925296e73210.html"
-     class="article-card"
-     data-tags="exploit,malware"
-     data-vendors=""
-     data-severity=""
-     data-title="over 1,000 exposed comfyui instances targeted in cryptomining botnet campaign">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 07:46</span>
-    </div>
-    <h3 class="card-title">Over 1,000 Exposed ComfyUI Instances Targeted in Cryptomining Botnet Campaign</h3>
-    <p class="card-summary">An active campaign has been observed targeting internet-exposed instances running ComfyUI, a popular stable diffusion platform, to enlist them into a cryptocurrency mining and proxy botnet.
+  </div>
+  <div class="article-card"
+       data-tags="exploit,malware"
+       data-vendors=""
+       data-severity=""
+       data-title="over 1,000 exposed comfyui instances targeted in cryptomining botnet campaign"
+       data-id="1d19925296e73210"
+       data-published="2026-04-07T18:16:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T18:16:00+05:30" title="7 April 2026, 07:46">7 April 2026, 07:46</time>
+      </div>
+      <h3 class="card-title">Over 1,000 Exposed ComfyUI Instances Targeted in Cryptomining Botnet Campaign</h3>
+      <p class="card-summary">An active campaign has been observed targeting internet-exposed instances running ComfyUI, a popular stable diffusion platform, to enlist them into a cryptocurrency mining and proxy botnet.
 &#34;A purpose-built Python scanner continuously sweeps major cloud IP ranges for vulnerable targets, automatically installing malicious nodes via ComfyUI-Manager if no exploitable node is already.</p>
-    <div class="card-footer">
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
     </div>
-  </a>
-  <a href="../articles/faa6d94077ca3538.html"
-     class="article-card"
-     data-tags="apt,breach,exploit,malware,patch,vulnerability"
-     data-vendors="AWS,Microsoft"
-     data-severity="critical"
-     data-title="russia hacked routers to steal microsoft office tokens">
-    <div class="card-top">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An active campaign has been observed targeting internet-exposed instances running ComfyUI, a popular stable diffusion platform, to enlist them into a cryptocurrency mining and proxy botnet.</p></div>
+      <div class="detail-links">
+        <a href="../articles/1d19925296e73210.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/over-1000-exposed-comfyui-instances.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="apt,breach,exploit,malware,patch,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="russia hacked routers to steal microsoft office tokens"
+       data-id="faa6d94077ca3538"
+       data-published="2026-04-07T17:02:44+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-07T17:02:44+00:00" title="7 April 2026, 12:02">7 April 2026, 12:02</time>
+      </div>
+      <h3 class="card-title">Russia Hacked Routers to Steal Microsoft Office Tokens</h3>
+      <p class="card-summary">Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Krebs on Security</span>
-      <span class="card-date">7 April 2026, 12:02</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Russia Hacked Routers to Steal Microsoft Office Tokens</h3>
-    <p class="card-summary">Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">AWS</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">apt</span>
-      <span class="tag">breach</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code. Microsoft said in a blog post today it identified more than 200 organizations and 5,000 consumer devices that were caught up in a stealthy but remarkably simple spying network built by a Russia-backed threat actor known as Forest Blizzard .</p></div>
+      <div class="detail-links">
+        <a href="../articles/faa6d94077ca3538.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/3c846062b36ecb3f.html"
-     class="article-card"
-     data-tags="breach"
-     data-vendors=""
-     data-severity=""
-     data-title="the hidden cost of recurring credential incidents">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="breach"
+       data-vendors=""
+       data-severity=""
+       data-title="the hidden cost of recurring credential incidents"
+       data-id="3c846062b36ecb3f"
+       data-published="2026-04-07T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T17:00:00+05:30" title="7 April 2026, 06:30">7 April 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">The Hidden Cost of Recurring Credential Incidents</h3>
+      <p class="card-summary">When talking about credential security, the focus usually lands on breach prevention. This makes sense when IBM’s 2025 Cost of a Data Breach Report puts the average cost of a breach at $4.4 million.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 06:30</span>
     </div>
-    <h3 class="card-title">The Hidden Cost of Recurring Credential Incidents</h3>
-    <p class="card-summary">When talking about credential security, the focus usually lands on breach prevention. This makes sense when IBM’s 2025 Cost of a Data Breach Report puts the average cost of a breach at $4.4 million.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>When talking about credential security, the focus usually lands on breach prevention. This makes sense when IBM’s 2025 Cost of a Data Breach Report puts the average cost of a breach at $4.4 million. Avoiding even one major incident is enough to justify most security investments, but that headline figure obscures the more persistent problems caused by recurring credential</p></div>
+      <div class="detail-links">
+        <a href="../articles/3c846062b36ecb3f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/the-hidden-cost-of-recurring-credential.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/bf147b183550add5.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="rsac 2026: how ai is reshaping cybersecurity faster than ever">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="rsac 2026: how ai is reshaping cybersecurity faster than ever"
+       data-id="bf147b183550add5"
+       data-published="2026-04-07T14:57:16+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T14:57:16+00:00" title="7 April 2026, 09:57">7 April 2026, 09:57</time>
+      </div>
+      <h3 class="card-title">RSAC 2026: How AI Is Reshaping Cybersecurity Faster Than Ever</h3>
+      <p class="card-summary">Dark Reading&#39;s Kelly Jackson Higgins shares insights on the past, present, and future of cybersecurity after attending RSAC 2026 Conference.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">7 April 2026, 09:57</span>
     </div>
-    <h3 class="card-title">RSAC 2026: How AI Is Reshaping Cybersecurity Faster Than Ever</h3>
-    <p class="card-summary">Dark Reading&#39;s Kelly Jackson Higgins shares insights on the past, present, and future of cybersecurity after attending RSAC 2026 Conference.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Dark Reading&#39;s Kelly Jackson Higgins shares insights on the past, present, and future of cybersecurity after attending RSAC 2026 Conference.</p></div>
+      <div class="detail-links">
+        <a href="../articles/bf147b183550add5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/rsac-2026-how-ai-is-reshaping-cybersecurity-faster-than-ever" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/bd48a3cfa210c8f7.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="human vs. ai: debates shape rsac 2026 cybersecurity trends">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="human vs. ai: debates shape rsac 2026 cybersecurity trends"
+       data-id="bd48a3cfa210c8f7"
+       data-published="2026-04-07T14:36:44+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T14:36:44+00:00" title="7 April 2026, 09:36">7 April 2026, 09:36</time>
+      </div>
+      <h3 class="card-title">Human vs. AI: Debates Shape RSAC 2026 Cybersecurity Trends</h3>
+      <p class="card-summary">As AI dominated RSAC 2026, CISOs and industry leaders debated its role in security, from agentic applications to the challenges of scaling human involvement in decision-making.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">7 April 2026, 09:36</span>
     </div>
-    <h3 class="card-title">Human vs. AI: Debates Shape RSAC 2026 Cybersecurity Trends</h3>
-    <p class="card-summary">As AI dominated RSAC 2026, CISOs and industry leaders debated its role in security, from agentic applications to the challenges of scaling human involvement in decision-making.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>As AI dominated RSAC 2026, CISOs and industry leaders debated its role in security, from agentic applications to the challenges of scaling human involvement in decision-making.</p></div>
+      <div class="detail-links">
+        <a href="../articles/bd48a3cfa210c8f7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/human-vs-ai-debates-shape-rsac-2026-cybersecurity-trends" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/96c51e3de653509e.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="lies, damned lies, and cybersecurity metrics">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="lies, damned lies, and cybersecurity metrics"
+       data-id="96c51e3de653509e"
+       data-published="2026-04-07T14:26:02+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T14:26:02+00:00" title="7 April 2026, 09:26">7 April 2026, 09:26</time>
+      </div>
+      <h3 class="card-title">Lies, Damned Lies, and Cybersecurity Metrics</h3>
+      <p class="card-summary">A panel of five C-suite leaders discuss how cybersecurity success is measured and why it isn&#39;t improving results.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">7 April 2026, 09:26</span>
     </div>
-    <h3 class="card-title">Lies, Damned Lies, and Cybersecurity Metrics</h3>
-    <p class="card-summary">A panel of five C-suite leaders discuss how cybersecurity success is measured and why it isn&#39;t improving results.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A panel of five C-suite leaders discuss how cybersecurity success is measured and why it isn&#39;t improving results.</p></div>
+      <div class="detail-links">
+        <a href="../articles/96c51e3de653509e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/lies-damned-lies-cybersecurity-metrics" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/ead0d35050eb36b6.html"
-     class="article-card"
-     data-tags="breach,exploit,malware,vulnerability"
-     data-vendors=""
-     data-severity="high"
-     data-title="new gpubreach attack enables full cpu privilege escalation via gddr6 bit-flips">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="new gpubreach attack enables full cpu privilege escalation via gddr6 bit-flips"
+       data-id="ead0d35050eb36b6"
+       data-published="2026-04-07T14:08:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-04-07T14:08:00+05:30" title="7 April 2026, 03:38">7 April 2026, 03:38</time>
+      </div>
+      <h3 class="card-title">New GPUBreach Attack Enables Full CPU Privilege Escalation via GDDR6 Bit-Flips</h3>
+      <p class="card-summary">New academic research has identified multiple RowHammer attacks against high-performance graphics processing units (GPUs) that could be exploited to escalate privileges and, in some cases, even take full control of a host. Severity is rated high.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 03:38</span>
-      <span class="card-severity high">high</span>
     </div>
-    <h3 class="card-title">New GPUBreach Attack Enables Full CPU Privilege Escalation via GDDR6 Bit-Flips</h3>
-    <p class="card-summary">New academic research has identified multiple RowHammer attacks against high-performance graphics processing units (GPUs) that could be exploited to escalate privileges and, in some cases, even take full control of a host. Severity is rated high.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>New academic research has identified multiple RowHammer attacks against high-performance graphics processing units (GPUs) that could be exploited to escalate privileges and, in some cases, even take full control of a host. The efforts have been codenamed GPUBreach, GDDRHammer, and GeForge. GPUBreach goes a step further than GPUHammer, demonstrating for the first time that</p></div>
+      <div class="detail-links">
+        <a href="../articles/ead0d35050eb36b6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/new-gpubreach-attack-enables-full-cpu.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/d44968d00b285836.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="focusing on the people in cybersecurity at rsac 2026 conference">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="focusing on the people in cybersecurity at rsac 2026 conference"
+       data-id="d44968d00b285836"
+       data-published="2026-04-07T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-07T13:00:00+00:00" title="7 April 2026, 08:00">7 April 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Focusing on the People in Cybersecurity at RSAC 2026 Conference</h3>
+      <p class="card-summary">AI dominated RSAC 2026 Conference, but it&#39;s still the humans in cybersecurity who matter most.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">7 April 2026, 08:00</span>
     </div>
-    <h3 class="card-title">Focusing on the People in Cybersecurity at RSAC 2026 Conference</h3>
-    <p class="card-summary">AI dominated RSAC 2026 Conference, but it&#39;s still the humans in cybersecurity who matter most.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI dominated RSAC 2026 Conference, but it&#39;s still the humans in cybersecurity who matter most.</p></div>
+      <div class="detail-links">
+        <a href="../articles/d44968d00b285836.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/focusing-people-cybersecurity-rsac2026" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/944ee823ebc332b5.html"
-     class="article-card"
-     data-tags="exploit,malware,ransomware,vulnerability,zero-day"
-     data-vendors=""
-     data-severity="critical"
-     data-title="china-linked storm-1175 exploits zero-days to rapidly deploy medusa ransomware">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 01:35</span>
-      <span class="card-severity critical">critical</span>
-    </div>
-    <h3 class="card-title">China-Linked Storm-1175 Exploits Zero-Days to Rapidly Deploy Medusa Ransomware</h3>
-    <p class="card-summary">A China-based threat actor known for deploying Medusa ransomware has been linked to the weaponization of a combination of zero-day and N-day vulnerabilities to orchestrate &#34;high-velocity&#34; attacks and break into susceptible internet-facing systems.
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,ransomware,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="china-linked storm-1175 exploits zero-days to rapidly deploy medusa ransomware"
+       data-id="944ee823ebc332b5"
+       data-published="2026-04-07T12:05:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-07T12:05:00+05:30" title="7 April 2026, 01:35">7 April 2026, 01:35</time>
+      </div>
+      <h3 class="card-title">China-Linked Storm-1175 Exploits Zero-Days to Rapidly Deploy Medusa Ransomware</h3>
+      <p class="card-summary">A China-based threat actor known for deploying Medusa ransomware has been linked to the weaponization of a combination of zero-day and N-day vulnerabilities to orchestrate &#34;high-velocity&#34; attacks and break into susceptible internet-facing systems.
 &#34;The threat actor&#39;s high operational tempo and proficiency in identifying exposed perimeter assets have proven successful, with recent. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">ransomware</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
     </div>
-  </a>
-  <a href="../articles/c6dd160b0e65f4a5.html"
-     class="article-card action-required"
-     data-tags="cve,exploit,malware,vulnerability"
-     data-vendors="Microsoft"
-     data-severity="low"
-     data-title="mitsubishi electric genesis64 and iconics suite products">
-    <div class="card-top">
-      <span class="card-source">CISA Alerts</span>
-      <span class="card-date">7 April 2026, 07:00</span>
-      <span class="card-severity low">low</span>
-      <span class="card-action-badge">Action Required</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A China-based threat actor known for deploying Medusa ransomware has been linked to the weaponization of a combination of zero-day and N-day vulnerabilities to orchestrate &#34;high-velocity&#34; attacks and break into susceptible internet-facing systems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/944ee823ebc332b5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-    <h3 class="card-title">Mitsubishi Electric GENESIS64 and ICONICS Suite products</h3>
-    <p class="card-summary">View CSAF 
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="mitsubishi electric genesis64 and iconics suite products"
+       data-id="c6dd160b0e65f4a5"
+       data-published="2026-04-07T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-07T12:00:00+00:00" title="7 April 2026, 07:00">7 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Mitsubishi Electric GENESIS64 and ICONICS Suite products</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  Successful exploitation of these vulnerabilities could allow a local attacker to disclose SQL Server credentials used by the affected products and use them to disclose, tamper with, or destroy data, or to cause a denial-of-service (DoS) condition on the system. Tracked as CVE-2025-14815, CVE-2025-14816.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/a8055ecbac2f8b82.html"
-     class="article-card action-required"
-     data-tags="apt,breach,cve,exploit,malware,patch,phishing,vulnerability"
-     data-vendors="Microsoft"
-     data-severity="critical"
-     data-title="iranian-affiliated cyber actors exploit programmable logic controllers across us critical infrastructure">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">7 April 2026, 07:00</span>
-      <span class="card-severity critical">critical</span>
-      <span class="card-action-badge">Action Required</span>
     </div>
-    <h3 class="card-title">Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure</h3>
-    <p class="card-summary">Advisory at a Glance 
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow a local attacker to disclose SQL Server credentials used by the affected products and use them to disclose, tamper with, or destroy data, or to cause a denial-of-service (DoS) condition on the system. The following versions of Mitsubishi Electric GENESIS64 and ICONICS Suite products are affected:</p>
+<p>GENESIS64 &lt;=10.97.3 (CVE-2025-14815, CVE-2025-14816)</p>
+<p>ICONICS Suite &lt;=10.97.3 (CVE-2025-14815, CVE-2025-14816)</p>
+<p>MobileHMI &lt;=10.97.3 (CVE-2025-14815, CVE-2025-14816)</p>
+<p>Hyper Historian &lt;=10.97.3 (CVE-2025-14815, CVE-2025-14816)</p>
+<p>AnalytiX &lt;=10.97.3 (CVE-2025-14815, CVE-2025-14816)</p>
+<p>MC Works 64 vers:all/* (CVE-2025-14815, CVE-2025-14816)</p>
+<p>GENESIS &lt;=11.02 (CVE-2025-14815, CVE-2025-14816)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 8.8   Mitsubishi Electric   Mitsubishi Electric GENESIS64 and ICONICS Suite products   Cleartext Storage of Sensitive Information, Cleartext Storage of Sensitive Information in GUI           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Japan, United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-14815     When the local caching feature using SQLite is enabled and SQL authentication is used for the SQL Server authentication, the SQL Server credentials are stored in plaintext within the local SQLite file. This results in a vulnerability due to Cleartext Storage of Sensitive Information (CWE 312), which may lead to information disclosure, tampering, or denial of service (DoS).</p></div>
+      <div class="detail-links">
+        <a href="../articles/c6dd160b0e65f4a5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-097-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="apt,breach,cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="iranian-affiliated cyber actors exploit programmable logic controllers across us critical infrastructure"
+       data-id="a8055ecbac2f8b82"
+       data-published="2026-04-07T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-07T12:00:00+00:00" title="7 April 2026, 07:00">7 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure</h3>
+      <p class="card-summary">Advisory at a Glance 
  
  
  
@@ -384,55 +623,92 @@
  Executive Summary 
  
  Iran-affiliated advanced persistent threat (APT) actors are conducting exploitation activity targeting internet-facing operational technology (OT) devices, including programmable logic controllers (PLCs) manufactured by Rockwell Automation/Allen-Bradley. Tracked as CVE-2021-22681.…</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">apt</span>
-      <span class="tag">breach</span>
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">patch</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
     </div>
-  </a>
-  <a href="../articles/dd13f42ca8dd45df.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,vulnerability"
-     data-vendors=""
-     data-severity="critical"
-     data-title="flowise ai agent builder under active cvss 10.0 rce exploitation; 12,000+ instances exposed">
-    <div class="card-top">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Advisory at a Glance         Title   Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure       Original Publication   April 7, 2026       Executive Summary     Iran-affiliated advanced persistent threat (APT) actors are conducting exploitation activity targeting internet-facing operational technology (OT) devices, including programmable logic controllers (PLCs) manufactured by Rockwell Automation/Allen-Bradley. This activity has led to PLC disruptions across several U.S. critical infrastructure sectors through malicious interactions with the project file and manipulation of data on human machine interface (HMI) and supervisory control and data acquisition (SCADA) displays, resulting in operational disruption and financial loss. U.S. organizations should urgently review the tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) in this advisory for indications of current or historical activity on their networks, and apply the recommendations listed in the Mitigations section of this advisory to reduce the risk of compromise.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a8055ecbac2f8b82.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="flowise ai agent builder under active cvss 10.0 rce exploitation; 12,000+ instances exposed"
+       data-id="dd13f42ca8dd45df"
+       data-published="2026-04-07T11:26:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-07T11:26:00+05:30" title="7 April 2026, 00:56">7 April 2026, 00:56</time>
+      </div>
+      <h3 class="card-title">Flowise AI Agent Builder Under Active CVSS 10.0 RCE Exploitation; 12,000+ Instances Exposed</h3>
+      <p class="card-summary">Threat actors are exploiting a maximum-severity security flaw in Flowise, an open-source artificial intelligence (AI) platform, according to new findings from VulnCheck. Tracked as CVE-2025-59528. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">7 April 2026, 00:56</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Flowise AI Agent Builder Under Active CVSS 10.0 RCE Exploitation; 12,000+ Instances Exposed</h3>
-    <p class="card-summary">Threat actors are exploiting a maximum-severity security flaw in Flowise, an open-source artificial intelligence (AI) platform, according to new findings from VulnCheck. Tracked as CVE-2025-59528. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat actors are exploiting a maximum-severity security flaw in Flowise, an open-source artificial intelligence (AI) platform, according to new findings from VulnCheck. The vulnerability in question is CVE-2025-59528 (CVSS score: 10.0), a code injection vulnerability that could result in remote code execution. &#34;The CustomMCP node allows users to input configuration settings for connecting</p></div>
+      <div class="detail-links">
+        <a href="../articles/dd13f42ca8dd45df.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0f38a5fcd228425b.html"
-     class="article-card"
-     data-tags=""
-     data-vendors="Microsoft"
-     data-severity=""
-     data-title="iran-linked password-spraying campaign targets 300+ israeli microsoft 365 organizations">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">6 April 2026, 13:37</span>
-    </div>
-    <h3 class="card-title">Iran-Linked Password-Spraying Campaign Targets 300+ Israeli Microsoft 365 Organizations</h3>
-    <p class="card-summary">An Iran-nexus threat actor is suspected to be behind a password-spraying campaign targeting Microsoft 365 environments in Israel and the U.A.E. amid ongoing conflict in the Middle East. The activity, assessed to be ongoing, was carried out in three distinct attack waves that took place on March 3, March 13, and March 23, 2026, per Check Point.
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity=""
+       data-title="iran-linked password-spraying campaign targets 300+ israeli microsoft 365 organizations"
+       data-id="0f38a5fcd228425b"
+       data-published="2026-04-07T00:07:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-07T00:07:00+05:30" title="6 April 2026, 13:37">6 April 2026, 13:37</time>
+      </div>
+      <h3 class="card-title">Iran-Linked Password-Spraying Campaign Targets 300+ Israeli Microsoft 365 Organizations</h3>
+      <p class="card-summary">An Iran-nexus threat actor is suspected to be behind a password-spraying campaign targeting Microsoft 365 environments in Israel and the U.A.E. amid ongoing conflict in the Middle East. The activity, assessed to be ongoing, was carried out in three distinct attack waves that took place on March 3, March 13, and March 23, 2026, per Check Point.
 &#34;The campaign is primarily.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
     </div>
-  </a>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An Iran-nexus threat actor is suspected to be behind a password-spraying campaign targeting Microsoft 365 environments in Israel and the U.A.E. amid ongoing conflict in the Middle East. The activity, assessed to be ongoing, was carried out in three distinct attack waves that took place on March 3, March 13, and March 23, 2026, per Check Point. &#34;The campaign is primarily</p></div>
+      <div class="detail-links">
+        <a href="../articles/0f38a5fcd228425b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/iran-linked-password-spraying-campaign.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
 
 </div>
   </main>

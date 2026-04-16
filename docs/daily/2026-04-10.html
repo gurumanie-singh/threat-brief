@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-10</title>
+  <title>Threat Brief — 10 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,242 +22,410 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">10 April 2026</h1>
+      <span class="brief-sub">11 articles</span>
     </div>
-    <h1 class="hero-title">10 April 2026</h1>
-    <p class="hero-desc">
-      11 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>2 critical-severity issues detected with active exploitation reported</li>
-      <li>Several new data breach disclosures reported</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/2db0bd6ce52fc1b8.html"
-     class="article-card"
-     data-tags="breach"
-     data-vendors=""
-     data-severity=""
-     data-title="hims breach exposes the most sensitive kinds of phi">
-    <div class="card-top">
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="breach"
+       data-vendors=""
+       data-severity=""
+       data-title="hims breach exposes the most sensitive kinds of phi"
+       data-id="2db0bd6ce52fc1b8"
+       data-published="2026-04-10T20:02:30+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T20:02:30+00:00" title="10 April 2026, 15:02">10 April 2026, 15:02</time>
+      </div>
+      <h3 class="card-title">Hims Breach Exposes the Most Sensitive Kinds of PHI</h3>
+      <p class="card-summary">Threat actors breached the telehealth brand, and now they may know patients&#39; personal health details. What could they do with that information.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">10 April 2026, 15:02</span>
     </div>
-    <h3 class="card-title">Hims Breach Exposes the Most Sensitive Kinds of PHI</h3>
-    <p class="card-summary">Threat actors breached the telehealth brand, and now they may know patients&#39; personal health details. What could they do with that information.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat actors breached the telehealth brand, and now they may know patients&#39; personal health details. What could they do with that information?</p></div>
+      <div class="detail-links">
+        <a href="../articles/2db0bd6ce52fc1b8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/hims-breach-exposes-sensitive-phi" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/12aa729c8b8f4800.html"
-     class="article-card"
-     data-tags="breach"
-     data-vendors=""
-     data-severity=""
-     data-title="your next breach will look like business as usual">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="breach"
+       data-vendors=""
+       data-severity=""
+       data-title="your next breach will look like business as usual"
+       data-id="12aa729c8b8f4800"
+       data-published="2026-04-10T19:21:55+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T19:21:55+00:00" title="10 April 2026, 14:21">10 April 2026, 14:21</time>
+      </div>
+      <h3 class="card-title">Your Next Breach Will Look Like Business as Usual</h3>
+      <p class="card-summary">These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">10 April 2026, 14:21</span>
     </div>
-    <h3 class="card-title">Your Next Breach Will Look Like Business as Usual</h3>
-    <p class="card-summary">These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.</p></div>
+      <div class="detail-links">
+        <a href="../articles/12aa729c8b8f4800.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/identity-access-management-security/your-next-breach-business-as-usual" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/1959a3b4252d58c2.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="glassworm campaign uses zig dropper to infect multiple developer ides">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="glassworm campaign uses zig dropper to infect multiple developer ides"
+       data-id="1959a3b4252d58c2"
+       data-published="2026-04-10T18:53:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T18:53:00+05:30" title="10 April 2026, 08:23">10 April 2026, 08:23</time>
+      </div>
+      <h3 class="card-title">GlassWorm Campaign Uses Zig Dropper to Infect Multiple Developer IDEs</h3>
+      <p class="card-summary">Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that&#39;s designed to stealthily infect all integrated development environments (IDEs) on a developer&#39;s machine. The technique has been discovered in an Open VSX extension named &#34;specstudio.code-wakatime-activity-tracker,&#34; which masquerades as WakaTime, a.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">10 April 2026, 08:23</span>
     </div>
-    <h3 class="card-title">GlassWorm Campaign Uses Zig Dropper to Infect Multiple Developer IDEs</h3>
-    <p class="card-summary">Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that&#39;s designed to stealthily infect all integrated development environments (IDEs) on a developer&#39;s machine. The technique has been discovered in an Open VSX extension named &#34;specstudio.code-wakatime-activity-tracker,&#34; which masquerades as WakaTime, a.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that&#39;s designed to stealthily infect all integrated development environments (IDEs) on a developer&#39;s machine. The technique has been discovered in an Open VSX extension named &#34;specstudio.code-wakatime-activity-tracker,&#34; which masquerades as WakaTime, a</p></div>
+      <div class="detail-links">
+        <a href="../articles/1959a3b4252d58c2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/glassworm-campaign-uses-zig-dropper-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/52e76a3fd2fe3ab6.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="browser extensions are the new ai consumption channel that no one is talking about">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="browser extensions are the new ai consumption channel that no one is talking about"
+       data-id="52e76a3fd2fe3ab6"
+       data-published="2026-04-10T16:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T16:30:00+05:30" title="10 April 2026, 06:00">10 April 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">Browser Extensions Are the New AI Consumption Channel That No One Is Talking About</h3>
+      <p class="card-summary">While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there&#39;s a wide-open window nobody&#39;s guarding: AI browser extensions. A new report from LayerX exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network that isn&#39;t on anyone&#39;s.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">10 April 2026, 06:00</span>
     </div>
-    <h3 class="card-title">Browser Extensions Are the New AI Consumption Channel That No One Is Talking About</h3>
-    <p class="card-summary">While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there&#39;s a wide-open window nobody&#39;s guarding: AI browser extensions. A new report from LayerX exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network that isn&#39;t on anyone&#39;s.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there&#39;s a wide-open window nobody&#39;s guarding: AI browser extensions. A new report from LayerX exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network that isn&#39;t on anyone&#39;s</p></div>
+      <div class="detail-links">
+        <a href="../articles/52e76a3fd2fe3ab6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/browser-extensions-are-new-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0173d14a98d9ffb7.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="finra launches financial intelligence fusion center to combat cybersecurity and fraud threats">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="finra launches financial intelligence fusion center to combat cybersecurity and fraud threats"
+       data-id="0173d14a98d9ffb7"
+       data-published="2026-04-10T15:52:28+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T15:52:28+00:00" title="10 April 2026, 10:52">10 April 2026, 10:52</time>
+      </div>
+      <h3 class="card-title">FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats</h3>
+      <p class="card-summary">FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">10 April 2026, 10:52</span>
     </div>
-    <h3 class="card-title">FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats</h3>
-    <p class="card-summary">FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats</p></div>
+      <div class="detail-links">
+        <a href="../articles/0173d14a98d9ffb7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/finra-launches-financial-intelligence-fusion-center" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/27cbe9d5a36fca3d.html"
-     class="article-card"
-     data-tags=""
-     data-vendors=""
-     data-severity=""
-     data-title="orange business reimagines enterprise voice communications with trust and ai">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors=""
+       data-severity=""
+       data-title="orange business reimagines enterprise voice communications with trust and ai"
+       data-id="27cbe9d5a36fca3d"
+       data-published="2026-04-10T15:05:14+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T15:05:14+00:00" title="10 April 2026, 10:05">10 April 2026, 10:05</time>
+      </div>
+      <h3 class="card-title">Orange Business Reimagines Enterprise Voice Communications With Trust and AI</h3>
+      <p class="card-summary">Orange Business Reimagines Enterprise Voice Communications With Trust and AI.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">10 April 2026, 10:05</span>
     </div>
-    <h3 class="card-title">Orange Business Reimagines Enterprise Voice Communications With Trust and AI</h3>
-    <p class="card-summary">Orange Business Reimagines Enterprise Voice Communications With Trust and AI.</p>
-    <div class="card-footer">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Orange Business Reimagines Enterprise Voice Communications With Trust and AI. Orange Business Reimagines Enterprise Voice Communications With Trust and AI</p></div>
+      <div class="detail-links">
+        <a href="../articles/27cbe9d5a36fca3d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/endpoint-security/orange-business-enterprise-voice-comms" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/7bb5ca7ed03afbea.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="industrial controllers still vulnerable as conflicts move to cyber">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="industrial controllers still vulnerable as conflicts move to cyber"
+       data-id="7bb5ca7ed03afbea"
+       data-published="2026-04-10T13:30:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T13:30:00+00:00" title="10 April 2026, 08:30">10 April 2026, 08:30</time>
+      </div>
+      <h3 class="card-title">Industrial Controllers Still Vulnerable As Conflicts Move to Cyber</h3>
+      <p class="card-summary">The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">10 April 2026, 08:30</span>
     </div>
-    <h3 class="card-title">Industrial Controllers Still Vulnerable As Conflicts Move to Cyber</h3>
-    <p class="card-summary">The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices.</p></div>
+      <div class="detail-links">
+        <a href="../articles/7bb5ca7ed03afbea.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/ics-ot-security/industrial-controllers-vulnerable-conflicts-cyber" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/7750536e6ab7fa17.html"
-     class="article-card"
-     data-tags=""
-     data-vendors="Apple,Google,Microsoft"
-     data-severity=""
-     data-title="google rolls out dbsc in chrome 146 to block session theft on windows">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">10 April 2026, 02:58</span>
-    </div>
-    <h3 class="card-title">Google Rolls Out DBSC in Chrome 146 to Block Session Theft on Windows</h3>
-    <p class="card-summary">Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release.
+  </div>
+  <div class="article-card"
+       data-tags=""
+       data-vendors="Apple,Google,Microsoft"
+       data-severity=""
+       data-title="google rolls out dbsc in chrome 146 to block session theft on windows"
+       data-id="7750536e6ab7fa17"
+       data-published="2026-04-10T13:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Apple</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-10T13:28:00+05:30" title="10 April 2026, 02:58">10 April 2026, 02:58</time>
+      </div>
+      <h3 class="card-title">Google Rolls Out DBSC in Chrome 146 to Block Session Theft on Windows</h3>
+      <p class="card-summary">Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release.
 &#34;This project represents a significant.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Apple</span>
-      <span class="vendor-tag">Google</span>
-      <span class="vendor-tag">Microsoft</span>
-    </div>
-  </a>
-  <a href="../articles/50375d4624eb8e91.html"
-     class="article-card"
-     data-tags="cve,exploit,vulnerability"
-     data-vendors=""
-     data-severity="critical"
-     data-title="marimo rce flaw cve-2026-39987 exploited within 10 hours of disclosure">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">10 April 2026, 02:37</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure</h3>
-    <p class="card-summary">A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig. Tracked as CVE-2026-39987. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">vulnerability</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release. &#34;This project represents a significant</p></div>
+      <div class="detail-links">
+        <a href="../articles/7750536e6ab7fa17.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/google-rolls-out-dbsc-in-chrome-146-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/5ed05f0c5c1baa83.html"
-     class="article-card"
-     data-tags="exploit,zero-day"
-     data-vendors=""
-     data-severity="critical"
-     data-title="can anthropic keep its exploit-writing ai out of the wrong hands?">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="marimo rce flaw cve-2026-39987 exploited within 10 hours of disclosure"
+       data-id="50375d4624eb8e91"
+       data-published="2026-04-10T13:07:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-10T13:07:00+05:30" title="10 April 2026, 02:37">10 April 2026, 02:37</time>
+      </div>
+      <h3 class="card-title">Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure</h3>
+      <p class="card-summary">A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig. Tracked as CVE-2026-39987. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig. The vulnerability in question is CVE-2026-39987 (CVSS score: 9.3), a pre-authenticated remote code execution vulnerability impacting all versions of Marimo prior to and including</p></div>
+      <div class="detail-links">
+        <a href="../articles/50375d4624eb8e91.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="can anthropic keep its exploit-writing ai out of the wrong hands?"
+       data-id="5ed05f0c5c1baa83"
+       data-published="2026-04-10T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-10T13:00:00+00:00" title="10 April 2026, 08:00">10 April 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?</h3>
+      <p class="card-summary">Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">10 April 2026, 08:00</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?</h3>
-    <p class="card-summary">Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">exploit</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said.</p></div>
+      <div class="detail-links">
+        <a href="../articles/5ed05f0c5c1baa83.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/anthropic-exploit-writing-mythos-ai-safe" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/c59af9fa8683d3dd.html"
-     class="article-card"
-     data-tags="breach,malware,patch"
-     data-vendors=""
-     data-severity=""
-     data-title="backdoored smart slider 3 pro update distributed via compromised nextend servers">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="breach,malware,patch"
+       data-vendors=""
+       data-severity=""
+       data-title="backdoored smart slider 3 pro update distributed via compromised nextend servers"
+       data-id="c59af9fa8683d3dd"
+       data-published="2026-04-10T11:58:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-10T11:58:00+05:30" title="10 April 2026, 01:28">10 April 2026, 01:28</time>
+      </div>
+      <h3 class="card-title">Backdoored Smart Slider 3 Pro Update Distributed via Compromised Nextend Servers</h3>
+      <p class="card-summary">Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">10 April 2026, 01:28</span>
     </div>
-    <h3 class="card-title">Backdoored Smart Slider 3 Pro Update Distributed via Compromised Nextend Servers</h3>
-    <p class="card-summary">Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack.</p>
-    <div class="card-footer">
-      <span class="tag">breach</span>
-      <span class="tag">malware</span>
-      <span class="tag">patch</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack. Smart Slider 3 is a popular WordPress slider plugin with more than 800,000 active installations across its free and Pro</p></div>
+      <div class="detail-links">
+        <a href="../articles/c59af9fa8683d3dd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/backdoored-smart-slider-3-pro-update.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

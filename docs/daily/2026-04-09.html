@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Threat Brief — 2026-04-09</title>
+  <title>Threat Brief — 9 April 2026</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,290 +22,488 @@
 
   <main>
 <div class="section-inner">
-  <div class="page-hero">
-    <a href="../index.html" class="back-link">← Back to latest</a>
-    <div class="hero-label">
-      <span class="hero-label-dot"></span>
-      daily briefing
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">9 April 2026</h1>
+      <span class="brief-sub">12 articles</span>
     </div>
-    <h1 class="hero-title">9 April 2026</h1>
-    <p class="hero-desc">
-      12 articles from the day's cybersecurity landscape.
-    </p>
   </div>
 
-  <div class="landscape-summary">
-    <div class="landscape-title">Day's Threat Landscape</div>
-    <ul class="landscape-bullets">
-      <li>3 critical-severity issues detected with active exploitation reported</li>
-      <li>Microsoft ecosystem affected by multiple advisories</li>
-      <li>Multiple phishing campaigns identified targeting enterprises</li>
-    </ul>
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search-bar">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
-  </div>
-
-  <div class="filter-section">
-    <div class="filter-row-label">Severity</div>
-    <div class="filter-row">
-      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
-      <button class="filter-btn severity-low" data-filter-group="severity" data-filter-value="low">low</button>
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
-    </div>
-
-    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
-    <div class="filter-row">
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
-  <a href="../articles/38fa011d64defc84.html"
-     class="article-card"
-     data-tags="patch,vulnerability"
-     data-vendors="Google,Microsoft"
-     data-severity=""
-     data-title="engagelab sdk flaw exposed 50m android users, including 30m crypto wallet installs">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">9 April 2026, 12:26</span>
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+      </div>
     </div>
-    <h3 class="card-title">EngageLab SDK Flaw Exposed 50M Android Users, Including 30M Crypto Wallet Installs</h3>
-    <p class="card-summary">Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card"
+       data-tags="patch,vulnerability"
+       data-vendors="Google,Microsoft"
+       data-severity=""
+       data-title="engagelab sdk flaw exposed 50m android users, including 30m crypto wallet installs"
+       data-id="38fa011d64defc84"
+       data-published="2026-04-09T22:56:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-09T22:56:00+05:30" title="9 April 2026, 12:26">9 April 2026, 12:26</time>
+      </div>
+      <h3 class="card-title">EngageLab SDK Flaw Exposed 50M Android Users, Including 30M Crypto Wallet Installs</h3>
+      <p class="card-summary">Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.
 &#34;This flaw allows apps on the same device to bypass Android security sandbox and gain unauthorized access to private data,&#34; the Microsoft Defender.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Google</span>
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/d7439478f7204bc0.html"
-     class="article-card"
-     data-tags="malware,phishing"
-     data-vendors=""
-     data-severity=""
-     data-title="uat-10362 targets taiwanese ngos with lucidrook malware in spear-phishing campaigns">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">9 April 2026, 11:23</span>
     </div>
-    <h3 class="card-title">UAT-10362 Targets Taiwanese NGOs with LucidRook Malware in Spear-Phishing Campaigns</h3>
-    <p class="card-summary">A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.</p></div>
+      <div class="detail-links">
+        <a href="../articles/38fa011d64defc84.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/engagelab-sdk-flaw-exposed-50m-android.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity=""
+       data-title="uat-10362 targets taiwanese ngos with lucidrook malware in spear-phishing campaigns"
+       data-id="d7439478f7204bc0"
+       data-published="2026-04-09T21:53:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-09T21:53:00+05:30" title="9 April 2026, 11:23">9 April 2026, 11:23</time>
+      </div>
+      <h3 class="card-title">UAT-10362 Targets Taiwanese NGOs with LucidRook Malware in Spear-Phishing Campaigns</h3>
+      <p class="card-summary">A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.
 &#34;LucidRook is a sophisticated stager that embeds a Lua interpreter and Rust-compiled libraries within a dynamic-link library (DLL) to download and.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
     </div>
-  </a>
-  <a href="../articles/db59e2860f7998df.html"
-     class="article-card"
-     data-tags="apt,patch"
-     data-vendors=""
-     data-severity=""
-     data-title="russia&#39;s &#39;fancy bear&#39; apt continues its global onslaught">
-    <div class="card-top">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.</p></div>
+      <div class="detail-links">
+        <a href="../articles/d7439478f7204bc0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/uat-10362-targets-taiwanese-ngos-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="apt,patch"
+       data-vendors=""
+       data-severity=""
+       data-title="russia&#39;s &#39;fancy bear&#39; apt continues its global onslaught"
+       data-id="db59e2860f7998df"
+       data-published="2026-04-09T20:50:37+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-09T20:50:37+00:00" title="9 April 2026, 15:50">9 April 2026, 15:50</time>
+      </div>
+      <h3 class="card-title">Russia&#39;s &#39;Fancy Bear&#39; APT Continues Its Global Onslaught</h3>
+      <p class="card-summary">Victims don&#39;t need to match the cyber espionage group&#39;s technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">9 April 2026, 15:50</span>
     </div>
-    <h3 class="card-title">Russia&#39;s &#39;Fancy Bear&#39; APT Continues Its Global Onslaught</h3>
-    <p class="card-summary">Victims don&#39;t need to match the cyber espionage group&#39;s technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable.</p>
-    <div class="card-footer">
-      <span class="tag">apt</span>
-      <span class="tag">patch</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Victims don&#39;t need to match the cyber espionage group&#39;s technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable.</p></div>
+      <div class="detail-links">
+        <a href="../articles/db59e2860f7998df.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/russias-fancy-bear-apt-continues-global-onslaught" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0f1c461c024a2a00.html"
-     class="article-card"
-     data-tags="exploit,zero-day"
-     data-vendors="Microsoft"
-     data-severity="critical"
-     data-title="&#39;bluehammer&#39; windows zero-day exploit signals microsoft bug disclosure issues">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="&#39;bluehammer&#39; windows zero-day exploit signals microsoft bug disclosure issues"
+       data-id="0f1c461c024a2a00"
+       data-published="2026-04-09T20:13:34+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-09T20:13:34+00:00" title="9 April 2026, 15:13">9 April 2026, 15:13</time>
+      </div>
+      <h3 class="card-title">&#39;BlueHammer&#39; Windows Zero-Day Exploit Signals Microsoft Bug Disclosure Issues</h3>
+      <p class="card-summary">Under the alias &#39;Chaotic Eclipse,&#39; a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">9 April 2026, 15:13</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">&#39;BlueHammer&#39; Windows Zero-Day Exploit Signals Microsoft Bug Disclosure Issues</h3>
-    <p class="card-summary">Under the alias &#39;Chaotic Eclipse,&#39; a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">exploit</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Under the alias &#39;Chaotic Eclipse,&#39; a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0f1c461c024a2a00.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/bluehammer-windows-exploit-microsoft-bug-disclosure-issues" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/e8857e241085d5ea.html"
-     class="article-card"
-     data-tags="malware,vulnerability,zero-day"
-     data-vendors=""
-     data-severity="critical"
-     data-title="threatsday bulletin: hybrid p2p botnet, 13-year-old apache rce and 18 more stories">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="threatsday bulletin: hybrid p2p botnet, 13-year-old apache rce and 18 more stories"
+       data-id="e8857e241085d5ea"
+       data-published="2026-04-09T18:27:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-09T18:27:00+05:30" title="9 April 2026, 07:57">9 April 2026, 07:57</time>
+      </div>
+      <h3 class="card-title">ThreatsDay Bulletin: Hybrid P2P Botnet, 13-Year-Old Apache RCE and 18 More Stories</h3>
+      <p class="card-summary">Another week, another batch of things that probably should&#39;ve been caught sooner but weren&#39;t. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">9 April 2026, 07:57</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">ThreatsDay Bulletin: Hybrid P2P Botnet, 13-Year-Old Apache RCE and 18 More Stories</h3>
-    <p class="card-summary">Another week, another batch of things that probably should&#39;ve been caught sooner but weren&#39;t. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Another week, another batch of things that probably should&#39;ve been caught sooner but weren&#39;t. This one&#39;s got some range — old vulnerabilities getting new life, a few &#34;why was that even possible&#34; moments, attackers leaning on platforms and tools you&#39;d normally trust without thinking twice. Quiet escalations more than loud zero-days, but the kind that matter more in</p></div>
+      <div class="detail-links">
+        <a href="../articles/e8857e241085d5ea.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0c043d7a435350f3.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="do ceasefires slow cyberattacks? history suggests not">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="do ceasefires slow cyberattacks? history suggests not"
+       data-id="0c043d7a435350f3"
+       data-published="2026-04-09T18:15:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-09T18:15:00+00:00" title="9 April 2026, 13:15">9 April 2026, 13:15</time>
+      </div>
+      <h3 class="card-title">Do Ceasefires Slow Cyberattacks? History Suggests Not</h3>
+      <p class="card-summary">The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn&#39;t actually name or directly involve them.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">9 April 2026, 13:15</span>
     </div>
-    <h3 class="card-title">Do Ceasefires Slow Cyberattacks? History Suggests Not</h3>
-    <p class="card-summary">The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn&#39;t actually name or directly involve them.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn&#39;t actually name or directly involve them.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0c043d7a435350f3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-analytics/ceasefires-slow-cyberattacks-history" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/12c1b50f61af74f6.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="the hidden security risks of shadow ai in enterprises">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="the hidden security risks of shadow ai in enterprises"
+       data-id="12c1b50f61af74f6"
+       data-published="2026-04-09T17:01:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-09T17:01:00+05:30" title="9 April 2026, 06:31">9 April 2026, 06:31</time>
+      </div>
+      <h3 class="card-title">The Hidden Security Risks of Shadow AI in Enterprises</h3>
+      <p class="card-summary">As AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">9 April 2026, 06:31</span>
     </div>
-    <h3 class="card-title">The Hidden Security Risks of Shadow AI in Enterprises</h3>
-    <p class="card-summary">As AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>As AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI. While similar to the phenomenon of</p></div>
+      <div class="detail-links">
+        <a href="../articles/12c1b50f61af74f6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/the-hidden-security-risks-of-shadow-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/2f73fa65ef95401f.html"
-     class="article-card"
-     data-tags="exploit,vulnerability,zero-day"
-     data-vendors="Adobe"
-     data-severity="critical"
-     data-title="adobe reader zero-day exploited via malicious pdfs since december 2025">
-    <div class="card-top">
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors="Adobe"
+       data-severity="critical"
+       data-title="adobe reader zero-day exploited via malicious pdfs since december 2025"
+       data-id="2f73fa65ef95401f"
+       data-published="2026-04-09T16:45:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-04-09T16:45:00+05:30" title="9 April 2026, 06:15">9 April 2026, 06:15</time>
+      </div>
+      <h3 class="card-title">Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025</h3>
+      <p class="card-summary">Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">9 April 2026, 06:15</span>
-      <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025</h3>
-    <p class="card-summary">Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Adobe</span>
-      <span class="tag">exploit</span>
-      <span class="tag">vulnerability</span>
-      <span class="tag">zero-day</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. The finding, detailed by EXPMON&#39;s Haifei Li, has been described as a highly-sophisticated PDF exploit. The artifact (&#34;Invoice540.pdf&#34;) first appeared on the VirusTotal platform on November 28, 2025.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2f73fa65ef95401f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/1c57fd7787ee2620.html"
-     class="article-card"
-     data-tags="malware"
-     data-vendors=""
-     data-severity=""
-     data-title="bitter-linked hack-for-hire campaign targets journalists across mena region">
-    <div class="card-top">
+  </div>
+  <div class="article-card"
+       data-tags="malware"
+       data-vendors=""
+       data-severity=""
+       data-title="bitter-linked hack-for-hire campaign targets journalists across mena region"
+       data-id="1c57fd7787ee2620"
+       data-published="2026-04-09T16:10:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-09T16:10:00+05:30" title="9 April 2026, 05:40">9 April 2026, 05:40</time>
+      </div>
+      <h3 class="card-title">Bitter-Linked Hack-for-Hire Campaign Targets Journalists Across MENA Region</h3>
+      <p class="card-summary">An apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings from Access Now, Lookout, and SMEX. Two of the targets included prominent Egyptian journalists and government critics, Mostafa.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">The Hacker News</span>
-      <span class="card-date">9 April 2026, 05:40</span>
     </div>
-    <h3 class="card-title">Bitter-Linked Hack-for-Hire Campaign Targets Journalists Across MENA Region</h3>
-    <p class="card-summary">An apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings from Access Now, Lookout, and SMEX. Two of the targets included prominent Egyptian journalists and government critics, Mostafa.</p>
-    <div class="card-footer">
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings from Access Now, Lookout, and SMEX. Two of the targets included prominent Egyptian journalists and government critics, Mostafa</p></div>
+      <div class="detail-links">
+        <a href="../articles/1c57fd7787ee2620.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/bitter-linked-hack-for-hire-campaign.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
-  <a href="../articles/0270ce85daf3395d.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,phishing,vulnerability"
-     data-vendors=""
-     data-severity="low"
-     data-title="contemporary controls basc 20t">
-    <div class="card-top">
-      <span class="card-source">CISA Alerts</span>
-      <span class="card-date">9 April 2026, 07:00</span>
-      <span class="card-severity low">low</span>
-    </div>
-    <h3 class="card-title">Contemporary Controls BASC 20T</h3>
-    <p class="card-summary">View CSAF 
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="contemporary controls basc 20t"
+       data-id="0270ce85daf3395d"
+       data-published="2026-04-09T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-09T12:00:00+00:00" title="9 April 2026, 07:00">9 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Contemporary Controls BASC 20T</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  Successful exploitation of this vulnerability could allow an attacker to enumerate the functionality of each component associated with the PLC, reconfigure, rename, delete, perform file transfers, and make remote procedure calls. Tracked as CVE-2025-13926.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/e56cc34665cbb7c5.html"
-     class="article-card"
-     data-tags="cve,exploit,malware,patch,phishing,vulnerability"
-     data-vendors="Microsoft"
-     data-severity="low"
-     data-title="gpl odorizers gpl750">
-    <div class="card-top">
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
       <span class="card-source">CISA Alerts</span>
-      <span class="card-date">9 April 2026, 07:00</span>
-      <span class="card-severity low">low</span>
     </div>
-    <h3 class="card-title">GPL Odorizers GPL750</h3>
-    <p class="card-summary">View CSAF 
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to enumerate the functionality of each component associated with the PLC, reconfigure, rename, delete, perform file transfers, and make remote procedure calls. The following versions of Contemporary Controls BASC 20T are affected:</p>
+<p>BASControl20 3.1 (CVE-2025-13926)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   Contemporary Controls Sedona Alliance   Contemporary Controls BASC 20T   Reliance on Untrusted Inputs in a Security Decision           Background     Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-13926     An attacker could use data obtained by sniffing the network traffic to forge packets in order to make arbitrary requests to Contemporary Controls BASC 20T. View CVE Details</p>
+<p>Affected Products   Contemporary Controls BASC 20T     Vendor:  Contemporary Controls Sedona Alliance   Product Version:  Contemporary Controls Sedona Alliance BASControl20: 3.1   Product Status:  known_affected       Remediations   Mitigation  According to Contemporary Controls, the BASC-20T is an obsolete product.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0270ce85daf3395d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-099-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="gpl odorizers gpl750"
+       data-id="e56cc34665cbb7c5"
+       data-published="2026-04-09T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-09T12:00:00+00:00" title="9 April 2026, 07:00">9 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">GPL Odorizers GPL750</h3>
+      <p class="card-summary">View CSAF 
 
  Summary 
  Successful exploitation of this vulnerability could allow a low privileged remote attacker to manipulate register values, which would result in too much or too little odorant being injected into a gas line. Tracked as CVE-2026-4436.</p>
-    <div class="card-footer">
-      <span class="vendor-tag">Microsoft</span>
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">patch</span>
-      <span class="tag">phishing</span>
-      <span class="tag">vulnerability</span>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
     </div>
-  </a>
-  <a href="../articles/63388ceda502ba97.html"
-     class="article-card"
-     data-tags="apt,malware"
-     data-vendors=""
-     data-severity=""
-     data-title="russia&#39;s forest blizzard nabs rafts of logins via soho routers">
-    <div class="card-top">
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow a low privileged remote attacker to manipulate register values, which would result in too much or too little odorant being injected into a gas line. The following versions of GPL Odorizers GPL750 are affected:</p>
+<p>GPL750 (XL4) &gt;=v1.0|</p>
+<p>GPL750 (XL4 Prime) &gt;=v4.0|</p>
+<p>GPL750 (XL7) &gt;=v13.0|</p>
+<p>GPL750 (XL7 Prime) &gt;=v18.4|</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 8.6   GPL Odorizers   GPL Odorizers GPL750   Missing Authentication for Critical Function           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-4436     A low-privileged remote attacker can send Modbus packets to manipulate register values that are inputs to the odorant injection logic such that too much or too little odorant is injected into a gas line. View CVE Details</p>
+<p>Affected Products   GPL Odorizers GPL750     Vendor:  GPL Odorizers   Product Version:  GPL Odorizers GPL750 (XL4): &gt;=v1.0|&lt;v6.0, GPL Odorizers GPL750 (XL4 Prime): &gt;=v4.0|&lt;v6.0, GPL Odorizers GPL750 (XL7): &gt;=v13.0|&lt;v20.0, GPL Odorizers GPL750 (XL7 Prime): &gt;=v18.4|&lt;v20.0   Product Status:  known_affected       Remediations   Mitigation  GPL Odorizers recommends users update to the latest software version of the GPL750 in connection with the latest firmware from Horner Automation for the XL4, XL4 Prime, XL7, and XL7 Prime devices.https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm.  https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm</p>
+<p>Mitigation  GPL Odorizers recommends users clear the old files from their microSD cards, keeping only the LOGS folder and the FIRMWARE.LIC file if they have a WebMI license.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e56cc34665cbb7c5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-099-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity=""
+       data-title="russia&#39;s forest blizzard nabs rafts of logins via soho routers"
+       data-id="63388ceda502ba97"
+       data-published="2026-04-09T01:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <time class="meta-time" data-iso="2026-04-09T01:00:00+00:00" title="8 April 2026, 20:00">8 April 2026, 20:00</time>
+      </div>
+      <h3 class="card-title">Russia&#39;s Forest Blizzard Nabs Rafts of Logins via SOHO Routers</h3>
+      <p class="card-summary">Heard of fileless malware. How about malwareless cyber espionage.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
       <span class="card-source">Dark Reading</span>
-      <span class="card-date">8 April 2026, 20:00</span>
     </div>
-    <h3 class="card-title">Russia&#39;s Forest Blizzard Nabs Rafts of Logins via SOHO Routers</h3>
-    <p class="card-summary">Heard of fileless malware. How about malwareless cyber espionage.</p>
-    <div class="card-footer">
-      <span class="tag">apt</span>
-      <span class="tag">malware</span>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Heard of fileless malware? How about malwareless cyber espionage? Russia&#39;s APT28 is spying on global organizations by modifying just one DNS setting in vulnerable routers.</p></div>
+      <div class="detail-links">
+        <a href="../articles/63388ceda502ba97.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/russia-forest-blizzard-logins-soho-routers" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
     </div>
-  </a>
+  </div>
 
 </div>
   </main>

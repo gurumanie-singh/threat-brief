@@ -13,6 +13,7 @@ from scripts.utils import (
     article_id,
     parse_date,
     strip_html,
+    strip_emoji,
     truncate,
     now_utc,
 )
@@ -34,18 +35,18 @@ def _extract_full_content(entry: Any) -> str:
     if hasattr(entry, "content") and entry.content:
         for c in entry.content:
             if c.get("type", "") in ("text/html", "text/plain"):
-                return strip_html(c.get("value", ""))
-            return strip_html(c.get("value", ""))
+                return strip_emoji(strip_html(c.get("value", "")))
+            return strip_emoji(strip_html(c.get("value", "")))
 
     raw = entry.get("summary") or entry.get("description") or ""
-    return strip_html(raw)
+    return strip_emoji(strip_html(raw))
 
 
 def _parse_entry(
     entry: Any, source_name: str, tag_keywords: dict[str, list[str]]
 ) -> dict[str, Any] | None:
     """Convert a single feedparser entry to our normalised schema."""
-    title = (entry.get("title") or "").strip()
+    title = strip_emoji((entry.get("title") or "").strip())
     link = (entry.get("link") or "").strip()
     if not title or not link:
         return None

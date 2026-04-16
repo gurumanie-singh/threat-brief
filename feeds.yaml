@@ -1,36 +1,24 @@
 # ──────────────────────────────────────────────
-# Threat Brief — RSS Feed Configuration
-# ──────────────────────────────────────────────
-# Add or remove feeds below. Each entry needs:
-#   name  — human-readable source label
-#   url   — full RSS/Atom feed URL
-#
-# After editing, the next scheduled GitHub Actions
-# run will pick up the changes automatically.
+# Threat Brief — Configuration
 # ──────────────────────────────────────────────
 
 feeds:
   - name: The Hacker News
     url: https://feeds.feedburner.com/TheHackersNews
-
   - name: Krebs on Security
     url: https://krebsonsecurity.com/feed/
-
   - name: BleepingComputer
     url: https://www.bleepingcomputer.com/feed/
-
   - name: Dark Reading
     url: https://www.darkreading.com/rss.xml
-
   - name: Threatpost
     url: https://threatpost.com/feed/
-
   - name: CISA Alerts
     url: https://www.cisa.gov/cybersecurity-advisories/all.xml
 
 # ──────────────────────────────────────────────
-# Tag keywords — articles are auto-tagged when
-# the title or summary contains these terms.
+# Threat tags — articles are auto-tagged when
+# the title or content contains these terms.
 # ──────────────────────────────────────────────
 
 tag_keywords:
@@ -94,6 +82,104 @@ tag_keywords:
     - security update
     - hotfix
     - firmware update
+
+# ──────────────────────────────────────────────
+# Vendor / technology tags — auto-detected
+# ──────────────────────────────────────────────
+
+vendor_keywords:
+  Microsoft:
+    - microsoft
+    - windows
+    - azure
+    - office 365
+    - exchange server
+    - outlook
+    - sharepoint
+    - active directory
+    - msft
+    - defender
+    - edge browser
+  Apple:
+    - apple
+    - macos
+    - ios vulnerability
+    - iphone
+    - safari
+    - webkit
+    - xcode
+  Google:
+    - google
+    - chrome
+    - chromium
+    - android
+    - gcp
+    - google cloud
+  Cisco:
+    - cisco
+    - ios xe
+    - webex
+    - meraki
+    - catalyst
+  VMware:
+    - vmware
+    - esxi
+    - vcenter
+    - vsphere
+    - broadcom vmware
+  Linux:
+    - linux
+    - ubuntu
+    - debian
+    - centos
+    - red hat
+    - rhel
+    - kernel vulnerability
+  AWS:
+    - "aws "
+    - amazon web services
+    - " s3 "
+    - " ec2 "
+  Fortinet:
+    - fortinet
+    - fortigate
+    - fortios
+    - fortimanager
+  Palo Alto:
+    - palo alto
+    - pan-os
+    - panorama
+    - prisma
+    - cortex xdr
+  Adobe:
+    - adobe
+    - acrobat
+    - reader
+    - coldfusion
+  Ivanti:
+    - ivanti
+    - pulse secure
+    - mobileiron
+  SAP:
+    - " sap "
+    - sap netweaver
+    - sap hana
+  Citrix:
+    - citrix
+    - netscaler
+
+# ──────────────────────────────────────────────
+# Personalization — highlight articles matching
+# your environment. No accounts needed.
+# ──────────────────────────────────────────────
+
+personalization:
+  # Articles matching these vendors get a highlight
+  preferred_vendors: []
+  # Articles matching these keywords get a highlight
+  highlight_keywords: []
+  # Minimum severity to include in email (critical, high, medium, low)
+  email_min_severity: ""
 
 # ──────────────────────────────────────────────
 # Settings

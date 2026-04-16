@@ -9,92 +9,151 @@
 <body style="margin:0;padding:0;background-color:#0d0d0c;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0d0d0c;">
     <tr>
-      <td align="center" style="padding:24px 12px;">
+      <td align="center" style="padding:16px 12px;">
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
 
           <!-- Header -->
           <tr>
-            <td style="padding:28px 28px 20px;border-bottom:1px solid rgba(255,255,255,0.08);">
-              <h1 style="margin:0;font-size:24px;color:#f0f0ec;font-weight:700;letter-spacing:-0.02em;">
+            <td style="padding:20px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.08);">
+              <h1 style="margin:0;font-size:22px;color:#f0f0ec;font-weight:700;letter-spacing:-0.02em;">
                 {{ site_title }}
               </h1>
-              <p style="margin:8px 0 0;font-size:13px;color:#5a5a56;letter-spacing:0.08em;text-transform:uppercase;">
+              <p style="margin:6px 0 0;font-size:12px;color:#5a5a56;letter-spacing:0.08em;text-transform:uppercase;">
                 Daily Briefing — {{ day }}
               </p>
             </td>
           </tr>
 
-          <!-- Intro -->
+          {% if landscape_bullets %}
+          <!-- Landscape summary -->
           <tr>
-            <td style="padding:20px 28px 8px;">
-              <p style="margin:0;font-size:14px;color:#9a9a94;line-height:1.6;">
-                {{ articles|length }} article{{ "s" if articles|length != 1 else "" }} from today's cybersecurity landscape. Each summary links to the full analysis on the Threat Brief website.
+            <td style="padding:16px 20px;background:rgba(107,143,255,0.06);border-bottom:1px solid rgba(255,255,255,0.05);">
+              <p style="margin:0 0 6px;font-size:11px;font-weight:600;color:#6b8fff;letter-spacing:0.08em;text-transform:uppercase;">
+                TODAY'S LANDSCAPE
+              </p>
+              {% for bullet in landscape_bullets %}
+              <p style="margin:3px 0;font-size:13px;color:#9a9a94;line-height:1.5;">
+                • {{ bullet }}
+              </p>
+              {% endfor %}
+            </td>
+          </tr>
+          {% endif %}
+
+          {% macro render_tier(label, emoji, items, bg_color, text_color) %}
+          {% if items %}
+          <!-- {{ label }} tier -->
+          <tr>
+            <td style="padding:14px 20px 4px;">
+              <p style="margin:0;font-size:11px;font-weight:700;color:{{ text_color }};letter-spacing:0.08em;text-transform:uppercase;">
+                {{ emoji }} {{ label }}
               </p>
             </td>
           </tr>
-
-          <!-- Articles -->
-          {% for article in articles %}
+          {% for article in items %}
           <tr>
-            <td style="padding:16px 28px;{% if not loop.last %}border-bottom:1px solid rgba(255,255,255,0.05);{% endif %}">
+            <td style="padding:10px 20px;{% if not loop.last %}border-bottom:1px solid rgba(255,255,255,0.04);{% endif %}">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td>
-                    {% if article.severity %}
-                    <span style="font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:100px;
-                      {% if article.severity == 'critical' %}background:rgba(239,68,68,0.12);color:#ef4444;
-                      {% elif article.severity == 'high' %}background:rgba(249,115,22,0.12);color:#f97316;
-                      {% elif article.severity == 'medium' %}background:rgba(234,179,8,0.12);color:#eab308;
-                      {% else %}background:rgba(34,197,94,0.12);color:#22c55e;{% endif %}
-                    ">{{ article.severity }}</span>
-                    <span style="font-size:12px;color:#5a5a56;">&nbsp;·&nbsp;</span>
+                    <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;padding:2px 7px;border-radius:100px;background:{{ bg_color }};color:{{ text_color }};">{{ label }}</span>
+                    {% if article.action_required %}
+                    <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;padding:2px 7px;border-radius:100px;background:rgba(239,68,68,0.1);color:#ef4444;margin-left:4px;">ACTION</span>
                     {% endif %}
-                    <span style="font-size:12px;font-weight:500;color:#9a9a94;">{{ article.source }}</span>
+                    <span style="font-size:11px;color:#5a5a56;margin-left:4px;">{{ article.source }}</span>
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding-top:6px;">
-                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:15px;font-weight:600;color:#f0f0ec;text-decoration:none;line-height:1.4;" target="_blank">
+                  <td style="padding-top:5px;">
+                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:14px;font-weight:600;color:#f0f0ec;text-decoration:none;line-height:1.35;" target="_blank">
                       {{ article.title }}
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding-top:6px;">
-                    <p style="margin:0;font-size:13px;color:#9a9a94;line-height:1.55;">
+                  <td style="padding-top:4px;">
+                    <p style="margin:0;font-size:12px;color:#9a9a94;line-height:1.5;">
                       {{ article.email_summary or article.summary }}
                     </p>
                   </td>
                 </tr>
-                {% if article.tags %}
+                {% if article.vendors|default([]) %}
                 <tr>
-                  <td style="padding-top:8px;">
+                  <td style="padding-top:5px;">
                     <span style="font-size:11px;color:#6b8fff;">
-                      {% for tag in article.tags %}{{ tag }}{% if not loop.last %} · {% endif %}{% endfor %}
+                      {% for v in article.vendors %}{{ v }}{% if not loop.last %} · {% endif %}{% endfor %}
                     </span>
                   </td>
                 </tr>
                 {% endif %}
                 <tr>
-                  <td style="padding-top:8px;">
-                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:12px;font-weight:500;color:#6b8fff;text-decoration:none;" target="_blank">Read full analysis →</a>
+                  <td style="padding-top:6px;">
+                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:11px;font-weight:500;color:#6b8fff;text-decoration:none;" target="_blank">Read full analysis →</a>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
           {% endfor %}
+          {% endif %}
+          {% endmacro %}
+
+          {{ render_tier("Critical", "!!", buckets.critical, "rgba(239,68,68,0.12)", "#ef4444") }}
+          {{ render_tier("High", "!", buckets.high, "rgba(249,115,22,0.12)", "#f97316") }}
+          {{ render_tier("Medium", "--", buckets.medium, "rgba(234,179,8,0.12)", "#eab308") }}
+
+          {% if buckets.other %}
+          <tr>
+            <td style="padding:14px 20px 4px;">
+              <p style="margin:0;font-size:11px;font-weight:700;color:#9a9a94;letter-spacing:0.08em;text-transform:uppercase;">
+                Other
+              </p>
+            </td>
+          </tr>
+          {% for article in buckets.other %}
+          <tr>
+            <td style="padding:10px 20px;{% if not loop.last %}border-bottom:1px solid rgba(255,255,255,0.04);{% endif %}">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <span style="font-size:11px;color:#5a5a56;">{{ article.source }}</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:5px;">
+                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:14px;font-weight:600;color:#f0f0ec;text-decoration:none;line-height:1.35;" target="_blank">
+                      {{ article.title }}
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:4px;">
+                    <p style="margin:0;font-size:12px;color:#9a9a94;line-height:1.5;">
+                      {{ article.email_summary or article.summary }}
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:6px;">
+                    <a href="{% if base_url %}{{ base_url }}/articles/{{ article.id }}.html{% else %}{{ article.link }}{% endif %}" style="font-size:11px;font-weight:500;color:#6b8fff;text-decoration:none;" target="_blank">Read full analysis →</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          {% endfor %}
+          {% endif %}
 
           <!-- Footer -->
           <tr>
-            <td style="padding:28px;text-align:center;border-top:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:24px 20px;text-align:center;border-top:1px solid rgba(255,255,255,0.08);">
               {% if base_url %}
-              <a href="{{ base_url }}/daily/{{ day }}.html" style="display:inline-block;padding:12px 28px;background-color:#6b8fff;color:#fff;border-radius:100px;font-size:14px;font-weight:500;text-decoration:none;" target="_blank">
+              <a href="{{ base_url }}/daily/{{ day }}.html" style="display:inline-block;padding:11px 24px;background-color:#6b8fff;color:#fff;border-radius:100px;font-size:13px;font-weight:500;text-decoration:none;" target="_blank">
                 View full briefing
               </a>
               <br><br>
               {% endif %}
-              <p style="margin:0;font-size:12px;color:#5a5a56;">
+              <p style="margin:0;font-size:11px;color:#5a5a56;">
                 {{ site_title }} — auto-generated from public RSS feeds
               </p>
             </td>

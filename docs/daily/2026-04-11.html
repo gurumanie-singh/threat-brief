@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Brief — 2026-04-11</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -35,11 +35,29 @@
   </div>
 
 
-  <div class="filter-bar">
-    <button class="filter-btn" data-tag="vulnerability">vulnerability</button>
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
   </div>
 
-  <a href="../articles/e0cc74dfb8fd2c8a.html" class="article-card" data-tags="vulnerability">
+  <div class="filter-section">
+
+
+    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <a href="../articles/e0cc74dfb8fd2c8a.html"
+     class="article-card"
+     data-tags="vulnerability"
+     data-vendors=""
+     data-severity=""
+     data-title="citizen lab: law enforcement used webloc to track 500 million devices via ad data">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-11</span>

@@ -28,29 +28,22 @@ EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER", "")
 
 
 def load_feeds_config() -> dict[str, Any]:
-    """Load and validate feeds.yaml, returning the full config dict."""
     if not FEEDS_FILE.exists():
         raise FileNotFoundError(f"Feed config not found: {FEEDS_FILE}")
-
     with open(FEEDS_FILE, "r", encoding="utf-8") as fh:
         config = yaml.safe_load(fh)
-
     if not config or "feeds" not in config:
-        raise ValueError("feeds.yaml must contain a 'feeds' key with at least one entry")
-
+        raise ValueError("feeds.yaml must contain a 'feeds' key")
     feeds = config["feeds"]
     if not isinstance(feeds, list) or len(feeds) == 0:
         raise ValueError("feeds.yaml 'feeds' must be a non-empty list")
-
     for feed in feeds:
         if "url" not in feed or "name" not in feed:
             raise ValueError(f"Each feed entry needs 'name' and 'url': {feed}")
-
     return config
 
 
 def get_settings(config: dict[str, Any] | None = None) -> dict[str, Any]:
-    """Return the settings block with defaults applied."""
     defaults = {
         "max_article_age_days": 7,
         "max_articles_per_page": 50,
@@ -66,7 +59,18 @@ def get_settings(config: dict[str, Any] | None = None) -> dict[str, Any]:
 
 
 def get_tag_keywords(config: dict[str, Any] | None = None) -> dict[str, list[str]]:
-    """Return tag→keywords mapping from config."""
     if config is None:
         config = load_feeds_config()
     return config.get("tag_keywords", {})
+
+
+def get_vendor_keywords(config: dict[str, Any] | None = None) -> dict[str, list[str]]:
+    if config is None:
+        config = load_feeds_config()
+    return config.get("vendor_keywords", {})
+
+
+def get_personalization(config: dict[str, Any] | None = None) -> dict[str, Any]:
+    if config is None:
+        config = load_feeds_config()
+    return config.get("personalization", {})

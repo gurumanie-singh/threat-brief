@@ -15,14 +15,18 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.",
       "technical": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.\n\"By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery",
       "impact": "Impact assessment details are available in the full source article.",
       "mitigation": "Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.\n\"By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery."
+    "email_summary": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.\n\"By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "05de7bc8c1ebebad",
@@ -39,6 +43,8 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.",
       "technical": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.",
@@ -46,7 +52,9 @@
       "mitigation": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files. Severity is rated critical."
+    "email_summary": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "9260c0d097d68be1",
@@ -61,6 +69,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
       "technical": "Specific technical details are available in the original source article.",
@@ -68,7 +78,9 @@
       "mitigation": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle."
+    "email_summary": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "8d84f462b0131fe0",
@@ -86,6 +98,8 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [],
+    "action_required": true,
     "sections": {
       "overview": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]",
       "technical": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]",
@@ -93,7 +107,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]. Severity is rated critical."
+    "email_summary": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "d542854aaf8ed95b",
@@ -114,6 +130,8 @@
     ],
     "cvss": 9.8,
     "severity": "critical",
+    "vendors": [],
+    "action_required": true,
     "sections": {
       "overview": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. The vulnerability in question is CVE-2026-33032 (CVSS score: 9.8), an authentication bypass vulnerability that enables threat actors to seize control of the Nginx service. It has been codenamed MCPwn by Pluto Security.\n\"",
       "technical": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. The vulnerability in question is CVE-2026-33032 (CVSS score: 9.8), an authentication bypass vulnerability that enables threat actors to seize control of the Nginx service.\n\nReferenced vulnerabilities: CVE-2026-33032.",
@@ -121,7 +139,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. Tracked as CVE-2026-33032. Severity is rated critical."
+    "email_summary": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. Tracked as CVE-2026-33032. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "c69a80ade8c2b694",
@@ -142,6 +162,14 @@
     ],
     "cvss": 9.9,
     "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Adobe",
+      "Fortinet",
+      "Microsoft",
+      "SAP"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Topping the list is an SQL injection vulnerability impacting SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-27681, CVSS score: 9.9) that could result in the execution of arbitrary database",
       "technical": "Topping the list is an SQL injection vulnerability impacting SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-27681, CVSS score: 9.9) that could result in the execution of arbitrary database\n\nReferenced vulnerabilities: CVE-2026-27681.",
@@ -149,7 +177,9 @@
       "mitigation": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Tracked as CVE-2026-27681. Severity is rated critical."
+    "email_summary": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Tracked as CVE-2026-27681. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "6e5327252b54761e",
@@ -166,6 +196,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]",
       "technical": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]",
@@ -173,7 +207,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]."
+    "email_summary": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "41931f001ee1570b",
@@ -190,6 +226,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions. Pentera’s AI Security and Exposure Report 2026 reflects that momentum: every CISO surveyed",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -197,7 +235,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions."
+    "email_summary": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "2c415518211f55ab",
@@ -215,6 +255,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...]",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -222,7 +264,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...]."
+    "email_summary": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "c9b6b5f363c37c14",
@@ -237,6 +281,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns.",
       "technical": "Specific technical details are available in the original source article.",
@@ -244,7 +290,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns."
+    "email_summary": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "28f266e5445a99f6",
@@ -259,6 +307,11 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Google, Meta, and Microsoft about half the time don't comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.",
       "technical": "Specific technical details are available in the original source article.",
@@ -266,7 +319,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Google, Meta, and Microsoft about half the time don't comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds."
+    "email_summary": "Google, Meta, and Microsoft about half the time don't comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "0c22eaa9cc3de14f",
@@ -287,14 +342,21 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": true,
     "sections": {
       "overview": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Of these 169 vulnerabilities, 157 are rated Important, eight are rated Critical, three are rated Moderate, and one is rated Low in severity. Ninety-three of the flaws are",
       "technical": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Ninety-three of the flaws are",
       "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Severity is rated critical."
+    "email_summary": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "b9a4932061705a4a",
@@ -311,6 +373,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]",
       "technical": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]",
@@ -318,7 +382,9 @@
       "mitigation": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]."
+    "email_summary": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "a08796f987cee509",
@@ -334,15 +400,22 @@
     "day": "2026-04-15",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]",
       "technical": "Specific technical details are available in the original source article.",
-      "impact": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]\n\nAssessed severity: HIGH.",
+      "impact": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]\n\nAssessed severity: CRITICAL.",
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
     },
-    "email_summary": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]. Severity is rated high."
+    "email_summary": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "0d8829965d3b334f",
@@ -361,6 +434,11 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
       "technical": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
@@ -368,7 +446,9 @@
       "mitigation": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
     },
-    "email_summary": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data."
+    "email_summary": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "b7861aed217ccd44",
@@ -386,6 +466,10 @@
     "cves": [],
     "cvss": null,
     "severity": "high",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]",
       "technical": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]",
@@ -393,7 +477,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]. Severity is rated high."
+    "email_summary": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]. Severity is rated high.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "b3fca0a597673a96",
@@ -408,6 +494,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA's Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...]",
       "technical": "Specific technical details are available in the original source article.",
@@ -415,7 +503,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA's Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...]."
+    "email_summary": "Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA's Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "7a0fe29ec1c6cdac",
@@ -432,6 +522,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -439,7 +533,9 @@
       "mitigation": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.\n\"The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.\n\"The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems."
+    "email_summary": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.\n\"The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "7858923731c2ce61",
@@ -456,6 +552,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]",
       "technical": "Specific technical details are available in the original source article.",
@@ -463,7 +563,9 @@
       "mitigation": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]."
+    "email_summary": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "1f441bc673ccfe04",
@@ -478,6 +580,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...]",
       "technical": "Specific technical details are available in the original source article.",
@@ -485,7 +591,9 @@
       "mitigation": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...]",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...]."
+    "email_summary": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "044119cea07585f0",
@@ -502,6 +610,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -509,7 +621,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers."
+    "email_summary": "The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "8a17fe50f768dc93",
@@ -537,14 +651,39 @@
     ],
     "cvss": null,
     "severity": "critical",
+    "vendors": [
+      "Adobe",
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": true,
     "sections": {
       "overview": "Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Separately, Google Chrome fixed its fourth zero-day of 2026, and an emergency update for Adobe Reader nixes an actively exploited flaw that can lead to remote code execution. Redmond warns that attackers are already targeting CVE-2026-32201 , a vulnerability in Microsoft SharePoint Server that allows attackers to spoof trusted content or interfaces over a network.",
       "technical": "Separately, Google Chrome fixed its fourth zero-day of 2026, and an emergency update for Adobe Reader nixes an actively exploited flaw that can lead to remote code execution. Microsoft also addressed BlueHammer ( CVE-2026-33825 ), a privilege escalation bug in Windows Defender. Narang also said there are indications that a zero-day flaw Adobe patched in an emergency update on April 11 CVE-2026-34621 has seen active exploitation since at least November 2025. Redmond warns that attackers are already targeting CVE-2026-32201 , a vulnerability in Microsoft SharePoint Server that allows attackers to spoof trusted content or interfaces over a network.\n\nReferenced vulnerabilities: CVE-2026-32201, CVE-2026-33825, CVE-2026-34621, CVE-2026-5281.",
       "impact": "Redmond warns that attackers are already targeting CVE-2026-32201 , a vulnerability in Microsoft SharePoint Server that allows attackers to spoof trusted content or interfaces over a network. Mike Walters , president and co-founder of Action1 , said CVE-2026-32201 can be used to deceive employees, partners, or customers by presenting falsified information within trusted SharePoint environments. This CVE can enable phishing attacks, unauthorized data manipulation, or social engineering campaigns that lead to further compromise, Walters said.\n\nAssessed severity: CRITICAL.",
       "mitigation": "Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Separately, Google Chrome fixed its fourth zero-day of 2026, and an emergency update for Adobe Reader nixes an actively exploited flaw that can lead to remote code execution. Narang also said there are indications that a zero-day flaw Adobe patched in an emergency update on April 11 CVE-2026-34621 has seen active exploitation since at least November 2025. For example, a Google Chrome update released earlier this month fixed 21 security holes, including the high-severity zero-day flaw CVE-2026-5281 .\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nPhishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nPhishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Tracked as CVE-2026-32201, CVE-2026-33825, CVE-2026-34621. Severity is rated critical."
+    "email_summary": "Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Tracked as CVE-2026-32201, CVE-2026-33825, CVE-2026-34621. Severity is rated critical.",
+    "related_sources": [
+      {
+        "source": "CISA Alerts",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/04/14/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "source": "CISA Alerts",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/04/13/cisa-adds-seven-known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "source": "The Hacker News",
+        "link": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html"
+      },
+      {
+        "source": "CISA Alerts",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/04/01/cisa-adds-one-known-exploited-vulnerability-catalog"
+      }
+    ],
+    "highlighted": false
   },
   {
     "id": "2ef34a1422071bec",
@@ -566,6 +705,10 @@
     ],
     "cvss": null,
     "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Two high-severity security vulnerabilities have been disclosed in Composer, a package manager for PHP, that, if successfully exploited, could result in arbitrary command execution. The vulnerabilities have been described as command injection flaws affecting the Perforce VCS (version control software) driver. Details of the two flaws are below -\n\nCVE-2026-40176 (CVSS",
       "technical": "The vulnerabilities have been described as command injection flaws affecting the Perforce VCS (version control software) driver. Details of the two flaws are below -\n\nCVE-2026-40176 (CVSS Two high-severity security vulnerabilities have been disclosed in Composer, a package manager for PHP, that, if successfully exploited, could result in arbitrary command execution.\n\nReferenced vulnerabilities: CVE-2026-40176.",
@@ -573,7 +716,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Two high-severity security vulnerabilities have been disclosed in Composer, a package manager for PHP, that, if successfully exploited, could result in arbitrary command execution. Tracked as CVE-2026-40176. Severity is rated high."
+    "email_summary": "Two high-severity security vulnerabilities have been disclosed in Composer, a package manager for PHP, that, if successfully exploited, could result in arbitrary command execution. Tracked as CVE-2026-40176. Severity is rated high.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "cfcb86d4dc864cab",
@@ -591,15 +736,21 @@
     "day": "2026-04-14",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix.",
       "technical": "Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix.",
-      "impact": "Assessed severity: HIGH.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
+      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix. Severity is rated high."
+    "email_summary": "Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "6f638db9e8c0c99d",
@@ -617,6 +768,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Google has announced the integration of a Rust-based Domain Name System (DNS) parser into the modem firmware as part of its ongoing efforts to beef up the security of Pixel devices and push memory-safe code at a more foundational level.",
       "technical": "Google has announced the integration of a Rust-based Domain Name System (DNS) parser into the modem firmware as part of its ongoing efforts to beef up the security of Pixel devices and push memory-safe code at a more foundational level.\n\"The new Rust-based DNS parser significantly reduces our security risk by mitigating an entire class of vulnerabilities in a risky area, while also laying",
@@ -624,7 +779,9 @@
       "mitigation": "Google has announced the integration of a Rust-based Domain Name System (DNS) parser into the modem firmware as part of its ongoing efforts to beef up the security of Pixel devices and push memory-safe code at a more foundational level.\n\"The new Rust-based DNS parser significantly reduces our security risk by mitigating an entire class of vulnerabilities in a risky area, while also laying\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Google has announced the integration of a Rust-based Domain Name System (DNS) parser into the modem firmware as part of its ongoing efforts to beef up the security of Pixel devices and push memory-safe code at a more foundational level.\n\"The new Rust-based DNS parser significantly reduces our security risk by mitigating an entire class of vulnerabilities in a risky area, while also laying."
+    "email_summary": "Google has announced the integration of a Rust-based Domain Name System (DNS) parser into the modem firmware as part of its ongoing efforts to beef up the security of Pixel devices and push memory-safe code at a more foundational level.\n\"The new Rust-based DNS parser significantly reduces our security risk by mitigating an entire class of vulnerabilities in a risky area, while also laying.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "6b80f28f07e9637e",
@@ -639,6 +796,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Stopping EDR killers, which employ bring-your-own-vulnerable-driver (BYOVD) attack techniques, is difficult, but not impossible.",
       "technical": "Specific technical details are available in the original source article.",
@@ -646,7 +805,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Stopping EDR killers, which employ bring-your-own-vulnerable-driver (BYOVD) attack techniques, is difficult, but not impossible."
+    "email_summary": "Stopping EDR killers, which employ bring-your-own-vulnerable-driver (BYOVD) attack techniques, is difficult, but not impossible.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "2595b8d769ff216c",
@@ -664,14 +825,20 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Cybersecurity researchers have unmasked a novel ad fraud scheme that has been found to leverage search engine poisoning (SEO) techniques and artificial intelligence (AI)-generated content to push deceptive news stories into Google's Discover feed and trick users into enabling persistent browser notifications that lead to scareware and financial scams. The campaign, which has been",
-      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems. Active exploitation or proof-of-concept exploit code has been reported for this issue.",
+      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems. Active exploitation or proof-of-concept exploit code has been reported.",
       "impact": "Cybersecurity researchers have unmasked a novel ad fraud scheme that has been found to leverage search engine poisoning (SEO) techniques and artificial intelligence (AI)-generated content to push deceptive news stories into Google's Discover feed and trick users into enabling persistent browser notifications that lead to scareware and financial scams.",
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Cybersecurity researchers have unmasked a novel ad fraud scheme that has been found to leverage search engine poisoning (SEO) techniques and artificial intelligence (AI)-generated content to push deceptive news stories into Google's Discover feed and trick users into enabling persistent browser notifications that lead to scareware and financial scams. The campaign, which has been."
+    "email_summary": "Cybersecurity researchers have unmasked a novel ad fraud scheme that has been found to leverage search engine poisoning (SEO) techniques and artificial intelligence (AI)-generated content to push deceptive news stories into Google's Discover feed and trick users into enabling persistent browser notifications that lead to scareware and financial scams. The campaign, which has been.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "9b9d78a65f59aef0",
@@ -689,14 +856,20 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Microsoft has introduced new Windows protections to defend against phishing attacks that abuse Remote Desktop connection (.rdp) files, adding warnings and disabling risky shared resources by default. [...]",
       "technical": "Microsoft has introduced new Windows protections to defend against phishing attacks that abuse Remote Desktop connection (.rdp) files, adding warnings and disabling risky shared resources by default. [...]",
       "impact": "Systems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Microsoft has introduced new Windows protections to defend against phishing attacks that abuse Remote Desktop connection (.rdp) files, adding warnings and disabling risky shared resources by default. [...]\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled.",
-      "context": "Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Microsoft has introduced new Windows protections to defend against phishing attacks that abuse Remote Desktop connection (.rdp) files, adding warnings and disabling risky shared resources by default. [...]."
+    "email_summary": "Microsoft has introduced new Windows protections to defend against phishing attacks that abuse Remote Desktop connection (.rdp) files, adding warnings and disabling risky shared resources by default. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "7d3d6ae71026c750",
@@ -713,6 +886,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "The Kraken cryptocurrency exchange announced that a cybercrime group is trying to extort the company by threatening to release videos showing internal systems that host client data. [...]",
       "technical": "Specific technical details are available in the original source article.",
@@ -720,7 +895,9 @@
       "mitigation": "Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
     },
-    "email_summary": "The Kraken cryptocurrency exchange announced that a cybercrime group is trying to extort the company by threatening to release videos showing internal systems that host client data. [...]."
+    "email_summary": "The Kraken cryptocurrency exchange announced that a cybercrime group is trying to extort the company by threatening to release videos showing internal systems that host client data. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "c6cac00fc9f16275",
@@ -737,6 +914,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "More than 100 malicious extensions in the official Chrome Web Store are attempting to steal Google OAuth2 Bearer tokens, deploy backdoors, and carry out ad fraud. [...]",
       "technical": "More than 100 malicious extensions in the official Chrome Web Store are attempting to steal Google OAuth2 Bearer tokens, deploy backdoors, and carry out ad fraud. [...]",
@@ -744,7 +925,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "More than 100 malicious extensions in the official Chrome Web Store are attempting to steal Google OAuth2 Bearer tokens, deploy backdoors, and carry out ad fraud. [...]."
+    "email_summary": "More than 100 malicious extensions in the official Chrome Web Store are attempting to steal Google OAuth2 Bearer tokens, deploy backdoors, and carry out ad fraud. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "c0b9d7f8ad751066",
@@ -762,14 +945,18 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "In an educational game called \"Capture the Narrative,\" students created bots to sway a fictional election, simulating influence in real-world political scenarios.",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
       "impact": "Impact assessment details are available in the full source article.",
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests. These operations require heightened vigilance and threat intelligence.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "In an educational game called \"Capture the Narrative,\" students created bots to sway a fictional election, simulating influence in real-world political scenarios."
+    "email_summary": "In an educational game called \"Capture the Narrative,\" students created bots to sway a fictional election, simulating influence in real-world political scenarios.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "d7643956940d9d32",
@@ -787,6 +974,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "A nascent Android remote access trojan called Mirax has been observed actively targeting Spanish-speaking countries, with campaigns reaching more than 220,000 accounts on Facebook, Instagram, Messenger, and Threads through advertisements on Meta.",
       "technical": "A nascent Android remote access trojan called Mirax has been observed actively targeting Spanish-speaking countries, with campaigns reaching more than 220,000 accounts on Facebook, Instagram, Messenger, and Threads through advertisements on Meta.\n\"Mirax integrates advanced Remote Access Trojan (RAT) capabilities, allowing threat actors to fully interact with compromised devices in real",
@@ -794,7 +985,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "A nascent Android remote access trojan called Mirax has been observed actively targeting Spanish-speaking countries, with campaigns reaching more than 220,000 accounts on Facebook, Instagram, Messenger, and Threads through advertisements on Meta.\n\"Mirax integrates advanced Remote Access Trojan (RAT) capabilities, allowing threat actors to fully interact with compromised devices in real."
+    "email_summary": "A nascent Android remote access trojan called Mirax has been observed actively targeting Spanish-speaking countries, with campaigns reaching more than 220,000 accounts on Facebook, Instagram, Messenger, and Threads through advertisements on Meta.\n\"Mirax integrates advanced Remote Access Trojan (RAT) capabilities, allowing threat actors to fully interact with compromised devices in real.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "651d69061872f41a",
@@ -812,14 +1005,18 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "OX Security recently analyzed 216 million security findings across 250 organizations over a 90-day period. The primary takeaway: while raw alert volume grew by 52% year-over-year, prioritized critical risk grew by nearly 400%. The surge in AI-assisted development is creating a \"velocity gap\" where the density of high-impact vulnerabilities is scaling faster than",
       "technical": "A security vulnerability has been identified that could allow attackers to compromise affected systems.",
       "impact": "OX Security recently analyzed 216 million security findings across 250 organizations over a 90-day period. The surge in AI-assisted development is creating a \"velocity gap\" where the density of high-impact vulnerabilities is scaling faster than\n\nAssessed severity: CRITICAL.",
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "OX Security recently analyzed 216 million security findings across 250 organizations over a 90-day period. Severity is rated critical."
+    "email_summary": "OX Security recently analyzed 216 million security findings across 250 organizations over a 90-day period. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "5c5577e8d67e594c",
@@ -837,15 +1034,21 @@
     "day": "2026-04-14",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Microsoft has released the Windows 10 KB5082200 extended security update to fix the April 2026 Patch Tuesday vulnerabilities, including 2 zero-days. [...]",
       "technical": "A security vulnerability has been identified that could allow attackers to compromise affected systems.",
-      "impact": "Assessed severity: HIGH.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
+      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Microsoft has released the Windows 10 KB5082200 extended security update to fix the April 2026 Patch Tuesday vulnerabilities, including 2 zero-days. [...]\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Microsoft has released the Windows 10 KB5082200 extended security update to fix the April 2026 Patch Tuesday vulnerabilities, including 2 zero-days. [...]. Severity is rated high."
+    "email_summary": "Microsoft has released the Windows 10 KB5082200 extended security update to fix the April 2026 Patch Tuesday vulnerabilities, including 2 zero-days. [...]. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "4f138e841a09f29f",
@@ -865,6 +1068,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Education company McGraw-Hill has confirmed in a statement to BleepingComputer that hackers exploited a Salesforce misconfiguration and accessed its internal data. [...]",
       "technical": "Education company McGraw-Hill has confirmed in a statement to BleepingComputer that hackers exploited a Salesforce misconfiguration and accessed its internal data. [...]",
@@ -872,7 +1077,9 @@
       "mitigation": "Education company McGraw-Hill has confirmed in a statement to BleepingComputer that hackers exploited a Salesforce misconfiguration and accessed its internal data. [...]\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Education company McGraw-Hill has confirmed in a statement to BleepingComputer that hackers exploited a Salesforce misconfiguration and accessed its internal data. [...]."
+    "email_summary": "Education company McGraw-Hill has confirmed in a statement to BleepingComputer that hackers exploited a Salesforce misconfiguration and accessed its internal data. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "74874b23950d1583",
@@ -887,6 +1094,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Cybersecurity researchers have discovered a new campaign in which a cluster of 108 Google Chrome extensions has been found to communicate with the same command-and-control (C2) infrastructure with the goal of collecting user data and enabling browser-level abuse by injecting ads and arbitrary JavaScript code into every web page visited. According to Socket, the extensions (complete list",
       "technical": "Cybersecurity researchers have discovered a new campaign in which a cluster of 108 Google Chrome extensions has been found to communicate with the same command-and-control (C2) infrastructure with the goal of collecting user data and enabling browser-level abuse by injecting ads and arbitrary JavaScript code into every web page visited.",
@@ -894,7 +1105,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Cybersecurity researchers have discovered a new campaign in which a cluster of 108 Google Chrome extensions has been found to communicate with the same command-and-control (C2) infrastructure with the goal of collecting user data and enabling browser-level abuse by injecting ads and arbitrary JavaScript code into every web page visited. According to Socket, the extensions (complete list."
+    "email_summary": "Cybersecurity researchers have discovered a new campaign in which a cluster of 108 Google Chrome extensions has been found to communicate with the same command-and-control (C2) infrastructure with the goal of collecting user data and enabling browser-level abuse by injecting ads and arbitrary JavaScript code into every web page visited. According to Socket, the extensions (complete list.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "ed49545791281bc9",
@@ -911,6 +1124,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Microsoft has released Windows 11 KB5083769 and KB5082052 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]",
       "technical": "Microsoft has released Windows 11 KB5083769 and KB5082052 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]",
@@ -918,37 +1135,9 @@
       "mitigation": "Microsoft has released Windows 11 KB5083769 and KB5082052 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Microsoft has released Windows 11 KB5083769 and KB5082052 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]."
-  },
-  {
-    "id": "e2a40796481488f4",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/alerts/2026/04/14/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "published": "2026-04-14T12:00:00+00:00",
-    "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
-    "full_content": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.\n\n \n CVE-2009-0238 Microsoft Office Remote Code Execution Vulnerability\n\n CVE-2026-32201 Microsoft SharePoint Server Improper Input Validation Vulnerability \n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.\n\n Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the BOD 22-01 Fact Sheet for more information.\n\n Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-04-14",
-    "cves": [
-      "CVE-2009-0238",
-      "CVE-2026-32201"
-    ],
-    "cvss": null,
-    "severity": "high",
-    "sections": {
-      "overview": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2009-0238 Microsoft Office Remote Code Execution Vulnerability\n\n CVE-2026-32201 Microsoft SharePoint Server Improper Input Validation Vulnerability \n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.",
-      "technical": "CVE-2009-0238 Microsoft Office Remote Code Execution Vulnerability\n\n CVE-2026-32201 Microsoft SharePoint Server Improper Input Validation Vulnerability \n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nReferenced vulnerabilities: CVE-2009-0238, CVE-2026-32201.",
-      "impact": "CVE-2009-0238 Microsoft Office Remote Code Execution Vulnerability\n\n CVE-2026-32201 Microsoft SharePoint Server Improper Input Validation Vulnerability \n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nAssessed severity: HIGH.",
-      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
-    "email_summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2009-0238, CVE-2026-32201. Severity is rated high."
+    "email_summary": "Microsoft has released Windows 11 KB5083769 and KB5082052 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...].",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "2a4b049fe7a3f17e",
@@ -971,6 +1160,8 @@
     ],
     "cvss": null,
     "severity": "critical",
+    "vendors": [],
+    "action_required": true,
     "sections": {
       "overview": "A critical security vulnerability impacting ShowDoc, a document management and collaboration service popular in China, has come under active exploitation in the wild. The vulnerability in question is CVE-2025-0520 (aka CNVD-2020-26585), which carries a CVSS score of 9.4 out of 10.0. It relates to a case of unrestricted file upload that stems from improper validation of",
       "technical": "A critical security vulnerability impacting ShowDoc, a document management and collaboration service popular in China, has come under active exploitation in the wild. The vulnerability in question is CVE-2025-0520 (aka CNVD-2020-26585), which carries a CVSS score of 9.4 out of 10.0.\n\nReferenced vulnerabilities: CVE-2025-0520.",
@@ -978,7 +1169,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "A critical security vulnerability impacting ShowDoc, a document management and collaboration service popular in China, has come under active exploitation in the wild. Tracked as CVE-2025-0520. Severity is rated critical."
+    "email_summary": "A critical security vulnerability impacting ShowDoc, a document management and collaboration service popular in China, has come under active exploitation in the wild. Tracked as CVE-2025-0520. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "fb256669de9a869b",
@@ -999,6 +1192,13 @@
     ],
     "cvss": 9.1,
     "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Adobe",
+      "Fortinet",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added half a dozen security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The list of vulnerabilities is as follows -\n\nCVE-2026-21643 (CVSS score: 9.1) - An SQL injection vulnerability in Fortinet FortiClient EMS that could allow an",
       "technical": "The list of vulnerabilities is as follows -\n\nCVE-2026-21643 (CVSS score: 9.1) - An SQL injection vulnerability in Fortinet FortiClient EMS that could allow an Cybersecurity and Infrastructure Security Agency (CISA) on Monday added half a dozen security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nReferenced vulnerabilities: CVE-2026-21643.",
@@ -1006,7 +1206,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added half a dozen security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Tracked as CVE-2026-21643. Severity is rated critical."
+    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added half a dozen security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Tracked as CVE-2026-21643. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "25e13eb83a3755ae",
@@ -1023,6 +1225,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Banks and financial institutions in Latin American countries like Brazil and Mexico have continued to be the target of a malware family called JanelaRAT. A modified version of BX RAT, JanelaRAT is known to steal financial and cryptocurrency data associated with specific financial entities, as well as track mouse inputs, log keystrokes, take screenshots, and collect system metadata.\n\"One of the",
       "technical": "Banks and financial institutions in Latin American countries like Brazil and Mexico have continued to be the target of a malware family called JanelaRAT.",
@@ -1030,7 +1234,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Banks and financial institutions in Latin American countries like Brazil and Mexico have continued to be the target of a malware family called JanelaRAT. A modified version of BX RAT, JanelaRAT is known to steal financial and cryptocurrency data associated with specific financial entities, as well as track mouse inputs, log keystrokes, take screenshots, and collect system metadata.\n\"One of the."
+    "email_summary": "Banks and financial institutions in Latin American countries like Brazil and Mexico have continued to be the target of a malware family called JanelaRAT. A modified version of BX RAT, JanelaRAT is known to steal financial and cryptocurrency data associated with specific financial entities, as well as track mouse inputs, log keystrokes, take screenshots, and collect system metadata.\n\"One of the.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "cbf1556f2dbf6169",
@@ -1045,6 +1251,8 @@
     "cves": [],
     "cvss": null,
     "severity": "medium",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Security teams can't test distributed denial-of-service defenses in a vacuum. They need to test during periods of high demand, such as tax filing deadlines.",
       "technical": "Specific technical details are available in the original source article.",
@@ -1052,7 +1260,9 @@
       "mitigation": "Security teams can't test distributed denial-of-service defenses in a vacuum.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Security teams can't test distributed denial-of-service defenses in a vacuum. They need to test during periods of high demand, such as tax filing deadlines."
+    "email_summary": "Security teams can't test distributed denial-of-service defenses in a vacuum. They need to test during periods of high demand, such as tax filing deadlines.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "92813e015ee07917",
@@ -1070,6 +1280,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "In a new report from the Cloud Security Alliance (CSA), experts warn of an \"AI vulnerability storm\" triggered by the introduction of Anthropic's Claude Mythos.",
       "technical": "In a new report from the Cloud Security Alliance (CSA), experts warn of an \"AI vulnerability storm\" triggered by the introduction of Anthropic's Claude Mythos.",
@@ -1077,7 +1289,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "In a new report from the Cloud Security Alliance (CSA), experts warn of an \"AI vulnerability storm\" triggered by the introduction of Anthropic's Claude Mythos."
+    "email_summary": "In a new report from the Cloud Security Alliance (CSA), experts warn of an \"AI vulnerability storm\" triggered by the introduction of Anthropic's Claude Mythos.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "439f4c3f988367a1",
@@ -1096,14 +1310,20 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [
+      "Adobe"
+    ],
+    "action_required": true,
     "sections": {
       "overview": "An attacker has been using maliciously crafted PDF files to exploit a zero-day in Adobe Acrobat and Reader for at least four months.",
       "technical": "An attacker has been using maliciously crafted PDF files to exploit a zero-day in Adobe Acrobat and Reader for at least four months.",
       "impact": "Assessed severity: CRITICAL.",
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "An attacker has been using maliciously crafted PDF files to exploit a zero-day in Adobe Acrobat and Reader for at least four months. Severity is rated critical."
+    "email_summary": "An attacker has been using maliciously crafted PDF files to exploit a zero-day in Adobe Acrobat and Reader for at least four months. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "1d109562692d9f8f",
@@ -1121,14 +1341,18 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Federal Bureau of Investigation (FBI), in partnership with the Indonesian National Police, has dismantled the infrastructure associated with a global phishing operation that leveraged an off-the-shelf toolkit called W3LL to steal thousands of victims' account credentials and attempt more than $20 million in fraud. In tandem, authorities detained the alleged developer, who has&",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems. The attack leverages social engineering techniques to trick users into revealing credentials or executing malicious payloads.",
       "impact": "Federal Bureau of Investigation (FBI), in partnership with the Indonesian National Police, has dismantled the infrastructure associated with a global phishing operation that leveraged an off-the-shelf toolkit called W3LL to steal thousands of victims' account credentials and attempt more than $20 million in fraud.",
       "mitigation": "Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Federal Bureau of Investigation (FBI), in partnership with the Indonesian National Police, has dismantled the infrastructure associated with a global phishing operation that leveraged an off-the-shelf toolkit called W3LL to steal thousands of victims' account credentials and attempt more than $20 million in fraud. In tandem, authorities detained the alleged developer, who has&."
+    "email_summary": "Federal Bureau of Investigation (FBI), in partnership with the Indonesian National Police, has dismantled the infrastructure associated with a global phishing operation that leveraged an off-the-shelf toolkit called W3LL to steal thousands of victims' account credentials and attempt more than $20 million in fraud. In tandem, authorities detained the alleged developer, who has&.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "401e4be68ccc922c",
@@ -1143,6 +1367,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "OT asset owners are being asked by regulators to attest to their post-quantum cryptographic readiness without the appropriate tooling, resulting in paperwork dressed up to look like genuine security.",
       "technical": "Specific technical details are available in the original source article.",
@@ -1150,11 +1376,13 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "OT asset owners are being asked by regulators to attest to their post-quantum cryptographic readiness without the appropriate tooling, resulting in paperwork dressed up to look like genuine security."
+    "email_summary": "OT asset owners are being asked by regulators to attest to their post-quantum cryptographic readiness without the appropriate tooling, resulting in paperwork dressed up to look like genuine security.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "d351e6f4dd163e2a",
-    "title": "⚡ Weekly Recap: Fiber Optic Spying, Windows Rootkit, AI Vulnerability Hunting and More",
+    "title": "Weekly Recap: Fiber Optic Spying, Windows Rootkit, AI Vulnerability Hunting and More",
     "source": "The Hacker News",
     "link": "https://thehackernews.com/2026/04/weekly-recap-fiber-optic-spying-windows.html",
     "published": "2026-04-13T18:31:00+05:30",
@@ -1170,14 +1398,20 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Monday is back, and the weekend’s backlog of chaos is officially hitting the fan. We are tracking a critical zero-day that has been quietly living in your PDFs for months, plus some aggressive state-sponsored meddling in infrastructure that is finally coming to light. It is one of those mornings where the gap between a quiet shift and a full-blown incident response is basically",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems. A security vulnerability has been identified that could allow attackers to compromise affected systems.",
       "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "It is one of those mornings where the gap between a quiet shift and a full-blown incident response is basically\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nAdvanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests. These operations require heightened vigilance and threat intelligence.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nAdvanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Monday is back, and the weekend’s backlog of chaos is officially hitting the fan. Severity is rated critical."
+    "email_summary": "Monday is back, and the weekend’s backlog of chaos is officially hitting the fan. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "adc0c44f5862352f",
@@ -1196,15 +1430,21 @@
     "day": "2026-04-13",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [
+      "Palo Alto"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser. Palo Alto Networks' Wendi Whitmore warned that similar capabilities are weeks or months from proliferation. CrowdStrike's 2026 Global Threat Report puts average eCrime breakout time at 29 minutes.",
       "technical": "Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser.",
-      "impact": "Assessed severity: HIGH.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
+      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser. Severity is rated high."
+    "email_summary": "Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "3c1411b541b438a6",
@@ -1222,14 +1462,21 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication.",
       "technical": "The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication.",
       "impact": "The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication.",
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests. These operations require heightened vigilance and threat intelligence.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication."
+    "email_summary": "The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "7683151b8ab33a36",
@@ -1248,14 +1495,18 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "The North Korean hacking group tracked as APT37 (aka ScarCruft) has been attributed to a fresh multi-stage, social engineering campaign in which threat actors approached targets on Facebook and added them as friends on the social media platform, turning the trust-building exercise into a delivery channel for a remote access trojan called RokRAT.",
       "technical": "The North Korean hacking group tracked as APT37 (aka ScarCruft) has been attributed to a fresh multi-stage, social engineering campaign in which threat actors approached targets on Facebook and added them as friends on the social media platform, turning the trust-building exercise into a delivery channel for a remote access trojan called RokRAT.\n\"The threat actor used two Facebook",
       "impact": "The North Korean hacking group tracked as APT37 (aka ScarCruft) has been attributed to a fresh multi-stage, social engineering campaign in which threat actors approached targets on Facebook and added them as friends on the social media platform, turning the trust-building exercise into a delivery channel for a remote access trojan called RokRAT.\n\"The threat actor used two Facebook",
       "mitigation": "Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests. These operations require heightened vigilance and threat intelligence.\n\nPhishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.\n\nPhishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "The North Korean hacking group tracked as APT37 (aka ScarCruft) has been attributed to a fresh multi-stage, social engineering campaign in which threat actors approached targets on Facebook and added them as friends on the social media platform, turning the trust-building exercise into a delivery channel for a remote access trojan called RokRAT.\n\"The threat actor used two Facebook."
+    "email_summary": "The North Korean hacking group tracked as APT37 (aka ScarCruft) has been attributed to a fresh multi-stage, social engineering campaign in which threat actors approached targets on Facebook and added them as friends on the social media platform, turning the trust-building exercise into a delivery channel for a remote access trojan called RokRAT.\n\"The threat actor used two Facebook.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "84d3a23808a55bfc",
@@ -1272,6 +1523,10 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "OpenAI revealed a GitHub Actions workflow used to sign its macOS apps led to the download of the malicious Axios library on March 31, but noted that no user data or internal system was compromised.",
       "technical": "Specific technical details are available in the original source article.",
@@ -1279,42 +1534,9 @@
       "mitigation": "OpenAI revealed a GitHub Actions workflow used to sign its macOS apps led to the download of the malicious Axios library on March 31, but noted that no user data or internal system was compromised.\n\"Out of an abundance of caution, we are taking steps to protect the process that certifies our macOS applications are legitimate OpenAI apps,\" OpenAI said in a post last week. \"We found no\n\nAffected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
     },
-    "email_summary": "OpenAI revealed a GitHub Actions workflow used to sign its macOS apps led to the download of the malicious Axios library on March 31, but noted that no user data or internal system was compromised.\n\"Out of an abundance of caution, we are taking steps to protect the process that certifies our macOS applications are legitimate OpenAI apps,\" OpenAI said in a post last week. \"We found no."
-  },
-  {
-    "id": "9099b4eb5d65d6ba",
-    "title": "CISA Adds Seven Known Exploited Vulnerabilities to Catalog",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/alerts/2026/04/13/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
-    "published": "2026-04-13T12:00:00+00:00",
-    "summary": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
-    "full_content": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.\n\n \n CVE-2012-1854 Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability\n\n CVE-2020-9715 Adobe Acrobat Use-After-Free Vulnerability\n\n CVE-2023-21529 Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability\n\n CVE-2023-36424 Microsoft Windows Out-of-Bounds Read Vulnerability\n\n CVE-2025-60710 Microsoft Windows Link Following Vulnerability\n\n CVE-2026-21643 Fortinet SQL Injection Vulnerability\n\n CVE-2026-34621 Adobe Acrobat and Reader Prototype Pollution Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.\n\n Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the BOD 22-01 Fact Sheet for more information.\n\n Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-04-13",
-    "cves": [
-      "CVE-2012-1854",
-      "CVE-2020-9715",
-      "CVE-2023-21529",
-      "CVE-2023-36424",
-      "CVE-2025-60710",
-      "CVE-2026-21643",
-      "CVE-2026-34621"
-    ],
-    "cvss": null,
-    "severity": null,
-    "sections": {
-      "overview": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2012-1854 Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability\n\n CVE-2020-9715 Adobe Acrobat Use-After-Free Vulnerability\n\n CVE-2023-21529 Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability\n\n CVE-2023-36424 Microsoft Windows Out-of-Bounds Read Vulnerability\n\n CVE-2025-60710 Microsoft Windows Link Following Vulnerability\n\n CVE-2026-21643 Fortinet SQL Injection Vulnerability\n\n CVE-2026-34621 Adobe Acrobat and Reader Prototype Pollution Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.",
-      "technical": "CVE-2012-1854 Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability\n\n CVE-2020-9715 Adobe Acrobat Use-After-Free Vulnerability\n\n CVE-2023-21529 Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability\n\n CVE-2023-36424 Microsoft Windows Out-of-Bounds Read Vulnerability\n\n CVE-2025-60710 Microsoft Windows Link Following Vulnerability\n\n CVE-2026-21643 Fortinet SQL Injection Vulnerability\n\n CVE-2026-34621 Adobe Acrobat and Reader Prototype Pollution Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nReferenced vulnerabilities: CVE-2012-1854, CVE-2020-9715, CVE-2023-21529, CVE-2023-36424, CVE-2025-60710.",
-      "impact": "CVE-2012-1854 Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability\n\n CVE-2020-9715 Adobe Acrobat Use-After-Free Vulnerability\n\n CVE-2023-21529 Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability\n\n CVE-2023-36424 Microsoft Windows Out-of-Bounds Read Vulnerability\n\n CVE-2025-60710 Microsoft Windows Link Following Vulnerability\n\n CVE-2026-21643 Fortinet SQL Injection Vulnerability\n\n CVE-2026-34621 Adobe Acrobat and Reader Prototype Pollution Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.",
-      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
-    "email_summary": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2012-1854, CVE-2020-9715, CVE-2023-21529."
+    "email_summary": "OpenAI revealed a GitHub Actions workflow used to sign its macOS apps led to the download of the malicious Axios library on March 31, but noted that no user data or internal system was compromised.\n\"Out of an abundance of caution, we are taking steps to protect the process that certifies our macOS applications are legitimate OpenAI apps,\" OpenAI said in a post last week. \"We found no.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "172bdedb1e361e49",
@@ -1332,6 +1554,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Unknown threat actors compromised CPUID (\"cpuid[.]com\"), a website that hosts popular hardware monitoring tools like CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor, for less than 24 hours to serve malicious executables for the software and deploy a remote access trojan called STX RAT. The incident lasted from approximately April 9, 15:00 UTC, to about April 10, 10:00 UTC, with",
       "technical": "Unknown threat actors compromised CPUID (\"cpuid[.]com\"), a website that hosts popular hardware monitoring tools like CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor, for less than 24 hours to serve malicious executables for the software and deploy a remote access trojan called STX RAT.",
@@ -1339,36 +1563,9 @@
       "mitigation": "Unknown threat actors compromised CPUID (\"cpuid[.]com\"), a website that hosts popular hardware monitoring tools like CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor, for less than 24 hours to serve malicious executables for the software and deploy a remote access trojan called STX RAT.\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Unknown threat actors compromised CPUID (\"cpuid[.]com\"), a website that hosts popular hardware monitoring tools like CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor, for less than 24 hours to serve malicious executables for the software and deploy a remote access trojan called STX RAT. The incident lasted from approximately April 9, 15:00 UTC, to about April 10, 10:00 UTC, with."
-  },
-  {
-    "id": "9899b05aa64fd427",
-    "title": "Adobe Patches Actively Exploited Acrobat Reader Flaw CVE-2026-34621",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
-    "published": "2026-04-12T09:55:00+05:30",
-    "summary": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild.",
-    "full_content": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild.\nThe vulnerability, assigned the CVE identifier CVE-2026-34621, carries a CVSS score of 8.6 out of 10.0. Successful exploitation of the flaw could allow an attacker to run malicious code on affected installations.\nIt has been described as",
-    "tags": [
-      "cve",
-      "exploit",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-04-12",
-    "cves": [
-      "CVE-2026-34621"
-    ],
-    "cvss": null,
-    "severity": "critical",
-    "sections": {
-      "overview": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild. The vulnerability, assigned the CVE identifier CVE-2026-34621, carries a CVSS score of 8.6 out of 10.0. Successful exploitation of the flaw could allow an attacker to run malicious code on affected installations.",
-      "technical": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild. The vulnerability, assigned the CVE identifier CVE-2026-34621, carries a CVSS score of 8.6 out of 10.0. Successful exploitation of the flaw could allow an attacker to run malicious code on affected installations.\n\nReferenced vulnerabilities: CVE-2026-34621.",
-      "impact": "Successful exploitation of the flaw could allow an attacker to run malicious code on affected installations.\n\nAssessed severity: CRITICAL.",
-      "mitigation": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
-    },
-    "email_summary": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild. Tracked as CVE-2026-34621. Severity is rated critical."
+    "email_summary": "Unknown threat actors compromised CPUID (\"cpuid[.]com\"), a website that hosts popular hardware monitoring tools like CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor, for less than 24 hours to serve malicious executables for the software and deploy a remote access trojan called STX RAT. The incident lasted from approximately April 9, 15:00 UTC, to about April 10, 10:00 UTC, with.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "e0cc74dfb8fd2c8a",
@@ -1385,6 +1582,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Hungarian domestic intelligence, the national police in El Salvador, and several U.S. law enforcement and police departments have been attributed to the use of an advertising-based global geolocation surveillance system called Webloc. The tool was developed by Israeli company Cobwebs Technologies and is now sold by its successor Penlink after the two firms merged in July 2023",
       "technical": "Hungarian domestic intelligence, the national police in El Salvador, and several U.S. law enforcement and police departments have been attributed to the use of an advertising-based global geolocation surveillance system called Webloc.",
@@ -1392,7 +1591,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Hungarian domestic intelligence, the national police in El Salvador, and several U.S. law enforcement and police departments have been attributed to the use of an advertising-based global geolocation surveillance system called Webloc. The tool was developed by Israeli company Cobwebs Technologies and is now sold by its successor Penlink after the two firms merged in July 2023."
+    "email_summary": "Hungarian domestic intelligence, the national police in El Salvador, and several U.S. law enforcement and police departments have been attributed to the use of an advertising-based global geolocation surveillance system called Webloc. The tool was developed by Israeli company Cobwebs Technologies and is now sold by its successor Penlink after the two firms merged in July 2023.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "2db0bd6ce52fc1b8",
@@ -1409,6 +1610,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Threat actors breached the telehealth brand, and now they may know patients' personal health details. What could they do with that information?",
       "technical": "Specific technical details are available in the original source article.",
@@ -1416,7 +1619,9 @@
       "mitigation": "Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
     },
-    "email_summary": "Threat actors breached the telehealth brand, and now they may know patients' personal health details. What could they do with that information."
+    "email_summary": "Threat actors breached the telehealth brand, and now they may know patients' personal health details. What could they do with that information.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "12aa729c8b8f4800",
@@ -1433,6 +1638,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.",
       "technical": "Specific technical details are available in the original source article.",
@@ -1440,7 +1647,9 @@
       "mitigation": "These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.\n\nAffected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
     },
-    "email_summary": "These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks."
+    "email_summary": "These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "1959a3b4252d58c2",
@@ -1457,6 +1666,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that's designed to stealthily infect all integrated development environments (IDEs) on a developer's machine. The technique has been discovered in an Open VSX extension named \"specstudio.code-wakatime-activity-tracker,\" which masquerades as WakaTime, a",
       "technical": "Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that's designed to stealthily infect all integrated development environments (IDEs) on a developer's machine.",
@@ -1464,7 +1675,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that's designed to stealthily infect all integrated development environments (IDEs) on a developer's machine. The technique has been discovered in an Open VSX extension named \"specstudio.code-wakatime-activity-tracker,\" which masquerades as WakaTime, a."
+    "email_summary": "Cybersecurity researchers have flagged yet another evolution of the ongoing GlassWorm campaign, which employs a new Zig dropper that's designed to stealthily infect all integrated development environments (IDEs) on a developer's machine. The technique has been discovered in an Open VSX extension named \"specstudio.code-wakatime-activity-tracker,\" which masquerades as WakaTime, a.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "52e76a3fd2fe3ab6",
@@ -1479,6 +1692,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there's a wide-open window nobody's guarding: AI browser extensions. A new report from LayerX exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network that isn't on anyone's",
       "technical": "Specific technical details are available in the original source article.",
@@ -1486,7 +1701,9 @@
       "mitigation": "While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there's a wide-open window nobody's guarding: AI browser extensions.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there's a wide-open window nobody's guarding: AI browser extensions. A new report from LayerX exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network that isn't on anyone's."
+    "email_summary": "While much of the discussion on AI security centers around protecting ‘shadow’ AI and GenAI consumption, there's a wide-open window nobody's guarding: AI browser extensions. A new report from LayerX exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network that isn't on anyone's.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "0173d14a98d9ffb7",
@@ -1501,6 +1718,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats",
       "technical": "Specific technical details are available in the original source article.",
@@ -1508,7 +1727,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats."
+    "email_summary": "FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "27cbe9d5a36fca3d",
@@ -1523,6 +1744,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Orange Business Reimagines Enterprise Voice Communications With Trust and AI. Orange Business Reimagines Enterprise Voice Communications With Trust and AI",
       "technical": "Specific technical details are available in the original source article.",
@@ -1530,7 +1753,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Orange Business Reimagines Enterprise Voice Communications With Trust and AI."
+    "email_summary": "Orange Business Reimagines Enterprise Voice Communications With Trust and AI.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "7bb5ca7ed03afbea",
@@ -1547,6 +1772,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices.",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -1554,7 +1781,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices."
+    "email_summary": "The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "7750536e6ab7fa17",
@@ -1569,6 +1798,12 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Apple",
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release.\n\"This project represents a significant",
       "technical": "Specific technical details are available in the original source article.",
@@ -1576,7 +1811,9 @@
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
       "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
     },
-    "email_summary": "Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release.\n\"This project represents a significant."
+    "email_summary": "Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release.\n\"This project represents a significant.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "50375d4624eb8e91",
@@ -1597,6 +1834,8 @@
     ],
     "cvss": 9.3,
     "severity": "critical",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig. The vulnerability in question is CVE-2026-39987 (CVSS score: 9.3), a pre-authenticated remote code execution vulnerability impacting all versions of Marimo prior to and including",
       "technical": "The vulnerability in question is CVE-2026-39987 (CVSS score: 9.3), a pre-authenticated remote code execution vulnerability impacting all versions of Marimo prior to and including A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig.\n\nReferenced vulnerabilities: CVE-2026-39987.",
@@ -1604,7 +1843,9 @@
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig. Tracked as CVE-2026-39987. Severity is rated critical."
+    "email_summary": "A critical security vulnerability in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according to findings from Sysdig. Tracked as CVE-2026-39987. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "5ed05f0c5c1baa83",
@@ -1622,14 +1863,18 @@
     "cves": [],
     "cvss": null,
     "severity": "critical",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said.",
       "technical": "Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said.",
       "impact": "Assessed severity: CRITICAL.",
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
     },
-    "email_summary": "Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said. Severity is rated critical."
+    "email_summary": "Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "c59af9fa8683d3dd",
@@ -1648,6 +1893,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack. Smart Slider 3 is a popular WordPress slider plugin with more than 800,000 active installations across its free and Pro",
       "technical": "Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack.",
@@ -1655,7 +1902,9 @@
       "mitigation": "Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack."
+    "email_summary": "Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a backdoor. The incident impacts Smart Slider 3 Pro version 3.5.1.35 for WordPress, per WordPress security company Patchstack.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "38fa011d64defc84",
@@ -1673,6 +1922,11 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.",
       "technical": "Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.\n\"This flaw allows apps on the same device to bypass Android security sandbox and gain unauthorized access to private data,\" the Microsoft Defender",
@@ -1680,7 +1934,9 @@
       "mitigation": "Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.\n\"This flaw allows apps on the same device to bypass Android security sandbox and gain unauthorized access to private data,\" the Microsoft Defender\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
       "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.\n\"This flaw allows apps on the same device to bypass Android security sandbox and gain unauthorized access to private data,\" the Microsoft Defender."
+    "email_summary": "Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit (SDK) called EngageLab SDK that could have put millions of cryptocurrency wallet users at risk.\n\"This flaw allows apps on the same device to bypass Android security sandbox and gain unauthorized access to private data,\" the Microsoft Defender.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "d7439478f7204bc0",
@@ -1698,14 +1954,18 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.",
       "technical": "A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.\n\"LucidRook is a sophisticated stager that embeds a Lua interpreter and Rust-compiled libraries within a dynamic-link library (DLL) to download and",
       "impact": "A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.\n\"LucidRook is a sophisticated stager that embeds a Lua interpreter and Rust-compiled libraries within a dynamic-link library (DLL) to download and",
       "mitigation": "Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.\n\"LucidRook is a sophisticated stager that embeds a Lua interpreter and Rust-compiled libraries within a dynamic-link library (DLL) to download and."
+    "email_summary": "A previously undocumented threat cluster dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.\n\"LucidRook is a sophisticated stager that embeds a Lua interpreter and Rust-compiled libraries within a dynamic-link library (DLL) to download and.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "db59e2860f7998df",
@@ -1723,14 +1983,18 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Victims don't need to match the cyber espionage group's technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable.",
       "technical": "Specific technical details are available in the original source article.",
       "impact": "Victims don't need to match the cyber espionage group's technical sophistication, experts say.",
       "mitigation": "But patching and some form of zero trust are now non-negotiable.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests. These operations require heightened vigilance and threat intelligence.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Victims don't need to match the cyber espionage group's technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable."
+    "email_summary": "Victims don't need to match the cyber espionage group's technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "0f1c461c024a2a00",
@@ -1747,15 +2011,21 @@
     "day": "2026-04-09",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft.",
       "technical": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft.",
-      "impact": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft.\n\nAssessed severity: HIGH.",
+      "impact": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft.\n\nAssessed severity: CRITICAL.",
       "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
     },
-    "email_summary": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft. Severity is rated high."
+    "email_summary": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "e8857e241085d5ea",
@@ -1773,15 +2043,19 @@
     "day": "2026-04-09",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Another week, another batch of things that probably should've been caught sooner but weren't. This one's got some range — old vulnerabilities getting new life, a few \"why was that even possible\" moments, attackers leaning on platforms and tools you'd normally trust without thinking twice. Quiet escalations more than loud zero-days, but the kind that matter more in",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems. A security vulnerability has been identified that could allow attackers to compromise affected systems.",
-      "impact": "Assessed severity: HIGH.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
+      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Another week, another batch of things that probably should've been caught sooner but weren't.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Another week, another batch of things that probably should've been caught sooner but weren't. Severity is rated high."
+    "email_summary": "Another week, another batch of things that probably should've been caught sooner but weren't. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "0c043d7a435350f3",
@@ -1798,6 +2072,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn't actually name or directly involve them.",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -1805,7 +2081,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn't actually name or directly involve them."
+    "email_summary": "The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn't actually name or directly involve them.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "12c1b50f61af74f6",
@@ -1822,6 +2100,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "As AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI. While similar to the phenomenon of",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -1829,7 +2109,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "As AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI."
+    "email_summary": "As AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "2f73fa65ef95401f",
@@ -1847,15 +2129,21 @@
     "day": "2026-04-09",
     "cves": [],
     "cvss": null,
-    "severity": "high",
+    "severity": "critical",
+    "vendors": [
+      "Adobe"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. The finding, detailed by EXPMON's Haifei Li, has been described as a highly-sophisticated PDF exploit. The artifact (\"Invoice540.pdf\") first appeared on the VirusTotal platform on November 28, 2025.",
       "technical": "Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. The finding, detailed by EXPMON's Haifei Li, has been described as a highly-sophisticated PDF exploit.",
-      "impact": "Assessed severity: HIGH.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
+      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
       "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program."
     },
-    "email_summary": "Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. Severity is rated high."
+    "email_summary": "Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December 2025. Severity is rated critical.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "1c57fd7787ee2620",
@@ -1872,6 +2160,8 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "An apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings from Access Now, Lookout, and SMEX. Two of the targets included prominent Egyptian journalists and government critics, Mostafa",
       "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
@@ -1879,7 +2169,9 @@
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
       "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "An apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings from Access Now, Lookout, and SMEX. Two of the targets included prominent Egyptian journalists and government critics, Mostafa."
+    "email_summary": "An apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings from Access Now, Lookout, and SMEX. Two of the targets included prominent Egyptian journalists and government critics, Mostafa.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "0270ce85daf3395d",
@@ -1902,14 +2194,18 @@
     ],
     "cvss": 3.1,
     "severity": "low",
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to enumerate the functionality of each component associated with the PLC, reconfigure, rename, delete, perform file transfers, and make remote procedure calls. The following versions of Contemporary Controls BASC 20T are affected:\n\n \n BASControl20 3.1 (CVE-2025-13926)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Contemporary Controls Sedona Alliance \n Contemporary Controls BASC 20T \n Reliance on Untrusted Inputs in a Security Decision \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13926 \n \n An attacker could use data obtained by sniffing the network traffic to forge packets in order to make arbitrary requests to Contemporary Controls BASC 20T. View CVE Details \n\n \n Affected Products \n Contemporary Controls BASC 20T \n \n Vendor: \nContemporary Controls Sedona Alliance \n Product Version: \nContemporary Controls Sedona Alliance BASControl20: 3.1 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nAccording to Contemporary Controls, the BASC-20T is an obsolete product.",
       "technical": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to enumerate the functionality of each component associated with the PLC, reconfigure, rename, delete, perform file transfers, and make remote procedure calls. Recommended Practices \n CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. The following versions of Contemporary Controls BASC 20T are affected:\n\n \n BASControl20 3.1 (CVE-2025-13926)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Contemporary Controls Sedona Alliance \n Contemporary Controls BASC 20T \n Reliance on Untrusted Inputs in a Security Decision \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13926 \n \n An attacker could use data obtained by sniffing the network traffic to forge packets in order to make arbitrary requests to Contemporary Controls BASC 20T.\n\nReferenced vulnerabilities: CVE-2025-13926.",
       "impact": "The following versions of Contemporary Controls BASC 20T are affected:\n\n \n BASControl20 3.1 (CVE-2025-13926)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Contemporary Controls Sedona Alliance \n Contemporary Controls BASC 20T \n Reliance on Untrusted Inputs in a Security Decision \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13926 \n \n An attacker could use data obtained by sniffing the network traffic to forge packets in order to make arbitrary requests to Contemporary Controls BASC 20T. It is recommended that users of the affected product contact Contemporary Controls for additional information.\n https://www.ccontrols.com/support/contacttech.htm \n\n \n Relevant CWE: CWE-807 Reliance on Untrusted Inputs in a Security Decision \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9.8 \n CRITICAL \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Joseph Fields of Naval Information Warfare Center Pacific reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
       "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as virtual private networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. CISA also recommends users take the following measures to protect themselves from social engineering attacks: Do not click web links or open attachments in unsolicited email messages.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to enumerate the functionality of each component associated with the PLC, reconfigure, rename, delete, perform file transfers, and make remote procedure calls. Tracked as CVE-2025-13926."
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to enumerate the functionality of each component associated with the PLC, reconfigure, rename, delete, perform file transfers, and make remote procedure calls. Tracked as CVE-2025-13926.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "e56cc34665cbb7c5",
@@ -1933,14 +2229,20 @@
     ],
     "cvss": 3.1,
     "severity": "low",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
     "sections": {
       "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a low privileged remote attacker to manipulate register values, which would result in too much or too little odorant being injected into a gas line. The following versions of GPL Odorizers GPL750 are affected:\n\n \n GPL750 (XL4) >=v1.0|\n\n GPL750 (XL4 Prime) >=v4.0|\n\n GPL750 (XL7) >=v13.0|\n\n GPL750 (XL7 Prime) >=v18.4|\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.6 \n GPL Odorizers \n GPL Odorizers GPL750 \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-4436 \n \n A low-privileged remote attacker can send Modbus packets to manipulate register values that are inputs to the odorant injection logic such that too much or too little odorant is injected into a gas line. View CVE Details \n\n \n Affected Products \n GPL Odorizers GPL750 \n \n Vendor: \nGPL Odorizers \n Product Version: \nGPL Odorizers GPL750 (XL4): >=v1.0|<v6.0, GPL Odorizers GPL750 (XL4 Prime): >=v4.0|<v6.0, GPL Odorizers GPL750 (XL7): >=v13.0|<v20.0, GPL Odorizers GPL750 (XL7 Prime): >=v18.4|<v20.0 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nGPL Odorizers recommends users update to the latest software version of the GPL750 in connection with the latest firmware from Horner Automation for the XL4, XL4 Prime, XL7, and XL7 Prime devices.https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm.\n https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm \n\n Mitigation \nGPL Odorizers recommends users clear the old files from their microSD cards, keeping only the LOGS folder and the FIRMWARE.LIC file if they have a WebMI license.",
       "technical": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a low privileged remote attacker to manipulate register values, which would result in too much or too little odorant being injected into a gas line. An installation guide is available for both the XL series and the XL Prime series.\n https://hornerautomation.com/controller-firmware/ \n\n \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.6 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n An anonymous researcher reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). Recommended Practices \n CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time.\n\nReferenced vulnerabilities: CVE-2026-4436.",
       "impact": "The following versions of GPL Odorizers GPL750 are affected:\n\n \n GPL750 (XL4) >=v1.0|\n\n GPL750 (XL4 Prime) >=v4.0|\n\n GPL750 (XL7) >=v13.0|\n\n GPL750 (XL7 Prime) >=v18.4|\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.6 \n GPL Odorizers \n GPL Odorizers GPL750 \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-4436 \n \n A low-privileged remote attacker can send Modbus packets to manipulate register values that are inputs to the odorant injection logic such that too much or too little odorant is injected into a gas line. View CVE Details \n\n \n Affected Products \n GPL Odorizers GPL750 \n \n Vendor: \nGPL Odorizers \n Product Version: \nGPL Odorizers GPL750 (XL4): >=v1.0|<v6.0, GPL Odorizers GPL750 (XL4 Prime): >=v4.0|<v6.0, GPL Odorizers GPL750 (XL7): >=v13.0|<v20.0, GPL Odorizers GPL750 (XL7 Prime): >=v18.4|<v20.0 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nGPL Odorizers recommends users update to the latest software version of the GPL750 in connection with the latest firmware from Horner Automation for the XL4, XL4 Prime, XL7, and XL7 Prime devices.https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm.\n https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm \n\n Mitigation \nGPL Odorizers recommends users clear the old files from their microSD cards, keeping only the LOGS folder and the FIRMWARE.LIC file if they have a WebMI license. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
       "mitigation": "View CVE Details \n\n \n Affected Products \n GPL Odorizers GPL750 \n \n Vendor: \nGPL Odorizers \n Product Version: \nGPL Odorizers GPL750 (XL4): >=v1.0|<v6.0, GPL Odorizers GPL750 (XL4 Prime): >=v4.0|<v6.0, GPL Odorizers GPL750 (XL7): >=v13.0|<v20.0, GPL Odorizers GPL750 (XL7 Prime): >=v18.4|<v20.0 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nGPL Odorizers recommends users update to the latest software version of the GPL750 in connection with the latest firmware from Horner Automation for the XL4, XL4 Prime, XL7, and XL7 Prime devices.https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm.\n https://lincenergysystems-my.sharepoint.com/:f:/p/h_baer/IgDYaHIhXpyLQJvnKPd6b80TAUgV7Lp8qmVYBFUb0lmr7ak?e=JLeADm \n\n Mitigation \nGPL Odorizers recommends users clear the old files from their microSD cards, keeping only the LOGS folder and the FIRMWARE.LIC file if they have a WebMI license. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Mitigation \nFor assistance in updating GPL Odorizers to the latest version, users should reach out to GPL Odorizers directly via phone number (303) 697-6701 during the hours of 8:00 a.m. to 4:00 p.m. When remote access is required, use more secure methods, such as virtual private networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a low privileged remote attacker to manipulate register values, which would result in too much or too little odorant being injected into a gas line. Tracked as CVE-2026-4436."
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a low privileged remote attacker to manipulate register values, which would result in too much or too little odorant being injected into a gas line. Tracked as CVE-2026-4436.",
+    "related_sources": [],
+    "highlighted": false
   },
   {
     "id": "63388ceda502ba97",
@@ -1958,13 +2260,17 @@
     "cves": [],
     "cvss": null,
     "severity": null,
+    "vendors": [],
+    "action_required": false,
     "sections": {
       "overview": "Heard of fileless malware? How about malwareless cyber espionage? Russia's APT28 is spying on global organizations by modifying just one DNS setting in vulnerable routers.",
       "technical": "Heard of fileless malware? How about malwareless cyber espionage?",
       "impact": "Russia's APT28 is spying on global organizations by modifying just one DNS setting in vulnerable routers.",
       "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests. These operations require heightened vigilance and threat intelligence.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
     },
-    "email_summary": "Heard of fileless malware. How about malwareless cyber espionage."
+    "email_summary": "Heard of fileless malware. How about malwareless cyber espionage.",
+    "related_sources": [],
+    "highlighted": false
   }
 ]

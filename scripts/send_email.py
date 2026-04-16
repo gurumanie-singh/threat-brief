@@ -1,4 +1,4 @@
-"""Send the daily Threat Brief email digest."""
+"""Send the daily Threat Brief email digest, structured by severity tiers."""
 
 from __future__ import annotations
 
@@ -23,10 +23,15 @@ from scripts.config import (
     SMTP_PORT,
     load_feeds_config,
     get_settings,
+    get_personalization,
 )
+from scripts.enrich import generate_landscape_bullets
 from scripts.utils import load_json, today_str
 
 logger = logging.getLogger(__name__)
+
+_SEVERITY_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
+_SEVERITY_LABEL = {"critical": "[!!]", "high": "[!]", "medium": "[--]", "low": "[i]"}
 
 
 def _sent_marker(day: str) -> Path:
@@ -34,8 +39,7 @@ def _sent_marker(day: str) -> Path:
 
 
 def already_sent_today() -> bool:
-    marker = _sent_marker(today_str())
-    return marker.exists()
+    return _sent_marker(today_str()).exists()
 
 
 def mark_sent(day: str) -> None:
@@ -44,30 +48,64 @@ def mark_sent(day: str) -> None:
     logger.info("Marked email as sent for %s", day)
 
 
+def _bucket_by_severity(articles: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    buckets: dict[str, list[dict[str, Any]]] = {
+        "critical": [], "high": [], "medium": [], "other": [],
+    }
+    for a in articles:
+        sev = a.get("severity", "")
+        if sev in buckets:
+            buckets[sev].append(a)
+        else:
+            buckets["other"].append(a)
+    return buckets
+
+
 def _build_plain_text(
     articles: list[dict[str, Any]], day: str, base_url: str
 ) -> str:
+    bullets = generate_landscape_bullets(articles)
     lines = [
         f"THREAT BRIEF — {day}",
         "=" * 44,
-        f"{len(articles)} articles from today's cybersecurity landscape.",
-        "",
     ]
-    for i, a in enumerate(articles, 1):
-        summary = a.get("email_summary") or a.get("summary", "")
-        severity = a.get("severity")
-
-        lines.append(f"{i}. {a['title']}")
-        if severity:
-            lines.append(f"   Severity: {severity.upper()}")
-        lines.append(f"   {summary[:300]}")
-        lines.append(f"   Source: {a['source']}")
-
-        if base_url:
-            lines.append(f"   Read more: {base_url}/articles/{a['id']}.html")
-        else:
-            lines.append(f"   Link: {a['link']}")
+    if bullets:
         lines.append("")
+        lines.append("TODAY'S LANDSCAPE:")
+        for b in bullets:
+            lines.append(f"  • {b}")
+    lines.append("")
+    lines.append(f"{len(articles)} articles from today's cybersecurity landscape.")
+    lines.append("")
+
+    buckets = _bucket_by_severity(articles)
+    idx = 1
+    for label, key in [
+        (f"{_SEVERITY_LABEL['critical']} CRITICAL", "critical"),
+        (f"{_SEVERITY_LABEL['high']} HIGH", "high"),
+        (f"{_SEVERITY_LABEL['medium']} MEDIUM", "medium"),
+        ("OTHER", "other"),
+    ]:
+        items = buckets[key]
+        if not items:
+            continue
+        lines.append(f"--- {label} ---")
+        lines.append("")
+        for a in items:
+            summary = a.get("email_summary") or a.get("summary", "")
+            action = " [ACTION REQUIRED]" if a.get("action_required") else ""
+            lines.append(f"{idx}. {a['title']}{action}")
+            vendors = a.get("vendors", [])
+            if vendors:
+                lines.append(f"   Vendors: {', '.join(vendors)}")
+            lines.append(f"   {summary[:300]}")
+            lines.append(f"   Source: {a['source']}")
+            if base_url:
+                lines.append(f"   Read more: {base_url}/articles/{a['id']}.html")
+            else:
+                lines.append(f"   Link: {a['link']}")
+            lines.append("")
+            idx += 1
 
     if base_url:
         lines.extend(["", f"Full briefing: {base_url}/daily/{day}.html"])
@@ -81,17 +119,20 @@ def _build_html(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
         autoescape=True,
     )
+    buckets = _bucket_by_severity(articles)
+    bullets = generate_landscape_bullets(articles)
     tpl = env.get_template("email.html")
     return tpl.render(
         articles=articles,
         day=day,
         base_url=settings.get("site_base_url", ""),
         site_title=settings["site_title"],
+        buckets=buckets,
+        landscape_bullets=bullets,
     )
 
 
 def send_email() -> bool:
-    """Send the daily digest. Returns True on success."""
     day = today_str()
 
     if already_sent_today():
@@ -107,18 +148,24 @@ def send_email() -> bool:
 
     config = load_feeds_config()
     settings = get_settings(config)
+    personalization = get_personalization(config)
     articles = load_json(ARTICLES_FILE)
 
     todays = [a for a in articles if a["day"] == day]
     if not todays:
-        all_articles = sorted(
-            articles, key=lambda a: a["published"], reverse=True
-        )
+        all_articles = sorted(articles, key=lambda a: a["published"], reverse=True)
         todays = all_articles[:settings["email_max_articles"]]
         if not todays:
             logger.warning("No articles available to send")
             return False
 
+    # Filter by minimum severity if configured
+    min_sev = personalization.get("email_min_severity", "")
+    if min_sev and min_sev in _SEVERITY_ORDER:
+        threshold = _SEVERITY_ORDER[min_sev]
+        todays = [a for a in todays if _SEVERITY_ORDER.get(a.get("severity", ""), 99) <= threshold]
+
+    todays = sorted(todays, key=lambda a: _SEVERITY_ORDER.get(a.get("severity", ""), 99))
     todays = todays[:settings["email_max_articles"]]
     base_url = settings.get("site_base_url", "")
 

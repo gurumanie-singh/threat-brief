@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Brief — 2026-04-13</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -30,24 +30,63 @@
     </div>
     <h1 class="hero-title">April 13, 2026</h1>
     <p class="hero-desc">
-      12 articles from the day's cybersecurity landscape.
+      11 articles from the day's cybersecurity landscape.
     </p>
   </div>
 
-
-  <div class="filter-bar">
-    <button class="filter-btn" data-tag="apt">apt</button>
-    <button class="filter-btn" data-tag="breach">breach</button>
-    <button class="filter-btn" data-tag="cve">cve</button>
-    <button class="filter-btn" data-tag="exploit">exploit</button>
-    <button class="filter-btn" data-tag="malware">malware</button>
-    <button class="filter-btn" data-tag="patch">patch</button>
-    <button class="filter-btn" data-tag="phishing">phishing</button>
-    <button class="filter-btn" data-tag="vulnerability">vulnerability</button>
-    <button class="filter-btn" data-tag="zero-day">zero-day</button>
+  <div class="landscape-summary">
+    <div class="landscape-title">Day's Threat Landscape</div>
+    <ul class="landscape-bullets">
+      <li>3 critical-severity issues detected with active exploitation reported</li>
+      <li>1 item requires immediate action — patches or mitigations available</li>
+      <li>Microsoft ecosystem affected by multiple advisories</li>
+      <li>Multiple phishing campaigns identified targeting enterprises</li>
+    </ul>
   </div>
 
-  <a href="../articles/25e13eb83a3755ae.html" class="article-card" data-tags="malware">
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+  </div>
+
+  <div class="filter-section">
+    <div class="filter-row-label">Severity</div>
+    <div class="filter-row">
+      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="filter-btn severity-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+    </div>
+
+    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+    </div>
+
+    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <a href="../articles/25e13eb83a3755ae.html"
+     class="article-card"
+     data-tags="malware"
+     data-vendors=""
+     data-severity=""
+     data-title="janelarat malware targets latin american banks with 14,739 attacks in brazil in 2025">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-13</span>
@@ -59,7 +98,12 @@
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/cbf1556f2dbf6169.html" class="article-card" data-tags="">
+  <a href="../articles/cbf1556f2dbf6169.html"
+     class="article-card"
+     data-tags=""
+     data-vendors=""
+     data-severity="medium"
+     data-title="why orgs need to test networks to withstand ddos attacks during peak loads">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-13</span>
@@ -70,7 +114,12 @@
     <div class="card-footer">
     </div>
   </a>
-  <a href="../articles/92813e015ee07917.html" class="article-card" data-tags="exploit,vulnerability">
+  <a href="../articles/92813e015ee07917.html"
+     class="article-card"
+     data-tags="exploit,vulnerability"
+     data-vendors=""
+     data-severity=""
+     data-title="csa: cisos should prepare for post-mythos exploit storm">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-13</span>
@@ -82,21 +131,33 @@
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/439f4c3f988367a1.html" class="article-card" data-tags="exploit,patch,zero-day">
+  <a href="../articles/439f4c3f988367a1.html"
+     class="article-card action-required"
+     data-tags="exploit,patch,zero-day"
+     data-vendors="Adobe"
+     data-severity="critical"
+     data-title="adobe patches actively exploited zero-day that lingered for months">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-13</span>
       <span class="card-severity critical">critical</span>
+      <span class="card-action-badge">Action Required</span>
     </div>
     <h3 class="card-title">Adobe Patches Actively Exploited Zero-Day That Lingered for Months</h3>
     <p class="card-summary">An attacker has been using maliciously crafted PDF files to exploit a zero-day in Adobe Acrobat and Reader for at least four months. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Adobe</span>
       <span class="tag">exploit</span>
       <span class="tag">patch</span>
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/1d109562692d9f8f.html" class="article-card" data-tags="malware,phishing">
+  <a href="../articles/1d109562692d9f8f.html"
+     class="article-card"
+     data-tags="malware,phishing"
+     data-vendors=""
+     data-severity=""
+     data-title="fbi and indonesian police dismantle w3ll phishing network behind $20m fraud attempts">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-13</span>
@@ -108,7 +169,12 @@
       <span class="tag">phishing</span>
     </div>
   </a>
-  <a href="../articles/401e4be68ccc922c.html" class="article-card" data-tags="">
+  <a href="../articles/401e4be68ccc922c.html"
+     class="article-card"
+     data-tags=""
+     data-vendors=""
+     data-severity=""
+     data-title="empty attestations: ot lacks the tools for cryptographic readiness">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-13</span>
@@ -118,37 +184,54 @@
     <div class="card-footer">
     </div>
   </a>
-  <a href="../articles/d351e6f4dd163e2a.html" class="article-card" data-tags="apt,malware,vulnerability,zero-day">
+  <a href="../articles/d351e6f4dd163e2a.html"
+     class="article-card"
+     data-tags="apt,malware,vulnerability,zero-day"
+     data-vendors="Microsoft"
+     data-severity="critical"
+     data-title="weekly recap: fiber optic spying, windows rootkit, ai vulnerability hunting and more">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-13</span>
       <span class="card-severity critical">critical</span>
     </div>
-    <h3 class="card-title">⚡ Weekly Recap: Fiber Optic Spying, Windows Rootkit, AI Vulnerability Hunting and More</h3>
+    <h3 class="card-title">Weekly Recap: Fiber Optic Spying, Windows Rootkit, AI Vulnerability Hunting and More</h3>
     <p class="card-summary">Monday is back, and the weekend’s backlog of chaos is officially hitting the fan. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">apt</span>
       <span class="tag">malware</span>
       <span class="tag">vulnerability</span>
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/adc0c44f5862352f.html" class="article-card" data-tags="exploit,malware,vulnerability,zero-day">
+  <a href="../articles/adc0c44f5862352f.html"
+     class="article-card"
+     data-tags="exploit,malware,vulnerability,zero-day"
+     data-vendors="Palo Alto"
+     data-severity="critical"
+     data-title="your mttd looks great. your post-alert gap doesn&#39;t">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-13</span>
-      <span class="card-severity high">high</span>
+      <span class="card-severity critical">critical</span>
     </div>
     <h3 class="card-title">Your MTTD Looks Great. Your Post-Alert Gap Doesn&#39;t</h3>
-    <p class="card-summary">Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser. Severity is rated high.</p>
+    <p class="card-summary">Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Palo Alto</span>
       <span class="tag">exploit</span>
       <span class="tag">malware</span>
       <span class="tag">vulnerability</span>
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/3c1411b541b438a6.html" class="article-card" data-tags="apt,malware">
+  <a href="../articles/3c1411b541b438a6.html"
+     class="article-card"
+     data-tags="apt,malware"
+     data-vendors="Google,Microsoft"
+     data-severity=""
+     data-title="apt41 delivers &#39;zero-detection&#39; backdoor to harvest cloud credentials">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-13</span>
@@ -156,11 +239,18 @@
     <h3 class="card-title">APT41 Delivers &#39;Zero-Detection&#39; Backdoor to Harvest Cloud Credentials</h3>
     <p class="card-summary">The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Google</span>
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">apt</span>
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/7683151b8ab33a36.html" class="article-card" data-tags="apt,malware,phishing">
+  <a href="../articles/7683151b8ab33a36.html"
+     class="article-card"
+     data-tags="apt,malware,phishing"
+     data-vendors=""
+     data-severity=""
+     data-title="north korea&#39;s apt37 uses facebook social engineering to deliver rokrat malware">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-13</span>
@@ -174,7 +264,12 @@
       <span class="tag">phishing</span>
     </div>
   </a>
-  <a href="../articles/84d3a23808a55bfc.html" class="article-card" data-tags="breach">
+  <a href="../articles/84d3a23808a55bfc.html"
+     class="article-card"
+     data-tags="breach"
+     data-vendors="Apple"
+     data-severity=""
+     data-title="openai revokes macos app certificate after malicious axios supply chain incident">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-13</span>
@@ -183,21 +278,8 @@
     <p class="card-summary">OpenAI revealed a GitHub Actions workflow used to sign its macOS apps led to the download of the malicious Axios library on March 31, but noted that no user data or internal system was compromised.
 &#34;Out of an abundance of caution, we are taking steps to protect the process that certifies our macOS applications are legitimate OpenAI apps,&#34; OpenAI said in a post last week. &#34;We found no.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Apple</span>
       <span class="tag">breach</span>
-    </div>
-  </a>
-  <a href="../articles/9099b4eb5d65d6ba.html" class="article-card" data-tags="cve,exploit,malware,vulnerability">
-    <div class="card-top">
-      <span class="card-source">CISA Alerts</span>
-      <span class="card-date">2026-04-13</span>
-    </div>
-    <h3 class="card-title">CISA Adds Seven Known Exploited Vulnerabilities to Catalog</h3>
-    <p class="card-summary">CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2012-1854, CVE-2020-9715, CVE-2023-21529.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
     </div>
   </a>
 

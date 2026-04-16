@@ -10,31 +10,31 @@ Threat Brief aggregates headlines from top cybersecurity RSS feeds, enriches eac
 
 ```
 RSS Feeds
-    │
-    ▼
-┌───────────────┐     ┌─────────────┐     ┌─────────────────┐
-│  fetch_feeds   │────▶│   enrich    │────▶│ process_articles │
-│  (feedparser)  │     │ (sections,  │     │  (merge, dedup,  │
-│                │     │  severity,  │     │   prune, save)   │
-│                │     │  CVEs)      │     │                  │
-└───────────────┘     └─────────────┘     └────────┬────────┘
-                                                    │
-                                                    ▼
+    |
+    v
++---------------+     +-------------+     +-----------------+
+|  fetch_feeds  |---->|   enrich    |---->| process_articles |
+|  (feedparser) |     | (sections,  |     |  (merge, dedup,  |
+|               |     |  severity,  |     |   prune, save)   |
+|               |     |  CVEs)      |     |                  |
++---------------+     +-------------+     +--------+--------+
+                                                    |
+                                                    v
                                             data/articles.json
-                                                    │
-                          ┌─────────────────────────┼────────────────┐
-                          ▼                         ▼                ▼
-                  ┌───────────────┐        ┌──────────────┐   ┌──────────┐
-                  │ generate_site │        │  send_email   │   │  archive │
-                  │ (Jinja2→HTML) │        │  (SMTP)       │   │  (JSON)  │
-                  └───────┬───────┘        └──────────────┘   └──────────┘
-                          │
-                          ▼
+                                                    |
+                          +-------------------------+----------------+
+                          v                         v                v
+                  +---------------+        +--------------+   +----------+
+                  | generate_site |        |  send_email  |   |  archive |
+                  | (Jinja2->HTML)|        |  (SMTP)      |   |  (JSON)  |
+                  +-------+-------+        +--------------+   +----------+
+                          |
+                          v
                     docs/ (GitHub Pages)
-                    ├── index.html
-                    ├── articles/{id}.html
-                    ├── daily/{date}.html
-                    └── archive/index.html
+                      index.html
+                      articles/{id}.html
+                      daily/{date}.html
+                      archive/index.html
 ```
 
 ### Content Enrichment Pipeline
@@ -55,8 +55,8 @@ Each article goes through deterministic enrichment (no paid APIs):
 ```
 threat-brief/
 ├── .github/workflows/
-│   ├── update-site.yml           # Every 2 hours: fetch → enrich → generate → deploy
-│   └── daily-email.yml           # Once daily: fetch → enrich → email
+│   ├── update-site.yml           # Every 2 hours: fetch -> enrich -> generate -> deploy
+│   └── daily-email.yml           # Once daily: fetch -> enrich -> email
 ├── scripts/
 │   ├── __init__.py
 │   ├── config.py                 # Central config from feeds.yaml + env vars
@@ -64,7 +64,7 @@ threat-brief/
 │   ├── enrich.py                 # Content enrichment: sections, severity, CVEs
 │   ├── fetch_feeds.py            # RSS fetcher with full content extraction
 │   ├── process_articles.py       # Merge, enrich, dedup, prune, archive
-│   ├── generate_site.py          # Static site generator (Jinja2 → docs/)
+│   ├── generate_site.py          # Static site generator (Jinja2 -> docs/)
 │   └── send_email.py             # Daily email sender (SMTP)
 ├── templates/
 │   ├── base.html                 # Shared layout (nav, footer, fonts, assets)
@@ -106,7 +106,7 @@ cd threat-brief
 
 ### 2. Add GitHub Secrets
 
-Go to **Settings → Secrets and variables → Actions → New repository secret** and add:
+Go to **Settings -> Secrets and variables -> Actions -> New repository secret** and add:
 
 | Secret | Description |
 |---|---|
@@ -123,7 +123,7 @@ Optional (defaults to Gmail):
 
 ### 3. Enable GitHub Pages
 
-1. **Settings → Pages**
+1. **Settings -> Pages**
 2. Source: **Deploy from a branch**
 3. Branch: `main`, Folder: `/docs`
 4. **Save**
@@ -144,7 +144,7 @@ This makes email "Read more" links point to your hosted article pages.
 ### 5. Trigger the First Run
 
 1. Go to **Actions** tab
-2. Click **Update Site** → **Run workflow**
+2. Click **Update Site** -> **Run workflow**
 
 Within minutes, your site will show live cybersecurity news with full article pages.
 
@@ -155,8 +155,8 @@ Within minutes, your site will show live cybersecurity news with full article pa
 **Never use your normal Gmail password.**
 
 1. Go to [myaccount.google.com](https://myaccount.google.com/)
-2. **Security → 2-Step Verification** (enable if needed)
-3. **Security → App passwords**
+2. **Security -> 2-Step Verification** (enable if needed)
+3. **Security -> App passwords**
 4. Select **Mail**, enter "Threat Brief"
 5. Copy the 16-character password
 6. Use this as your `EMAIL_PASSWORD` GitHub Secret
@@ -261,7 +261,7 @@ python -m scripts.send_email
 
 Both workflows support `workflow_dispatch`:
 
-1. **Actions** tab → select workflow
+1. **Actions** tab -> select workflow
 2. Click **Run workflow**
 
 ---
@@ -270,7 +270,7 @@ Both workflows support `workflow_dispatch`:
 
 | Problem | Solution |
 |---|---|
-| Actions not running | Settings → Actions → General → Allow all actions |
+| Actions not running | Settings -> Actions -> General -> Allow all actions |
 | Email not sending | Verify secrets. Check logs for SMTP errors. Use Gmail App Password. |
 | Pages 404 | Set Pages source to `main` / `/docs`. Wait a few minutes. |
 | No articles | Trigger Update Site manually. Check logs for feed errors. |

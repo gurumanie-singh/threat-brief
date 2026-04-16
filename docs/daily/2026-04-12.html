@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Brief — 2026-04-12</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -30,21 +30,35 @@
     </div>
     <h1 class="hero-title">April 12, 2026</h1>
     <p class="hero-desc">
-      2 articles from the day's cybersecurity landscape.
+      1 article from the day's cybersecurity landscape.
     </p>
   </div>
 
 
-  <div class="filter-bar">
-    <button class="filter-btn" data-tag="breach">breach</button>
-    <button class="filter-btn" data-tag="cve">cve</button>
-    <button class="filter-btn" data-tag="exploit">exploit</button>
-    <button class="filter-btn" data-tag="malware">malware</button>
-    <button class="filter-btn" data-tag="patch">patch</button>
-    <button class="filter-btn" data-tag="vulnerability">vulnerability</button>
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
   </div>
 
-  <a href="../articles/172bdedb1e361e49.html" class="article-card" data-tags="breach,malware">
+  <div class="filter-section">
+
+
+    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <a href="../articles/172bdedb1e361e49.html"
+     class="article-card"
+     data-tags="breach,malware"
+     data-vendors=""
+     data-severity=""
+     data-title="cpuid breach distributes stx rat via trojanized cpu-z and hwmonitor downloads">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-12</span>
@@ -54,21 +68,6 @@
     <div class="card-footer">
       <span class="tag">breach</span>
       <span class="tag">malware</span>
-    </div>
-  </a>
-  <a href="../articles/9899b05aa64fd427.html" class="article-card" data-tags="cve,exploit,patch,vulnerability">
-    <div class="card-top">
-      <span class="card-source">The Hacker News</span>
-      <span class="card-date">2026-04-12</span>
-      <span class="card-severity critical">critical</span>
-    </div>
-    <h3 class="card-title">Adobe Patches Actively Exploited Acrobat Reader Flaw CVE-2026-34621</h3>
-    <p class="card-summary">Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that has come under active exploitation in the wild. Tracked as CVE-2026-34621. Severity is rated critical.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">patch</span>
-      <span class="tag">vulnerability</span>
     </div>
   </a>
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Brief — 2026-04-14</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -30,32 +30,76 @@
     </div>
     <h1 class="hero-title">April 14, 2026</h1>
     <p class="hero-desc">
-      19 articles from the day's cybersecurity landscape.
+      18 articles from the day's cybersecurity landscape.
     </p>
   </div>
 
-
-  <div class="filter-bar">
-    <button class="filter-btn" data-tag="apt">apt</button>
-    <button class="filter-btn" data-tag="breach">breach</button>
-    <button class="filter-btn" data-tag="cve">cve</button>
-    <button class="filter-btn" data-tag="exploit">exploit</button>
-    <button class="filter-btn" data-tag="malware">malware</button>
-    <button class="filter-btn" data-tag="patch">patch</button>
-    <button class="filter-btn" data-tag="phishing">phishing</button>
-    <button class="filter-btn" data-tag="vulnerability">vulnerability</button>
-    <button class="filter-btn" data-tag="zero-day">zero-day</button>
+  <div class="landscape-summary">
+    <div class="landscape-title">Day's Threat Landscape</div>
+    <ul class="landscape-bullets">
+      <li>6 critical-severity issues detected with active exploitation reported</li>
+      <li>2 items require immediate action — patches or mitigations available</li>
+      <li>Google, Microsoft ecosystems affected by multiple advisories</li>
+      <li>Multiple phishing campaigns identified targeting enterprises</li>
+    </ul>
   </div>
 
-  <a href="../articles/8a17fe50f768dc93.html" class="article-card" data-tags="cve,exploit,malware,patch,phishing,vulnerability,zero-day">
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+  </div>
+
+  <div class="filter-section">
+    <div class="filter-row-label">Severity</div>
+    <div class="filter-row">
+      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="filter-btn severity-high" data-filter-group="severity" data-filter-value="high">high</button>
+    </div>
+
+    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+    </div>
+
+    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <a href="../articles/8a17fe50f768dc93.html"
+     class="article-card action-required"
+     data-tags="cve,exploit,malware,patch,phishing,vulnerability,zero-day"
+     data-vendors="Adobe,Google,Microsoft"
+     data-severity="critical"
+     data-title="patch tuesday, april 2026 edition">
     <div class="card-top">
       <span class="card-source">Krebs on Security</span>
       <span class="card-date">2026-04-14</span>
       <span class="card-severity critical">critical</span>
+      <span class="card-action-badge">Action Required</span>
     </div>
     <h3 class="card-title">Patch Tuesday, April 2026 Edition</h3>
     <p class="card-summary">Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Tracked as CVE-2026-32201, CVE-2026-33825, CVE-2026-34621. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Adobe</span>
+      <span class="vendor-tag">Google</span>
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">cve</span>
       <span class="tag">exploit</span>
       <span class="tag">malware</span>
@@ -64,8 +108,14 @@
       <span class="tag">vulnerability</span>
       <span class="tag">zero-day</span>
     </div>
+    <div class="card-related">Also covered by: CISA Alerts, CISA Alerts, The Hacker News, CISA Alerts</div>
   </a>
-  <a href="../articles/2ef34a1422071bec.html" class="article-card" data-tags="cve,exploit,patch,vulnerability">
+  <a href="../articles/2ef34a1422071bec.html"
+     class="article-card"
+     data-tags="cve,exploit,patch,vulnerability"
+     data-vendors="AWS"
+     data-severity="high"
+     data-title="new php composer flaws enable arbitrary command execution — patches released">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -74,27 +124,39 @@
     <h3 class="card-title">New PHP Composer Flaws Enable Arbitrary Command Execution — Patches Released</h3>
     <p class="card-summary">Two high-severity security vulnerabilities have been disclosed in Composer, a package manager for PHP, that, if successfully exploited, could result in arbitrary command execution. Tracked as CVE-2026-40176. Severity is rated high.</p>
     <div class="card-footer">
+      <span class="vendor-tag">AWS</span>
       <span class="tag">cve</span>
       <span class="tag">exploit</span>
       <span class="tag">patch</span>
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/cfcb86d4dc864cab.html" class="article-card" data-tags="patch,vulnerability,zero-day">
+  <a href="../articles/cfcb86d4dc864cab.html"
+     class="article-card"
+     data-tags="patch,vulnerability,zero-day"
+     data-vendors="Microsoft"
+     data-severity="critical"
+     data-title="privilege elevation dominates massive microsoft patch update">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-14</span>
-      <span class="card-severity high">high</span>
+      <span class="card-severity critical">critical</span>
     </div>
     <h3 class="card-title">Privilege Elevation Dominates Massive Microsoft Patch Update</h3>
-    <p class="card-summary">Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix. Severity is rated high.</p>
+    <p class="card-summary">Elevation-of-privilege bugs accounted for more than half of the 165 vulnerabilities patched, with two zero-days in that mix. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">patch</span>
       <span class="tag">vulnerability</span>
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/6f638db9e8c0c99d.html" class="article-card" data-tags="malware,vulnerability">
+  <a href="../articles/6f638db9e8c0c99d.html"
+     class="article-card"
+     data-tags="malware,vulnerability"
+     data-vendors="Google"
+     data-severity=""
+     data-title="google adds rust-based dns parser into pixel 10 modem to enhance security">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -103,11 +165,17 @@
     <p class="card-summary">Google has announced the integration of a Rust-based Domain Name System (DNS) parser into the modem firmware as part of its ongoing efforts to beef up the security of Pixel devices and push memory-safe code at a more foundational level.
 &#34;The new Rust-based DNS parser significantly reduces our security risk by mitigating an entire class of vulnerabilities in a risky area, while also laying.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Google</span>
       <span class="tag">malware</span>
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/6b80f28f07e9637e.html" class="article-card" data-tags="">
+  <a href="../articles/6b80f28f07e9637e.html"
+     class="article-card"
+     data-tags=""
+     data-vendors=""
+     data-severity=""
+     data-title="edr-killer ecosystem expansion requires stronger byovd defenses">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-14</span>
@@ -117,7 +185,12 @@
     <div class="card-footer">
     </div>
   </a>
-  <a href="../articles/2595b8d769ff216c.html" class="article-card" data-tags="exploit,malware">
+  <a href="../articles/2595b8d769ff216c.html"
+     class="article-card"
+     data-tags="exploit,malware"
+     data-vendors="Google"
+     data-severity=""
+     data-title="ai-driven pushpaganda scam exploits google discover to spread scareware and ad fraud">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -125,11 +198,17 @@
     <h3 class="card-title">AI-Driven Pushpaganda Scam Exploits Google Discover to Spread Scareware and Ad Fraud</h3>
     <p class="card-summary">Cybersecurity researchers have unmasked a novel ad fraud scheme that has been found to leverage search engine poisoning (SEO) techniques and artificial intelligence (AI)-generated content to push deceptive news stories into Google&#39;s Discover feed and trick users into enabling persistent browser notifications that lead to scareware and financial scams. The campaign, which has been.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Google</span>
       <span class="tag">exploit</span>
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/9b9d78a65f59aef0.html" class="article-card" data-tags="phishing,vulnerability">
+  <a href="../articles/9b9d78a65f59aef0.html"
+     class="article-card"
+     data-tags="phishing,vulnerability"
+     data-vendors="Microsoft"
+     data-severity=""
+     data-title="microsoft adds windows protections for malicious remote desktop files">
     <div class="card-top">
       <span class="card-source">BleepingComputer</span>
       <span class="card-date">2026-04-14</span>
@@ -137,11 +216,17 @@
     <h3 class="card-title">Microsoft adds Windows protections for malicious Remote Desktop files</h3>
     <p class="card-summary">Microsoft has introduced new Windows protections to defend against phishing attacks that abuse Remote Desktop connection (.rdp) files, adding warnings and disabling risky shared resources by default. [...].</p>
     <div class="card-footer">
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">phishing</span>
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/7d3d6ae71026c750.html" class="article-card" data-tags="breach">
+  <a href="../articles/7d3d6ae71026c750.html"
+     class="article-card"
+     data-tags="breach"
+     data-vendors=""
+     data-severity=""
+     data-title="crypto-exchange kraken extorted by hackers after insider breach">
     <div class="card-top">
       <span class="card-source">BleepingComputer</span>
       <span class="card-date">2026-04-14</span>
@@ -152,7 +237,12 @@
       <span class="tag">breach</span>
     </div>
   </a>
-  <a href="../articles/c6cac00fc9f16275.html" class="article-card" data-tags="malware">
+  <a href="../articles/c6cac00fc9f16275.html"
+     class="article-card"
+     data-tags="malware"
+     data-vendors="Google"
+     data-severity=""
+     data-title="over 100 chrome web store extensions steal user accounts, data">
     <div class="card-top">
       <span class="card-source">BleepingComputer</span>
       <span class="card-date">2026-04-14</span>
@@ -160,10 +250,16 @@
     <h3 class="card-title">Over 100 Chrome Web Store extensions steal user accounts, data</h3>
     <p class="card-summary">More than 100 malicious extensions in the official Chrome Web Store are attempting to steal Google OAuth2 Bearer tokens, deploy backdoors, and carry out ad fraud. [...].</p>
     <div class="card-footer">
+      <span class="vendor-tag">Google</span>
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/c0b9d7f8ad751066.html" class="article-card" data-tags="apt,malware">
+  <a href="../articles/c0b9d7f8ad751066.html"
+     class="article-card"
+     data-tags="apt,malware"
+     data-vendors=""
+     data-severity=""
+     data-title="war game exercise demonstrates how social media manipulation works">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-14</span>
@@ -175,7 +271,12 @@
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/d7643956940d9d32.html" class="article-card" data-tags="breach,malware">
+  <a href="../articles/d7643956940d9d32.html"
+     class="article-card"
+     data-tags="breach,malware"
+     data-vendors="Google"
+     data-severity=""
+     data-title="mirax android rat turns devices into socks5 proxies, reaching 220,000 via meta ads">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -184,11 +285,17 @@
     <p class="card-summary">A nascent Android remote access trojan called Mirax has been observed actively targeting Spanish-speaking countries, with campaigns reaching more than 220,000 accounts on Facebook, Instagram, Messenger, and Threads through advertisements on Meta.
 &#34;Mirax integrates advanced Remote Access Trojan (RAT) capabilities, allowing threat actors to fully interact with compromised devices in real.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Google</span>
       <span class="tag">breach</span>
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/651d69061872f41a.html" class="article-card" data-tags="vulnerability,zero-day">
+  <a href="../articles/651d69061872f41a.html"
+     class="article-card"
+     data-tags="vulnerability,zero-day"
+     data-vendors=""
+     data-severity="critical"
+     data-title="analysis of 216m security findings shows a 4x increase in critical risk (2026 report)">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -201,21 +308,32 @@
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/5c5577e8d67e594c.html" class="article-card" data-tags="patch,vulnerability,zero-day">
+  <a href="../articles/5c5577e8d67e594c.html"
+     class="article-card"
+     data-tags="patch,vulnerability,zero-day"
+     data-vendors="Microsoft"
+     data-severity="critical"
+     data-title="microsoft releases windows 10 kb5082200 extended security update">
     <div class="card-top">
       <span class="card-source">BleepingComputer</span>
       <span class="card-date">2026-04-14</span>
-      <span class="card-severity high">high</span>
+      <span class="card-severity critical">critical</span>
     </div>
     <h3 class="card-title">Microsoft releases Windows 10 KB5082200 extended security update</h3>
-    <p class="card-summary">Microsoft has released the Windows 10 KB5082200 extended security update to fix the April 2026 Patch Tuesday vulnerabilities, including 2 zero-days. [...]. Severity is rated high.</p>
+    <p class="card-summary">Microsoft has released the Windows 10 KB5082200 extended security update to fix the April 2026 Patch Tuesday vulnerabilities, including 2 zero-days. [...]. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">patch</span>
       <span class="tag">vulnerability</span>
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/4f138e841a09f29f.html" class="article-card" data-tags="breach,exploit,malware,vulnerability">
+  <a href="../articles/4f138e841a09f29f.html"
+     class="article-card"
+     data-tags="breach,exploit,malware,vulnerability"
+     data-vendors=""
+     data-severity=""
+     data-title="mcgraw-hill confirms data breach following extortion threat">
     <div class="card-top">
       <span class="card-source">BleepingComputer</span>
       <span class="card-date">2026-04-14</span>
@@ -229,7 +347,12 @@
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/74874b23950d1583.html" class="article-card" data-tags="">
+  <a href="../articles/74874b23950d1583.html"
+     class="article-card"
+     data-tags=""
+     data-vendors="Google"
+     data-severity=""
+     data-title="108 malicious chrome extensions steal google and telegram data, affecting 20,000 users">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -237,9 +360,15 @@
     <h3 class="card-title">108 Malicious Chrome Extensions Steal Google and Telegram Data, Affecting 20,000 Users</h3>
     <p class="card-summary">Cybersecurity researchers have discovered a new campaign in which a cluster of 108 Google Chrome extensions has been found to communicate with the same command-and-control (C2) infrastructure with the goal of collecting user data and enabling browser-level abuse by injecting ads and arbitrary JavaScript code into every web page visited. According to Socket, the extensions (complete list.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Google</span>
     </div>
   </a>
-  <a href="../articles/ed49545791281bc9.html" class="article-card" data-tags="vulnerability">
+  <a href="../articles/ed49545791281bc9.html"
+     class="article-card"
+     data-tags="vulnerability"
+     data-vendors="Microsoft"
+     data-severity=""
+     data-title="windows 11 cumulative updates kb5083769 &amp; kb5082052 released">
     <div class="card-top">
       <span class="card-source">BleepingComputer</span>
       <span class="card-date">2026-04-14</span>
@@ -247,29 +376,21 @@
     <h3 class="card-title">Windows 11 cumulative updates KB5083769 &amp; KB5082052 released</h3>
     <p class="card-summary">Microsoft has released Windows 11 KB5083769 and KB5082052 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...].</p>
     <div class="card-footer">
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/e2a40796481488f4.html" class="article-card" data-tags="cve,exploit,malware,vulnerability">
-    <div class="card-top">
-      <span class="card-source">CISA Alerts</span>
-      <span class="card-date">2026-04-14</span>
-      <span class="card-severity high">high</span>
-    </div>
-    <h3 class="card-title">CISA Adds Two Known Exploited Vulnerabilities to Catalog</h3>
-    <p class="card-summary">CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2009-0238, CVE-2026-32201. Severity is rated high.</p>
-    <div class="card-footer">
-      <span class="tag">cve</span>
-      <span class="tag">exploit</span>
-      <span class="tag">malware</span>
-      <span class="tag">vulnerability</span>
-    </div>
-  </a>
-  <a href="../articles/2a4b049fe7a3f17e.html" class="article-card" data-tags="cve,exploit,malware,patch,vulnerability">
+  <a href="../articles/2a4b049fe7a3f17e.html"
+     class="article-card action-required"
+     data-tags="cve,exploit,malware,patch,vulnerability"
+     data-vendors=""
+     data-severity="critical"
+     data-title="showdoc rce flaw cve-2025-0520 actively exploited on unpatched servers">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
       <span class="card-severity critical">critical</span>
+      <span class="card-action-badge">Action Required</span>
     </div>
     <h3 class="card-title">ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers</h3>
     <p class="card-summary">A critical security vulnerability impacting ShowDoc, a document management and collaboration service popular in China, has come under active exploitation in the wild. Tracked as CVE-2025-0520. Severity is rated critical.</p>
@@ -281,7 +402,12 @@
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/fb256669de9a869b.html" class="article-card" data-tags="cve,exploit,vulnerability">
+  <a href="../articles/fb256669de9a869b.html"
+     class="article-card"
+     data-tags="cve,exploit,vulnerability"
+     data-vendors="AWS,Adobe,Fortinet,Microsoft"
+     data-severity="critical"
+     data-title="cisa adds 6 known exploited flaws in fortinet, microsoft, and adobe software">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-14</span>
@@ -290,6 +416,10 @@
     <h3 class="card-title">CISA Adds 6 Known Exploited Flaws in Fortinet, Microsoft, and Adobe Software</h3>
     <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Monday added half a dozen security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Tracked as CVE-2026-21643. Severity is rated critical.</p>
     <div class="card-footer">
+      <span class="vendor-tag">AWS</span>
+      <span class="vendor-tag">Adobe</span>
+      <span class="vendor-tag">Fortinet</span>
+      <span class="vendor-tag">Microsoft</span>
       <span class="tag">cve</span>
       <span class="tag">exploit</span>
       <span class="tag">vulnerability</span>

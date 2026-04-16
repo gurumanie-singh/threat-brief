@@ -1,20 +1,22 @@
 """Generate the static GitHub Pages site into docs/.
 
 Produces:
-  docs/index.html            — homepage with latest articles grouped by day
+  docs/index.html            — homepage with landscape summary, top threats, filters
   docs/daily/YYYY-MM-DD.html — per-day briefing pages
   docs/articles/{id}.html    — individual article pages with structured sections
-  docs/archive/index.html    — archive listing of all days
+  docs/archive/index.html    — archive listing with search
   docs/assets/style.css      — design system stylesheet
   docs/assets/app.js         — client-side interactions
 """
 
 from __future__ import annotations
 
+import json
 import logging
 import shutil
 import sys
 from collections import Counter, defaultdict
+from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
@@ -28,15 +30,13 @@ from scripts.config import (
     load_feeds_config,
     get_settings,
 )
-from scripts.utils import load_json, today_str, format_date_human
+from scripts.enrich import generate_landscape_bullets, extract_top_threats
+from scripts.utils import load_json, today_str, format_date_human, now_utc
 
 logger = logging.getLogger(__name__)
 
 
-# ── Custom Jinja2 filters ──────────────────────────────────────────
-
 def _paragraphs_filter(text: str) -> Markup:
-    """Convert plain text with blank-line separators into HTML paragraphs."""
     if not text:
         return Markup("")
     paras = text.strip().split("\n\n")
@@ -48,8 +48,6 @@ def _paragraphs_filter(text: str) -> Markup:
     return Markup("\n".join(html_parts))
 
 
-# ── Helpers ─────────────────────────────────────────────────────────
-
 def _group_by_day(articles: list[dict[str, Any]]) -> list[tuple[str, list[dict[str, Any]]]]:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for article in articles:
@@ -57,11 +55,11 @@ def _group_by_day(articles: list[dict[str, Any]]) -> list[tuple[str, list[dict[s
     return sorted(grouped.items(), key=lambda x: x[0], reverse=True)
 
 
-def _collect_tags(articles: list[dict[str, Any]]) -> list[str]:
+def _collect_all(articles: list[dict[str, Any]], key: str) -> list[str]:
     counter: Counter = Counter()
     for a in articles:
-        counter.update(a.get("tags", []))
-    return [tag for tag, _ in counter.most_common()]
+        counter.update(a.get(key, []))
+    return [item for item, _ in counter.most_common()]
 
 
 def _setup_jinja(settings: dict[str, Any]) -> Environment:
@@ -79,7 +77,6 @@ def _setup_jinja(settings: dict[str, Any]) -> Environment:
 
 
 def _copy_static_assets() -> None:
-    """Copy style.css and app.js from templates/ to docs/assets/."""
     dst = DOCS_DIR / "assets"
     dst.mkdir(parents=True, exist_ok=True)
     for filename in ("style.css", "app.js"):
@@ -88,8 +85,6 @@ def _copy_static_assets() -> None:
             shutil.copy2(src, dst / filename)
             logger.info("Copied %s → docs/assets/%s", filename, filename)
 
-
-# ── Site generation ─────────────────────────────────────────────────
 
 def generate_site() -> None:
     config = load_feeds_config()
@@ -101,7 +96,6 @@ def generate_site() -> None:
         logger.warning("No articles found — generating empty site")
 
     days_grouped = _group_by_day(articles)
-    all_days_sorted = [d for d, _ in days_grouped]
     today = today_str()
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
@@ -110,6 +104,26 @@ def generate_site() -> None:
     (DOCS_DIR / "archive").mkdir(parents=True, exist_ok=True)
 
     _copy_static_assets()
+
+    # Compute global lists for filters
+    all_tags = _collect_all(articles, "tags")
+    all_vendors = _collect_all(articles, "vendors")
+    all_severities = []
+    for sev in ("critical", "high", "medium", "low"):
+        if any(a.get("severity") == sev for a in articles):
+            all_severities.append(sev)
+
+    # Today's articles for landscape summary
+    todays_articles = [a for a in articles if a["day"] == today]
+    if not todays_articles and days_grouped:
+        todays_articles = days_grouped[0][1]
+
+    landscape_bullets = generate_landscape_bullets(todays_articles)
+
+    # Weekly top threats (last 7 days)
+    cutoff_7d = (now_utc() - timedelta(days=7)).strftime("%Y-%m-%d")
+    week_articles = [a for a in articles if a["day"] >= cutoff_7d]
+    top_threats = extract_top_threats(week_articles)
 
     # ── Homepage ─────────────────────────────────────────
     max_articles = settings["max_articles_per_page"]
@@ -122,6 +136,11 @@ def generate_site() -> None:
         articles=homepage_articles,
         days_grouped=homepage_days,
         generated_at=today,
+        landscape_bullets=landscape_bullets,
+        top_threats=top_threats,
+        all_tags=all_tags,
+        all_vendors=all_vendors,
+        all_severities=all_severities,
     )
     (DOCS_DIR / "index.html").write_text(index_html, encoding="utf-8")
     logger.info("Generated docs/index.html with %d articles", len(homepage_articles))
@@ -129,11 +148,23 @@ def generate_site() -> None:
     # ── Daily pages ──────────────────────────────────────
     day_tpl = env.get_template("day.html")
     for day_str, day_articles in days_grouped:
+        day_tags = _collect_all(day_articles, "tags")
+        day_vendors = _collect_all(day_articles, "vendors")
+        day_severities = []
+        for sev in ("critical", "high", "medium", "low"):
+            if any(a.get("severity") == sev for a in day_articles):
+                day_severities.append(sev)
+        day_bullets = generate_landscape_bullets(day_articles)
+
         day_html = day_tpl.render(
             prefix="../",
             day=day_str,
             day_human=format_date_human(day_str),
             articles=day_articles,
+            landscape_bullets=day_bullets,
+            all_tags=day_tags,
+            all_vendors=day_vendors,
+            all_severities=day_severities,
         )
         (DOCS_DIR / "daily" / f"{day_str}.html").write_text(day_html, encoding="utf-8")
     logger.info("Generated %d daily pages", len(days_grouped))
@@ -155,13 +186,20 @@ def generate_site() -> None:
     day_summaries = []
     for day_str, day_articles in days_grouped:
         tag_counter: Counter = Counter()
+        sev_counter: Counter = Counter()
         for a in day_articles:
             tag_counter.update(a.get("tags", []))
+            s = a.get("severity")
+            if s:
+                sev_counter[s] += 1
         top_tags = [t for t, _ in tag_counter.most_common(4)]
+        top_sev = sev_counter.most_common(1)[0][0] if sev_counter else None
         day_summaries.append({
             "day": day_str,
+            "day_human": format_date_human(day_str),
             "count": len(day_articles),
             "top_tags": top_tags,
+            "top_severity": top_sev,
         })
 
     archive_html = archive_tpl.render(prefix="../", days=day_summaries)

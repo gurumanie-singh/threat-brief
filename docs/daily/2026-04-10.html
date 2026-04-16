@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Brief — 2026-04-10</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -34,18 +34,53 @@
     </p>
   </div>
 
-
-  <div class="filter-bar">
-    <button class="filter-btn" data-tag="breach">breach</button>
-    <button class="filter-btn" data-tag="cve">cve</button>
-    <button class="filter-btn" data-tag="exploit">exploit</button>
-    <button class="filter-btn" data-tag="malware">malware</button>
-    <button class="filter-btn" data-tag="patch">patch</button>
-    <button class="filter-btn" data-tag="vulnerability">vulnerability</button>
-    <button class="filter-btn" data-tag="zero-day">zero-day</button>
+  <div class="landscape-summary">
+    <div class="landscape-title">Day's Threat Landscape</div>
+    <ul class="landscape-bullets">
+      <li>2 critical-severity issues detected with active exploitation reported</li>
+      <li>Several new data breach disclosures reported</li>
+    </ul>
   </div>
 
-  <a href="../articles/2db0bd6ce52fc1b8.html" class="article-card" data-tags="breach">
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+  </div>
+
+  <div class="filter-section">
+    <div class="filter-row-label">Severity</div>
+    <div class="filter-row">
+      <button class="filter-btn severity-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+    </div>
+
+    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+    </div>
+
+    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
+    <div class="filter-row">
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <a href="../articles/2db0bd6ce52fc1b8.html"
+     class="article-card"
+     data-tags="breach"
+     data-vendors=""
+     data-severity=""
+     data-title="hims breach exposes the most sensitive kinds of phi">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-10</span>
@@ -56,7 +91,12 @@
       <span class="tag">breach</span>
     </div>
   </a>
-  <a href="../articles/12aa729c8b8f4800.html" class="article-card" data-tags="breach">
+  <a href="../articles/12aa729c8b8f4800.html"
+     class="article-card"
+     data-tags="breach"
+     data-vendors=""
+     data-severity=""
+     data-title="your next breach will look like business as usual">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-10</span>
@@ -67,7 +107,12 @@
       <span class="tag">breach</span>
     </div>
   </a>
-  <a href="../articles/1959a3b4252d58c2.html" class="article-card" data-tags="malware">
+  <a href="../articles/1959a3b4252d58c2.html"
+     class="article-card"
+     data-tags="malware"
+     data-vendors=""
+     data-severity=""
+     data-title="glassworm campaign uses zig dropper to infect multiple developer ides">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-10</span>
@@ -78,7 +123,12 @@
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/52e76a3fd2fe3ab6.html" class="article-card" data-tags="">
+  <a href="../articles/52e76a3fd2fe3ab6.html"
+     class="article-card"
+     data-tags=""
+     data-vendors=""
+     data-severity=""
+     data-title="browser extensions are the new ai consumption channel that no one is talking about">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-10</span>
@@ -88,7 +138,12 @@
     <div class="card-footer">
     </div>
   </a>
-  <a href="../articles/0173d14a98d9ffb7.html" class="article-card" data-tags="">
+  <a href="../articles/0173d14a98d9ffb7.html"
+     class="article-card"
+     data-tags=""
+     data-vendors=""
+     data-severity=""
+     data-title="finra launches financial intelligence fusion center to combat cybersecurity and fraud threats">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-10</span>
@@ -98,7 +153,12 @@
     <div class="card-footer">
     </div>
   </a>
-  <a href="../articles/27cbe9d5a36fca3d.html" class="article-card" data-tags="">
+  <a href="../articles/27cbe9d5a36fca3d.html"
+     class="article-card"
+     data-tags=""
+     data-vendors=""
+     data-severity=""
+     data-title="orange business reimagines enterprise voice communications with trust and ai">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-10</span>
@@ -108,7 +168,12 @@
     <div class="card-footer">
     </div>
   </a>
-  <a href="../articles/7bb5ca7ed03afbea.html" class="article-card" data-tags="malware">
+  <a href="../articles/7bb5ca7ed03afbea.html"
+     class="article-card"
+     data-tags="malware"
+     data-vendors=""
+     data-severity=""
+     data-title="industrial controllers still vulnerable as conflicts move to cyber">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-10</span>
@@ -119,7 +184,12 @@
       <span class="tag">malware</span>
     </div>
   </a>
-  <a href="../articles/7750536e6ab7fa17.html" class="article-card" data-tags="">
+  <a href="../articles/7750536e6ab7fa17.html"
+     class="article-card"
+     data-tags=""
+     data-vendors="Apple,Google,Microsoft"
+     data-severity=""
+     data-title="google rolls out dbsc in chrome 146 to block session theft on windows">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-10</span>
@@ -128,9 +198,17 @@
     <p class="card-summary">Google has made Device Bound Session Credentials (DBSC) generally available to all Windows users of its Chrome web browser, months after it began testing the security feature in open beta. The public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome release.
 &#34;This project represents a significant.</p>
     <div class="card-footer">
+      <span class="vendor-tag">Apple</span>
+      <span class="vendor-tag">Google</span>
+      <span class="vendor-tag">Microsoft</span>
     </div>
   </a>
-  <a href="../articles/50375d4624eb8e91.html" class="article-card" data-tags="cve,exploit,vulnerability">
+  <a href="../articles/50375d4624eb8e91.html"
+     class="article-card"
+     data-tags="cve,exploit,vulnerability"
+     data-vendors=""
+     data-severity="critical"
+     data-title="marimo rce flaw cve-2026-39987 exploited within 10 hours of disclosure">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-10</span>
@@ -144,7 +222,12 @@
       <span class="tag">vulnerability</span>
     </div>
   </a>
-  <a href="../articles/5ed05f0c5c1baa83.html" class="article-card" data-tags="exploit,zero-day">
+  <a href="../articles/5ed05f0c5c1baa83.html"
+     class="article-card"
+     data-tags="exploit,zero-day"
+     data-vendors=""
+     data-severity="critical"
+     data-title="can anthropic keep its exploit-writing ai out of the wrong hands?">
     <div class="card-top">
       <span class="card-source">Dark Reading</span>
       <span class="card-date">2026-04-10</span>
@@ -157,7 +240,12 @@
       <span class="tag">zero-day</span>
     </div>
   </a>
-  <a href="../articles/c59af9fa8683d3dd.html" class="article-card" data-tags="breach,malware,patch">
+  <a href="../articles/c59af9fa8683d3dd.html"
+     class="article-card"
+     data-tags="breach,malware,patch"
+     data-vendors=""
+     data-severity=""
+     data-title="backdoored smart slider 3 pro update distributed via compromised nextend servers">
     <div class="card-top">
       <span class="card-source">The Hacker News</span>
       <span class="card-date">2026-04-10</span>

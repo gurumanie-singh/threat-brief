@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Brief — Archive</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -33,10 +33,19 @@
     </p>
   </div>
 
-  <div class="archive-grid">
-    <a href="../daily/2026-04-15.html" class="archive-day-card">
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="archiveSearch" placeholder="Search by date or tag…" autocomplete="off">
+  </div>
+
+  <div class="archive-grid" id="archiveGrid">
+    <a href="../daily/2026-04-15.html" class="archive-day-card" data-search="2026-04-15 april 15, 2026 malware vulnerability exploit patch">
       <div class="archive-day-date">2026-04-15</div>
-      <div class="archive-day-count">21 articles</div>
+      <div class="archive-day-human">April 15, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">21 articles</span>
+        <span class="card-severity critical">critical</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">malware</span>
         <span class="tag">vulnerability</span>
@@ -44,19 +53,27 @@
         <span class="tag">patch</span>
       </div>
     </a>
-    <a href="../daily/2026-04-14.html" class="archive-day-card">
+    <a href="../daily/2026-04-14.html" class="archive-day-card" data-search="2026-04-14 april 14, 2026 vulnerability malware exploit patch">
       <div class="archive-day-date">2026-04-14</div>
-      <div class="archive-day-count">19 articles</div>
+      <div class="archive-day-human">April 14, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">18 articles</span>
+        <span class="card-severity critical">critical</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">vulnerability</span>
         <span class="tag">malware</span>
         <span class="tag">exploit</span>
-        <span class="tag">cve</span>
+        <span class="tag">patch</span>
       </div>
     </a>
-    <a href="../daily/2026-04-13.html" class="archive-day-card">
+    <a href="../daily/2026-04-13.html" class="archive-day-card" data-search="2026-04-13 april 13, 2026 malware exploit vulnerability zero-day">
       <div class="archive-day-date">2026-04-13</div>
-      <div class="archive-day-count">12 articles</div>
+      <div class="archive-day-human">April 13, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">11 articles</span>
+        <span class="card-severity critical">critical</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">malware</span>
         <span class="tag">exploit</span>
@@ -64,26 +81,34 @@
         <span class="tag">zero-day</span>
       </div>
     </a>
-    <a href="../daily/2026-04-12.html" class="archive-day-card">
+    <a href="../daily/2026-04-12.html" class="archive-day-card" data-search="2026-04-12 april 12, 2026 breach malware">
       <div class="archive-day-date">2026-04-12</div>
-      <div class="archive-day-count">2 articles</div>
+      <div class="archive-day-human">April 12, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">1 article</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">breach</span>
         <span class="tag">malware</span>
-        <span class="tag">cve</span>
-        <span class="tag">exploit</span>
       </div>
     </a>
-    <a href="../daily/2026-04-11.html" class="archive-day-card">
+    <a href="../daily/2026-04-11.html" class="archive-day-card" data-search="2026-04-11 april 11, 2026 vulnerability">
       <div class="archive-day-date">2026-04-11</div>
-      <div class="archive-day-count">1 article</div>
+      <div class="archive-day-human">April 11, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">1 article</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">vulnerability</span>
       </div>
     </a>
-    <a href="../daily/2026-04-10.html" class="archive-day-card">
+    <a href="../daily/2026-04-10.html" class="archive-day-card" data-search="2026-04-10 april 10, 2026 breach malware exploit cve">
       <div class="archive-day-date">2026-04-10</div>
-      <div class="archive-day-count">11 articles</div>
+      <div class="archive-day-human">April 10, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">11 articles</span>
+        <span class="card-severity critical">critical</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">breach</span>
         <span class="tag">malware</span>
@@ -91,9 +116,13 @@
         <span class="tag">cve</span>
       </div>
     </a>
-    <a href="../daily/2026-04-09.html" class="archive-day-card">
+    <a href="../daily/2026-04-09.html" class="archive-day-card" data-search="2026-04-09 april 9, 2026 malware vulnerability exploit patch">
       <div class="archive-day-date">2026-04-09</div>
-      <div class="archive-day-count">12 articles</div>
+      <div class="archive-day-human">April 9, 2026</div>
+      <div class="archive-day-meta">
+        <span class="archive-day-count">12 articles</span>
+        <span class="card-severity critical">critical</span>
+      </div>
       <div class="archive-day-tags">
         <span class="tag">malware</span>
         <span class="tag">vulnerability</span>
@@ -103,6 +132,21 @@
     </a>
   </div>
 </div>
+
+<script>
+(function() {
+  var input = document.getElementById("archiveSearch");
+  if (!input) return;
+  var cards = document.querySelectorAll(".archive-day-card");
+  input.addEventListener("input", function() {
+    var q = input.value.trim().toLowerCase();
+    cards.forEach(function(card) {
+      var data = card.dataset.search || "";
+      card.style.display = !q || data.indexOf(q) !== -1 ? "" : "none";
+    });
+  });
+})();
+</script>
   </main>
 
   <footer class="site-footer">

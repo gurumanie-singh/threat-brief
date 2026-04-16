@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patch Tuesday, April 2026 Edition — Threat Brief</title>
-  <meta name="description" content="Daily cybersecurity news aggregator">
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -30,13 +30,22 @@
         <span class="card-source">Krebs on Security</span>
         <span class="card-date">2026-04-14</span>
         <span class="card-severity critical">critical</span>
+        <span class="card-action-badge">Action Required</span>
       </div>
 
       <h1 class="title">Patch Tuesday, April 2026 Edition</h1>
 
       <p class="subtitle">Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Tracked as CVE-2026-32201, CVE-2026-33825, CVE-2026-34621. Severity is rated critical.</p>
 
+      <div class="article-action-banner">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        This item may require immediate action — see Mitigation section below
+      </div>
+
       <div class="article-tags">
+        <span class="vendor-tag">Adobe</span>
+        <span class="vendor-tag">Google</span>
+        <span class="vendor-tag">Microsoft</span>
         <span class="tag">cve</span>
         <span class="tag">exploit</span>
         <span class="tag">malware</span>
@@ -56,14 +65,14 @@
 
     <div class="article-body">
       <div class="article-section">
-        <div class="article-section-label">Overview</div>
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
         <div class="article-section-content">
           <p>Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Separately, Google Chrome fixed its fourth zero-day of 2026, and an emergency update for Adobe Reader nixes an actively exploited flaw that can lead to remote code execution. Redmond warns that attackers are already targeting CVE-2026-32201 , a vulnerability in Microsoft SharePoint Server that allows attackers to spoof trusted content or interfaces over a network.</p>
         </div>
       </div>
 
       <div class="article-section">
-        <div class="article-section-label">Technical Details</div>
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
         <div class="article-section-content">
           <p>Separately, Google Chrome fixed its fourth zero-day of 2026, and an emergency update for Adobe Reader nixes an actively exploited flaw that can lead to remote code execution. Microsoft also addressed BlueHammer ( CVE-2026-33825 ), a privilege escalation bug in Windows Defender. Narang also said there are indications that a zero-day flaw Adobe patched in an emergency update on April 11 CVE-2026-34621 has seen active exploitation since at least November 2025. Redmond warns that attackers are already targeting CVE-2026-32201 , a vulnerability in Microsoft SharePoint Server that allows attackers to spoof trusted content or interfaces over a network.</p>
 <p>Referenced vulnerabilities: CVE-2026-32201, CVE-2026-33825, CVE-2026-34621, CVE-2026-5281.</p>
@@ -71,7 +80,7 @@
       </div>
 
       <div class="article-section">
-        <div class="article-section-label">Impact</div>
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
         <div class="article-section-content">
           <p>Redmond warns that attackers are already targeting CVE-2026-32201 , a vulnerability in Microsoft SharePoint Server that allows attackers to spoof trusted content or interfaces over a network. Mike Walters , president and co-founder of Action1 , said CVE-2026-32201 can be used to deceive employees, partners, or customers by presenting falsified information within trusted SharePoint environments. This CVE can enable phishing attacks, unauthorized data manipulation, or social engineering campaigns that lead to further compromise, Walters said.</p>
 <p>Assessed severity: CRITICAL.</p>
@@ -79,7 +88,7 @@
       </div>
 
       <div class="article-section">
-        <div class="article-section-label">Mitigation</div>
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
         <div class="article-section-content">
           <p>Microsoft today pushed software updates to fix a staggering 167 security vulnerabilities in its Windows operating systems and related software, including a SharePoint Server zero-day and a publicly disclosed weakness in Windows Defender dubbed BlueHammer . Separately, Google Chrome fixed its fourth zero-day of 2026, and an emergency update for Adobe Reader nixes an actively exploited flaw that can lead to remote code execution. Narang also said there are indications that a zero-day flaw Adobe patched in an emergency update on April 11 CVE-2026-34621 has seen active exploitation since at least November 2025. For example, a Google Chrome update released earlier this month fixed 21 security holes, including the high-severity zero-day flaw CVE-2026-5281 .</p>
 <p>Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.</p>
@@ -87,18 +96,28 @@
       </div>
 
       <div class="article-section">
-        <div class="article-section-label">Additional Context</div>
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Context / Trends</div>
         <div class="article-section-content">
-          <p>Zero-day vulnerabilities represent some of the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.</p>
-<p>Phishing remains the most common initial access vector in cyber attacks. Security awareness training combined with technical controls like email filtering and MFA are key defenses.</p>
+          <p>Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.</p>
+<p>Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.</p>
 <p>Timely vulnerability management and patch prioritization remain critical components of any defensive security program.</p>
 <p>Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure.</p>
         </div>
       </div>
 
+      <div class="article-section">
+        <div class="article-section-label">Also Reported By</div>
+        <div class="article-section-content">
+          <p><a href="https://www.cisa.gov/news-events/alerts/2026/04/14/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Alerts</a></p>
+          <p><a href="https://www.cisa.gov/news-events/alerts/2026/04/13/cisa-adds-seven-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Alerts</a></p>
+          <p><a href="https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html" target="_blank" rel="noopener">The Hacker News</a></p>
+          <p><a href="https://www.cisa.gov/news-events/alerts/2026/04/01/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA Alerts</a></p>
+        </div>
+      </div>
+
       <a href="https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/" class="source-card" target="_blank" rel="noopener">
         <div class="source-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         </div>
         <div class="source-card-text">
           <div class="source-card-label">Original source</div>

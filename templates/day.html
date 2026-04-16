@@ -16,45 +16,90 @@
     </p>
   </div>
 
-  {% set all_tags = [] %}
-  {% for a in articles %}
-    {% for t in a.tags %}
-      {% if t not in all_tags %}
-        {% if all_tags.append(t) %}{% endif %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  {% if all_tags %}
-  <div class="filter-bar">
-    {% for tag in all_tags|sort %}
-    <button class="filter-btn" data-tag="{{ tag }}">{{ tag }}</button>
-    {% endfor %}
+  {% if landscape_bullets %}
+  <div class="landscape-summary">
+    <div class="landscape-title">Day's Threat Landscape</div>
+    <ul class="landscape-bullets">
+      {% for bullet in landscape_bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
   </div>
   {% endif %}
 
+  <div class="search-bar">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+  </div>
+
+  <div class="filter-section">
+    {% if all_severities %}
+    <div class="filter-row-label">Severity</div>
+    <div class="filter-row">
+      {% for sev in all_severities %}
+      <button class="filter-btn severity-{{ sev }}" data-filter-group="severity" data-filter-value="{{ sev }}">{{ sev }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if all_vendors %}
+    <div class="filter-row-label" style="margin-top:10px">Vendor / Technology</div>
+    <div class="filter-row">
+      {% for vendor in all_vendors[:12] %}
+      <button class="filter-btn" data-filter-group="vendor" data-filter-value="{{ vendor }}">{{ vendor }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if all_tags %}
+    <div class="filter-row-label" style="margin-top:10px">Threat Type</div>
+    <div class="filter-row">
+      {% for tag in all_tags %}
+      <button class="filter-btn" data-filter-group="tag" data-filter-value="{{ tag }}">{{ tag }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
   {% for article in articles %}
-  <a href="{{ prefix }}articles/{{ article.id }}.html" class="article-card" data-tags="{{ article.tags|join(',') }}">
+  <a href="{{ prefix }}articles/{{ article.id }}.html"
+     class="article-card{% if article.action_required %} action-required{% endif %}"
+     data-tags="{{ article.tags|join(',') }}"
+     data-vendors="{{ article.vendors|default([])|join(',') }}"
+     data-severity="{{ article.severity or '' }}"
+     data-title="{{ article.title|lower }}">
     <div class="card-top">
       <span class="card-source">{{ article.source }}</span>
       <span class="card-date">{{ article.day }}</span>
       {% if article.severity %}
       <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
       {% endif %}
+      {% if article.action_required %}
+      <span class="card-action-badge">Action Required</span>
+      {% endif %}
     </div>
     <h3 class="card-title">{{ article.title }}</h3>
     <p class="card-summary">{{ article.email_summary or article.summary }}</p>
     <div class="card-footer">
+      {% for vendor in article.vendors|default([]) %}
+      <span class="vendor-tag">{{ vendor }}</span>
+      {% endfor %}
       {% for tag in article.tags %}
       <span class="tag">{{ tag }}</span>
       {% endfor %}
     </div>
+    {% if article.related_sources %}
+    <div class="card-related">Also covered by: {{ article.related_sources|map(attribute='source')|join(', ') }}</div>
+    {% endif %}
   </a>
   {% endfor %}
 
   {% if not articles %}
   <div class="empty-state">
-    <div class="empty-state-icon">◇</div>
+    <div class="empty-state-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg></div>
     <p>No articles recorded for this date.</p>
   </div>
   {% endif %}

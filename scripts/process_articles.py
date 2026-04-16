@@ -31,7 +31,7 @@ from scripts.config import (
     get_vendor_keywords,
     get_personalization,
 )
-from scripts.enrich import enrich_article, group_articles
+from scripts.enrich import enrich_article, group_articles, classify_severity, validate_severity_distribution
 from scripts.fetch_feeds import fetch_all_feeds
 from scripts.utils import (
     load_day, save_day, list_day_files, load_json,
@@ -132,14 +132,32 @@ def process() -> list[dict[str, Any]]:
                 new_articles.append(_strip_for_storage(enriched))
             except Exception as exc:
                 logger.warning("Enrichment failed for '%s': %s", article.get("title", "?"), exc)
+                if not article.get("severity"):
+                    article["severity"] = "medium"
                 new_articles.append(_strip_for_storage(article))
 
         if not new_articles:
+            # Backfill blank severity on existing articles (one-time repair)
+            patched = 0
+            for a in existing:
+                if not a.get("severity"):
+                    text = f"{a.get('title', '')} {a.get('summary', '')}"
+                    a["severity"] = classify_severity(text, a.get("cvss"), a.get("cves", []))
+                    patched += 1
+            if patched:
+                save_day(DAYS_DIR, day_str, existing)
+                logger.info("Day %s: backfilled severity on %d existing articles", day_str, patched)
             total_stored += len(existing)
             continue
 
         total_new += len(new_articles)
         merged = existing + new_articles
+
+        # Backfill blank severity on any existing articles in the merge
+        for a in merged:
+            if not a.get("severity"):
+                text = f"{a.get('title', '')} {a.get('summary', '')}"
+                a["severity"] = classify_severity(text, a.get("cvss"), a.get("cves", []))
 
         merged = group_articles(merged)
         merged.sort(key=lambda a: a.get("published", ""), reverse=True)
@@ -156,19 +174,37 @@ def process() -> list[dict[str, Any]]:
         total_new, days_written, total_stored,
     )
 
+    # Backfill blank severity on ALL stored day files (one-time repair;
+    # becomes a no-op once every article has a severity assigned)
+    total_patched = 0
+    for day_str, path in list_day_files(DAYS_DIR):
+        day_articles = load_day(DAYS_DIR, day_str)
+        patched = 0
+        for a in day_articles:
+            if not a.get("severity"):
+                text = f"{a.get('title', '')} {a.get('summary', '')}"
+                a["severity"] = classify_severity(text, a.get("cvss"), a.get("cves", []))
+                patched += 1
+        if patched:
+            save_day(DAYS_DIR, day_str, day_articles)
+            total_patched += patched
+    if total_patched:
+        logger.info("Severity backfill: classified %d articles with blank severity", total_patched)
+
     deleted = cleanup_old_days(max_retention)
     if deleted:
         logger.info("Lifecycle: removed %d day files older than %d days", deleted, max_retention)
 
-    # Also clean legacy archive dir if empty
+    all_current = _load_all_current()
+    validate_severity_distribution(all_current)
+
     from scripts.config import DATA_DIR
     archive_dir = DATA_DIR / "archive"
     if archive_dir.exists():
         for old_file in archive_dir.glob("*.json"):
             old_file.unlink()
-        # Remove .gitkeep if it's the only thing left, but keep the dir
-    
-    return _load_all_current()
+
+    return all_current
 
 
 def _load_all_current() -> list[dict[str, Any]]:

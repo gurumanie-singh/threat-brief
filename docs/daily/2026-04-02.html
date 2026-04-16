@@ -35,6 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
       </ul>
     </div>
@@ -47,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -172,16 +174,17 @@
       </div>
     </div>
   </div>
-  <div class="article-card"
+  <div class="article-card card--critical"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity=""
+       data-severity="critical"
        data-title="cisa adds one known exploited vulnerability to catalog"
        data-id="9b01fc0fdee5352e"
        data-published="2026-04-02T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
         <time class="meta-time" data-iso="2026-04-02T12:00:00+00:00" title="2 April 2026, 07:00">2 April 2026, 07:00</time>
       </div>
       <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>

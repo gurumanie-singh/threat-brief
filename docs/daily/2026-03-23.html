@@ -39,6 +39,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -67,16 +68,17 @@
     </div>
   </div>
 
-  <div class="article-card"
+  <div class="article-card card--medium"
        data-tags="breach,exploit,malware,vulnerability"
        data-vendors="AWS,Microsoft"
-       data-severity=""
+       data-severity="medium"
        data-title="‘canisterworm’ springs wiper attack targeting iran"
        data-id="b0a40e7a0febb438"
        data-published="2026-03-23T15:43:04+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
 <span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-03-23T15:43:04+00:00" title="23 March 2026, 10:43">23 March 2026, 10:43</time>
       </div>
       <h3 class="card-title">‘CanisterWorm’ Springs Wiper Attack Targeting Iran</h3>

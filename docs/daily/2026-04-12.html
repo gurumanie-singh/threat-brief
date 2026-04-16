@@ -49,6 +49,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -78,16 +79,17 @@
     </div>
   </div>
 
-  <div class="article-card"
+  <div class="article-card card--medium"
        data-tags="breach,malware"
        data-vendors=""
-       data-severity=""
+       data-severity="medium"
        data-title="cpuid breach distributes stx rat via trojanized cpu-z and hwmonitor downloads"
        data-id="172bdedb1e361e49"
        data-published="2026-04-12T11:24:00+05:30"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
         <time class="meta-time" data-iso="2026-04-12T11:24:00+05:30" title="12 April 2026, 00:54">12 April 2026, 00:54</time>
       </div>
       <h3 class="card-title">CPUID Breach Distributes STX RAT via Trojanized CPU-Z and HWMonitor Downloads</h3>

@@ -37,45 +37,247 @@ def extract_cvss(text: str) -> float | None:
     return None
 
 
-# ── Severity inference ──────────────────────────────────────────────
+# ── Severity classification (layered, score-based) ─────────────────
+#
+# Every article MUST receive a severity. The classifier uses:
+#   Priority 1: CVSS score (authoritative structured data)
+#   Priority 2: Weighted keyword scoring across all text fields
+#   Priority 3: Guaranteed fallback → "medium"
+#
+# Scoring: each matched phrase adds points. Total maps to severity band.
+#   >= 15  →  critical   (active exploitation, zero-day, or combined highs)
+#   >= 6   →  high       (RCE, priv-esc, auth bypass, etc.)
+#   >= 2   →  medium     (general vulnerability/threat/malware signals)
+#   == 1   →  low        (advisory-only, guidance, awareness)
+#   == 0   →  medium     (fallback for unclassified cybersecurity news)
 
-_SEVERITY_RULES: list[tuple[str, list[str]]] = [
-    ("critical", [
-        "critical", "critical severity", "critical vulnerability",
-        "critical flaw", "actively exploited", "emergency patch",
-        "wormable", "unauthenticated rce", "zero-day", "zero day",
-        "0-day", "0day", "under active exploitation",
-    ]),
-    ("high", [
-        "high severity", "high-severity", "important vulnerability",
-        "remote code execution", "privilege escalation",
-        "authentication bypass", "pre-auth",
-    ]),
-    ("medium", [
-        "medium severity", "moderate severity", "moderate",
-        "cross-site scripting", "information disclosure",
-        "denial of service", "dos attack",
-    ]),
-    ("low", [
-        "low severity", "low-severity", "informational",
-    ]),
+_SEVERITY_SIGNALS: list[tuple[str, int]] = [
+    # ── Active exploitation / Zero-day (Critical alone) ──
+    ("actively exploited", 20),
+    ("exploited in the wild", 20),
+    ("under active exploitation", 20),
+    ("known exploited vulnerability", 18),
+    ("added to kev", 18),
+    ("zero-day", 18),
+    ("zero day", 18),
+    ("0-day", 18),
+    ("0day", 15),
+    ("unauthenticated rce", 18),
+    ("unauthenticated remote code execution", 18),
+    ("pre-auth rce", 18),
+    ("wormable", 15),
+    ("arbitrary code execution", 10),
+    ("emergency patch", 10),
+
+    # ── Strong technical (High alone, Critical when combined) ──
+    ("remote code execution", 7),
+    ("privilege escalation", 7),
+    ("authentication bypass", 7),
+    ("security bypass", 6),
+    ("sandbox escape", 7),
+    ("supply chain attack", 7),
+    ("supply chain compromise", 7),
+    ("exploit available", 6),
+    ("public exploit", 6),
+    ("proof-of-concept", 5),
+    ("proof of concept", 5),
+    ("emergency update", 7),
+    ("pre-authentication", 6),
+    ("lateral movement", 5),
+    ("command injection", 5),
+    ("sql injection", 5),
+    ("code execution", 5),
+
+    # ── Explicit severity labels in advisory text ──
+    ("critical severity", 8),
+    ("critical vulnerability", 8),
+    ("critical flaw", 8),
+    ("severity critical", 8),
+    ("rated critical", 8),
+    ("high severity", 6),
+    ("high-severity", 6),
+    ("severity high", 6),
+    ("rated high", 6),
+    ("important vulnerability", 5),
+    ("moderate severity", 3),
+    ("medium severity", 3),
+
+    # ── Medium-strength technical / threat signals ──
+    ("vulnerability", 2),
+    ("security flaw", 3),
+    ("security vulnerability", 3),
+    ("patch released", 3),
+    ("patch available", 3),
+    ("patches available", 3),
+    ("update available", 2),
+    ("fix available", 2),
+    ("hotfix", 2),
+    ("cross-site scripting", 3),
+    ("xss", 3),
+    ("information disclosure", 3),
+    ("denial of service", 3),
+    ("ddos", 3),
+    ("buffer overflow", 4),
+    ("memory corruption", 4),
+    ("use-after-free", 4),
+    ("heap overflow", 4),
+    ("type confusion", 4),
+    ("integer overflow", 3),
+    ("deserialization", 3),
+    ("path traversal", 3),
+    ("directory traversal", 3),
+    ("ssrf", 3),
+    ("server-side request forgery", 3),
+    ("security update", 2),
+    ("security advisory", 2),
+    ("security bulletin", 2),
+    ("ransomware", 3),
+    ("malware", 2),
+    ("trojan", 2),
+    ("backdoor", 3),
+    ("botnet", 2),
+    ("phishing", 2),
+    ("social engineering", 2),
+    ("data breach", 3),
+    ("data leak", 3),
+    ("data exposure", 3),
+    ("credential theft", 3),
+    ("credential stuffing", 2),
+    ("spyware", 2),
+    ("rootkit", 3),
+    ("threat actor", 2),
+    ("apt group", 2),
+    ("nation-state", 3),
+    ("cyberattack", 2),
+    ("cyber attack", 2),
+    ("brute force", 2),
+    ("brute-force", 2),
+    ("unauthorized access", 3),
+
+    # ── Weak / low signals ──
+    ("advisory", 1),
+    ("guidance", 1),
+    ("best practices", 1),
+    ("awareness", 1),
+    ("hardening", 1),
+    ("informational", 1),
+    ("security tip", 1),
+    ("compliance", 1),
 ]
 
+_EXPLICIT_LOW_MARKERS = (
+    "low severity", "low-severity", "rated low", "severity low", "severity: low",
+)
 
-def infer_severity(text: str, cvss: float | None = None) -> str | None:
-    if cvss is not None:
-        if cvss >= 9.0:
-            return "critical"
-        if cvss >= 7.0:
-            return "high"
-        if cvss >= 4.0:
-            return "medium"
-        return "low"
+_SCORE_CRITICAL = 15
+_SCORE_HIGH = 6
+_SCORE_MEDIUM = 2
+_DEFAULT_SEVERITY = "medium"
+
+
+def _score_text(text: str, cves: list[str] | None = None) -> tuple[int, list[tuple[str, int]]]:
+    """Score text against weighted severity signals. Returns (total, matched)."""
     lower = text.lower()
-    for level, keywords in _SEVERITY_RULES:
-        if any(kw in lower for kw in keywords):
-            return level
-    return None
+    matched: list[tuple[str, int]] = []
+    for phrase, weight in _SEVERITY_SIGNALS:
+        if phrase in lower:
+            matched.append((phrase, weight))
+    total = sum(w for _, w in matched)
+    if cves:
+        total += 2
+        matched.append(("cve-present", 2))
+        if len(cves) >= 3:
+            total += 3
+            matched.append(("multiple-cves", 3))
+    return total, matched
+
+
+def classify_severity(
+    text: str,
+    cvss: float | None = None,
+    cves: list[str] | None = None,
+) -> str:
+    """Layered severity classifier. ALWAYS returns a valid severity string.
+
+    Priority 1: CVSS score (authoritative structured data)
+    Priority 2: Weighted keyword scoring across all text
+    Priority 3: Guaranteed fallback → medium
+    """
+    method = "score"
+
+    # Priority 1: CVSS score → direct mapping
+    if cvss is not None:
+        method = "cvss"
+        if cvss >= 9.0:
+            sev = "critical"
+        elif cvss >= 7.0:
+            sev = "high"
+        elif cvss >= 4.0:
+            sev = "medium"
+        else:
+            sev = "low"
+        logger.debug("Severity[%s] CVSS=%.1f → %s", method, cvss, sev)
+        return sev
+
+    # Priority 2: Weighted keyword scoring
+    score, matched = _score_text(text, cves)
+
+    if score >= _SCORE_CRITICAL:
+        sev = "critical"
+    elif score >= _SCORE_HIGH:
+        sev = "high"
+    elif score >= _SCORE_MEDIUM:
+        sev = "medium"
+    elif score > 0:
+        sev = "low"
+    else:
+        lower = text.lower()
+        if any(m in lower for m in _EXPLICIT_LOW_MARKERS):
+            sev = "low"
+        else:
+            sev = _DEFAULT_SEVERITY
+
+    if matched:
+        top = sorted(matched, key=lambda x: x[1], reverse=True)[:4]
+        top_str = ", ".join(f"{p}({w})" for p, w in top)
+        logger.debug("Severity[%s] score=%d → %s  [%s]", method, score, sev, top_str)
+    else:
+        logger.debug("Severity[%s] score=0 → %s (fallback)", method, sev)
+
+    return sev
+
+
+def validate_severity_distribution(articles: list[dict[str, Any]]) -> None:
+    """Log severity distribution and warn on blank severity or implausible skew."""
+    from collections import Counter as C
+    dist: C[str] = C()
+    blank = 0
+    for a in articles:
+        sev = a.get("severity")
+        if not sev:
+            blank += 1
+        else:
+            dist[sev] += 1
+    total = len(articles)
+    if not total:
+        return
+    parts = [f"{s}={c}" for s, c in sorted(dist.items(), key=lambda x: x[1], reverse=True)]
+    logger.info("Severity distribution (%d articles): %s", total, ", ".join(parts))
+    if blank:
+        logger.error("SEVERITY BUG: %d/%d articles have blank severity", blank, total)
+    if total >= 10:
+        for sev, count in dist.items():
+            pct = count / total * 100
+            if pct > 80:
+                logger.warning(
+                    "Severity skew: %s is %.0f%% (%d/%d) — check classification rules",
+                    sev, pct, count, total,
+                )
+
+
+# Keep old name as alias for any external callers
+def infer_severity(text: str, cvss: float | None = None) -> str:
+    return classify_severity(text, cvss)
 
 
 # ── Vendor / technology detection ──────────────────────────────────
@@ -480,15 +682,15 @@ def enrich_article(
     vendor_keywords: dict[str, list[str]] | None = None,
     personalization: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    full_text = article.get("full_content", "") or article.get("summary", "")
+    full_text = article.get("full_content", "") or ""
     title = article.get("title", "")
     summary = article.get("summary", "")
     tags = article.get("tags", [])
-    searchable = f"{title} {full_text}"
+    searchable = f"{title} {summary} {full_text}"
 
     cves = extract_cves(searchable)
     cvss = extract_cvss(searchable)
-    severity = infer_severity(searchable, cvss)
+    severity = classify_severity(searchable, cvss, cves)
     vendors = detect_vendors(searchable, vendor_keywords or {})
     action_required = detect_action_required(searchable)
 

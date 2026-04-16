@@ -1,10 +1,17 @@
-"""Merge fetched articles with existing data, enrich, group, prune, and archive."""
+"""Merge fetched articles with existing data, enrich, group, prune, and archive.
+
+Data lifecycle:
+  0-7 days   -> active (shown on homepage)
+  7-30 days  -> archive (browsable, stored in data/archive/)
+  >30 days   -> deleted from articles.json + archive JSON + generated pages
+"""
 
 from __future__ import annotations
 
 import logging
 import sys
 from datetime import timedelta
+from pathlib import Path
 from typing import Any
 
 from scripts.config import (
@@ -28,22 +35,28 @@ def merge_articles(
 ) -> list[dict[str, Any]]:
     """Merge incoming into existing, deduplicating by article id."""
     index: dict[str, dict[str, Any]] = {a["id"]: a for a in existing}
+    new_count = 0
     for article in incoming:
+        if article["id"] not in index:
+            new_count += 1
         index[article["id"]] = article
-    merged = sorted(index.values(), key=lambda a: a["published"], reverse=True)
-    return merged
+    if new_count:
+        logger.info("  %d genuinely new articles added", new_count)
+    return sorted(index.values(), key=lambda a: a["published"], reverse=True)
 
 
-def prune_old(articles: list[dict[str, Any]], max_age_days: int) -> list[dict[str, Any]]:
-    cutoff = (now_utc() - timedelta(days=max_age_days)).strftime("%Y-%m-%d")
+def prune_old(articles: list[dict[str, Any]], max_days: int) -> list[dict[str, Any]]:
+    """Remove articles older than max_days."""
+    cutoff = (now_utc() - timedelta(days=max_days)).strftime("%Y-%m-%d")
     kept = [a for a in articles if a["day"] >= cutoff]
     removed = len(articles) - len(kept)
     if removed:
-        logger.info("Pruned %d articles older than %s", removed, cutoff)
+        logger.info("Pruned %d articles older than %s (%d-day retention)", removed, cutoff, max_days)
     return kept
 
 
 def archive_today(articles: list[dict[str, Any]]) -> None:
+    """Save a daily snapshot of today's articles."""
     day = today_str()
     todays = [a for a in articles if a["day"] == day]
     if not todays:
@@ -54,12 +67,28 @@ def archive_today(articles: list[dict[str, Any]]) -> None:
     logger.info("Archived %d articles to %s", len(todays), archive_path.name)
 
 
+def cleanup_old_archives(max_days: int) -> int:
+    """Delete archive JSON files older than max_days. Returns count deleted."""
+    if not ARCHIVE_DIR.exists():
+        return 0
+    cutoff = (now_utc() - timedelta(days=max_days)).strftime("%Y-%m-%d")
+    deleted = 0
+    for path in sorted(ARCHIVE_DIR.glob("*.json")):
+        day_str = path.stem
+        if day_str < cutoff:
+            path.unlink()
+            deleted += 1
+            logger.info("Deleted old archive %s", path.name)
+    return deleted
+
+
 def process() -> list[dict[str, Any]]:
-    """Full pipeline: fetch → enrich → merge → group → prune → save → archive."""
+    """Full pipeline: fetch -> enrich -> merge -> group -> prune -> save -> archive -> cleanup."""
     config = load_feeds_config()
     settings = get_settings(config)
     vendor_kw = get_vendor_keywords(config)
     personalization = get_personalization(config)
+    max_retention = settings.get("max_retention_days", 30)
 
     logger.info("Loading existing articles from %s", ARTICLES_FILE)
     existing = load_json(ARTICLES_FILE)
@@ -67,7 +96,7 @@ def process() -> list[dict[str, Any]]:
 
     incoming = fetch_all_feeds()
 
-    logger.info("Enriching %d incoming articles…", len(incoming))
+    logger.info("Enriching %d incoming articles...", len(incoming))
     enriched: list[dict[str, Any]] = []
     for article in incoming:
         try:
@@ -85,11 +114,15 @@ def process() -> list[dict[str, Any]]:
     if grouped_count:
         logger.info("Story grouping consolidated %d duplicates", grouped_count)
 
-    pruned = prune_old(merged, settings["max_article_age_days"])
-    logger.info("After prune: %d articles", len(pruned))
+    pruned = prune_old(merged, max_retention)
+    logger.info("After prune (%d-day retention): %d articles", max_retention, len(pruned))
 
     save_json(ARTICLES_FILE, pruned)
     archive_today(pruned)
+
+    old_cleaned = cleanup_old_archives(max_retention)
+    if old_cleaned:
+        logger.info("Cleaned %d archive files older than %d days", old_cleaned, max_retention)
 
     return pruned
 

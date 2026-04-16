@@ -17,6 +17,7 @@ DATA_DIR = ROOT_DIR / "data"
 ARTICLES_FILE = DATA_DIR / "articles.json"
 ARCHIVE_DIR = DATA_DIR / "archive"
 SENT_DIR = DATA_DIR / "sent"
+STATE_FILE = DATA_DIR / "state.json"
 TEMPLATES_DIR = ROOT_DIR / "templates"
 DOCS_DIR = ROOT_DIR / "docs"
 
@@ -45,7 +46,9 @@ def load_feeds_config() -> dict[str, Any]:
 
 def get_settings(config: dict[str, Any] | None = None) -> dict[str, Any]:
     defaults = {
-        "max_article_age_days": 7,
+        "timezone": "UTC",
+        "active_days": 7,
+        "max_retention_days": 30,
         "max_articles_per_page": 50,
         "email_max_articles": 15,
         "site_title": "Threat Brief",

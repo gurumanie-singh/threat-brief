@@ -1,17 +1,19 @@
 """Generate the static GitHub Pages site into docs/.
 
 Produces:
-  docs/index.html            — homepage with landscape summary, top threats, filters
-  docs/daily/YYYY-MM-DD.html — per-day briefing pages
-  docs/articles/{id}.html    — individual article pages with structured sections
-  docs/archive/index.html    — archive listing with search
-  docs/assets/style.css      — design system stylesheet
-  docs/assets/app.js         — client-side interactions
+  docs/index.html            -- homepage with recent articles (0-N active_days)
+  docs/daily/YYYY-MM-DD.html -- per-day briefing pages
+  docs/articles/{id}.html    -- individual article pages with structured sections
+  docs/archive/index.html    -- archive listing
+  docs/assets/style.css      -- design system stylesheet
+  docs/assets/app.js         -- client-side interactions
+
+Also cleans up stale generated pages for articles/days that no longer exist
+in the dataset (deleted by the 30-day lifecycle).
 """
 
 from __future__ import annotations
 
-import json
 import logging
 import shutil
 import sys
@@ -31,7 +33,8 @@ from scripts.config import (
     get_settings,
 )
 from scripts.enrich import generate_landscape_bullets, extract_top_threats
-from scripts.utils import load_json, today_str, format_date_human, now_utc
+from scripts.utils import load_json, format_date_human, now_utc
+from scripts.scheduler import get_local_today
 
 logger = logging.getLogger(__name__)
 
@@ -73,6 +76,7 @@ def _setup_jinja(settings: dict[str, Any]) -> Environment:
     env.globals["site_description"] = settings["site_description"]
     env.globals["site_base_url"] = settings.get("site_base_url", "")
     env.filters["paragraphs"] = _paragraphs_filter
+    env.filters["human_date"] = format_date_human
     return env
 
 
@@ -83,7 +87,32 @@ def _copy_static_assets() -> None:
         src = TEMPLATES_DIR / filename
         if src.exists():
             shutil.copy2(src, dst / filename)
-            logger.info("Copied %s → docs/assets/%s", filename, filename)
+            logger.info("Copied %s -> docs/assets/%s", filename, filename)
+
+
+def _cleanup_stale_pages(
+    valid_article_ids: set[str], valid_days: set[str]
+) -> None:
+    """Delete generated HTML pages for articles/days no longer in the dataset."""
+    articles_dir = DOCS_DIR / "articles"
+    if articles_dir.exists():
+        deleted = 0
+        for f in articles_dir.glob("*.html"):
+            if f.stem not in valid_article_ids:
+                f.unlink()
+                deleted += 1
+        if deleted:
+            logger.info("Cleaned %d stale article pages", deleted)
+
+    daily_dir = DOCS_DIR / "daily"
+    if daily_dir.exists():
+        deleted = 0
+        for f in daily_dir.glob("*.html"):
+            if f.stem not in valid_days:
+                f.unlink()
+                deleted += 1
+        if deleted:
+            logger.info("Cleaned %d stale daily pages", deleted)
 
 
 def generate_site() -> None:
@@ -93,10 +122,15 @@ def generate_site() -> None:
 
     articles = load_json(ARTICLES_FILE)
     if not articles:
-        logger.warning("No articles found — generating empty site")
+        logger.warning("No articles found -- generating empty site")
 
-    days_grouped = _group_by_day(articles)
-    today = today_str()
+    active_days = settings.get("active_days", 7)
+    all_days_grouped = _group_by_day(articles)
+    today = get_local_today()
+    today_human = format_date_human(today)
+
+    active_cutoff = (now_utc() - timedelta(days=active_days)).strftime("%Y-%m-%d")
+    active_articles = [a for a in articles if a["day"] >= active_cutoff]
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / "daily").mkdir(parents=True, exist_ok=True)
@@ -105,29 +139,29 @@ def generate_site() -> None:
 
     _copy_static_assets()
 
-    # Compute global lists for filters
-    all_tags = _collect_all(articles, "tags")
-    all_vendors = _collect_all(articles, "vendors")
+    # Compute global filter lists (from active articles for homepage)
+    all_tags = _collect_all(active_articles, "tags")
+    all_vendors = _collect_all(active_articles, "vendors")
     all_severities = []
     for sev in ("critical", "high", "medium", "low"):
-        if any(a.get("severity") == sev for a in articles):
+        if any(a.get("severity") == sev for a in active_articles):
             all_severities.append(sev)
 
-    # Today's articles for landscape summary
+    # Landscape summary from today's articles
     todays_articles = [a for a in articles if a["day"] == today]
-    if not todays_articles and days_grouped:
-        todays_articles = days_grouped[0][1]
+    if not todays_articles and all_days_grouped:
+        todays_articles = all_days_grouped[0][1]
 
     landscape_bullets = generate_landscape_bullets(todays_articles)
 
-    # Weekly top threats (last 7 days)
+    # Weekly top threats
     cutoff_7d = (now_utc() - timedelta(days=7)).strftime("%Y-%m-%d")
     week_articles = [a for a in articles if a["day"] >= cutoff_7d]
     top_threats = extract_top_threats(week_articles)
 
-    # ── Homepage ─────────────────────────────────────────
+    # -- Homepage (active articles only: last N days) -------------------------
     max_articles = settings["max_articles_per_page"]
-    homepage_articles = articles[:max_articles]
+    homepage_articles = active_articles[:max_articles]
     homepage_days = _group_by_day(homepage_articles)
 
     index_tpl = env.get_template("index.html")
@@ -136,6 +170,7 @@ def generate_site() -> None:
         articles=homepage_articles,
         days_grouped=homepage_days,
         generated_at=today,
+        generated_at_human=today_human,
         landscape_bullets=landscape_bullets,
         top_threats=top_threats,
         all_tags=all_tags,
@@ -143,11 +178,12 @@ def generate_site() -> None:
         all_severities=all_severities,
     )
     (DOCS_DIR / "index.html").write_text(index_html, encoding="utf-8")
-    logger.info("Generated docs/index.html with %d articles", len(homepage_articles))
+    logger.info("Generated docs/index.html with %d articles (%d active days)",
+                len(homepage_articles), active_days)
 
-    # ── Daily pages ──────────────────────────────────────
+    # -- Daily pages (all days in the dataset, including archive) -------------
     day_tpl = env.get_template("day.html")
-    for day_str, day_articles in days_grouped:
+    for day_str, day_articles in all_days_grouped:
         day_tags = _collect_all(day_articles, "tags")
         day_vendors = _collect_all(day_articles, "vendors")
         day_severities = []
@@ -167,9 +203,9 @@ def generate_site() -> None:
             all_severities=day_severities,
         )
         (DOCS_DIR / "daily" / f"{day_str}.html").write_text(day_html, encoding="utf-8")
-    logger.info("Generated %d daily pages", len(days_grouped))
+    logger.info("Generated %d daily pages", len(all_days_grouped))
 
-    # ── Individual article pages ─────────────────────────
+    # -- Individual article pages ---------------------------------------------
     article_tpl = env.get_template("article.html")
     for article in articles:
         sections = article.get("sections", {})
@@ -181,10 +217,10 @@ def generate_site() -> None:
         (DOCS_DIR / "articles" / f"{article['id']}.html").write_text(art_html, encoding="utf-8")
     logger.info("Generated %d individual article pages", len(articles))
 
-    # ── Archive index ────────────────────────────────────
+    # -- Archive index --------------------------------------------------------
     archive_tpl = env.get_template("archive_index.html")
     day_summaries = []
-    for day_str, day_articles in days_grouped:
+    for day_str, day_articles in all_days_grouped:
         tag_counter: Counter = Counter()
         sev_counter: Counter = Counter()
         for a in day_articles:
@@ -204,7 +240,12 @@ def generate_site() -> None:
 
     archive_html = archive_tpl.render(prefix="../", days=day_summaries)
     (DOCS_DIR / "archive" / "index.html").write_text(archive_html, encoding="utf-8")
-    logger.info("Generated docs/archive/index.html")
+    logger.info("Generated docs/archive/index.html with %d days", len(day_summaries))
+
+    # -- Clean up stale generated pages ---------------------------------------
+    valid_ids = {a["id"] for a in articles}
+    valid_days = {day_str for day_str, _ in all_days_grouped}
+    _cleanup_stale_pages(valid_ids, valid_days)
 
     logger.info("Site generation complete")
 

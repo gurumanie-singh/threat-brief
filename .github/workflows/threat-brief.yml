@@ -1,16 +1,24 @@
-name: Daily Email
+name: Threat Brief Daily Pipeline
 
 on:
   schedule:
-    # Run once daily at 07:00 UTC
-    - cron: "0 7 * * *"
-  workflow_dispatch: # Allow manual trigger from Actions tab
+    # Run every 30 minutes. The Python scheduler decides whether to
+    # actually execute based on the user's configured timezone and
+    # the 07:00 local-time execution window.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: "Force a full pipeline run (bypass time-window check)"
+        required: false
+        default: "false"
+        type: boolean
 
 permissions:
   contents: write
 
 jobs:
-  send:
+  daily:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,22 +34,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Fetch and process latest feeds
-        run: python -m scripts.process_articles
-
-      - name: Generate site (ensures fresh data for email links)
-        run: python -m scripts.generate_site
-
-      - name: Send daily email
+      - name: Run daily pipeline
         env:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
-        run: python -m scripts.send_email
+          FORCE_RUN: ${{ inputs.force_run || 'false' }}
+        run: python -m scripts.run_daily
 
-      - name: Commit sent marker and updated data
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -49,6 +52,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: daily email sent — $(date -u '+%Y-%m-%d')"
+            git commit -m "chore: daily update — $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
           fi

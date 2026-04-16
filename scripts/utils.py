@@ -38,7 +38,7 @@ def strip_emoji(text: str) -> str:
     return _EMOJI_RE.sub("", text).strip()
 
 
-# ── Text normalisation ──────────────────────────────────────────────
+# -- Text normalisation ------------------------------------------------------
 
 def normalize_text(text: str) -> str:
     """Lowercase, strip accents, collapse whitespace."""
@@ -62,7 +62,7 @@ def article_id(title: str, link: str) -> str:
     return hashlib.sha256(key.encode("utf-8")).hexdigest()[:16]
 
 
-# ── HTML cleaning ───────────────────────────────────────────────────
+# -- HTML cleaning -----------------------------------------------------------
 
 _TAG_RE = re.compile(r"<[^>]+>")
 _ENTITY_MAP = {
@@ -94,24 +94,25 @@ def truncate(text: str, max_chars: int = 280) -> str:
     if len(text) <= max_chars:
         return text
     truncated = text[:max_chars].rsplit(" ", 1)[0]
-    return truncated.rstrip(".,;:!?") + "…"
+    return truncated.rstrip(".,;:!?") + "..."
 
 
-# ── Date helpers ────────────────────────────────────────────────────
+# -- Date helpers ------------------------------------------------------------
 
 def now_utc() -> datetime:
     return datetime.now(timezone.utc)
 
 
 def today_str() -> str:
+    """UTC-based today, used for article date keys (matches RSS feed dates)."""
     return now_utc().strftime("%Y-%m-%d")
 
 
 def format_date_human(date_str: str) -> str:
-    """Convert 'YYYY-MM-DD' to 'April 15, 2026' style."""
+    """Convert 'YYYY-MM-DD' to '15 April 2026' style."""
     try:
         dt = datetime.strptime(date_str, "%Y-%m-%d")
-        return dt.strftime("%B %-d, %Y")
+        return f"{dt.day} {dt.strftime('%B')} {dt.year}"
     except (ValueError, AttributeError):
         return date_str
 
@@ -131,7 +132,7 @@ def parse_date(date_str: str | None) -> datetime:
         return now_utc()
 
 
-# ── JSON I/O ────────────────────────────────────────────────────────
+# -- JSON I/O ---------------------------------------------------------------
 
 def load_json(path: Path) -> list[dict[str, Any]]:
     """Load a JSON file, returning [] on missing or corrupt file."""

@@ -5,12 +5,12 @@
 {% block content %}
 <div class="section-inner">
   <div class="article-page">
-    <a href="{{ prefix }}daily/{{ article.day }}.html" class="back-link">← {{ article.day }} briefing</a>
+    <a href="{{ prefix }}daily/{{ article.day }}.html" class="back-link">← {{ article.day|human_date }} briefing</a>
 
     <header class="article-header">
       <div class="meta-row">
         <span class="card-source">{{ article.source }}</span>
-        <span class="card-date">{{ article.day }}</span>
+        <span class="card-date">{{ article.day|human_date }}</span>
         {% if article.severity %}
         <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
         {% endif %}

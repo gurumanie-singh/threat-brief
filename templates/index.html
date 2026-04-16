@@ -7,7 +7,7 @@
   <div class="page-hero">
     <div class="hero-label">
       <span class="hero-label-dot"></span>
-      updated {{ generated_at }}
+      updated {{ generated_at_human }}
     </div>
     <h1 class="hero-title">cybersecurity<br>intelligence, <em>daily.</em></h1>
     <p class="hero-desc">
@@ -75,7 +75,7 @@
   {% for day_str, day_articles in days_grouped %}
   <div class="day-group">
     <h2 class="day-group-title">
-      {{ day_str }}
+      {{ day_str|human_date }}
       <span class="day-group-count">{{ day_articles|length }} article{{ "s" if day_articles|length != 1 else "" }}</span>
     </h2>
   </div>
@@ -89,7 +89,7 @@
      data-title="{{ article.title|lower }}">
     <div class="card-top">
       <span class="card-source">{{ article.source }}</span>
-      <span class="card-date">{{ article.day }}</span>
+      <span class="card-date">{{ article.day|human_date }}</span>
       {% if article.severity %}
       <span class="card-severity {{ article.severity }}">{{ article.severity }}</span>
       {% endif %}

@@ -1,4 +1,10 @@
-"""Send the daily Threat Brief email digest, structured by severity tiers."""
+"""Send the daily Threat Brief email digest, structured by severity tiers.
+
+Duplicate prevention is handled by the scheduler's state.json. This module
+exposes two entry points:
+  - send_email_now()  -- send unconditionally (called by run_daily.py after gate check)
+  - send_email()      -- standalone entry with its own dedup check (backward compat)
+"""
 
 from __future__ import annotations
 
@@ -7,14 +13,12 @@ import smtplib
 import sys
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from pathlib import Path
 from typing import Any
 
 from jinja2 import Environment, FileSystemLoader
 
 from scripts.config import (
     ARTICLES_FILE,
-    SENT_DIR,
     TEMPLATES_DIR,
     EMAIL_SENDER,
     EMAIL_PASSWORD,
@@ -26,26 +30,13 @@ from scripts.config import (
     get_personalization,
 )
 from scripts.enrich import generate_landscape_bullets
-from scripts.utils import load_json, today_str
+from scripts.scheduler import get_local_today, should_send_email, mark_email_sent
+from scripts.utils import load_json, format_date_human
 
 logger = logging.getLogger(__name__)
 
 _SEVERITY_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 _SEVERITY_LABEL = {"critical": "[!!]", "high": "[!]", "medium": "[--]", "low": "[i]"}
-
-
-def _sent_marker(day: str) -> Path:
-    return SENT_DIR / f"{day}.sent"
-
-
-def already_sent_today() -> bool:
-    return _sent_marker(today_str()).exists()
-
-
-def mark_sent(day: str) -> None:
-    SENT_DIR.mkdir(parents=True, exist_ok=True)
-    _sent_marker(day).write_text(day, encoding="utf-8")
-    logger.info("Marked email as sent for %s", day)
 
 
 def _bucket_by_severity(articles: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
@@ -64,16 +55,17 @@ def _bucket_by_severity(articles: list[dict[str, Any]]) -> dict[str, list[dict[s
 def _build_plain_text(
     articles: list[dict[str, Any]], day: str, base_url: str
 ) -> str:
+    day_human = format_date_human(day)
     bullets = generate_landscape_bullets(articles)
     lines = [
-        f"THREAT BRIEF — {day}",
+        f"THREAT BRIEF -- {day_human}",
         "=" * 44,
     ]
     if bullets:
         lines.append("")
         lines.append("TODAY'S LANDSCAPE:")
         for b in bullets:
-            lines.append(f"  • {b}")
+            lines.append(f"  - {b}")
     lines.append("")
     lines.append(f"{len(articles)} articles from today's cybersecurity landscape.")
     lines.append("")
@@ -119,12 +111,14 @@ def _build_html(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
         autoescape=True,
     )
+    env.filters["human_date"] = format_date_human
     buckets = _bucket_by_severity(articles)
     bullets = generate_landscape_bullets(articles)
     tpl = env.get_template("email.html")
     return tpl.render(
         articles=articles,
         day=day,
+        day_human=format_date_human(day),
         base_url=settings.get("site_base_url", ""),
         site_title=settings["site_title"],
         buckets=buckets,
@@ -132,13 +126,8 @@ def _build_html(
     )
 
 
-def send_email() -> bool:
-    day = today_str()
-
-    if already_sent_today():
-        logger.info("Email already sent for %s — skipping", day)
-        return True
-
+def _do_send(articles: list[dict[str, Any]], day: str, settings: dict[str, Any]) -> bool:
+    """Actually connect and send the email."""
     if not EMAIL_SENDER or not EMAIL_PASSWORD or not EMAIL_RECEIVER:
         logger.error(
             "Missing email credentials. Set EMAIL_SENDER, EMAIL_PASSWORD, "
@@ -146,6 +135,40 @@ def send_email() -> bool:
         )
         return False
 
+    base_url = settings.get("site_base_url", "")
+    day_human = format_date_human(day)
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"Threat Brief -- {day_human}"
+    msg["From"] = EMAIL_SENDER
+    msg["To"] = EMAIL_RECEIVER
+
+    plain = _build_plain_text(articles, day, base_url)
+    html = _build_html(articles, day, settings)
+
+    msg.attach(MIMEText(plain, "plain", "utf-8"))
+    msg.attach(MIMEText(html, "html", "utf-8"))
+
+    try:
+        logger.info("Connecting to %s:%d ...", SMTP_HOST, SMTP_PORT)
+        with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
+            server.ehlo()
+            server.starttls()
+            server.ehlo()
+            server.login(EMAIL_SENDER, EMAIL_PASSWORD)
+            server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
+        logger.info("Email sent successfully to %s", EMAIL_RECEIVER)
+        return True
+    except smtplib.SMTPException as exc:
+        logger.error("SMTP error: %s", exc)
+        return False
+    except OSError as exc:
+        logger.error("Network error: %s", exc)
+        return False
+
+
+def _prepare_articles(day: str) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Load and filter articles for the given day."""
     config = load_feeds_config()
     settings = get_settings(config)
     personalization = get_personalization(config)
@@ -155,11 +178,10 @@ def send_email() -> bool:
     if not todays:
         all_articles = sorted(articles, key=lambda a: a["published"], reverse=True)
         todays = all_articles[:settings["email_max_articles"]]
-        if not todays:
-            logger.warning("No articles available to send")
-            return False
 
-    # Filter by minimum severity if configured
+    if not todays:
+        return [], settings
+
     min_sev = personalization.get("email_min_severity", "")
     if min_sev and min_sev in _SEVERITY_ORDER:
         threshold = _SEVERITY_ORDER[min_sev]
@@ -167,36 +189,42 @@ def send_email() -> bool:
 
     todays = sorted(todays, key=lambda a: _SEVERITY_ORDER.get(a.get("severity", ""), 99))
     todays = todays[:settings["email_max_articles"]]
-    base_url = settings.get("site_base_url", "")
+    return todays, settings
 
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"Threat Brief — {day}"
-    msg["From"] = EMAIL_SENDER
-    msg["To"] = EMAIL_RECEIVER
 
-    plain = _build_plain_text(todays, day, base_url)
-    html = _build_html(todays, day, settings)
+def send_email_now() -> bool:
+    """Send the daily email unconditionally (no dedup check).
 
-    msg.attach(MIMEText(plain, "plain", "utf-8"))
-    msg.attach(MIMEText(html, "html", "utf-8"))
+    Called by run_daily.py which has already verified via scheduler.should_send_email().
+    """
+    day = get_local_today()
+    articles, settings = _prepare_articles(day)
+    if not articles:
+        logger.warning("No articles available to send")
+        return False
+    return _do_send(articles, day, settings)
 
-    try:
-        logger.info("Connecting to %s:%d …", SMTP_HOST, SMTP_PORT)
-        with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
-            server.ehlo()
-            server.starttls()
-            server.ehlo()
-            server.login(EMAIL_SENDER, EMAIL_PASSWORD)
-            server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
-        logger.info("Email sent successfully to %s", EMAIL_RECEIVER)
-        mark_sent(day)
+
+def send_email() -> bool:
+    """Standalone entry: checks state-based dedup, then sends.
+
+    Used when calling `python -m scripts.send_email` directly.
+    """
+    ok, reason = should_send_email()
+    if not ok:
+        logger.info("Email skip: %s", reason)
         return True
-    except smtplib.SMTPException as exc:
-        logger.error("SMTP error: %s", exc)
+
+    day = get_local_today()
+    articles, settings = _prepare_articles(day)
+    if not articles:
+        logger.warning("No articles available to send")
         return False
-    except OSError as exc:
-        logger.error("Network error: %s", exc)
-        return False
+
+    success = _do_send(articles, day, settings)
+    if success:
+        mark_email_sent()
+    return success
 
 
 def main() -> None:

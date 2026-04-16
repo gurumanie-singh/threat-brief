@@ -186,7 +186,16 @@ personalization:
 # ──────────────────────────────────────────────
 
 settings:
-  max_article_age_days: 7
+  # IANA timezone for scheduling. The daily pipeline runs at 07:00 in this zone.
+  # Examples: America/New_York, America/Chicago, Europe/London, Asia/Tokyo
+  timezone: "America/Chicago"
+
+  # Articles 0-7 days old appear on the homepage.
+  # Articles 7-30 days old move to the archive.
+  # Articles older than 30 days are deleted automatically.
+  active_days: 7
+  max_retention_days: 30
+
   max_articles_per_page: 50
   email_max_articles: 15
   site_title: Threat Brief

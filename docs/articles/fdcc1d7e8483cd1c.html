@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitsubishi Electric CNC Series — Threat Brief</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <div class="article-page">
+    <a href="../daily/2026-03-19.html" class="back-link">← 19 March 2026 briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">CISA Alerts</span>
+        <span class="card-date">19 March 2026</span>
+        <span class="card-severity low">low</span>
+        <span class="card-action-badge">Action Required</span>
+      </div>
+
+      <h1 class="title">Mitsubishi Electric CNC Series</h1>
+
+      <p class="subtitle">View CSAF 
+
+ Summary 
+ Successful exploitation of this vulnerability could allow a remote attacker to cause an out-of-bounds read, resulting in a denial-of-service condition in the affected products. Tracked as CVE-2025-2399.</p>
+
+      <div class="article-action-banner">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        This item may require immediate action — see Mitigation section below
+      </div>
+
+      <div class="article-tags">
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">vulnerability</span>
+      </div>
+
+      <ul class="article-cve-list">
+        <li class="article-cve">CVE-2025-2399</li>
+      </ul>
+    </header>
+
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
+        <div class="article-section-content">
+          <p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow a remote attacker to cause an out-of-bounds read, resulting in a denial-of-service condition in the affected products. The following versions of Mitsubishi Electric CNC Series are affected:</p>
+<p>M800VW (BND-2051W000) &lt;=BB</p>
+<p>M800VS (BND-2052W000) &lt;=BB</p>
+<p>M80V (BND-2053W000) &lt;=BB</p>
+<p>M80VW (BND-2054W000) &lt;=BB</p>
+<p>M800W (BND-2005W000) &lt;=FM</p>
+<p>M800S (BND-2006W000) &lt;=FM</p>
+<p>M80 (BND-2007W000) &lt;=FM</p>
+<p>M80W (BND-2008W000) &lt;=FM</p>
+<p>E80 (BND-2009W000) &lt;=FM</p>
+<p>C80 (BND-2036W000) vers:all/*</p>
+<p>M750VW (BND-1015W002) vers:all/*</p>
+<p>M730VW (BND-1015W000) vers:all/*</p>
+<p>M720VW (BND-1015W000) vers:all/*</p>
+<p>M750VS (BND-1012W002) vers:all/*</p>
+<p>M730VS (BND-1012W000-**) vers:all/*</p>
+<p>M720VS (BND-1012W000) vers:all/*</p>
+<p>M70V (BND-1018W000) vers:all/*</p>
+<p>E70 (BND-1022W000) vers:all/*</p>
+<p>NC Trainer2 (BND-1802W000) vers:all/*</p>
+<p>NC Trainer2 plus (BND-1803W000) vers:all/*</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 5.9   Mitsubishi Electric   Mitsubishi Electric CNC Series   Improper Validation of Specified Index, Position, or Offset in Input           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Japan</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-2399     Improper Validation of Specified Index, Position, or Offset in Input (CWE-1285) vulnerability in the affected products allows a remote attacker to cause an out-of-bounds read, resulting in a denial-of-service condition in the affected products by sending specially crafted packets to TCP port 683. View CVE Details</p>
+<p>Affected Products   Mitsubishi Electric CNC Series     Vendor:  Mitsubishi Electric   Product Version:  Mitsubishi Electric M800VW (BND-2051W000): &lt;=BB, Mitsubishi Electric M800VS (BND-2052W000): &lt;=BB, Mitsubishi Electric M80V (BND-2053W000): &lt;=BB, Mitsubishi Electric M80VW (BND-2054W000): &lt;=BB, Mitsubishi Electric M800W (BND-2005W000): &lt;=FM, Mitsubishi Electric M800S (BND-2006W000): &lt;=FM, Mitsubishi Electric M80 (BND-2007W000): &lt;=FM, Mitsubishi Electric M80W (BND-2008W000): &lt;=FM, Mitsubishi Electric E80 (BND-2009W000): &lt;=FM, Mitsubishi Electric C80 (BND-2036W000): vers:all/*, Mitsubishi Electric M750VW (BND-1015W002): vers:all/*, Mitsubishi Electric M730VW (BND-1015W000): vers:all/*, Mitsubishi Electric M720VW (BND-1015W000): vers:all/*, Mitsubishi Electric M750VS (BND-1012W002): vers:all/*, Mitsubishi Electric M730VS (BND-1012W000): vers:all/*, Mitsubishi Electric M720VS (BND-1012W000): vers:all/*, Mitsubishi Electric M70V (BND-1018W000): vers:all/*, Mitsubishi Electric E70 (BND-1022W000): vers:all/*, Mitsubishi Electric NC Trainer2 (BND-1802W000): vers:all/*, Mitsubishi Electric NC Trainer2 plus (BND-1803W000): vers:all/*   Product Status:  known_affected       Remediations   Vendor fix  Please apply the fixed version (BC or later) for Mitsubishi Electric M800VW(BND-2051W000), M800VS(BND-2052W000), M80V(BND-2053W000), and M80VW(BND-2054W000).</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
+        <div class="article-section-content">
+          <p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow a remote attacker to cause an out-of-bounds read, resulting in a denial-of-service condition in the affected products. The following versions of Mitsubishi Electric CNC Series are affected:</p>
+<p>M800VW (BND-2051W000) &lt;=BB</p>
+<p>M800VS (BND-2052W000) &lt;=BB</p>
+<p>M80V (BND-2053W000) &lt;=BB</p>
+<p>M80VW (BND-2054W000) &lt;=BB</p>
+<p>M800W (BND-2005W000) &lt;=FM</p>
+<p>M800S (BND-2006W000) &lt;=FM</p>
+<p>M80 (BND-2007W000) &lt;=FM</p>
+<p>M80W (BND-2008W000) &lt;=FM</p>
+<p>E80 (BND-2009W000) &lt;=FM</p>
+<p>C80 (BND-2036W000) vers:all/*</p>
+<p>M750VW (BND-1015W002) vers:all/*</p>
+<p>M730VW (BND-1015W000) vers:all/*</p>
+<p>M720VW (BND-1015W000) vers:all/*</p>
+<p>M750VS (BND-1012W002) vers:all/*</p>
+<p>M730VS (BND-1012W000-**) vers:all/*</p>
+<p>M720VS (BND-1012W000) vers:all/*</p>
+<p>M70V (BND-1018W000) vers:all/*</p>
+<p>E70 (BND-1022W000) vers:all/*</p>
+<p>NC Trainer2 (BND-1802W000) vers:all/*</p>
+<p>NC Trainer2 plus (BND-1803W000) vers:all/*</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 5.9   Mitsubishi Electric   Mitsubishi Electric CNC Series   Improper Validation of Specified Index, Position, or Offset in Input           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Japan</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-2399     Improper Validation of Specified Index, Position, or Offset in Input (CWE-1285) vulnerability in the affected products allows a remote attacker to cause an out-of-bounds read, resulting in a denial-of-service condition in the affected products by sending specially crafted packets to TCP port 683. Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends using a firewall or virtual private network (VPN) to prevent unauthorized access, when internet access is required, to minimize the risk of exploiting this vulnerability. Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends using the product within a LAN and blocking access from untrusted networks and hosts through a firewall, to minimize the risk of exploiting this vulnerability.</p>
+<p>Referenced vulnerabilities: CVE-2025-2399.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
+        <div class="article-section-content">
+          <p>The following versions of Mitsubishi Electric CNC Series are affected:</p>
+<p>M800VW (BND-2051W000) &lt;=BB</p>
+<p>M800VS (BND-2052W000) &lt;=BB</p>
+<p>M80V (BND-2053W000) &lt;=BB</p>
+<p>M80VW (BND-2054W000) &lt;=BB</p>
+<p>M800W (BND-2005W000) &lt;=FM</p>
+<p>M800S (BND-2006W000) &lt;=FM</p>
+<p>M80 (BND-2007W000) &lt;=FM</p>
+<p>M80W (BND-2008W000) &lt;=FM</p>
+<p>E80 (BND-2009W000) &lt;=FM</p>
+<p>C80 (BND-2036W000) vers:all/*</p>
+<p>M750VW (BND-1015W002) vers:all/*</p>
+<p>M730VW (BND-1015W000) vers:all/*</p>
+<p>M720VW (BND-1015W000) vers:all/*</p>
+<p>M750VS (BND-1012W002) vers:all/*</p>
+<p>M730VS (BND-1012W000-**) vers:all/*</p>
+<p>M720VS (BND-1012W000) vers:all/*</p>
+<p>M70V (BND-1018W000) vers:all/*</p>
+<p>E70 (BND-1022W000) vers:all/*</p>
+<p>NC Trainer2 (BND-1802W000) vers:all/*</p>
+<p>NC Trainer2 plus (BND-1803W000) vers:all/*</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 5.9   Mitsubishi Electric   Mitsubishi Electric CNC Series   Improper Validation of Specified Index, Position, or Offset in Input           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Japan</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-2399     Improper Validation of Specified Index, Position, or Offset in Input (CWE-1285) vulnerability in the affected products allows a remote attacker to cause an out-of-bounds read, resulting in a denial-of-service condition in the affected products by sending specially crafted packets to TCP port 683. Appendix 2 IP Address Filter Setting Function&#34;</p>
+<p>Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends restricting physical access to the affected product and to all computers and network devices to which the products are connected, to minimize the risk of exploiting this vulnerability. Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends installing anti-virus software on PCs that can access the affected product, to minimize the risk of exploiting this vulnerability.</p>
+<p>Assessed severity: LOW. CVSS score: 3.1/10.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
+        <div class="article-section-content">
+          <p>Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends using the product within a LAN and blocking access from untrusted networks and hosts through a firewall, to minimize the risk of exploiting this vulnerability. Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends using a firewall or virtual private network (VPN) to prevent unauthorized access, when internet access is required, to minimize the risk of exploiting this vulnerability. Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends using IP filters to prevent unauthorized access, when internet access is required, to minimize the risk of exploiting this vulnerability. Appendix 2 IP Address Filter Setting Function&#34;</p>
+<p>Mitigation  For customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends restricting physical access to the affected product and to all computers and network devices to which the products are connected, to minimize the risk of exploiting this vulnerability.</p>
+<p>Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Context / Trends</div>
+        <div class="article-section-content">
+          <p>Timely vulnerability management and patch prioritization remain critical components of any defensive security program.</p>
+<p>Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure.</p>
+        </div>
+      </div>
+
+
+      <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-078-05" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at CISA Alerts</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

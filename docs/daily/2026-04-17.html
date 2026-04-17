@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">17 April 2026</h1>
-      <span class="brief-sub">10 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -66,6 +66,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
@@ -73,16 +74,53 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--action card--critical"
+       data-tags="breach,exploit,patch,vulnerability,zero-day"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="three microsoft defender zero-days actively exploited; two still unpatched"
+       data-id="b6073f179696e9ac"
+       data-published="2026-04-17T18:51:00+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-17T18:51:00+05:30" title="17 April 2026, 08:21">17 April 2026, 08:21</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Three Microsoft Defender Zero-Days Actively Exploited; Two Still Unpatched</h3>
+      <p class="card-summary">Huntress is warning that threat actors are exploiting three recently disclosed security flaws in Microsoft Defender to gain elevated privileges in compromised systems. Severity is rated critical.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Huntress is warning that threat actors are exploiting three recently disclosed security flaws in Microsoft Defender to gain elevated privileges in compromised systems. The activity involves the exploitation of three vulnerabilities that are codenamed BlueHammer (requires GitHub sign-in), RedSun, and UnDefend, all of which were released as zero-days by a researcher known as Chaotic Eclipse (</p></div>
+      <div class="detail-links">
+        <a href="../articles/b6073f179696e9ac.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Google"
@@ -209,6 +247,37 @@
       <div class="detail-links">
         <a href="../articles/5820054d291e95b5.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="inside an underground guide: how threat actors vet stolen credit card shops"
+       data-id="13e7a75cfbac1dec"
+       data-published="2026-04-17T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-17T10:01:11-04:00" title="17 April 2026, 09:01">17 April 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Inside an Underground Guide: How Threat Actors Vet Stolen Credit Card Shops</h3>
+      <p class="card-summary">In cybercrime markets, trust isn&#39;t assumed, it&#39;s verified. Flare reveals how underground guides teach actors to evaluate carding shops based on data quality, reputation, and survivability. [...].</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>In cybercrime markets, trust isn&#39;t assumed, it&#39;s verified. Flare reveals how underground guides teach actors to evaluate carding shops based on data quality, reputation, and survivability. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/13e7a75cfbac1dec.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/inside-an-underground-guide-how-threat-actors-vet-stolen-credit-card-shops/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

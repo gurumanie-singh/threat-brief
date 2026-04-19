@@ -18,15 +18,14 @@
     "vendors": [],
     "action_required": false,
     "sections": {
-      "overview": "In 2024, compromised service accounts and forgotten API keys were behind 68% of cloud breaches. Not weak passwords. Unmanaged non-human identities that nobody was watching.",
-      "technical": "In 2024, compromised service accounts and forgotten API keys were behind 68% of cloud breaches. For every employee in your org, there are 40 to 50 automated credentials: service accounts, API tokens, AI agent connections, and OAuth grants.",
-      "impact": "In 2024, compromised service accounts and forgotten API keys were behind 68% of cloud breaches. For every employee in your org, there are 40 to 50 automated credentials: service accounts, API tokens, AI agent connections, and OAuth grants.\n\nAssessed severity: MEDIUM.",
-      "mitigation": "Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
-      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "In 2024, compromised service accounts and forgotten API keys were behind 68% of cloud breaches. Not weak passwords.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "In 2024, compromised service accounts and forgotten API keys were behind 68% of cloud breaches. Not weak passwords.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "8164bb710354fb3c",
@@ -45,16 +44,13 @@
     "severity": "medium",
     "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "Grinex, a Kyrgyzstan-incorporated cryptocurrency exchange sanctioned by the U.K. and the U.S. last year, said it's suspending operations after it blamed Western intelligence agencies for a $13.74 million hack. The exchange said it fell victim to what it described as a large-scale cyber attack that bore hallmarks of foreign intelligence agency involvement. This attack led to the theft of over 1",
-      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
-      "impact": "Grinex, a Kyrgyzstan-incorporated cryptocurrency exchange sanctioned by the U.K. and the U.S. last year, said it's suspending operations after it blamed Western intelligence agencies for a $13.74 million hack. The exchange said it fell victim to what it described as a large-scale cyber attack that bore hallmarks of foreign intelligence agency involvement.\n\nAssessed severity: MEDIUM.",
-      "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
-    "email_summary": "Grinex, a Kyrgyzstan-incorporated cryptocurrency exchange sanctioned by the U.K. and the U.S. last year, said it's suspending operations after it blamed Western intelligence agencies for a $13.74 million hack. The exchange said it fell victim to what it described as a large-scale cyber attack that bore hallmarks of foreign intelligence agency involvement.",
+    "sections": {},
+    "email_summary": "Grinex, a Kyrgyzstan-incorporated cryptocurrency exchange sanctioned by the U.K. and the U.S. last year, said it's suspending operations after it blamed Western intelligence agencies for a $13.74 million hack.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Grinex, a Kyrgyzstan-incorporated cryptocurrency exchange sanctioned by the U.K. and the U.S. last year, said it's suspending operations after it blamed Western intelligence agencies for a $13.74 million hack.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "0b08299d1c1ef267",
@@ -75,8 +71,8 @@
     "cves": [
       "CVE-2024-3721"
     ],
-    "cvss": 6.3,
-    "severity": "medium",
+    "cvss": null,
+    "severity": "high",
     "vendors": [
       "AWS",
       "Fortinet",
@@ -84,15 +80,15 @@
     ],
     "action_required": false,
     "sections": {
-      "overview": "Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo Alto Networks Unit 42. The attack targeting TBK DVR devices has been found to exploit CVE-2024-3721 (CVSS score: 6.3), a medium-severity command injection vulnerability affecting",
-      "technical": "The attack targeting TBK DVR devices has been found to exploit CVE-2024-3721 (CVSS score: 6.3), a medium-severity command injection vulnerability affecting Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo Alto Networks Unit 42.\n\nReferenced vulnerabilities: CVE-2024-3721.",
-      "impact": "The attack targeting TBK DVR devices has been found to exploit CVE-2024-3721 (CVSS score: 6.3), a medium-severity command injection vulnerability affecting Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo Alto Networks Unit 42.\n\nAssessed severity: MEDIUM. CVSS score: 6.3/10.",
-      "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "technical": "Referenced vulnerabilities: CVE-2024-3721.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
-    "email_summary": "Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo Alto Networks Unit 42. Tracked as CVE-2024-3721.",
+    "email_summary": "Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo Alto Networks Unit 42. Tracked as CVE-2024-3721. Severity is rated high.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo Alto Networks Unit 42.",
+    "quick_take": "Threat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) TP-Link Wi-Fi routers to deploy Mirai-botnet variants on compromised devices, according to findings from Fortinet FortiGuard Labs and Palo…",
+    "content_model_version": 2
   },
   {
     "id": "4fd9f1b7a0b3f3ce",
@@ -114,16 +110,13 @@
       "Google"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "Proof-of-concept exploit code has been published for a critical remote code execution flaw in protobuf.js, a widely used JavaScript implementation of Google's Protocol Buffers. [...]",
-      "technical": "Proof-of-concept exploit code has been published for a critical remote code execution flaw in protobuf.js, a widely used JavaScript implementation of Google's Protocol Buffers. [...]",
-      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
-      "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
-    },
+    "sections": {},
     "email_summary": "Proof-of-concept exploit code has been published for a critical remote code execution flaw in protobuf.js, a widely used JavaScript implementation of Google's Protocol Buffers. [...]. Severity is rated critical.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Proof-of-concept exploit code has been published for a critical remote code execution flaw in protobuf.js, a widely used JavaScript implementation of Google's Protocol Buffers. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "f21439ded03b7bf6",
@@ -142,16 +135,13 @@
       "Microsoft"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "Microsoft is warning that a recent Microsoft Edge browser update introduced a bug that breaks right-click paste in chats in the Microsoft Teams desktop client. [...]",
-      "technical": "Microsoft is warning that a recent Microsoft Edge browser update introduced a bug that breaks right-click paste in chats in the Microsoft Teams desktop client. [...]",
-      "impact": "Assessed severity: MEDIUM.",
-      "mitigation": "Microsoft is warning that a recent Microsoft Edge browser update introduced a bug that breaks right-click paste in chats in the Microsoft Teams desktop client. [...]",
-      "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
-    },
+    "sections": {},
     "email_summary": "Microsoft is warning that a recent Microsoft Edge browser update introduced a bug that breaks right-click paste in chats in the Microsoft Teams desktop client. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Microsoft is warning that a recent Microsoft Edge browser update introduced a bug that breaks right-click paste in chats in the Microsoft Teams desktop client. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "ce59889f41d823d5",
@@ -173,14 +163,13 @@
     ],
     "action_required": false,
     "sections": {
-      "overview": "NAKIVO Inc. announced the general availability of NAKIVO Backup & Replication v11.2, focused on fast, reliable, and proactive data protection. [...]",
-      "technical": "This involves a ransomware operation, typically leveraging initial access through phishing, exposed services, or supply chain compromise.",
-      "impact": "Assessed severity: MEDIUM.\n\nAffected organizations may face operational disruption, data loss, and potential extortion demands.",
-      "mitigation": "NAKIVO Inc. announced the general availability of NAKIVO Backup & Replication v11.2, focused on fast, reliable, and proactive data protection. [...]\n\nEnsure offline backups are current and tested. Implement network segmentation and monitor for lateral movement indicators.",
-      "context": "Ransomware continues to be one of the most financially impactful categories of cyber threats, with attacks increasingly targeting critical infrastructure and leveraging double-extortion tactics."
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
     },
     "email_summary": "NAKIVO Inc. announced the general availability of NAKIVO Backup & Replication v11.2, focused on fast, reliable, and proactive data protection. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "NAKIVO Inc. announced the general availability of NAKIVO Backup & Replication v11.2, focused on fast, reliable, and proactive data protection. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   }
 ]

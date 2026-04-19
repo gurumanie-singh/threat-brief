@@ -36,7 +36,6 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>2 items require immediate action — patches or mitigations available</li>
       </ul>
     </div>
   </div>
@@ -49,7 +48,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
-      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -60,12 +59,6 @@
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
   <div class="adv-filters" id="advFilters" hidden>
-    <div class="adv-group">
-      <span class="adv-label">Vendor / Technology</span>
-      <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-      </div>
-    </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
@@ -79,27 +72,24 @@
     </div>
   </div>
 
-  <div class="article-card card--low"
+  <div class="article-card card--medium"
        data-tags="cve,exploit,malware,patch,phishing,vulnerability"
-       data-vendors="Microsoft"
-       data-severity="low"
+       data-vendors=""
+       data-severity="medium"
        data-title="yokogawa centum vp"
        data-id="b8a4327bdbbbc336"
        data-published="2026-04-02T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-02T12:00:00+00:00" title="2 April 2026, 07:00">2 April 2026, 07:00</time>
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-02T12:00:00+00:00" title="2 April 2026, 07:00">2 April 2026, 07:00</time>
       </div>
       <h3 class="card-title">Yokogawa CENTUM VP</h3>
-      <p class="card-summary">View CSAF 
-
- Summary 
- Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. Tracked as CVE-2025-7741.</p>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
@@ -110,44 +100,28 @@
       <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. The following versions of Yokogawa CENTUM VP are affected:</p>
-<p>CENTUM VP &gt;=R5.01.00|</p>
-<p>CENTUM VP &gt;=R6.01.00|</p>
-<p>CENTUM VP vR7.01.00 (CVE-2025-7741)</p>
-<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 4   Yokogawa   Yokogawa CENTUM VP   Use of Hard-coded Password           Background     Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture</p>
-<p>Countries/Areas Deployed: Worldwide</p>
-<p>Company Headquarters Location: Japan</p>
-<p>Vulnerabilities     Expand All +</p>
-<p>CVE-2025-7741     Affected products contain a hardcoded password for the user account (PROG) used for CENTUM Authentication Mode within the system. Under the following conditions, there is a risk that an attacker could log in as the PROG user.</p></div>
       <div class="detail-links">
         <a href="../articles/b8a4327bdbbbc336.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--action card--low"
+  <div class="article-card card--medium"
        data-tags="cve,exploit,malware,patch,vulnerability"
        data-vendors=""
-       data-severity="low"
+       data-severity="medium"
        data-title="siemens sicam 8 products"
        data-id="e69ae414d1a99603"
        data-published="2026-04-02T12:00:00+00:00"
-       data-action="true">
+       data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
+        <span class="sev-badge sev-medium">medium</span>
         <time class="meta-time" data-iso="2026-04-02T12:00:00+00:00" title="2 April 2026, 07:00">2 April 2026, 07:00</time>
-        <span class="action-badge">Action</span>
       </div>
       <h3 class="card-title">Siemens SICAM 8 Products</h3>
-      <p class="card-summary">View CSAF 
-
- Summary 
- Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. Tracked as CVE-2026-27663, CVE-2026-27664.</p>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
@@ -158,16 +132,6 @@
       <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens SICAM 8 Products are affected:</p>
-<p>CPCI85 Central Processing/Communication vers:intdot/&lt;26.10 (CVE-2026-27663, CVE-2026-27664)</p>
-<p>RTUM85 RTU Base vers:intdot/&lt;26.10 (CVE-2026-27663)</p>
-<p>SICORE Base system vers:intdot/&lt;26.10.0 (CVE-2026-27664)</p>
-<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.5   Siemens   Siemens SICAM 8 Products   Allocation of Resources Without Limits or Throttling, Out-of-bounds Write           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
-<p>Countries/Areas Deployed: Worldwide</p>
-<p>Company Headquarters Location: Germany</p>
-<p>Vulnerabilities     Expand All +</p>
-<p>CVE-2026-27663     The affected application contains denial-of-service (DoS) vulnerability. The remote operation mode is susceptible to a resource exhaustion condition when subjected to a high volume of requests.</p></div>
       <div class="detail-links">
         <a href="../articles/e69ae414d1a99603.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
@@ -188,10 +152,8 @@
         <time class="meta-time" data-iso="2026-04-02T12:00:00+00:00" title="2 April 2026, 07:00">2 April 2026, 07:00</time>
       </div>
       <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
-      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-3502.</p>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
       <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
@@ -202,36 +164,28 @@
       <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-3502 TrueConf Client Download of Code Without Integrity Check Vulnerability</p>
-<p>This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.</p></div>
       <div class="detail-links">
         <a href="../articles/9b01fc0fdee5352e.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/alerts/2026/04/02/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--action card--low"
+  <div class="article-card card--medium"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity="low"
+       data-severity="medium"
        data-title="hitachi energy ellipse"
        data-id="96f2d7ec2554f131"
        data-published="2026-04-02T12:00:00+00:00"
-       data-action="true">
+       data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
+        <span class="sev-badge sev-medium">medium</span>
         <time class="meta-time" data-iso="2026-04-02T12:00:00+00:00" title="2 April 2026, 07:00">2 April 2026, 07:00</time>
-        <span class="action-badge">Action</span>
       </div>
       <h3 class="card-title">Hitachi Energy Ellipse</h3>
-      <p class="card-summary">View CSAF 
-
- Summary 
- Hitachi Energy is aware of a Jasper Report vulnerability that affects the Ellipse product versions mentioned in this document below. Tracked as CVE-2025-10492.</p>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
@@ -242,8 +196,6 @@
       <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Hitachi Energy is aware of a Jasper Report vulnerability that affects the Ellipse product versions mentioned in this document below. This vulnerability can be exploited to carry out remote code execution (RCE) attack on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.</p></div>
       <div class="detail-links">
         <a href="../articles/96f2d7ec2554f131.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>

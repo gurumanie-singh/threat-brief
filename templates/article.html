@@ -52,14 +52,14 @@
       {% endif %}
     </header>
 
-    {% if article.email_summary or article.action_required %}
+    {% if article.quick_take or (article.action_required and article.sections and article.sections.mitigation) %}
     <div class="quick-take">
       <div class="quick-take-label">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         Quick Take
       </div>
-      {% if article.email_summary %}
-      <p class="quick-take-text">{{ article.email_summary }}</p>
+      {% if article.quick_take %}
+      <p class="quick-take-text">{{ article.quick_take }}</p>
       {% endif %}
       {% if article.action_required and article.sections and article.sections.mitigation %}
       <p class="quick-take-action">Action recommended — see Mitigation section below.</p>

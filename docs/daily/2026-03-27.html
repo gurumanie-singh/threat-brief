@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
-      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -69,24 +69,22 @@
     </div>
   </div>
 
-  <div class="article-card card--high"
+  <div class="article-card card--critical"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity="high"
+       data-severity="critical"
        data-title="cisa adds one known exploited vulnerability to catalog"
        data-id="269859db7096deec"
        data-published="2026-03-27T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
+        <span class="sev-badge sev-critical">critical</span>
         <time class="meta-time" data-iso="2026-03-27T12:00:00+00:00" title="27 March 2026, 07:00">27 March 2026, 07:00</time>
       </div>
       <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
-      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2025-53521. Severity is rated high.</p>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
       <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
@@ -97,8 +95,6 @@
       <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-53521 F5 BIG-IP Remote Code Execution Vulnerability</p>
-<p>This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise.</p></div>
       <div class="detail-links">
         <a href="../articles/269859db7096deec.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/alerts/2026/03/27/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>

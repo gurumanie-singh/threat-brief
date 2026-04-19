@@ -17,15 +17,14 @@
     "vendors": [],
     "action_required": false,
     "sections": {
-      "overview": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.",
-      "technical": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.\n\"By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery",
-      "impact": "Impact assessment details are available in the full source article.",
-      "mitigation": "Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
-    "email_summary": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.\n\"By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery.",
+    "email_summary": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails. Severity is rated high.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.",
+    "quick_take": "Threat actors have been observed weaponizing n8n, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint…",
+    "content_model_version": 2
   },
   {
     "id": "05de7bc8c1ebebad",
@@ -40,19 +39,16 @@
     "day": "2026-04-15",
     "cves": [],
     "cvss": null,
-    "severity": "critical",
+    "severity": "medium",
     "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.",
-      "technical": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.",
-      "impact": "Assessed severity: CRITICAL.",
-      "mitigation": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
-    "email_summary": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files. Severity is rated critical.",
+    "sections": {},
+    "email_summary": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Attackers can abuse the near-maximum severity flaw in nginx-ui to restart, create, modify, and delete NGINX configuration files.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "9260c0d097d68be1",
@@ -68,16 +64,13 @@
     "severity": "medium",
     "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
-      "mitigation": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
-      "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
-    },
+    "sections": {},
     "email_summary": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Regulatory differences, interconnected digital ecosystems, and the rise of AI have created a complex supply chain Asian organizations must wrangle.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "8d84f462b0131fe0",
@@ -96,16 +89,13 @@
     "severity": "critical",
     "vendors": [],
     "action_required": true,
-    "sections": {
-      "overview": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]",
-      "technical": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]",
-      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
-      "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
-    },
+    "sections": {},
     "email_summary": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]. Severity is rated critical.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "A critical vulnerability in Nginx UI with Model Context Protocol (MCP) support is now being exploited in the wild for full server takeover without authentication. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "d542854aaf8ed95b",
@@ -123,20 +113,19 @@
     "cves": [
       "CVE-2026-33032"
     ],
-    "cvss": 9.8,
+    "cvss": null,
     "severity": "critical",
     "vendors": [],
     "action_required": true,
     "sections": {
-      "overview": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. The vulnerability in question is CVE-2026-33032 (CVSS score: 9.8), an authentication bypass vulnerability that enables threat actors to seize control of the Nginx service. It has been codenamed MCPwn by Pluto Security.\n\"",
-      "technical": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. The vulnerability in question is CVE-2026-33032 (CVSS score: 9.8), an authentication bypass vulnerability that enables threat actors to seize control of the Nginx service.\n\nReferenced vulnerabilities: CVE-2026-33032.",
-      "impact": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild.\n\nAssessed severity: CRITICAL. CVSS score: 9.8/10.",
-      "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
+      "technical": "Referenced vulnerabilities: CVE-2026-33032."
     },
     "email_summary": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild. Tracked as CVE-2026-33032. Severity is rated critical.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "A recently disclosed critical security flaw impacting nginx-ui, an open-source, web-based Nginx management tool, has come under active exploitation in the wild.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "c69a80ade8c2b694",
@@ -151,11 +140,9 @@
       "vulnerability"
     ],
     "day": "2026-04-15",
-    "cves": [
-      "CVE-2026-27681"
-    ],
-    "cvss": 9.9,
-    "severity": "critical",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
     "vendors": [
       "AWS",
       "Adobe",
@@ -164,16 +151,13 @@
       "SAP"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Topping the list is an SQL injection vulnerability impacting SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-27681, CVSS score: 9.9) that could result in the execution of arbitrary database",
-      "technical": "Topping the list is an SQL injection vulnerability impacting SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-27681, CVSS score: 9.9) that could result in the execution of arbitrary database\n\nReferenced vulnerabilities: CVE-2026-27681.",
-      "impact": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Topping the list is an SQL injection vulnerability impacting SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-27681, CVSS score: 9.9) that could result in the execution of arbitrary database\n\nAssessed severity: CRITICAL. CVSS score: 9.9/10.",
-      "mitigation": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
-    },
-    "email_summary": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Tracked as CVE-2026-27681. Severity is rated critical.",
+    "sections": {},
+    "email_summary": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases. Severity is rated high.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "A number of critical vulnerabilities impacting products from Adobe, Fortinet, Microsoft, and SAP have taken center stage in April's Patch Tuesday releases.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "6e5327252b54761e",
@@ -193,16 +177,13 @@
       "Google"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]",
-      "technical": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]",
-      "impact": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]",
-      "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
+    "sections": {},
     "email_summary": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "A new malware family named 'AgingFly' has been identified in attacks against local governments and hospitals that steal authentication data from Chromium-based browsers and WhatsApp messenger. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "41931f001ee1570b",
@@ -221,15 +202,14 @@
     "vendors": [],
     "action_required": false,
     "sections": {
-      "overview": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions. Pentera’s AI Security and Exposure Report 2026 reflects that momentum: every CISO surveyed",
-      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
-      "impact": "Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions.",
-      "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "overview": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions. Pentera’s AI Security and Exposure Report 2026 reflects that momentum: every CISO surveyed"
     },
     "email_summary": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across operational and security functions.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Few technologies have moved from experimentation to boardroom mandate as quickly as AI. Across industries, leadership teams have embraced its broader potential, and boards, investors, and executives are already pushing organizations to adopt it across…",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "2c415518211f55ab",
@@ -249,15 +229,14 @@
     "vendors": [],
     "action_required": false,
     "sections": {
-      "overview": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...]",
-      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
-      "impact": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...]",
-      "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
-      "context": "Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "More than 30 WordPress plugins in the EssentialPlugin package have been compromised with malicious code that allows unauthorized access to websites running them. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "c9b6b5f363c37c14",
@@ -273,16 +252,13 @@
     "severity": "medium",
     "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns.",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns.",
-      "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
-    },
+    "sections": {},
     "email_summary": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Quantum computers are coming and may impact systems in unexpected ways, and it will \"take years to be fully quantum-safe, if ever,\" cryptography expert warns.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "28f266e5445a99f6",
@@ -301,16 +277,13 @@
       "Microsoft"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "Google, Meta, and Microsoft about half the time don't comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Impact assessment details are available in the full source article.",
-      "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
-    },
+    "sections": {},
     "email_summary": "Google, Meta, and Microsoft about half the time don't comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Google, Meta, and Microsoft about half the time don't comply with requests to opt out of online tracking per a California law mandate, privacy watchdog finds.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "0c22eaa9cc3de14f",
@@ -336,15 +309,14 @@
     ],
     "action_required": true,
     "sections": {
-      "overview": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Of these 169 vulnerabilities, 157 are rated Important, eight are rated Critical, three are rated Moderate, and one is rated Low in severity. Ninety-three of the flaws are",
-      "technical": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Ninety-three of the flaws are",
-      "impact": "Assessed severity: CRITICAL.\n\nSystems running affected software versions are at risk until patches or mitigations are applied.",
-      "mitigation": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.\n\nTimely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nModern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
     },
     "email_summary": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild. Severity is rated critical.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Microsoft on Tuesday released updates to address a record 169 security flaws across its product portfolio, including one vulnerability that has been actively exploited in the wild.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "b9a4932061705a4a",
@@ -362,16 +334,13 @@
     "severity": "medium",
     "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]",
-      "technical": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]",
-      "impact": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]",
-      "mitigation": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
+    "sections": {},
     "email_summary": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare sectors. [...]",
+    "quick_take": "A digitally signed adware tool has deployed payloads running with SYSTEM privileges that disabled antivirus protections on thousands of endpoints, some in the educational, utilities, government, and healthcare…",
+    "content_model_version": 2
   },
   {
     "id": "a08796f987cee509",
@@ -393,15 +362,14 @@
     ],
     "action_required": false,
     "sections": {
-      "overview": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]\n\nAssessed severity: CRITICAL.",
-      "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential."
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
     },
     "email_summary": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]. Severity is rated critical.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Microsoft has awarded $2.3 million to security researchers after receiving nearly 700 submissions during this year's Zero Day Quest hacking contest. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "0d8829965d3b334f",
@@ -425,15 +393,14 @@
     ],
     "action_required": false,
     "sections": {
-      "overview": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
-      "technical": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
-      "impact": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
-      "mitigation": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program.\n\nData breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data."
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Two recently fixed prompt injections in Salesforce Agentforce and Microsoft Copilot would have enabled an external attacker to leak sensitive data.",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "b7861aed217ccd44",
@@ -454,16 +421,13 @@
       "Microsoft"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]",
-      "technical": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]",
-      "impact": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]\n\nAssessed severity: HIGH.",
-      "mitigation": "Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
-    },
+    "sections": {},
     "email_summary": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]. Severity is rated high.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "CISA warned U.S. government agencies to secure their systems against a Windows Task Host privilege escalation vulnerability that could allow attackers to gain SYSTEM privileges. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "b3fca0a597673a96",
@@ -479,16 +443,13 @@
     "severity": "medium",
     "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA's Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...]",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Impact assessment details are available in the full source article.",
-      "mitigation": "Consult the original source for specific remediation guidance. General best practices include keeping systems patched, monitoring for indicators of compromise, and following vendor advisories.",
-      "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
-    },
+    "sections": {},
     "email_summary": "Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA's Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Modern trucks are rolling networks packed with sensors, connectivity, and attack surfaces, creating new cyber risks. NMFTA's Cybersecurity Conference brings industry leaders together to tackle emerging threats in transportation. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "7a0fe29ec1c6cdac",
@@ -504,20 +465,15 @@
     "cves": [],
     "cvss": null,
     "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
+    "vendors": [],
     "action_required": false,
-    "sections": {
-      "overview": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.",
-      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
-      "impact": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.\n\"The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems",
-      "mitigation": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.\n\"The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems\n\nReview endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
-    "email_summary": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.\n\"The progressive use of AI accelerates defenders – those responsible for keeping systems, data, and users safe – enabling them to find and fix problems.",
+    "sections": {},
+    "email_summary": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier model, Mythos.",
+    "quick_take": "OpenAI on Tuesday unveiled GPT-5.4-Cyber, a variant of its latest flagship model, GPT‑5.4, that's specifically optimized for defensive cybersecurity use cases, days after rival Anthropic unveiled its own frontier…",
+    "content_model_version": 2
   },
   {
     "id": "7858923731c2ce61",
@@ -537,16 +493,13 @@
       "Microsoft"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Impact assessment details are available in the full source article.",
-      "mitigation": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]\n\nApply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.",
-      "context": "Timely vulnerability management and patch prioritization remain critical components of any defensive security program."
-    },
+    "sections": {},
     "email_summary": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Microsoft confirmed on Tuesday that some Windows Server 2025 devices will boot into BitLocker recovery after installing the April 2026 KB5082063 Windows security update. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "1f441bc673ccfe04",
@@ -564,16 +517,13 @@
       "Microsoft"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...]",
-      "technical": "Specific technical details are available in the original source article.",
-      "impact": "Impact assessment details are available in the full source article.",
-      "mitigation": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...]",
-      "context": "This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended."
-    },
+    "sections": {},
     "email_summary": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...].",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "Microsoft has finally fixed a known issue that was causing systems running Windows Server 2019 and 2022 to \"unexpectedly\" upgrade to Windows Server 2025. [...]",
+    "quick_take": "",
+    "content_model_version": 2
   },
   {
     "id": "044119cea07585f0",
@@ -593,15 +543,12 @@
       "Microsoft"
     ],
     "action_required": false,
-    "sections": {
-      "overview": "The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.",
-      "technical": "This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.",
-      "impact": "Impact assessment details are available in the full source article.",
-      "mitigation": "Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.",
-      "context": "Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure."
-    },
+    "sections": {},
     "email_summary": "The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.",
     "related_sources": [],
-    "highlighted": false
+    "highlighted": false,
+    "card_summary": "The deal aims to accelerate AI adoption, train workers, and develop cybersecurity partnerships — the latest move by a hyperscaler to compete for sovereign AI and data centers.",
+    "quick_take": "",
+    "content_model_version": 2
   }
 ]

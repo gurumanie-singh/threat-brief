@@ -31,7 +31,13 @@ from scripts.config import (
     get_vendor_keywords,
     get_personalization,
 )
-from scripts.enrich import enrich_article, group_articles, classify_severity, validate_severity_distribution
+from scripts.enrich import (
+    enrich_article,
+    group_articles,
+    classify_severity,
+    validate_severity_distribution,
+    CONTENT_MODEL_VERSION,
+)
 from scripts.fetch_feeds import fetch_all_feeds
 from scripts.utils import (
     load_day, save_day, list_day_files, load_json,
@@ -174,22 +180,35 @@ def process() -> list[dict[str, Any]]:
         total_new, days_written, total_stored,
     )
 
-    # Backfill blank severity on ALL stored day files (one-time repair;
-    # becomes a no-op once every article has a severity assigned)
+    # Backfill blank severity and upgrade content model on ALL stored day files.
     total_patched = 0
+    total_upgraded = 0
     for day_str, path in list_day_files(DAYS_DIR):
         day_articles = load_day(DAYS_DIR, day_str)
         patched = 0
+        upgraded = 0
         for a in day_articles:
             if not a.get("severity"):
                 text = f"{a.get('title', '')} {a.get('summary', '')}"
                 a["severity"] = classify_severity(text, a.get("cvss"), a.get("cves", []))
                 patched += 1
+            if a.get("content_model_version") != CONTENT_MODEL_VERSION:
+                try:
+                    enrich_article(a, vendor_kw, personalization)
+                    a.pop("full_content", None)
+                    upgraded += 1
+                except Exception as exc:
+                    logger.warning("Content-model upgrade failed for '%s': %s", a.get("title", "?"), exc)
         if patched:
-            save_day(DAYS_DIR, day_str, day_articles)
             total_patched += patched
+        if upgraded:
+            total_upgraded += upgraded
+        if patched or upgraded:
+            save_day(DAYS_DIR, day_str, day_articles)
     if total_patched:
         logger.info("Severity backfill: classified %d articles with blank severity", total_patched)
+    if total_upgraded:
+        logger.info("Content-model upgrade: refreshed %d stored articles", total_upgraded)
 
     deleted = cleanup_old_days(max_retention)
     if deleted:

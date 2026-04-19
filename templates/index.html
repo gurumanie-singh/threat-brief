@@ -134,7 +134,7 @@
         {% endif %}
       </div>
       <h3 class="card-title">{{ article.title }}</h3>
-      <p class="card-summary">{{ article.email_summary or article.summary }}</p>
+      <p class="card-summary">{{ article.card_summary or article.email_summary or article.summary }}</p>
       <div class="card-bottom">
         {% if article.sections %}
         <div class="card-hints">

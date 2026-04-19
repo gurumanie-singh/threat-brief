@@ -12,6 +12,7 @@ from collections import Counter
 from typing import Any
 
 logger = logging.getLogger(__name__)
+CONTENT_MODEL_VERSION = 2
 
 # ── CVE / CVSS extraction ──────────────────────────────────────────
 
@@ -509,6 +510,29 @@ def _pick_sentences(sentences: list[str], keywords: list[str], max_count: int = 
     return [s for s, sc in scored[:max_count] if sc > 0]
 
 
+def _normalize_text(text: str) -> str:
+    return re.sub(r"\s+", " ", (text or "").strip().lower())
+
+
+def _sentence_set(text: str) -> set[str]:
+    return {_normalize_text(s) for s in split_sentences(text) if _normalize_text(s)}
+
+
+def _is_too_similar(a: str, b: str, overlap_threshold: float = 0.75) -> bool:
+    na = _normalize_text(a)
+    nb = _normalize_text(b)
+    if not na or not nb:
+        return False
+    if na == nb:
+        return True
+    sa = _sentence_set(a)
+    sb = _sentence_set(b)
+    if not sa or not sb:
+        return False
+    overlap = len(sa & sb) / min(len(sa), len(sb))
+    return overlap >= overlap_threshold
+
+
 # ── Section builders ────────────────────────────────────────────────
 
 _TECHNICAL_KW = [
@@ -544,13 +568,14 @@ _MITIGATION_KW = [
 
 
 def _build_overview(sentences: list[str], title: str, summary: str) -> str:
+    # RSS-only inputs are often shallow; keep overview concise and factual.
+    if summary and len(summary.strip()) >= 80:
+        return summary.strip()
     if len(sentences) >= 2:
-        text = " ".join(sentences[:3])
-        if len(text) > 80:
+        text = " ".join(sentences[:2]).strip()
+        if len(text) >= 80:
             return text
-    if summary and len(summary) > 80:
-        return summary
-    return f"{title}. {summary}" if summary else title
+    return ""
 
 
 def _build_technical(sentences: list[str], tags: list[str], cves: list[str]) -> str:
@@ -560,21 +585,7 @@ def _build_technical(sentences: list[str], tags: list[str], cves: list[str]) -> 
         parts.append(" ".join(picked))
     if cves:
         parts.append(f"Referenced vulnerabilities: {', '.join(cves[:5])}.")
-    if not parts:
-        tag_set = set(tags)
-        ctx_parts: list[str] = []
-        if "ransomware" in tag_set:
-            ctx_parts.append("This involves a ransomware operation, typically leveraging initial access through phishing, exposed services, or supply chain compromise.")
-        if "malware" in tag_set and "ransomware" not in tag_set:
-            ctx_parts.append("This involves malicious software designed to compromise, exfiltrate, or disrupt targeted systems.")
-        if "vulnerability" in tag_set or "cve" in tag_set:
-            ctx_parts.append("A security vulnerability has been identified that could allow attackers to compromise affected systems.")
-        if "exploit" in tag_set:
-            ctx_parts.append("Active exploitation or proof-of-concept exploit code has been reported.")
-        if "phishing" in tag_set:
-            ctx_parts.append("The attack leverages social engineering techniques to trick users into revealing credentials or executing malicious payloads.")
-        parts.append(" ".join(ctx_parts) if ctx_parts else "Specific technical details are available in the original source article.")
-    return "\n\n".join(parts)
+    return "\n\n".join(parts).strip()
 
 
 def _build_impact(sentences: list[str], tags: list[str], severity: str | None, cves: list[str], cvss: float | None) -> str:
@@ -589,63 +600,27 @@ def _build_impact(sentences: list[str], tags: list[str], severity: str | None, c
         sev_parts.append(f"CVSS score: {cvss}/10.")
     if sev_parts:
         parts.append(" ".join(sev_parts))
-    if not picked:
-        tag_set = set(tags)
-        if "breach" in tag_set:
-            parts.append("Organizations and individuals whose data was exposed may face follow-on phishing, credential stuffing, or identity fraud.")
-        elif "ransomware" in tag_set:
-            parts.append("Affected organizations may face operational disruption, data loss, and potential extortion demands.")
-        elif "vulnerability" in tag_set:
-            parts.append("Systems running affected software versions are at risk until patches or mitigations are applied.")
-    return "\n\n".join(parts) if parts else "Impact assessment details are available in the full source article."
+    return "\n\n".join(parts).strip()
 
 
 def _build_mitigation(sentences: list[str], tags: list[str]) -> str:
     picked = _pick_sentences(sentences, _MITIGATION_KW, 4)
-    parts: list[str] = []
-    if picked:
-        parts.append(" ".join(picked))
-    tag_set = set(tags)
-    guidance: list[str] = []
-    if {"vulnerability", "cve", "patch"} & tag_set:
-        guidance.append("Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls.")
-    if "ransomware" in tag_set:
-        guidance.append("Ensure offline backups are current and tested. Implement network segmentation and monitor for lateral movement indicators.")
-    if "phishing" in tag_set:
-        guidance.append("Reinforce security awareness training. Ensure email filtering, link scanning, and multi-factor authentication are enabled.")
-    if "malware" in tag_set:
-        guidance.append("Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise.")
-    if "breach" in tag_set:
-        guidance.append("Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.")
-    if guidance:
-        parts.append(" ".join(guidance))
-    return "\n\n".join(parts) if parts else (
-        "Consult the original source for specific remediation guidance. "
-        "General best practices include keeping systems patched, monitoring "
-        "for indicators of compromise, and following vendor advisories."
-    )
+    return " ".join(picked).strip() if picked else ""
 
 
 def _build_context(tags: list[str], title: str) -> str:
-    contexts: list[str] = []
+    # Context should only appear when supported by meaningful pattern signals.
     tag_set = set(tags)
-    if "ransomware" in tag_set:
-        contexts.append("Ransomware continues to be one of the most financially impactful categories of cyber threats, with attacks increasingly targeting critical infrastructure and leveraging double-extortion tactics.")
+    contexts: list[str] = []
     if "zero-day" in tag_set:
-        contexts.append("Zero-day vulnerabilities represent the highest-priority threats as they are exploited before vendors can issue patches. Rapid detection and compensating controls are essential.")
-    if "apt" in tag_set:
-        contexts.append("Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.")
+        contexts.append("This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.")
+    if "ransomware" in tag_set:
+        contexts.append("This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.")
     if "phishing" in tag_set:
-        contexts.append("Phishing remains the most common initial access vector. Security awareness training combined with technical controls like email filtering and MFA are key defenses.")
-    if {"vulnerability", "cve", "patch"} & tag_set:
-        contexts.append("Timely vulnerability management and patch prioritization remain critical components of any defensive security program.")
+        contexts.append("This reflects continued use of phishing as an initial-access path in broader intrusion chains.")
     if "breach" in tag_set:
-        contexts.append("Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.")
-    if "malware" in tag_set and "ransomware" not in tag_set:
-        contexts.append("Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure.")
-    if not contexts:
-        contexts.append("This story reflects ongoing developments in the cybersecurity threat landscape. Staying informed through trusted sources and maintaining robust security hygiene are always recommended.")
-    return "\n\n".join(contexts)
+        contexts.append("This fits the broader data-exposure trend where follow-on abuse of leaked information is common.")
+    return "\n\n".join(contexts).strip()
 
 
 # ── Email summary builder ──────────────────────────────────────────
@@ -675,6 +650,72 @@ def build_email_summary(article: dict[str, Any]) -> str:
     return result[:500] if len(result) <= 500 else result[:497].rsplit(" ", 1)[0] + "…"
 
 
+def build_card_summary(article: dict[str, Any]) -> str:
+    """Short, scannable synopsis for homepage/day cards (1-2 lines)."""
+    title = article.get("title", "")
+    summary = (article.get("summary", "") or "").strip()
+    full = article.get("full_content", "") or summary
+    sentences = split_sentences(full)
+
+    if summary:
+        lead = split_sentences(summary)
+        if lead:
+            text = " ".join(lead[:2]).strip()
+        else:
+            text = summary
+    elif sentences:
+        text = " ".join(sentences[:2]).strip()
+    else:
+        text = title.strip()
+
+    if len(text) > 260:
+        text = text[:257].rsplit(" ", 1)[0] + "…"
+    return text
+
+
+def build_quick_take(article: dict[str, Any], card_summary: str, overview: str) -> str:
+    """Action-oriented quick take when we have distinct content."""
+    title = article.get("title", "")
+    full = article.get("full_content", "") or article.get("summary", "")
+    sentences = split_sentences(full)
+    if not sentences:
+        return ""
+
+    candidate = sentences[0].strip()
+    if len(candidate) < 40 and len(sentences) > 1:
+        candidate = f"{candidate} {sentences[1]}".strip()
+    if len(candidate) > 220:
+        candidate = candidate[:217].rsplit(" ", 1)[0] + "…"
+
+    # Drop if redundant with card summary or overview.
+    if _is_too_similar(candidate, card_summary) or _is_too_similar(candidate, overview):
+        return ""
+    if _is_too_similar(candidate, title):
+        return ""
+    return candidate
+
+
+def _dedupe_sections(
+    ordered_sections: list[tuple[str, str]],
+    card_summary: str,
+    quick_take: str,
+) -> dict[str, str]:
+    """Remove empty and near-duplicate sections while preserving order."""
+    kept: list[tuple[str, str]] = []
+    seen_texts = [card_summary, quick_take]
+    for key, text in ordered_sections:
+        clean = (text or "").strip()
+        if not clean:
+            continue
+        if len(clean) < 40 and key != "timeline":
+            continue
+        if any(_is_too_similar(clean, s) for s in seen_texts if s):
+            continue
+        kept.append((key, clean))
+        seen_texts.append(clean)
+    return {k: v for k, v in kept}
+
+
 # ── Main enrichment entry point ────────────────────────────────────
 
 def enrich_article(
@@ -695,21 +736,28 @@ def enrich_article(
     action_required = detect_action_required(searchable)
 
     sentences = split_sentences(full_text)
-    sections = {
-        "overview": _build_overview(sentences, title, summary),
-        "technical": _build_technical(sentences, tags, cves),
-        "impact": _build_impact(sentences, tags, severity, cves, cvss),
-        "mitigation": _build_mitigation(sentences, tags),
-        "context": _build_context(tags, title),
-    }
+    overview = _build_overview(sentences, title, summary)
+    card_summary = build_card_summary(article)
+    quick_take = build_quick_take(article, card_summary, overview)
+    ordered_sections = [
+        ("overview", overview),
+        ("technical", _build_technical(sentences, tags, cves)),
+        ("impact", _build_impact(sentences, tags, severity, cves, cvss)),
+        ("mitigation", _build_mitigation(sentences, tags)),
+        ("context", _build_context(tags, title)),
+    ]
+    sections = _dedupe_sections(ordered_sections, card_summary, quick_take)
 
     article["cves"] = cves
     article["cvss"] = cvss
     article["severity"] = severity
     article["vendors"] = vendors
     article["action_required"] = action_required
+    article["card_summary"] = card_summary
+    article["quick_take"] = quick_take
     article["sections"] = sections
     article["email_summary"] = build_email_summary(article)
+    article["content_model_version"] = CONTENT_MODEL_VERSION
     article["related_sources"] = article.get("related_sources", [])
     article["highlighted"] = False
 

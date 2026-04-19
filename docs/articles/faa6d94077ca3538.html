@@ -29,12 +29,12 @@
       <div class="meta-row">
         <span class="card-source">Krebs on Security</span>
         <span class="card-date">7 April 2026, 12:02</span>
-        <span class="card-severity critical">critical</span>
+        <span class="card-severity medium">medium</span>
       </div>
 
       <h1 class="title">Russia Hacked Routers to Steal Microsoft Office Tokens</h1>
 
-      <p class="subtitle">Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. Severity is rated critical.</p>
+      <p class="subtitle">Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code.</p>
 
 
       <div class="article-tags">
@@ -50,52 +50,22 @@
 
     </header>
 
-    <div class="quick-take">
-      <div class="quick-take-label">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        Quick Take
-      </div>
-      <p class="quick-take-text">Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. Severity is rated critical.</p>
-    </div>
 
     <div class="article-body">
       <div class="article-section">
         <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
         <div class="article-section-content">
-          <p>Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code. Microsoft said in a blog post today it identified more than 200 organizations and 5,000 consumer devices that were caught up in a stealthy but remarkably simple spying network built by a Russia-backed threat actor known as Forest Blizzard .</p>
+          <p>Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code.</p>
         </div>
       </div>
 
-      <div class="article-section">
-        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
-        <div class="article-section-content">
-          <p>Hackers linked to Russia s military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. A new report from Lumen says the hackers primarily targeted government agencies—including ministries of foreign affairs, law enforcement, and third-party email providers. Black Lotus Security Engineer Ryan English said the GRU hackers did not need to install malware on the targeted routers, which were mainly older Mikrotik and TP-Link devices marketed to the Small Office/Home Office (SOHO) market. Importantly, the attackers could then propagate their malicious DNS settings to all users on the local network, and from that point forward intercept any OAuth authentication tokens transmitted by those users.</p>
-        </div>
-      </div>
 
-      <div class="article-section">
-        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
-        <div class="article-section-content">
-          <p>Because those tokens are typically transmitted only after the user has successfully logged in and gone through multi-factor authentication, the attackers could gain direct access to victim accounts without ever having to phish each user s credentials and/or one-time codes. A new report from Lumen says the hackers primarily targeted government agencies—including ministries of foreign affairs, law enforcement, and third-party email providers. At the time, Forest Blizzard was using malware to control a far more targeted and smaller group of compromised routers.</p>
-<p>Assessed severity: CRITICAL.</p>
-        </div>
-      </div>
 
-      <div class="article-section">
-        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
-        <div class="article-section-content">
-          <p>Researchers at Black Lotus Labs , a security division of the Internet backbone provider Lumen , found that at the peak of its activity in December 2025, Forest Blizzard s surveillance dragnet ensnared more than 18,000 Internet routers that were mostly unsupported, end-of-life routers, or else far behind on security updates. Because those tokens are typically transmitted only after the user has successfully logged in and gone through multi-factor authentication, the attackers could gain direct access to victim accounts without ever having to phish each user s credentials and/or one-time codes.</p>
-<p>Apply vendor-supplied patches as soon as possible. If patching is not immediately feasible, implement recommended workarounds and compensating controls. Review endpoint detection rules and update threat intelligence feeds. Scan for known indicators of compromise. Affected users should rotate credentials, enable MFA, and monitor accounts for suspicious activity.</p>
-        </div>
-      </div>
 
       <div class="article-section">
         <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Context / Trends</div>
         <div class="article-section-content">
-          <p>Advanced persistent threat groups typically conduct long-running, targeted campaigns often aligned with nation-state interests.</p>
-<p>Timely vulnerability management and patch prioritization remain critical components of any defensive security program.</p>
-<p>Data breaches carry significant regulatory, financial, and reputational consequences. Affected organizations and individuals should monitor for follow-on attacks using exposed data.</p>
-<p>Modern malware campaigns frequently use multi-stage delivery chains and evasion techniques. Defense-in-depth strategies including EDR, network monitoring, and application allowlisting help reduce exposure.</p>
+          <p>This fits the broader data-exposure trend where follow-on abuse of leaked information is common.</p>
         </div>
       </div>
 

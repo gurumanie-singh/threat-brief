@@ -1,5 +1,36 @@
 [
   {
+    "id": "cfb9c5950892a507",
+    "title": "SGLang CVE-2026-5760 (CVSS 9.8) Enables RCE via Malicious GGUF Model Files",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html",
+    "published": "2026-04-20T22:44:00+05:30",
+    "fetched_at": "2026-04-20T19:07:17.048617+00:00",
+    "summary": "A critical security vulnerability has been disclosed in SGLang that, if successfully exploited, could result in remote code execution on susceptible systems.",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-04-20",
+    "cves": [
+      "CVE-2026-5760"
+    ],
+    "cvss": 9.8,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A critical security vulnerability has been disclosed in SGLang that, if successfully exploited, could result in remote code execution on susceptible systems.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Assessed severity: CRITICAL. CVSS score: 9.8/10."
+    },
+    "email_summary": "A critical security vulnerability has been disclosed in SGLang that, if successfully exploited, could result in remote code execution on susceptible systems. Tracked as CVE-2026-5760. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "dadd873e530836cf",
     "title": "Weekly Recap: Vercel Hack, Push Fraud, QEMU Abused, New Android RATs Emerge & More",
     "source": "The Hacker News",
@@ -106,6 +137,34 @@
     "highlighted": false
   },
   {
+    "id": "d032bfc6cc44ef81",
+    "title": "Seiko USA website defaced as hacker claims customer data theft",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/seiko-usa-website-defaced-as-hacker-claims-customer-data-theft/",
+    "published": "2026-04-20T14:22:31-04:00",
+    "fetched_at": "2026-04-20T19:07:17.556107+00:00",
+    "summary": "The Seiko USA website was defaced over the weekend, displaying a message from attackers claiming they stole its Shopify customer database and threatening to leak it unless a ransom is paid. [...]",
+    "tags": [
+      "ransomware"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Seiko USA website was defaced over the weekend, displaying a message from attackers claiming they stole its Shopify customer database and threatening to leak it unless a ransom is paid. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The Seiko USA website was defaced over the weekend, displaying a message from attackers claiming they stole its Shopify customer database and threatening to leak it unless a ransom is paid. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "The Seiko USA website was defaced over the weekend, displaying a message from attackers claiming they stole its Shopify customer database and threatening to leak it unless a ransom is paid. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "77ea44aca2d0c43e",
     "title": "Researchers Detect ZionSiphon Malware Targeting Israeli Water, Desalination OT Systems",
     "source": "The Hacker News",
@@ -128,6 +187,41 @@
       "mitigation": "The malware has been codenamed ZionSiphon by Darktrace, highlighting its ability to set up persistence, tamper with local configuration files, and scan for operational technology (OT)-relevant services on the local subnet."
     },
     "email_summary": "Cybersecurity researchers have flagged a new malware called ZionSiphon that appears to be specifically designed to target Israeli water treatment and desalination systems. The malware has been codenamed ZionSiphon by Darktrace, highlighting its ability to set up persistence, tamper with local configuration files, and scan for operational technology (OT)-relevant services on the local subnet.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "aec5fd80b957da3d",
+    "title": "​​Supply Chain Compromise Impacts Axios Node Package Manager​",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/04/20/supply-chain-compromise-impacts-axios-node-package-manager",
+    "published": "2026-04-20T12:00:00+00:00",
+    "fetched_at": "2026-04-20T19:07:19.584960+00:00",
+    "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers commonly use in Node.js and browser environments. ",
+    "tags": [
+      "breach",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers…",
+    "quick_take": "The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP…",
+    "sections": {
+      "overview": "The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers commonly use in Node.js and browser environments.",
+      "technical": "Conduct continuous indicator searches and endpoint detection and response (EDR) hunts to confirm no indicators of compromise (IOCs) remain; ensure no further egress to the command and control (C2). On March 31, 2026, two npm packages for versions axios@1.14.1 and axios@0.30.4 of Axios npm injected the malicious dependency plain-crypto-js@4.2.1 that downloads multi-stage payloads from cyber threat actor infrastructure, including a remote access trojan. 2 \n\n \n CISA urges organizations to implement the following recommendations to detect and remediate a potential compromise: \n\n \n \n \n Monitor and review code repositories, continuous integration/continuous delivery (CI/CD) pipelines, and developer machines that ran npm install or npm update with the compromised Axios version. See the following resources for additional guidance on this compromise: \n\n \n \n \n GitHub: Post Mortem: axios npm supply chain compromise #10636 \n\n \n \n \n \n \n \n Microsoft: Mitigating the Axios npm supply chain compromise \n\n \n \n \n \n StepSecurity: axios Compromised on npm - Malicious Versions Drop Remote Access Trojan \n\n \n \n \n \n npm Docs: Securing your code \n\n \n \n \n \n Socket: Supply Chain Attack on Axios Pulls Malicious Dependency from npm \n\n \n Disclaimer \n The information in this report is being provided “as is” for informational purposes only.",
+      "mitigation": "On March 31, 2026, two npm packages for versions axios@1.14.1 and axios@0.30.4 of Axios npm injected the malicious dependency plain-crypto-js@4.2.1 that downloads multi-stage payloads from cyber threat actor infrastructure, including a remote access trojan. 2 \n\n \n CISA urges organizations to implement the following recommendations to detect and remediate a potential compromise: \n\n \n \n \n Monitor and review code repositories, continuous integration/continuous delivery (CI/CD) pipelines, and developer machines that ran npm install or npm update with the compromised Axios version. Conduct continuous indicator searches and endpoint detection and response (EDR) hunts to confirm no indicators of compromise (IOCs) remain; ensure no further egress to the command and control (C2). Monitor for unexpected child processes and anomalous network behavior, specifically during npm install or npm update . Block and monitor outbound connections to Sfrclak[.]com domains.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers commonly use in Node.js and browser environments. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

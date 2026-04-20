@@ -28,14 +28,15 @@
       <h1 class="brief-title">20 April 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-04-20T12:56:09.407404-05:00">20 April 2026, 12:56</time>
+        <time data-iso="2026-04-20T14:07:19.674898-05:00">20 April 2026, 14:07</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
+      <span class="stat stat-critical">2 critical</span>
       <span class="stat stat-high">3 high</span>
       <span class="stat stat-action">1 action req.</span>
-      <span class="stat">12 articles today</span>
+      <span class="stat">15 articles today</span>
     </div>
   </div>
 
@@ -43,9 +44,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 high-severity advisories published today</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
@@ -106,8 +108,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
@@ -118,10 +120,43 @@
   <div class="day-group">
     <h2 class="day-heading">
       20 April 2026
-      <span class="day-count">12</span>
+      <span class="day-count">15</span>
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="sglang cve-2026-5760 (cvss 9.8) enables rce via malicious gguf model files"
+       data-id="cfb9c5950892a507"
+       data-published="2026-04-20T22:44:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-20T22:44:00+05:30" title="20 April 2026, 12:14">20 April 2026, 12:14</time>
+      </div>
+      <h3 class="card-title">SGLang CVE-2026-5760 (CVSS 9.8) Enables RCE via Malicious GGUF Model Files</h3>
+      <p class="card-summary">A critical security vulnerability has been disclosed in SGLang that, if successfully exploited, could result in remote code execution on susceptible systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/cfb9c5950892a507.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors="Google"
@@ -243,6 +278,37 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="seiko usa website defaced as hacker claims customer data theft"
+       data-id="d032bfc6cc44ef81"
+       data-published="2026-04-20T14:22:31-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-20T14:22:31-04:00" title="20 April 2026, 13:22">20 April 2026, 13:22</time>
+      </div>
+      <h3 class="card-title">Seiko USA website defaced as hacker claims customer data theft</h3>
+      <p class="card-summary">The Seiko USA website was defaced over the weekend, displaying a message from attackers claiming they stole its Shopify customer database and threatening to leak it unless a ransom is paid. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/d032bfc6cc44ef81.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/seiko-usa-website-defaced-as-hacker-claims-customer-data-theft/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
@@ -270,6 +336,41 @@
       <div class="detail-links">
         <a href="articles/77ea44aca2d0c43e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,malware,phishing,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="​​supply chain compromise impacts axios node package manager​"
+       data-id="aec5fd80b957da3d"
+       data-published="2026-04-20T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-20T12:00:00+00:00" title="20 April 2026, 07:00">20 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">​​Supply Chain Compromise Impacts Axios Node Package Manager​</h3>
+      <p class="card-summary">The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers commonly use in Node.js and browser environments.</p></div>
+      <div class="detail-links">
+        <a href="articles/aec5fd80b957da3d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/04/20/supply-chain-compromise-impacts-axios-node-package-manager" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -782,7 +883,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       17 April 2026
-      <span class="day-count">9</span>
+      <span class="day-count">6</span>
     </h2>
   </div>
 
@@ -968,95 +1069,6 @@
       <div class="detail-links">
         <a href="articles/f62b024642080996.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/vulnerabilities-threats/every-old-vulnerability-ai-vulnerability" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="coast guard&#39;s new cybersecurity rules offers lessons for cisos"
-       data-id="09b114b47e0e27d4"
-       data-published="2026-04-17T13:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-17T13:00:00+00:00" title="17 April 2026, 08:00">17 April 2026, 08:00</time>
-      </div>
-      <h3 class="card-title">Coast Guard&#39;s New Cybersecurity Rules Offers Lessons for CISOs</h3>
-      <p class="card-summary">The Maritime Transportation Security Act (MTSA) requires plans to protect OT systems, audits by independent third parties, and a hybrid OT-security role.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/09b114b47e0e27d4.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/coast-guards-cybersecurity-rules-lessons-cisos" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="coast guard&#39;s new cybersecurity rules offer lessons for cisos"
-       data-id="8d2bdc8e3c792771"
-       data-published="2026-04-17T13:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-17T13:00:00+00:00" title="17 April 2026, 08:00">17 April 2026, 08:00</time>
-      </div>
-      <h3 class="card-title">Coast Guard&#39;s New Cybersecurity Rules Offer Lessons for CISOs</h3>
-      <p class="card-summary">The Maritime Transportation Security Act (MTSA) requires plans to protect OT systems, audits by independent third parties, and a hybrid OT-security role.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/8d2bdc8e3c792771.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/coast-guards-cybersecurity-rules-lessons-cisos" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="cve,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="nist limits cve enrichment after 263% surge in vulnerability submissions"
-       data-id="2d5fddb04ea46805"
-       data-published="2026-04-17T12:44:00+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-17T12:44:00+05:30" title="17 April 2026, 02:14">17 April 2026, 02:14</time>
-      </div>
-      <h3 class="card-title">NIST Limits CVE Enrichment After 263% Surge in Vulnerability Submissions</h3>
-      <p class="card-summary">The National Institute of Standards and Technology (NIST) has announced changes to the way it handles cybersecurity vulnerabilities and exposures (CVEs) listed in its National Vulnerability Database (NVD), stating it will only enrich those that fulfil…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>The National Institute of Standards and Technology (NIST) has announced changes to the way it handles cybersecurity vulnerabilities and exposures (CVEs) listed in its National Vulnerability Database (NVD), stating it will only enrich those that fulfil certain conditions owing to an explosion in CVE submissions.</p></div>
-      <div class="detail-links">
-        <a href="articles/2d5fddb04ea46805.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/04/nist-limits-cve-enrichment-after-263.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

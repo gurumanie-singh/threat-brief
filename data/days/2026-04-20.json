@@ -31,6 +31,31 @@
     "highlighted": false
   },
   {
+    "id": "6e6a36eb4d7514ee",
+    "title": "Serial-to-IP Devices Hide Thousands of Old and New Bugs",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/ics-ot-security/serial-ip-devices-thousands-of-bugs",
+    "published": "2026-04-20T21:00:00+00:00",
+    "fetched_at": "2026-04-20T20:43:15.154424+00:00",
+    "summary": "The OT devices that translate machine talk into Internet-speak are riddled with vulnerabilities and more frequently targeted for attacks, researchers say.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The OT devices that translate machine talk into Internet-speak are riddled with vulnerabilities and more frequently targeted for attacks, researchers say.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The OT devices that translate machine talk into Internet-speak are riddled with vulnerabilities and more frequently targeted for attacks, researchers say.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "dadd873e530836cf",
     "title": "Weekly Recap: Vercel Hack, Push Fraud, QEMU Abused, New Android RATs Emerge & More",
     "source": "The Hacker News",
@@ -109,6 +134,35 @@
       "impact": "Cybersecurity researchers have discovered a critical \"by design\" weakness in the Model Context Protocol's (MCP) architecture that could pave the way for remote code execution and have a cascading effect on the artificial intelligence (AI) supply chain.\n\"This flaw enables Arbitrary Command Execution (RCE) on any system running a vulnerable MCP implementation, granting attackers direct access to\n\nAssessed severity: HIGH."
     },
     "email_summary": "Cybersecurity researchers have discovered a critical \"by design\" weakness in the Model Context Protocol's (MCP) architecture that could pave the way for remote code execution and have a cascading effect on the artificial intelligence (AI) supply chain.\n\"This flaw enables Arbitrary Command Execution (RCE) on any system running a vulnerable MCP implementation, granting attackers direct access to. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "7794abf104dcbeda",
+    "title": "The Gentlemen ransomware now uses SystemBC for bot-powered attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/the-gentlemen-ransomware-now-uses-systembc-for-bot-powered-attacks/",
+    "published": "2026-04-20T16:02:37-04:00",
+    "fetched_at": "2026-04-20T20:43:14.329743+00:00",
+    "summary": "A SystemBC proxy malware botnet of more than 1,570 hosts, believed to be corporate victims, has been discovered following an investigation into a Gentlemen ransomware attack carried out by a gang affiliate. [...]",
+    "tags": [
+      "malware",
+      "ransomware"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A SystemBC proxy malware botnet of more than 1,570 hosts, believed to be corporate victims, has been discovered following an investigation into a Gentlemen ransomware attack carried out by a gang affiliate. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A SystemBC proxy malware botnet of more than 1,570 hosts, believed to be corporate victims, has been discovered following an investigation into a Gentlemen ransomware attack carried out by a gang affiliate. [...]\n\nAssessed severity: HIGH.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "A SystemBC proxy malware botnet of more than 1,570 hosts, believed to be corporate victims, has been discovered following an investigation into a Gentlemen ransomware attack carried out by a gang affiliate. [...]. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -222,6 +276,48 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this alert to provide guidance in response to the software supply chain compromise of the Axios node package manager (npm). 1 Axios is an HTTP client for JavaScript that developers commonly use in Node.js and browser environments. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "67956ffc332e6934",
+    "title": "CISA Adds Eight Known Exploited Vulnerabilities to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/04/20/cisa-adds-eight-known-exploited-vulnerabilities-catalog",
+    "published": "2026-04-20T12:00:00+00:00",
+    "fetched_at": "2026-04-20T20:43:16.115212+00:00",
+    "summary": "CISA has added eight new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-20",
+    "cves": [
+      "CVE-2023-27351",
+      "CVE-2024-27199",
+      "CVE-2025-2749",
+      "CVE-2025-32975",
+      "CVE-2025-48700",
+      "CVE-2026-20122",
+      "CVE-2026-20128",
+      "CVE-2026-20133"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": false,
+    "card_summary": "CISA has added eight new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "quick_take": "",
+    "sections": {
+      "impact": "CVE-2023-27351 PaperCut NG/MF Improper Authentication Vulnerability\n\n CVE-2024-27199 JetBrains TeamCity Relative Path Traversal Vulnerability\n\n CVE-2025-2749 Kentico Xperience Path Traversal Vulnerability\n\n CVE-2025-32975 Quest KACE Systems Management Appliance (SMA) Improper Authentication Vulnerability\n\n CVE-2025-48700 Synacor Zimbra Collaboration Suite (ZCS) Cross-site Scripting Vulnerability\n\n CVE-2026-20122 Cisco Catalyst SD-WAN Manager Incorrect Use of Privileged APIs Vulnerability\n\n CVE-2026-20128 Cisco Catalyst SD-WAN Manager Storing Passwords in a Recoverable Format Vulnerability\n\n CVE-2026-20133 Cisco Catalyst SD-WAN Manager Exposure of Sensitive Information to an Unauthorized Actor Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats."
+    },
+    "email_summary": "CISA has added eight new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2023-27351, CVE-2024-27199, CVE-2025-2749. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

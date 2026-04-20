@@ -1,5 +1,60 @@
 [
   {
+    "id": "dadd873e530836cf",
+    "title": "Weekly Recap: Vercel Hack, Push Fraud, QEMU Abused, New Android RATs Emerge & More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html",
+    "published": "2026-04-20T19:11:00+05:30",
+    "fetched_at": "2026-04-20T14:48:54.997064+00:00",
+    "summary": "Monday’s recap shows the same pattern in different places. A third-party tool becomes a way in, then leads to internal access. A trusted download path is briefly swapped to deliver malware. Browser extensions act normally while pulling data and running code. Even update channels are used to push payloads. It’s not breaking systems—it’s bending trust.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Monday’s recap shows the same pattern in different places. A third-party tool becomes a way in, then leads to internal access.",
+    "quick_take": "",
+    "sections": {
+      "technical": "A trusted download path is briefly swapped to deliver malware. Even update channels are used to push payloads."
+    },
+    "email_summary": "Monday’s recap shows the same pattern in different places. A third-party tool becomes a way in, then leads to internal access.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "c1dd59141a5da3b0",
+    "title": "Why Most AI Deployments Stall After the Demo",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/why-most-ai-deployments-stall-after-demo.html",
+    "published": "2026-04-20T17:00:00+05:30",
+    "fetched_at": "2026-04-20T14:48:54.997335+00:00",
+    "summary": "The fastest way to fall in love with an AI tool is to watch the demo.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The fastest way to fall in love with an AI tool is to watch the demo.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The fastest way to fall in love with an AI tool is to watch the demo. Everything moves quickly.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "a01feeac4d86e56c",
     "title": "Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain",
     "source": "The Hacker News",
@@ -55,6 +110,58 @@
     "highlighted": false
   },
   {
+    "id": "ab65dbec4250fd52",
+    "title": "The backup myth that is putting businesses at risk",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/the-backup-myth-that-is-putting-businesses-at-risk/",
+    "published": "2026-04-20T10:01:11-04:00",
+    "fetched_at": "2026-04-20T14:48:55.282132+00:00",
+    "summary": "Backups protect data, but don't keep your business running during downtime. Datto shows why BCDR is essential to keep operations running during ransomware and outages. [...]",
+    "tags": [
+      "malware",
+      "ransomware"
+    ],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Backups protect data, but don't keep your business running during downtime. Datto shows why BCDR is essential to keep operations running during ransomware and outages. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Backups protect data, but don't keep your business running during downtime. Datto shows why BCDR is essential to keep operations running during ransomware and outages. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "Backups protect data, but don't keep your business running during downtime. Datto shows why BCDR is essential to keep operations running during ransomware and outages. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0ecd601ced564aa3",
+    "title": "British Scattered Spider hacker pleads guilty to crypto theft charges",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-pleads-guilty-to-crypto-theft-charges/",
+    "published": "2026-04-20T09:33:42-04:00",
+    "fetched_at": "2026-04-20T14:48:55.282334+00:00",
+    "summary": "A British man, believed to be the leader of the Scattered Spider cybercrime collective, has pleaded guilty in the United States to charges of wire fraud and aggravated identity theft. [...]",
+    "tags": [],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A British man, believed to be the leader of the Scattered Spider cybercrime collective, has pleaded guilty in the United States to charges of wire fraud and aggravated identity theft. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A British man, believed to be the leader of the Scattered Spider cybercrime collective, has pleaded guilty in the United States to charges of wire fraud and aggravated identity theft. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "de913ee6dc0f6295",
     "title": "Vercel Breach Tied to Context AI Hack Exposes Limited Customer Credentials",
     "source": "The Hacker News",
@@ -80,6 +187,33 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Web infrastructure provider Vercel has disclosed a security breach that allows bad actors to gain unauthorized access to \"certain\" internal Vercel systems. The incident stemmed from the compromise of Context.ai, a third-party artificial intelligence (AI) tool, that was used by an employee at the company.\n\"The attacker used that access to take over the employee's Vercel Google Workspace account,.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "85ea0bc957814e8d",
+    "title": "Microsoft tests Windows Explorer speed, performance improvements",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-file-explorer-speed-performance-improvements/",
+    "published": "2026-04-20T08:04:02-04:00",
+    "fetched_at": "2026-04-20T14:48:55.282500+00:00",
+    "summary": "Microsoft is rolling out multiple File Explorer changes to Windows 11 users in the Insider program, including improvements to launch speed and performance. [...]",
+    "tags": [],
+    "day": "2026-04-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft is rolling out multiple File Explorer changes to Windows 11 users in the Insider program, including improvements to launch speed and performance. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft is rolling out multiple File Explorer changes to Windows 11 users in the Insider program, including improvements to launch speed and performance. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft is rolling out multiple File Explorer changes to Windows 11 users in the Insider program, including improvements to launch speed and performance. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

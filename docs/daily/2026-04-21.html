@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">21 April 2026</h1>
-      <span class="brief-sub">15 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
-        <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Google, AWS ecosystems affected by multiple advisories</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>8 items require immediate action — patches or mitigations available</li>
+        <li>AWS, Google ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -53,6 +53,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -66,25 +67,26 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
@@ -117,6 +119,38 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="../articles/0e9a64fd9004dd29.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/22-bridgebreak-flaws-expose-20000.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="22 bridge:break flaws expose thousands of lantronix and silex serial-to-ip converters"
+       data-id="1f07c93e66465ba8"
+       data-published="2026-04-21T21:16:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-04-21T21:16:00+05:30" title="21 April 2026, 10:46">21 April 2026, 10:46</time>
+      </div>
+      <h3 class="card-title">22 BRIDGE:BREAK Flaws Expose Thousands of Lantronix and Silex Serial-to-IP Converters</h3>
+      <p class="card-summary">Cybersecurity researchers have identified 22 new vulnerabilities in popular models of serial-to-IP converters from Lantronix and Silex that could be exploited to hijack susceptible devices and tamper with data exchanged by them.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1f07c93e66465ba8.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/22-bridgebreak-flaws-expose-20000.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
@@ -252,6 +286,40 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,ransomware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="surge in bomgar rmm exploitation demonstrates supply chain risk"
+       data-id="6e07c7c9df1df3f9"
+       data-published="2026-04-21T15:29:17+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-21T15:29:17+00:00" title="21 April 2026, 10:29">21 April 2026, 10:29</time>
+      </div>
+      <h3 class="card-title">Surge in Bomgar RMM Exploitation Demonstrates Supply Chain Risk</h3>
+      <p class="card-summary">The critical remote code execution flaw (CVE-2026-1731) in the remote monitoring and management tool can be exploited to spread ransomware and compromise supply chains.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6e07c7c9df1df3f9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/surge-bomgar-rmm-exploitation-demonstrates-supply-chain-risk" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="breach,malware,phishing,ransomware,vulnerability"
        data-vendors="Apple"
@@ -316,251 +384,432 @@
       </div>
     </div>
   </div>
-  <div class="article-card card--high"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors="AWS,Cisco"
-       data-severity="high"
-       data-title="cisa adds 8 exploited flaws to kev, sets april-may 2026 federal deadlines"
-       data-id="b53bde1fac5716a9"
-       data-published="2026-04-21T11:53:00+05:30"
-       data-action="">
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="silex technology sd-330ac and amc manager"
+       data-id="30985b66ae475832"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">AWS</span><span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-04-21T11:53:00+05:30" title="21 April 2026, 01:23">21 April 2026, 01:23</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">CISA Adds 8 Exploited Flaws to KEV, Sets April-May 2026 Federal Deadlines</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Monday added eight new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including three flaws impacting Cisco Catalyst SD-WAN Manager, citing evidence of active exploitation.</p>
+      <h3 class="card-title">Silex Technology SD-330AC and AMC Manager</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
         </div>
       </div>
-      <span class="card-source">The Hacker News</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code, cause a denial-of-service, or configuration information may be altered without authentication. The following versions of Silex Technology SD-330AC and AMC Manager are affected:</p>
+<p>SD-330AC &lt;=1.42 (CVE-2026-32955, CVE-2026-32956, CVE-2026-32957, CVE-2026-32958, CVE-2015-5621, CVE-2026-32959, CVE-2026-32960, CVE-2026-32961, CVE-2026-32962, CVE-2024-24487, CVE-2026-32963, CVE-2026-32964, CVE-2026-32965)</p>
+<p>AMC Manager &lt;=5.0.2 (CVE-2026-32955, CVE-2026-32956, CVE-2026-32957, CVE-2026-32958, CVE-2015-5621, CVE-2026-32959, CVE-2026-32960, CVE-2026-32961, CVE-2026-32962, CVE-2024-24487, CVE-2026-32963, CVE-2026-32964, CVE-2026-32965)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   Silex Technology   Silex Technology SD-330AC and AMC Manager   Stack-based Buffer Overflow, Heap-based Buffer Overflow, Missing Authentication for Critical Function, Use of Hard-coded Cryptographic Key, Dependency on Vulnerable Third-Party Component, Use of a Broken or Risky Cryptographic Algorithm, Sensitive Information in Resource Not Removed Before Reuse, Incorrect Privilege Assignment, Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;), Improper Neutralization of CRLF Sequences (&#39;CRLF Injection&#39;), Initialization of a Resource with an Insecure Default           Background     Critical Infrastructure Sectors: Information Technology</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Japan</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-32955     A Stack-based Buffer Overflow vulnerability in Silex Technology SD-330AC and AMC Manager could allow an attacker to execute arbitrary code on the device.</p></div>
       <div class="detail-links">
-        <a href="../articles/b53bde1fac5716a9.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/04/cisa-adds-8-exploited-flaws-to-kev-sets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/30985b66ae475832.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-10" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--critical"
-       data-tags="malware,vulnerability"
-       data-vendors="Google"
-       data-severity="critical"
-       data-title="google fixes critical rce flaw in ai-based antigravity tool"
-       data-id="b746ede1ddf49fa2"
-       data-published="2026-04-21T10:52:04+00:00"
-       data-action="">
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens ruggedcom crossbow secure access manager primary"
+       data-id="66940fc8b4b2c361"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-21T10:52:04+00:00" title="21 April 2026, 05:52">21 April 2026, 05:52</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">Google Fixes Critical RCE Flaw in AI-Based Antigravity Tool</h3>
-      <p class="card-summary">The prompt injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution.</p>
+      <h3 class="card-title">Siemens RUGGEDCOM CROSSBOW Secure Access Manager Primary</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
           <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">Dark Reading</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) contains a vulnerability that could allow an attacker to escalate their own privileges. Siemens has released a new version for RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) and recommends to update to the latest version.</p></div>
       <div class="detail-links">
-        <a href="../articles/b746ede1ddf49fa2.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/66940fc8b4b2c361.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags=""
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity="medium"
-       data-title="stopping fraud at each stage of the customer journey without adding friction"
-       data-id="a7a80b786dc4ecdb"
-       data-published="2026-04-21T10:02:12-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-21T10:02:12-04:00" title="21 April 2026, 09:02">21 April 2026, 09:02</time>
-      </div>
-      <h3 class="card-title">Stopping Fraud at Each Stage of the Customer Journey Without Adding Friction</h3>
-      <p class="card-summary">Fraud prevention and user experience don&#39;t have to be a tradeoff. IPQS shows how combining identity, device, and network signals stops fraud without adding friction. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/a7a80b786dc4ecdb.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/stopping-fraud-at-each-stage-of-the-customer-journey-without-adding-friction/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="uk probes telegram, teen chat sites over csam sharing concerns"
-       data-id="1099ef6d48e31f49"
-       data-published="2026-04-21T09:49:10-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-21T09:49:10-04:00" title="21 April 2026, 08:49">21 April 2026, 08:49</time>
-      </div>
-      <h3 class="card-title">UK probes Telegram, teen chat sites over CSAM sharing concerns</h3>
-      <p class="card-summary">Ofcom, the United Kingdom&#39;s independent communications regulator, has launched an investigation into Telegram based on evidence suggesting it&#39;s being used to share child sexual abuse material (CSAM). [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/1099ef6d48e31f49.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/uk-probes-telegram-teen-chat-sites-over-csam-sharing-concerns/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="exploit,vulnerability"
-       data-vendors="Cisco"
-       data-severity="critical"
-       data-title="cisa flags new sd-wan flaw as actively exploited in attacks"
-       data-id="ae6bc0b399fdee6f"
-       data-published="2026-04-21T08:30:50-04:00"
+       data-severity="low"
+       data-title="siemens tpm 2.0"
+       data-id="08c4fdbfc3d3f529"
+       data-published="2026-04-21T12:00:00+00:00"
        data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-04-21T08:30:50-04:00" title="21 April 2026, 07:30">21 April 2026, 07:30</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
         <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">CISA flags new SD-WAN flaw as actively exploited in attacks</h3>
-      <p class="card-summary">​CISA has given U.S. government agencies four days to secure their systems against another Catalyst SD-WAN Manager vulnerability it flagged as actively exploited in attacks. [...]</p>
+      <h3 class="card-title">Siemens TPM 2.0</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/ae6bc0b399fdee6f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-new-sd-wan-flaw-as-actively-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="exploit,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="actively exploited apache activemq flaw impacts 6,400 servers"
-       data-id="209c879a673e69bb"
-       data-published="2026-04-21T07:17:51-04:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-04-21T07:17:51-04:00" title="21 April 2026, 06:17">21 April 2026, 06:17</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Actively exploited Apache ActiveMQ flaw impacts 6,400 servers</h3>
-      <p class="card-summary">Nonprofit security organization Shadowserver found that over 6,400 Apache ActiveMQ servers exposed online are vulnerable to ongoing attacks exploiting a high-severity code injection vulnerability. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/209c879a673e69bb.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/actively-exploited-apache-activemq-flaw-impacts-6-400-servers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="former ransomware negotiator pleads guilty to blackcat attacks"
-       data-id="125e48441102af6c"
-       data-published="2026-04-21T06:12:21-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-21T06:12:21-04:00" title="21 April 2026, 05:12">21 April 2026, 05:12</time>
-      </div>
-      <h3 class="card-title">Former ransomware negotiator pleads guilty to BlackCat attacks</h3>
-      <p class="card-summary">41-year-old Angelo Martino, a former employee of cybersecurity incident response company DigitalMint, has pleaded guilty to targeting U.S. companies in BlackCat (ALPHV) ransomware attacks in 2023. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <div class="card-related">Also: The Hacker News</div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/125e48441102af6c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/former-ransomware-negotiator-pleads-guilty-to-blackcat-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="ngate android malware uses handypay nfc app to steal card data"
-       data-id="b30a9270dc9cb230"
-       data-published="2026-04-21T05:00:00-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-21T05:00:00-04:00" title="21 April 2026, 04:00">21 April 2026, 04:00</time>
-      </div>
-      <h3 class="card-title">NGate Android malware uses HandyPay NFC app to steal card data</h3>
-      <p class="card-summary">A new variant of the NGate malware that steals NFC payment data is targeting Android users by hiding in a trojanized version of HandyPay, a legitimate mobile payments processing tool. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
           <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   The products listed below contain a vulnerability that could allow an attacker to perform an out-of-bound read, potentially leading to information disclosure or denial of service of the TPM. Siemens has released new versions for several affected products and recommends to update to the latest versions.</p></div>
       <div class="detail-links">
-        <a href="../articles/b30a9270dc9cb230.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/ngate-android-malware-uses-handypay-nfc-app-to-steal-card-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/08c4fdbfc3d3f529.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="senselive x3050"
+       data-id="943ccd2adfb848cb"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">SenseLive X3050</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to take complete control of the device. The following versions of SenseLive X3050 are affected:</p>
+<p>X3050 V1.523 (CVE-2026-40630, CVE-2026-25720, CVE-2026-35503, CVE-2026-39462, CVE-2026-27843, CVE-2026-40431, CVE-2026-40623, CVE-2026-27841, CVE-2026-40620, CVE-2026-35064, CVE-2026-25775)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   SenseLive   SenseLive X3050   Authentication Bypass Using an Alternate Path or Channel, Insufficient Session Expiration, Use of Hard-coded Credentials, Insufficiently Protected Credentials, Missing Authentication for Critical Function, Cleartext Transmission of Sensitive Information, Missing Authorization, Cross-Site Request Forgery (CSRF)           Background     Critical Infrastructure Sectors: Critical Manufacturing, Water and Wastewater, Energy, Information Technology</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: India</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-40630     A vulnerability in the X3050&#39;s web management interface allows unauthorized access to certain configuration endpoints due to improper access control enforcement.</p></div>
+      <div class="detail-links">
+        <a href="../articles/943ccd2adfb848cb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens analytics toolkit"
+       data-id="a442310e0a00b420"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Analytics Toolkit</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Multiple Siemens applications are affected by improper certificate validation in Siemens Analytics Toolkit. This could allow an unauthenticated remote attacker to perform man in the middle attacks.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a442310e0a00b420.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="AWS,Linux,Microsoft"
+       data-severity="low"
+       data-title="siemens scalance"
+       data-id="6831773121f890ea"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">AWS</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens SCALANCE</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   SCALANCE W-700 IEEE 802.11n family before V6.6.0 are affected by multiple vulnerabilities. Siemens has released a new version for SCALANCE W-700 IEEE 802.11n family and recommends to update to the latest version.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6831773121f890ea.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-07" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="hardy barth salia ev charge controller"
+       data-id="800e3c1ea268f49b"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Hardy Barth Salia EV Charge Controller</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could crash the device being accessed; a buffer overflow condition may allow remote code execution. The following versions of Hardy Barth Salia EV Charge Controller are affected:</p>
+<p>Salia Board Firmware &lt;=2.3.81 (CVE-2025-5873, CVE-2025-10371)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.3   Hardy Barth   Hardy Barth Salia EV Charge Controller   Unrestricted Upload of File with Dangerous Type           Background     Critical Infrastructure Sectors: Energy, Transportation Systems</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Germany</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-5873     A vulnerability was found in eCharge Hardy Barth Salia PLCC 2.3.81.</p></div>
+      <div class="detail-links">
+        <a href="../articles/800e3c1ea268f49b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens sinec nms"
+       data-id="2085d01a36c62f30"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens SINEC NMS</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Siemens SINEC NMS when used with User Management Component (UMC) contains an authentication bypass vulnerability due to insufficient validation of user identity. This could allow an unauthenticated remote attacker to bypass authentication and gain unauthorized access to the application.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2085d01a36c62f30.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="zero motorcycles firmware"
+       data-id="06410eae8b4434ca"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Zero Motorcycles Firmware</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to pair via Bluetooth with a motorcycle, gaining unauthorized access to all Bluetooth functions, including changing the firmware. The following versions of Zero Motorcycles Firmware are affected:</p>
+<p>Zero Motorcycles firmware &lt;=44 (CVE-2026-1354)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 6.4   Zero Motorcycles   Zero Motorcycles Firmware   Key Exchange without Entity Authentication           Background     Critical Infrastructure Sectors: Transportation Systems</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-1354     Zero Motorcycles firmware versions 44 and prior enable an attacker to forcibly pair a device with the motorcycle via Bluetooth.</p></div>
+      <div class="detail-links">
+        <a href="../articles/06410eae8b4434ca.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-06" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens sinec nms"
+       data-id="880c3a052eabe42f"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens SINEC NMS</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   SINEC NMS before V4.0 SP3 contains an Authorization Bypass vulnerability that could allow an attacker to bypass authorization checks, leading to the ability to reset the password of any arbitrary user account. Siemens has released a new version for SINEC NMS and recommends to update to the latest version.</p></div>
+      <div class="detail-links">
+        <a href="../articles/880c3a052eabe42f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-09" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens industrial edge management"
+       data-id="e45e4e343ebd87f2"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Industrial Edge Management</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Industrial Edge Management contains an authorization bypass vulnerability that could be exploited by an unauthenticated remote attacker to circumvent authentication and to access connected Industrial Edge Devices through the remote connection feature. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e45e4e343ebd87f2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-11" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siemens TPM 2.0 — Threat Brief</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <div class="article-page">
+    <a href="../daily/2026-04-21.html" class="back-link">← 21 April 2026 briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">CISA Alerts</span>
+        <span class="card-date">21 April 2026, 07:00</span>
+        <span class="card-severity low">low</span>
+        <span class="card-action-badge">Action Required</span>
+      </div>
+
+      <h1 class="title">Siemens TPM 2.0</h1>
+
+      <p class="subtitle">View CSAF 
+
+ Summary 
+ The products listed below contain a vulnerability that could allow an attacker to perform an out-of-bound read, potentially leading to information disclosure or denial of service of the TPM. Tracked as CVE-2025-2884.</p>
+
+      <div class="article-action-banner">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        This item may require immediate action — see Mitigation section below
+      </div>
+
+      <div class="article-tags">
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">vulnerability</span>
+      </div>
+
+      <ul class="article-cve-list">
+        <li class="article-cve" data-cve="CVE-2025-2884">CVE-2025-2884<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2025-2884"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+      </ul>
+    </header>
+
+    <div class="quick-take">
+      <div class="quick-take-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Quick Take
+      </div>
+      <p class="quick-take-action">Action recommended — see Mitigation section below.</p>
+    </div>
+
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
+        <div class="article-section-content">
+          <p>View CSAF</p>
+<p>Summary   The products listed below contain a vulnerability that could allow an attacker to perform an out-of-bound read, potentially leading to information disclosure or denial of service of the TPM. Siemens has released new versions for several affected products and recommends to update to the latest versions.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
+        <div class="article-section-content">
+          <p>The following versions of Siemens TPM 2.0 are affected:</p>
+<p>SIMATIC CN 4100 vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC Field PG M5 vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC Field PG M6 vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-32A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-39A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-56A vers:intdot/&lt;32.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-59A vers:intdot/&lt;32.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC MD-57A vers:intdot/&lt;30.01.10 (CVE-2025-2884)</p>
+<p>SIMATIC IPC PX-32A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC PX-39A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC PX-39A PRO vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC RW-528A vers:intdot/&lt;34.01.02 (CVE-2025-2884)</p>
+<p>SIMATIC IPC RW-548A vers:intdot/&lt;34.01.02 (CVE-2025-2884)</p>
+<p>SIMATIC IPC227E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC277E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC427E vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>SIMATIC IPC477E vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>SIMATIC IPC477E PRO vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>SIMATIC IPC627E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC647E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC677E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC847E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC ITP1000 vers:all/* (CVE-2025-2884)</p>
+<p>SIPLUS IPC427E vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 6.6   Siemens   Siemens TPM 2.0   Out-of-bounds Read           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Germany</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-2884     TCG TPM2.0 Reference implementation&#39;s CryptHmacSign helper function is vulnerable to Out-of-Bounds read due to the lack of validation the signature scheme with the signature key&#39;s algorithm. See Errata Revision 1.83 and advisory TCGVRT0009 for TCG standard TPM2.0</p>
+<p>View CVE Details</p>
+<p>Affected Products   Siemens TPM 2.0     Vendor:  Siemens   Product Version:  SIMATIC CN 4100, SIMATIC Field PG M5, SIMATIC Field PG M6, SIMATIC IPC BX-32A, SIMATIC IPC BX-39A, SIMATIC IPC BX-56A, SIMATIC IPC BX-59A, SIMATIC IPC MD-57A, SIMATIC IPC PX-32A, SIMATIC IPC PX-39A, SIMATIC IPC PX-39A PRO, SIMATIC IPC RW-528A, SIMATIC IPC RW-548A, SIMATIC IPC227E, SIMATIC IPC277E, SIMATIC IPC427E, SIMATIC IPC477E, SIMATIC IPC477E PRO, SIMATIC IPC627E, SIMATIC IPC647E, SIMATIC IPC677E, SIMATIC IPC847E, SIMATIC ITP1000, SIPLUS IPC427E   Product Status:  known_affected       Remediations   No fix planned  Currently no fix is planned</p>
+<p>None available  Currently no fix is available</p>
+<p>Vendor fix  Update to V21.01.20 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V29.01.09 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V30.01.10 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V32.01.09 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V34.01.02 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Relevant CWE: CWE-125 Out-of-bounds Read</p>
+<p>Metrics           CVSS Version   Base Score   Base Severity   Vector String           3.1   6.6   MEDIUM   CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:H                   Acknowledgments     Siemens ProductCERT reported this vulnerability to CISA. View CSAF</p>
+<p>Summary   The products listed below contain a vulnerability that could allow an attacker to perform an out-of-bound read, potentially leading to information disclosure or denial of service of the TPM. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity</p>
+<p>Additional Resources   For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories</p>
+<p>Terms of Use   The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use.</p>
+<p>Referenced vulnerabilities: CVE-2025-2884.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
+        <div class="article-section-content">
+          <p>The following versions of Siemens TPM 2.0 are affected:</p>
+<p>SIMATIC CN 4100 vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC Field PG M5 vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC Field PG M6 vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-32A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-39A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-56A vers:intdot/&lt;32.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC BX-59A vers:intdot/&lt;32.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC MD-57A vers:intdot/&lt;30.01.10 (CVE-2025-2884)</p>
+<p>SIMATIC IPC PX-32A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC PX-39A vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC PX-39A PRO vers:intdot/&lt;29.01.09 (CVE-2025-2884)</p>
+<p>SIMATIC IPC RW-528A vers:intdot/&lt;34.01.02 (CVE-2025-2884)</p>
+<p>SIMATIC IPC RW-548A vers:intdot/&lt;34.01.02 (CVE-2025-2884)</p>
+<p>SIMATIC IPC227E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC277E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC427E vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>SIMATIC IPC477E vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>SIMATIC IPC477E PRO vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>SIMATIC IPC627E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC647E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC677E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC IPC847E vers:all/* (CVE-2025-2884)</p>
+<p>SIMATIC ITP1000 vers:all/* (CVE-2025-2884)</p>
+<p>SIPLUS IPC427E vers:intdot/&lt;21.01.20 (CVE-2025-2884)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 6.6   Siemens   Siemens TPM 2.0   Out-of-bounds Read           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Germany</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-2884     TCG TPM2.0 Reference implementation&#39;s CryptHmacSign helper function is vulnerable to Out-of-Bounds read due to the lack of validation the signature scheme with the signature key&#39;s algorithm. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. Siemens has released new versions for several affected products and recommends to update to the latest versions.</p>
+<p>Assessed severity: LOW. CVSS score: 3.1/10.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
+        <div class="article-section-content">
+          <p>Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available. See Errata Revision 1.83 and advisory TCGVRT0009 for TCG standard TPM2.0</p>
+<p>View CVE Details</p>
+<p>Affected Products   Siemens TPM 2.0     Vendor:  Siemens   Product Version:  SIMATIC CN 4100, SIMATIC Field PG M5, SIMATIC Field PG M6, SIMATIC IPC BX-32A, SIMATIC IPC BX-39A, SIMATIC IPC BX-56A, SIMATIC IPC BX-59A, SIMATIC IPC MD-57A, SIMATIC IPC PX-32A, SIMATIC IPC PX-39A, SIMATIC IPC PX-39A PRO, SIMATIC IPC RW-528A, SIMATIC IPC RW-548A, SIMATIC IPC227E, SIMATIC IPC277E, SIMATIC IPC427E, SIMATIC IPC477E, SIMATIC IPC477E PRO, SIMATIC IPC627E, SIMATIC IPC647E, SIMATIC IPC677E, SIMATIC IPC847E, SIMATIC ITP1000, SIPLUS IPC427E   Product Status:  known_affected       Remediations   No fix planned  Currently no fix is planned</p>
+<p>None available  Currently no fix is available</p>
+<p>Vendor fix  Update to V21.01.20 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V29.01.09 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V30.01.10 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V32.01.09 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Vendor fix  Update to V34.01.02 or later version  https://support.industry.siemens.com/cs/ww/en/view/109763408/</p>
+<p>Relevant CWE: CWE-125 Out-of-bounds Read</p>
+<p>Metrics           CVSS Version   Base Score   Base Severity   Vector String           3.1   6.6   MEDIUM   CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:H                   Acknowledgments     Siemens ProductCERT reported this vulnerability to CISA.</p>
+        </div>
+      </div>
+
+
+
+      <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-01" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at CISA Alerts</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

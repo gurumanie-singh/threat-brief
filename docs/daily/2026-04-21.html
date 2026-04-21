@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">21 April 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Google, Cisco ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -47,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -62,23 +65,156 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="breach,exploit,malware,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="no exploit needed: how attackers walk through the front door via identity-based attacks"
+       data-id="a0c81b8fe1dbd528"
+       data-published="2026-04-21T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-21T17:00:00+05:30" title="21 April 2026, 06:30">21 April 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">No Exploit Needed: How Attackers Walk Through the Front Door via Identity-Based Attacks</h3>
+      <p class="card-summary">The cybersecurity industry has spent the last several years chasing sophisticated threats like zero-days, supply chain compromises, and AI-generated exploits. However, the most reliable entry point for attackers still hasn&#39;t changed: stolen credentials.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a0c81b8fe1dbd528.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,patch"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="ngate campaign targets brazil, trojanizes handypay to steal nfc data and pins"
+       data-id="c498097447fffb81"
+       data-published="2026-04-21T16:10:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-21T16:10:00+05:30" title="21 April 2026, 05:40">21 April 2026, 05:40</time>
+      </div>
+      <h3 class="card-title">NGate Campaign Targets Brazil, Trojanizes HandyPay to Steal NFC Data and PINs</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered a new iteration of an Android malware family called NGate that has been found to abuse a legitimate application called HandyPay instead of NFCGate.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c498097447fffb81.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/ngate-campaign-targets-brazil.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,malware,patch,vulnerability"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="google patches antigravity ide flaw enabling prompt injection code execution"
+       data-id="41c39ee7994f8aec"
+       data-published="2026-04-21T15:52:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-21T15:52:00+05:30" title="21 April 2026, 05:22">21 April 2026, 05:22</time>
+      </div>
+      <h3 class="card-title">Google Patches Antigravity IDE Flaw Enabling Prompt Injection Code Execution</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered a vulnerability in Google&#39;s agentic integrated development environment (IDE), Antigravity, that could be exploited to achieve code execution.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/41c39ee7994f8aec.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/google-patches-antigravity-ide-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chinese apt targets indian banks, korean policy circles"
+       data-id="5fb536cd48373832"
+       data-published="2026-04-21T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Chinese APT Targets Indian Banks, Korean Policy Circles</h3>
+      <p class="card-summary">China is spying on India&#39;s financial sector, for some reason, and it&#39;s not putting much effort into it, judging by some stale TTPs.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5fb536cd48373832.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/chinese-apt-indian-banks-korean-policy" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,vulnerability"
        data-vendors="AWS,Cisco"
@@ -107,6 +243,72 @@
       <div class="detail-links">
         <a href="../articles/b53bde1fac5716a9.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/cisa-adds-8-exploited-flaws-to-kev-sets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="cisa flags new sd-wan flaw as actively exploited in attacks"
+       data-id="ae6bc0b399fdee6f"
+       data-published="2026-04-21T08:30:50-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-04-21T08:30:50-04:00" title="21 April 2026, 07:30">21 April 2026, 07:30</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA flags new SD-WAN flaw as actively exploited in attacks</h3>
+      <p class="card-summary">​CISA has given U.S. government agencies four days to secure their systems against another Catalyst SD-WAN Manager vulnerability it flagged as actively exploited in attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ae6bc0b399fdee6f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-new-sd-wan-flaw-as-actively-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="actively exploited apache activemq flaw impacts 6,400 servers"
+       data-id="209c879a673e69bb"
+       data-published="2026-04-21T07:17:51-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-21T07:17:51-04:00" title="21 April 2026, 06:17">21 April 2026, 06:17</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Actively exploited Apache ActiveMQ flaw impacts 6,400 servers</h3>
+      <p class="card-summary">Nonprofit security organization Shadowserver found that over 6,400 Apache ActiveMQ servers exposed online are vulnerable to ongoing attacks exploiting a high-severity code injection vulnerability. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/209c879a673e69bb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/actively-exploited-apache-activemq-flaw-impacts-6-400-servers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

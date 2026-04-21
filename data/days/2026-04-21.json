@@ -1,5 +1,32 @@
 [
   {
+    "id": "10c072d7fac98b7e",
+    "title": "5 Places where Mature SOCs Keep MTTR Fast and Others Waste Time",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/5-places-where-mature-socs-keep-mttr.html",
+    "published": "2026-04-21T18:30:00+05:30",
+    "fetched_at": "2026-04-21T15:11:48.559822+00:00",
+    "summary": "Security teams often present MTTR as an internal KPI. Leadership sees it differently: every hour a threat dwells inside the environment is an hour of potential data exfiltration, service disruption, regulatory exposure, and brand damage. ",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-04-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Security teams often present MTTR as an internal KPI. Leadership sees it differently: every hour a threat dwells inside the environment is an hour of potential data exfiltration, service disruption, regulatory exposure, and brand damage.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Leadership sees it differently: every hour a threat dwells inside the environment is an hour of potential data exfiltration, service disruption, regulatory exposure, and brand damage.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Security teams often present MTTR as an internal KPI. Leadership sees it differently: every hour a threat dwells inside the environment is an hour of potential data exfiltration, service disruption, regulatory exposure, and brand damage.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "a0c81b8fe1dbd528",
     "title": "No Exploit Needed: How Attackers Walk Through the Front Door via Identity-Based Attacks",
     "source": "The Hacker News",
@@ -93,6 +120,43 @@
     "highlighted": false
   },
   {
+    "id": "5e81691da47c3dd2",
+    "title": "‘Scattered Spider’ Member ‘Tylerb’ Pleads Guilty",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/",
+    "published": "2026-04-21T14:53:59+00:00",
+    "fetched_at": "2026-04-21T15:11:48.787365+00:00",
+    "summary": "A 24-year-old British national and senior member of the cybercrime group Scattered Spider has pleaded guilty to wire fraud conspiracy and aggravated identity theft. Tyler Robert Buchanan admitted his role in a series of text-message phishing attacks in the summer of 2022 that allowed the group to hack into at least a dozen major technology companies and steal tens of millions of dollars worth of...",
+    "tags": [
+      "breach",
+      "malware",
+      "phishing",
+      "ransomware",
+      "vulnerability"
+    ],
+    "day": "2026-04-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
+    "card_summary": "A 24-year-old British national and senior member of the cybercrime group Scattered Spider has pleaded guilty to wire fraud conspiracy and aggravated identity theft. Tyler Robert Buchanan admitted his role in a series of text-message phishing attacks in the…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A 24-year-old British national and senior member of the cybercrime group Scattered Spider has pleaded guilty to wire fraud conspiracy and aggravated identity theft. Tyler Robert Buchanan admitted his role in a series of text-message phishing attacks in the summer of 2022 that allowed the group to hack into at least a dozen major technology companies and steal tens of millions of dollars worth of...",
+      "technical": "M&S in this screenshot refers to Marks & Spencer, a major U.K. retail chain that suffered a ransomware attack last year at the hands of Scattered Spider. In an unauthorized SIM-swap, crooks transfer the target’s phone number to a device they control and intercept any text messages or phone calls to the victim’s device — such as one-time passcodes for authentication and password reset links sent via SMS. The domain registrar NameCheap found that less than a month before the phishing spree, the account that registered those domains logged in from an Internet address in the U.K.",
+      "impact": "The group then used data stolen in those breaches to carry out  SIM-swapping attacks that siphoned funds from individual cryptocurrency investors. In an unauthorized SIM-swap, crooks transfer the target’s phone number to a device they control and intercept any text messages or phone calls to the victim’s device — such as one-time passcodes for authentication and password reset links sent via SMS. Justice Department said Buchanan admitted to stealing at least $8 million in virtual currency from individual victims throughout the United States.\n\nAssessed severity: HIGH.",
+      "mitigation": "However, any sentence the judge hands down in this case may be significantly tempered by a number of mitigating factors in the U.S.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A 24-year-old British national and senior member of the cybercrime group Scattered Spider has pleaded guilty to wire fraud conspiracy and aggravated identity theft. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "5fb536cd48373832",
     "title": "Chinese APT Targets Indian Banks, Korean Policy Circles",
     "source": "Dark Reading",
@@ -145,6 +209,82 @@
     "quick_take": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added eight new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including three flaws impacting Cisco Catalyst SD-WAN Manager,…",
     "sections": {},
     "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added eight new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including three flaws impacting Cisco Catalyst SD-WAN Manager, citing evidence of active exploitation. Tracked as CVE-2023-27351. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b746ede1ddf49fa2",
+    "title": "Google Fixes Critical RCE Flaw in AI-Based Antigravity Tool",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool",
+    "published": "2026-04-21T10:52:04+00:00",
+    "fetched_at": "2026-04-21T15:11:49.504748+00:00",
+    "summary": "The prompt injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "The prompt injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The prompt injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a7a80b786dc4ecdb",
+    "title": "Stopping Fraud at Each Stage of the Customer Journey Without Adding Friction",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/stopping-fraud-at-each-stage-of-the-customer-journey-without-adding-friction/",
+    "published": "2026-04-21T10:02:12-04:00",
+    "fetched_at": "2026-04-21T15:11:48.985186+00:00",
+    "summary": "Fraud prevention and user experience don't have to be a tradeoff. IPQS shows how combining identity, device, and network signals stops fraud without adding friction. [...]",
+    "tags": [],
+    "day": "2026-04-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Fraud prevention and user experience don't have to be a tradeoff. IPQS shows how combining identity, device, and network signals stops fraud without adding friction. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Fraud prevention and user experience don't have to be a tradeoff.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Fraud prevention and user experience don't have to be a tradeoff. IPQS shows how combining identity, device, and network signals stops fraud without adding friction. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1099ef6d48e31f49",
+    "title": "UK probes Telegram, teen chat sites over CSAM sharing concerns",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/uk-probes-telegram-teen-chat-sites-over-csam-sharing-concerns/",
+    "published": "2026-04-21T09:49:10-04:00",
+    "fetched_at": "2026-04-21T15:11:48.985408+00:00",
+    "summary": "Ofcom, the United Kingdom's independent communications regulator, has launched an investigation into Telegram based on evidence suggesting it's being used to share child sexual abuse material (CSAM). [...]",
+    "tags": [],
+    "day": "2026-04-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Ofcom, the United Kingdom's independent communications regulator, has launched an investigation into Telegram based on evidence suggesting it's being used to share child sexual abuse material (CSAM). [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Ofcom, the United Kingdom's independent communications regulator, has launched an investigation into Telegram based on evidence suggesting it's being used to share child sexual abuse material (CSAM). [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -232,7 +372,12 @@
     },
     "email_summary": "41-year-old Angelo Martino, a former employee of cybersecurity incident response company DigitalMint, has pleaded guilty to targeting U.S. companies in BlackCat (ALPHV) ransomware attacks in 2023. [...].",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "The Hacker News",
+        "link": "https://thehackernews.com/2026/04/ransomware-negotiator-pleads-guilty-to.html"
+      }
+    ],
     "highlighted": false
   },
   {

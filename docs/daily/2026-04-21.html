@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>4 items require immediate action — patches or mitigations available</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
         <li>Google, AWS ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
@@ -77,8 +77,8 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
@@ -476,6 +476,36 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="malware,vulnerability"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="google fixes critical rce flaw in ai-based &#39;antigravity&#39; tool"
+       data-id="93f8d7085a912405"
+       data-published="2026-04-21T15:00:50+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-21T15:00:50+00:00" title="21 April 2026, 10:00">21 April 2026, 10:00</time>
+      </div>
+      <h3 class="card-title">Google Fixes Critical RCE Flaw in AI-Based &#39;Antigravity&#39; Tool</h3>
+      <p class="card-summary">The prompt-injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/93f8d7085a912405.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="breach,malware,phishing,ransomware,vulnerability"
        data-vendors="Apple"
@@ -728,43 +758,6 @@
       <div class="detail-links">
         <a href="../articles/943ccd2adfb848cb.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="siemens analytics toolkit"
-       data-id="a442310e0a00b420"
-       data-published="2026-04-21T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-04-21T12:00:00+00:00" title="21 April 2026, 07:00">21 April 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Siemens Analytics Toolkit</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Multiple Siemens applications are affected by improper certificate validation in Siemens Analytics Toolkit. This could allow an unauthenticated remote attacker to perform man in the middle attacks.</p></div>
-      <div class="detail-links">
-        <a href="../articles/a442310e0a00b420.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

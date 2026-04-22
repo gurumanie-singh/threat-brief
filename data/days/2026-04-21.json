@@ -363,6 +363,34 @@
     "highlighted": false
   },
   {
+    "id": "93f8d7085a912405",
+    "title": "Google Fixes Critical RCE Flaw in AI-Based 'Antigravity' Tool",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool",
+    "published": "2026-04-21T15:00:50+00:00",
+    "fetched_at": "2026-04-22T13:23:46.049829+00:00",
+    "summary": "The prompt-injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "The prompt-injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The prompt-injection vulnerability in the agentic AI product for filesystem operations was a sanitization issue that allowed for sandbox escape and arbitrary code execution. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "5e81691da47c3dd2",
     "title": "‘Scattered Spider’ Member ‘Tylerb’ Pleads Guilty",
     "source": "Krebs on Security",
@@ -614,41 +642,6 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to take complete control of the device. Tracked as CVE-2026-25720, CVE-2026-25775, CVE-2026-27841.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "a442310e0a00b420",
-    "title": "Siemens Analytics Toolkit",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-04",
-    "published": "2026-04-21T12:00:00+00:00",
-    "fetched_at": "2026-04-21T18:06:16.972568+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-04-21",
-    "cves": [
-      "CVE-2025-40745"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Multiple Siemens applications are affected by improper certificate validation in Siemens Analytics Toolkit. This could allow an unauthenticated remote attacker to perform man in the middle attacks.",
-      "technical": "The following versions of Siemens Analytics Toolkit are affected:\n\n \n Siemens Software Center vers:intdot/<3.5.8.2 (CVE-2025-40745)\n\n Simcenter 3D vers:intdot/<2506.6000 (CVE-2025-40745)\n\n Simcenter Femap vers:intdot/<2506.0002 (CVE-2025-40745)\n\n Simcenter STAR-CCM+ vers:intdot/<2602 (CVE-2025-40745)\n\n Solid Edge SE2025\n\n Solid Edge SE2026\n\n Tecnomatix Plant Simulation vers:intdot/<2504.0008 (CVE-2025-40745)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 3.7 \n Siemens \n Siemens Analytics Toolkit \n Improper Certificate Validation \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-40745 \n \n Affected applications do not properly validate client certificates to connect to Analytics Service endpoint. View CVE Details \n\n \n Affected Products \n Siemens Analytics Toolkit \n \n Vendor: \nSiemens \n Product Version: \nSiemens Software Center, Simcenter 3D, Simcenter Femap, Simcenter STAR-CCM+, Solid Edge SE2025, Solid Edge SE2026, Tecnomatix Plant Simulation \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUpdate to V225.0 Update 13 or later version\n https://support.sw.siemens.com/product/246738425/ \n\n Vendor fix \nUpdate to V226.0 Update 04 or later version\n https://support.sw.siemens.com/product/246738425/ \n\n Vendor fix \nUpdate to V2504.0008 or later version\n https://support.sw.siemens.com/product/297028302/ \n\n Vendor fix \nUpdate to V2506.0002 or later version\n https://support.sw.siemens.com/product/275652363/ \n\n Vendor fix \nUpdate to V2506.6000 or later version\n https://support.sw.siemens.com/product/289054037/ \n\n Vendor fix \nUpdate to V2602 or later version\n https://support.sw.siemens.com/product/226870983/ \n\n Vendor fix \nUpdate to V3.5.8.2 or later version\n https://www.sw.siemens.com/en-US/siemens-software-center/ \n\n \n Relevant CWE: CWE-295 Improper Certificate Validation \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 3.7 \n LOW \n CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Siemens ProductCERT reported this vulnerability to CISA. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity\n\n \n Additional Resources \n For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories\n\n \n Terms of Use \n The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices \n CISA recommends users take defensive measures to minimize the exploitation risk of these vulnerabilities.\n\nReferenced vulnerabilities: CVE-2025-40745.",
-      "impact": "The following versions of Siemens Analytics Toolkit are affected:\n\n \n Siemens Software Center vers:intdot/<3.5.8.2 (CVE-2025-40745)\n\n Simcenter 3D vers:intdot/<2506.6000 (CVE-2025-40745)\n\n Simcenter Femap vers:intdot/<2506.0002 (CVE-2025-40745)\n\n Simcenter STAR-CCM+ vers:intdot/<2602 (CVE-2025-40745)\n\n Solid Edge SE2025\n\n Solid Edge SE2026\n\n Tecnomatix Plant Simulation vers:intdot/<2504.0008 (CVE-2025-40745)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 3.7 \n Siemens \n Siemens Analytics Toolkit \n Improper Certificate Validation \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-40745 \n \n Affected applications do not properly validate client certificates to connect to Analytics Service endpoint. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CSAF \n\n Summary \n Multiple Siemens applications are affected by improper certificate validation in Siemens Analytics Toolkit.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Siemens has released new versions for the affected products and recommends to update to the latest versions. View CVE Details \n\n \n Affected Products \n Siemens Analytics Toolkit \n \n Vendor: \nSiemens \n Product Version: \nSiemens Software Center, Simcenter 3D, Simcenter Femap, Simcenter STAR-CCM+, Solid Edge SE2025, Solid Edge SE2026, Tecnomatix Plant Simulation \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUpdate to V225.0 Update 13 or later version\n https://support.sw.siemens.com/product/246738425/ \n\n Vendor fix \nUpdate to V226.0 Update 04 or later version\n https://support.sw.siemens.com/product/246738425/ \n\n Vendor fix \nUpdate to V2504.0008 or later version\n https://support.sw.siemens.com/product/297028302/ \n\n Vendor fix \nUpdate to V2506.0002 or later version\n https://support.sw.siemens.com/product/275652363/ \n\n Vendor fix \nUpdate to V2506.6000 or later version\n https://support.sw.siemens.com/product/289054037/ \n\n Vendor fix \nUpdate to V2602 or later version\n https://support.sw.siemens.com/product/226870983/ \n\n Vendor fix \nUpdate to V3.5.8.2 or later version\n https://www.sw.siemens.com/en-US/siemens-software-center/ \n\n \n Relevant CWE: CWE-295 Improper Certificate Validation \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 3.7 \n LOW \n CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Siemens ProductCERT reported this vulnerability to CISA. General Recommendations \n As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Multiple Siemens applications are affected by improper certificate validation in Siemens Analytics Toolkit. Tracked as CVE-2025-40745.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

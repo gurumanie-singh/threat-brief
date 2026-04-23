@@ -37,8 +37,8 @@
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Apple, Cisco ecosystems affected by multiple advisories</li>
-        <li>Multiple phishing campaigns identified targeting enterprises</li>
+        <li>Apple, Microsoft ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -67,8 +67,8 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
@@ -79,18 +79,51 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach,malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="unc6692 impersonates it helpdesk via microsoft teams to deploy snow malware"
+       data-id="c84a72a154d66d08"
+       data-published="2026-04-23T23:46:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-23T23:46:00+05:30" title="23 April 2026, 13:16">23 April 2026, 13:16</time>
+      </div>
+      <h3 class="card-title">UNC6692 Impersonates IT Helpdesk via Microsoft Teams to Deploy SNOW Malware</h3>
+      <p class="card-summary">A previously undocumented threat activity cluster known as UNC6692 has been observed leveraging social engineering tactics via Microsoft Teams to deploy a custom malware suite on compromised hosts.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c84a72a154d66d08.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/unc6692-impersonates-it-helpdesk-via.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors=""
@@ -216,6 +249,39 @@
       <div class="detail-links">
         <a href="../articles/5e8762e3f7c4463a.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="trigona ransomware attacks use custom exfiltration tool to steal data"
+       data-id="04ed60ad400b7483"
+       data-published="2026-04-23T14:59:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-23T14:59:39-04:00" title="23 April 2026, 13:59">23 April 2026, 13:59</time>
+      </div>
+      <h3 class="card-title">Trigona ransomware attacks use custom exfiltration tool to steal data</h3>
+      <p class="card-summary">Recently observed Trigona ransomware attacks are using a custom, command-line tool to steal data from compromised environments faster and more efficiently. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/04ed60ad400b7483.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -828,68 +894,6 @@
       <div class="detail-links">
         <a href="../articles/28c83b9f8d8c383e.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="cosmetics giant rituals discloses data breach affecting customers"
-       data-id="00bbbc2751b716e9"
-       data-published="2026-04-23T10:16:21-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-23T10:16:21-04:00" title="23 April 2026, 09:16">23 April 2026, 09:16</time>
-      </div>
-      <h3 class="card-title">Cosmetics giant Rituals discloses data breach affecting customers</h3>
-      <p class="card-summary">Dutch cosmetics giant Rituals disclosed a data breach after attackers stole the personal information of an undisclosed number of customers from its &#34;My Rituals&#34; membership database. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/00bbbc2751b716e9.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cosmetics-giant-rituals-discloses-data-breach-affecting-customers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="phishing"
-       data-vendors=""
-       data-severity="medium"
-       data-title="regular password resets aren’t as safe as you think"
-       data-id="57a06df153de7bbf"
-       data-published="2026-04-23T10:10:20-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-23T10:10:20-04:00" title="23 April 2026, 09:10">23 April 2026, 09:10</time>
-      </div>
-      <h3 class="card-title">Regular Password Resets Aren’t as Safe as You Think</h3>
-      <p class="card-summary">Password resets are one of the easiest ways for attackers to bypass security controls. Specops Software shows how helpdesk social engineering turns a seemingly legitimate reset request into full account compromise. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/57a06df153de7bbf.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/regular-password-resets-arent-as-safe-as-you-think/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

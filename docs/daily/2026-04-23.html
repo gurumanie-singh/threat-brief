@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">23 April 2026</h1>
-      <span class="brief-sub">19 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,10 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Apple, Cisco ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -52,6 +52,7 @@
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -65,9 +66,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
@@ -79,14 +80,13 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
@@ -377,6 +377,37 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new checkmarx supply-chain breach affects kics analysis tool"
+       data-id="36ac7c57eb948511"
+       data-published="2026-04-23T12:05:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-23T12:05:12-04:00" title="23 April 2026, 11:05">23 April 2026, 11:05</time>
+      </div>
+      <h3 class="card-title">New Checkmarx supply-chain breach affects KICS analysis tool</h3>
+      <p class="card-summary">Hackers have compromised Docker images, VSCode and Open VSX extensions for the Checkmarx KICS analysis tool to harvest sensitive data from developer environments. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/36ac7c57eb948511.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-checkmarx-supply-chain-breach-affects-kics-analysis-tool/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="apt,breach,exploit,malware,patch,ransomware,vulnerability"
        data-vendors="AWS,Adobe,Cisco,Microsoft"
@@ -465,6 +496,341 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="carlson software vasco-b gnss receiver"
+       data-id="070cfd0cc0bd4e1c"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Carlson Software VASCO-B GNSS Receiver</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could enable a remote attacker to alter critical system functions or disrupt device operation. The following versions of Carlson Software VASCO-B GNSS Receiver are affected:</p>
+<p>VASCO-B GNSS Receiver &lt;1.4.0 (CVE-2026-3893)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.4   Carlson Software   Carlson Software VASCO-B GNSS Receiver   Missing Authentication for Critical Function           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-3893     The Carlson VASCO-B GNSS Receiver lacks an authentication mechanism, allowing an attacker with network access to directly access and modify its configuration and operational functions without needing credentials.</p></div>
+      <div class="detail-links">
+        <a href="../articles/070cfd0cc0bd4e1c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="hangzhou xiongmai technology co., ltd xm530 ip camera"
+       data-id="1ec01e462001c602"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Hangzhou Xiongmai Technology Co., Ltd XM530 IP Camera</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to bypass authentication and have remote access to sensitive information on the device. The following versions of Hangzhou Xiongmai Technology Co., Ltd XM530 IP Camera are affected:</p>
+<p>IP Camera XM530V200_X6-WEQ_8M firmware V5.00.R02.000807D8.10010.346624.S.ONVIF_21.06 (CVE-2025-65856)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   Hangzhou Xiongmai Technology Co., Ltd   Hangzhou Xiongmai Technology Co., Ltd XM530 IP Camera   Missing Authentication for Critical Function           Background     Critical Infrastructure Sectors: Commercial Facilities</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: China</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-65856     Authentication bypass vulnerability in Xiongmai XM530 IP cameras on Firmware V5.00.R02.000807D8.10010.346624.S.ONVIF 21.06 allows unauthenticated remote attackers to access sensitive device information and live video streams.</p></div>
+      <div class="detail-links">
+        <a href="../articles/1ec01e462001c602.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="yadea t5 electric bicycle"
+       data-id="826dc15f740473e4"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Yadea T5 Electric Bicycle</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could result in an attacker being able to unlock and start the bicycle, leading to vehicle theft. The following versions of Yadea T5 Electric Bicycle are affected:</p>
+<p>T5 Electric Bicycle vers:all/* (CVE-2025-70994)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.3   Yadea   Yadea T5 Electric Bicycle   Weak Authentication           Background     Critical Infrastructure Sectors: Transportation Systems</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: China</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-70994     Yadea T5 Electric Bicycles have a weak authentication mechanism which is vulnerable to signal forgery after a local attacker intercepts any legitimate key fob transmissions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/826dc15f740473e4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="milesight cameras"
+       data-id="07c9df2e3d83a189"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Milesight Cameras</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could crash the device being accessed or allow remote code execution. The following versions of Milesight Cameras are affected:</p>
+<p>MS-Cxx63-PD &lt;=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx64-xPD &lt;=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx73-xPD &lt;=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx75-xxPD &lt;=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx83-xPD &lt;=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx74-PA &lt;=3x.8.0.3-r11 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C8477-HPG1 &lt;=63.8.0.4-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C8477-PC &lt;=48.8.0.4-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C5321-FPE &lt;=62.8.0.4-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx72-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx62-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx52-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx66-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx66-xxxGPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx61-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx67-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx71-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx41-xxxPE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx76-PE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx65-PE &lt;=61.8.0.5-r2 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx66-xxxG1 &lt;=63.8.0.5-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx62-xxxG1 &lt;=63.8.0.5-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx72-xxxG1 &lt;=63.8.0.5-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-CQxx31-xxxG1 &lt;=CQ_63.8.0.5-r1 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-CQxx68-xxxG1 &lt;=CQ_63.8.0.5-r1 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-CQxx72-xxxG1 &lt;=CQ_63.8.0.5-r1 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Nxxxx-NxE &lt;=7x.9.0.19-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Nxxxx-xxC &lt;=7x.9.0.19-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Nxxxx-xxE &lt;=7x.9.0.19-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Nxxxx-xxG &lt;=7x.9.0.19-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Nxxxx-xxH &lt;=7x.9.0.19-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Nxxxx-xxT &lt;=7x.9.0.19-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>PMC8266-FPE &lt;=PO_61.8.0.4_LPR (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>PMC8266-FGPE &lt;=PO_61.8.0.4_LPR (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>PM3322-E &lt;=PI_61.8.0.3_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-X4RIPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS5366-X12RIPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-X4RIPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-X4RIVPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-RFIVPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-X4RIVPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-RFIVPG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-X4RIWG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-X4RIWG1 &lt;=T_63.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS5510-GVH &lt;=T_47.8.0.4_LPR-r7 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS5510-GH &lt;=T_47.8.0.4_LPR-r6 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS5511-GVH &lt;=T_47.8.0.4_LPR-r6 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2966-X12TPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-X4RPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS5366-X12PE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-X4PE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2966-X12TVPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-X4RVPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS5366-X12VPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-X4VPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4441-X36RPE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4441-X36RE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS4466-X4RWE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-X4WE &lt;=T_61.8.0.4_LPR-r3 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C2964-RFLPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C2972-RFLPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C2966-RFLWPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2866-X4TPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2866-X4TVPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2866-X4TGPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2841-X36TPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2841-X36TPC/W &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2867-X5TPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS2961-X12TPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>TS8266-FPC/P &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C2966-X12RLPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C2966-X12RLVPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C5366-X12LPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C5366-X12LVPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-C5361-X12LPC &lt;=T_45.8.0.3-r9 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx66-xxxxGOPC &lt;=45.8.0.2-AIoT-r4 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>SC211 &lt;=C_21.1.0.8-r4 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>SP111 &lt;=52.8.0.4-r5 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx66-RFIPKG1 &lt;=63.8.0.4-r1-NX (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx72-RFIPKG1 &lt;=63.8.0.4-r1-NX (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx66-FIPKG1 &lt;=63.8.0.4-r1-NX (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>MS-Cxx72-FIPKG1 &lt;=63.8.0.4-r1-NX (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   Milesight   Milesight Cameras   Authorization Bypass Through User-Controlled Key, Use of Hard-coded Credentials, Use of Hard-coded Cryptographic Key, Improper Neutralization of Special Elements used in an OS Command (&#39;OS Command Injection&#39;), Heap-based Buffer Overflow           Background     Critical Infrastructure Sectors: Commercial Facilities</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: China</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-28747     A weak key generation vulnerability exists in specific firmware versions of Milesight AIOT cameras.</p></div>
+      <div class="detail-links">
+        <a href="../articles/07c9df2e3d83a189.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="intrado 911 emergency gateway (egw)"
+       data-id="2413772b805a0f4d"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Intrado 911 Emergency Gateway (EGW)</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to read, modify, or delete files. The following versions of Intrado 911 Emergency Gateway (EGW) are affected:</p>
+<p>Emergency Gateway 7.x (CVE-2026-6074)</p>
+<p>Emergency Gateway 6.x (CVE-2026-6074)</p>
+<p>Emergency Gateway 5.x (CVE-2026-6074)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   Intrado   Intrado 911 Emergency Gateway (EGW)   Path Traversal: &#39;.../...//&#39;           Background     Critical Infrastructure Sectors: Emergency Services</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-6074     A path traversal condition in Intrado 911 Emergency Gateway could allow an attacker with existing network access the ability to access the EGW management interface without authentication.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2413772b805a0f4d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-06" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="spicejet online booking system"
+       data-id="28c83b9f8d8c383e"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">SpiceJet Online Booking System</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information. The following versions of SpiceJet Online Booking System are affected:</p>
+<p>Online Booking System vers:all/* (CVE-2026-6375, CVE-2026-6376)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.5   SpiceJet   SpiceJet Online Booking System   Authorization Bypass Through User-Controlled Key, Missing Authentication for Critical Function           Background     Critical Infrastructure Sectors: Transportation Systems</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: India</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-6375     A vulnerability in SpiceJet&#39;s booking API allows unauthenticated users to query passenger name records (PNRs) without any access controls.</p></div>
+      <div class="detail-links">
+        <a href="../articles/28c83b9f8d8c383e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors=""
@@ -524,190 +890,6 @@
       <div class="detail-links">
         <a href="../articles/57a06df153de7bbf.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/regular-password-resets-arent-as-safe-as-you-think/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="&#39;zealot&#39; shows what ai&#39;s capable of in staged cloud attack"
-       data-id="b30f941b16ff4f51"
-       data-published="2026-04-23T10:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-23T10:00:00+00:00" title="23 April 2026, 05:00">23 April 2026, 05:00</time>
-      </div>
-      <h3 class="card-title">&#39;Zealot&#39; Shows What AI&#39;s Capable of in Staged Cloud Attack</h3>
-      <p class="card-summary">The proof of concept revealed AI-based attacks unfold too fast for human defenders to respond, and that AI evinced more autonomous behavior than expected.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/b30f941b16ff4f51.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/zealot-shows-ai-execute-full-cloud-attacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft: some teams users can’t join meetings after edge update"
-       data-id="23296e9fbce645ee"
-       data-published="2026-04-23T09:18:10-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-23T09:18:10-04:00" title="23 April 2026, 08:18">23 April 2026, 08:18</time>
-      </div>
-      <h3 class="card-title">Microsoft: Some Teams users can’t join meetings after Edge update</h3>
-      <p class="card-summary">Microsoft confirmed that a recent Microsoft Edge browser update introduced a bug that prevents Windows users from joining Teams meetings. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/23296e9fbce645ee.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-some-teams-users-cant-join-meetings-after-edge-update/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="uk warns of chinese hackers using proxy networks to evade detection"
-       data-id="80a935c99dae4649"
-       data-published="2026-04-23T08:28:39-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-23T08:28:39-04:00" title="23 April 2026, 07:28">23 April 2026, 07:28</time>
-      </div>
-      <h3 class="card-title">UK warns of Chinese hackers using proxy networks to evade detection</h3>
-      <p class="card-summary">The United Kingdom&#39;s National Cyber Security Centre (NCSC-UK) and international partners warned that China-nexus hackers are increasingly using large-scale proxy networks of hijacked consumer devices to evade detection and disguise their malicious…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>The United Kingdom&#39;s National Cyber Security Centre (NCSC-UK) and international partners warned that China-nexus hackers are increasingly using large-scale proxy networks of hijacked consumer devices to evade detection and disguise their malicious activity. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/80a935c99dae4649.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/uk-warns-of-chinese-hackers-using-botnets-of-hijacked-consumer-devices-to-evade-detection/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="apt"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="new gopherwhisper apt group abuses outlook, slack, discord for comms"
-       data-id="df8b8c98fa7bf074"
-       data-published="2026-04-23T08:06:18-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-23T08:06:18-04:00" title="23 April 2026, 07:06">23 April 2026, 07:06</time>
-      </div>
-      <h3 class="card-title">New GopherWhisper APT group abuses Outlook, Slack, Discord for comms</h3>
-      <p class="card-summary">A previously undocumented state-backed threat actor named GopherWhisper is using a Go-based custom toolkit and legitimate services like Microsoft 365 Outlook, Slack, and Discord in attacks against government entities. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">apt</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/df8b8c98fa7bf074.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/new-gopherwhisper-apt-group-abuses-outlook-slack-discord-for-comms/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,patch,vulnerability,zero-day"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="cisa orders feds to patch bluehammer flaw exploited as zero-day"
-       data-id="4e83d621563783d1"
-       data-published="2026-04-23T07:05:57-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-23T07:05:57-04:00" title="23 April 2026, 06:05">23 April 2026, 06:05</time>
-      </div>
-      <h3 class="card-title">CISA orders feds to patch BlueHammer flaw exploited as zero-day</h3>
-      <p class="card-summary">CISA has ordered U.S. federal agencies to patch a Microsoft Defender privilege escalation flaw (dubbed BlueHammer) that has been exploited in zero-day attacks. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/4e83d621563783d1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-microsoft-defender-flaw-exploited-in-zero-day-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="africa relinquishes cyberattack lead to latin america — for now"
-       data-id="f5e898613158c22e"
-       data-published="2026-04-23T07:01:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-04-23T07:01:00+00:00" title="23 April 2026, 02:01">23 April 2026, 02:01</time>
-      </div>
-      <h3 class="card-title">Africa Relinquishes Cyberattack Lead to Latin America — For Now</h3>
-      <p class="card-summary">The volume of cyberattacks targeting Africa declined in the past year, with weekly attacks down 22%, as attackers seemingly shifted their focus to other regions.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/f5e898613158c22e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/threat-intelligence/african-organizations-see-easing-of-cyberattacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

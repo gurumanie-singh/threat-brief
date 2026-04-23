@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">23 April 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
@@ -66,10 +67,11 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
@@ -77,17 +79,81 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="bitwarden cli compromised in ongoing checkmarx supply chain campaign"
+       data-id="8b8de3734688ba29"
+       data-published="2026-04-23T19:12:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-23T19:12:00+05:30" title="23 April 2026, 08:42">23 April 2026, 08:42</time>
+      </div>
+      <h3 class="card-title">Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign</h3>
+      <p class="card-summary">Bitwarden CLI has been compromised as part of the newly discovered and ongoing Checkmarx supply chain campaign, according to new findings from JFrog and Socket.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8b8de3734688ba29.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/bitwarden-cli-compromised-in-ongoing.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="threatsday bulletin: $290m defi hack, macos lotl abuse, proxysmart sim farms +25 new stories"
+       data-id="743144172e328b6a"
+       data-published="2026-04-23T18:47:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-04-23T18:47:00+05:30" title="23 April 2026, 08:17">23 April 2026, 08:17</time>
+      </div>
+      <h3 class="card-title">ThreatsDay Bulletin: $290M DeFi Hack, macOS LotL Abuse, ProxySmart SIM Farms +25 New Stories</h3>
+      <p class="card-summary">You scroll past one incident and see another that feels familiar, like it should have been fixed years ago, but it still works with small changes.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/743144172e328b6a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/threatsday-bulletin-290m-defi-hack.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit,vulnerability"
        data-vendors=""
@@ -182,6 +248,35 @@
       <div class="detail-links">
         <a href="../articles/d053dd753d41e713.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/china-linked-gopherwhisper-infects-12.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Cisco"
+       data-severity="medium"
+       data-title="bad memories still haunt ai agents"
+       data-id="10b21846725ba4de"
+       data-published="2026-04-23T14:30:31+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-04-23T14:30:31+00:00" title="23 April 2026, 09:30">23 April 2026, 09:30</time>
+      </div>
+      <h3 class="card-title">Bad Memories Still Haunt AI Agents</h3>
+      <p class="card-summary">Cisco found and fixed a significant vulnerability in the way Anthropic handles memories, but experts warn that mishandled memory files will continue threaten AI systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/10b21846725ba4de.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/bad-memories-haunt-ai-agents" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -331,6 +426,104 @@
       <div class="detail-links">
         <a href="../articles/759308aacb41c958.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-113a" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="apt,breach,cve,exploit,malware,patch,vulnerability"
+       data-vendors="Cisco,Linux"
+       data-severity="critical"
+       data-title="firestarter backdoor"
+       data-id="6a25d8a4a706afa1"
+       data-published="2026-04-23T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-04-23T12:00:00+00:00" title="23 April 2026, 07:00">23 April 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">FIRESTARTER Backdoor</h3>
+      <p class="card-summary">Malware Analysis Report at a Glance</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Malware Analysis Report at a Glance         Malware Name   FIRESTARTER       Original Publication   April 23, 2026       Executive Summary     The Cybersecurity and Infrastructure Security Agency (CISA) analyzed a sample of FIRESTARTER malware obtained from a forensic investigation. CISA and the United Kingdom National Cyber Security Centre (NCSC) assess advanced persistent threat (APT) actors are using FIRESTARTER malware for persistence, specifically targeting publicly accessible Cisco Firepower and Secure Firewall devices running Adaptive Security Appliance (ASA) or Firepower Threat Defense (FTD) software.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6a25d8a4a706afa1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/analysis-reports/ar26-113a" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="cosmetics giant rituals discloses data breach affecting customers"
+       data-id="00bbbc2751b716e9"
+       data-published="2026-04-23T10:16:21-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-23T10:16:21-04:00" title="23 April 2026, 09:16">23 April 2026, 09:16</time>
+      </div>
+      <h3 class="card-title">Cosmetics giant Rituals discloses data breach affecting customers</h3>
+      <p class="card-summary">Dutch cosmetics giant Rituals disclosed a data breach after attackers stole the personal information of an undisclosed number of customers from its &#34;My Rituals&#34; membership database. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/00bbbc2751b716e9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cosmetics-giant-rituals-discloses-data-breach-affecting-customers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="regular password resets aren’t as safe as you think"
+       data-id="57a06df153de7bbf"
+       data-published="2026-04-23T10:10:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-23T10:10:20-04:00" title="23 April 2026, 09:10">23 April 2026, 09:10</time>
+      </div>
+      <h3 class="card-title">Regular Password Resets Aren’t as Safe as You Think</h3>
+      <p class="card-summary">Password resets are one of the easiest ways for attackers to bypass security controls. Specops Software shows how helpdesk social engineering turns a seemingly legitimate reset request into full account compromise. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/57a06df153de7bbf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/regular-password-resets-arent-as-safe-as-you-think/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

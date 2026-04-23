@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIRESTARTER Backdoor — Threat Brief</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <div class="article-page">
+    <a href="../daily/2026-04-23.html" class="back-link">← 23 April 2026 briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">CISA Alerts</span>
+        <span class="card-date">23 April 2026, 07:00</span>
+        <span class="card-severity critical">critical</span>
+        <span class="card-action-badge">Action Required</span>
+      </div>
+
+      <h1 class="title">FIRESTARTER Backdoor</h1>
+
+      <p class="subtitle">Malware Analysis Report at a Glance 
+ 
+ 
+ 
+ Malware Name 
+ FIRESTARTER 
+ 
+ 
+ Original Publication 
+ April 23, 2026 
+ 
+ 
+ Executive Summary 
+ 
+ The Cybersecurity and Infrastructure Security Agency (CISA) analyzed a sample of FIRESTARTER malware obtained from a forensic investigation. Tracked as CVE-2025-20333, CVE-2025-20362. Severity is rated critical.</p>
+
+      <div class="article-action-banner">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        This item may require immediate action — see Mitigation section below
+      </div>
+
+      <div class="article-tags">
+        <span class="vendor-tag">Cisco</span>
+        <span class="vendor-tag">Linux</span>
+        <span class="tag">apt</span>
+        <span class="tag">breach</span>
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">patch</span>
+        <span class="tag">vulnerability</span>
+      </div>
+
+      <ul class="article-cve-list">
+        <li class="article-cve" data-cve="CVE-2025-20333">CVE-2025-20333<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2025-20333"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+        <li class="article-cve" data-cve="CVE-2025-20362">CVE-2025-20362<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2025-20362"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+      </ul>
+    </header>
+
+    <div class="quick-take">
+      <div class="quick-take-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Quick Take
+      </div>
+      <p class="quick-take-text">Malware Analysis Report at a Glance 
+ 
+ 
+ 
+ Malware Name 
+ FIRESTARTER 
+ 
+ 
+ Original Publication 
+ April 23, 2026 
+ 
+ 
+ Executive Summary 
+ 
+ The Cybersecurity and Infrastructure Security Agency (CISA) analyzed a…</p>
+      <p class="quick-take-action">Action recommended — see Mitigation section below.</p>
+    </div>
+
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
+        <div class="article-section-content">
+          <p>Malware Analysis Report at a Glance         Malware Name   FIRESTARTER       Original Publication   April 23, 2026       Executive Summary     The Cybersecurity and Infrastructure Security Agency (CISA) analyzed a sample of FIRESTARTER malware obtained from a forensic investigation. CISA and the United Kingdom National Cyber Security Centre (NCSC) assess advanced persistent threat (APT) actors are using FIRESTARTER malware for persistence, specifically targeting publicly accessible Cisco Firepower and Secure Firewall devices running Adaptive Security Appliance (ASA) or Firepower Threat Defense (FTD) software.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
+        <div class="article-section-content">
+          <p>CISA and the United Kingdom National Cyber Security Centre (NCSC) assess that FIRESTARTER—a backdoor that allows remote access and control—is part of a widespread campaign that afforded an advanced persistent threat (APT) actor initial access to Cisco Adaptive Security Appliance (ASA) firmware by exploiting CVE-2025-20333 [ CWE-862: Missing Authorization ] and/or CVE-2025-20362 [ CWE-120: Classic Buffer Overflow ]. CISA’s analysis identified the following:</p>
+<p>Initial Access: CISA assesses, but has not confirmed, that APT actors obtained initial access by exploiting CVE-2025-20333 and/or CVE-2025-20362 [ T1190 ]. YARA Rules       FIRESTARTER Rule 1           rule CISA_261290_01 : FIRESTARTER backdoor captures_system_state_data cleans_traces_of_infection fingerprints_host persists_after_system_reboot {  meta:  author = &#34;CISA Code &amp; Media Analysis&#34;  incident = &#34;261290&#34;  date = &#34;2026-4-3&#34;  last_modified = &#34;20260406_732&#34;  actor = &#34;n/a&#34;  family = &#34;n/a&#34;  capabilities = &#34;captures-system-state-data cleans-traces-of-infection fingerprints-host persists-after-system-reboot&#34;  malware_type = &#34;backdoor&#34;  tool_type = &#34;unknown&#34;  description = &#34;Detects CISCO Firepower FIRESTARTER injector samples&#34;  strings:  $s1 = { 57 48 C1 EF 0C 48 C1 E7 0C BA 07 00 00 00 48 C7 C6 00 20 00 00 }  $s2 = { 2f 6f 70 74 2f 63 69 73 63 6f 2f 70 6c 61 74 66 6f 72 6d 2f 6c 6f 67 73 2f 76 61 72 2f 6c 6f 67 2f }  $s3 = { 2f 6f 70 74 2f 63 69 73 63 6f 2f 63 6f 6e 66 69 67 2f 70 6c 61 74 66 6f 72 6d 2f 72 6d 64 62 2f }  $s4 = { 2f 76 61 72 2f 72 75 6e 2f 72 75 6e 6c 65 76 65 6c}  $s5 = { 2f 70 72 6f 63 2f 25 73 2f 63 6f 6d 6d }  $s6 = { 2f 70 72 6f 63 2f 25 64 2f 6d 61 70 73 }  $s7 = { 2f 61 73 61 2f 62 69 6e 2f 6c 69 6e 61 }  condition:  5 of them }               FIRESTARTER Rule 2           rule CISA_261290_02 : FIRESTARTER_shellcode backdoor captures_system_state_data cleans_traces_of_infection fingerprints_host persists_after_system_reboot {  meta:  author = &#34;CISA Code &amp; Media Analysis&#34;  incident = &#34;261290&#34;  date = &#34;2026-4-3&#34;  last_modified = &#34;20260406_732&#34;  actor = &#34;n/a&#34;  family = &#34;n/a&#34;  capabilities = &#34;captures-system-state-data cleans-traces-of-infection fingerprints-host persists-after-system-reboot&#34;  malware_type = &#34;backdoor&#34;  tool_type = &#34;unknownk&#34;  description = &#34;Detects CISCO Firepower FIRESTARTER_shellcode samples&#34;  strings:  $1 = { 57 4C 8B 47 18 4D 85 C0 0F 84 C7 01 00 00 49 8B 38 48 85 FF }  $2 = { 48 83 C6 08 4C 39 C6 0F 87 7A 01 00 00 4C 8B 0E }  $3 = { 48 89 D7 4C 89 CE B9 D0 01 00 F3 A4 48 89 D7 57 48 C1 EF 0C 48 C1 E7 0C }  $4 = { 0F 05 58 5F FF E0 90 90 }  condition:  3 of them }         Sigma Rules   Given the nature of this malware, Sigma rules do not offer effective detection because it does not generate observable log events or behavioral anomalies in standard monitoring platforms. If the core dump indicates the presence of FIRESTARTER malware, proceed with steps 3 and 4 below; additionally, activate internal incident response plans to assess potential lateral movement and impact:</p>
+<p>Unplug the device from all power sources—CISA assesses this is the only method to remove FIRESTARTER’s persistence from a device—then conduct the following steps:    Locate the physical device.</p>
+<p>Referenced vulnerabilities: CVE-2025-20333, CVE-2025-20362.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
+        <div class="article-section-content">
+          <p>Intended Audience     Organizations: Government and critical infrastructure organizations ( Note: While this publication supplements CISA ED 25-03, the guidance is applicable to all organizations, including U.K. organizations.)</p>
+<p>Sector : Government Services and Facilities Sector</p>
+<p>Roles: Digital forensics analysts , incident responders , vulnerability analysts , system administrators</p>
+<p>Introduction   The Cybersecurity and Infrastructure Security Agency (CISA) analyzed a sample of FIRESTARTER malware obtained from a forensic investigation. Routine password changes invalidate credentials that threat actors may have compromised, forcing them to reestablish access and increasing the likelihood of detection or disruption. LINE VIPER enabled APT actors access to all configuration elements of the victim Firepower device, including administrative credentials, certificates, and private keys [ T1082 ].</p>
+<p>Assessed severity: CRITICAL.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
+        <div class="article-section-content">
+          <p>Key Actions for All Other Organizations       Use the YARA rules to detect FIRESTARTER malware against either a disk image or core dump of a device. Recommendations   CISA and the NCSC recommend using the following CISA-created YARA rules to detect FIRESTARTER when applied to a disk image or a core dump from a device:</p>
+<p>To obtain a disk image, open a Cisco Technical Assistance Center (TAC) case . YARA Rules       FIRESTARTER Rule 1           rule CISA_261290_01 : FIRESTARTER backdoor captures_system_state_data cleans_traces_of_infection fingerprints_host persists_after_system_reboot {  meta:  author = &#34;CISA Code &amp; Media Analysis&#34;  incident = &#34;261290&#34;  date = &#34;2026-4-3&#34;  last_modified = &#34;20260406_732&#34;  actor = &#34;n/a&#34;  family = &#34;n/a&#34;  capabilities = &#34;captures-system-state-data cleans-traces-of-infection fingerprints-host persists-after-system-reboot&#34;  malware_type = &#34;backdoor&#34;  tool_type = &#34;unknown&#34;  description = &#34;Detects CISCO Firepower FIRESTARTER injector samples&#34;  strings:  $s1 = { 57 48 C1 EF 0C 48 C1 E7 0C BA 07 00 00 00 48 C7 C6 00 20 00 00 }  $s2 = { 2f 6f 70 74 2f 63 69 73 63 6f 2f 70 6c 61 74 66 6f 72 6d 2f 6c 6f 67 73 2f 76 61 72 2f 6c 6f 67 2f }  $s3 = { 2f 6f 70 74 2f 63 69 73 63 6f 2f 63 6f 6e 66 69 67 2f 70 6c 61 74 66 6f 72 6d 2f 72 6d 64 62 2f }  $s4 = { 2f 76 61 72 2f 72 75 6e 2f 72 75 6e 6c 65 76 65 6c}  $s5 = { 2f 70 72 6f 63 2f 25 73 2f 63 6f 6d 6d }  $s6 = { 2f 70 72 6f 63 2f 25 64 2f 6d 61 70 73 }  $s7 = { 2f 61 73 61 2f 62 69 6e 2f 6c 69 6e 61 }  condition:  5 of them }               FIRESTARTER Rule 2           rule CISA_261290_02 : FIRESTARTER_shellcode backdoor captures_system_state_data cleans_traces_of_infection fingerprints_host persists_after_system_reboot {  meta:  author = &#34;CISA Code &amp; Media Analysis&#34;  incident = &#34;261290&#34;  date = &#34;2026-4-3&#34;  last_modified = &#34;20260406_732&#34;  actor = &#34;n/a&#34;  family = &#34;n/a&#34;  capabilities = &#34;captures-system-state-data cleans-traces-of-infection fingerprints-host persists-after-system-reboot&#34;  malware_type = &#34;backdoor&#34;  tool_type = &#34;unknownk&#34;  description = &#34;Detects CISCO Firepower FIRESTARTER_shellcode samples&#34;  strings:  $1 = { 57 4C 8B 47 18 4D 85 C0 0F 84 C7 01 00 00 49 8B 38 48 85 FF }  $2 = { 48 83 C6 08 4C 39 C6 0F 87 7A 01 00 00 4C 8B 0E }  $3 = { 48 89 D7 4C 89 CE B9 D0 01 00 F3 A4 48 89 D7 57 48 C1 EF 0C 48 C1 E7 0C }  $4 = { 0F 05 58 5F FF E0 90 90 }  condition:  3 of them }         Sigma Rules   Given the nature of this malware, Sigma rules do not offer effective detection because it does not generate observable log events or behavioral anomalies in standard monitoring platforms. CISA and the United Kingdom National Cyber Security Centre (NCSC) assess advanced persistent threat (APT) actors are using FIRESTARTER malware for persistence, specifically targeting publicly accessible Cisco Firepower and Secure Firewall devices running Adaptive Security Appliance (ASA) or Firepower Threat Defense (FTD) software.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Context / Trends</div>
+        <div class="article-section-content">
+          <p>This fits the broader data-exposure trend where follow-on abuse of leaked information is common.</p>
+        </div>
+      </div>
+
+
+      <a href="https://www.cisa.gov/news-events/analysis-reports/ar26-113a" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at CISA Alerts</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

@@ -92,6 +92,32 @@
     "highlighted": false
   },
   {
+    "id": "8d4f4e0de96277dd",
+    "title": "Hackers exploit file upload bug in Breeze Cache WordPress plugin",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
+    "published": "2026-04-23T17:33:45-04:00",
+    "fetched_at": "2026-04-23T21:43:31.926967+00:00",
+    "summary": "Hackers are actively exploiting a critical vulnerability in the Breeze Cache plugin for WordPress that allows uploading arbitrary files on the server without authentication. [...]",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-04-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Hackers are actively exploiting a critical vulnerability in the Breeze Cache plugin for WordPress that allows uploading arbitrary files on the server without authentication. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Hackers are actively exploiting a critical vulnerability in the Breeze Cache plugin for WordPress that allows uploading arbitrary files on the server without authentication. [...]. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "0e024292768d3a9a",
     "title": "[Webinar] Mythos Reality Check: Beating Automated Exploitation at AI Speed",
     "source": "The Hacker News",
@@ -613,43 +639,6 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could crash the device being accessed or allow remote code execution. Tracked as CVE-2026-20766, CVE-2026-27785, CVE-2026-28747.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "2413772b805a0f4d",
-    "title": "Intrado 911 Emergency Gateway (EGW)",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-06",
-    "published": "2026-04-23T12:00:00+00:00",
-    "fetched_at": "2026-04-23T17:18:52.821066+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "patch",
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-04-23",
-    "cves": [
-      "CVE-2026-6074"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to read, modify, or delete files. The following versions of Intrado 911 Emergency Gateway (EGW) are affected:\n\n \n Emergency Gateway 7.x (CVE-2026-6074)\n\n Emergency Gateway 6.x (CVE-2026-6074)\n\n Emergency Gateway 5.x (CVE-2026-6074)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Intrado \n Intrado 911 Emergency Gateway (EGW) \n Path Traversal: '.../...//' \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Emergency Services\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6074 \n \n A path traversal condition in Intrado 911 Emergency Gateway could allow an attacker with existing network access the ability to access the EGW management interface without authentication.",
-      "impact": "The following versions of Intrado 911 Emergency Gateway (EGW) are affected:\n\n \n Emergency Gateway 7.x (CVE-2026-6074)\n\n Emergency Gateway 6.x (CVE-2026-6074)\n\n Emergency Gateway 5.x (CVE-2026-6074)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Intrado \n Intrado 911 Emergency Gateway (EGW) \n Path Traversal: '.../...//' \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Emergency Services\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6074 \n \n A path traversal condition in Intrado 911 Emergency Gateway could allow an attacker with existing network access the ability to access the EGW management interface without authentication. View CVE Details \n\n \n Affected Products \n Intrado 911 Emergency Gateway (EGW) \n \n Vendor: \nIntrado \n Product Version: \nIntrado Emergency Gateway: 7.x, Intrado Emergency Gateway: 6.x, Intrado Emergency Gateway: 5.x \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nIntrado developed and released a software update on March 2nd, 2026, that addresses this issue and has contacted customers to coordinate applying the patch. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "View CVE Details \n\n \n Affected Products \n Intrado 911 Emergency Gateway (EGW) \n \n Vendor: \nIntrado \n Product Version: \nIntrado Emergency Gateway: 7.x, Intrado Emergency Gateway: 6.x, Intrado Emergency Gateway: 5.x \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nIntrado developed and released a software update on March 2nd, 2026, that addresses this issue and has contacted customers to coordinate applying the patch. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to read, modify, or delete files. Tracked as CVE-2026-6074.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

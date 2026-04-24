@@ -1,5 +1,37 @@
 [
   {
+    "id": "d5d652ac2d541e87",
+    "title": "FIRESTARTER Backdoor Hit Federal Cisco Firepower Device, Survives Security Patches",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+    "published": "2026-04-24T22:36:00+05:30",
+    "fetched_at": "2026-04-24T17:49:49.309892+00:00",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has revealed that an unnamed federal civilian agency's Cisco Firepower device running Adaptive Security Appliance (ASA) software was compromised in September 2025 with malware called FIRESTARTER.",
+    "tags": [
+      "apt",
+      "breach",
+      "malware",
+      "patch"
+    ],
+    "day": "2026-04-24",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity and Infrastructure Security Agency (CISA) has revealed that an unnamed federal civilian agency's Cisco Firepower device running Adaptive Security Appliance (ASA) software was compromised in September 2025 with malware called FIRESTARTER.",
+    "quick_take": "Cybersecurity and Infrastructure Security Agency (CISA) has revealed that an unnamed federal civilian agency's Cisco Firepower device running Adaptive Security Appliance (ASA) software was compromised in September…",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) has revealed that an unnamed federal civilian agency's Cisco Firepower device running Adaptive Security Appliance (ASA) software was compromised in September 2025 with malware called FIRESTARTER. FIRESTARTER, per CISA and the U.K.'s National Cyber Security Centre (NCSC), is assessed to be a backdoor designed for remote access and.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "7bfeb4a76582bc6a",
     "title": "NASA Employees Duped in Chinese Phishing Scheme Targeting U.S. Defense Software",
     "source": "The Hacker News",
@@ -171,6 +203,36 @@
     "highlighted": false
   },
   {
+    "id": "4ba46c4223408124",
+    "title": "New ‘Pack2TheRoot’ flaw gives hackers root Linux access",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/new-pack2theroot-flaw-gives-hackers-root-linux-access/",
+    "published": "2026-04-24T13:28:46-04:00",
+    "fetched_at": "2026-04-24T17:49:49.852656+00:00",
+    "summary": "A new vulnerability dubbed Pack2TheRoot could be exploited in the PackageKit daemon to allow local Linux users to install or remove system packages and gain root permissions. [...]",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-04-24",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A new vulnerability dubbed Pack2TheRoot could be exploited in the PackageKit daemon to allow local Linux users to install or remove system packages and gain root permissions. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A new vulnerability dubbed Pack2TheRoot could be exploited in the PackageKit daemon to allow local Linux users to install or remove system packages and gain root permissions. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A new vulnerability dubbed Pack2TheRoot could be exploited in the PackageKit daemon to allow local Linux users to install or remove system packages and gain root permissions. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "67efaa2e98c1c21b",
     "title": "North Korea's Lazarus Targets macOS Users via ClickFix",
     "source": "Dark Reading",
@@ -223,6 +285,42 @@
       "impact": "The vulnerability, tracked as CVE-2026-33626 (CVSS score: 7.5), relates to a Server-Side Request Forgery (SSRF) vulnerability that could be exploited to access sensitive data.\n\"A server-side\n\nAssessed severity: HIGH. CVSS score: 7.5/10."
     },
     "email_summary": "A high-severity security flaw in LMDeploy, an open-source toolkit for compressing, deploying, and serving LLMs, has come under active exploitation in the wild less than 13 hours after its public disclosure. Tracked as CVE-2026-33626. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "44a6c4eec903021d",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/04/24/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "published": "2026-04-24T12:00:00+00:00",
+    "fetched_at": "2026-04-24T17:50:04.685495+00:00",
+    "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-24",
+    "cves": [
+      "CVE-2024-57726",
+      "CVE-2024-57728",
+      "CVE-2024-7399",
+      "CVE-2025-29635"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "quick_take": "",
+    "sections": {
+      "impact": "CVE-2024-7399 Samsung MagicINFO 9 Server Path Traversal Vulnerability\n\n CVE-2024-57726 SimpleHelp Missing Authorization Vulnerability\n\n CVE-2024-57728 SimpleHelp Path Traversal Vulnerability\n\n CVE-2025-29635 D-Link DIR-823X Command Injection Vulnerability \n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats."
+    },
+    "email_summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2024-57726, CVE-2024-57728, CVE-2024-7399. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

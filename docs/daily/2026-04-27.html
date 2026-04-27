@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 April 2026</h1>
-      <span class="brief-sub">9 articles</span>
+      <span class="brief-sub">15 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -47,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -68,14 +71,75 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags=""
+       data-vendors=""
+       data-severity="high"
+       data-title="checkmarx confirms github repository data posted on dark web after march 23 attack"
+       data-id="e0415cacb50684af"
+       data-published="2026-04-27T19:49:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-04-27T19:49:00+05:30" title="27 April 2026, 09:19">27 April 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">Checkmarx Confirms GitHub Repository Data Posted on Dark Web After March 23 Attack</h3>
+      <p class="card-summary">Checkmarx has disclosed that its ongoing investigation tied to the supply chain security incident has revealed that a cybercriminal group published data related to the company on the dark web.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e0415cacb50684af.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="weekly recap: fast16 malware, xchat launch, federal backdoor, ai employee tracking &amp; more"
+       data-id="664e6d3ca70fccd4"
+       data-published="2026-04-27T19:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-27T19:00:00+05:30" title="27 April 2026, 08:30">27 April 2026, 08:30</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Fast16 Malware, XChat Launch, Federal Backdoor, AI Employee Tracking &amp; More</h3>
+      <p class="card-summary">Everything is dumb again. This week feels broken in a very familiar way.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/664e6d3ca70fccd4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors=""
@@ -257,6 +321,130 @@
       <div class="detail-links">
         <a href="../articles/c23003bbd812dffd.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="pypi package with 1.1m monthly downloads hacked to push infostealer"
+       data-id="13bdba9a540ed80d"
+       data-published="2026-04-27T11:17:37-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-27T11:17:37-04:00" title="27 April 2026, 10:17">27 April 2026, 10:17</time>
+      </div>
+      <h3 class="card-title">PyPI package with 1.1M monthly downloads hacked to push infostealer</h3>
+      <p class="card-summary">An attacker pushed a malicious version of the popular elementary-data package Python Package Index (PyPI) to steal sensitive developer data and cryptocurrency wallets. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/13bdba9a540ed80d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/pypi-package-with-11m-monthly-downloads-hacked-to-push-infostealer/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="home security giant adt data breach affects 5.5 million people"
+       data-id="187e7f4d4579f237"
+       data-published="2026-04-27T10:43:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-27T10:43:11-04:00" title="27 April 2026, 09:43">27 April 2026, 09:43</time>
+      </div>
+      <h3 class="card-title">Home security giant ADT data breach affects 5.5 million people</h3>
+      <p class="card-summary">The ShinyHunters extortion group stole the personal information of 5.5 million individuals after breaching the systems of home security giant ADT earlier this month, according to data breach notification service Have I Been Pwned. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/187e7f4d4579f237.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/home-security-giant-adt-data-breach-affects-55-million-people/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: spotting cyberattacks before they begin"
+       data-id="3103513a63eb37e2"
+       data-published="2026-04-27T10:25:35-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-27T10:25:35-04:00" title="27 April 2026, 09:25">27 April 2026, 09:25</time>
+      </div>
+      <h3 class="card-title">Webinar: Spotting cyberattacks before they begin</h3>
+      <p class="card-summary">On Thursday, April 30 at 2:00 PM ET, BleepingComputer will host a live webinar with threat intelligence company Flare and threat intelligence researcher Tammy Harper, exploring how security teams can identify early warning signs of attacks before they…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>On Thursday, April 30 at 2:00 PM ET, BleepingComputer will host a live webinar with threat intelligence company Flare and threat intelligence researcher Tammy Harper, exploring how security teams can identify early warning signs of attacks before they escalate into incidents. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/3103513a63eb37e2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-spotting-cyberattacks-before-they-begin/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="medtronic confirms breach after hackers claim 9 million records theft"
+       data-id="67cce317a320dd8e"
+       data-published="2026-04-27T09:50:42-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-27T09:50:42-04:00" title="27 April 2026, 08:50">27 April 2026, 08:50</time>
+      </div>
+      <h3 class="card-title">Medtronic confirms breach after hackers claim 9 million records theft</h3>
+      <p class="card-summary">Medical device giant Medtronic disclosed last week that hackers breached its network and accessed data in &#34;certain corporate IT systems.&#34; [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/67cce317a320dd8e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/medtronic-confirms-breach-after-hackers-claim-9-million-records-theft/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

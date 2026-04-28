@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">28 April 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
@@ -49,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -65,22 +66,118 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware,ransomware"
+       data-vendors="Linux,Microsoft,VMware"
+       data-severity="high"
+       data-title="vect 2.0 ransomware irreversibly destroys files over 131kb on windows, linux, esxi"
+       data-id="e42242a6ebf636b1"
+       data-published="2026-04-28T19:31:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-28T19:31:00+05:30" title="28 April 2026, 09:01">28 April 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">VECT 2.0 Ransomware Irreversibly Destroys Files Over 131KB on Windows, Linux, ESXi</h3>
+      <p class="card-summary">Threat hunters are warning that the cybercriminal operation known as VECT 2.0 acts more like a wiper than a ransomware due to a critical flaw in its encryption implementation across Windows, Linux, and ESXi variants that renders recovery impossible even…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat hunters are warning that the cybercriminal operation known as VECT 2.0 acts more like a wiper than a ransomware due to a critical flaw in its encryption implementation across Windows, Linux, and ESXi variants that renders recovery impossible even for the threat actors.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e42242a6ebf636b1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="why secure data movement is the zero trust bottleneck nobody talks about"
+       data-id="75a871a59ee1e22e"
+       data-published="2026-04-28T17:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-28T17:28:00+05:30" title="28 April 2026, 06:58">28 April 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">Why Secure Data Movement Is the Zero Trust Bottleneck Nobody Talks About</h3>
+      <p class="card-summary">Every security program is betting on the same assumption: once a system is connected, the problem is solved. Open a ticket, stand up a gateway, push the data through.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/75a871a59ee1e22e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/why-secure-data-movement-is-zero-trust.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical unpatched flaw leaves hugging face lerobot open to unauthenticated rce"
+       data-id="34817c05047ee41d"
+       data-published="2026-04-28T16:48:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-28T16:48:00+05:30" title="28 April 2026, 06:18">28 April 2026, 06:18</time>
+      </div>
+      <h3 class="card-title">Critical Unpatched Flaw Leaves Hugging Face LeRobot Open to Unauthenticated RCE</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a critical security flaw impacting LeRobot, Hugging Face&#39;s open-source robotics platform with nearly 24,000 GitHub stars, that could be exploited to achieve remote code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/34817c05047ee41d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit,patch,vulnerability"
        data-vendors=""
@@ -111,6 +208,35 @@
       <div class="detail-links">
         <a href="../articles/ee2c85a269ba462e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/after-mythos-new-playbooks-for-zero.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="fresh wave of glassworm vs code extensions slices through supply chain"
+       data-id="e7efecfd1d19805b"
+       data-published="2026-04-28T14:59:24+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-04-28T14:59:24+00:00" title="28 April 2026, 09:59">28 April 2026, 09:59</time>
+      </div>
+      <h3 class="card-title">Fresh Wave of GlassWorm VS Code Extensions Slices Through Supply Chain</h3>
+      <p class="card-summary">Attackers continue to scale a campaign to seed Open VSX with seemingly benign VS Code extensions that spread self-propagating malware.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e7efecfd1d19805b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/fresh-glassworm-vs-code-extensions-supply-chain" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -177,6 +303,34 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="us reportedly charges scattered spider hacker arrested in finland"
+       data-id="a409818502d85e38"
+       data-published="2026-04-28T11:39:52-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-28T11:39:52-04:00" title="28 April 2026, 10:39">28 April 2026, 10:39</time>
+      </div>
+      <h3 class="card-title">US reportedly charges Scattered Spider hacker arrested in Finland</h3>
+      <p class="card-summary">A 19-year-old dual United States and Estonian citizen arrested in Finland earlier this month faces federal charges in the U.S. alleging he was a prolific member of the notorious Scattered Spider hacking collective. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a409818502d85e38.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/us-reportedly-charges-scattered-spider-hacker-arrested-in-finland/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--medium"
        data-tags="cve,exploit,patch,vulnerability"
        data-vendors="Microsoft"
@@ -209,6 +363,93 @@
       <div class="detail-links">
         <a href="../articles/d3fffad1d18a4509.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="checkmarx confirms lapsus$ hackers leaked its stolen github data"
+       data-id="7aba9642a94cd00d"
+       data-published="2026-04-28T10:50:40-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-28T10:50:40-04:00" title="28 April 2026, 09:50">28 April 2026, 09:50</time>
+      </div>
+      <h3 class="card-title">Checkmarx confirms LAPSUS$ hackers leaked its stolen GitHub data</h3>
+      <p class="card-summary">Application security company Checkmarx has confirmed that the LAPSUS$ threat group leaked data stolen from its private GitHub repository. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7aba9642a94cd00d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/checkmarx-confirms-lapsus-hackers-leaked-its-stolen-github-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft to deprecate legacy tls in exchange online starting july"
+       data-id="14d83ba3545d9f2a"
+       data-published="2026-04-28T09:18:36-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-28T09:18:36-04:00" title="28 April 2026, 08:18">28 April 2026, 08:18</time>
+      </div>
+      <h3 class="card-title">Microsoft to deprecate legacy TLS in Exchange Online starting July</h3>
+      <p class="card-summary">Microsoft says it will start blocking legacy TLS connections for POP and IMAP email clients in Exchange Online starting in July 2026. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/14d83ba3545d9f2a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-legacy-tls-in-exchange-online-starting-july/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="inside an opsec playbook: how threat actors evade detection"
+       data-id="2670a80b19f85a13"
+       data-published="2026-04-28T08:50:58-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-28T08:50:58-04:00" title="28 April 2026, 07:50">28 April 2026, 07:50</time>
+      </div>
+      <h3 class="card-title">Inside an OPSEC Playbook: How Threat Actors Evade Detection</h3>
+      <p class="card-summary">Threat actors are now publishing structured OPSEC playbooks to stay undetected. Flare reveals how these guides outline layered infrastructure, identity separation, and long-term evasion strategies. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2670a80b19f85a13.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/inside-an-opsec-playbook-how-threat-actors-evade-detection/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

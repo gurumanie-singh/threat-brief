@@ -1,5 +1,33 @@
 [
   {
+    "id": "582df1a8eb0c1c10",
+    "title": "Brazilian LofyGang Resurfaces After Three Years With Minecraft LofyStealer Campaign",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html",
+    "published": "2026-04-28T23:09:00+05:30",
+    "fetched_at": "2026-04-28T18:16:03.578613+00:00",
+    "summary": "A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot).",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-04-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot).",
+    "quick_take": "A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot).\n\"The malware disguises…",
+    "sections": {
+      "technical": "A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot).\n\"The malware disguises itself as a Minecraft hack called 'Slinky,'\" Brazil-based cybersecurity company ZenoX said in a technical report. \"It uses the official game icon to induce voluntary execution,",
+      "impact": "A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot).\n\"The malware disguises itself as a Minecraft hack called 'Slinky,'\" Brazil-based cybersecurity company ZenoX said in a technical report. \"It uses the official game icon to induce voluntary execution,\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot).\n\"The malware disguises itself as a Minecraft hack called 'Slinky,'\" Brazil-based cybersecurity company ZenoX said in a technical report. \"It uses the official game icon to induce voluntary execution,.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "e42242a6ebf636b1",
     "title": "VECT 2.0 Ransomware Irreversibly Destroys Files Over 131KB on Windows, Linux, ESXi",
     "source": "The Hacker News",
@@ -198,6 +226,43 @@
     "highlighted": false
   },
   {
+    "id": "5e61f51296394e43",
+    "title": "NSA GRASSMARLIN",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-118-01",
+    "published": "2026-04-28T12:00:00+00:00",
+    "fetched_at": "2026-04-28T18:16:05.775998+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-28",
+    "cves": [
+      "CVE-2026-6807"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to disclose sensitive information. The following versions of NSA GRASSMARLIN are affected:\n\n \n GRASSMARLIN vers:all/*\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 5.5 \n NSA \n NSA GRASSMARLIN \n Improper Restriction of XML External Entity Reference \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Information Technology\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6807 \n \n A vulnerability in GRASSMARLIN v3.2.1 allows crafted session data to trigger improper handling of XML input, which may result in unintended exposure of sensitive information.",
+      "impact": "The following versions of NSA GRASSMARLIN are affected:\n\n \n GRASSMARLIN vers:all/*\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 5.5 \n NSA \n NSA GRASSMARLIN \n Improper Restriction of XML External Entity Reference \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Information Technology\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6807 \n \n A vulnerability in GRASSMARLIN v3.2.1 allows crafted session data to trigger improper handling of XML input, which may result in unintended exposure of sensitive information. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CVE Details \n\n \n Affected Products \n NSA GRASSMARLIN \n \n Vendor: \nNSA \n Product Version: \nNSA GRASSMARLIN: vers:all/* \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nNSA has indicated that the GRASSMARLIN project has reached end-of-life status as of 2017 and is no longer supported.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. The project is archived, and no patches or further updates are planned or expected. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to disclose sensitive information. Tracked as CVE-2026-6807.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "a409818502d85e38",
     "title": "US reportedly charges Scattered Spider hacker arrested in Finland",
     "source": "BleepingComputer",
@@ -251,7 +316,12 @@
     },
     "email_summary": "Microsoft on Monday revised its advisory for a now-patched, high-severity security flaw impacting Windows Shell to acknowledge that it has been actively exploited in the wild. Tracked as CVE-2026-32202.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "CISA Alerts",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/04/28/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      }
+    ],
     "highlighted": false
   },
   {

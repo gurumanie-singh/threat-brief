@@ -137,6 +137,63 @@
     "highlighted": false
   },
   {
+    "id": "7e79fecd25ca8ead",
+    "title": "Official SAP npm packages compromised to steal credentials",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/official-sap-npm-packages-compromised-to-steal-credentials/",
+    "published": "2026-04-29T18:43:44-04:00",
+    "fetched_at": "2026-04-29T22:55:19.329110+00:00",
+    "summary": "Multiple official SAP npm packages were compromised in what is believed to be a TeamPCP supply-chain attack to steal credentials and authentication tokens from developers' systems. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-04-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "SAP"
+    ],
+    "action_required": false,
+    "card_summary": "Multiple official SAP npm packages were compromised in what is believed to be a TeamPCP supply-chain attack to steal credentials and authentication tokens from developers' systems. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Multiple official SAP npm packages were compromised in what is believed to be a TeamPCP supply-chain attack to steal credentials and authentication tokens from developers' systems. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Multiple official SAP npm packages were compromised in what is believed to be a TeamPCP supply-chain attack to steal credentials and authentication tokens from developers' systems. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "595f95e91dc2a344",
+    "title": "Popular WordPress redirect plugin hid dormant backdoor for years",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/popular-wordpress-redirect-plugin-hid-dormant-backdoor-for-years/",
+    "published": "2026-04-29T18:13:15-04:00",
+    "fetched_at": "2026-04-29T22:55:19.329354+00:00",
+    "summary": "The Quick Page/Post Redirect plugin, installed on more than 70,000 WordPress sites, had a backdoor added five years ago that allows injecting arbitrary code into users' sites. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-04-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Quick Page/Post Redirect plugin, installed on more than 70,000 WordPress sites, had a backdoor added five years ago that allows injecting arbitrary code into users' sites. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The Quick Page/Post Redirect plugin, installed on more than 70,000 WordPress sites, had a backdoor added five years ago that allows injecting arbitrary code into users' sites. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "The Quick Page/Post Redirect plugin, installed on more than 70,000 WordPress sites, had a backdoor added five years ago that allows injecting arbitrary code into users' sites. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "7463e1ffdeec2f04",
     "title": "Webinar: How to Automate Exposure Validation to Match the Speed of AI Attacks",
     "source": "The Hacker News",
@@ -502,70 +559,6 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "A single third-party OAuth integration can become a direct path into your environment. Push explains how the Vercel breach shows a compromised OAuth app can lead to widespread impact across downstream customers. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "327d4b6d278f551a",
-    "title": "GitHub fixes RCE flaw that gave access to millions of private repos",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/github-fixes-rce-flaw-that-gave-access-to-millions-of-private-repos/",
-    "published": "2026-04-29T08:41:17-04:00",
-    "fetched_at": "2026-04-29T13:51:57.147220+00:00",
-    "summary": "In early March, GitHub patched a critical remote code execution vulnerability (CVE-2026-3854) that could have allowed attackers to access millions of private repositories. [...]",
-    "tags": [
-      "cve",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-04-29",
-    "cves": [
-      "CVE-2026-3854"
-    ],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "In early March, GitHub patched a critical remote code execution vulnerability (CVE-2026-3854) that could have allowed attackers to access millions of private repositories. [...]",
-    "quick_take": "",
-    "sections": {
-      "technical": "In early March, GitHub patched a critical remote code execution vulnerability (CVE-2026-3854) that could have allowed attackers to access millions of private repositories. [...]\n\nReferenced vulnerabilities: CVE-2026-3854.",
-      "impact": "In early March, GitHub patched a critical remote code execution vulnerability (CVE-2026-3854) that could have allowed attackers to access millions of private repositories. [...]\n\nAssessed severity: CRITICAL."
-    },
-    "email_summary": "In early March, GitHub patched a critical remote code execution vulnerability (CVE-2026-3854) that could have allowed attackers to access millions of private repositories. [...]. Tracked as CVE-2026-3854. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "de74492bb2c5144f",
-    "title": "CISA orders feds to patch Windows flaw exploited as zero-day",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-windows-flaw-exploited-in-zero-day-attacks/",
-    "published": "2026-04-29T06:29:31-04:00",
-    "fetched_at": "2026-04-29T11:27:53.393333+00:00",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to secure their Windows systems against a vulnerability exploited in zero-day attacks. [...]",
-    "tags": [
-      "exploit",
-      "patch",
-      "vulnerability",
-      "zero-day"
-    ],
-    "day": "2026-04-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to secure their Windows systems against a vulnerability exploited in zero-day attacks. [...]",
-    "quick_take": "",
-    "sections": {
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to secure their Windows systems against a vulnerability exploited in zero-day attacks. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

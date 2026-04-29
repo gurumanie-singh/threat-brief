@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 April 2026</h1>
-      <span class="brief-sub">10 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -73,17 +73,47 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new wave of dprk attacks uses ai-inserted npm malware, fake firms, and rats"
+       data-id="6bf43e00f12ecb67"
+       data-published="2026-04-29T20:13:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-29T20:13:00+05:30" title="29 April 2026, 09:43">29 April 2026, 09:43</time>
+      </div>
+      <h3 class="card-title">New Wave of DPRK Attacks Uses AI-Inserted npm Malware, Fake Firms, and RATs</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered malicious code in an npm package after a malicious package as a dependency to the project by Anthropic&#39;s Claude Opus large language model (LLM).</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6bf43e00f12ecb67.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="phishing"
        data-vendors="Microsoft"
@@ -144,6 +174,37 @@
       <div class="detail-links">
         <a href="../articles/33938e79673b121b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/what-to-look-for-in-exposure-management.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="vect 2.0 ransomware acts as wiper, thanks to design error"
+       data-id="2d7fa4894bdc21b7"
+       data-published="2026-04-29T15:23:53+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-04-29T15:23:53+00:00" title="29 April 2026, 10:23">29 April 2026, 10:23</time>
+      </div>
+      <h3 class="card-title">Vect 2.0 Ransomware Acts as Wiper, Thanks to Design Error</h3>
+      <p class="card-summary">The emerging ransomware has been deployed against victims of the TeamPCP supply chain attacks, but organizations should think twice before paying for a decryptor.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2d7fa4894bdc21b7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/vect-ransomware-wiper-design-error" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -241,6 +302,39 @@
     </div>
   </div>
   <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cpanel, whm emergency update fixes critical auth bypass bug"
+       data-id="03fc837fc2ef0f03"
+       data-published="2026-04-29T11:51:44-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-04-29T11:51:44-04:00" title="29 April 2026, 10:51">29 April 2026, 10:51</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">cPanel, WHM emergency update fixes critical auth bypass bug</h3>
+      <p class="card-summary">A critical vulnerability affecting all but the latest versions of cPanel and the WebHost Manager (WHM) dashboard could be exploited to obtain access to the control panel without authentication. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/03fc837fc2ef0f03.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cpanel-whm-emergency-update-fixes-critical-auth-bypass-bug/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors=""
        data-severity="critical"
@@ -272,6 +366,37 @@
       <div class="detail-links">
         <a href="../articles/6696b5a22ef0193f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="european police dismantles €50 million crypto investment fraud ring"
+       data-id="3eeb0c272cdbb6d5"
+       data-published="2026-04-29T10:27:36-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-29T10:27:36-04:00" title="29 April 2026, 09:27">29 April 2026, 09:27</time>
+      </div>
+      <h3 class="card-title">European police dismantles €50 million crypto investment fraud ring</h3>
+      <p class="card-summary">Austrian and Albanian authorities dismantled a criminal ring accused of running a large-scale cryptocurrency investment fraud operation that caused estimated losses of over €50 million ($58.5 million) to victims worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3eeb0c272cdbb6d5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/european-police-dismantles-50-million-crypto-investment-fraud-ring/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 April 2026</h1>
-      <span class="brief-sub">18 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>3 items require immediate action — patches or mitigations available</li>
-        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -66,9 +66,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
@@ -76,8 +76,8 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
@@ -181,6 +181,64 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="reverse engineering with ai unearths high-severity github bug"
+       data-id="027024d38124a7b5"
+       data-published="2026-04-29T20:08:17+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-04-29T20:08:17+00:00" title="29 April 2026, 15:08">29 April 2026, 15:08</time>
+      </div>
+      <h3 class="card-title">Reverse Engineering With AI Unearths High-Severity GitHub Bug</h3>
+      <p class="card-summary">Wiz used an AI reverse-engineering tool to pinpoint a vulnerability that previously would have been too costly and time-consuming to undertake.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/027024d38124a7b5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/reverse-engineering-ai-unearths-high-severity-github-bug" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="ai finds 38 security flaws in electronic health record platform"
+       data-id="ecbe43882ee11722"
+       data-published="2026-04-29T19:32:42+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-04-29T19:32:42+00:00" title="29 April 2026, 14:32">29 April 2026, 14:32</time>
+      </div>
+      <h3 class="card-title">AI Finds 38 Security Flaws in Electronic Health Record Platform</h3>
+      <p class="card-summary">Flaws in OpenEMR&#39;s platform — used by more than 100,000 healthcare providers — enabled database compromise, remote code execution, and data theft.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ecbe43882ee11722.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/ai-finds-38-security-flaws-openemr" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="phishing"
        data-vendors="Microsoft"
@@ -241,6 +299,36 @@
       <div class="detail-links">
         <a href="../articles/33938e79673b121b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/what-to-look-for-in-exposure-management.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="hackers exploit rce flaws in qinglong task scheduler for cryptomining"
+       data-id="9887d300f2f6e6a3"
+       data-published="2026-04-29T16:50:35-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-04-29T16:50:35-04:00" title="29 April 2026, 15:50">29 April 2026, 15:50</time>
+      </div>
+      <h3 class="card-title">Hackers exploit RCE flaws in Qinglong task scheduler for cryptomining</h3>
+      <p class="card-summary">Hackers are exploiting two authentication bypass vulnerabilities in the Qinglong open-source task scheduling tool to deploy cryptominers on developers&#39; servers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9887d300f2f6e6a3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-rce-flaws-in-qinglong-task-scheduler-for-cryptomining/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -627,36 +715,6 @@
       <div class="detail-links">
         <a href="../articles/de74492bb2c5144f.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-windows-flaw-exploited-in-zero-day-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft says backend change broke teams free chat and calls"
-       data-id="21d6770443a1a4ec"
-       data-published="2026-04-29T04:38:07-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-29T04:38:07-04:00" title="29 April 2026, 03:38">29 April 2026, 03:38</time>
-      </div>
-      <h3 class="card-title">Microsoft says backend change broke Teams Free chat and calls</h3>
-      <p class="card-summary">Microsoft is working to resolve a known issue that prevents some Microsoft Teams Free users from chatting and calling others. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/21d6770443a1a4ec.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/microsoft-says-backend-change-broke-teams-free-chat-and-calls/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

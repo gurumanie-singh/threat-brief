@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 April 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">3 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>2 high-severity advisories published today</li>
       </ul>
     </div>
   </div>
@@ -62,6 +62,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
@@ -69,12 +70,43 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="new linux &#39;copy fail&#39; vulnerability enables root access on major distributions"
+       data-id="61baa156d62ab99d"
+       data-published="2026-04-30T14:54:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-04-30T14:54:00+05:30" title="30 April 2026, 04:24">30 April 2026, 04:24</time>
+      </div>
+      <h3 class="card-title">New Linux &#39;Copy Fail&#39; Vulnerability Enables Root Access on Major Distributions</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a Linux local privilege escalation (LPE) flaw that could allow an unprivileged local user to obtain root.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/61baa156d62ab99d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware,vulnerability"
        data-vendors="AWS,Google"

@@ -27,10 +27,18 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 April 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">2 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,13 +47,67 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      </div>
+    </div>
+  </div>
 
+  <div class="article-card card--high"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS,Google"
+       data-severity="high"
+       data-title="google fixes cvss 10 gemini cli ci rce and cursor flaws enable code execution"
+       data-id="e679695d4fc98f21"
+       data-published="2026-04-30T12:37:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-30T12:37:00+05:30" title="30 April 2026, 02:07">30 April 2026, 02:07</time>
+      </div>
+      <h3 class="card-title">Google Fixes CVSS 10 Gemini CLI CI RCE and Cursor Flaws Enable Code Execution</h3>
+      <p class="card-summary">Google has addressed a maximum severity security flaw in Gemini CLI -- the &#34;@google/gemini-cli&#34; npm package and the &#34;google-github-actions/run-gemini-cli&#34; GitHub Actions workflow -- that could have allowed attackers to execute arbitrary commands on host…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Google has addressed a maximum severity security flaw in Gemini CLI -- the &#34;@google/gemini-cli&#34; npm package and the &#34;google-github-actions/run-gemini-cli&#34; GitHub Actions workflow -- that could have allowed attackers to execute arbitrary commands on host systems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e679695d4fc98f21.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""

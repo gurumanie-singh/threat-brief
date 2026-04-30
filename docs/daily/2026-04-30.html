@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 April 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Linux, Google ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -65,22 +67,119 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="threatsday bulletin: sms blaster busts, openemr flaws, 600k roblox hacks and 25 more stories"
+       data-id="477c3d458714105c"
+       data-published="2026-04-30T19:25:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-30T19:25:00+05:30" title="30 April 2026, 08:55">30 April 2026, 08:55</time>
+      </div>
+      <h3 class="card-title">ThreatsDay Bulletin: SMS Blaster Busts, OpenEMR Flaws, 600K Roblox Hacks and 25 More Stories</h3>
+      <p class="card-summary">The internet is noisy this week. We are seeing some wild new tactics, like people using fake cell towers to send scam texts, while some developers are accidentally downloading tools that peek into their private files during a simple install.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/477c3d458714105c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/threatsday-bulletin-sms-blaster-busts.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="new python backdoor uses tunneling service to steal browser and cloud credentials"
+       data-id="79c7bc370bf086e6"
+       data-published="2026-04-30T18:06:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-04-30T18:06:00+05:30" title="30 April 2026, 07:36">30 April 2026, 07:36</time>
+      </div>
+      <h3 class="card-title">New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a stealthy Python-based backdoor framework called DEEP#DOOR that comes with capabilities to establish persistent access and harvest a wide range of sensitive information from compromised hosts.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/79c7bc370bf086e6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="etherrat distribution spoofing administrative tools via github facades"
+       data-id="bbc3d8f94e4f8999"
+       data-published="2026-04-30T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-30T17:00:00+05:30" title="30 April 2026, 06:30">30 April 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">EtherRAT Distribution Spoofing Administrative Tools via GitHub Facades</h3>
+      <p class="card-summary">Intro</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Intro A sophisticated, high-resilience malicious campaign was identified by Atos Threat Research Center (TRC) in March 2026. This operation specifically targets the high-privilege professional accounts of enterprise administrators, DevOps engineers, and security analysts by impersonating administrative utilities they rely on for daily operations.</p></div>
+      <div class="detail-links">
+        <a href="../articles/bbc3d8f94e4f8999.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,vulnerability"
        data-vendors="Linux"
@@ -108,6 +207,69 @@
       <div class="detail-links">
         <a href="../articles/61baa156d62ab99d.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,cve,malware,patch,vulnerability"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="anti-ddos firm heaped attacks on brazilian isps"
+       data-id="5359162afb7972f2"
+       data-published="2026-04-30T14:04:26+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-04-30T14:04:26+00:00" title="30 April 2026, 09:04">30 April 2026, 09:04</time>
+      </div>
+      <h3 class="card-title">Anti-DDoS Firm Heaped Attacks on Brazilian ISPs</h3>
+      <p class="card-summary">A Brazilian tech firm that specializes in protecting networks from distributed denial-of-service (DDoS) attacks has been enabling a botnet responsible for an extended campaign of massive DDoS attacks against other network operators in Brazil,…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A Brazilian tech firm that specializes in protecting networks from distributed denial-of-service (DDoS) attacks has been enabling a botnet responsible for an extended campaign of massive DDoS attacks against other network operators in Brazil, KrebsOnSecurity has learned. The firm s chief executive says the malicious activity resulted from a security breach and was likely the work of a competitor...</p></div>
+      <div class="detail-links">
+        <a href="../articles/5359162afb7972f2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="oracle red bull racing team revs up automation to boost security"
+       data-id="c40678f91985a012"
+       data-published="2026-04-30T13:45:58+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-30T13:45:58+00:00" title="30 April 2026, 08:45">30 April 2026, 08:45</time>
+      </div>
+      <h3 class="card-title">Oracle Red Bull Racing Team Revs Up Automation to Boost Security</h3>
+      <p class="card-summary">While drivers race to shave off seconds on the track, the team&#39;s IT and engineering staff are speeding up how they deliver security.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c40678f91985a012.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/identity-access-management-security/oracle-red-bull-racing-team-revs-up-automation-to-boost-security" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -141,6 +303,68 @@
       <div class="detail-links">
         <a href="../articles/e679695d4fc98f21.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="what happens in the first 24 hours after a new asset goes live"
+       data-id="24f0230a8a897e97"
+       data-published="2026-04-30T10:02:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-04-30T10:02:12-04:00" title="30 April 2026, 09:02">30 April 2026, 09:02</time>
+      </div>
+      <h3 class="card-title">What Happens in the First 24 Hours After a New Asset Goes Live</h3>
+      <p class="card-summary">When a new asset goes live, attackers start scanning within minutes. Sprocket Security shows how automated attacks move from discovery to compromise in under 24 hours. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/24f0230a8a897e97.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/what-happens-in-the-first-24-hours-after-a-new-asset-goes-live/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="new linux ‘copy fail’ flaw gives hackers root on major distros"
+       data-id="88ad7323a9bbddd9"
+       data-published="2026-04-30T09:54:47-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-04-30T09:54:47-04:00" title="30 April 2026, 08:54">30 April 2026, 08:54</time>
+      </div>
+      <h3 class="card-title">New Linux ‘Copy Fail’ flaw gives hackers root on major distros</h3>
+      <p class="card-summary">An exploit has been published for a local privilege escalation vulnerability dubbed &#34;Copy Fail&#34; that impacts Linux kernels released since 2017, allowing an unprivileged local attacker to gain root permissions. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/88ad7323a9bbddd9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-linux-copy-fail-flaw-gives-hackers-root-on-major-distros/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

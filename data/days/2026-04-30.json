@@ -50,6 +50,35 @@
     "highlighted": false
   },
   {
+    "id": "2237e9ac950d7c41",
+    "title": "TeamPCP Hits SAP Packages With 'Mini Shai-Hulud' Attack",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cloud-security/teampcp-sap-packages-mini-shai-hulud",
+    "published": "2026-04-30T21:01:18+00:00",
+    "fetched_at": "2026-04-30T22:02:00.247598+00:00",
+    "summary": "Several npm packages for SAP's cloud application development ecosystem have been compromised as TeamPCP's supply chain attacks broaden.",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-04-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "SAP"
+    ],
+    "action_required": false,
+    "card_summary": "Several npm packages for SAP's cloud application development ecosystem have been compromised as TeamPCP's supply chain attacks broaden.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Several npm packages for SAP's cloud application development ecosystem have been compromised as TeamPCP's supply chain attacks broaden. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "f57b3962d452aefa",
     "title": "Another AI-Assisted Software Scan Yields 9-Year-Old Linux Bug",
     "source": "Dark Reading",
@@ -569,42 +598,6 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to bypass user authentication on OPTIMAX installations that make use of the Azure Active Directory Single-Sign On integration. Tracked as CVE-2025-14510.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "8f1213779925f3ff",
-    "title": "ABB PCM600",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-02",
-    "published": "2026-04-30T12:00:00+00:00",
-    "fetched_at": "2026-04-30T17:19:07.356809+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-04-30",
-    "cves": [
-      "CVE-2018-1002208"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send specially crafted messages to the system node resulting in execution of arbitrary code. The following versions of ABB PCM600 are affected:\n\n \n PCM600 >=1.5|<=2.13 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4.4 \n ABB \n ABB PCM600 \n Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2018-1002208 \n \n A vulnerability exists in the SharpZip.dll included in the product versions listed above.",
-      "impact": "The following versions of ABB PCM600 are affected:\n\n \n PCM600 >=1.5|<=2.13 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4.4 \n ABB \n ABB PCM600 \n Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2018-1002208 \n \n A vulnerability exists in the SharpZip.dll included in the product versions listed above. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CVE Details \n\n \n Affected Products \n ABB PCM600 \n \n Vendor: \nABB \n Product Version: \nABB PCM600: >=1.5|<=2.13 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product version: ABB Protection and control IED manager PCM600 version 2.14.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Vendor fix \nThe following product versions have been fixed: Protection and Control IED manager PCM600 2.14 is a fixed version for CVE-2018-1002208\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 2NGA002813 ABB CYBERSECURITY ADVISORY - PDF version (https://search.abb.com/library/Download.aspx?DocumentID=2NGA002813&LanguageCode=en&DocumentPartId=pdf&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF version (https://psirt.abb.com/csaf/2025/2nga002813.json).\n https://search.abb.com/library/Download.aspx?DocumentID=2NGA002813&LanguageCode=en&DocumentPartId=pdf&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 2NGA002813 ABB CYBERSECURITY ADVISORY - PDF version (https://search.abb.com/library/Download.aspx?DocumentID=2NGA002813&LanguageCode=en&DocumentPartId=pdf&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF version (https://psirt.abb.com/csaf/2025/2nga002813.json).\n https://psirt.abb.com/csaf/2025/2nga002813.json \n\n \n Relevant CWE: CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 4.4 \n MEDIUM \n CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n ABB PSIRT reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). When using earlier PCM600 versions with RE_630, the known vulnerability must be mitigated through system-level defenses. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. View CVE Details \n\n \n Affected Products \n ABB PCM600 \n \n Vendor: \nABB \n Product Version: \nABB PCM600: >=1.5|<=2.13 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product version: ABB Protection and control IED manager PCM600 version 2.14.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send specially crafted messages to the system node resulting in execution of arbitrary code. Tracked as CVE-2018-1002208.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

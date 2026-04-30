@@ -1,5 +1,32 @@
 [
   {
+    "id": "830ea3685c43a478",
+    "title": "PyTorch Lightning Compromised in PyPI Supply Chain Attack to Steal Credentials",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+    "published": "2026-04-30T22:01:00+05:30",
+    "fetched_at": "2026-04-30T17:19:05.583402+00:00",
+    "summary": "In yet another software supply chain attack, threat actors have managed to compromise the popular Python package Lightning to push two malicious versions to conduct credential theft.",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-04-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "In yet another software supply chain attack, threat actors have managed to compromise the popular Python package Lightning to push two malicious versions to conduct credential theft.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "In yet another software supply chain attack, threat actors have managed to compromise the popular Python package Lightning to push two malicious versions to conduct credential theft. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "477c3d458714105c",
     "title": "ThreatsDay Bulletin: SMS Blaster Busts, OpenEMR Flaws, 600K Roblox Hacks and 25 More Stories",
     "source": "The Hacker News",
@@ -209,6 +236,279 @@
     "highlighted": false
   },
   {
+    "id": "91076221431ac77c",
+    "title": "FBI links cybercriminals to sharp surge in cargo theft attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-links-cybercriminals-to-sharp-surge-in-cargo-theft-attacks/",
+    "published": "2026-04-30T12:32:18-04:00",
+    "fetched_at": "2026-04-30T17:19:05.912241+00:00",
+    "summary": "The U.S. Federal Bureau of Investigation (FBI) warned the transportation and logistics industry of a sharp rise in cyber-enabled cargo theft, with estimated losses in the United States and Canada reaching nearly $725 million in 2025. [...]",
+    "tags": [],
+    "day": "2026-04-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Federal Bureau of Investigation (FBI) warned the transportation and logistics industry of a sharp rise in cyber-enabled cargo theft, with estimated losses in the United States and Canada reaching nearly $725 million in 2025. [...]",
+    "quick_take": "Federal Bureau of Investigation (FBI) warned the transportation and logistics industry of a sharp rise in cyber-enabled cargo theft, with estimated losses in the United States and Canada reaching nearly $725 million…",
+    "sections": {
+      "impact": "Federal Bureau of Investigation (FBI) warned the transportation and logistics industry of a sharp rise in cyber-enabled cargo theft, with estimated losses in the United States and Canada reaching nearly $725 million in 2025. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Federal Bureau of Investigation (FBI) warned the transportation and logistics industry of a sharp rise in cyber-enabled cargo theft, with estimated losses in the United States and Canada reaching nearly $725 million in 2025. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e7412642603e1818",
+    "title": "ABB Ability Symphony Plus Engineering",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-06",
+    "published": "2026-04-30T12:00:00+00:00",
+    "fetched_at": "2026-04-30T17:19:07.351507+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-30",
+    "cves": [
+      "CVE-2023-39417",
+      "CVE-2023-5869",
+      "CVE-2024-0985",
+      "CVE-2024-7348"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the products versions listed as affected in the advisory. The ABB S+ Engineering product versions are affected by vulnerabilities in PostgreSQL version 13.11 and earlier versions.",
+      "technical": "The following versions of ABB Ability Symphony Plus Engineering are affected:\n\n \n Ability Symphony Plus 2.2, 2.3, 2.3_RU1, 2.3_RU2, 2.3_RU3, 2.4, 2.4_SP1, 2.4_SP2, 2.4_SP2_RU1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.8 \n ABB \n ABB Ability Symphony Plus Engineering \n Integer Overflow or Wraparound, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'), Time-of-check Time-of-use (TOCTOU) Race Condition, Privilege Dropping / Lowering Errors \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2023-5869 \n \n An attacker running as an authenticated PostgreSQL user can provide crafted data and trigger the integer overflow due to such missing overflow check. Relevant CWE: CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.5 \n HIGH \n CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C \n \n \n \n \n \n \n \n CVE-2024-7348 \n \n A ‘time-of-check time-of-use’ (TOCTOU) race condition in a PostgreSQL can allow an attacker to easily execute arbitrary SQL functions by leveraging a PostgreSQL utility often executed with high privileges. Frequently Asked Questions \n What is the scope of the vulnerability? - An attacker who successfully exploited these vulnerabilities could insert and run arbitrary code in the S+ system. How could an attacker exploit the vulnerability? - To exploit the PostgreSQL vulnerabilities (see Vulnerability severity and details), an attacker should successfully access to the site’s S+ client/server network, remotely (through a wrongly configured or penetrated firewall) or even compromising a local machine and then accessing to PostgreSQL.\n\nReferenced vulnerabilities: CVE-2023-39417, CVE-2023-5869, CVE-2024-0985, CVE-2024-7348.",
+      "impact": "The following versions of ABB Ability Symphony Plus Engineering are affected:\n\n \n Ability Symphony Plus 2.2, 2.3, 2.3_RU1, 2.3_RU2, 2.3_RU3, 2.4, 2.4_SP1, 2.4_SP2, 2.4_SP2_RU1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.8 \n ABB \n ABB Ability Symphony Plus Engineering \n Integer Overflow or Wraparound, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'), Time-of-check Time-of-use (TOCTOU) Race Condition, Privilege Dropping / Lowering Errors \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2023-5869 \n \n An attacker running as an authenticated PostgreSQL user can provide crafted data and trigger the integer overflow due to such missing overflow check. View CVE Details \n\n \n Affected Products \n ABB Ability Symphony Plus Engineering \n \n Vendor: \nABB \n Product Version: \nABB Ability Symphony Plus S+ Engineering 2.2, ABB Ability Symphony Plus S+ Engineering 2.3, ABB Ability Symphony Plus S+ Engineering 2.3 RU1, ABB Ability Symphony Plus S+ Engineering 2.3 RU2, ABB Ability Symphony Plus S+ Engineering 2.3 RU3, ABB Ability Symphony Plus S+ Engineering 2.4, ABB Ability Symphony Plus S+ Engineering 2.4 SP1, ABB Ability Symphony Plus S+ Engineering 2.4 SP2 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nABB advises all customers to review their installations to determine if they are using an impacted product as listed above, no further analysis or tools are needed to make this determination. View CVE Details \n\n \n Affected Products \n ABB Ability Symphony Plus Engineering \n \n Vendor: \nABB \n Product Version: \nABB Ability Symphony Plus S+ Engineering 2.2, ABB Ability Symphony Plus S+ Engineering 2.3, ABB Ability Symphony Plus S+ Engineering 2.3 RU1, ABB Ability Symphony Plus S+ Engineering 2.3 RU2, ABB Ability Symphony Plus S+ Engineering 2.3 RU3, ABB Ability Symphony Plus S+ Engineering 2.4, ABB Ability Symphony Plus S+ Engineering 2.4 SP1, ABB Ability Symphony Plus S+ Engineering 2.4 SP2 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nABB advises all customers to review their installations to determine if they are using an impacted product as listed above, no further analysis or tools are needed to make this determination.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "The recommended immediate actions per product are listed below: - Systems using S+ Engineering 2.2 through 2.4 SP2 should upgrade to S+ Engineering 2.4 SP2 RU1 (re-leased in December 2024) or later. - End users who are unable to install one of these updates should immediately look to implement the Mitigation and Workarounds listed below as this will restrict or prevent an attacker’s ability to com-promise the system. The recommended immediate actions per product are listed below: - Systems using S+ Engineering 2.2 through 2.4 SP2 should upgrade to S+ Engineering 2.4 SP2 RU1 (re-leased in December 2024) or later. - End users who are unable to install one of these updates should immediately look to implement the Mitigation and Workarounds listed below as this will restrict or prevent an attacker’s ability to com-promise the system. The recommended immediate actions per product are listed below: - Systems using S+ Engineering 2.2 through 2.4 SP2 should upgrade to S+ Engineering 2.4 SP2 RU1 (re-leased in December 2024) or later. - End users who are unable to install one of these updates should immediately look to implement the Mitigation and Workarounds listed below as this will restrict or prevent an attacker’s ability to com-promise the system. The recommended immediate actions per product are listed below: - Systems using S+ Engineering 2.2 through 2.4 SP2 should upgrade to S+ Engineering 2.4 SP2 RU1 (re-leased in December 2024) or later. - End users who are unable to install one of these updates should immediately look to implement the Mitigation and Workarounds listed below as this will restrict or prevent an attacker’s ability to com-promise the system."
+    },
+    "email_summary": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the products versions listed as affected in the advisory. Tracked as CVE-2023-39417, CVE-2023-5869, CVE-2024-0985.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "17bd632f8f30ee5c",
+    "title": "ABB AWIN Gateways",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-05",
+    "published": "2026-04-30T12:00:00+00:00",
+    "fetched_at": "2026-04-30T17:19:07.352681+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "apt",
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-30",
+    "cves": [
+      "CVE-2025-13777",
+      "CVE-2025-13778",
+      "CVE-2025-13779"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to remotely reboot the device or complete an unauthenticated query to reveal system configuration, including sensitive…",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to remotely reboot the device or complete an unauthenticated query to reveal system configuration, including sensitive details. The following versions of ABB AWIN Gateways are affected:\n\n \n ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2 2.0-0 \n\n ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2 2.0-1 \n\n ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120 1.2-0 \n\n ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120 1.2-1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.3 \n ABB \n ABB AWIN Gateways \n Authentication Bypass by Capture-replay, Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13777 \n \n An unauthenticated query reveals data.",
+      "technical": "The following versions of ABB AWIN Gateways are affected:\n\n \n ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2 2.0-0 \n\n ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2 2.0-1 \n\n ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120 1.2-0 \n\n ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120 1.2-1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.3 \n ABB \n ABB AWIN Gateways \n Authentication Bypass by Capture-replay, Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13777 \n \n An unauthenticated query reveals data. View CVE Details \n\n \n Affected Products \n ABB AWIN Gateways \n \n Vendor: \nABB \n Product Version: \nABB ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2: 2.0-0, ABB ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2: 2.0-1, ABB ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120: 1.2-0, ABB ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120: 1.2-1 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe following product versions have been fixed:\nABB AWIN Firmware 2.1-0 installed on ABB AWIN GW100 rev. 2 (Product ID: 3BNP102988R1) are fixed versions for CVE-2025-13777\nABB AWIN Firmware2.0-0 installed on ABB AWIN GW120 (Product ID 3BNP103003R1) are fixed versions for CVE-2025-13777\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://psirt.abb.com/csaf/2026/4jno000329.json \n\n \n Relevant CWE: CWE-294 Authentication Bypass by Capture-replay \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.3 \n HIGH \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H \n \n \n \n \n \n \n \n CVE-2025-13778 \n \n An unauthenticated query allows an attacker to remotely reboot the device, potentially causing a denial of service. View CVE Details \n\n \n Affected Products \n ABB AWIN Gateways \n \n Vendor: \nABB \n Product Version: \nABB ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2: 2.0-0, ABB ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2: 2.0-1, ABB ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120: 1.2-0, ABB ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120: 1.2-1 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe following product versions have been fixed:\nABB AWIN Firmware 2.1-0 installed on ABB AWIN GW100 rev. 2 (Product ID: 3BNP102988R1) are fixed versions for CVE-2025-13778\nABB AWIN Firmware2.0-0 installed on ABB AWIN GW120 (Product ID 3BNP103003R1) are fixed versions for CVE-2025-13778\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://psirt.abb.com/csaf/2026/4jno000329.json \n\n \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H \n \n \n \n \n \n \n \n CVE-2025-13779 \n \n An unauthenticated query reveals the system configuration, including sensitive details. View CVE Details \n\n \n Affected Products \n ABB AWIN Gateways \n \n Vendor: \nABB \n Product Version: \nABB ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2: 2.0-0, ABB ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2: 2.0-1, ABB ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120: 1.2-0, ABB ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120: 1.2-1 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe following product versions have been fixed:\nABB AWIN Firmware 2.1-0 installed on ABB AWIN GW100 rev. 2 (Product ID: 3BNP102988R1) are fixed versions for CVE-2025-13779\nABB AWIN Firmware2.0-0 installed on ABB AWIN GW120 (Product ID 3BNP103003R1) are fixed versions for CVE-2025-13779\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://psirt.abb.com/csaf/2026/4jno000329.json \n\n \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.3 \n HIGH \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Fred Alvarez reported these vulnerabilities to ABB\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy).\n\nReferenced vulnerabilities: CVE-2025-13777, CVE-2025-13778, CVE-2025-13779.",
+      "impact": "The following versions of ABB AWIN Gateways are affected:\n\n \n ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2 2.0-0 \n\n ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2 2.0-1 \n\n ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120 1.2-0 \n\n ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120 1.2-1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.3 \n ABB \n ABB AWIN Gateways \n Authentication Bypass by Capture-replay, Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13777 \n \n An unauthenticated query reveals data. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CVE Details \n\n \n Affected Products \n ABB AWIN Gateways \n \n Vendor: \nABB \n Product Version: \nABB ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2: 2.0-0, ABB ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2: 2.0-1, ABB ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120: 1.2-0, ABB ABB AWIN Firmware (1.2-1) installed on ABB AWIN GW120: 1.2-1 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe following product versions have been fixed:\nABB AWIN Firmware 2.1-0 installed on ABB AWIN GW100 rev. 2 (Product ID: 3BNP102988R1) are fixed versions for CVE-2025-13777\nABB AWIN Firmware2.0-0 installed on ABB AWIN GW120 (Product ID 3BNP103003R1) are fixed versions for CVE-2025-13777\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 4JNO000329 ABB CYBERSECURITY ADVISORY - PDF Version https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch, ABB CYBERSECURITY ADVISORY - CSAF Version https://psirt.abb.com/csaf/2026/4jno000329.json.\n https://psirt.abb.com/csaf/2026/4jno000329.json \n\n \n Relevant CWE: CWE-294 Authentication Bypass by Capture-replay \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.3 \n HIGH \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H \n \n \n \n \n \n \n \n CVE-2025-13778 \n \n An unauthenticated query allows an attacker to remotely reboot the device, potentially causing a denial of service.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to remotely reboot the device or complete an unauthenticated query to reveal system configuration, including sensitive details. Tracked as CVE-2025-13777, CVE-2025-13778, CVE-2025-13779.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "77ba1125d64a5d0e",
+    "title": "ABB Edgenius Management Portal",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-03",
+    "published": "2026-04-30T12:00:00+00:00",
+    "fetched_at": "2026-04-30T17:19:07.353540+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-30",
+    "cves": [
+      "CVE-2025-10571"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send a specially crafted message to the system node allowing the attacker to install and run arbitrary code, uninstall…",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send a specially crafted message to the system node allowing the attacker to install and run arbitrary code, uninstall applications, and modify the configuration of installed applications. The following versions of ABB Edgenius Management Portal are affected:\n\n \n Edgenius Management Portal 3.2.0.0|3.2.1.1\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.6 \n ABB \n ABB Edgenius Management Portal \n Authentication Bypass Using an Alternate Path or Channel \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Information Technology\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-10571 \n \n The Edgenius Management Portal in the affected product versions contains a vulnerability that allows authentication to be bypassed.",
+      "impact": "Mitigation \nAll affected products: Workarounds are specific measures that a user can take to help block an attack, for example, temporarily disabling the vulnerable feature may remove the exposure with well-known impact on functionality. The following versions of ABB Edgenius Management Portal are affected:\n\n \n Edgenius Management Portal 3.2.0.0|3.2.1.1\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.6 \n ABB \n ABB Edgenius Management Portal \n Authentication Bypass Using an Alternate Path or Channel \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Information Technology\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-10571 \n \n The Edgenius Management Portal in the affected product versions contains a vulnerability that allows authentication to be bypassed. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Until the upgrade is applied, ABB advises customers to disable the Edgenius Management Portal to mitigate the vulnerability. Mitigation \nAll affected products: Workarounds are specific measures that a user can take to help block an attack, for example, temporarily disabling the vulnerable feature may remove the exposure with well-known impact on functionality. Mitigation \nThe following product versions have been fixed:\nAbility Edgenius 3.2.2.0 is a fixed version for CVE-2025-10571\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 7PAA022088 ABB CYBERSECURITY ADVISORY - PDF version (https://search.abb.com/library/Download.aspx?DocumentID=7PAA022088&LanguageCode=en&DocumentPartId=&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF version (https://psirt.abb.com/csaf/2025/7paa022088.json).\n https://search.abb.com/library/Download.aspx?DocumentID=7PAA022088&LanguageCode=en&DocumentPartId=&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 7PAA022088 ABB CYBERSECURITY ADVISORY - PDF version (https://search.abb.com/library/Download.aspx?DocumentID=7PAA022088&LanguageCode=en&DocumentPartId=&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF version (https://psirt.abb.com/csaf/2025/7paa022088.json).\n https://psirt.abb.com/csaf/2025/7paa022088.json \n\n \n Relevant CWE: CWE-288 Authentication Bypass Using an Alternate Path or Channel \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9.6 \n CRITICAL \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n ABB PSIRT reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send a specially crafted message to the system node allowing the attacker to install and run arbitrary code, uninstall applications, and modify the configuration of installed applications. Tracked as CVE-2025-10571.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "35e23d018e0ec836",
+    "title": "ABB System 800xA, Symphony Plus IEC 61850",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-01",
+    "published": "2026-04-30T12:00:00+00:00",
+    "fetched_at": "2026-04-30T17:19:07.355305+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-04-30",
+    "cves": [
+      "CVE-2025-3756"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n This vulnerability was privately reported relating to ABB’s implementation of the IEC 61850 communication stack for MMS client applications used in some Automation control system products. Note: IEC 61850 communication typically supports MMS and GOOSE protocols.",
+      "technical": "The following versions of ABB System 800xA, Symphony Plus IEC 61850 are affected:\n\n \n AC800M Product line (System 800xA) CI868\n\n Symphony Plus SD Series CI850\n\n Symphony Plus MR (Melody Rack) PM 877\n\n S+ Operations\n\n Firmware <=6.0.0303.0, <=6.1.0031.0 , <=6.1.1004.0 , <=6.1.1202.0 , <=6.2.0006.0 , 6.1.1-3, 7.0, A_0, A_1, A_2.003, A_3.005, A_4.001, B_0.005, C_0, >=3.10|<=3.52, 3.53, 3.3, 2.3, 2.2, 2.1, 3.4 ()\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 6.5 \n ABB \n ABB System 800xA, Symphony Plus IEC 61850 \n Improper Validation of Specified Quantity in Input \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-3756 \n \n A vulnerability exists in the command handling of the IEC 61850 communication stack included in the product revisions listed above. View CSAF \n\n Summary \n This vulnerability was privately reported relating to ABB’s implementation of the IEC 61850 communication stack for MMS client applications used in some Automation control system products. If an attacker gains access to a site’s IEC 61850 network, then exploiting this vulnerability will result in a device fault (PM 877, CI850 and CI868 modules) and will require a manual restart. An attacker with access to IEC 61850 networks could exploit the vulnerability by using a specially crafted 61850 packet, forcing the communication interfaces of the PM 877, CI850 and CI868 modules into fault mode or causing unavailability of the S+ Operations 61850 connectivity, resulting in a denial-of-service situation.\n\nReferenced vulnerabilities: CVE-2025-3756.",
+      "impact": "View CVE Details \n\n \n Affected Products \n ABB System 800xA, Symphony Plus IEC 61850 \n \n Vendor: \nABB \n Product Version: \n \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nABB advises all customers to review their installations to determine if they are using an impacted product as listed above, no further analysis or tools are needed to make this determination. The following versions of ABB System 800xA, Symphony Plus IEC 61850 are affected:\n\n \n AC800M Product line (System 800xA) CI868\n\n Symphony Plus SD Series CI850\n\n Symphony Plus MR (Melody Rack) PM 877\n\n S+ Operations\n\n Firmware <=6.0.0303.0, <=6.1.0031.0 , <=6.1.1004.0 , <=6.1.1202.0 , <=6.2.0006.0 , 6.1.1-3, 7.0, A_0, A_1, A_2.003, A_3.005, A_4.001, B_0.005, C_0, >=3.10|<=3.52, 3.53, 3.3, 2.3, 2.2, 2.1, 3.4 ()\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 6.5 \n ABB \n ABB System 800xA, Symphony Plus IEC 61850 \n Improper Validation of Specified Quantity in Input \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-3756 \n \n A vulnerability exists in the command handling of the IEC 61850 communication stack included in the product revisions listed above. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "It is also advisable to review the Mitigating Factors, Workarounds and General security recommendations sections for additional actions which may help reduce overall risk. Use the recommendations described under “Mitigating factors” or “Recommended immediate actions”. Recommended practices include that process control systems are physically protected, have no direct connections to the Internet, and are separated from other networks by means of a firewall system that has a minimal number of ports exposed. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies."
+    },
+    "email_summary": "View CSAF \n\n Summary \n This vulnerability was privately reported relating to ABB’s implementation of the IEC 61850 communication stack for MMS client applications used in some Automation control system products. Tracked as CVE-2025-3756.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "25466afbf91b903e",
+    "title": "ABB Ability OPTIMAX",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-04",
+    "published": "2026-04-30T12:00:00+00:00",
+    "fetched_at": "2026-04-30T17:19:07.356036+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-30",
+    "cves": [
+      "CVE-2025-14510"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to bypass user authentication on OPTIMAX installations that make use of the Azure Active Directory Single-Sign On integration. The following versions of ABB Ability OPTIMAX are affected:\n\n \n ABB Ability OPTIMAX 6.1 vers:all/* \n\n ABB Ability OPTIMAX 6.2 vers:all/* \n\n ABB Ability OPTIMAX 6.3 <6.3.1-251120 \n\n ABB Ability OPTIMAX 6.4 <6.4.1-251120 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.1 \n ABB \n ABB Ability OPTIMAX \n Incorrect Implementation of Authentication Algorithm \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-14510 \n \n The vulnerability allows an attacker to bypass user authentication on OPTIMAX installations that make use of the Azure Active Directory Single-Sign On integration.",
+      "mitigation": "View CVE Details \n\n \n Affected Products \n ABB Ability OPTIMAX \n \n Vendor: \nABB \n Product Version: \nABB ABB Ability OPTIMAX 6.1: vers:all/*, ABB ABB Ability OPTIMAX 6.2: vers:all/*, ABB ABB Ability OPTIMAX 6.3: <6.3.1-251120, ABB ABB Ability OPTIMAX 6.4: <6.4.1-251120 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe following product versions have been fixed: \n\n Ability OPTIMAX 6.3 6.3.1-251120 is a fixed version for CVE-2025-14510\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 9AKK108472A1331 ABB CYBERSECURITY ADVISORY - PDF Version (https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A1331&LanguageCode=en&DocumentPartId=&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF Version (https://psirt.abb.com/csaf/2026/9akk108472a1331.json).\n https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A1331&LanguageCode=en&DocumentPartId=&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 9AKK108472A1331 ABB CYBERSECURITY ADVISORY - PDF Version (https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A1331&LanguageCode=en&DocumentPartId=&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF Version (https://psirt.abb.com/csaf/2026/9akk108472a1331.json).\n https://psirt.abb.com/csaf/2026/9akk108472a1331.json \n\n \n Relevant CWE: CWE-303 Incorrect Implementation of Authentication Algorithm \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.1 \n HIGH \n CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n ABB PSIRT reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Recognize VPNs may have vulnerabilities, should be updated to the most recent version available, and are only as secure as the connected devices. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to bypass user authentication on OPTIMAX installations that make use of the Azure Active Directory Single-Sign On integration. Tracked as CVE-2025-14510.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "8f1213779925f3ff",
+    "title": "ABB PCM600",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-02",
+    "published": "2026-04-30T12:00:00+00:00",
+    "fetched_at": "2026-04-30T17:19:07.356809+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-04-30",
+    "cves": [
+      "CVE-2018-1002208"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send specially crafted messages to the system node resulting in execution of arbitrary code. The following versions of ABB PCM600 are affected:\n\n \n PCM600 >=1.5|<=2.13 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4.4 \n ABB \n ABB PCM600 \n Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2018-1002208 \n \n A vulnerability exists in the SharpZip.dll included in the product versions listed above.",
+      "impact": "The following versions of ABB PCM600 are affected:\n\n \n PCM600 >=1.5|<=2.13 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4.4 \n ABB \n ABB PCM600 \n Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2018-1002208 \n \n A vulnerability exists in the SharpZip.dll included in the product versions listed above. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CVE Details \n\n \n Affected Products \n ABB PCM600 \n \n Vendor: \nABB \n Product Version: \nABB PCM600: >=1.5|<=2.13 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product version: ABB Protection and control IED manager PCM600 version 2.14.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Vendor fix \nThe following product versions have been fixed: Protection and Control IED manager PCM600 2.14 is a fixed version for CVE-2018-1002208\n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 2NGA002813 ABB CYBERSECURITY ADVISORY - PDF version (https://search.abb.com/library/Download.aspx?DocumentID=2NGA002813&LanguageCode=en&DocumentPartId=pdf&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF version (https://psirt.abb.com/csaf/2025/2nga002813.json).\n https://search.abb.com/library/Download.aspx?DocumentID=2NGA002813&LanguageCode=en&DocumentPartId=pdf&Action=Launch \n\n Mitigation \nFor more information see the associated ABB PSIRT security advisory 2NGA002813 ABB CYBERSECURITY ADVISORY - PDF version (https://search.abb.com/library/Download.aspx?DocumentID=2NGA002813&LanguageCode=en&DocumentPartId=pdf&Action=Launch), ABB CYBERSECURITY ADVISORY - CSAF version (https://psirt.abb.com/csaf/2025/2nga002813.json).\n https://psirt.abb.com/csaf/2025/2nga002813.json \n\n \n Relevant CWE: CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 4.4 \n MEDIUM \n CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n ABB PSIRT reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). When using earlier PCM600 versions with RE_630, the known vulnerability must be mitigated through system-level defenses. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. View CVE Details \n\n \n Affected Products \n ABB PCM600 \n \n Vendor: \nABB \n Product Version: \nABB PCM600: >=1.5|<=2.13 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product version: ABB Protection and control IED manager PCM600 version 2.14.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to send specially crafted messages to the system node resulting in execution of arbitrary code. Tracked as CVE-2018-1002208.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ed03cdb0ff182c85",
+    "title": "April KB5083769 Windows 11 update causes backup software failures",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/april-kb5083769-windows-11-update-causes-backup-software-failures/",
+    "published": "2026-04-30T11:23:03-04:00",
+    "fetched_at": "2026-04-30T17:19:05.912467+00:00",
+    "summary": "The April 2026 KB5083769 security update breaks third-party backup applications from multiple vendors on systems running Windows 11 24H2 and 25H2. [...]",
+    "tags": [
+      "patch"
+    ],
+    "day": "2026-04-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "The April 2026 KB5083769 security update breaks third-party backup applications from multiple vendors on systems running Windows 11 24H2 and 25H2. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The April 2026 KB5083769 security update breaks third-party backup applications from multiple vendors on systems running Windows 11 24H2 and 25H2. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "24f0230a8a897e97",
     "title": "What Happens in the First 24 Hours After a New Asset Goes Live",
     "source": "BleepingComputer",
@@ -317,31 +617,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A joint international operation involving U.S. and Chinese authorities arrested at least 276 suspects and shut down nine cryptocurrency investment fraud centers. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "dd416ed4c1131560",
-    "title": "Claude Mythos Fears Startle Japan's Financial Services Sector",
-    "source": "Dark Reading",
-    "link": "https://www.darkreading.com/cyber-risk/claude-mythos-startle-japans-financial-sector",
-    "published": "2026-04-30T00:00:00+00:00",
-    "fetched_at": "2026-04-30T02:46:04.379716+00:00",
-    "summary": "Global financial institutions are panicked over Anthropic's new superhacker AI model. Cyber experts aren't quite as worried.",
-    "tags": [],
-    "day": "2026-04-30",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Global financial institutions are panicked over Anthropic's new superhacker AI model. Cyber experts aren't quite as worried.",
-    "quick_take": "",
-    "sections": {
-      "impact": "Global financial institutions are panicked over Anthropic's new superhacker AI model.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Global financial institutions are panicked over Anthropic's new superhacker AI model. Cyber experts aren't quite as worried.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

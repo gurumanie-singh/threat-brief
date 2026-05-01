@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">1 May 2026</h1>
-      <span class="brief-sub">16 articles</span>
+      <span class="brief-sub">18 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
@@ -49,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
@@ -66,22 +67,58 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="30,000 facebook accounts hacked via google appsheet phishing campaign"
+       data-id="58814dc66dd2f27d"
+       data-published="2026-05-01T23:39:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-05-01T23:39:00+05:30" title="1 May 2026, 13:09">1 May 2026, 13:09</time>
+      </div>
+      <h3 class="card-title">30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign</h3>
+      <p class="card-summary">A newly discovered Vietnamese-linked operation has been observed using a Google AppSheet as a &#34;phishing relay&#34; to distribute phishing emails with an aim to compromise Facebook accounts.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/58814dc66dd2f27d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing"
        data-vendors=""
@@ -412,6 +449,40 @@
       <div class="detail-links">
         <a href="../articles/0f945ab71e4b87f4.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/20-years-cyber-dark-reading-milestone-special-coverage" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="critical"
+       data-title="cisa adds one known exploited vulnerability to catalog"
+       data-id="a403fe3b5ce175d7"
+       data-published="2026-05-01T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-01T12:00:00+00:00" title="1 May 2026, 07:00">1 May 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a403fe3b5ce175d7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/05/01/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

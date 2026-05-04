@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">4 May 2026</h1>
-      <span class="brief-sub">16 articles</span>
+      <span class="brief-sub">18 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 high-severity advisories published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>Linux ecosystem affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
@@ -49,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -74,11 +75,12 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
@@ -181,6 +183,39 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="exploit cyber-frenzy threatens millions via critical cpanel vulnerability"
+       data-id="ec8a6cc091f24407"
+       data-published="2026-05-04T19:14:14+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-05-04T19:14:14+00:00" title="4 May 2026, 14:14">4 May 2026, 14:14</time>
+      </div>
+      <h3 class="card-title">Exploit Cyber-Frenzy Threatens Millions via Critical cPanel Vulnerability</h3>
+      <p class="card-summary">Shortly after the authentication-bypass flaw was disclosed multiple proof-of-concept exploits appeared, and one researcher claims there&#39;s been zero-day activity for at least a month.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ec8a6cc091f24407.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/exploit-cyber-frenzy-critical-cpanel-vulnerability" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -240,6 +275,37 @@
       <div class="detail-links">
         <a href="../articles/22918d1873cbf4f7.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="amazon ses increasingly abused in phishing to evade detection"
+       data-id="0903480f88656be5"
+       data-published="2026-05-04T16:03:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-04T16:03:28-04:00" title="4 May 2026, 15:03">4 May 2026, 15:03</time>
+      </div>
+      <h3 class="card-title">Amazon SES increasingly abused in phishing to evade detection</h3>
+      <p class="card-summary">The Amazon Simple Email Service (SES) is being increasingly abused to send convincing phishing emails that can bypass standard security filters and render reputation-based blocks ineffective. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0903480f88656be5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/amazon-ses-increasingly-abused-in-phishing-to-evade-detection/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

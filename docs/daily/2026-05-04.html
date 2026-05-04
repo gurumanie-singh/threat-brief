@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">4 May 2026</h1>
-      <span class="brief-sub">12 articles</span>
+      <span class="brief-sub">16 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
+        <li>3 high-severity advisories published today</li>
         <li>Linux ecosystem affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
@@ -65,6 +65,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
@@ -72,17 +73,80 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="phishing campaign hits 80+ orgs using simplehelp and screenconnect rmm tools"
+       data-id="f6ba2a9eb61aad50"
+       data-published="2026-05-04T23:36:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-04T23:36:00+05:30" title="4 May 2026, 13:06">4 May 2026, 13:06</time>
+      </div>
+      <h3 class="card-title">Phishing Campaign Hits 80+ Orgs Using SimpleHelp and ScreenConnect RMM Tools</h3>
+      <p class="card-summary">An active phishing campaign has been observed targeting multiple vectors since at least April 2025, with legitimate Remote Monitoring and Management (RMM) software as a way to establish persistent remote access to compromised hosts.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f6ba2a9eb61aad50.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="patch"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="progress patches critical moveit automation bug enabling authentication bypass"
+       data-id="ce05925cdfcef4c8"
+       data-published="2026-05-04T22:04:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-05-04T22:04:00+05:30" title="4 May 2026, 11:34">4 May 2026, 11:34</time>
+      </div>
+      <h3 class="card-title">Progress Patches Critical MOVEit Automation Bug Enabling Authentication Bypass</h3>
+      <p class="card-summary">Progress Software has released updates to address two security flaws in MOVEit Automation, including a critical bug that could result in an authentication bypass.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ce05925cdfcef4c8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/progress-patches-critical-moveit.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,exploit,patch,phishing,vulnerability"
        data-vendors="Google,Linux"
@@ -239,6 +303,69 @@
       <div class="detail-links">
         <a href="../articles/ffc2edc22c022f73.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/endpoint-security/silver-fox-tax-themed-attacks-india-russia" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="backdoored pytorch lightning package drops credential stealer"
+       data-id="9b04d98a07117efe"
+       data-published="2026-05-04T13:15:27-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-04T13:15:27-04:00" title="4 May 2026, 12:15">4 May 2026, 12:15</time>
+      </div>
+      <h3 class="card-title">Backdoored PyTorch Lightning package drops credential stealer</h3>
+      <p class="card-summary">A malicious version of the PyTorch Lightning package published on the Python Package Index (PyPI) delivers a credential-stealing payload targeting browsers, environment files, and cloud services. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9b04d98a07117efe.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/backdoored-pytorch-lightning-package-drops-credential-stealer/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="trellix discloses data breach after source code repository hack"
+       data-id="68bfefe32a68ddb3"
+       data-published="2026-05-04T12:25:07-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-04T12:25:07-04:00" title="4 May 2026, 11:25">4 May 2026, 11:25</time>
+      </div>
+      <h3 class="card-title">Trellix discloses data breach after source code repository hack</h3>
+      <p class="card-summary">Cybersecurity firm Trellix disclosed a data breach after attackers gained access to &#34;a portion&#34; of its source code repository. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/68bfefe32a68ddb3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/trellix-discloses-data-breach-after-source-code-repository-hack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

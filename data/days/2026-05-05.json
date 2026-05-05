@@ -240,6 +240,29 @@
     "highlighted": false
   },
   {
+    "id": "42f6aaa845027113",
+    "title": "Student hacked Taiwan high-speed rail to trigger emergency brakes",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/student-hacked-taiwan-high-speed-rail-to-trigger-emergency-brakes/",
+    "published": "2026-05-05T13:34:09-04:00",
+    "fetched_at": "2026-05-05T19:16:17.655562+00:00",
+    "summary": "A 23-year-old university student in Taiwan was arrested for interfering with the TETRA communication system used by the country's high-speed railway network (THSR). [...]",
+    "tags": [],
+    "day": "2026-05-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A 23-year-old university student in Taiwan was arrested for interfering with the TETRA communication system used by the country's high-speed railway network (THSR). [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A 23-year-old university student in Taiwan was arrested for interfering with the TETRA communication system used by the country's high-speed railway network (THSR). [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "214673fa51343887",
     "title": "Weaver E-cology RCE Flaw CVE-2026-22679 Actively Exploited via Debug API",
     "source": "The Hacker News",
@@ -295,6 +318,184 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "Microsoft has disclosed details of a large-scale credential theft campaign that has leveraged a combination of code of conduct-themed lures and legitimate email services to direct users to attacker-controlled domains and steal authentication tokens. The multi-stage campaign, observed between April 14 and 16, 2026, targeted more than 35,000 users across over 13,000 organizations in 26 countries,.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "382dd81c58091d04",
+    "title": "ABB B&R Automation Studio",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-125-04",
+    "published": "2026-05-05T12:00:00+00:00",
+    "fetched_at": "2026-05-05T19:16:19.131596+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "breach",
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-05",
+    "cves": [
+      "CVE-2025-11043"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is available that resolves a vulnerability.",
+      "technical": "Successful exploitation of this vulnerability may enable an attacker to masquerade as a trusted party when B&R Automation Studio establishes a connection with a server via the ANSL over TLS or OPC-UA protocol. The following versions of ABB B&R Automation Studio are affected:\n\n \n Automation Studio <6.5, 6.5 (CVE-2025-11043)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.4 \n ABB \n ABB B&R Automation Studio \n Improper Certificate Validation \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-11043 \n \n An Improper Certificate Validation vulnerability in the OPC-UA client and ANSL over TLS client used in Automation Studio versions before 6.5 could allow an unauthenticated attacker on the network to position themselves to intercept and interfere with data exchanges. Mitigation \nTo exploit this vulnerability, an attacker would need to intercept and redirect the communication between B&R Automation Studio and the target server, as well as present manipulated certificates that pass validation checks. What might an attacker use the vulnerability to do? - An attacker who successfully exploited this vulnerability could spoof a trusted server, potentially leading to the disclosure of confidential information or the alteration of data during transit.\n\nReferenced vulnerabilities: CVE-2025-11043.",
+      "impact": "The following versions of ABB B&R Automation Studio are affected:\n\n \n Automation Studio <6.5, 6.5 (CVE-2025-11043)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.4 \n ABB \n ABB B&R Automation Studio \n Improper Certificate Validation \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-11043 \n \n An Improper Certificate Validation vulnerability in the OPC-UA client and ANSL over TLS client used in Automation Studio versions before 6.5 could allow an unauthenticated attacker on the network to position themselves to intercept and interfere with data exchanges. View CVE Details \n\n \n Affected Products \n ABB B&R Automation Studio \n \n Vendor: \nABB \n Product Version: \nABB Automation Studio <6.5 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product versions: B&R Automation Studio version 6.5 B&R recommends that customers apply the update at earliest convenience. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "View CVE Details \n\n \n Affected Products \n ABB B&R Automation Studio \n \n Vendor: \nABB \n Product Version: \nABB Automation Studio <6.5 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product versions: B&R Automation Studio version 6.5 B&R recommends that customers apply the update at earliest convenience. Recommended practices include that process control systems are physically protected, have no direct connections to the Internet, and are separated from other networks by means of a firewall system that has a minimal number of ports exposed. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Refer to section “General security recommendations” for further advise on how to keep your system secure.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory. Tracked as CVE-2025-11043.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f664bf76f372ac87",
+    "title": "ABB B&R Automation Runtime",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-125-03",
+    "published": "2026-05-05T12:00:00+00:00",
+    "fetched_at": "2026-05-05T19:16:19.132927+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-05-05",
+    "cves": [
+      "CVE-2025-11044"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is available that resolves a vulnerability.",
+      "technical": "The following versions of ABB B&R Automation Runtime are affected:\n\n \n Automation Runtime <6.5, >=6.5, =R4.93 (CVE-2025-11044, CVE-2025-11044)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 6.8 \n ABB \n ABB B&R Automation Runtime \n Allocation of Resources Without Limits or Throttling \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-11044 \n \n An Allocation of Resources Without Limits or Throttling vulnerability in the ANSL-Server component of B&R Automation Runtime versions prior to 6.5 and prior to R4.93 could be exploited by an unauthenticated attacker on the net-work to win a race condition, resulting in permanent denial-of-service (DoS) conditions on affected devices. An attacker who successfully exploited this vulnerability could cause the product to stop. Mitigation \nThe vulnerability cannot be exploited on all devices or across all customer applications. Exploitation of the vulnerability from outside Level 1 would require an attacker to bypass the Control Network Firewall.\n\nReferenced vulnerabilities: CVE-2025-11044.",
+      "impact": "The following versions of ABB B&R Automation Runtime are affected:\n\n \n Automation Runtime <6.5, >=6.5, =R4.93 (CVE-2025-11044, CVE-2025-11044)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 6.8 \n ABB \n ABB B&R Automation Runtime \n Allocation of Resources Without Limits or Throttling \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-11044 \n \n An Allocation of Resources Without Limits or Throttling vulnerability in the ANSL-Server component of B&R Automation Runtime versions prior to 6.5 and prior to R4.93 could be exploited by an unauthenticated attacker on the net-work to win a race condition, resulting in permanent denial-of-service (DoS) conditions on affected devices. View CVE Details \n\n \n Affected Products \n ABB B&R Automation Runtime \n \n Vendor: \nABB \n Product Version: \nABB Automation Runtime <6.5, ABB Automation Runtime <R4.93 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product versions: - Automation Runtime 6 versions >= 6.5 - Automation Runtime 4 versions >= R4.93 B&R recommends that customers apply the update at earliest convenience. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "View CVE Details \n\n \n Affected Products \n ABB B&R Automation Runtime \n \n Vendor: \nABB \n Product Version: \nABB Automation Runtime <6.5, ABB Automation Runtime <R4.93 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product versions: - Automation Runtime 6 versions >= 6.5 - Automation Runtime 4 versions >= R4.93 B&R recommends that customers apply the update at earliest convenience. For customers unable to transition to a patched version, adjusting their application configuration to longer cycle times may therefore be considered as a mitigating measure. B&R further recommends, in alignment with its Defense in Depth for B&R Products guidelines, that customers: - Test the maximum load capacity of their application under Automation Runtime before commissioning. - Restrict the permitted data traffic to the device via the Control Network Firewall to no more than 80% of the measured peak traffic value. Recommended practices include that process control systems are physically protected, have no direct connections to the Internet, and are separated from other networks by means of a firewall system that has a minimal number of ports exposed."
+    },
+    "email_summary": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory. Tracked as CVE-2025-11044.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d4ae68e7894efd29",
+    "title": "Hitachi Energy PCM600",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-125-01",
+    "published": "2026-05-05T12:00:00+00:00",
+    "fetched_at": "2026-05-05T19:16:19.134188+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "apt",
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-05",
+    "cves": [
+      "CVE-2018-1002208"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Hitachi Energy is aware of a vulnerability that affects the Hitachi Energy PCM600 product versions listed in this document. An attacker successfully exploiting this vulnerability can impact integrity of the product.",
+      "impact": "The following versions of Hitachi Energy PCM600 are affected:\n\n \n PCM600 Legacy vers:PCM600_Legacy/<=2.11 (CVE-2018-1002208)\n\n PCM600 3.0, 3.0_HF1, 3.0_HF2, 3.0_HF3, 3.1, 3.1_SP1, 3.1_SP2, 3.1_SP3 (CVE-2018-1002208, CVE-2018-1002208, CVE-2018-1002208, CVE-2018-1002208, CVE-2018-1002208, CVE-2018-1002208, CVE-2018-1002208, CVE-2018-1002208)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 4.4 \n Hitachi Energy \n Hitachi Energy PCM600 \n Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2018-1002208 \n \n SharpZipLib before 1.0 RC1 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. View CVE Details \n\n \n Affected Products \n Hitachi Energy PCM600 \n \n Vendor: \nHitachi Energy \n Product Version: \nPCM600 Legacy Version 2.11 and earlier, PCM600 3.0, PCM600 3.0 HF1, PCM600 3.0 HF2, PCM600 3.0 HF3, PCM600 3.1, PCM600 3.1 SP1, PCM600 3.1 SP2, PCM600 3.1 SP3 \n Product Status: \nknown_affected \n \n \n Remediations \n None available \nPrior to acquisition, PCM600 product versions 2.11 and earlier were distributed under ABB’s organization. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Recommended security practices and firewall configurations can help protect a process control network from attacks that originate from outside the network. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. ABB has recently published a cybersecurity advisory [2NGA002813] (https://library.e.abb.com/public/ec33308ad2c34f92bab09df09c66954d/2NGA002813_PCM600_Sharpziplib_Vulnerability.pdf) with their recommended actions for this same vulnerability."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Hitachi Energy is aware of a vulnerability that affects the Hitachi Energy PCM600 product versions listed in this document. Tracked as CVE-2018-1002208.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "186836d57fa83f32",
+    "title": "Johnson Controls CEM AC2000",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-125-05",
+    "published": "2026-05-05T12:00:00+00:00",
+    "fetched_at": "2026-05-05T19:16:19.134866+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-05-05",
+    "cves": [
+      "CVE-2026-21661"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a standard user to escalate privileges on the host machine. The following versions of Johnson Controls CEM AC2000 are affected:\n\n \n CEM AC2000 12.0 (CVE-2026-21661)\n\n CEM AC2000 11.0 (CVE-2026-21661)\n\n CEM AC2000 10.6 (CVE-2026-21661)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.7 \n Johnson Controls Inc.",
+      "impact": "Johnson Controls CEM AC2000 \n Uncontrolled Search Path Element \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Commercial Facilities, Government Services and Facilities, Transportation Systems, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Ireland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-21661 \n \n The affected product is vulnerable to DLL hijacking, which could allow an attacker to escalate standard user privileges on the host machine. CEM AC2000: 10.6 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nJohnson Controls recommends users apply the following mitigations:\n\n Mitigation \nUpgrade CEM AC 2000 12.0 to 12.0 Release 10. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "CEM AC2000: 10.6 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nJohnson Controls recommends users apply the following mitigations:\n\n Mitigation \nUpgrade CEM AC 2000 12.0 to 12.0 Release 10. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Mitigation \nUpgrade CEM AC 2000 11.0 to 11.0 Release 9. Mitigation \nUpgrade CEM AC 2000 10.6 to 10.6 Release 3.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a standard user to escalate privileges on the host machine. Tracked as CVE-2026-21661.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "2ace15c4fd7864a7",
+    "title": "ABB B&R PVI",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-125-02",
+    "published": "2026-05-05T12:00:00+00:00",
+    "fetched_at": "2026-05-05T19:16:19.135893+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-05",
+    "cves": [
+      "CVE-2026-0936"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is now available that addresses and remediates the vulnerability.",
+      "impact": "The following versions of ABB B&R PVI are affected:\n\n \n PVI <6.5.0, 6.5.0 (CVE-2026-0936)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 5 \n ABB \n ABB B&R PVI \n Insertion of Sensitive Information into Log File \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-0936 \n \n An Insertion of Sensitive Information into Log File vulnerability in B&R PVI client versions prior to 6.5 may be abused by an authenticated local attacker to gather credential information which is processed by the PVI client application. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. The logging function of the PVI client application is disabled by default and must be explicitly enabled by the user. B&R recommends that customers apply the update at earliest convenience. Refer to section “General security recommendations” for further advise on how to keep your system secure."
+    },
+    "email_summary": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the product versions listed as affected in the advisory. Tracked as CVE-2026-0936.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -401,148 +602,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Critical vulnerabilities can exist in open source software your scanners don't check. HeroDevs reveals how EOL software creates blind spots in CVE feeds and SCA tools, and how you can receive a free end-of-life scan for your projects. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "994c1ed3388bacf0",
-    "title": "Vimeo data breach exposes personal information of 119,000 people",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/vimeo-data-breach-exposes-personal-information-of-119-000-people/",
-    "published": "2026-05-05T09:03:46-04:00",
-    "fetched_at": "2026-05-05T17:22:25.268547+00:00",
-    "summary": "The ShinyHunters extortion gang stole personal information belonging to over 119,000 people after hacking the Vimeo online video platform in April, according to data breach notification service Have I Been Pwned. [...]",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-05-05",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The ShinyHunters extortion gang stole personal information belonging to over 119,000 people after hacking the Vimeo online video platform in April, according to data breach notification service Have I Been Pwned. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The ShinyHunters extortion gang stole personal information belonging to over 119,000 people after hacking the Vimeo online video platform in April, according to data breach notification service Have I Been Pwned. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "The ShinyHunters extortion gang stole personal information belonging to over 119,000 people after hacking the Vimeo online video platform in April, according to data breach notification service Have I Been Pwned. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "19146c56e862760c",
-    "title": "Google now offers up to $1.5 million for some Android exploits",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/google-now-offers-up-to-15-million-for-some-android-exploits/",
-    "published": "2026-05-05T07:24:48-04:00",
-    "fetched_at": "2026-05-05T12:00:42.750695+00:00",
-    "summary": "Google overhauls its Android and Chrome vulnerability rewards programs, offering bounties of up to $1.5 million for the most difficult exploits while scaling back payouts for flaws that artificial intelligence (AI) has made easier to find. [...]",
-    "tags": [
-      "exploit",
-      "vulnerability"
-    ],
-    "day": "2026-05-05",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "AWS",
-      "Google"
-    ],
-    "action_required": false,
-    "card_summary": "Google overhauls its Android and Chrome vulnerability rewards programs, offering bounties of up to $1.5 million for the most difficult exploits while scaling back payouts for flaws that artificial intelligence (AI) has made easier to find. [...]",
-    "quick_take": "Google overhauls its Android and Chrome vulnerability rewards programs, offering bounties of up to $1.5 million for the most difficult exploits while scaling back payouts for flaws that artificial intelligence (AI)…",
-    "sections": {
-      "impact": "Google overhauls its Android and Chrome vulnerability rewards programs, offering bounties of up to $1.5 million for the most difficult exploits while scaling back payouts for flaws that artificial intelligence (AI) has made easier to find. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Google overhauls its Android and Chrome vulnerability rewards programs, offering bounties of up to $1.5 million for the most difficult exploits while scaling back payouts for flaws that artificial intelligence (AI) has made easier to find. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "576d2d4da3559d38",
-    "title": "Karakurt extortion gang ‘cold case’ negotiator gets 8.5 years in prison",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/karakurt-extortion-gang-negotiator-sentenced-to-85-years-in-prison/",
-    "published": "2026-05-05T06:13:17-04:00",
-    "fetched_at": "2026-05-05T10:44:34.448528+00:00",
-    "summary": "A Latvian national extradited to the United States was sentenced to 8.5 years in prison for his \"cold case\" negotiator role in the Russian Karakurt ransomware group. [...]",
-    "tags": [
-      "ransomware"
-    ],
-    "day": "2026-05-05",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "A Latvian national extradited to the United States was sentenced to 8.5 years in prison for his \"cold case\" negotiator role in the Russian Karakurt ransomware group. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "A Latvian national extradited to the United States was sentenced to 8.5 years in prison for his \"cold case\" negotiator role in the Russian Karakurt ransomware group. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
-    },
-    "email_summary": "A Latvian national extradited to the United States was sentenced to 8.5 years in prison for his \"cold case\" negotiator role in the Russian Karakurt ransomware group. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "81947b2e6c58a18e",
-    "title": "CloudZ malware abuses Microsoft Phone Link to steal SMS and OTPs",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/cloudz-malware-abuses-microsoft-phone-link-to-steal-sms-and-otps/",
-    "published": "2026-05-05T06:03:52-04:00",
-    "fetched_at": "2026-05-05T10:44:34.448727+00:00",
-    "summary": "A new version of the CloudZ remote access tool (RAT) is deploying a previously unseen malicious plugin called Pheno that hijacks the Microsoft Phone Link connection to steal sensitive codes from mobile devices. [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-05-05",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "A new version of the CloudZ remote access tool (RAT) is deploying a previously unseen malicious plugin called Pheno that hijacks the Microsoft Phone Link connection to steal sensitive codes from mobile devices. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "A new version of the CloudZ remote access tool (RAT) is deploying a previously unseen malicious plugin called Pheno that hijacks the Microsoft Phone Link connection to steal sensitive codes from mobile devices. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "54cc0d08eda58859",
-    "title": "ScarCruft hackers push BirdCall Android malware via game platform",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/scarcruft-hackers-push-birdcall-android-malware-via-game-platform/",
-    "published": "2026-05-05T05:04:13-04:00",
-    "fetched_at": "2026-05-05T10:44:34.448891+00:00",
-    "summary": "The North Korean hacker group APT37 has been delivering an Android version of a backdoor called BirdCall in a supply-chain attack through a video game platform. [...]",
-    "tags": [
-      "apt",
-      "malware"
-    ],
-    "day": "2026-05-05",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Google"
-    ],
-    "action_required": false,
-    "card_summary": "The North Korean hacker group APT37 has been delivering an Android version of a backdoor called BirdCall in a supply-chain attack through a video game platform. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "The North Korean hacker group APT37 has been delivering an Android version of a backdoor called BirdCall in a supply-chain attack through a video game platform. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

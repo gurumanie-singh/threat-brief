@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">7 May 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">16 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>Palo Alto, Microsoft ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -67,6 +68,7 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
@@ -76,15 +78,47 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="one click, total shutdown: the &#34;patient zero&#34; webinar on killing stealth breaches"
+       data-id="d8cf809b4febcd5c"
+       data-published="2026-05-07T19:20:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-07T19:20:00+05:30" title="7 May 2026, 08:50">7 May 2026, 08:50</time>
+      </div>
+      <h3 class="card-title">One Click, Total Shutdown: The &#34;Patient Zero&#34; Webinar on Killing Stealth Breaches</h3>
+      <p class="card-summary">The hardest part of cybersecurity isn&#39;t the technology, it’s the people.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d8cf809b4febcd5c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors="Palo Alto"
@@ -270,6 +304,68 @@
       <div class="detail-links">
         <a href="../articles/67a022bdb0f5e5c8.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/application-security/trustfall-exposes-claude-code-execution-risk" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="Ivanti"
+       data-severity="critical"
+       data-title="ivanti warns of new epmm flaw exploited in zero-day attacks"
+       data-id="e3d1c66bc2cbf79a"
+       data-published="2026-05-07T11:20:51-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-05-07T11:20:51-04:00" title="7 May 2026, 10:20">7 May 2026, 10:20</time>
+      </div>
+      <h3 class="card-title">Ivanti warns of new EPMM flaw exploited in zero-day attacks</h3>
+      <p class="card-summary">Ivanti warned customers today to patch a high-severity remote code execution vulnerability in Endpoint Manager Mobile (EPMM) exploited in zero-day attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e3d1c66bc2cbf79a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-new-epmm-flaw-exploited-in-zero-day-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="the browser is breaking your dlp: how data slips past modern controls"
+       data-id="da3a0153c5f53729"
+       data-published="2026-05-07T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-07T10:01:11-04:00" title="7 May 2026, 09:01">7 May 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">The Browser Is Breaking Your DLP: How Data Slips Past Modern Controls</h3>
+      <p class="card-summary">Your security controls aren&#39;t failing, they&#39;re missing where most of today&#39;s work actually happens. Keep Aware shows how browser activity like copy/paste and AI prompts bypass traditional protections. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/da3a0153c5f53729.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/the-browser-is-breaking-your-dlp-how-data-slips-past-modern-controls/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

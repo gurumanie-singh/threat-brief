@@ -28,13 +28,15 @@
       <h1 class="brief-title">8 May 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-05-08T00:28:46.267678-05:00">8 May 2026, 00:28</time>
+        <time data-iso="2026-05-08T02:27:46.986091-05:00">8 May 2026, 02:27</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
       <span class="stat stat-critical">1 critical</span>
-      <span class="stat">1 articles today</span>
+      <span class="stat stat-high">1 high</span>
+      <span class="stat stat-action">1 action req.</span>
+      <span class="stat">2 articles today</span>
     </div>
   </div>
 
@@ -43,6 +45,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
@@ -101,8 +104,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
@@ -114,10 +117,43 @@
   <div class="day-group">
     <h2 class="day-heading">
       8 May 2026
-      <span class="day-count">1</span>
+      <span class="day-count">2</span>
     </h2>
   </div>
 
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="linux kernel dirty frag lpe exploit enables root access across major distributions"
+       data-id="534f408bc0cbe9e2"
+       data-published="2026-05-08T10:42:00+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-08T10:42:00+05:30" title="8 May 2026, 00:12">8 May 2026, 00:12</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Linux Kernel Dirty Frag LPE Exploit Enables Root Access Across Major Distributions</h3>
+      <p class="card-summary">Details have emerged about a new, unpatched local privilege escalation (LPE) vulnerability impacting the Linux kernel.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/534f408bc0cbe9e2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="breach,exploit,malware,patch,phishing,ransomware,vulnerability"
        data-vendors="Adobe,Google"
@@ -801,7 +837,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       6 May 2026
-      <span class="day-count">9</span>
+      <span class="day-count">8</span>
     </h2>
   </div>
 
@@ -1048,39 +1084,6 @@
       <div class="detail-links">
         <a href="articles/02efe71fb6baccfa.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/critical-vm2-sandbox-bug-lets-attackers-execute-code-on-hosts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,patch,vulnerability"
-       data-vendors="Cisco"
-       data-severity="medium"
-       data-title="new cisco dos flaw requires manual reboot to revive devices"
-       data-id="4e3c3cd267f1233c"
-       data-published="2026-05-06T14:06:21-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-05-06T14:06:21-04:00" title="6 May 2026, 13:06">6 May 2026, 13:06</time>
-      </div>
-      <h3 class="card-title">New Cisco DoS flaw requires manual reboot to revive devices</h3>
-      <p class="card-summary">Cisco patched a Crosswork Network Controller and Network Services Orchestrator denial-of-service vulnerability that requires manually rebooting targeted systems for recovery. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/4e3c3cd267f1233c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/new-cisco-dos-flaw-requires-manual-reboot-to-revive-devices/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

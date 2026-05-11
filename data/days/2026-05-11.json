@@ -1,5 +1,89 @@
 [
   {
+    "id": "f5efebc8551c40d5",
+    "title": "Weekly Recap: Linux Rootkit, macOS Crypto Stealer, WebSocket Skimmers and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/weekly-recap-linux-rootkit-macos-crypto.html",
+    "published": "2026-05-11T18:06:00+05:30",
+    "fetched_at": "2026-05-11T13:47:25.681147+00:00",
+    "summary": "Rough Monday.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-05-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Apple",
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Rough Monday.",
+    "quick_take": "Somebody poisoned a trusted download again, somebody else turned cloud servers into public housing, and a few crews are still getting into boxes with bugs that should’ve died years ago — the same old holes, same lazy…",
+    "sections": {
+      "overview": "Somebody poisoned a trusted download again, somebody else turned cloud servers into public housing, and a few crews are still getting into boxes with bugs that should’ve died years ago — the same old holes, same lazy access paths, same “how the hell is this still open” feeling. One report this week basically reads like a guy tripped over root access by accident and decided to stay"
+    },
+    "email_summary": "Somebody poisoned a trusted download again, somebody else turned cloud servers into public housing, and a few crews are still getting into boxes with bugs that should’ve died years ago — the same old holes, same lazy access paths, same “how the hell is this still open” feeling. One report this week basically reads like a guy tripped over root access by accident and decided to stay.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a869ed23a7c6209e",
+    "title": "Your Purple Team Isn't Purple — It's Just Red and Blue in the Same Room",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/your-purple-team-isnt-purple-its-just.html",
+    "published": "2026-05-11T17:00:00+05:30",
+    "fetched_at": "2026-05-11T13:47:25.681443+00:00",
+    "summary": "Defending a network at 2 am looks a lot like this: an analyst copy-pasting a hash from a PDF into a SIEM query. A red team script is being rewritten by hand so the blue team can use it. A patch waiting on a change-approval window that's longer than the exploitation window itself.",
+    "tags": [
+      "exploit",
+      "patch"
+    ],
+    "day": "2026-05-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Defending a network at 2 am looks a lot like this: an analyst copy-pasting a hash from a PDF into a SIEM query. A red team script is being rewritten by hand so the blue team can use it.",
+    "quick_take": "",
+    "sections": {
+      "technical": "A patch waiting on a change-approval window that's longer than the exploitation window itself."
+    },
+    "email_summary": "Defending a network at 2 am looks a lot like this: an analyst copy-pasting a hash from a PDF into a SIEM query. A red team script is being rewritten by hand so the blue team can use it.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "fcb8b4dabeb9a050",
+    "title": "Hackers Use AI for Exploit Development, Attack Automation",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cloud-security/hackers-ai-exploit-dev-attack-automation",
+    "published": "2026-05-11T13:00:00+00:00",
+    "fetched_at": "2026-05-11T13:47:27.569810+00:00",
+    "summary": "Cyber adversaries have long used AI, but now attackers are using large language models to develop exploits and orchestrate complex attacks.",
+    "tags": [
+      "exploit",
+      "malware"
+    ],
+    "day": "2026-05-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cyber adversaries have long used AI, but now attackers are using large language models to develop exploits and orchestrate complex attacks.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cyber adversaries have long used AI, but now attackers are using large language models to develop exploits and orchestrate complex attacks.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "f7cffe0ca82fcfef",
     "title": "Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads",
     "source": "The Hacker News",
@@ -21,6 +105,91 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A malicious Hugging Face repository managed to take a spot in the platform's trending list by impersonating OpenAI's Privacy Filter open-weight model to deliver a Rust-based information stealer to Windows users. The project, named Open-OSS/privacy-filter, masqueraded as its legitimate counterpart, released by OpenAI late last month (openai/privacy-filter), including copying the entire.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d7fa2c7cd6928008",
+    "title": "Cyber Espionage Group Targets Aviation Firms to Steal Map Data",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/cyber-espionage-group-aviation-firms-steal-map-data",
+    "published": "2026-05-11T12:00:00+00:00",
+    "fetched_at": "2026-05-11T13:47:27.570022+00:00",
+    "summary": "The campaign quietly compromises aerospace and drone operators to exfiltrate GIS files, terrain models, and GPS data and gain a clear picture of adversaries' world view.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-05-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The campaign quietly compromises aerospace and drone operators to exfiltrate GIS files, terrain models, and GPS data and gain a clear picture of adversaries' world view.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The campaign quietly compromises aerospace and drone operators to exfiltrate GIS files, terrain models, and GPS data and gain a clear picture of adversaries' world view.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b73fb0badf8e260f",
+    "title": "Google: Hackers used AI to develop zero-day exploit for web admin tool",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/google-hackers-used-ai-to-develop-zero-day-exploit-for-web-admin-tool/",
+    "published": "2026-05-11T09:02:30-04:00",
+    "fetched_at": "2026-05-11T13:47:26.794695+00:00",
+    "summary": "Researchers at Google Threat Intelligence Group (GTIG) say that a zero-day exploit targeting a popular open-source web administration tool was likely generated using AI. [...]",
+    "tags": [
+      "exploit",
+      "malware",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-05-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Researchers at Google Threat Intelligence Group (GTIG) say that a zero-day exploit targeting a popular open-source web administration tool was likely generated using AI. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Researchers at Google Threat Intelligence Group (GTIG) say that a zero-day exploit targeting a popular open-source web administration tool was likely generated using AI. [...]\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Researchers at Google Threat Intelligence Group (GTIG) say that a zero-day exploit targeting a popular open-source web administration tool was likely generated using AI. [...]. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "64578f04f1e3738f",
+    "title": "Webinar this week: Prevention alone is not enough against modern attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/webinar-this-week-prevention-alone-is-not-enough-against-modern-attacks/",
+    "published": "2026-05-11T08:30:00-04:00",
+    "fetched_at": "2026-05-11T13:47:26.794920+00:00",
+    "summary": "This upcoming webinar explores how organizations need to combine security, backups, and recovery planning to reduce the impact of modern cyberattacks. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-05-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "This upcoming webinar explores how organizations need to combine security, backups, and recovery planning to reduce the impact of modern cyberattacks. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "This upcoming webinar explores how organizations need to combine security, backups, and recovery planning to reduce the impact of modern cyberattacks. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "This upcoming webinar explores how organizations need to combine security, backups, and recovery planning to reduce the impact of modern cyberattacks. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

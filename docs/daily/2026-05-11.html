@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">11 May 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Google ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,19 +63,119 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Apple,Linux"
+       data-severity="medium"
+       data-title="weekly recap: linux rootkit, macos crypto stealer, websocket skimmers and more"
+       data-id="f5efebc8551c40d5"
+       data-published="2026-05-11T18:06:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-11T18:06:00+05:30" title="11 May 2026, 07:36">11 May 2026, 07:36</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Linux Rootkit, macOS Crypto Stealer, WebSocket Skimmers and More</h3>
+      <p class="card-summary">Rough Monday.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Somebody poisoned a trusted download again, somebody else turned cloud servers into public housing, and a few crews are still getting into boxes with bugs that should’ve died years ago — the same old holes, same lazy access paths, same “how the hell is this still open” feeling. One report this week basically reads like a guy tripped over root access by accident and decided to stay</p></div>
+      <div class="detail-links">
+        <a href="../articles/f5efebc8551c40d5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/weekly-recap-linux-rootkit-macos-crypto.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="your purple team isn&#39;t purple — it&#39;s just red and blue in the same room"
+       data-id="a869ed23a7c6209e"
+       data-published="2026-05-11T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-11T17:00:00+05:30" title="11 May 2026, 06:30">11 May 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Your Purple Team Isn&#39;t Purple — It&#39;s Just Red and Blue in the Same Room</h3>
+      <p class="card-summary">Defending a network at 2 am looks a lot like this: an analyst copy-pasting a hash from a PDF into a SIEM query. A red team script is being rewritten by hand so the blue team can use it.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a869ed23a7c6209e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/your-purple-team-isnt-purple-its-just.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers use ai for exploit development, attack automation"
+       data-id="fcb8b4dabeb9a050"
+       data-published="2026-05-11T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-11T13:00:00+00:00" title="11 May 2026, 08:00">11 May 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Hackers Use AI for Exploit Development, Attack Automation</h3>
+      <p class="card-summary">Cyber adversaries have long used AI, but now attackers are using large language models to develop exploits and orchestrate complex attacks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fcb8b4dabeb9a050.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/hackers-ai-exploit-dev-attack-automation" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="AWS,Microsoft"
@@ -91,6 +201,100 @@
       <div class="detail-links">
         <a href="../articles/f7cffe0ca82fcfef.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="cyber espionage group targets aviation firms to steal map data"
+       data-id="d7fa2c7cd6928008"
+       data-published="2026-05-11T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-11T12:00:00+00:00" title="11 May 2026, 07:00">11 May 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Cyber Espionage Group Targets Aviation Firms to Steal Map Data</h3>
+      <p class="card-summary">The campaign quietly compromises aerospace and drone operators to exfiltrate GIS files, terrain models, and GPS data and gain a clear picture of adversaries&#39; world view.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d7fa2c7cd6928008.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/cyber-espionage-group-aviation-firms-steal-map-data" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,vulnerability,zero-day"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="google: hackers used ai to develop zero-day exploit for web admin tool"
+       data-id="b73fb0badf8e260f"
+       data-published="2026-05-11T09:02:30-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-05-11T09:02:30-04:00" title="11 May 2026, 08:02">11 May 2026, 08:02</time>
+      </div>
+      <h3 class="card-title">Google: Hackers used AI to develop zero-day exploit for web admin tool</h3>
+      <p class="card-summary">Researchers at Google Threat Intelligence Group (GTIG) say that a zero-day exploit targeting a popular open-source web administration tool was likely generated using AI. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b73fb0badf8e260f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/google-hackers-used-ai-to-develop-zero-day-exploit-for-web-admin-tool/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar this week: prevention alone is not enough against modern attacks"
+       data-id="64578f04f1e3738f"
+       data-published="2026-05-11T08:30:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-11T08:30:00-04:00" title="11 May 2026, 07:30">11 May 2026, 07:30</time>
+      </div>
+      <h3 class="card-title">Webinar this week: Prevention alone is not enough against modern attacks</h3>
+      <p class="card-summary">This upcoming webinar explores how organizations need to combine security, backups, and recovery planning to reduce the impact of modern cyberattacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/64578f04f1e3738f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-this-week-prevention-alone-is-not-enough-against-modern-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

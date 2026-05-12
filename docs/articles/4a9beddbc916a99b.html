@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patch Tuesday, May 2026 Edition — Threat Brief</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <div class="article-page">
+    <a href="../daily/2026-05-12.html" class="back-link">← 12 May 2026 briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">Krebs on Security</span>
+        <span class="card-date">12 May 2026, 16:46</span>
+        <span class="card-severity critical">critical</span>
+      </div>
+
+      <h1 class="title">Patch Tuesday, May 2026 Edition</h1>
+
+      <p class="subtitle">Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. Tracked as CVE-2026-41089, CVE-2026-41096, CVE-2026-41103. Severity is rated critical.</p>
+
+
+      <div class="article-tags">
+        <span class="vendor-tag">AWS</span>
+        <span class="vendor-tag">Apple</span>
+        <span class="vendor-tag">Google</span>
+        <span class="vendor-tag">Ivanti</span>
+        <span class="vendor-tag">Microsoft</span>
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">patch</span>
+        <span class="tag">phishing</span>
+        <span class="tag">vulnerability</span>
+        <span class="tag">zero-day</span>
+      </div>
+
+      <ul class="article-cve-list">
+        <li class="article-cve" data-cve="CVE-2026-41089">CVE-2026-41089<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-41089"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+        <li class="article-cve" data-cve="CVE-2026-41096">CVE-2026-41096<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-41096"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+        <li class="article-cve" data-cve="CVE-2026-41103">CVE-2026-41103<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-41103"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+      </ul>
+    </header>
+
+
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
+        <div class="article-section-content">
+          <p>Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers including Apple , Google , Microsoft , Mozilla and Oracle fixing near record volumes of security bugs...</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
+        <div class="article-section-content">
+          <p>Rapid7 has done much of the heavy lifting in identifying some of the more concerning critical weaknesses this month, including:</p>
+<p>CVE-2026-41089 : A critical stack-based buffer overflow in Windows Netlogon that offers an attacker SYSTEM privileges on the domain controller. CVE-2026-41096 : A critical RCE in the Windows DNS client implementation worthy of attention despite Microsoft assessing exploitation as less likely. Remarkably, this is the first Patch Tuesday in nearly two years that Microsoft is not shipping any fixes to deal with emergency zero-day flaws that are already being exploited. Nor have any of the flaws fixed today been previously disclosed (potentially giving attackers a heads up in how to exploit the weakness).</p>
+<p>Referenced vulnerabilities: CVE-2026-41089, CVE-2026-41096, CVE-2026-41103.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
+        <div class="article-section-content">
+          <p>CVE-2026-41103 : A critical elevation of privilege vulnerability that allows an unauthorized attacker to impersonate an existing user by presenting forged credentials, thus bypassing Entra ID. Sixteen of the vulnerabilities earned Microsoft s most-dire critical label, meaning malware or miscreants could abuse these bugs to seize remote control over a vulnerable Windows device with little or no help from the user. No privileges or user interaction are required, and attack complexity is low.</p>
+<p>Assessed severity: CRITICAL.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
+        <div class="article-section-content">
+          <p>In its most recent quarterly patch update, Oracle addressed at least 450 flaws, including more than 300 fixes for remotely exploitable, unauthenticated flaws . That reality is on full display this month with some of the more widely-used software makers including Apple , Google , Microsoft , Mozilla and Oracle fixing near record volumes of security bugs, and/or quickening the tempo of their patch releases. Remarkably, this is the first Patch Tuesday in nearly two years that Microsoft is not shipping any fixes to deal with emergency zero-day flaws that are already being exploited. May s Patch Tuesday is a welcome respite from April, which saw Microsoft fix a near-record 167 security flaws .</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Context / Trends</div>
+        <div class="article-section-content">
+          <p>This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.</p>
+<p>This reflects continued use of phishing as an initial-access path in broader intrusion chains.</p>
+        </div>
+      </div>
+
+
+      <a href="https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at Krebs on Security</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

@@ -32,6 +32,84 @@
     "highlighted": false
   },
   {
+    "id": "4a9beddbc916a99b",
+    "title": "Patch Tuesday, May 2026 Edition",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+    "published": "2026-05-12T21:46:45+00:00",
+    "fetched_at": "2026-05-12T22:59:10.821112+00:00",
+    "summary": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers including Apple , Google , Microsoft , Mozilla and Oracle fixing near record volumes of security bugs...",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "phishing",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-05-12",
+    "cves": [
+      "CVE-2026-41089",
+      "CVE-2026-41096",
+      "CVE-2026-41103"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Apple",
+      "Google",
+      "Ivanti",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers including Apple , Google , Microsoft , Mozilla and Oracle fixing near record volumes of security bugs...",
+      "technical": "Rapid7 has done much of the heavy lifting in identifying some of the more concerning critical weaknesses this month, including: \n\n \n CVE-2026-41089 : A critical stack-based buffer overflow in Windows Netlogon that offers an attacker SYSTEM privileges on the domain controller. CVE-2026-41096 : A critical RCE in the Windows DNS client implementation worthy of attention despite Microsoft assessing exploitation as less likely. Remarkably, this is the first Patch Tuesday in nearly two years that Microsoft is not shipping any fixes to deal with emergency zero-day flaws that are already being exploited. Nor have any of the flaws fixed today been previously disclosed (potentially giving attackers a heads up in how to exploit the weakness).\n\nReferenced vulnerabilities: CVE-2026-41089, CVE-2026-41096, CVE-2026-41103.",
+      "impact": "CVE-2026-41103 : A critical elevation of privilege vulnerability that allows an unauthorized attacker to impersonate an existing user by presenting forged credentials, thus bypassing Entra ID. Sixteen of the vulnerabilities earned Microsoft s most-dire critical label, meaning malware or miscreants could abuse these bugs to seize remote control over a vulnerable Windows device with little or no help from the user. No privileges or user interaction are required, and attack complexity is low.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "In its most recent quarterly patch update, Oracle addressed at least 450 flaws, including more than 300 fixes for remotely exploitable, unauthenticated flaws . That reality is on full display this month with some of the more widely-used software makers including Apple , Google , Microsoft , Mozilla and Oracle fixing near record volumes of security bugs, and/or quickening the tempo of their patch releases. Remarkably, this is the first Patch Tuesday in nearly two years that Microsoft is not shipping any fixes to deal with emergency zero-day flaws that are already being exploited. May s Patch Tuesday is a welcome respite from April, which saw Microsoft fix a near-record 167 security flaws .",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.\n\nThis reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. Tracked as CVE-2026-41089, CVE-2026-41096, CVE-2026-41103. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d622d022a6304f2c",
+    "title": "It's Patch Tuesday for Microsoft and Not a Zero-Day In Sight",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/patch-tuesday-microsoft-zero-day-sight",
+    "published": "2026-05-12T21:03:04+00:00",
+    "fetched_at": "2026-05-12T22:59:11.456432+00:00",
+    "summary": "It's the first time in two years with no zero-days. But with 137 flaws to patch, including nine critical ones, admins still have plenty of work to do.",
+    "tags": [
+      "patch",
+      "zero-day"
+    ],
+    "day": "2026-05-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "It's the first time in two years with no zero-days. But with 137 flaws to patch, including nine critical ones, admins still have plenty of work to do.",
+    "quick_take": "",
+    "sections": {
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "It's the first time in two years with no zero-days. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "8bae78cc2b6f471e",
     "title": "RubyGems Suspends New Signups After Hundreds of Malicious Packages Are Uploaded",
     "source": "The Hacker News",
@@ -499,56 +577,6 @@
       "mitigation": "OpenAI has launched Daybreak, a new cybersecurity initiative that brings together frontier artificial intelligence (AI) model capabilities and Codex Security to help organizations identify and patch vulnerabilities before attackers find a way in using the same issues.\n\"Daybreak combines the intelligence of OpenAI models, the extensibility of Codex as an agentic harness, and our partners across"
     },
     "email_summary": "OpenAI has launched Daybreak, a new cybersecurity initiative that brings together frontier artificial intelligence (AI) model capabilities and Codex Security to help organizations identify and patch vulnerabilities before attackers find a way in using the same issues.\n\"Daybreak combines the intelligence of OpenAI models, the extensibility of Codex as an agentic harness, and our partners across.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "65a63d05f6ea1a41",
-    "title": "20 Leaders Who Built the CISO Era: 2 Decades of Change",
-    "source": "Dark Reading",
-    "link": "https://www.darkreading.com/cybersecurity-operations/20-leaders-ciso-era-2-decades-change",
-    "published": "2026-05-12T12:00:00+00:00",
-    "fetched_at": "2026-05-12T14:21:20.849542+00:00",
-    "summary": "As part of Dark Reading's 20th anniversary special coverage, we profile the CISOs, founders, researchers, criminals, and policymakers who rewrote the enterprise risk playbook.",
-    "tags": [],
-    "day": "2026-05-12",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "As part of Dark Reading's 20th anniversary special coverage, we profile the CISOs, founders, researchers, criminals, and policymakers who rewrote the enterprise risk playbook.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "As part of Dark Reading's 20th anniversary special coverage, we profile the CISOs, founders, researchers, criminals, and policymakers who rewrote the enterprise risk playbook.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "a2c2c7d800e34568",
-    "title": "Software Bill of Materials for AI - Minimum Elements",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/resources-tools/resources/software-bill-materials-ai-minimum-elements",
-    "published": "2026-05-12T12:00:00+00:00",
-    "fetched_at": "2026-05-12T14:21:21.815031+00:00",
-    "summary": "CISA and the Group of Seven (G7) international partners—Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union—have released joint guidance, Software Bill of Materials for AI – Minimum Elements , to help public and private sector stakeholders improve transparency in their artificial intelligence (AI) systems and supply chains.",
-    "tags": [],
-    "day": "2026-05-12",
-    "cves": [],
-    "cvss": null,
-    "severity": "low",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "CISA and the Group of Seven (G7) international partners—Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union—have released joint guidance, Software Bill of Materials for AI – Minimum Elements , to help public and private sector…",
-    "quick_take": "CISA and the Group of Seven (G7) international partners—Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union—have released joint guidance, Software Bill of Materials for AI – Minimum…",
-    "sections": {
-      "overview": "CISA and the Group of Seven (G7) international partners—Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union—have released joint guidance, Software Bill of Materials for AI – Minimum Elements , to help public and private sector stakeholders improve transparency in their artificial intelligence (AI) systems and supply chains.",
-      "technical": "While not exhaustive or mandatory, the supplemental minimal elements outlined in this guidance reflect the consensus of G7 experts and will expand over time to keep pace with the rapid advancement of AI technology.",
-      "mitigation": "The guidance builds on CISA’s previous work with federal and international partners to establish a shared vision for a software bill of materials and provides recommendations on minimum elements that should be included in an SBOM for AI. Because AI systems are software systems, these recommendations should be considered in addition to the general minimum elements for an SBOM . A software bill of materials (SBOM) acts as an “ingredients list” for software that better positions organizations to understand their supply chains and make risk-informed decisions about how to protect their critical systems."
-    },
-    "email_summary": "CISA and the Group of Seven (G7) international partners—Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union—have released joint guidance, Software Bill of Materials for AI – Minimum Elements , to help public and private sector stakeholders improve transparency in their artificial intelligence (AI) systems and supply chains. A software bill of materials (SBOM) acts as an “ingredients list” for software that better positions organizations to understand their…",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

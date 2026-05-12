@@ -28,13 +28,14 @@
       <h1 class="brief-title">12 May 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-05-12T12:09:23.396279-05:00">12 May 2026, 12:09</time>
+        <time data-iso="2026-05-12T14:49:14.766811-05:00">12 May 2026, 14:49</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
+      <span class="stat stat-critical">2 critical</span>
       <span class="stat stat-high">1 high</span>
-      <span class="stat stat-action">4 action req.</span>
+      <span class="stat stat-action">1 action req.</span>
       <span class="stat">20 articles today</span>
     </div>
   </div>
@@ -43,10 +44,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
-        <li>4 items require immediate action — patches or mitigations available</li>
-        <li>Google ecosystem affected by multiple advisories</li>
-        <li>Multiple phishing campaigns identified targeting enterprises</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
@@ -54,7 +55,7 @@
       <div class="trending-pills">
         <span class="trend-pill">malware<span class="trend-count">12</span></span>
         <span class="trend-pill">breach<span class="trend-count">11</span></span>
-        <span class="trend-pill">attacks<span class="trend-count">9</span></span>
+        <span class="trend-pill">attacks<span class="trend-count">10</span></span>
         <span class="trend-pill">hackers<span class="trend-count">8</span></span>
         <span class="trend-pill">linux<span class="trend-count">8</span></span>
         <span class="trend-pill">exploited<span class="trend-count">8</span></span>
@@ -91,11 +92,12 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
       </div>
     </div>
@@ -108,9 +110,9 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
@@ -123,6 +125,40 @@
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="new exim bdat vulnerability exposes gnutls builds to potential code execution"
+       data-id="b10ef0e24f5dd6ad"
+       data-published="2026-05-12T22:14:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-05-12T22:14:00+05:30" title="12 May 2026, 11:44">12 May 2026, 11:44</time>
+      </div>
+      <h3 class="card-title">New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution</h3>
+      <p class="card-summary">Exim has released security updates to address a severe security issue affecting certain configurations that could enable memory corruption and potential code execution.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/b10ef0e24f5dd6ad.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -245,6 +281,126 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: fixing the gaps in network incident response"
+       data-id="faa3bb65580878d6"
+       data-published="2026-05-12T15:46:04-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-12T15:46:04-04:00" title="12 May 2026, 14:46">12 May 2026, 14:46</time>
+      </div>
+      <h3 class="card-title">Webinar: Fixing the gaps in network incident response</h3>
+      <p class="card-summary">IT teams often struggle to quickly coordinate responses across disparate systems during network incidents. This upcoming webinar explores how automation and AI-assisted workflows can reduce response times and help prevent outages. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/faa3bb65580878d6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-fixing-the-gaps-in-network-incident-response/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="signal adds security warnings for social engineering, phishing attacks"
+       data-id="e95a154d069dfffd"
+       data-published="2026-05-12T15:40:31-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-12T15:40:31-04:00" title="12 May 2026, 14:40">12 May 2026, 14:40</time>
+      </div>
+      <h3 class="card-title">Signal adds security warnings for social engineering, phishing attacks</h3>
+      <p class="card-summary">Signal has introduced new in-app confirmations and warning messages as additional safeguards against phishing and social engineering attempts that could lead to various forms of fraud. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e95a154d069dfffd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/signal-adds-security-warnings-for-social-engineering-phishing-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft releases windows 10 kb5087544 extended security update"
+       data-id="51bc46b978e1354c"
+       data-published="2026-05-12T14:58:34-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-12T14:58:34-04:00" title="12 May 2026, 13:58">12 May 2026, 13:58</time>
+      </div>
+      <h3 class="card-title">Microsoft releases Windows 10 KB5087544 extended security update</h3>
+      <p class="card-summary">Microsoft has released the Windows 10 KB5087544 extended security update to fix the May 2026 Patch Tuesday vulnerabilities and resolve an issue with the new Remote Desktop warnings. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/51bc46b978e1354c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5087544-extended-security-update/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="AWS,Fortinet"
+       data-severity="medium"
+       data-title="fortinet warns of critical rce flaws in fortisandbox and fortiauthenticator"
+       data-id="712fd8de6a9007a2"
+       data-published="2026-05-12T14:23:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-05-12T14:23:09-04:00" title="12 May 2026, 13:23">12 May 2026, 13:23</time>
+      </div>
+      <h3 class="card-title">Fortinet warns of critical RCE flaws in FortiSandbox and FortiAuthenticator</h3>
+      <p class="card-summary">Fortinet has released security patches for two critical vulnerabilities in FortiSandbox and FortiAuthenticator that could enable attackers to run commands or arbitrary code. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/712fd8de6a9007a2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-rce-flaws-in-fortisandbox-and-fortiauthenticator/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware"
        data-vendors=""
@@ -271,6 +427,67 @@
       <div class="detail-links">
         <a href="articles/15b972cc97e52d9e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="windows 11 kb5089549 &amp; kb5087420 cumulative updates released"
+       data-id="484c424392747fc4"
+       data-published="2026-05-12T14:09:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-12T14:09:12-04:00" title="12 May 2026, 13:09">12 May 2026, 13:09</time>
+      </div>
+      <h3 class="card-title">Windows 11 KB5089549 &amp; KB5087420 cumulative updates released</h3>
+      <p class="card-summary">Microsoft has released Windows 11 KB5089549 and KB5087420 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/484c424392747fc4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5089549-and-kb5087420-cumulative-updates-released/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,zero-day"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="microsoft may 2026 patch tuesday fixes 120 flaws, no zero-days"
+       data-id="870308754f8cf466"
+       data-published="2026-05-12T14:08:06-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-12T14:08:06-04:00" title="12 May 2026, 13:08">12 May 2026, 13:08</time>
+      </div>
+      <h3 class="card-title">Microsoft May 2026 Patch Tuesday fixes 120 flaws, no zero-days</h3>
+      <p class="card-summary">Today is Microsoft&#39;s May 2026 Patch Tuesday, with security updates for 120 flaws and no zero-days disclosed this month. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/870308754f8cf466.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -525,261 +742,6 @@
       <div class="detail-links">
         <a href="articles/9b5b6a7606d4d0da.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--low"
-       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="subnet solutions powersystem center"
-       data-id="2975b014cfb10ad9"
-       data-published="2026-05-12T12:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-05-12T12:00:00+00:00" title="12 May 2026, 07:00">12 May 2026, 07:00</time>
-      </div>
-      <h3 class="card-title">Subnet Solutions PowerSYSTEM Center</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Successful exploitation of these vulnerabilities could allow an authenticated attacker to expose sensitive information or cause a CRLF injection. The following versions of Subnet Solutions PowerSYSTEM Center are affected:</p>
-<p>PowerSYSTEM Center 2020 &lt;=5.28.x (CVE-2026-35504)</p>
-<p>PowerSYSTEM Center 2020 &gt;=5.8.x|&lt;=5.28.x (CVE-2026-26289)</p>
-<p>PowerSYSTEM Center 2020 &gt;=5.11.x|&lt;=5.28.x (CVE-2026-33570)</p>
-<p>PowerSYSTEM Center 2024 &gt;=6.0.x|&lt;=6.1.x (CVE-2026-26289, CVE-2026-35555, CVE-2026-35504)</p>
-<p>PowerSYSTEM Center 2026 7.0.x (CVE-2026-26289, CVE-2026-35555, CVE-2026-35504)</p>
-<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 8.2   Subnet Solutions Inc.</p></div>
-      <div class="detail-links">
-        <a href="articles/2975b014cfb10ad9.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="abb webpro snmp card powervalue multiple vulnerabilities"
-       data-id="dbcbde92d48422f9"
-       data-published="2026-05-12T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-05-12T12:00:00+00:00" title="12 May 2026, 07:00">12 May 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">ABB WebPro SNMP Card PowerValue Multiple Vulnerabilities</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   ABB became aware of multiple internally discovered vulnerabilities in the WebPro SNMP card PowerValue for the product versions listed as affected in the advisory. Depending upon the vulnerability, an attacker with access to local network who successfully exploited this vulnerability could have - Unauthorized access - Insufficient Session Expiration leading to resource unavailability - Uncontrolled Resource Consumption leading to DOS attack ABB strongly advises customers to update the latest firmware of affected products.</p></div>
-      <div class="detail-links">
-        <a href="articles/dbcbde92d48422f9.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-06" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="abb ac500 v3 multiple vulnerabilities"
-       data-id="477a218acc79d2c1"
-       data-published="2026-05-12T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-05-12T12:00:00+00:00" title="12 May 2026, 07:00">12 May 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">ABB AC500 V3 Multiple Vulnerabilities</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   ABB became aware of severe vulnerability in the products versions listed as affected in the advisory. An update is available that resolves these vulnerabilities.</p></div>
-      <div class="detail-links">
-        <a href="articles/477a218acc79d2c1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="apt,cve,exploit,malware,vulnerability"
-       data-vendors="Microsoft"
-       data-severity="low"
-       data-title="abb automation builder gateway for windows"
-       data-id="293ab7ce144d1bc1"
-       data-published="2026-05-12T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-12T12:00:00+00:00" title="12 May 2026, 07:00">12 May 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">ABB Automation Builder Gateway for Windows</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">apt</span>
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   ABB became aware of severe vulnerability in the products versions listed as affected in the advisory. The Windows gateway is accessible remotely by default.</p></div>
-      <div class="detail-links">
-        <a href="articles/293ab7ce144d1bc1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--low"
-       data-tags="cve,exploit,malware,phishing,vulnerability,zero-day"
-       data-vendors=""
-       data-severity="low"
-       data-title="fuji electric tellus"
-       data-id="4ce1cc7263c71e31"
-       data-published="2026-05-12T12:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-05-12T12:00:00+00:00" title="12 May 2026, 07:00">12 May 2026, 07:00</time>
-      </div>
-      <h3 class="card-title">Fuji Electric Tellus</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Successful exploitation of this vulnerability could allow an attacker to elevate privileges from user to system, which may then enable the attacker to cause a temporary denial of service, open files, or delete files. The following versions of Fuji Electric Tellus are affected:</p>
-<p>Tellus 5.0.2</p>
-<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.8   Fuji Electric   Fuji Electric Tellus   Exposed Dangerous Method or Function           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
-<p>Countries/Areas Deployed: Worldwide</p>
-<p>Company Headquarters Location: Japan</p>
-<p>Vulnerabilities     Expand All +</p>
-<p>CVE-2026-8108     The installation of Fuji Tellus adds a driver to the kernel which grants all users read and write permissions.</p></div>
-      <div class="detail-links">
-        <a href="articles/4ce1cc7263c71e31.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="worm redux: fresh mini shai-hulud infections bite supply chain"
-       data-id="5d5e1b0666986138"
-       data-published="2026-05-12T11:07:43+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-12T11:07:43+00:00" title="12 May 2026, 06:07">12 May 2026, 06:07</time>
-      </div>
-      <h3 class="card-title">Worm Redux: Fresh Mini Shai-Hulud Infections Bite Supply Chain</h3>
-      <p class="card-summary">Hundreds of npm packages infected by the self-propagating, credential-stealing worm from TeamPCP are related to the open source TanStack ecosystem.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/5d5e1b0666986138.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/application-security/worm-redux-fresh-mini-shai-hulud-infections-bite-supply-chain" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Apple,Google"
-       data-severity="medium"
-       data-title="ios 26.5 brings default end-to-end encrypted rcs messaging between iphone and android"
-       data-id="77a951d8bf53fcff"
-       data-published="2026-05-12T10:48:00+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Apple</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-05-12T10:48:00+05:30" title="12 May 2026, 00:18">12 May 2026, 00:18</time>
-      </div>
-      <h3 class="card-title">iOS 26.5 Brings Default End-to-End Encrypted RCS Messaging Between iPhone and Android</h3>
-      <p class="card-summary">Apple on Monday officially released iOS 26.5 with support for end-to-end encryption (E2EE) to Rich Communication Services (RCS) in beta as part of a &#34;cross-industry effort&#34; to replace traditional SMS with a more secure alternative.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/77a951d8bf53fcff.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/ios-265-brings-default-end-to-end.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

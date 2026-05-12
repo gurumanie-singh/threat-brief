@@ -113,6 +113,33 @@
     "highlighted": false
   },
   {
+    "id": "61c5cd7bb2e07398",
+    "title": "UK fines water supplier $1.3M for exposing data of 664k customers",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/uk-fines-water-supplier-13m-for-exposing-data-of-664k-customers/",
+    "published": "2026-05-12T16:17:19-04:00",
+    "fetched_at": "2026-05-12T21:18:15.536667+00:00",
+    "summary": "The Information Commissioner's Office has fined South Staffordshire Water Plc and parent company South Staffordshire Plc £963,900 ($1.3 million) over a cyberattack that exposed the personal data of 663,887 customers and employees. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-05-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Information Commissioner's Office has fined South Staffordshire Water Plc and parent company South Staffordshire Plc £963,900 ($1.3 million) over a cyberattack that exposed the personal data of 663,887 customers and employees. [...]",
+    "quick_take": "The Information Commissioner's Office has fined South Staffordshire Water Plc and parent company South Staffordshire Plc £963,900 ($1.3 million) over a cyberattack that exposed the personal data of 663,887 customers…",
+    "sections": {
+      "impact": "The Information Commissioner's Office has fined South Staffordshire Water Plc and parent company South Staffordshire Plc £963,900 ($1.3 million) over a cyberattack that exposed the personal data of 663,887 customers and employees. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "The Information Commissioner's Office has fined South Staffordshire Water Plc and parent company South Staffordshire Plc £963,900 ($1.3 million) over a cyberattack that exposed the personal data of 663,887 customers and employees. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "13067f4e000a21a9",
     "title": "Why Agentic AI Is Security's Next Blind Spot",
     "source": "The Hacker News",
@@ -522,41 +549,6 @@
       "mitigation": "The guidance builds on CISA’s previous work with federal and international partners to establish a shared vision for a software bill of materials and provides recommendations on minimum elements that should be included in an SBOM for AI. Because AI systems are software systems, these recommendations should be considered in addition to the general minimum elements for an SBOM . A software bill of materials (SBOM) acts as an “ingredients list” for software that better positions organizations to understand their supply chains and make risk-informed decisions about how to protect their critical systems."
     },
     "email_summary": "CISA and the Group of Seven (G7) international partners—Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union—have released joint guidance, Software Bill of Materials for AI – Minimum Elements , to help public and private sector stakeholders improve transparency in their artificial intelligence (AI) systems and supply chains. A software bill of materials (SBOM) acts as an “ingredients list” for software that better positions organizations to understand their…",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "9b5b6a7606d4d0da",
-    "title": "ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-05",
-    "published": "2026-05-12T12:00:00+00:00",
-    "fetched_at": "2026-05-12T17:09:23.195814+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-05-12",
-    "cves": [
-      "CVE-2025-15467"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the products versions listed as affected in the advisory. An update is available that resolves publicly reported vulnerability.",
-      "technical": "While exploitability to remote code execution depends on platform and toolchain mitigations, the stack-based write primitive represents a severe risk. What might an attacker use the vulnerability to do? - An attacker who successfully exploited these vulnerabilities could cause a crash, denial-of-service (DoS), or potentially remote code execution. An attacker who successfully exploited these vulnerabilities could cause a crash, denial-of-service (DoS), or potentially remote code execution. The following versions of ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax are affected:\n\n \n AC500 V3 PM5xxx 3.9.0, 3.9.0_HF1\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n ABB \n ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax \n Out-of-bounds Write \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-15467 \n \n When parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as AES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is copied into a fixed-size stack buffer without verifying that its length fits the destination.\n\nReferenced vulnerabilities: CVE-2025-15467.",
-      "impact": "The following versions of ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax are affected:\n\n \n AC500 V3 PM5xxx 3.9.0, 3.9.0_HF1\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n ABB \n ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax \n Out-of-bounds Write \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-15467 \n \n When parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as AES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is copied into a fixed-size stack buffer without verifying that its length fits the destination. View CVE Details \n\n \n Affected Products \n ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax \n \n Vendor: \nABB \n Product Version: \nABB AC500 V3 PM5xxx Firmware Version 3.9.0 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product version: - AC500 V3 firmware version 3.9.0 HF1 ABB recommends that customers apply the update at earliest convenience. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "This firmware version is released for all AC500 V3 PLC types and available for download from the ABB library. https://search.abb.com/library/Download.aspx?DocumentID=3ADR011537&LanguageCode=en&DocumentPartId=&Action=Launch\n\n Mitigation \nRefer to section “General security recommendations” for further advise on how to keep your system secure. View CVE Details \n\n \n Affected Products \n ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax \n \n Vendor: \nABB \n Product Version: \nABB AC500 V3 PM5xxx Firmware Version 3.9.0 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe problem is corrected in the following product version: - AC500 V3 firmware version 3.9.0 HF1 ABB recommends that customers apply the update at earliest convenience. Recommended practices include that process control systems are physically protected, have no direct connections to the Internet, and are separated from other networks by means of a firewall system that has a minimal number of ports exposed. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies."
-    },
-    "email_summary": "View CSAF \n\n Summary \n ABB became aware of vulnerability in the products versions listed as affected in the advisory. Tracked as CVE-2025-15467.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

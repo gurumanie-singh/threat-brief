@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">13 May 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,6 +63,8 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
@@ -60,10 +72,112 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="[webinar] why your appsec tools miss the &#34;lethal path&#34; (and how to fix it)"
+       data-id="7311a5a8b0654157"
+       data-published="2026-05-13T17:22:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-05-13T17:22:43+05:30" title="13 May 2026, 06:52">13 May 2026, 06:52</time>
+      </div>
+      <h3 class="card-title">[Webinar] Why Your AppSec Tools Miss the &#34;Lethal Path&#34; (and How to Fix It)</h3>
+      <p class="card-summary">TL;DR: Stop chasing thousands of &#34;toast&#34; alerts. Join experts from Wiz and Okta/GitLab to learn how hackers connect tiny flaws to build a &#34;Lethal Chain&#34; to your data—and how to break it.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7311a5a8b0654157.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/webinar-why-your-appsec-tools-miss.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="most remediation programs never confirm the fix actually worked"
+       data-id="5549bed9045cb7ff"
+       data-published="2026-05-13T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-13T17:00:00+05:30" title="13 May 2026, 06:30">13 May 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Most Remediation Programs Never Confirm the Fix Actually Worked</h3>
+      <p class="card-summary">Security teams have never had better visibility into their environments and never been worse at confirming what they fix stays fixed.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5549bed9045cb7ff.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/most-remediation-programs-never-confirm.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,patch,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="microsoft patches 138 vulnerabilities, including dns and netlogon rce flaws"
+       data-id="638d45ba52419e22"
+       data-published="2026-05-13T16:06:10+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-13T16:06:10+05:30" title="13 May 2026, 05:36">13 May 2026, 05:36</time>
+      </div>
+      <h3 class="card-title">Microsoft Patches 138 Vulnerabilities, Including DNS and Netlogon RCE Flaws</h3>
+      <p class="card-summary">Microsoft on Tuesday released patches for 138 security vulnerabilities spanning its product portfolio, although none of them have been listed as publicly known or under active attack.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/638d45ba52419e22.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -97,6 +211,64 @@
   </div>
   <div class="article-card card--medium"
        data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="latam vibe hackers generate custom hacking tools on the fly"
+       data-id="f0f5ca5744b6283a"
+       data-published="2026-05-13T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-13T13:00:00+00:00" title="13 May 2026, 08:00">13 May 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">LatAm Vibe Hackers Generate Custom Hacking Tools on the Fly</h3>
+      <p class="card-summary">In the latest evolution of automated cyberattacks, two threat campaigns heavily leveraged AI agents to support attacks against entities in Mexico and Brazil.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f0f5ca5744b6283a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/ai-agents-generate-custom-hacking-tools" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="china&#39;s &#39;famoussparrow&#39; apt nests in south caucasus energy firm"
+       data-id="1aa0a5a430329211"
+       data-published="2026-05-13T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-13T13:00:00+00:00" title="13 May 2026, 08:00">13 May 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">China&#39;s &#39;FamousSparrow&#39; APT Nests in South Caucasus Energy Firm</h3>
+      <p class="card-summary">The cyberthreat group targets an Azerbaijani oil and gas firm with repeated attacks, as the China-linked actors extend targeting beyond hospitality, telecom, and government sectors.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1aa0a5a430329211.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/china-famoussparrow-apt-south-caucasus-energy-firm" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
        data-vendors="Google"
        data-severity="medium"
        data-title="android adds intrusion logging for sophisticated spyware forensics"
@@ -123,6 +295,101 @@
       <div class="detail-links">
         <a href="../articles/2f135a5ad7f72a1d.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/android-adds-intrusion-logging-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="foxconn confirms cyberattack claimed by nitrogen ransomware gang"
+       data-id="1875f1ef00eb5c09"
+       data-published="2026-05-13T08:49:54-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-13T08:49:54-04:00" title="13 May 2026, 07:49">13 May 2026, 07:49</time>
+      </div>
+      <h3 class="card-title">Foxconn confirms cyberattack claimed by Nitrogen ransomware gang</h3>
+      <p class="card-summary">Foxconn, the world&#39;s largest electronics manufacturer, says some of its North American factories are now working to resume normal operations after a cyberattack. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1875f1ef00eb5c09.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/electronics-giant-foxconn-confirms-cyberattack-on-north-american-factories/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="73 seconds to breach, 24 hours to patch: the case for autonomous validation"
+       data-id="f2ab278abbdeadd2"
+       data-published="2026-05-13T08:30:38-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-13T08:30:38-04:00" title="13 May 2026, 07:30">13 May 2026, 07:30</time>
+      </div>
+      <h3 class="card-title">73 Seconds to Breach, 24 Hours to Patch: The Case for Autonomous Validation</h3>
+      <p class="card-summary">Attackers can compromise systems in minutes while patching and response still take hours or days. Picus Security breaks down why autonomous validation is becoming critical for modern defense strategies. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f2ab278abbdeadd2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/73-seconds-to-breach-24-hours-to-patch-the-case-for-autonomous-validation/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says some users can&#39;t install office on windows 365 devices"
+       data-id="5b35b870eb1ad0af"
+       data-published="2026-05-13T07:53:54-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-13T07:53:54-04:00" title="13 May 2026, 06:53">13 May 2026, 06:53</time>
+      </div>
+      <h3 class="card-title">Microsoft says some users can&#39;t install Office on Windows 365 devices</h3>
+      <p class="card-summary">Microsoft says some customers are experiencing issues downloading and installing Office on their Windows 365 devices. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5b35b870eb1ad0af.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-some-users-cant-install-office-on-windows-365-devices/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

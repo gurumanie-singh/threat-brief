@@ -29,6 +29,10 @@
     "content_model_version": 2,
     "related_sources": [
       {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-critical-sd-wan-flaw-exploited-in-zero-day-attacks/"
+      },
+      {
         "source": "CISA Alerts",
         "link": "https://www.cisa.gov/news-events/alerts/2026/05/14/cisa-adds-one-known-exploited-vulnerability-catalog"
       }
@@ -86,6 +90,36 @@
       "mitigation": "Half of it feels like crap we should have fixed years ago."
     },
     "email_summary": "Everything is still on fire. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ed37f11b585a6222",
+    "title": "Maximum Severity Cisco SD-WAN Bug Exploited in the Wild",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited",
+    "published": "2026-05-14T20:25:31+00:00",
+    "fetched_at": "2026-05-14T20:40:41.554019+00:00",
+    "summary": "This is the second time this year a threat actor has leveraged a CVSS 10.0 vulnerability in Cisco's network control system.",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-05-14",
+    "cves": [],
+    "cvss": 10.0,
+    "severity": "critical",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": true,
+    "card_summary": "This is the second time this year a threat actor has leveraged a CVSS 10.0 vulnerability in Cisco's network control system.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Assessed severity: CRITICAL. CVSS score: 10.0/10."
+    },
+    "email_summary": "This is the second time this year a threat actor has leveraged a CVSS 10.0 vulnerability in Cisco's network control system. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -202,6 +236,34 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "Attackers uniquely fingerprint victims before delivering spear-phishing payloads aimed at espionage, in the latest campaign from the Belarussian nation-state threat group.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "769f3f5803e4edeb",
+    "title": "OpenAI confirms security breach in TanStack supply chain attack",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/",
+    "published": "2026-05-14T15:07:24-04:00",
+    "fetched_at": "2026-05-14T20:40:41.149372+00:00",
+    "summary": "OpenAI says two employees' devices were breached in the recent TanStack supply chain attack that impacted hundreds of npm and PyPI packages, causing the company to rotate code-signing certificates for its applications as a precaution. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-05-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "OpenAI says two employees' devices were breached in the recent TanStack supply chain attack that impacted hundreds of npm and PyPI packages, causing the company to rotate code-signing certificates for its applications as a precaution. [...]",
+    "quick_take": "OpenAI says two employees' devices were breached in the recent TanStack supply chain attack that impacted hundreds of npm and PyPI packages, causing the company to rotate code-signing certificates for its…",
+    "sections": {
+      "impact": "OpenAI says two employees' devices were breached in the recent TanStack supply chain attack that impacted hundreds of npm and PyPI packages, causing the company to rotate code-signing certificates for its applications as a precaution. [...]\n\nAssessed severity: HIGH.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "OpenAI says two employees' devices were breached in the recent TanStack supply chain attack that impacted hundreds of npm and PyPI packages, causing the company to rotate code-signing certificates for its applications as a precaution. [...]. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -781,79 +843,6 @@
       "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
     },
     "email_summary": "View CSAF \n\n Summary \n Simcenter Femap is affected by heap based buffer overflow vulnerability in Datakit library that could be triggered when the application reads files in IPT format. Tracked as CVE-2025-12659.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "09eb1af01d809ee6",
-    "title": "Universal Robots Polyscope 5",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-17",
-    "published": "2026-05-14T12:00:00+00:00",
-    "fetched_at": "2026-05-14T16:59:51.628697+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-05-14",
-    "cves": [
-      "CVE-2026-8153"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and execute code. The following versions of Universal Robots Polyscope 5 are affected:\n\n \n Polyscope 5 <5.25.1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Universal Robots \n Universal Robots Polyscope 5 \n Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Denmark\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-8153 \n \n OS command injection in Dashboard Server interface in Universal Robots PolyScope versions prior to 5.25.1 allows unauthenticated attacker to craft commands that will execute code on the robot's OS.",
-      "impact": "The following versions of Universal Robots Polyscope 5 are affected:\n\n \n Polyscope 5 <5.25.1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n Universal Robots \n Universal Robots Polyscope 5 \n Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Denmark\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-8153 \n \n OS command injection in Dashboard Server interface in Universal Robots PolyScope versions prior to 5.25.1 allows unauthenticated attacker to craft commands that will execute code on the robot's OS. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CVE Details \n\n \n Affected Products \n Universal Robots Polyscope 5 \n \n Vendor: \nUniversal Robots \n Product Version: \nUniversal Robots Polyscope 5: <5.25.1 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUniversal Robots has released Polyscope 5 version 5.25.1.For more information, see Universal Robots article: https://www.universal-robots.com/articles/ur/cybersecurity/cve-2026-8153-command-injection-in-the-polyscope-5-dashboard-server/.\n https://www.universal-robots.com/articles/ur/cybersecurity/cve-2026-8153-command-injection-in-the-polyscope-5-dashboard-server/ \n\n \n Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9.8 \n CRITICAL \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Vera Mens of Claroty Team82 reported these vulnerabilities to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy).\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. CISA also recommends users take the following measures to protect themselves from social engineering attacks:\n\n Do not click web links or open attachments in unsolicited email messages.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and execute code. Tracked as CVE-2026-8153.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "d1d8a78c5b69793e",
-    "title": "Siemens Ruggedcom Rox",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-11",
-    "published": "2026-05-14T12:00:00+00:00",
-    "fetched_at": "2026-05-14T16:59:51.629539+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-05-14",
-    "cves": [
-      "CVE-2025-40947"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [
-      "Palo Alto"
-    ],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "View CSAF \n\n Summary \n Ruggedcom Rox contains an input validation vulnerability in the feature key installation process that could allow an authenticated remote attacker to execute arbitrary commands with root…",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Ruggedcom Rox contains an input validation vulnerability in the feature key installation process that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Siemens has released new versions for the affected products and recommends to update to the latest versions.",
-      "technical": "The following versions of Siemens Ruggedcom Rox are affected:\n\n \n RUGGEDCOM ROX MX5000 vers:intdot/<2.17.1\n\n RUGGEDCOM ROX MX5000RE vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1400 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1500 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1501 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1510 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1511 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1512 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1524 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1536 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX5000 vers:intdot/<2.17.1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Siemens \n Siemens Ruggedcom Rox \n Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-40947 \n \n Affected devices do not properly sanitize user-supplied input during the feature key installation process. This could allow an authenticated remote attacker to inject arbitrary commands, resulting in remote code execution with root privileges on the underlying operating system. View CVE Details \n\n \n Affected Products \n Siemens Ruggedcom Rox \n \n Vendor: \nSiemens \n Product Version: \nRUGGEDCOM ROX MX5000, RUGGEDCOM ROX MX5000RE, RUGGEDCOM ROX RX1400, RUGGEDCOM ROX RX1500, RUGGEDCOM ROX RX1501, RUGGEDCOM ROX RX1510, RUGGEDCOM ROX RX1511, RUGGEDCOM ROX RX1512, RUGGEDCOM ROX RX1524, RUGGEDCOM ROX RX1536, RUGGEDCOM ROX RX5000 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUpdate to V2.17.1 or later version\n https://support.industry.siemens.com/cs/ww/en/view/110002017/ \n\n \n Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.5 \n HIGH \n CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Emmanuel Zhou, Rick Wyble, Mehemt Balta, and Adam Robbie of Palo Alto Networks OT Threat Research Lab reported this vulnerability to Siemens. View CSAF \n\n Summary \n Ruggedcom Rox contains an input validation vulnerability in the feature key installation process that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system.\n\nReferenced vulnerabilities: CVE-2025-40947.",
-      "impact": "The following versions of Siemens Ruggedcom Rox are affected:\n\n \n RUGGEDCOM ROX MX5000 vers:intdot/<2.17.1\n\n RUGGEDCOM ROX MX5000RE vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1400 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1500 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1501 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1510 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1511 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1512 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1524 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX1536 vers:intdot/<2.17.1 \n\n RUGGEDCOM ROX RX5000 vers:intdot/<2.17.1 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Siemens \n Siemens Ruggedcom Rox \n Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-40947 \n \n Affected devices do not properly sanitize user-supplied input during the feature key installation process. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. Siemens has released new versions for the affected products and recommends to update to the latest versions.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Siemens has released new versions for the affected products and recommends to update to the latest versions. View CVE Details \n\n \n Affected Products \n Siemens Ruggedcom Rox \n \n Vendor: \nSiemens \n Product Version: \nRUGGEDCOM ROX MX5000, RUGGEDCOM ROX MX5000RE, RUGGEDCOM ROX RX1400, RUGGEDCOM ROX RX1500, RUGGEDCOM ROX RX1501, RUGGEDCOM ROX RX1510, RUGGEDCOM ROX RX1511, RUGGEDCOM ROX RX1512, RUGGEDCOM ROX RX1524, RUGGEDCOM ROX RX1536, RUGGEDCOM ROX RX5000 \n Product Status: \nknown_affected \n \n \n Remediations \n Vendor fix \nUpdate to V2.17.1 or later version\n https://support.industry.siemens.com/cs/ww/en/view/110002017/ \n\n \n Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.5 \n HIGH \n CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Emmanuel Zhou, Rick Wyble, Mehemt Balta, and Adam Robbie of Palo Alto Networks OT Threat Research Lab reported this vulnerability to Siemens. General Recommendations \n As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Ruggedcom Rox contains an input validation vulnerability in the feature key installation process that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Tracked as CVE-2025-40947.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">14 May 2026</h1>
-      <span class="brief-sub">10 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>12 items require immediate action — patches or mitigations available</li>
+        <li>Linux, Palo Alto ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -51,6 +53,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -64,8 +67,13 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
@@ -75,14 +83,48 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ghostwriter targets ukrainian government with geofenced pdf phishing, cobalt strike"
+       data-id="d6e933e9cf161986"
+       data-published="2026-05-14T19:30:37+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-14T19:30:37+05:30" title="14 May 2026, 09:00">14 May 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike</h3>
+      <p class="card-summary">The Belarus-aligned threat group known as Ghostwriter has been attributed to a fresh set of attacks targeting governmental organizations in Ukraine.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d6e933e9cf161986.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
@@ -274,127 +316,489 @@
       </div>
     </div>
   </div>
-  <div class="article-card card--critical"
-       data-tags="cve,vulnerability"
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity="critical"
-       data-title="18-year-old nginx rewrite module flaw enables unauthenticated rce"
-       data-id="484cf6b03d98e9a7"
-       data-published="2026-05-14T11:30:09+05:30"
-       data-action="">
+       data-severity="low"
+       data-title="siemens siemens ros#"
+       data-id="d72ec6851e7a73d0"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-05-14T11:30:09+05:30" title="14 May 2026, 01:00">14 May 2026, 01:00</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">18-Year-Old NGINX Rewrite Module Flaw Enables Unauthenticated RCE</h3>
-      <p class="card-summary">Cybersecurity researchers have disclosed multiple security vulnerabilities impacting NGINX Plus and NGINX Open, including a critical flaw that remained undetected for 18 years.</p>
+      <h3 class="card-title">Siemens Siemens ROS#</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
           <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">The Hacker News</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   ROS# contains a ROS service file_server, that before version 2.2.2 contains a path traversal vulnerability which could allow an attacker to access, i.e. read and write, arbitrary files, which are accessible with the user rights of the user that runs the service, on the system that hosts service. Siemens has released a new version for ROS# and recommends to update to the latest version.</p></div>
       <div class="detail-links">
-        <a href="../articles/484cf6b03d98e9a7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/18-year-old-nginx-rewrite-module-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/d72ec6851e7a73d0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-08" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware,phishing"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="kongtuke hackers now use microsoft teams for corporate breaches"
-       data-id="ee55cc081e70893a"
-       data-published="2026-05-14T08:12:40-04:00"
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="AWS"
+       data-severity="low"
+       data-title="siemens gwap"
+       data-id="92ce60a6cb67a489"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens gWAP</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Siemens gPROMS Web Applications Publisher (gWAP) is affected by a remote code execution vulnerability introduced through a third-party component, namely the Axios HTTP client library. The vulnerability stems from a specific &#34;Gadget&#34; attack chain that allows prototype pollution in other third-party libraries, potentially allowing an attacker to execute arbitrary code.</p></div>
+      <div class="detail-links">
+        <a href="../articles/92ce60a6cb67a489.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="apt,breach,cve,exploit,malware,patch,vulnerability"
+       data-vendors="Adobe,Apple,Google,Linux,Microsoft"
+       data-severity="low"
+       data-title="siemens simatic"
+       data-id="6aae83c281b244bf"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Adobe</span><span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens SIMATIC</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   SIMATIC CN 4100 contains multiple vulnerabilities which could potentially lead to a compromise in availability, integrity and confidentiality. Siemens has released a new version for SIMATIC CN 4100 and recommends to update to the latest version.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6aae83c281b244bf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-10" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="low"
+       data-title="siemens ruggedcom rox"
+       data-id="4217fafeccf8b8c9"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Ruggedcom Rox</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Ruggedcom Rox contains an input validation vulnerability in the Scheduler functionality that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4217fafeccf8b8c9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-12" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Linux"
+       data-severity="low"
+       data-title="siemens ruggedcom rox"
+       data-id="ae3fe7805ffaf45b"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Ruggedcom Rox</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Ruggedcom Rox before v2.17.1 contain multiple third-party vulnerabilities. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/ae3fe7805ffaf45b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-16" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens simcenter femap"
+       data-id="29e17301ae1ccf63"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Simcenter Femap</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Simcenter Femap is affected by heap based buffer overflow vulnerability in Datakit library that could be triggered when the application reads files in IPT format. If a user is tricked to open a malicious file with the affected application, an attacker could leverage the vulnerability to perform remote code execution in the context of the current process.</p></div>
+      <div class="detail-links">
+        <a href="../articles/29e17301ae1ccf63.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="universal robots polyscope 5"
+       data-id="09eb1af01d809ee6"
+       data-published="2026-05-14T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-14T08:12:40-04:00" title="14 May 2026, 07:12">14 May 2026, 07:12</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
       </div>
-      <h3 class="card-title">KongTuke hackers now use Microsoft Teams for corporate breaches</h3>
-      <p class="card-summary">Initial access broker KongTuke has moved to Microsoft Teams for social engineering attacks, taking as little as five minutes to gain persistent access to corporate networks. [...]</p>
+      <h3 class="card-title">Universal Robots Polyscope 5</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-        </div>
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
-          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
           <span class="ttag">phishing</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and execute code. The following versions of Universal Robots Polyscope 5 are affected:</p>
+<p>Polyscope 5 &lt;5.25.1</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   Universal Robots   Universal Robots Polyscope 5   Improper Neutralization of Special Elements used in an OS Command (&#39;OS Command Injection&#39;)           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Denmark</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-8153     OS command injection in Dashboard Server interface in Universal Robots PolyScope versions prior to 5.25.1 allows unauthenticated attacker to craft commands that will execute code on the robot&#39;s OS.</p></div>
       <div class="detail-links">
-        <a href="../articles/ee55cc081e70893a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/kongtuke-hackers-now-use-microsoft-teams-for-corporate-breaches/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/09eb1af01d809ee6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-17" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="dell confirms its supportassist software causes windows bsod crashes"
-       data-id="fce80ef3862f7b4a"
-       data-published="2026-05-14T06:03:39-04:00"
-       data-action="">
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="low"
+       data-title="siemens ruggedcom rox"
+       data-id="d1d8a78c5b69793e"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-14T06:03:39-04:00" title="14 May 2026, 05:03">14 May 2026, 05:03</time>
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">Dell confirms its SupportAssist software causes Windows BSOD crashes</h3>
-      <p class="card-summary">Dell confirmed that its SupportAssist software is causing blue-screen crashes on some Windows systems following a wave of user reports about random reboots affecting Dell devices since Friday. [...]</p>
+      <h3 class="card-title">Siemens Ruggedcom Rox</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Ruggedcom Rox contains an input validation vulnerability in the feature key installation process that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
       <div class="detail-links">
-        <a href="../articles/fce80ef3862f7b4a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/software/dell-confirms-its-supportassist-software-causes-windows-bsod-crashes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/d1d8a78c5b69793e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-11" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity="medium"
-       data-title="us charges suspected dream market admin arrested in germany"
-       data-id="034404613660a7c3"
-       data-published="2026-05-14T04:55:46-04:00"
-       data-action="">
+       data-severity="low"
+       data-title="siemens teamcenter"
+       data-id="1063d3c804e62119"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-14T04:55:46-04:00" title="14 May 2026, 03:55">14 May 2026, 03:55</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">US charges suspected Dream Market admin arrested in Germany</h3>
-      <p class="card-summary">The alleged main administrator of Dream Market Incognito Market, one of the largest dark web marketplaces before its shutdown, has been indicted in the United States on money laundering charges. [...]</p>
+      <h3 class="card-title">Siemens Teamcenter</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Siemens Teamcenter is affected by multiple vulnerabilities which could potentially lead to a compromise in availability, integrity and confidentiality. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
       <div class="detail-links">
-        <a href="../articles/034404613660a7c3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/us-charges-suspected-dream-market-admin-arrested-in-germany/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/1063d3c804e62119.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens solid edge"
+       data-id="3925ab1a504d5baa"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Solid Edge</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Solid Edge SE2026 before Update 5 is affected by two file parsing vulnerabilities that could be triggered when the application reads specially crafted files in PAR format. This could allow an attacker to crash the application or execute arbitrary code.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3925ab1a504d5baa.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens sentron 7kt pac1261 data manager"
+       data-id="72d1722ea784ac99"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens SENTRON 7KT PAC1261 Data Manager</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   The web server in SENTRON 7KT PAC1261 Data Manager Before V2.1.0 contains a request smuggling vulnerability in the Go Project&#39;s net/http package that could allow an attacker to retrieve authorization tokens that can be used to gain administrative control over the device. Siemens has released a new version for SENTRON 7KT PAC1261 Data Manager and recommends to update to the latest version.</p></div>
+      <div class="detail-links">
+        <a href="../articles/72d1722ea784ac99.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-14" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens opcenter rdnl"
+       data-id="c3293ccf19310f03"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Opcenter RDnL</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Opcenter RDnL is affected by missing authentication in critical function in ‘ActiveMQ Artemis’. An unauthenticated attacker within the adjacent network could use the Core protocol to force a target broker to establish an outbound Core federation connection to an attacker-controlled rogue broker.</p></div>
+      <div class="detail-links">
+        <a href="../articles/c3293ccf19310f03.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-09" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="low"
+       data-title="siemens ruggedcom rox"
+       data-id="f3ff70b21dacfef6"
+       data-published="2026-05-14T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-05-14T12:00:00+00:00" title="14 May 2026, 07:00">14 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Ruggedcom Rox</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Ruggedcom Rox contains an improper access control vulnerability that could allow an authenticated remote attacker to read arbitrary files with root privileges from the underlying operating system&#39;s filesystem. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/f3ff70b21dacfef6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

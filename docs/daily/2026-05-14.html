@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">14 May 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">5 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -63,19 +64,54 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="malware,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="windows zero-days expose bitlocker bypasses and ctfmon privilege escalation"
+       data-id="fdb31c332efc8cc6"
+       data-published="2026-05-14T14:55:50+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-14T14:55:50+05:30" title="14 May 2026, 04:25">14 May 2026, 04:25</time>
+      </div>
+      <h3 class="card-title">Windows Zero-Days Expose BitLocker Bypasses And CTFMON Privilege Escalation</h3>
+      <p class="card-summary">An anonymous cybersecurity researcher who disclosed three Microsoft Defender vulnerabilities has returned with two more zero-days involving a BitLocker bypass and a privilege escalation impacting Windows Collaborative Translation Framework (CTFMON).</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fdb31c332efc8cc6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,vulnerability"
        data-vendors="Linux"
@@ -138,6 +174,36 @@
       <div class="detail-links">
         <a href="../articles/484cf6b03d98e9a7.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/18-year-old-nginx-rewrite-module-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="dell confirms its supportassist software causes windows bsod crashes"
+       data-id="fce80ef3862f7b4a"
+       data-published="2026-05-14T06:03:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-14T06:03:39-04:00" title="14 May 2026, 05:03">14 May 2026, 05:03</time>
+      </div>
+      <h3 class="card-title">Dell confirms its SupportAssist software causes Windows BSOD crashes</h3>
+      <p class="card-summary">Dell confirmed that its SupportAssist software is causing blue-screen crashes on some Windows systems following a wave of user reports about random reboots affecting Dell devices since Friday. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fce80ef3862f7b4a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/software/dell-confirms-its-supportassist-software-causes-windows-bsod-crashes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

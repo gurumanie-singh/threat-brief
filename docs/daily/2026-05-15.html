@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">15 May 2026</h1>
-      <span class="brief-sub">8 articles</span>
+      <span class="brief-sub">13 articles</span>
     </div>
   </div>
 
@@ -37,7 +37,7 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -66,6 +66,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
@@ -74,8 +75,8 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
@@ -83,6 +84,38 @@
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="four openclaw flaws enable data theft, privilege escalation, and persistence"
+       data-id="c2d03da43e03b679"
+       data-published="2026-05-15T19:05:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-05-15T19:05:04+05:30" title="15 May 2026, 08:35">15 May 2026, 08:35</time>
+      </div>
+      <h3 class="card-title">Four OpenClaw Flaws Enable Data Theft, Privilege Escalation, and Persistence</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed a set of four security flaws in OpenClaw that could be chained to achieve data theft, privilege escalation, and persistence.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c2d03da43e03b679.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Microsoft"
@@ -176,6 +209,37 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="avada builder wordpress plugin flaws allow site credential theft"
+       data-id="4864010ccb207b5b"
+       data-published="2026-05-15T11:56:56-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-05-15T11:56:56-04:00" title="15 May 2026, 10:56">15 May 2026, 10:56</time>
+      </div>
+      <h3 class="card-title">Avada Builder WordPress plugin flaws allow site credential theft</h3>
+      <p class="card-summary">Two vulnerabilities in the Avada Builder plugin for WordPress, with an estimated one million active installations, allow hackers to read arbitrary files and extract sensitive information from the database. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4864010ccb207b5b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/avada-builder-wordpress-plugin-flaws-allow-site-credential-theft/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--high"
        data-tags="cve,exploit,vulnerability"
        data-vendors="Microsoft"
@@ -239,6 +303,65 @@
       <div class="detail-links">
         <a href="../articles/b2e7f4983caa286f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft backpedals: edge to stop loading passwords into memory"
+       data-id="a5ba0351793b7b48"
+       data-published="2026-05-15T10:49:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T10:49:39-04:00" title="15 May 2026, 09:49">15 May 2026, 09:49</time>
+      </div>
+      <h3 class="card-title">Microsoft backpedals: Edge to stop loading passwords into memory</h3>
+      <p class="card-summary">Microsoft is updating the Edge web browser to ensure it no longer loads saved passwords into process memory in clear text at startup after previously stating it was &#34;by design.&#34; [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a5ba0351793b7b48.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-edge-to-stop-loading-cleartext-passwords-in-memory-on-startup/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="inside the remus infostealer: session theft, maas, and rapid evolution"
+       data-id="9849d1a485fc9547"
+       data-published="2026-05-15T10:02:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-15T10:02:12-04:00" title="15 May 2026, 09:02">15 May 2026, 09:02</time>
+      </div>
+      <h3 class="card-title">Inside the REMUS Infostealer: Session Theft, MaaS, and Rapid Evolution</h3>
+      <p class="card-summary">Stolen browser sessions and authentication tokens are becoming more valuable than stolen passwords. Flare explains how the REMUS infostealer evolved around session theft and operational scalability. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9849d1a485fc9547.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/inside-the-remus-infostealer-session-theft-maas-and-rapid-evolution/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -327,6 +450,34 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="../articles/0d75d7be7e4d8c5d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/ics-ot-security/taiwan-incident-highlights-cybersecurity-gaps" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="taiwan bullet train hack highlights cybersecurity gaps in rail systems"
+       data-id="4a492e30721a14c3"
+       data-published="2026-05-15T01:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-15T01:00:00+00:00" title="14 May 2026, 20:00">14 May 2026, 20:00</time>
+      </div>
+      <h3 class="card-title">Taiwan Bullet Train Hack Highlights Cybersecurity Gaps in Rail Systems</h3>
+      <p class="card-summary">A Taiwanese student experimenting with software-defined radio technology shut down three bullet trains for nearly an hour, leading to an anti-terrorism response.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4a492e30721a14c3.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/ics-ot-security/taiwan-incident-highlights-cybersecurity-gaps" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>

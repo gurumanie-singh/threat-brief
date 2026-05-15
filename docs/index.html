@@ -28,13 +28,15 @@
       <h1 class="brief-title">15 May 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-05-15T01:54:12.676726-05:00">15 May 2026, 01:54</time>
+        <time data-iso="2026-05-15T04:46:48.891031-05:00">15 May 2026, 04:46</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-high">1 high</span>
-      <span class="stat">2 articles today</span>
+      <span class="stat stat-critical">1 critical</span>
+      <span class="stat stat-high">2 high</span>
+      <span class="stat stat-action">1 action req.</span>
+      <span class="stat">4 articles today</span>
     </div>
   </div>
 
@@ -42,18 +44,20 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
         <span class="trend-pill">hackers<span class="trend-count">11</span></span>
-        <span class="trend-pill">microsoft<span class="trend-count">8</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">10</span></span>
+        <span class="trend-pill">zero-day<span class="trend-count">8</span></span>
         <span class="trend-pill">breach<span class="trend-count">7</span></span>
         <span class="trend-pill">windows<span class="trend-count">7</span></span>
         <span class="trend-pill">linux<span class="trend-count">7</span></span>
-        <span class="trend-pill">patch<span class="trend-count">7</span></span>
       </div>
     </div>
   </div>
@@ -116,10 +120,42 @@
   <div class="day-group">
     <h2 class="day-heading">
       15 May 2026
-      <span class="day-count">2</span>
+      <span class="day-count">4</span>
     </h2>
   </div>
 
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="on-prem microsoft exchange server cve-2026-42897 exploited via crafted email"
+       data-id="4ab0b49aa6d6f5fd"
+       data-published="2026-05-15T11:49:04+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T11:49:04+05:30" title="15 May 2026, 01:19">15 May 2026, 01:19</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">On-Prem Microsoft Exchange Server CVE-2026-42897 Exploited via Crafted Email</h3>
+      <p class="card-summary">Microsoft has disclosed a new security vulnerability impacting on-premise versions of Exchange Server that it said has come under active exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/4ab0b49aa6d6f5fd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,vulnerability"
        data-vendors="Cisco"
@@ -151,6 +187,39 @@
       <div class="detail-links">
         <a href="articles/b2e7f4983caa286f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft warns of exchange zero-day flaw exploited in attacks"
+       data-id="db949d2a316e40f2"
+       data-published="2026-05-15T05:40:42-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T05:40:42-04:00" title="15 May 2026, 04:40">15 May 2026, 04:40</time>
+      </div>
+      <h3 class="card-title">Microsoft warns of Exchange zero-day flaw exploited in attacks</h3>
+      <p class="card-summary">On Thursday, Microsoft shared mitigations for a high-severity Exchange Server vulnerability exploited in attacks that allow threat actors to execute arbitrary code via cross-site scripting (XSS) while targeting Outlook on the web users. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/db949d2a316e40f2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -834,7 +903,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       13 May 2026
-      <span class="day-count">8</span>
+      <span class="day-count">6</span>
     </h2>
   </div>
 
@@ -1011,67 +1080,6 @@
       <div class="detail-links">
         <a href="articles/e8111e4a8fb12eb2.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/dark-reading-celebrates-20-years-as-a-leading-authority-on-cybersecurity-highlighting-the-people-events-ideas-and-technologies-shaping-the-modern-risk-landscape" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,malware"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="azerbaijani energy firm hit by repeated microsoft exchange exploitation"
-       data-id="8f6e7324ab4484a4"
-       data-published="2026-05-13T18:30:00+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-13T18:30:00+05:30" title="13 May 2026, 08:00">13 May 2026, 08:00</time>
-      </div>
-      <h3 class="card-title">Azerbaijani Energy Firm Hit by Repeated Microsoft Exchange Exploitation</h3>
-      <p class="card-summary">A threat actor with affiliations to China has been linked to a &#34;multi-wave intrusion&#34; targeting an unnamed Azerbaijani oil and gas company between late December 2025 and late February 2026, marking an expansion of its targeting.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/8f6e7324ab4484a4.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/azerbaijani-energy-firm-hit-by-repeated.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="west pharmaceutical says hackers stole data, encrypted systems"
-       data-id="e22cbd1912326722"
-       data-published="2026-05-13T18:23:31-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-13T18:23:31-04:00" title="13 May 2026, 17:23">13 May 2026, 17:23</time>
-      </div>
-      <h3 class="card-title">West Pharmaceutical says hackers stole data, encrypted systems</h3>
-      <p class="card-summary">West Pharmaceutical Services disclosed that it was the target of a cyberattack that resulted in data exfiltration and system encryption. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/e22cbd1912326722.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/west-pharmaceutical-says-hackers-stole-data-encrypted-systems/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

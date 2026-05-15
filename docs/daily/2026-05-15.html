@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">15 May 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">16 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -68,6 +69,7 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
@@ -77,13 +79,48 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="turla turns kazuar backdoor into modular p2p botnet for persistent access"
+       data-id="136933774fee7a90"
+       data-published="2026-05-15T22:40:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-15T22:40:25+05:30" title="15 May 2026, 12:10">15 May 2026, 12:10</time>
+      </div>
+      <h3 class="card-title">Turla Turns Kazuar Backdoor Into Modular P2P Botnet for Persistent Access</h3>
+      <p class="card-summary">The Russian state-sponsored hacking group known as</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Russian state-sponsored hacking group known as    Turla    has transformed its custom backdoor Kazuar into a modular peer-to-peer (P2P) botnet that&#39;s engineered for stealth and persistent access to compromised hosts. Turla, per the U.S.</p></div>
+      <div class="detail-links">
+        <a href="../articles/136933774fee7a90.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware,vulnerability"
        data-vendors="AWS"
@@ -181,6 +218,72 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors="Linux,Microsoft"
+       data-severity="critical"
+       data-title="microsoft exchange, windows 11 hacked on second day of pwn2own"
+       data-id="29e50ee51fb88b1c"
+       data-published="2026-05-15T13:47:25-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T13:47:25-04:00" title="15 May 2026, 12:47">15 May 2026, 12:47</time>
+      </div>
+      <h3 class="card-title">Microsoft Exchange, Windows 11 hacked on second day of Pwn2Own</h3>
+      <p class="card-summary">​During the second day of Pwn2Own Berlin 2026, competitors collected $385,750 in cash awards after exploiting 15 unique zero-day vulnerabilities in multiple products, including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux for Workstations.…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>​During the second day of Pwn2Own Berlin 2026, competitors collected $385,750 in cash awards after exploiting 15 unique zero-day vulnerabilities in multiple products, including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux for Workstations. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/29e50ee51fb88b1c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="popular node-ipc npm package compromised to steal credentials"
+       data-id="da169858a8332410"
+       data-published="2026-05-15T13:10:42-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-05-15T13:10:42-04:00" title="15 May 2026, 12:10">15 May 2026, 12:10</time>
+      </div>
+      <h3 class="card-title">Popular node-ipc npm package compromised to steal credentials</h3>
+      <p class="card-summary">Hackers have injected credential-stealing malware into newly published versions of node-ipc, a popular inter-process communication package, in a new supply chain attack targeting npm. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/da169858a8332410.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -263,6 +366,7 @@
           <span class="ttag">vulnerability</span>
         </div>
       </div>
+      <div class="card-related">Also: CISA Alerts</div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">

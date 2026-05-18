@@ -1,5 +1,68 @@
 [
   {
+    "id": "b74f1b27bd5776b2",
+    "title": "Weekly Recap: Exchange 0-Day, npm Worm, Fake AI Repo, Cisco Exploit and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/weekly-recap-exchange-0-day-npm-worm.html",
+    "published": "2026-05-18T19:20:17+05:30",
+    "fetched_at": "2026-05-18T16:21:12.349109+00:00",
+    "summary": "Monday opens with a trust problem. A mail server flaw is under active use. A network control system was targeted. Trusted packages were poisoned. A fake model page pushed a stealer. Then came the familiar ransom claim: the data was returned and deleted.",
+    "tags": [
+      "exploit",
+      "malware",
+      "ransomware",
+      "zero-day"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": false,
+    "card_summary": "Monday opens with a trust problem. A mail server flaw is under active use.",
+    "quick_take": "",
+    "sections": {
+      "impact": "A network control system was targeted. Then came the familiar ransom claim: the data was returned and deleted. One leaked key can open cloud access.\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.\n\nThis aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "Monday opens with a trust problem. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "dacd1c6345a7897c",
+    "title": "How to Reduce Phishing Exposure Before It Turns into Business Disruption",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/how-to-reduce-phishing-exposure-before.html",
+    "published": "2026-05-18T18:30:00+05:30",
+    "fetched_at": "2026-05-18T16:21:12.349374+00:00",
+    "summary": "What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click? That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread.",
+    "tags": [
+      "phishing"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click? That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was…",
+    "quick_take": "",
+    "sections": {
+      "overview": "What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click? That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread.",
+      "impact": "That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread.\n\nAssessed severity: MEDIUM.",
+      "mitigation": "Early phishing detection closes that gap.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click. That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "33444c342b4bea87",
     "title": "Developer Workstations Are Now Part of the Software Supply Chain",
     "source": "The Hacker News",
@@ -60,6 +123,33 @@
       "impact": "Topping the list is a critical flaw impacting Ivanti Xtraction (CVE-2026-8043, CVSS score: 9.6) that could be exploited to achieve information disclosure or client-side attacks.\n\"External control of a file name\n\nAssessed severity: CRITICAL. CVSS score: 9.6/10."
     },
     "email_summary": "Ivanti, Fortinet, n8n, SAP, and VMware have released security fixes for various vulnerabilities that could be exploited by bad actors to bypass authentication and execute arbitrary code. Tracked as CVE-2026-8043. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "dfd9593d7ad3f603",
+    "title": "Fuel Tank Breaches Expand Scope of Iran's Cyber Offensive",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/fuel-tank-breaches-expand-scope-irans-cyber-offensive",
+    "published": "2026-05-18T15:41:55+00:00",
+    "fetched_at": "2026-05-18T16:21:13.229002+00:00",
+    "summary": "Security experts have long warned that insecure automatic tank gauge (ATG) systems exposed on the Internet can be tampered with by threat actors.",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Security experts have long warned that insecure automatic tank gauge (ATG) systems exposed on the Internet can be tampered with by threat actors.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Security experts have long warned that insecure automatic tank gauge (ATG) systems exposed on the Internet can be tampered with by threat actors.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -175,6 +265,35 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A new analysis of the Lua-based fast16 malware has confirmed that it was a cyber sabotage tool designed to tamper with nuclear weapons testing simulations. According to Broadcom-owned Symantec and Carbon Black teams, the pre-Stuxnet tool was engineered to corrupt uranium-compression simulations that are central to nuclear weapon design.\n\"Fast16's hook engine is selectively interested in.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "655c2cebba78c245",
+    "title": "Grafana says stolen GitHub token let hackers steal codebase",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/grafana-says-stolen-github-token-let-hackers-steal-codebase/",
+    "published": "2026-05-18T09:46:26-04:00",
+    "fetched_at": "2026-05-18T16:21:12.655882+00:00",
+    "summary": "Grafana Labs disclosed that hackers have downloaded its source code after breaching its GitHub environment using a stolen access token. [...]",
+    "tags": [
+      "breach",
+      "vulnerability"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Grafana Labs disclosed that hackers have downloaded its source code after breaching its GitHub environment using a stolen access token. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Grafana Labs disclosed that hackers have downloaded its source code after breaching its GitHub environment using a stolen access token. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Grafana Labs disclosed that hackers have downloaded its source code after breaching its GitHub environment using a stolen access token. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

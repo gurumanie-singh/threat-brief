@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">18 May 2026</h1>
-      <span class="brief-sub">11 articles</span>
+      <span class="brief-sub">15 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -66,6 +67,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
@@ -80,12 +82,81 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,ransomware,zero-day"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="weekly recap: exchange 0-day, npm worm, fake ai repo, cisco exploit and more"
+       data-id="b74f1b27bd5776b2"
+       data-published="2026-05-18T19:20:17+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-05-18T19:20:17+05:30" title="18 May 2026, 08:50">18 May 2026, 08:50</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Exchange 0-Day, npm Worm, Fake AI Repo, Cisco Exploit and More</h3>
+      <p class="card-summary">Monday opens with a trust problem. A mail server flaw is under active use.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b74f1b27bd5776b2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/weekly-recap-exchange-0-day-npm-worm.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how to reduce phishing exposure before it turns into business disruption"
+       data-id="dacd1c6345a7897c"
+       data-published="2026-05-18T18:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T18:30:00+05:30" title="18 May 2026, 08:00">18 May 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">How to Reduce Phishing Exposure Before It Turns into Business Disruption</h3>
+      <p class="card-summary">What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click? That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click? That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread.</p></div>
+      <div class="detail-links">
+        <a href="../articles/dacd1c6345a7897c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/how-to-reduce-phishing-exposure-before.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware"
        data-vendors=""
@@ -148,6 +219,37 @@
       <div class="detail-links">
         <a href="../articles/41edcc2b36951771.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fuel tank breaches expand scope of iran&#39;s cyber offensive"
+       data-id="dfd9593d7ad3f603"
+       data-published="2026-05-18T15:41:55+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T15:41:55+00:00" title="18 May 2026, 10:41">18 May 2026, 10:41</time>
+      </div>
+      <h3 class="card-title">Fuel Tank Breaches Expand Scope of Iran&#39;s Cyber Offensive</h3>
+      <p class="card-summary">Security experts have long warned that insecure automatic tank gauge (ATG) systems exposed on the Internet can be tampered with by threat actors.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dfd9593d7ad3f603.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/fuel-tank-breaches-expand-scope-irans-cyber-offensive" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -274,6 +376,38 @@
       <div class="detail-links">
         <a href="../articles/a7ccbc2e8f66ced6.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/pre-stuxnet-fast16-malware-tampered.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="grafana says stolen github token let hackers steal codebase"
+       data-id="655c2cebba78c245"
+       data-published="2026-05-18T09:46:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T09:46:26-04:00" title="18 May 2026, 08:46">18 May 2026, 08:46</time>
+      </div>
+      <h3 class="card-title">Grafana says stolen GitHub token let hackers steal codebase</h3>
+      <p class="card-summary">Grafana Labs disclosed that hackers have downloaded its source code after breaching its GitHub environment using a stolen access token. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/655c2cebba78c245.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/grafana-says-stolen-github-token-let-hackers-steal-codebase/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

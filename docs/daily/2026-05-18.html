@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">18 May 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">11 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -63,8 +65,11 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
@@ -72,14 +77,145 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="developer workstations are now part of the software supply chain"
+       data-id="33444c342b4bea87"
+       data-published="2026-05-18T16:53:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-05-18T16:53:41+05:30" title="18 May 2026, 06:23">18 May 2026, 06:23</time>
+      </div>
+      <h3 class="card-title">Developer Workstations Are Now Part of the Software Supply Chain</h3>
+      <p class="card-summary">Supply chain attackers are not only trying to slip malicious code into trusted software. They are trying to steal the access that makes trusted software possible.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/33444c342b4bea87.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/developer-workstations-are-now-part-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS,Fortinet,Ivanti,VMware"
+       data-severity="critical"
+       data-title="ivanti, fortinet, sap, vmware, n8n patch rce, sql injection, privilege escalation flaws"
+       data-id="41edcc2b36951771"
+       data-published="2026-05-18T16:24:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-05-18T16:24:05+05:30" title="18 May 2026, 05:54">18 May 2026, 05:54</time>
+      </div>
+      <h3 class="card-title">Ivanti, Fortinet, SAP, VMware, n8n Patch RCE, SQL Injection, Privilege Escalation Flaws</h3>
+      <p class="card-summary">Ivanti, Fortinet, n8n, SAP, and VMware have released security fixes for various vulnerabilities that could be exploited by bad actors to bypass authentication and execute arbitrary code.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/41edcc2b36951771.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="miniplasma windows 0-day enables system privilege escalation on fully patched systems"
+       data-id="fe76e9d5c1a611e5"
+       data-published="2026-05-18T14:27:34+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T14:27:34+05:30" title="18 May 2026, 03:57">18 May 2026, 03:57</time>
+      </div>
+      <h3 class="card-title">MiniPlasma Windows 0-Day Enables SYSTEM Privilege Escalation on Fully Patched Systems</h3>
+      <p class="card-summary">Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched Windows systems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/fe76e9d5c1a611e5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="four malicious npm packages deliver infostealers and phantom bot ddos malware"
+       data-id="0d8d4f53f1d9dc96"
+       data-published="2026-05-18T14:27:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T14:27:26+05:30" title="18 May 2026, 03:57">18 May 2026, 03:57</time>
+      </div>
+      <h3 class="card-title">Four Malicious npm Packages Deliver Infostealers and Phantom Bot DDoS Malware</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered four new npm packages containing information-stealing malware, one of which is a clone of the Shai-Hulud worm open-sourced by TeamPCP.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0d8d4f53f1d9dc96.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt,exploit,malware,vulnerability"
        data-vendors="Microsoft"
@@ -109,6 +245,92 @@
       <div class="detail-links">
         <a href="../articles/ceea99d56459eaf3.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyber-risk/ai-code-and-agents-forces-defenders-adapt" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="pre-stuxnet fast16 malware tampered with nuclear weapons simulations"
+       data-id="a7ccbc2e8f66ced6"
+       data-published="2026-05-18T12:16:37+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T12:16:37+05:30" title="18 May 2026, 01:46">18 May 2026, 01:46</time>
+      </div>
+      <h3 class="card-title">Pre-Stuxnet Fast16 Malware Tampered with Nuclear Weapons Simulations</h3>
+      <p class="card-summary">A new analysis of the Lua-based fast16 malware has confirmed that it was a cyber sabotage tool designed to tamper with nuclear weapons testing simulations.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a7ccbc2e8f66ced6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/pre-stuxnet-fast16-malware-tampered.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft testing adjustable taskbar, start menu in windows 11"
+       data-id="fba6b5266277e384"
+       data-published="2026-05-18T07:14:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T07:14:28-04:00" title="18 May 2026, 06:14">18 May 2026, 06:14</time>
+      </div>
+      <h3 class="card-title">Microsoft testing adjustable taskbar, Start menu in Windows 11</h3>
+      <p class="card-summary">Microsoft has finally brought back the resizable taskbar and Start menu to Windows 11 in the latest preview version rolling out to Insiders in the Experimental channel. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fba6b5266277e384.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-finally-gets-a-resizable-taskbar-and-start-menu/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft confirms windows 11 security update install issues"
+       data-id="3ce2a6976726e29f"
+       data-published="2026-05-18T04:33:14-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T04:33:14-04:00" title="18 May 2026, 03:33">18 May 2026, 03:33</time>
+      </div>
+      <h3 class="card-title">Microsoft confirms Windows 11 security update install issues</h3>
+      <p class="card-summary">Microsoft has confirmed that the May 2026 Windows 11 security update (KB5089549) fails to install on some systems and triggers 0x800f0922 errors. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3ce2a6976726e29f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5089549-windows-11-security-update-install-issues/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

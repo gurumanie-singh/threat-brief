@@ -28,13 +28,14 @@
       <h1 class="brief-title">18 May 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-05-18T03:01:16.187654-05:00">18 May 2026, 03:01</time>
+        <time data-iso="2026-05-18T07:28:05.697353-05:00">18 May 2026, 07:28</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-critical">2 critical</span>
-      <span class="stat">4 articles today</span>
+      <span class="stat stat-critical">4 critical</span>
+      <span class="stat stat-high">1 high</span>
+      <span class="stat">11 articles today</span>
     </div>
   </div>
 
@@ -42,18 +43,19 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">microsoft<span class="trend-count">15</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">17</span></span>
+        <span class="trend-pill">windows<span class="trend-count">13</span></span>
         <span class="trend-pill">hackers<span class="trend-count">11</span></span>
-        <span class="trend-pill">windows<span class="trend-count">10</span></span>
+        <span class="trend-pill">flaws<span class="trend-count">7</span></span>
+        <span class="trend-pill">security<span class="trend-count">7</span></span>
         <span class="trend-pill">zero-day<span class="trend-count">7</span></span>
-        <span class="trend-pill">access<span class="trend-count">7</span></span>
-        <span class="trend-pill">exploit<span class="trend-count">6</span></span>
       </div>
     </div>
   </div>
@@ -90,9 +92,10 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
       </div>
     </div>
     <div class="adv-group">
@@ -102,8 +105,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
@@ -115,10 +118,140 @@
   <div class="day-group">
     <h2 class="day-heading">
       18 May 2026
-      <span class="day-count">4</span>
+      <span class="day-count">11</span>
     </h2>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="developer workstations are now part of the software supply chain"
+       data-id="33444c342b4bea87"
+       data-published="2026-05-18T16:53:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-05-18T16:53:41+05:30" title="18 May 2026, 06:23">18 May 2026, 06:23</time>
+      </div>
+      <h3 class="card-title">Developer Workstations Are Now Part of the Software Supply Chain</h3>
+      <p class="card-summary">Supply chain attackers are not only trying to slip malicious code into trusted software. They are trying to steal the access that makes trusted software possible.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/33444c342b4bea87.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/developer-workstations-are-now-part-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS,Fortinet,Ivanti,VMware"
+       data-severity="critical"
+       data-title="ivanti, fortinet, sap, vmware, n8n patch rce, sql injection, privilege escalation flaws"
+       data-id="41edcc2b36951771"
+       data-published="2026-05-18T16:24:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-05-18T16:24:05+05:30" title="18 May 2026, 05:54">18 May 2026, 05:54</time>
+      </div>
+      <h3 class="card-title">Ivanti, Fortinet, SAP, VMware, n8n Patch RCE, SQL Injection, Privilege Escalation Flaws</h3>
+      <p class="card-summary">Ivanti, Fortinet, n8n, SAP, and VMware have released security fixes for various vulnerabilities that could be exploited by bad actors to bypass authentication and execute arbitrary code.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/41edcc2b36951771.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="miniplasma windows 0-day enables system privilege escalation on fully patched systems"
+       data-id="fe76e9d5c1a611e5"
+       data-published="2026-05-18T14:27:34+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T14:27:34+05:30" title="18 May 2026, 03:57">18 May 2026, 03:57</time>
+      </div>
+      <h3 class="card-title">MiniPlasma Windows 0-Day Enables SYSTEM Privilege Escalation on Fully Patched Systems</h3>
+      <p class="card-summary">Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched Windows systems.</p></div>
+      <div class="detail-links">
+        <a href="articles/fe76e9d5c1a611e5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="four malicious npm packages deliver infostealers and phantom bot ddos malware"
+       data-id="0d8d4f53f1d9dc96"
+       data-published="2026-05-18T14:27:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T14:27:26+05:30" title="18 May 2026, 03:57">18 May 2026, 03:57</time>
+      </div>
+      <h3 class="card-title">Four Malicious npm Packages Deliver Infostealers and Phantom Bot DDoS Malware</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered four new npm packages containing information-stealing malware, one of which is a clone of the Shai-Hulud worm open-sourced by TeamPCP.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/0d8d4f53f1d9dc96.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt,exploit,malware,vulnerability"
        data-vendors="Microsoft"
@@ -148,6 +281,92 @@
       <div class="detail-links">
         <a href="articles/ceea99d56459eaf3.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyber-risk/ai-code-and-agents-forces-defenders-adapt" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="pre-stuxnet fast16 malware tampered with nuclear weapons simulations"
+       data-id="a7ccbc2e8f66ced6"
+       data-published="2026-05-18T12:16:37+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-18T12:16:37+05:30" title="18 May 2026, 01:46">18 May 2026, 01:46</time>
+      </div>
+      <h3 class="card-title">Pre-Stuxnet Fast16 Malware Tampered with Nuclear Weapons Simulations</h3>
+      <p class="card-summary">A new analysis of the Lua-based fast16 malware has confirmed that it was a cyber sabotage tool designed to tamper with nuclear weapons testing simulations.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/a7ccbc2e8f66ced6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/pre-stuxnet-fast16-malware-tampered.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft testing adjustable taskbar, start menu in windows 11"
+       data-id="fba6b5266277e384"
+       data-published="2026-05-18T07:14:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T07:14:28-04:00" title="18 May 2026, 06:14">18 May 2026, 06:14</time>
+      </div>
+      <h3 class="card-title">Microsoft testing adjustable taskbar, Start menu in Windows 11</h3>
+      <p class="card-summary">Microsoft has finally brought back the resizable taskbar and Start menu to Windows 11 in the latest preview version rolling out to Insiders in the Experimental channel. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/fba6b5266277e384.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-finally-gets-a-resizable-taskbar-and-start-menu/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft confirms windows 11 security update install issues"
+       data-id="3ce2a6976726e29f"
+       data-published="2026-05-18T04:33:14-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T04:33:14-04:00" title="18 May 2026, 03:33">18 May 2026, 03:33</time>
+      </div>
+      <h3 class="card-title">Microsoft confirms Windows 11 security update install issues</h3>
+      <p class="card-summary">Microsoft has confirmed that the May 2026 Windows 11 security update (KB5089549) fails to install on some systems and triggers 0x800f0922 errors. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/3ce2a6976726e29f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5089549-windows-11-security-update-install-issues/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -485,7 +704,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       15 May 2026
-      <span class="day-count">17</span>
+      <span class="day-count">12</span>
     </h2>
   </div>
 
@@ -520,6 +739,35 @@
       <div class="detail-links">
         <a href="articles/136933774fee7a90.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="congress puts heat on instructure after canvas outage"
+       data-id="3db9e816668859cc"
+       data-published="2026-05-15T20:19:20+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-15T20:19:20+00:00" title="15 May 2026, 15:19">15 May 2026, 15:19</time>
+      </div>
+      <h3 class="card-title">Congress Puts Heat on Instructure After Canvas Outage</h3>
+      <p class="card-summary">The House Committee on Homeland Security sent a letter about the Canvas cyberattack, the same day that the edtech company said it reached an &#34;agreement&#34; with the ShinyHunters cybercriminals.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/3db9e816668859cc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/congress-instructure-shinyhunters-attacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -840,251 +1088,6 @@
       <div class="detail-links">
         <a href="articles/b2e7f4983caa286f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft backpedals: edge to stop loading passwords into memory"
-       data-id="a5ba0351793b7b48"
-       data-published="2026-05-15T10:49:39-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T10:49:39-04:00" title="15 May 2026, 09:49">15 May 2026, 09:49</time>
-      </div>
-      <h3 class="card-title">Microsoft backpedals: Edge to stop loading passwords into memory</h3>
-      <p class="card-summary">Microsoft is updating the Edge web browser to ensure it no longer loads saved passwords into process memory in clear text at startup after previously stating it was &#34;by design.&#34; [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a5ba0351793b7b48.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-edge-to-stop-loading-cleartext-passwords-in-memory-on-startup/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="inside the remus infostealer: session theft, maas, and rapid evolution"
-       data-id="9849d1a485fc9547"
-       data-published="2026-05-15T10:02:12-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-15T10:02:12-04:00" title="15 May 2026, 09:02">15 May 2026, 09:02</time>
-      </div>
-      <h3 class="card-title">Inside the REMUS Infostealer: Session Theft, MaaS, and Rapid Evolution</h3>
-      <p class="card-summary">Stolen browser sessions and authentication tokens are becoming more valuable than stolen passwords. Flare explains how the REMUS infostealer evolved around session theft and operational scalability. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/9849d1a485fc9547.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/inside-the-remus-infostealer-session-theft-maas-and-rapid-evolution/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft to automatically roll back faulty windows drivers"
-       data-id="ca343809f0d46b7c"
-       data-published="2026-05-15T08:29:48-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T08:29:48-04:00" title="15 May 2026, 07:29">15 May 2026, 07:29</time>
-      </div>
-      <h3 class="card-title">Microsoft to automatically roll back faulty Windows drivers</h3>
-      <p class="card-summary">Microsoft is introducing a new capability that will allow it to remotely roll back problematic Windows drivers delivered through Windows Update. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ca343809f0d46b7c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-automatically-roll-back-faulty-windows-drivers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,vulnerability,zero-day"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="microsoft warns of exchange zero-day flaw exploited in attacks"
-       data-id="db949d2a316e40f2"
-       data-published="2026-05-15T05:40:42-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-15T05:40:42-04:00" title="15 May 2026, 04:40">15 May 2026, 04:40</time>
-      </div>
-      <h3 class="card-title">Microsoft warns of Exchange zero-day flaw exploited in attacks</h3>
-      <p class="card-summary">On Thursday, Microsoft shared mitigations for a high-severity Exchange Server vulnerability exploited in attacks that allow threat actors to execute arbitrary code via cross-site scripting (XSS) while targeting Outlook on the web users. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/db949d2a316e40f2.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="taiwan incident highlights cybersecurity gaps in rail systems"
-       data-id="0d75d7be7e4d8c5d"
-       data-published="2026-05-15T01:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-15T01:00:00+00:00" title="14 May 2026, 20:00">14 May 2026, 20:00</time>
-      </div>
-      <h3 class="card-title">Taiwan Incident Highlights Cybersecurity Gaps in Rail Systems</h3>
-      <p class="card-summary">A Taiwanese student experimenting with software-defined radio technology shut down three bullet trains for nearly an hour, leading to an anti-terrorism response.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/0d75d7be7e4d8c5d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/ics-ot-security/taiwan-incident-highlights-cybersecurity-gaps" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="taiwan bullet train hack highlights cybersecurity gaps in rail systems"
-       data-id="4a492e30721a14c3"
-       data-published="2026-05-15T01:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-15T01:00:00+00:00" title="14 May 2026, 20:00">14 May 2026, 20:00</time>
-      </div>
-      <h3 class="card-title">Taiwan Bullet Train Hack Highlights Cybersecurity Gaps in Rail Systems</h3>
-      <p class="card-summary">A Taiwanese student experimenting with software-defined radio technology shut down three bullet trains for nearly an hour, leading to an anti-terrorism response.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/4a492e30721a14c3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/ics-ot-security/taiwan-incident-highlights-cybersecurity-gaps" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      14 May 2026
-      <span class="day-count">2</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--action card--critical"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors="Cisco"
-       data-severity="critical"
-       data-title="cisco catalyst sd-wan controller auth bypass actively exploited to gain admin access"
-       data-id="4e4475eafc25a044"
-       data-published="2026-05-14T23:15:20+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-05-14T23:15:20+05:30" title="14 May 2026, 12:45">14 May 2026, 12:45</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access</h3>
-      <p class="card-summary">Cisco has released updates to address a maximum-severity authentication bypass flaw in Catalyst SD-WAN Controller that it said has been exploited in limited attacks.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <div class="card-related">Also: CISA Alerts</div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/4e4475eafc25a044.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="stealer backdoor found in 3 node-ipc versions targeting developer secrets"
-       data-id="86d364401e11392e"
-       data-published="2026-05-14T22:52:43+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-14T22:52:43+05:30" title="14 May 2026, 12:22">14 May 2026, 12:22</time>
-      </div>
-      <h3 class="card-title">Stealer Backdoor Found in 3 Node-IPC Versions Targeting Developer Secrets</h3>
-      <p class="card-summary">Cybersecurity researchers are sounding the alarm about what has been described as &#34;malicious activity&#34; in newly published versions of node-ipc.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/86d364401e11392e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/stealer-backdoor-found-in-3-node-ipc.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

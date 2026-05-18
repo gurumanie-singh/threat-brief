@@ -25,6 +25,102 @@
     "highlighted": false
   },
   {
+    "id": "bc74b3ec0df5c37c",
+    "title": "Microsoft Exchange Zero-Day Under Attack, No Patch Available",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/microsoft-exchange-zero-day-no-patch",
+    "published": "2026-05-18T21:43:51+00:00",
+    "fetched_at": "2026-05-18T22:00:53.042452+00:00",
+    "summary": "CVE-2026-42897 stems from a cross-site scripting (XSS) vulnerability and can allow an attacker to compromise Outlook Web Access (OWA) mailboxes.",
+    "tags": [
+      "cve",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-05-18",
+    "cves": [
+      "CVE-2026-42897"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "CVE-2026-42897 stems from a cross-site scripting (XSS) vulnerability and can allow an attacker to compromise Outlook Web Access (OWA) mailboxes.",
+    "quick_take": "",
+    "sections": {
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "CVE-2026-42897 stems from a cross-site scripting (XSS) vulnerability and can allow an attacker to compromise Outlook Web Access (OWA) mailboxes. Tracked as CVE-2026-42897. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1e3d2257d276f275",
+    "title": "'Claw Chain' Vulnerabilities Threaten OpenClaw Deployments",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/claw-chain-vulnerabilities-threaten-openclaw",
+    "published": "2026-05-18T21:24:59+00:00",
+    "fetched_at": "2026-05-18T22:00:53.042654+00:00",
+    "summary": "The now patched vulnerabilities in the rapidly growing AI agent framework allow attackers to steal credentials, escalate privileges, and maintain persistence.",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The now patched vulnerabilities in the rapidly growing AI agent framework allow attackers to steal credentials, escalate privileges, and maintain persistence.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The now patched vulnerabilities in the rapidly growing AI agent framework allow attackers to steal credentials, escalate privileges, and maintain persistence.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "4e6b93be3c640ee4",
+    "title": "CISA Admin Leaked AWS GovCloud Keys on Github",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/",
+    "published": "2026-05-18T20:48:21+00:00",
+    "fetched_at": "2026-05-18T22:00:52.350876+00:00",
+    "summary": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems. Security experts said the public archive included files detailing how CISA builds, tests and deploys software internally, and that it...",
+    "tags": [
+      "apt",
+      "breach",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA…",
+    "quick_take": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts…",
+    "sections": {
+      "overview": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems. Security experts said the public archive included files detailing how CISA builds, tests and deploys software internally, and that it...",
+      "technical": "The available Git metadata alone does not prove which endpoint or device was used. The Private CISA GitHub repo exposed dozens of plaintext credentials for important CISA GovCloud resources. Backdoor in some software packages, and every time they build something new they deploy your backdoor left and right. The now-defunct Private CISA repo showed the contractor also used easily-guessed passwords for a number of internal resources; for example, many of the credentials used a password consisting of each platform s name followed by the current year.",
+      "impact": "Caturegli said such practices would constitute a serious security threat for any organization even if those credentials were never exposed externally, noting that threat actors often use key credentials exposed on the internal network to expand their access after establishing initial access to a targeted system. Valadon said the exposed CISA credentials represent a textbook example of poor security hygiene, noting that the commit logs in the offending GitHub account show that the CISA administrator disabled the default setting in GitHub that blocks users from publishing SSH keys or other secrets in public code repositories. Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems.\n\nAssessed severity: HIGH.",
+      "mitigation": "Passwords stored in plain text in a csv, backups in git, explicit commands to disable GitHub secrets detection feature, Valadon wrote in an email. Valadon said the exposed CISA credentials represent a textbook example of poor security hygiene, noting that the commit logs in the offending GitHub account show that the CISA administrator disabled the default setting in GitHub that blocks users from publishing SSH keys or other secrets in public code repositories.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "ee18ddc6e34b4224",
     "title": "Shai-Hulud Worm Clones Spread After Code Release",
     "source": "Dark Reading",
@@ -109,6 +205,34 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click. That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e51405982351815b",
+    "title": "SHub macOS infostealer variant spoofs Apple security updates",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/shub-macos-infostealer-variant-spoofs-apple-security-updates/",
+    "published": "2026-05-18T17:42:20-04:00",
+    "fetched_at": "2026-05-18T22:00:52.428493+00:00",
+    "summary": "A new variant of the 'SHub' macOS infostealer uses AppleScript to show a fake security update message and installs a backdoor. [...]",
+    "tags": [
+      "malware",
+      "patch"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
+    "card_summary": "A new variant of the 'SHub' macOS infostealer uses AppleScript to show a fake security update message and installs a backdoor. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A new variant of the 'SHub' macOS infostealer uses AppleScript to show a fake security update message and installs a backdoor. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -373,6 +497,35 @@
     "highlighted": false
   },
   {
+    "id": "8ebfb63f51c35432",
+    "title": "Boulevard of Broken Dreams: 2 Decades of Cyber Fails",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/broken-dreams-2-decades-cyber-fails",
+    "published": "2026-05-18T12:00:00+00:00",
+    "fetched_at": "2026-05-18T22:00:53.043419+00:00",
+    "summary": "From the MGM and Caesars fiasco and MOVEit's patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic failures, and cringeworthy moments that still have us shaking our heads.",
+    "tags": [
+      "breach",
+      "patch"
+    ],
+    "day": "2026-05-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "From the MGM and Caesars fiasco and MOVEit's patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic failures, and cringeworthy moments that still…",
+    "quick_take": "From the MGM and Caesars fiasco and MOVEit's patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic…",
+    "sections": {
+      "overview": "From the MGM and Caesars fiasco and MOVEit's patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic failures, and cringeworthy moments that still have us shaking our heads.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "From the MGM and Caesars fiasco and MOVEit's patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic failures, and cringeworthy moments that still have us shaking our heads.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "655c2cebba78c245",
     "title": "Grafana says stolen GitHub token let hackers steal codebase",
     "source": "BleepingComputer",
@@ -422,115 +575,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Microsoft has finally brought back the resizable taskbar and Start menu to Windows 11 in the latest preview version rolling out to Insiders in the Experimental channel. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "3ce2a6976726e29f",
-    "title": "Microsoft confirms Windows 11 security update install issues",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5089549-windows-11-security-update-install-issues/",
-    "published": "2026-05-18T04:33:14-04:00",
-    "fetched_at": "2026-05-18T12:28:02.612716+00:00",
-    "summary": "Microsoft has confirmed that the May 2026 Windows 11 security update (KB5089549) fails to install on some systems and triggers 0x800f0922 errors. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-05-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has confirmed that the May 2026 Windows 11 security update (KB5089549) fails to install on some systems and triggers 0x800f0922 errors. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft has confirmed that the May 2026 Windows 11 security update (KB5089549) fails to install on some systems and triggers 0x800f0922 errors. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "4b9d33bd059b31d6",
-    "title": "Exploit available for new DirtyDecrypt Linux root escalation flaw",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/exploit-available-for-new-dirtydecrypt-linux-root-escalation-flaw/",
-    "published": "2026-05-18T03:18:33-04:00",
-    "fetched_at": "2026-05-18T08:01:13.438399+00:00",
-    "summary": "A recently patched local privilege escalation vulnerability in the Linux kernel's rxgk module now has a proof-of-concept exploit that allows attackers to gain root access on some Linux systems. [...]",
-    "tags": [
-      "exploit",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-05-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [
-      "Linux"
-    ],
-    "action_required": false,
-    "card_summary": "A recently patched local privilege escalation vulnerability in the Linux kernel's rxgk module now has a proof-of-concept exploit that allows attackers to gain root access on some Linux systems. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "A recently patched local privilege escalation vulnerability in the Linux kernel's rxgk module now has a proof-of-concept exploit that allows attackers to gain root access on some Linux systems. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "d96dc9f707d67625",
-    "title": "Hackers earn $1,298,250 for 47 zero-days at Pwn2Own Berlin 2026",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-earn-1-298-250-for-47-zero-days-at-pwn2own-berlin-2026/",
-    "published": "2026-05-18T01:33:20-04:00",
-    "fetched_at": "2026-05-18T08:01:13.438578+00:00",
-    "summary": "The Pwn2Own Berlin 2026 hacking contest has concluded, with security researchers collecting $1,298,250 in rewards after exploiting 47 zero-day flaws. [...]",
-    "tags": [
-      "exploit",
-      "zero-day"
-    ],
-    "day": "2026-05-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The Pwn2Own Berlin 2026 hacking contest has concluded, with security researchers collecting $1,298,250 in rewards after exploiting 47 zero-day flaws. [...]",
-    "quick_take": "",
-    "sections": {
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "The Pwn2Own Berlin 2026 hacking contest has concluded, with security researchers collecting $1,298,250 in rewards after exploiting 47 zero-day flaws. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "87304c4a5fa5f239",
-    "title": "Can Laws Stop Deepfakes? South Korea Aims to Find Out",
-    "source": "Dark Reading",
-    "link": "https://www.darkreading.com/vulnerabilities-threats/can-laws-stop-deepfakes-south-korea",
-    "published": "2026-05-18T01:00:00+00:00",
-    "fetched_at": "2026-05-18T03:39:22.702272+00:00",
-    "summary": "South Korea's local elections next month will be a test bed for how effective regulations might be to stymie the flow of deepfakes.",
-    "tags": [],
-    "day": "2026-05-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "AWS"
-    ],
-    "action_required": false,
-    "card_summary": "South Korea's local elections next month will be a test bed for how effective regulations might be to stymie the flow of deepfakes.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "South Korea's local elections next month will be a test bed for how effective regulations might be to stymie the flow of deepfakes.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

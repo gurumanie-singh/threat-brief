@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kieback &amp; Peter DDC Building Controllers — Threat Brief</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <div class="article-page">
+    <a href="../daily/2026-05-19.html" class="back-link">← 19 May 2026 briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">CISA Alerts</span>
+        <span class="card-date">19 May 2026, 07:00</span>
+        <span class="card-severity low">low</span>
+      </div>
+
+      <h1 class="title">Kieback &amp; Peter DDC Building Controllers</h1>
+
+      <p class="subtitle">View CSAF 
+
+ Summary 
+ Successful exploitation of this vulnerability could allow an attacker to take control of the victim&#39;s browser. Tracked as CVE-2026-4293.</p>
+
+
+      <div class="article-tags">
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">phishing</span>
+        <span class="tag">vulnerability</span>
+      </div>
+
+      <ul class="article-cve-list">
+        <li class="article-cve" data-cve="CVE-2026-4293">CVE-2026-4293<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-4293"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+      </ul>
+    </header>
+
+
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
+        <div class="article-section-content">
+          <p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to take control of the victim&#39;s browser. The following versions of Kieback &amp; Peter DDC Building Controllers are affected:</p>
+<p>DDC4002 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4100 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4200 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4200-L &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4400 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4002e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4200e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4400e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4020e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4040e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC520 &lt;=1.24.1 (CVE-2026-4293)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 5.3   Kieback &amp; Peter   Kieback &amp; Peter DDC Building Controllers   Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;)           Background     Critical Infrastructure Sectors: Commercial Facilities, Communications, Financial Services, Food and Agriculture, Government Services and Facilities, Healthcare and Public Health, Information Technology</p>
+<p>Countries/Areas Deployed: Austria, China, France, Germany, United Arab Emirates</p>
+<p>Company Headquarters Location: Germany</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-4293     The affected products are vulnerable to cross-site scripting (XSS), enabling JavaScript to be executed by the victim&#39;s browser, which allows the attacker to control the browser.</p>
+        </div>
+      </div>
+
+
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
+        <div class="article-section-content">
+          <p>Vendor fix  The DDC4002, DDC4100, DDC4200, DDC4200-L and DDC4400 controllers are end-of-maintenance, therefore the recommendations for these devices are as follows: Access to the web portal should be disabled in the device configuration if not required. Building automation systems (BA systems) in general should not be directly accessible from untrusted networks, especially from the Internet, but should be protected by consistently applying the defense-in-depth strategy. Vendor fix  The DDC4002, DDC4100, DDC4200, DDC4200-L and DDC4400 controllers are end-of-maintenance, therefore the recommendations for these devices are as follows: These devices must be operated in a strictly separate OT environment. Vendor fix  The DDC4002, DDC4100, DDC4200, DDC4200-L and DDC4400 controllers are end-of-maintenance, therefore the recommendations for these devices are as follows: Only trusted individuals should be granted network access to the DDC web portal.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Context / Trends</div>
+        <div class="article-section-content">
+          <p>This reflects continued use of phishing as an initial-access path in broader intrusion chains.</p>
+        </div>
+      </div>
+
+
+      <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-05" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at CISA Alerts</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

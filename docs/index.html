@@ -28,13 +28,15 @@
       <h1 class="brief-title">19 May 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-05-19T07:08:36.308568-05:00">19 May 2026, 07:08</time>
+        <time data-iso="2026-05-19T11:18:02.147492-05:00">19 May 2026, 11:18</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
+      <span class="stat stat-critical">2 critical</span>
       <span class="stat stat-high">3 high</span>
-      <span class="stat">5 articles today</span>
+      <span class="stat stat-action">3 action req.</span>
+      <span class="stat">19 articles today</span>
     </div>
   </div>
 
@@ -42,19 +44,20 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 high-severity advisories published today</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">microsoft<span class="trend-count">17</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">19</span></span>
         <span class="trend-pill">windows<span class="trend-count">11</span></span>
+        <span class="trend-pill">security<span class="trend-count">8</span></span>
         <span class="trend-pill">access<span class="trend-count">7</span></span>
         <span class="trend-pill">patch<span class="trend-count">7</span></span>
-        <span class="trend-pill">security<span class="trend-count">7</span></span>
         <span class="trend-pill">flaws<span class="trend-count">7</span></span>
       </div>
     </div>
@@ -88,14 +91,14 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
       </div>
     </div>
     <div class="adv-group">
@@ -105,8 +108,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
@@ -118,10 +121,107 @@
   <div class="day-group">
     <h2 class="day-heading">
       19 May 2026
-      <span class="day-count">5</span>
+      <span class="day-count">19</span>
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Linux"
+       data-severity="critical"
+       data-title="dirtydecrypt poc released for linux kernel cve-2026-31635 lpe vulnerability"
+       data-id="e66ab4150c9500f3"
+       data-published="2026-05-19T20:26:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-19T20:26:26+05:30" title="19 May 2026, 09:56">19 May 2026, 09:56</time>
+      </div>
+      <h3 class="card-title">DirtyDecrypt PoC Released for Linux Kernel CVE-2026-31635 LPE Vulnerability</h3>
+      <p class="card-summary">Proof-of-concept (PoC) exploit code has now been released for a recently patched security flaw in the Linux kernel that could allow for local privilege escalation (LPE).</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e66ab4150c9500f3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/dirtydecrypt-poc-released-for-linux.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="the new phishing click: how oauth consent bypasses mfa"
+       data-id="ee428775b842438a"
+       data-published="2026-05-19T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-19T17:00:00+05:30" title="19 May 2026, 06:30">19 May 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">The New Phishing Click: How OAuth Consent Bypasses MFA</h3>
+      <p class="card-summary">In February 2026, a phishing-as-a-service (PhaaS) platform called EvilTokens went live. Within five weeks, it had compromised more than 340 Microsoft 365 organizations across five countries.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ee428775b842438a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/the-new-phishing-click-how-oauth.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="drupal to release urgent core security updates on may 20, sites told to prepare"
+       data-id="c023299f9e513254"
+       data-published="2026-05-19T16:14:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-19T16:14:45+05:30" title="19 May 2026, 05:44">19 May 2026, 05:44</time>
+      </div>
+      <h3 class="card-title">Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare</h3>
+      <p class="card-summary">Drupal has issued an alert stating that it intends to release a &#34;core security release&#34; for all supported branches on May 20, 2026, from 5-9 p.m.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/c023299f9e513254.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/drupal-to-release-urgent-core-security.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="exploit,vulnerability"
        data-vendors=""
@@ -156,6 +256,39 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="looking back, looking forward: digesting a dynamic bouillabaisse of cyber evolution"
+       data-id="c377c54906403727"
+       data-published="2026-05-19T13:28:43+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-19T13:28:43+00:00" title="19 May 2026, 08:28">19 May 2026, 08:28</time>
+      </div>
+      <h3 class="card-title">Looking Back, Looking Forward: Digesting a Dynamic Bouillabaisse of Cyber Evolution</h3>
+      <p class="card-summary">Dark Reading editors reflect on two decades of dramatic change — from perimeter defense to assume-breach strategies — and warn that while AI, cloud, and COVID-19 have transformed the threat landscape, organizations are still failing at fundamental security…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Dark Reading editors reflect on two decades of dramatic change — from perimeter defense to assume-breach strategies — and warn that while AI, cloud, and COVID-19 have transformed the threat landscape, organizations are still failing at fundamental security hygiene that could stop sophisticated attacks in their tracks.</p></div>
+      <div class="detail-links">
+        <a href="articles/c377c54906403727.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/looking-back-looking-forward-bouillabaisse-cyber-evolution" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="breach"
        data-vendors="Microsoft"
        data-severity="medium"
@@ -183,6 +316,248 @@
       <div class="detail-links">
         <a href="articles/5b185fd56c6ea12e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/compromised-nx-console-18950-targeted.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Apple,Microsoft"
+       data-severity="medium"
+       data-title="microsoft blames undismissible teams location prompts on macos update"
+       data-id="4ad16858c4c04a6b"
+       data-published="2026-05-19T12:10:47-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-19T12:10:47-04:00" title="19 May 2026, 11:10">19 May 2026, 11:10</time>
+      </div>
+      <h3 class="card-title">Microsoft blames undismissible Teams location prompts on macOS update</h3>
+      <p class="card-summary">Microsoft has confirmed user reports that the Teams team collaboration app is displaying non-dismissible location prompts on some macOS systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/4ad16858c4c04a6b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-undismissible-teams-location-prompts-on-macos-update/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="kieback &amp; peter ddc building controllers"
+       data-id="2c9345ef16f3c000"
+       data-published="2026-05-19T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-19T12:00:00+00:00" title="19 May 2026, 07:00">19 May 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Kieback &amp; Peter DDC Building Controllers</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to take control of the victim&#39;s browser. The following versions of Kieback &amp; Peter DDC Building Controllers are affected:</p>
+<p>DDC4002 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4100 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4200 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4200-L &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4400 &lt;=1.12.14 (CVE-2026-4293)</p>
+<p>DDC4002e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4200e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4400e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4020e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC4040e &lt;=1.23.4 (CVE-2026-4293)</p>
+<p>DDC520 &lt;=1.24.1 (CVE-2026-4293)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 5.3   Kieback &amp; Peter   Kieback &amp; Peter DDC Building Controllers   Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;)           Background     Critical Infrastructure Sectors: Commercial Facilities, Communications, Financial Services, Food and Agriculture, Government Services and Facilities, Healthcare and Public Health, Information Technology</p>
+<p>Countries/Areas Deployed: Austria, China, France, Germany, United Arab Emirates</p>
+<p>Company Headquarters Location: Germany</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-4293     The affected products are vulnerable to cross-site scripting (XSS), enabling JavaScript to be executed by the victim&#39;s browser, which allows the attacker to control the browser.</p></div>
+      <div class="detail-links">
+        <a href="articles/2c9345ef16f3c000.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="apt,cve,exploit,malware,patch,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="low"
+       data-title="siemens ruggedcom ape1808 devices"
+       data-id="d097257362e2afd7"
+       data-published="2026-05-19T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-05-19T12:00:00+00:00" title="19 May 2026, 07:00">19 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens RUGGEDCOM APE1808 Devices</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. Siemens is preparing fix versions and recommends countermeasures for products where fixes are not, or not yet available.</p></div>
+      <div class="detail-links">
+        <a href="articles/d097257362e2afd7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="abb coresense hm and coresense m10"
+       data-id="fc71cee84a023046"
+       data-published="2026-05-19T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-19T12:00:00+00:00" title="19 May 2026, 07:00">19 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">ABB CoreSense HM and CoreSense M10</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   An update is available that resolves vulnerability in the product versions listed as affected in this advisory. A path traversal vulnerability in these products can allow unauthenticated users to gain access to restricted directories.</p></div>
+      <div class="detail-links">
+        <a href="articles/fc71cee84a023046.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="scadabr"
+       data-id="21865e07cce660b9"
+       data-published="2026-05-19T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-19T12:00:00+00:00" title="19 May 2026, 07:00">19 May 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">ScadaBR</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to perform unauthenticated remote code execution. The following versions of ScadaBR are affected:</p>
+<p>ScadaBR 1.2.0 (CVE-2026-8602, CVE-2026-8603, CVE-2026-8604, CVE-2026-8605)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.1   ScadaBR   ScadaBR   Missing Authentication for Critical Function, Improper Neutralization of Special Elements used in an OS Command (&#39;OS Command Injection&#39;), Cross-Site Request Forgery (CSRF), Use of Hard-coded Credentials           Background     Critical Infrastructure Sectors: Critical Manufacturing, Dams, Chemical, Energy, Water and Wastewater</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Brazil</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-8602     In ScadaBR version 1.2.0, a Missing Authentication for Critical Function vulnerability could allow an unauthenticated attacker to send a HTTP GET requests to the SCADA system and inject arbitrary sensor readings.</p></div>
+      <div class="detail-links">
+        <a href="articles/21865e07cce660b9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="apt,cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="zkteco cctv cameras"
+       data-id="3e0ee229230356db"
+       data-published="2026-05-19T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-05-19T12:00:00+00:00" title="19 May 2026, 07:00">19 May 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">ZKTeco CCTV Cameras</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could result in information disclosure, including capture of camera account credentials. The following versions of ZKTeco CCTV Cameras are affected:</p>
+<p>SSC335-GC2063-Face-0b77 Solution</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.1   ZKTeco   ZKTeco CCTV Cameras   Authentication Bypass Using an Alternate Path or Channel           Background     Critical Infrastructure Sectors: Commercial Facilities</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: China</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-8598     An undocumented configuration export port is accessible on some models of ZKTeco CCTV cameras.</p></div>
+      <div class="detail-links">
+        <a href="articles/3e0ee229230356db.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -218,6 +593,35 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new shai-hulud malware wave compromises 600 npm packages"
+       data-id="0c047e8c8a0e7969"
+       data-published="2026-05-19T10:30:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-19T10:30:22-04:00" title="19 May 2026, 09:30">19 May 2026, 09:30</time>
+      </div>
+      <h3 class="card-title">New Shai-Hulud malware wave compromises 600 npm packages</h3>
+      <p class="card-summary">Threat actors earlier today published more than 600 malicious packages to the Node Package Manager (npm) index as part of a new Shai-Hulud supply-chain campaign. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/0c047e8c8a0e7969.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-shai-hulud-malware-wave-compromises-600-npm-packages/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="breach"
        data-vendors=""
@@ -246,6 +650,99 @@
       <div class="detail-links">
         <a href="articles/dbd66b258380b15f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/mini-shai-hulud-pushes-malicious-antv.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="7-eleven confirms data breach claimed by the shinyhunters gang"
+       data-id="a9b79a5da87ef88b"
+       data-published="2026-05-19T10:16:41-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-19T10:16:41-04:00" title="19 May 2026, 09:16">19 May 2026, 09:16</time>
+      </div>
+      <h3 class="card-title">7-Eleven confirms data breach claimed by the ShinyHunters gang</h3>
+      <p class="card-summary">Convenience store chain giant 7-Eleven confirmed that its systems were breached in a cyberattack claimed by the ShinyHunters extortion group last month. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/a9b79a5da87ef88b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/7-eleven-confirms-data-breach-claimed-by-the-shinyhunters-gang/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="critical microsoft vulnerabilities doubled: from exposure to escalation"
+       data-id="c529582c2c6ccda0"
+       data-published="2026-05-19T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-19T10:00:10-04:00" title="19 May 2026, 09:00">19 May 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Critical Microsoft Vulnerabilities Doubled: From Exposure to Escalation</h3>
+      <p class="card-summary">Microsoft&#39;s total vulnerability count stayed steady in 2025, but critical flaws surged year over year. BeyondTrust breaks down why attackers are increasingly focused on privilege escalation and identity abuse. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/c529582c2c6ccda0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/critical-microsoft-vulnerabilities-doubled-from-exposure-to-escalation/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: the hidden bottlenecks in network incident response"
+       data-id="a642808b944fe6a9"
+       data-published="2026-05-19T08:14:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-19T08:14:22-04:00" title="19 May 2026, 07:14">19 May 2026, 07:14</time>
+      </div>
+      <h3 class="card-title">Webinar: The hidden bottlenecks in network incident response</h3>
+      <p class="card-summary">IT teams are increasingly overwhelmed by alerts from disconnected systems, forcing responders to manually coordinate investigations during network incidents. This webinar explores how automation and AI-assisted workflows can help reduce response delays and…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>IT teams are increasingly overwhelmed by alerts from disconnected systems, forcing responders to manually coordinate investigations during network incidents. This webinar explores how automation and AI-assisted workflows can help reduce response delays and improve operational coordination. [...]</p></div>
+      <div class="detail-links">
+        <a href="articles/a642808b944fe6a9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-the-hidden-bottlenecks-in-network-incident-response/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -283,7 +780,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       18 May 2026
-      <span class="day-count">20</span>
+      <span class="day-count">11</span>
     </h2>
   </div>
 
@@ -630,468 +1127,6 @@
       <div class="detail-links">
         <a href="articles/33444c342b4bea87.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/developer-workstations-are-now-part-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="cve,exploit,patch,vulnerability"
-       data-vendors="AWS,Fortinet,Ivanti,VMware"
-       data-severity="critical"
-       data-title="ivanti, fortinet, sap, vmware, n8n patch rce, sql injection, privilege escalation flaws"
-       data-id="41edcc2b36951771"
-       data-published="2026-05-18T16:24:05+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">AWS</span><span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-05-18T16:24:05+05:30" title="18 May 2026, 05:54">18 May 2026, 05:54</time>
-      </div>
-      <h3 class="card-title">Ivanti, Fortinet, SAP, VMware, n8n Patch RCE, SQL Injection, Privilege Escalation Flaws</h3>
-      <p class="card-summary">Ivanti, Fortinet, n8n, SAP, and VMware have released security fixes for various vulnerabilities that could be exploited by bad actors to bypass authentication and execute arbitrary code.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/41edcc2b36951771.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="fuel tank breaches expand scope of iran&#39;s cyber offensive"
-       data-id="dfd9593d7ad3f603"
-       data-published="2026-05-18T15:41:55+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-18T15:41:55+00:00" title="18 May 2026, 10:41">18 May 2026, 10:41</time>
-      </div>
-      <h3 class="card-title">Fuel Tank Breaches Expand Scope of Iran&#39;s Cyber Offensive</h3>
-      <p class="card-summary">Security experts have long warned that insecure automatic tank gauge (ATG) systems exposed on the Internet can be tampered with by threat actors.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/dfd9593d7ad3f603.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyberattacks-data-breaches/fuel-tank-breaches-expand-scope-irans-cyber-offensive" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="apt"
-       data-vendors=""
-       data-severity="medium"
-       data-title="5 steps to managing shadow ai tools without slowing down employees"
-       data-id="2eaad7c3c514fa18"
-       data-published="2026-05-18T14:45:35-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-18T14:45:35-04:00" title="18 May 2026, 13:45">18 May 2026, 13:45</time>
-      </div>
-      <h3 class="card-title">5 Steps to Managing Shadow AI Tools Without Slowing Down Employees</h3>
-      <p class="card-summary">Many employees already use shadow AI tools at work without security review. Adaptive Security breaks down how teams can build practical AI governance without adding friction for employees. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">apt</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/2eaad7c3c514fa18.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/5-steps-to-managing-shadow-ai-tools-without-slowing-down-employees/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,patch,vulnerability,zero-day"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="miniplasma windows 0-day enables system privilege escalation on fully patched systems"
-       data-id="fe76e9d5c1a611e5"
-       data-published="2026-05-18T14:27:34+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T14:27:34+05:30" title="18 May 2026, 03:57">18 May 2026, 03:57</time>
-      </div>
-      <h3 class="card-title">MiniPlasma Windows 0-Day Enables SYSTEM Privilege Escalation on Fully Patched Systems</h3>
-      <p class="card-summary">Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched Windows systems.</p></div>
-      <div class="detail-links">
-        <a href="articles/fe76e9d5c1a611e5.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="four malicious npm packages deliver infostealers and phantom bot ddos malware"
-       data-id="0d8d4f53f1d9dc96"
-       data-published="2026-05-18T14:27:26+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-18T14:27:26+05:30" title="18 May 2026, 03:57">18 May 2026, 03:57</time>
-      </div>
-      <h3 class="card-title">Four Malicious npm Packages Deliver Infostealers and Phantom Bot DDoS Malware</h3>
-      <p class="card-summary">Cybersecurity researchers have discovered four new npm packages containing information-stealing malware, one of which is a clone of the Shai-Hulud worm open-sourced by TeamPCP.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/0d8d4f53f1d9dc96.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="leaked shai-hulud malware fuels new npm infostealer campaign"
-       data-id="1c67c709030b75ca"
-       data-published="2026-05-18T13:28:02-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-18T13:28:02-04:00" title="18 May 2026, 12:28">18 May 2026, 12:28</time>
-      </div>
-      <h3 class="card-title">Leaked Shai-Hulud malware fuels new npm infostealer campaign</h3>
-      <p class="card-summary">The Shai-Hulud malware leaked last week is now used in new attacks on the Node Package Manager (npm) index, as infected packages emerged over the weekend. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/1c67c709030b75ca.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/leaked-shai-hulud-malware-fuels-new-npm-infostealer-campaign/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="apt,exploit,malware,vulnerability"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="the boring stuff is dangerous now"
-       data-id="ceea99d56459eaf3"
-       data-published="2026-05-18T13:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-18T13:00:00+00:00" title="18 May 2026, 08:00">18 May 2026, 08:00</time>
-      </div>
-      <h3 class="card-title">The Boring Stuff is Dangerous Now</h3>
-      <p class="card-summary">AI agents capable of discovering and exploiting obscure vulnerabilities are emerging alongside developers producing vast amounts of potentially flawed AI-generated code, forcing defenders to adapt accordingly.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">apt</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ceea99d56459eaf3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/ai-code-and-agents-forces-defenders-adapt" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="pre-stuxnet fast16 malware tampered with nuclear weapons simulations"
-       data-id="a7ccbc2e8f66ced6"
-       data-published="2026-05-18T12:16:37+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-18T12:16:37+05:30" title="18 May 2026, 01:46">18 May 2026, 01:46</time>
-      </div>
-      <h3 class="card-title">Pre-Stuxnet Fast16 Malware Tampered with Nuclear Weapons Simulations</h3>
-      <p class="card-summary">A new analysis of the Lua-based fast16 malware has confirmed that it was a cyber sabotage tool designed to tamper with nuclear weapons testing simulations.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a7ccbc2e8f66ced6.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/pre-stuxnet-fast16-malware-tampered.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,patch"
-       data-vendors=""
-       data-severity="medium"
-       data-title="boulevard of broken dreams: 2 decades of cyber fails"
-       data-id="8ebfb63f51c35432"
-       data-published="2026-05-18T12:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-18T12:00:00+00:00" title="18 May 2026, 07:00">18 May 2026, 07:00</time>
-      </div>
-      <h3 class="card-title">Boulevard of Broken Dreams: 2 Decades of Cyber Fails</h3>
-      <p class="card-summary">From the MGM and Caesars fiasco and MOVEit&#39;s patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic failures, and cringeworthy moments that still…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>From the MGM and Caesars fiasco and MOVEit&#39;s patch nightmare to epic business blunders and the jaded reality of living in a post-breach world, Dark Reading looks back at the mistakes, miscalculations, systemic failures, and cringeworthy moments that still have us shaking our heads.</p></div>
-      <div class="detail-links">
-        <a href="articles/8ebfb63f51c35432.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/broken-dreams-2-decades-cyber-fails" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      17 May 2026
-      <span class="day-count">4</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--critical"
-       data-tags="exploit,patch,vulnerability,zero-day"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="new windows &#39;miniplasma&#39; zero-day exploit gives system access, poc released"
-       data-id="82efa48d7aa01307"
-       data-published="2026-05-17T18:30:08-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-17T18:30:08-04:00" title="17 May 2026, 17:30">17 May 2026, 17:30</time>
-      </div>
-      <h3 class="card-title">New Windows &#39;MiniPlasma&#39; zero-day exploit gives SYSTEM access, PoC released</h3>
-      <p class="card-summary">A cybersecurity researcher has released a proof-of-concept exploit for a Windows privilege escalation zero-day dubbed &#34;MiniPlasma&#34; that lets attackers gain SYSTEM privileges on fully patched Windows systems.  [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/82efa48d7aa01307.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="nginx cve-2026-42945 exploited in the wild, causing worker crashes and possible rce"
-       data-id="53b1475a6cfd917b"
-       data-published="2026-05-17T17:27:53+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-05-17T17:27:53+05:30" title="17 May 2026, 06:57">17 May 2026, 06:57</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">NGINX CVE-2026-42945 Exploited in the Wild, Causing Worker Crashes and Possible RCE</h3>
-      <p class="card-summary">A newly disclosed security flaw impacting NGINX Plus and NGINX Open has come under active exploitation in the wild, days after its public disclosure, according to VulnCheck.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/53b1475a6cfd917b.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="grafana github token breach led to codebase download and extortion attempt"
-       data-id="195ade00912c37cf"
-       data-published="2026-05-17T12:43:33+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-05-17T12:43:33+05:30" title="17 May 2026, 02:13">17 May 2026, 02:13</time>
-      </div>
-      <h3 class="card-title">Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt</h3>
-      <p class="card-summary">Grafana has disclosed that an &#34;unauthorized party&#34; obtained a token that granted them the ability to access the company&#39;s GitHub environment and download its codebase.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/195ade00912c37cf.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/grafana-github-token-breach-led-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="phishing"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="tycoon2fa hijacks microsoft 365 accounts via device-code phishing"
-       data-id="8159d1a132466e38"
-       data-published="2026-05-17T10:43:10-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-17T10:43:10-04:00" title="17 May 2026, 09:43">17 May 2026, 09:43</time>
-      </div>
-      <h3 class="card-title">Tycoon2FA hijacks Microsoft 365 accounts via device-code phishing</h3>
-      <p class="card-summary">The Tycoon2FA phishing kit now supports device-code phishing attacks and abuses Trustifi click-tracking URLs to hijack Microsoft 365 accounts. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/8159d1a132466e38.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/tycoon2fa-hijacks-microsoft-365-accounts-via-device-code-phishing/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      16 May 2026
-      <span class="day-count">1</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--action card--critical"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="funnel builder flaw under active exploitation enables woocommerce checkout skimming"
-       data-id="b9ede818b0b78a60"
-       data-published="2026-05-16T20:50:48+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-05-16T20:50:48+05:30" title="16 May 2026, 10:20">16 May 2026, 10:20</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming</h3>
-      <p class="card-summary">A critical security vulnerability impacting the</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>A critical security vulnerability impacting the  Funnel Builder  plugin for WordPress has come under active exploitation in the wild to  inject malicious JavaScript code  into WooCommerce checkout pages with the goal of stealing payment data. Details of the activity were  published  by Sansec this week.</p></div>
-      <div class="detail-links">
-        <a href="articles/b9ede818b0b78a60.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

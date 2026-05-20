@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 May 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -49,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,6 +66,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
@@ -72,11 +75,112 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="github breached — employee device hack led to exfiltration of 3,800+ internal repos"
+       data-id="3372449730d18995"
+       data-published="2026-05-20T17:08:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-20T17:08:43+05:30" title="20 May 2026, 06:38">20 May 2026, 06:38</time>
+      </div>
+      <h3 class="card-title">GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos</h3>
+      <p class="card-summary">GitHub on Tuesday said it&#39;s investigating unauthorized access to its internal repositories after the notorious threat actor known as TeamPCP listed the platform&#39;s source code and internal organizations for sale on a cybercrime forum.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3372449730d18995.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="typosquatting is no longer a user problem. it&#39;s a supply chain problem"
+       data-id="b2d20d85f387da30"
+       data-published="2026-05-20T16:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-20T16:00:00+05:30" title="20 May 2026, 05:30">20 May 2026, 05:30</time>
+      </div>
+      <h3 class="card-title">Typosquatting Is No Longer a User Problem. It&#39;s a Supply Chain Problem</h3>
+      <p class="card-summary">AI-generated lookalike domains are now embedded inside the third-party scripts running on your web properties. Here&#39;s why your current stack can&#39;t see them, and what detection actually requires.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b2d20d85f387da30.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/typosquatting-is-no-longer-user-problem.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft releases mitigation for yellowkey bitlocker bypass cve-2026-45585 exploit"
+       data-id="8da83a274dfc347f"
+       data-published="2026-05-20T13:58:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-20T13:58:26+05:30" title="20 May 2026, 03:28">20 May 2026, 03:28</time>
+      </div>
+      <h3 class="card-title">Microsoft Releases Mitigation for YellowKey BitLocker Bypass CVE-2026-45585 Exploit</h3>
+      <p class="card-summary">Microsoft on Tuesday released a mitigation for a BitLocker bypass vulnerability named YellowKey following its public disclosure last week.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8da83a274dfc347f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/microsoft-releases-mitigation-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,malware,vulnerability"
        data-vendors=""
@@ -170,6 +274,37 @@
       <div class="detail-links">
         <a href="../articles/e627eb0d601d6b7d.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/interpol-operation-ramz-cross-region-middle-east" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="exploit released for new pintheft arch linux root escalation flaw"
+       data-id="407f5b4bdd5c62ae"
+       data-published="2026-05-20T06:52:31-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-20T06:52:31-04:00" title="20 May 2026, 05:52">20 May 2026, 05:52</time>
+      </div>
+      <h3 class="card-title">Exploit released for new PinTheft Arch Linux root escalation flaw</h3>
+      <p class="card-summary">PinTheft, a recently patched Linux privilege escalation vulnerability, now has a publicly available proof-of-concept (PoC) exploit that allows local attackers to gain root privileges on Arch Linux systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/407f5b4bdd5c62ae.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/linux/exploit-released-for-new-pintheft-arch-linux-root-escalation-flaw/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 May 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">5 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,14 +61,55 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="grafana github breach exposes source code via tanstack npm attack"
+       data-id="5eb039be3c84ed13"
+       data-published="2026-05-20T10:42:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-20T10:42:06+05:30" title="20 May 2026, 00:12">20 May 2026, 00:12</time>
+      </div>
+      <h3 class="card-title">Grafana GitHub Breach Exposes Source Code via TanStack npm Attack</h3>
+      <p class="card-summary">Grafana Labs, on May 19, 2026, said an investigation into its recent breach found no evidence of customer production systems or operations being compromised.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5eb039be3c84ed13.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/grafana-github-breach-exposes-source.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,vulnerability"
        data-vendors=""
@@ -82,12 +133,106 @@
           <span class="ttag">vulnerability</span>
         </div>
       </div>
+      <div class="card-related">Also: BleepingComputer</div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="../articles/f65a8e1e342074b4.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="interpol&#39;s &#39;operation ramz&#39; pioneers cross-region collabs in middle east"
+       data-id="e627eb0d601d6b7d"
+       data-published="2026-05-20T07:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-20T07:00:00+00:00" title="20 May 2026, 02:00">20 May 2026, 02:00</time>
+      </div>
+      <h3 class="card-title">Interpol&#39;s &#39;Operation Ramz&#39; Pioneers Cross-Region Collabs in Middle East</h3>
+      <p class="card-summary">While the numbers are modest, the crackdown on cybercrime involved 13 countries in the MENA region, the largest law enforcement collaboration to date.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e627eb0d601d6b7d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/interpol-operation-ramz-cross-region-middle-east" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="github confirms breach of 3,800 repos via malicious vscode extension"
+       data-id="d7f872cfc8200ddc"
+       data-published="2026-05-20T04:14:08-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-20T04:14:08-04:00" title="20 May 2026, 03:14">20 May 2026, 03:14</time>
+      </div>
+      <h3 class="card-title">GitHub confirms breach of 3,800 repos via malicious VSCode extension</h3>
+      <p class="card-summary">GitHub has confirmed that roughly 3,800 internal repositories were breached after one of its employees installed a malicious VS Code extension. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d7f872cfc8200ddc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft shares mitigation for yellowkey windows zero-day"
+       data-id="51c7cc7402ad4cc7"
+       data-published="2026-05-20T03:31:15-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-20T03:31:15-04:00" title="20 May 2026, 02:31">20 May 2026, 02:31</time>
+      </div>
+      <h3 class="card-title">Microsoft shares mitigation for YellowKey Windows zero-day</h3>
+      <p class="card-summary">Microsoft has shared mitigations for YellowKey, a recently disclosed Windows BitLocker zero-day vulnerability that grants access to protected drives. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/51c7cc7402ad4cc7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-mitigation-for-yellowkey-windows-zero-day/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -1,5 +1,32 @@
 [
   {
+    "id": "a5a56027cd5105c4",
+    "title": "Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
+    "published": "2026-05-20T22:36:54+05:30",
+    "fetched_at": "2026-05-20T19:23:03.252560+00:00",
+    "summary": "Microsoft has unveiled two new open-source tools called RAMPART and Clarity to assist developers in better testing the security of artificial intelligence (AI) agents.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-05-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has unveiled two new open-source tools called RAMPART and Clarity to assist developers in better testing the security of artificial intelligence (AI) agents.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft has unveiled two new open-source tools called RAMPART and Clarity to assist developers in better testing the security of artificial intelligence (AI) agents. RAMPART, short for Risk Assessment and Measurement Platform for Agentic Red Teaming, functions as a Pytest-native safety and security testing framework for writing and running safety and security tests for AI agents, covering.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "06e0e1e030d574a9",
     "title": "Microsoft Takes Down Malware-Signing Service Behind Ransomware Attacks",
     "source": "The Hacker News",
@@ -117,6 +144,33 @@
     "highlighted": false
   },
   {
+    "id": "5138e0e72c6403db",
+    "title": "Patch Now: Critical Flaw in OT Robot OS Gives Attackers Control",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/ics-ot-security/patch-now-critical-flaw-ot-robot-os",
+    "published": "2026-05-20T16:12:08+00:00",
+    "fetched_at": "2026-05-20T19:23:04.340837+00:00",
+    "summary": "An unauthenticated attacker can exploit the command injection vulnerability to gain remote access to robotic systems, causing significant disruption to the environment.",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-05-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "An unauthenticated attacker can exploit the command injection vulnerability to gain remote access to robotic systems, causing significant disruption to the environment.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "An unauthenticated attacker can exploit the command injection vulnerability to gain remote access to robotic systems, causing significant disruption to the environment. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "b2d20d85f387da30",
     "title": "Typosquatting Is No Longer a User Problem. It's a Supply Chain Problem",
     "source": "The Hacker News",
@@ -173,6 +227,48 @@
       "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
     },
     "email_summary": "Microsoft on Tuesday released a mitigation for a BitLocker bypass vulnerability named YellowKey following its public disclosure last week. Tracked as CVE-2026-45585. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "be9e3b746ac0d8f8",
+    "title": "CISA Adds Seven Known Exploited Vulnerabilities to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/05/20/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
+    "published": "2026-05-20T12:00:00+00:00",
+    "fetched_at": "2026-05-20T19:23:05.847570+00:00",
+    "summary": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-20",
+    "cves": [
+      "CVE-2008-4250",
+      "CVE-2009-1537",
+      "CVE-2009-3459",
+      "CVE-2010-0249",
+      "CVE-2010-0806",
+      "CVE-2026-41091",
+      "CVE-2026-45498"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Adobe",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "quick_take": "",
+    "sections": {
+      "impact": "CVE-2008-4250 Microsoft Windows Buffer Overflow Vulnerability\n\n CVE-2009-1537 Microsoft DirectX NULL Byte Overwrite Vulnerability\n\n CVE-2009-3459 Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability\n\n CVE-2010-0249 Microsoft Internet Explorer Use-After-Free Vulnerability\n\n CVE-2010-0806 Microsoft Internet Explorer Use-After-Free Vulnerability\n\n CVE-2026-41091 Microsoft Defender Elevation of Privilege Vulnerability\n\n CVE-2026-45498 Microsoft Defender Denial of Service Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats."
+    },
+    "email_summary": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2008-4250, CVE-2009-1537, CVE-2009-3459. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

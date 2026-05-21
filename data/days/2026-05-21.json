@@ -149,6 +149,35 @@
     "highlighted": false
   },
   {
+    "id": "0077653d36b9e3ef",
+    "title": "Google accidentally exposed details of unfixed Chromium flaw",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
+    "published": "2026-05-21T14:13:50-04:00",
+    "fetched_at": "2026-05-21T19:52:55.606585+00:00",
+    "summary": "Google has accidentally leaked details about an unfixed issue in Chromium that keeps JavaScript running in the background even when the browser is closed, allowing remote code execution on the device. [...]",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-05-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Google has accidentally leaked details about an unfixed issue in Chromium that keeps JavaScript running in the background even when the browser is closed, allowing remote code execution on the device. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Google has accidentally leaked details about an unfixed issue in Chromium that keeps JavaScript running in the background even when the browser is closed, allowing remote code execution on the device. [...]\n\nAssessed severity: HIGH."
+    },
+    "email_summary": "Google has accidentally leaked details about an unfixed issue in Chromium that keeps JavaScript running in the background even when the browser is closed, allowing remote code execution on the device. [...]. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "3e00851f1bec8ee0",
     "title": "Chinese APTs Share Linux Backdoor in Central Asia Telco Attacks",
     "source": "Dark Reading",
@@ -450,6 +479,40 @@
     "highlighted": false
   },
   {
+    "id": "e08793e82b0be532",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/05/21/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "published": "2026-05-21T12:00:00+00:00",
+    "fetched_at": "2026-05-21T19:52:57.298288+00:00",
+    "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-21",
+    "cves": [
+      "CVE-2025-34291",
+      "CVE-2026-34926"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "quick_take": "",
+    "sections": {
+      "impact": "CVE-2025-34291 Langflow Origin Validation Error Vulnerability\n\n CVE-2026-34926 Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability\n\n \n These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nAssessed severity: HIGH.",
+      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats."
+    },
+    "email_summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2025-34291, CVE-2026-34926. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "e692e431a944da21",
     "title": "Apple blocked over $11 billion in App Store fraud in 6 years",
     "source": "BleepingComputer",
@@ -587,66 +650,6 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "GitHub on Wednesday officially confirmed that the breach of its internal repositories was the result of a compromise of an employee device involving a poisoned version of the Nx Console Microsoft Visual Studio Code (VS Code) extension. The development comes as the Nx team revealed that the extension, nrwl.angular-console, was breached after one of its developers' systems was hacked in the.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "193e8601e21665cc",
-    "title": "Highly Critical Drupal Core Flaw Exposes PostgreSQL Sites to RCE Attacks",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html",
-    "published": "2026-05-21T09:14:11+05:30",
-    "fetched_at": "2026-05-21T07:50:01.228690+00:00",
-    "summary": "Drupal has released security updates for a \"highly critical\" security vulnerability in Drupal Core that could be exploited by attackers to achieve remote code execution, privilege escalation, or information disclosure.",
-    "tags": [
-      "cve",
-      "exploit",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-05-21",
-    "cves": [
-      "CVE-2026-9082"
-    ],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Drupal has released security updates for a \"highly critical\" security vulnerability in Drupal Core that could be exploited by attackers to achieve remote code execution, privilege escalation, or information disclosure.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Drupal has released security updates for a \"highly critical\" security vulnerability in Drupal Core that could be exploited by attackers to achieve remote code execution, privilege escalation, or information disclosure. Tracked as CVE-2026-9082. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "e455445f4b9730de",
-    "title": "Police seize “First VPN” service used in ransomware, data theft attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/",
-    "published": "2026-05-21T09:09:51-04:00",
-    "fetched_at": "2026-05-21T15:20:43.741460+00:00",
-    "summary": "A virtual private network service called 'First VPN,' used in ransomware and data theft attacks, has been taken offline in a joint international law enforcement operation. [...]",
-    "tags": [
-      "malware",
-      "ransomware",
-      "vulnerability"
-    ],
-    "day": "2026-05-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "A virtual private network service called 'First VPN,' used in ransomware and data theft attacks, has been taken offline in a joint international law enforcement operation. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "A virtual private network service called 'First VPN,' used in ransomware and data theft attacks, has been taken offline in a joint international law enforcement operation. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
-    },
-    "email_summary": "A virtual private network service called 'First VPN,' used in ransomware and data theft attacks, has been taken offline in a joint international law enforcement operation. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

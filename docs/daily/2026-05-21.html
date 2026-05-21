@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">21 May 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">7 articles</span>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -65,21 +65,85 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="AWS,Microsoft"
+       data-severity="medium"
+       data-title="when identity is the attack path"
+       data-id="e30cdeed8e9b6e88"
+       data-published="2026-05-21T16:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-21T16:00:00+05:30" title="21 May 2026, 05:30">21 May 2026, 05:30</time>
+      </div>
+      <h3 class="card-title">When Identity is the Attack Path</h3>
+      <p class="card-summary">Consider a cached access key on a single Windows machine. It got there the way most cached credentials do - a user logged in, and the key stored itself automatically.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e30cdeed8e9b6e88.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/when-identity-is-attack-path.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="9-year-old linux kernel flaw enables root command execution on major distros"
+       data-id="c437bed2b0fd9a51"
+       data-published="2026-05-21T13:05:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-21T13:05:53+05:30" title="21 May 2026, 02:35">21 May 2026, 02:35</time>
+      </div>
+      <h3 class="card-title">9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a vulnerability in the Linux kernel that remained undetected for nine years.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c437bed2b0fd9a51.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors="Microsoft"
@@ -140,6 +204,34 @@
       <div class="detail-links">
         <a href="../articles/193e8601e21665cc.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="flipper one project needs community help to build open linux platform"
+       data-id="63c846006f5ed014"
+       data-published="2026-05-21T07:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-05-21T07:00:00-04:00" title="21 May 2026, 06:00">21 May 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">Flipper One project needs community help to build open Linux platform</h3>
+      <p class="card-summary">Flipper Devices, the maker of the Flipper Zero pentesting tool, is asking the community to help build Flipper One, an open Linux platform for connected devices. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/63c846006f5ed014.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/hardware/flipper-one-project-needs-community-help-to-build-open-linux-platform/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

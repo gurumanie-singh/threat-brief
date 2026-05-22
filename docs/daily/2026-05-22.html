@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 May 2026</h1>
-      <span class="brief-sub">11 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -72,12 +73,16 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
@@ -176,6 +181,69 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="breach,phishing,ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="verizon dbir: healthcare fends off increased social engineering attacks"
+       data-id="adfdddb1616ec0bf"
+       data-published="2026-05-22T13:17:25+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-05-22T13:17:25+00:00" title="22 May 2026, 08:17">22 May 2026, 08:17</time>
+      </div>
+      <h3 class="card-title">Verizon DBIR: Healthcare Fends Off Increased Social Engineering Attacks</h3>
+      <p class="card-summary">Ransomware and vendor breaches persist, but the 2026 Data Breach Investigations Report (DBIR) highlights how evolving social engineering tactics make the sector more vulnerable.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/adfdddb1616ec0bf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/verizon-dbir-healthcare-fends-off-increased-social-engineering-attacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="former us execs plead guilty to aiding tech support scammers"
+       data-id="dea8f5ce9748022a"
+       data-published="2026-05-22T11:32:18-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-22T11:32:18-04:00" title="22 May 2026, 10:32">22 May 2026, 10:32</time>
+      </div>
+      <h3 class="card-title">Former US execs plead guilty to aiding tech support scammers</h3>
+      <p class="card-summary">Two former executives of a call-tracking and analytics company pleaded guilty to concealing a years-long tech support fraud scheme that victimized individuals worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dea8f5ce9748022a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/former-us-execs-plead-guilty-to-aiding-tech-support-scammers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors="AWS"
@@ -238,6 +306,40 @@
       <div class="detail-links">
         <a href="../articles/7ae01ceb1fb6b038.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="trend micro warns of apex one zero-day exploited in the wild"
+       data-id="a57c5a5e7ddcaec7"
+       data-published="2026-05-22T09:39:19-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-22T09:39:19-04:00" title="22 May 2026, 08:39">22 May 2026, 08:39</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Trend Micro warns of Apex One zero-day exploited in the wild</h3>
+      <p class="card-summary">Japanese cybersecurity software company Trend Micro has addressed an Apex One zero-day vulnerability exploited in attacks targeting Windows systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a57c5a5e7ddcaec7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

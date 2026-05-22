@@ -1,5 +1,61 @@
 [
   {
+    "id": "fed815e315807f9e",
+    "title": "First VPN Dismantled in Global Takedown Over Use by 25 Ransomware Groups",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
+    "published": "2026-05-22T23:05:02+05:30",
+    "fetched_at": "2026-05-22T18:52:34.012119+00:00",
+    "summary": "Authorities in Europe and North America have announced the dismantling of a criminal virtual private network (VPN) service used by criminal actors to obscure the origins of ransomware attacks, data theft, scanning, and denial-of-service attacks.",
+    "tags": [
+      "ransomware"
+    ],
+    "day": "2026-05-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Authorities in Europe and North America have announced the dismantling of a criminal virtual private network (VPN) service used by criminal actors to obscure the origins of ransomware attacks, data theft, scanning, and denial-of-service attacks.",
+    "quick_take": "Authorities in Europe and North America have announced the dismantling of a criminal virtual private network (VPN) service used by criminal actors to obscure the origins of ransomware attacks, data theft, scanning,…",
+    "sections": {
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "Authorities in Europe and North America have announced the dismantling of a criminal virtual private network (VPN) service used by criminal actors to obscure the origins of ransomware attacks, data theft, scanning, and denial-of-service attacks. The disruption of First VPN Service was led by France and the Netherlands, with several other nations supporting the investigation since December.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "673742f482fb0dfd",
+    "title": "Ghostwriter Targets Ukraine Government Entities with Prometheus Phishing Malware",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/05/ghostwriter-targets-ukraine-government.html",
+    "published": "2026-05-22T21:50:32+05:30",
+    "fetched_at": "2026-05-22T18:52:34.012395+00:00",
+    "summary": "The Belarus-aligned threat actor known as Ghostwriter (aka UAC-0057 and UNC1151Ukraine's National Security and Defense Council) has been observed using lures related to Prometheus, a Ukrainian online learning platform, to target government organizations in the country.",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-05-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Belarus-aligned threat actor known as Ghostwriter (aka UAC-0057 and UNC1151Ukraine's National Security and Defense Council) has been observed using lures related to Prometheus, a Ukrainian online learning platform, to target government organizations in…",
+    "quick_take": "The Belarus-aligned threat actor known as Ghostwriter (aka UAC-0057 and UNC1151Ukraine's National Security and Defense Council) has been observed using lures related to Prometheus, a Ukrainian online learning…",
+    "sections": {
+      "overview": "The Belarus-aligned threat actor known as Ghostwriter (aka UAC-0057 and UNC1151Ukraine's National Security and Defense Council) has been observed using lures related to Prometheus, a Ukrainian online learning platform, to target government organizations in the country.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "The Belarus-aligned threat actor known as Ghostwriter (aka UAC-0057 and UNC1151Ukraine's National Security and Defense Council) has been observed using lures related to Prometheus, a Ukrainian online learning platform, to target government organizations in the country. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "2cf643695b4fc665",
     "title": "Megalodon GitHub Attack Targets 5,561 Repos with Malicious CI/CD Workflows",
     "source": "The Hacker News",
@@ -57,6 +113,64 @@
     "highlighted": false
   },
   {
+    "id": "93667323a55b0458",
+    "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+    "published": "2026-05-22T16:34:24+00:00",
+    "fetched_at": "2026-05-22T18:52:34.327710+00:00",
+    "summary": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity & Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of other agency secrets on a public GitHub account. The inquiry comes as CISA is still struggling to contain the breach and invalidate the leaked...",
+    "tags": [
+      "breach",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity & Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity & Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of other agency secrets on a public GitHub account. The inquiry comes as CISA is still struggling to contain the breach and invalidate the leaked...",
+      "technical": "Hassan noted that the incident occurred against the backdrop of major disruptions internally at CISA, which lost more than a third of it workforce and almost all of its senior leaders after the Trump administration forced a series of early retirements, buyouts, and resignations across the agency’s various divisions. On May 20, KrebsOnSecurity heard from Dylan Ayrey , the creator of TruffleHog , an open-source tool for discovering private keys and other secrets buried in code hosted at GitHub and other public platforms. An attacker with this key can read source code from every repository in the CISA-IT organization, including private repos, register rogue self-hosted runners to hijack CI/CD pipelines and access repository secrets, and modify repository admin settings including branch protection rules, webhooks, and deploy keys, Ayrey told KrebsOnSecurity. But he said cybercriminal actors also monitor these public feeds, and are often quick to pounce on API or SSH keys that get inadvertently published in code commits.",
+      "impact": "The inquiry comes as CISA is still struggling to contain the breach and invalidate the leaked credentials. Ayrey said CISA still hadn t invalidated an RSA private key exposed in the Private-CISA repo that granted access to a GitHub app which is owned by the CISA enterprise account and installed on the CISA-IT GitHub organization with full access to all code repositories. Ayrey said his company Truffle Security monitors GitHub and a number of other code platforms for exposed keys, and attempts to alert affected accounts to the sensitive data exposure(s).\n\nAssessed severity: HIGH.",
+      "mitigation": "Experts who reviewed the exposed secrets said the commit logs for the code repository showed the CISA contractor disabled GitHub s built-in protection against publishing sensitive credentials in public repos. An attacker with this key can read source code from every repository in the CISA-IT organization, including private repos, register rogue self-hosted runners to hijack CI/CD pipelines and access repository secrets, and modify repository admin settings including branch protection rules, webhooks, and deploy keys, Ayrey told KrebsOnSecurity. Delia Ramirez (D-Ill), the ranking member of the panel s Subcommittee on Cybersecurity and Infrastructure Protection. Ayrey said his company Truffle Security monitors GitHub and a number of other code platforms for exposed keys, and attempts to alert affected accounts to the sensitive data exposure(s).",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Lawmakers in both houses of Congress are demanding answers from the U.S. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "4e9650c8a1b03f10",
+    "title": "Akamai Joins Growing Chorus of Vendors Betting Big on Secure Enterprise Browsers",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/remote-workforce/akamai-growing-chorus-betting-on-secure-enterprise-browsers",
+    "published": "2026-05-22T15:43:50+00:00",
+    "fetched_at": "2026-05-22T18:52:36.774005+00:00",
+    "summary": "When Akamai announced its LayerX acquisition, the company joined a growing list of vendors adding secure enterprise browsers to their product portfolios.",
+    "tags": [],
+    "day": "2026-05-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "When Akamai announced its LayerX acquisition, the company joined a growing list of vendors adding secure enterprise browsers to their product portfolios.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "When Akamai announced its LayerX acquisition, the company joined a growing list of vendors adding secure enterprise browsers to their product portfolios.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "39733be7f7c18586",
     "title": "Kimwolf DDoS Botnet Operator Arrested in Canada Over DDoS-for-Hire Attacks",
     "source": "The Hacker News",
@@ -77,6 +191,33 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Department of Justice (DoJ) on Thursday announced the arrest of a Canadian man in connection with allegedly operating a distributed denial-of-service (DDoS) botnet known as Kimwolf. In tandem, Jacob Butler (aka Dort), 23, Ottawa, Canada, has been charged with offenses related to the development and operation of the botnet.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "22c8355098803e9d",
+    "title": "Netherlands seizes 800 servers of hosting firm enabling cyberattacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/netherlands-seizes-800-servers-of-hosting-firm-enabling-cyberattacks/",
+    "published": "2026-05-22T13:24:52-04:00",
+    "fetched_at": "2026-05-22T18:52:34.477858+00:00",
+    "summary": "Financial crime investigators in the Netherlands (FIOD) arrested two men and seized 800 servers linked to a web hosting company that enabled cyberattacks, interference operations, and disinformation campaigns. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-05-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Financial crime investigators in the Netherlands (FIOD) arrested two men and seized 800 servers linked to a web hosting company that enabled cyberattacks, interference operations, and disinformation campaigns. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Financial crime investigators in the Netherlands (FIOD) arrested two men and seized 800 servers linked to a web hosting company that enabled cyberattacks, interference operations, and disinformation campaigns. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Financial crime investigators in the Netherlands (FIOD) arrested two men and seized 800 servers linked to a web hosting company that enabled cyberattacks, interference operations, and disinformation campaigns. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

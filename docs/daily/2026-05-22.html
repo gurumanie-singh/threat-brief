@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 May 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">11 articles</span>
     </div>
   </div>
 
@@ -36,6 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -62,24 +64,89 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="megalodon github attack targets 5,561 repos with malicious ci/cd workflows"
+       data-id="2cf643695b4fc665"
+       data-published="2026-05-22T17:25:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-22T17:25:24+05:30" title="22 May 2026, 06:55">22 May 2026, 06:55</time>
+      </div>
+      <h3 class="card-title">Megalodon GitHub Attack Targets 5,561 Repos with Malicious CI/CD Workflows</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a new automated campaign called Megalodon that has pushed 5,718 malicious commits to 5,561 GitHub repositories within a six-hour window.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2cf643695b4fc665.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/megalodon-github-attack-targets-5561.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="making vulnerable drivers exploitable without hardware - the byovd perspective"
+       data-id="fa644588b193a157"
+       data-published="2026-05-22T17:08:12+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-22T17:08:12+05:30" title="22 May 2026, 06:38">22 May 2026, 06:38</time>
+      </div>
+      <h3 class="card-title">Making Vulnerable Drivers Exploitable Without Hardware - The BYOVD Perspective</h3>
+      <p class="card-summary">1 Introduction</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>1 Introduction</p>
+<p>This article provides a technical analysis of how many Windows kernel mode drivers can be interacted with from user mode without the hardware they were developed for. This work was motivated by driver-oriented vulnerability research and the need to evaluate the exploitability of individual findings, which frequently affect code whose reachability is hardware-gated.</p></div>
+      <div class="detail-links">
+        <a href="../articles/fa644588b193a157.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/making-vulnerable-drivers-exploitable.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -174,6 +241,97 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="drupal: critical sql injection flaw now targeted in attacks"
+       data-id="6fe1ca686ae7c9c7"
+       data-published="2026-05-22T09:14:40-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-05-22T09:14:40-04:00" title="22 May 2026, 08:14">22 May 2026, 08:14</time>
+      </div>
+      <h3 class="card-title">Drupal: Critical SQL injection flaw now targeted in attacks</h3>
+      <p class="card-summary">Drupal is warning that hackers are attempting to exploit a &#34;highly critical&#34; SQL injection vulnerability announced earlier this week. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6fe1ca686ae7c9c7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="why chargebacks are just one piece of the fraud puzzle"
+       data-id="4f1a9966176bcfdb"
+       data-published="2026-05-22T09:09:18-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-22T09:09:18-04:00" title="22 May 2026, 08:09">22 May 2026, 08:09</time>
+      </div>
+      <h3 class="card-title">Why Chargebacks are Just One Piece of the Fraud Puzzle</h3>
+      <p class="card-summary">Fraud losses don&#39;t stop at chargebacks. False declines, account takeovers, and abuse also damage revenue and trust.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4f1a9966176bcfdb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/why-chargebacks-are-just-one-piece-of-the-fraud-puzzle/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ubiquiti patches three max severity unifi os vulnerabilities"
+       data-id="0466ff02a9b7c625"
+       data-published="2026-05-22T08:00:42-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-22T08:00:42-04:00" title="22 May 2026, 07:00">22 May 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Ubiquiti patches three max severity UniFi OS vulnerabilities</h3>
+      <p class="card-summary">Ubiquiti has released security updates to patch three maximum severity vulnerabilities in UniFi OS that can be exploited by remote attackers without privileges. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0466ff02a9b7c625.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-unifi-os-vulnerabilities/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt,malware"
        data-vendors="Microsoft"
@@ -200,6 +358,36 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="../articles/2ada4ce06e9769ee.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/endpoint-security/chinas-webworm-discord-microsoft-graphs" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="china&#39;s webworm uses discord, microsoft graphs to hack eu governments"
+       data-id="ed26c2bfc54ec74f"
+       data-published="2026-05-22T07:01:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-22T07:01:00+00:00" title="22 May 2026, 02:01">22 May 2026, 02:01</time>
+      </div>
+      <h3 class="card-title">China&#39;s Webworm Uses Discord, Microsoft Graphs to Hack EU Governments</h3>
+      <p class="card-summary">The advanced persistent threat group also relied on SOCKS proxies like SoftEther VPN, tunneling tools that act as a middleman between victim and attacker.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ed26c2bfc54ec74f.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/endpoint-security/chinas-webworm-discord-microsoft-graphs" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>

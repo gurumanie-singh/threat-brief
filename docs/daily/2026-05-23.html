@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">23 May 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">3 articles</span>
     </div>
   </div>
 
@@ -37,6 +37,7 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -49,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -63,15 +65,46 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="high"
+       data-title="laravel-lang php packages compromised to deliver cross-platform credential stealer"
+       data-id="93608b89812241ef"
+       data-published="2026-05-23T15:21:13+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-05-23T15:21:13+05:30" title="23 May 2026, 04:51">23 May 2026, 04:51</time>
+      </div>
+      <h3 class="card-title">Laravel-Lang PHP Packages Compromised to Deliver Cross-Platform Credential Stealer</h3>
+      <p class="card-summary">Cybersecurity researchers have flagged a fresh software supply chain attack campaign that has targeted multiple PHP packages belonging to Laravel-Lang to deliver a comprehensive credential-stealing framework.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/93608b89812241ef.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/laravel-lang-php-packages-compromised.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="breach,cve,exploit,vulnerability"
        data-vendors=""

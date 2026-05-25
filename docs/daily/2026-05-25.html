@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">25 May 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,9 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -62,10 +64,108 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="ghost cms cve-2026-26980 exploited to hijack 700+ sites for clickfix attacks"
+       data-id="0b6476d21681646f"
+       data-published="2026-05-25T17:32:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-05-25T17:32:46+05:30" title="25 May 2026, 07:02">25 May 2026, 07:02</time>
+      </div>
+      <h3 class="card-title">Ghost CMS CVE-2026-26980 Exploited to Hijack 700+ Sites for ClickFix Attacks</h3>
+      <p class="card-summary">Threat actors are exploiting a recently disclosed critical security flaw in Ghost CMS to inject malicious JavaScript code with an aim to fuel ClickFix attacks.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0b6476d21681646f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/ghost-cms-cve-2026-26980-exploited-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="the alert firehose finally meets its match"
+       data-id="cc93438bf9a7b7d4"
+       data-published="2026-05-25T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-25T17:00:00+05:30" title="25 May 2026, 06:30">25 May 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">The Alert Firehose Finally Meets Its Match</h3>
+      <p class="card-summary">Ask a cybersecurity pro about Network Detection and Response (NDR) and you might still hear &#34;Noisy,&#34; &#34;Too much data.&#34; But ask the teams running NDR that includes agentic AI capabilities and you&#39;ll hear they&#39;re actually using it to catch threats earlier,…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Ask a cybersecurity pro about Network Detection and Response (NDR) and you might still hear &#34;Noisy,&#34; &#34;Too much data.&#34; But ask the teams running NDR that includes agentic AI capabilities and you&#39;ll hear they&#39;re actually using it to catch threats earlier, triage faster, and chase fewer false positives. The old complaint lingers in part because reputations are sticky, and because NDR has evolved</p></div>
+      <div class="detail-links">
+        <a href="../articles/cc93438bf9a7b7d4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/the-alert-firehose-finally-meets-its.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="lazarus deploys remotepe memory-only rat against financial and crypto firms"
+       data-id="ce614dffe89b768d"
+       data-published="2026-05-25T15:02:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-25T15:02:54+05:30" title="25 May 2026, 04:32">25 May 2026, 04:32</time>
+      </div>
+      <h3 class="card-title">Lazarus Deploys RemotePE Memory-Only RAT Against Financial and Crypto Firms</h3>
+      <p class="card-summary">Cybersecurity researchers have shed light on a cross-platform malware called RemotePE that has been put to use by the North Korea-linked Lazarus Group in attacks targeting financial and cryptocurrency organizations.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ce614dffe89b768d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/lazarus-deploys-remotepe-memory-only.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware"
        data-vendors=""

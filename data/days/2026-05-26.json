@@ -97,6 +97,32 @@
     "highlighted": false
   },
   {
+    "id": "a283afa4acf30a4d",
+    "title": "Shai-Hulud Hackers TeamPCP: Lucky or Skilled?",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/shai-hulud-hackers-teampcp-lucky-skilled",
+    "published": "2026-05-26T19:18:01+00:00",
+    "fetched_at": "2026-05-27T16:35:48.180503+00:00",
+    "summary": "TeamPCP, the cybercrime group behind later waves of the Shai-Hulud worm, has done significant damage to the open source ecosystem. But it's not necessarily due to skill alone.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "TeamPCP, the cybercrime group behind later waves of the Shai-Hulud worm, has done significant damage to the open source ecosystem. But it's not necessarily due to skill alone.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "TeamPCP, the cybercrime group behind later waves of the Shai-Hulud worm, has done significant damage to the open source ecosystem. But it's not necessarily due to skill alone.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "74bc0d23f39c37cf",
     "title": "For Enterprises, Security Remains Agentic AI's Biggest Challenge",
     "source": "Dark Reading",
@@ -581,40 +607,6 @@
       "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. The following versions of ABB AbilityTM Zenon Remote Transport Vulnerability are affected:\n\n \n AbilityTM zenon >=7.50|<=14\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n ABB \n ABB AbilityTM Zenon Remote Transport Vulnerability \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-8754 \n \n In the default configuration of the ABB zenon software platform, the zensyssrv.exe service is set to start automatically."
     },
     "email_summary": "View CSAF \n\n Summary \n ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. Tracked as CVE-2025-8754.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "989089f0e993965f",
-    "title": "ABB AC500 V2",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-02",
-    "published": "2026-05-26T12:00:00+00:00",
-    "fetched_at": "2026-05-26T16:41:26.966631+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-05-26",
-    "cves": [
-      "CVE-2025-7745"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n ABB became aware of vulnerabilities in AC500 V2 listed as affected in the advisory. An attacker who successfully exploited this vulnerability could access fragments of Modbus telegrams that have been sent earlier by that PLC \n\n The following versions of ABB AC500 V2 are affected:\n\n \n AC500 V2 <=2.5.2, 2.5.3\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 5.8 \n ABB \n ABB AC500 V2 \n Buffer Over-read \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-7745 \n \n Sending unsupported function codes to the AC500 V2 Modbus server might result in invalid responses.",
-      "technical": "An attacker who successfully exploited this vulnerability could access fragments of Modbus telegrams that have been sent earlier by that PLC \n\n The following versions of ABB AC500 V2 are affected:\n\n \n AC500 V2 <=2.5.2, 2.5.3\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 5.8 \n ABB \n ABB AC500 V2 \n Buffer Over-read \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-7745 \n \n Sending unsupported function codes to the AC500 V2 Modbus server might result in invalid responses. Mitigating factors \n Mitigating factors describe conditions and circumstances that make an attack that exploits the vulnerability difficult or less likely to succeed. View CVE Details \n\n \n Affected Products \n ABB AC500 V2 \n \n Vendor: \nABB \n Product Version: \nABB AC500 V2 <=2.5.2 \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nThe vulnerabilities have been resolved in the following product versions: AC500 V2 firmware version 2.5.3 (released in 2016) and later\n\n \n Relevant CWE: CWE-126 Buffer Over-read \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 5.8 \n MEDIUM \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Reid Wightman of Dragos. Regarding this vulnerability it is recommended to • Do not use the Modbus server for sending any sensitive data, as fragments might be accessible even after the initial sending of the response • Only use supported Modbus function codes, as invalid responses to unsupported function codes might have negative effects on the requesting Modbus client.\n\nReferenced vulnerabilities: CVE-2025-7745.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Refer to section “General security recommendations” for further advise on how to keep your system secure. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets."
-    },
-    "email_summary": "View CSAF \n\n Summary \n ABB became aware of vulnerabilities in AC500 V2 listed as affected in the advisory. Tracked as CVE-2025-7745.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

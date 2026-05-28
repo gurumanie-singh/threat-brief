@@ -71,6 +71,29 @@
     "highlighted": false
   },
   {
+    "id": "309e240692ade52e",
+    "title": "State Cyber Leaders Push Congress for More Funding, Support",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/threat-intelligence/state-leaders-beg-congress-resume-cyber-funding",
+    "published": "2026-05-26T19:29:56+00:00",
+    "fetched_at": "2026-05-28T23:14:38.378455+00:00",
+    "summary": "A recent congressional hearing highlighted how states are reeling from federal cutbacks to important cybergrants and information-sharing initiatives amid damaging attacks to critical infrastructure.",
+    "tags": [],
+    "day": "2026-05-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A recent congressional hearing highlighted how states are reeling from federal cutbacks to important cybergrants and information-sharing initiatives amid damaging attacks to critical infrastructure.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A recent congressional hearing highlighted how states are reeling from federal cutbacks to important cybergrants and information-sharing initiatives amid damaging attacks to critical infrastructure.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "53ab111ddf4144dc",
     "title": "The Hackers Behind Shai-Hulud: Lucky or Skilled?",
     "source": "Dark Reading",
@@ -572,41 +595,6 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to gain full access to functionality and data with the bioreactor. Tracked as CVE-2026-7251.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "5465cf36a614da3a",
-    "title": "ABB AbilityTM Zenon Remote Transport Vulnerability",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-03",
-    "published": "2026-05-26T12:00:00+00:00",
-    "fetched_at": "2026-05-26T16:41:26.965708+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-05-26",
-    "cves": [
-      "CVE-2025-8754"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. The vulnerability enables unauthorized access to the Reboot OS function within the Remote Transport Service, allowing an attacker to trigger a system reboot without the required authentication.",
-      "technical": "However, remote exploitation of this vulnerability is not feasible unless the attacker has already gained access to the network where the affected ABB Ability™ zenon system is deployed. At the time of writing, there is no evidence that this vulnerability is being actively exploited in the wild. The following versions of ABB AbilityTM Zenon Remote Transport Vulnerability are affected:\n\n \n AbilityTM zenon >=7.50|<=14\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n ABB \n ABB AbilityTM Zenon Remote Transport Vulnerability \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-8754 \n \n In the default configuration of the ABB zenon software platform, the zensyssrv.exe service is set to start automatically. The vulnerability enables unauthorized access to the Reboot OS function within the Remote Transport Service, allowing an attacker to trigger a system reboot without the required authentication.\n\nReferenced vulnerabilities: CVE-2025-8754.",
-      "impact": "The following versions of ABB AbilityTM Zenon Remote Transport Vulnerability are affected:\n\n \n AbilityTM zenon >=7.50|<=14\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n ABB \n ABB AbilityTM Zenon Remote Transport Vulnerability \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-8754 \n \n In the default configuration of the ABB zenon software platform, the zensyssrv.exe service is set to start automatically. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. View CSAF \n\n Summary \n ABB is aware of vulnerabilities in the product versions listed as affected in the advisory.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. The following versions of ABB AbilityTM Zenon Remote Transport Vulnerability are affected:\n\n \n AbilityTM zenon >=7.50|<=14\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n ABB \n ABB AbilityTM Zenon Remote Transport Vulnerability \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-8754 \n \n In the default configuration of the ABB zenon software platform, the zensyssrv.exe service is set to start automatically."
-    },
-    "email_summary": "View CSAF \n\n Summary \n ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. Tracked as CVE-2025-8754.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

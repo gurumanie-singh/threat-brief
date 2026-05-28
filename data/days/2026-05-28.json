@@ -92,6 +92,32 @@
     "highlighted": false
   },
   {
+    "id": "f70c860bde3106c8",
+    "title": "Dutch Raid Fails to Dent Russian Bulletproof Host",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/dutch-raid-russian-bulletproof-host",
+    "published": "2026-05-28T19:04:37+00:00",
+    "fetched_at": "2026-05-28T21:06:41.502608+00:00",
+    "summary": "Dutch law enforcement seized 800 servers and arrested two operators of THE.Hosting but left the hosting provider's core IP address space intact.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-05-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Dutch law enforcement seized 800 servers and arrested two operators of THE.Hosting but left the hosting provider's core IP address space intact.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Dutch law enforcement seized 800 servers and arrested two operators of THE.Hosting but left the hosting provider's core IP address space intact.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "bf06cf2defcb6b52",
     "title": "ThreatsDay Bulletin: Claude Security Plugin, Azure Priv-Esc, Kali365 MFA Bypass, FIFA Scams +15 More",
     "source": "The Hacker News",
@@ -166,6 +192,31 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "AI agents aren't black boxes — they're models interacting with software tools. The risk lies in their overlap.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d19e2774740095c7",
+    "title": "FBI warns of fake FIFA websites running World Cup fraud schemes",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-fake-fifa-websites-running-world-cup-fraud-schemes/",
+    "published": "2026-05-28T15:08:10-04:00",
+    "fetched_at": "2026-05-28T21:06:41.017990+00:00",
+    "summary": "The FBI is warning of fake websites impersonating FIFA ahead of the 2026 World Cup, to steal personal and financial information, sell fake tickets and hospitality packages, and push other fraud related to the event. [...]",
+    "tags": [],
+    "day": "2026-05-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The FBI is warning of fake websites impersonating FIFA ahead of the 2026 World Cup, to steal personal and financial information, sell fake tickets and hospitality packages, and push other fraud related to the event. [...]",
+    "quick_take": "The FBI is warning of fake websites impersonating FIFA ahead of the 2026 World Cup, to steal personal and financial information, sell fake tickets and hospitality packages, and push other fraud related to the event.…",
+    "sections": {
+      "impact": "The FBI is warning of fake websites impersonating FIFA ahead of the 2026 World Cup, to steal personal and financial information, sell fake tickets and hospitality packages, and push other fraud related to the event. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "The FBI is warning of fake websites impersonating FIFA ahead of the 2026 World Cup, to steal personal and financial information, sell fake tickets and hospitality packages, and push other fraud related to the event. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -582,60 +633,6 @@
       "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected:\n\n \n MacGregor Voyage Data Recorder (VDR) G4e\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.3 \n Danelec \n MacGregor Voyage Data Recorder (VDR) G4e \n Use of Default Credentials, Insufficiently Protected Credentials, Use of Password Hash With Insufficient Computational Effort, Use of Hard-coded Credentials, Files or Directories Accessible to External Parties \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Transportation Systems\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Denmark\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-42941 \n \n The VDR device includes a default username and password, with no enforced password change."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. Tracked as CVE-2026-40425, CVE-2026-42929, CVE-2026-42941.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "4e17387e59c96d1a",
-    "title": "New Gogs zero-day flaw lets hackers get remote code execution",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
-    "published": "2026-05-28T10:25:43-04:00",
-    "fetched_at": "2026-05-28T14:37:45.112385+00:00",
-    "summary": "An unpatched zero-day vulnerability in the Gogs self-hosted Git service can allow attackers to gain remote code execution (RCE) on Internet-facing instances. [...]",
-    "tags": [
-      "patch",
-      "vulnerability",
-      "zero-day"
-    ],
-    "day": "2026-05-28",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "An unpatched zero-day vulnerability in the Gogs self-hosted Git service can allow attackers to gain remote code execution (RCE) on Internet-facing instances. [...]",
-    "quick_take": "",
-    "sections": {
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "An unpatched zero-day vulnerability in the Gogs self-hosted Git service can allow attackers to gain remote code execution (RCE) on Internet-facing instances. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "d1d1d6eb26d985e9",
-    "title": "How SIEM helps MSPs reduce noise and stop threats faster",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/how-siem-helps-msps-reduce-noise-and-stop-threats-faster/",
-    "published": "2026-05-28T10:01:11-04:00",
-    "fetched_at": "2026-05-28T14:37:45.112605+00:00",
-    "summary": "MSPs don't lack security data. They struggle to separate real threats from alert noise. Kaseya explains how SIEM helps MSPs improve visibility, reduce fatigue, and respond faster. [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-05-28",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "MSPs don't lack security data. They struggle to separate real threats from alert noise.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "MSPs don't lack security data. They struggle to separate real threats from alert noise.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

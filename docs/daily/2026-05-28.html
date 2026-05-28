@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">28 May 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -47,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -62,6 +64,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
@@ -69,12 +72,111 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft slams public zero-day disclosures amid github researcher account removal"
+       data-id="0e9db3f50766b83d"
+       data-published="2026-05-28T19:23:52+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-28T19:23:52+05:30" title="28 May 2026, 08:53">28 May 2026, 08:53</time>
+      </div>
+      <h3 class="card-title">Microsoft Slams Public Zero-Day Disclosures Amid GitHub Researcher Account Removal</h3>
+      <p class="card-summary">Microsoft has come out strongly in favor of Coordinated Vulnerability Disclosure (CVD), urging the research community to share their findings and give affected vendors an opportunity to better understand the impact and address them before they are publicly…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft has come out strongly in favor of Coordinated Vulnerability Disclosure (CVD), urging the research community to share their findings and give affected vendors an opportunity to better understand the impact and address them before they are publicly disclosed.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0e9db3f50766b83d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="threatsday bulletin: claude security plugin, azure priv-esc, kali365 mfa bypass, fifa scams +15 more"
+       data-id="bf06cf2defcb6b52"
+       data-published="2026-05-28T19:03:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-05-28T19:03:16+05:30" title="28 May 2026, 08:33">28 May 2026, 08:33</time>
+      </div>
+      <h3 class="card-title">ThreatsDay Bulletin: Claude Security Plugin, Azure Priv-Esc, Kali365 MFA Bypass, FIFA Scams +15 More</h3>
+      <p class="card-summary">Every time you think the industry has finally stopped doing some reckless, low-effort crap, somebody spins up a fresh box full of sketchy loaders, fake installers, recycled social-engineering bait, and enough exposed infrastructure to make you wonder if…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Every time you think the industry has finally stopped doing some reckless, low-effort crap, somebody spins up a fresh box full of sketchy loaders, fake installers, recycled social-engineering bait, and enough exposed infrastructure to make you wonder if prod is just a public beta now - meanwhile some researcher casually drops a technique that turns a &#34;minor&#34; foothold into total account</p></div>
+      <div class="detail-links">
+        <a href="../articles/bf06cf2defcb6b52.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/threatsday-bulletin-claude-security.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new ai usage report: enterprise ai risk is heavily concentrated among a small group of ai &#34;power users&#34;"
+       data-id="543c5a2d33790528"
+       data-published="2026-05-28T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-28T17:00:00+05:30" title="28 May 2026, 06:30">28 May 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">New AI Usage Report: Enterprise AI Risk Is Heavily Concentrated Among a Small Group of AI &#34;Power users&#34;</h3>
+      <p class="card-summary">State of AI Usage Report 2026 (full report here) by LayerX Security reveals the extent of the enterprise AI visibility gap and why most organizations still don&#39;t understand where their AI exposure is actually coming from. The research shows that enterprise…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>State of AI Usage Report 2026 (full report here) by LayerX Security reveals the extent of the enterprise AI visibility gap and why most organizations still don&#39;t understand where their AI exposure is actually coming from. The research shows that enterprise AI risk is not distributed evenly across users or platforms. Instead, it is heavily concentrated among a small group of AI power users and a</p></div>
+      <div class="detail-links">
+        <a href="../articles/543c5a2d33790528.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/05/new-ai-usage-report-enterprise-ai-risk.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware,phishing"
        data-vendors="Apple"
@@ -104,6 +206,157 @@
       <div class="detail-links">
         <a href="../articles/45bca3c7db19e1be.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/05/jinx-0164-targets-cryptocurrency-firms.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="focus on cyber insurance: how quantifying risk is reshaping security"
+       data-id="91a60293f1ee6ad9"
+       data-published="2026-05-28T12:29:58+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-28T12:29:58+00:00" title="28 May 2026, 07:29">28 May 2026, 07:29</time>
+      </div>
+      <h3 class="card-title">Focus on Cyber Insurance: How Quantifying Risk Is Reshaping Security</h3>
+      <p class="card-summary">In this latest installment of the Reporters&#39; Notebook video series, we discuss how cyber insurance is forcing organizations to quantify risk, what&#39;s covered (and what&#39;s not), and why this could be the best thing to happen to cybersecurity.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/91a60293f1ee6ad9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/focus-cyber-insurance-quantifying-risk-reshape-security" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="new gogs zero-day flaw lets hackers get remote code execution"
+       data-id="4e17387e59c96d1a"
+       data-published="2026-05-28T10:25:43-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-05-28T10:25:43-04:00" title="28 May 2026, 09:25">28 May 2026, 09:25</time>
+      </div>
+      <h3 class="card-title">New Gogs zero-day flaw lets hackers get remote code execution</h3>
+      <p class="card-summary">An unpatched zero-day vulnerability in the Gogs self-hosted Git service can allow attackers to gain remote code execution (RCE) on Internet-facing instances. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4e17387e59c96d1a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how siem helps msps reduce noise and stop threats faster"
+       data-id="d1d1d6eb26d985e9"
+       data-published="2026-05-28T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-28T10:01:11-04:00" title="28 May 2026, 09:01">28 May 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">How SIEM helps MSPs reduce noise and stop threats faster</h3>
+      <p class="card-summary">MSPs don&#39;t lack security data. They struggle to separate real threats from alert noise.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d1d1d6eb26d985e9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/how-siem-helps-msps-reduce-noise-and-stop-threats-faster/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="romanian gets 5 years in prison for hacking oregon govt network"
+       data-id="77a0dad766b57264"
+       data-published="2026-05-28T08:43:29-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-28T08:43:29-04:00" title="28 May 2026, 07:43">28 May 2026, 07:43</time>
+      </div>
+      <h3 class="card-title">Romanian gets 5 years in prison for hacking Oregon govt network</h3>
+      <p class="card-summary">A Romanian national was sentenced this week to 56 months in federal prison for breaking into an Oregon state government computer network and fr cyberattacks targeting dozens of other U.S. victims. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/77a0dad766b57264.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/romanian-gets-5-years-in-prison-for-hacking-oregon-govt-network/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: why network incidents take too long to resolve"
+       data-id="3b621b06f917d003"
+       data-published="2026-05-28T08:20:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-05-28T08:20:28-04:00" title="28 May 2026, 07:20">28 May 2026, 07:20</time>
+      </div>
+      <h3 class="card-title">Webinar: Why network incidents take too long to resolve</h3>
+      <p class="card-summary">Many organizations can detect network issues quickly, but investigations and coordination often slow incident resolution. This webinar explores how automation and AI-assisted workflows can help IT teams reduce delays and improve response times. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3b621b06f917d003.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-why-network-incidents-take-too-long-to-resolve/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

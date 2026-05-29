@@ -1,5 +1,28 @@
 [
   {
+    "id": "b7eb5fdd03eb86a7",
+    "title": "As Global Powers Explore Humanoid Robots, Cyber-Risk Looms",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/global-powers-explore-humanoids-cyber-risk",
+    "published": "2026-05-28T23:05:23+00:00",
+    "fetched_at": "2026-05-29T18:30:56.108584+00:00",
+    "summary": "The future of cybersecurity is germinating, as nation states vie for dominance in the embodied AI market and its supply chain.",
+    "tags": [],
+    "day": "2026-05-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The future of cybersecurity is germinating, as nation states vie for dominance in the embodied AI market and its supply chain.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The future of cybersecurity is germinating, as nation states vie for dominance in the embodied AI market and its supply chain.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "866737bd8c8a8f8c",
     "title": "Critical Gogs RCE Vulnerability Lets Any Authenticated User Execute Arbitrary Code",
     "source": "The Hacker News",
@@ -561,44 +584,6 @@
       "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. View CVE Details \n\n \n Affected Products \n Fourth Frontier Frontier X Mobile Application, Frontier X2 \n \n Vendor: \nFourth Frontier \n Product Version: \nFourth Frontier Frontier X Android application: <v15.0.0, Fourth Frontier Frontier X IOS application: <v25.0.0, Fourth Frontier Frontier X2: vers:all/* \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nFourth Frontier is aware of the vulnerability and is working on a fix. Users are encouraged to reach out to Fourth Frontier directly for assistance. https://fourthfrontier.com/pages/contact-usl.\n https://fourthfrontier.com/pages/contact-us \n\n Mitigation \nFrontier X/X2 devices can connect to only one app at a time; users should first connect the Frontier X/X2 device using the Frontier X app and then start the activity. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to read and write arbitrary handle values and change clinical readings, which could result in taking control of the device and lead to patient harm. Tracked as CVE-2026-5768.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "bb13c10ffc0aed54",
-    "title": "CP Plus 8 Ch. Network Video Recorder",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-05",
-    "published": "2026-05-28T12:00:00+00:00",
-    "fetched_at": "2026-05-28T18:10:39.525288+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-05-28",
-    "cves": [
-      "CVE-2026-6824"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [
-      "Google"
-    ],
-    "action_required": false,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. This could lead to compromise of user sessions, execution of unauthorized actions with the victim's privileges, exposure or manipulation of sensitive data, and degradation of overall system integrity.",
-      "technical": "Network Video Recorder \n Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Emergency Services\n\n Countries/Areas Deployed: India, Nepal, United Arab Emirates, Gambia\n\n Company Headquarters Location: India\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6824 \n \n A stored Cross-Site Scripting (XSS) vulnerability exists in certain 1xxx series NVR devices due to insufficient sanitization of user-supplied input in specific functional modules. Mitigation \nCP-UNR-AxxxMars_PN_15_Q_00_V1.00.14.01.T.260326 which can be downloaded at https://drive.google.com/file/d/1Ctxdp55UtlrQY7CSepkImM9zFgdcuCyL/view\n https://drive.google.com/file/d/1Ctxdp55UtlrQY7CSepkImM9zFgdcuCyL/view \n\n Mitigation \nFor firmware access and upgrade instructions, please contact support at:\n\n Mitigation \nPhone: +91-8800952952\n\n Mitigation \nEmail: support@cpplusworld.com\n mailto:support@cpplusworld.com \n\n \n Relevant CWE: CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.4 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Jithin Nambiar J reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). View CSAF \n\n Summary \n Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. Recommended Practices \n CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability.\n\nReferenced vulnerabilities: CVE-2026-6824.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Network Video Recorder \n \n Vendor: \nCP Plus \n Product Version: \nCP Plus CP-UNR-108F1 Hardware: V1.0, CP Plus CP-UNR-108F1 Web: V3.2.7.128806, CP Plus CP-UNR-108F1 System: V4.001.00AT009.0.R \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nCP Plus recommends updating the firmware on the device to the latest firmware version. Mitigation \nCP-UNR-AxxxMars_PN_15_Q_00_V1.00.14.01.T.260326 which can be downloaded at https://drive.google.com/file/d/1Ctxdp55UtlrQY7CSepkImM9zFgdcuCyL/view\n https://drive.google.com/file/d/1Ctxdp55UtlrQY7CSepkImM9zFgdcuCyL/view \n\n Mitigation \nFor firmware access and upgrade instructions, please contact support at:\n\n Mitigation \nPhone: +91-8800952952\n\n Mitigation \nEmail: support@cpplusworld.com\n mailto:support@cpplusworld.com \n\n \n Relevant CWE: CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.4 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Jithin Nambiar J reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. Tracked as CVE-2026-6824.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

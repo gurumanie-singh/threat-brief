@@ -1,5 +1,132 @@
 [
   {
+    "id": "ff120a2f1812a79c",
+    "title": "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
+    "published": "2026-06-01T23:10:28+05:30",
+    "fetched_at": "2026-06-01T18:35:59.745455+00:00",
+    "summary": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm.",
+    "quick_take": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating…",
+    "sections": {
+      "impact": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm.\n\n\"This is effectively a Mini Shai-Hulud campaign: it uses the same core tactics of install-time execution, credential harvesting, CI/CD targeting, encrypted exfiltration, and potential\n\nAssessed severity: HIGH.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm.\n\n\"This is effectively a Mini Shai-Hulud campaign: it uses the same core tactics of install-time execution, credential harvesting, CI/CD targeting, encrypted exfiltration, and potential. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a63d7c2deab62bf0",
+    "title": "Weekly Recap: New Linux Flaw, PAN-OS Exploit, AI-Powered Attacks, OAuth Phishing and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/weekly-recap-new-linux-flaw-pan-os.html",
+    "published": "2026-06-01T19:29:54+05:30",
+    "fetched_at": "2026-06-01T18:35:59.745759+00:00",
+    "summary": "Monday hit like a cron job with anger issues.",
+    "tags": [
+      "exploit",
+      "patch",
+      "phishing"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux",
+      "Palo Alto"
+    ],
+    "action_required": false,
+    "card_summary": "Monday hit like a cron job with anger issues.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "A busted auth path here, a repo-side faceplant there, some \"patched-ish\" thing already getting chewed on in the wild, and then the usual bonus round: poisoned dev tools, sketchy forum chatter, phishing kits pretending to be productivity, and AI lowering the bar for people who already thought 'curl | sh' had a personality.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Monday hit like a cron job with anger issues. A busted auth path here, a repo-side faceplant there, some \"patched-ish\" thing already getting chewed on in the wild, and then the usual bonus round: poisoned dev tools, sketchy forum chatter, phishing kits pretending to be productivity, and AI lowering the bar for people who already thought 'curl | sh' had a personality.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0a2c0ef86c9fad5f",
+    "title": "Hackers Used Meta’s AI Support Bot to Seize Instagram Accounts",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+    "published": "2026-06-01T17:32:50+00:00",
+    "fetched_at": "2026-06-01T18:35:59.966711+00:00",
+    "summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta s AI support assistant bot into resetting account passwords.",
+    "tags": [
+      "breach",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta s…",
+    "quick_take": "",
+    "sections": {
+      "overview": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta s AI support assistant bot into resetting account passwords.",
+      "technical": "Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta s AI support assistant bot into resetting account passwords. A video released on Telegram by pro-Iran hackers claimed to document a remarkably simple exploit that appears to have involved using a VPN connection with an IP address that is in or near the target s usual hometown, requesting a password reset for the account, and then choosing to chat with Meta s AI support assistant. The Telegram account that posted the video also linked to screenshots of pro-Iran images, videos and messages that defaced the hacked Instagram accounts, saying hackers had used the exploit to hijack a number of valuable (read: short) Instagram account names that allegedly have a resale value of more than a half million dollars. In this case, even using the least robust form of MFA that Instagram offers a one-time code sent via SMS likely would have blocked the exploit: The hackers who released the video on Telegram said their exploit failed to work against any accounts that had MFA enabled.",
+      "impact": "A screenshot from a video released on Telegram claiming to show how Meta s AI customer support bot could be tricked into resetting a target s password. A video released on Telegram by pro-Iran hackers claimed to document a remarkably simple exploit that appears to have involved using a VPN connection with an IP address that is in or near the target s usual hometown, requesting a password reset for the account, and then choosing to chat with Meta s AI support assistant. The Telegram account that posted the video also linked to screenshots of pro-Iran images, videos and messages that defaced the hacked Instagram accounts, saying hackers had used the exploit to hijack a number of valuable (read: short) Instagram account names that allegedly have a resale value of more than a half million dollars.\n\nAssessed severity: HIGH.",
+      "mitigation": "Securing your various online accounts means taking full advantage of the most secure form of multi-factor authentication (MFA) offered (such as a passkey or security key). In this case, even using the least robust form of MFA that Instagram offers a one-time code sent via SMS likely would have blocked the exploit: The hackers who released the video on Telegram said their exploit failed to work against any accounts that had MFA enabled. The security blog thecybersecguru.com reports that Meta pushed an emergency patch over the weekend, and clarified that no back end database was breached.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "055c34659e12431c",
+    "title": "China-Aligned Groups Ramp Up Attacks: Dragon Weave Hits Czech Republic & Taiwan",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/china-aligned-groups-ramp-up-attacks.html",
+    "published": "2026-06-01T17:24:24+05:30",
+    "fetched_at": "2026-06-01T18:35:59.746008+00:00",
+    "summary": "A new cyber espionage campaign codenamed Operation Dragon Weave has been observed targeting officials and citizens in the Czech Republic and Taiwan to deliver an AdaptixC2 agent.",
+    "tags": [
+      "apt",
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A new cyber espionage campaign codenamed Operation Dragon Weave has been observed targeting officials and citizens in the Czech Republic and Taiwan to deliver an AdaptixC2 agent.",
+    "quick_take": "",
+    "sections": {
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "A new cyber espionage campaign codenamed Operation Dragon Weave has been observed targeting officials and citizens in the Czech Republic and Taiwan to deliver an AdaptixC2 agent. According to Seqrite Labs, targets of the campaign include government, research, academic, technology, and financial services sectors.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "84582394dccaa951",
     "title": "The Security Growth Platform: Why MSPs Are Moving Beyond vCISO Tools",
     "source": "The Hacker News",
@@ -48,6 +175,62 @@
     "highlighted": false
   },
   {
+    "id": "50ee48c2c7c8b6b9",
+    "title": "Patch Now: Another Palo Alto Auth Bypass Bug Under Active Exploit",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/threat-intelligence/patch-palo-alto-auth-bypass-bug-exploit",
+    "published": "2026-06-01T14:35:51+00:00",
+    "fetched_at": "2026-06-01T18:36:00.580156+00:00",
+    "summary": "Exploiting the PAN-OS GlobalProtect VPN vulnerability requires certain conditions, but adversaries have done so in two attack waves that started in mid-May.",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Palo Alto"
+    ],
+    "action_required": true,
+    "card_summary": "Exploiting the PAN-OS GlobalProtect VPN vulnerability requires certain conditions, but adversaries have done so in two attack waves that started in mid-May.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Exploiting the PAN-OS GlobalProtect VPN vulnerability requires certain conditions, but adversaries have done so in two attack waves that started in mid-May.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a8752250faf3c151",
+    "title": "Dashlane password manager users locked out by brute force attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/",
+    "published": "2026-06-01T14:17:13-04:00",
+    "fetched_at": "2026-06-01T18:36:00.078738+00:00",
+    "summary": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...]",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "21f23a37e8d719df",
     "title": "Critical WP Maps Pro Flaw Actively Exploited to Create Admin Accounts",
     "source": "The Hacker News",
@@ -71,6 +254,122 @@
     "quick_take": "Threat actors are attempting to actively exploit a critical security flaw impacting WP Maps Pro, a WordPress plugin that has had over 15,000 sales on the Envato Market, to create malicious administrator accounts on…",
     "sections": {},
     "email_summary": "Threat actors are attempting to actively exploit a critical security flaw impacting WP Maps Pro, a WordPress plugin that has had over 15,000 sales on the Envato Market, to create malicious administrator accounts on susceptible sites. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ab82749fafb92fd8",
+    "title": "WordPress malware campaign hides payloads in Steam profiles",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/wordpress-malware-campaign-hides-payloads-in-steam-profiles/",
+    "published": "2026-06-01T13:04:16-04:00",
+    "fetched_at": "2026-06-01T18:36:00.078951+00:00",
+    "summary": "Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "523ae2c4f15a659b",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/06/01/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "published": "2026-06-01T12:00:00+00:00",
+    "fetched_at": "2026-06-01T18:36:01.639384+00:00",
+    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-06-01",
+    "cves": [
+      "CVE-2024-21182"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "quick_take": "",
+    "sections": {
+      "impact": "CVE-2024-21182 Oracle WebLogic Server Unspecified Vulnerability\n\n \n This type of vulnerability is a frequent attack vectors for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats."
+    },
+    "email_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2024-21182. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "794f9f924f1ad76c",
+    "title": "Microsoft investigates Office Apps, Teams file access issues",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-office-apps-teams-file-access-issues/",
+    "published": "2026-06-01T10:36:46-04:00",
+    "fetched_at": "2026-06-01T18:36:00.079156+00:00",
+    "summary": "Microsoft says an ongoing incident is preventing users of its Teams collaboration platform and Office for the web cloud-based productivity suite from opening files. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft says an ongoing incident is preventing users of its Teams collaboration platform and Office for the web cloud-based productivity suite from opening files. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft says an ongoing incident is preventing users of its Teams collaboration platform and Office for the web cloud-based productivity suite from opening files. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft says an ongoing incident is preventing users of its Teams collaboration platform and Office for the web cloud-based productivity suite from opening files. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "efa47166bb26008b",
+    "title": "Race Against Time: Why Faster Vulnerability Alerts Matter",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/race-against-time-why-faster-vulnerability-alerts-matter/",
+    "published": "2026-06-01T10:00:10-04:00",
+    "fetched_at": "2026-06-01T18:36:00.079366+00:00",
+    "summary": "Attackers are exploiting vulnerabilities faster than many organizations can identify and patch them. SecAlerts explains why faster vulnerability alerts can help reduce exposure and improve response times. [...]",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Attackers are exploiting vulnerabilities faster than many organizations can identify and patch them. SecAlerts explains why faster vulnerability alerts can help reduce exposure and improve response times. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Attackers are exploiting vulnerabilities faster than many organizations can identify and patch them.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Attackers are exploiting vulnerabilities faster than many organizations can identify and patch them. SecAlerts explains why faster vulnerability alerts can help reduce exposure and improve response times. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -136,6 +435,33 @@
     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-outage-affecting-mfa-my-sign-ins-platform/",
     "published": "2026-06-01T07:40:16-04:00",
     "fetched_at": "2026-06-01T12:35:09.563208+00:00",
+    "summary": "Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...]",
+    "tags": [],
+    "day": "2026-06-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "59599f6367f1f798",
+    "title": "Microsoft fixes outage affecting MFA setup, MySignIn service",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-outage-affecting-mfa-setup-mysignin-service/",
+    "published": "2026-06-01T07:40:16-04:00",
+    "fetched_at": "2026-06-01T18:36:00.080000+00:00",
     "summary": "Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...]",
     "tags": [],
     "day": "2026-06-01",

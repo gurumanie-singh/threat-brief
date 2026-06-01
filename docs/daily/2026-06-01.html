@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">1 June 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">18 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -66,20 +67,160 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="miasma supply chain attack compromises red hat npm packages with credential-stealing worm"
+       data-id="ff120a2f1812a79c"
+       data-published="2026-06-01T23:10:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-01T23:10:28+05:30" title="1 June 2026, 12:40">1 June 2026, 12:40</time>
+      </div>
+      <h3 class="card-title">Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm</h3>
+      <p class="card-summary">A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ff120a2f1812a79c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,phishing"
+       data-vendors="Linux,Palo Alto"
+       data-severity="medium"
+       data-title="weekly recap: new linux flaw, pan-os exploit, ai-powered attacks, oauth phishing and more"
+       data-id="a63d7c2deab62bf0"
+       data-published="2026-06-01T19:29:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-06-01T19:29:54+05:30" title="1 June 2026, 08:59">1 June 2026, 08:59</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: New Linux Flaw, PAN-OS Exploit, AI-Powered Attacks, OAuth Phishing and More</h3>
+      <p class="card-summary">Monday hit like a cron job with anger issues.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a63d7c2deab62bf0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/weekly-recap-new-linux-flaw-pan-os.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="breach,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers used meta’s ai support bot to seize instagram accounts"
+       data-id="0a2c0ef86c9fad5f"
+       data-published="2026-06-01T17:32:50+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-01T17:32:50+00:00" title="1 June 2026, 12:32">1 June 2026, 12:32</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hackers Used Meta’s AI Support Bot to Seize Instagram Accounts</h3>
+      <p class="card-summary">The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta s…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta s AI support assistant bot into resetting account passwords.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0a2c0ef86c9fad5f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="china-aligned groups ramp up attacks: dragon weave hits czech republic &amp; taiwan"
+       data-id="055c34659e12431c"
+       data-published="2026-06-01T17:24:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-01T17:24:24+05:30" title="1 June 2026, 06:54">1 June 2026, 06:54</time>
+      </div>
+      <h3 class="card-title">China-Aligned Groups Ramp Up Attacks: Dragon Weave Hits Czech Republic &amp; Taiwan</h3>
+      <p class="card-summary">A new cyber espionage campaign codenamed Operation Dragon Weave has been observed targeting officials and citizens in the Czech Republic and Taiwan to deliver an AdaptixC2 agent.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/055c34659e12431c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/china-aligned-groups-ramp-up-attacks.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -136,6 +277,69 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--action card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="medium"
+       data-title="patch now: another palo alto auth bypass bug under active exploit"
+       data-id="50ee48c2c7c8b6b9"
+       data-published="2026-06-01T14:35:51+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-06-01T14:35:51+00:00" title="1 June 2026, 09:35">1 June 2026, 09:35</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Patch Now: Another Palo Alto Auth Bypass Bug Under Active Exploit</h3>
+      <p class="card-summary">Exploiting the PAN-OS GlobalProtect VPN vulnerability requires certain conditions, but adversaries have done so in two attack waves that started in mid-May.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/50ee48c2c7c8b6b9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/patch-palo-alto-auth-bypass-bug-exploit" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="dashlane password manager users locked out by brute force attacks"
+       data-id="a8752250faf3c151"
+       data-published="2026-06-01T14:17:13-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-01T14:17:13-04:00" title="1 June 2026, 13:17">1 June 2026, 13:17</time>
+      </div>
+      <h3 class="card-title">Dashlane password manager users locked out by brute force attacks</h3>
+      <p class="card-summary">Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a8752250faf3c151.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,malware"
        data-vendors="Google"
@@ -164,6 +368,133 @@
       <div class="detail-links">
         <a href="../articles/21f23a37e8d719df.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="wordpress malware campaign hides payloads in steam profiles"
+       data-id="ab82749fafb92fd8"
+       data-published="2026-06-01T13:04:16-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-01T13:04:16-04:00" title="1 June 2026, 12:04">1 June 2026, 12:04</time>
+      </div>
+      <h3 class="card-title">WordPress malware campaign hides payloads in Steam profiles</h3>
+      <p class="card-summary">Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ab82749fafb92fd8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/wordpress-malware-campaign-hides-payloads-in-steam-profiles/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa adds one known exploited vulnerability to catalog"
+       data-id="523ae2c4f15a659b"
+       data-published="2026-06-01T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-01T12:00:00+00:00" title="1 June 2026, 07:00">1 June 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/523ae2c4f15a659b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/06/01/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft investigates office apps, teams file access issues"
+       data-id="794f9f924f1ad76c"
+       data-published="2026-06-01T10:36:46-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-01T10:36:46-04:00" title="1 June 2026, 09:36">1 June 2026, 09:36</time>
+      </div>
+      <h3 class="card-title">Microsoft investigates Office Apps, Teams file access issues</h3>
+      <p class="card-summary">Microsoft says an ongoing incident is preventing users of its Teams collaboration platform and Office for the web cloud-based productivity suite from opening files. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/794f9f924f1ad76c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-office-apps-teams-file-access-issues/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="race against time: why faster vulnerability alerts matter"
+       data-id="efa47166bb26008b"
+       data-published="2026-06-01T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-01T10:00:10-04:00" title="1 June 2026, 09:00">1 June 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Race Against Time: Why Faster Vulnerability Alerts Matter</h3>
+      <p class="card-summary">Attackers are exploiting vulnerabilities faster than many organizations can identify and patch them. SecAlerts explains why faster vulnerability alerts can help reduce exposure and improve response times. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/efa47166bb26008b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/race-against-time-why-faster-vulnerability-alerts-matter/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -254,6 +585,36 @@
       <div class="detail-links">
         <a href="../articles/26768e791ee2a586.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-outage-affecting-mfa-my-sign-ins-platform/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes outage affecting mfa setup, mysignin service"
+       data-id="59599f6367f1f798"
+       data-published="2026-06-01T07:40:16-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-01T07:40:16-04:00" title="1 June 2026, 06:40">1 June 2026, 06:40</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes outage affecting MFA setup, MySignIn service</h3>
+      <p class="card-summary">Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/59599f6367f1f798.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-outage-affecting-mfa-setup-mysignin-service/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">2 June 2026</h1>
-      <span class="brief-sub">12 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -49,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -66,22 +69,180 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="gamaredon exploits winrar to deliver gammaworm and gammasteel against ukraine"
+       data-id="407ca28359f0a89a"
+       data-published="2026-06-02T23:51:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-02T23:51:49+05:30" title="2 June 2026, 13:21">2 June 2026, 13:21</time>
+      </div>
+      <h3 class="card-title">Gamaredon Exploits WinRAR to Deliver GammaWorm and GammaSteel Against Ukraine</h3>
+      <p class="card-summary">The Russian hacking group known as Gamaredon has been attributed to the continued exploitation of a WinRAR vulnerability to deliver multiple malware families aimed at data theft and propagation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/407ca28359f0a89a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/gamaredon-exploits-winrar-to-deliver.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="oracle weblogic cve-2024-21182 added to kev catalog after active exploitation"
+       data-id="4a838492f8d5f93b"
+       data-published="2026-06-02T23:44:42+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-02T23:44:42+05:30" title="2 June 2026, 13:14">2 June 2026, 13:14</time>
+      </div>
+      <h3 class="card-title">Oracle WebLogic CVE-2024-21182 Added to KEV Catalog After Active Exploitation</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity security flaw impacting Oracle WebLogic Server to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4a838492f8d5f93b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="drivesurge hijacks thousands of sites for clickfix, fakeupdate attacks"
+       data-id="1158f386b69837c2"
+       data-published="2026-06-02T20:11:51+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T20:11:51+00:00" title="2 June 2026, 15:11">2 June 2026, 15:11</time>
+      </div>
+      <h3 class="card-title">DriveSurge Hijacks Thousands of Sites for ClickFix, FakeUpdate Attacks</h3>
+      <p class="card-summary">A sneaky, wide-scale IAB operation uses a malicious traffic distribution system (TDS) to redirect visitors of trusted websites to ones that deliver malware.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1158f386b69837c2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/drivesurge-hijacks-thousands-sites-clickfix-fakeupdate-attacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="china uses dual-method cyberattack on czech orgs"
+       data-id="d880d8083cedf295"
+       data-published="2026-06-02T19:50:53+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-02T19:50:53+00:00" title="2 June 2026, 14:50">2 June 2026, 14:50</time>
+      </div>
+      <h3 class="card-title">China Uses Dual-Method Cyberattack on Czech Orgs</h3>
+      <p class="card-summary">China is stealing data from high-value targets via a sneaky, double-layer spear-phishing campaign that includes the Azureveil malware.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d880d8083cedf295.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/china-uses-dual-method-attack-czech-taiwan-orgs" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="securing ai agents before they go rogue is next to impossible"
+       data-id="07874b0120b752df"
+       data-published="2026-06-02T19:10:14+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T19:10:14+00:00" title="2 June 2026, 14:10">2 June 2026, 14:10</time>
+      </div>
+      <h3 class="card-title">Securing AI Agents Before They Go Rogue Is Next to Impossible</h3>
+      <p class="card-summary">High-autonomy agents with broad permissions and unfettered access are a recipe for disaster, and enterprises need to act now before they become the next horror story.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/07874b0120b752df.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/securing-ai-agents-rogue" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit,vulnerability"
        data-vendors=""
@@ -111,6 +272,37 @@
       <div class="detail-links">
         <a href="../articles/55290629953b5183.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/ai-driven-exploitation-is-destroying.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="ai-built ransomware toolkit automates edr evasion, ad discovery"
+       data-id="247171bd3443fd37"
+       data-published="2026-06-02T16:01:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-02T16:01:20-04:00" title="2 June 2026, 15:01">2 June 2026, 15:01</time>
+      </div>
+      <h3 class="card-title">AI-built ransomware toolkit automates EDR evasion, AD discovery</h3>
+      <p class="card-summary">A threat actor is using an AI-built ransomware attack toolkit that automates Active Directory discovery and helps evade endpoint detection and response (EDR) solutions. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/247171bd3443fd37.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ai-built-ransomware-toolkit-automates-edr-evasion-ad-discovery/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -291,6 +483,76 @@
       <div class="detail-links">
         <a href="../articles/776664e11e6431a0.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyber-risk/assume-breach-ai-native-security-reshape-enterprise-defense" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="apt,exploit,malware,patch,phishing,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="cisa and partners urge hardening automatic tank gauge systems"
+       data-id="05244668dff13a04"
+       data-published="2026-06-02T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-06-02T12:00:00+00:00" title="2 June 2026, 07:00">2 June 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA and Partners Urge Hardening Automatic Tank Gauge Systems</h3>
+      <p class="card-summary">CISA and Partners Urge Hardening Automatic Tank Gauge Systems</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA and Partners Urge Hardening Automatic Tank Gauge Systems</p>
+<p>Overview   The Cybersecurity and Infrastructure Security Agency (CISA), the Federal Bureau of Investigation (FBI), the National Security Agency (NSA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Transportation Security Administration (TSA), the Department of Transportation (DOT), and the U.S. Department of Agriculture (USDA)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting U.S.-based automatic tank gauge (ATG) systems.</p></div>
+      <div class="detail-links">
+        <a href="../articles/05244668dff13a04.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Google,Linux"
+       data-severity="high"
+       data-title="cisa adds two known exploited vulnerabilities to catalog"
+       data-id="129d1f12205e0361"
+       data-published="2026-06-02T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-02T12:00:00+00:00" title="2 June 2026, 07:00">2 June 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds Two Known Exploited Vulnerabilities to Catalog</h3>
+      <p class="card-summary">CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/129d1f12205e0361.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">2 June 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,13 +61,120 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai-driven exploitation is destroying vulnerability management. here’s how to handle it."
+       data-id="55290629953b5183"
+       data-published="2026-06-02T17:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T17:28:00+05:30" title="2 June 2026, 06:58">2 June 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">AI-Driven Exploitation is Destroying Vulnerability Management. Here’s How to Handle It.</h3>
+      <p class="card-summary">AI-driven exploitation timelines are rapidly shrinking, and they are not going to stop shrinking. Vulnerabilities are being discovered, reproduced, and weaponized faster than ever in the history of enterprise security.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/55290629953b5183.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/ai-driven-exploitation-is-destroying.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how leading organizations are turning edr into operational resilience"
+       data-id="c9791ff236b45389"
+       data-published="2026-06-02T16:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T16:00:00+05:30" title="2 June 2026, 05:30">2 June 2026, 05:30</time>
+      </div>
+      <h3 class="card-title">How Leading Organizations Are Turning EDR Into Operational Resilience</h3>
+      <p class="card-summary">Most organizations now recognize that endpoint protection alone is no longer sufficient.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c9791ff236b45389.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/how-leading-organizations-are-turning.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="pakistan-linked sidecopy targets afghanistan finance ministry with xeno rat"
+       data-id="548ed69f36adfd7e"
+       data-published="2026-06-02T14:35:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T14:35:40+05:30" title="2 June 2026, 04:05">2 June 2026, 04:05</time>
+      </div>
+      <h3 class="card-title">Pakistan-Linked SideCopy Targets Afghanistan Finance Ministry with Xeno RAT</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a spear-phishing campaign likely undertaken by the Pakistan-aligned SideCopy group targeting Afghanistan&#39;s Ministry of Finance with an open-source remote access trojan called Xeno RAT.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/548ed69f36adfd7e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/pakistan-linked-sidecopy-targets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -115,6 +232,38 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="beyond assume-breach: how ai-native security will reshape enterprise defense"
+       data-id="776664e11e6431a0"
+       data-published="2026-06-02T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T12:00:00+00:00" title="2 June 2026, 07:00">2 June 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Beyond Assume-Breach: How AI-Native Security Will Reshape Enterprise Defense</h3>
+      <p class="card-summary">Twenty years after Dark Reading launched, we&#39;re looking ahead at what&#39;s next for enterprise security. Spoiler: It&#39;s hyper-segmented, AI-orchestrated, and way more sophisticated than your dad&#39;s firewall.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/776664e11e6431a0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/assume-breach-ai-native-security-reshape-enterprise-defense" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors=""
        data-severity="medium"
@@ -142,6 +291,41 @@
       <div class="detail-links">
         <a href="../articles/c0bcf2626abd1e3d.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/dashlane-discloses-brute-force-attack.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="AWS,Google"
+       data-severity="critical"
+       data-title="google fixes one actively exploited android zero-day, 124 flaws"
+       data-id="eb598a6aeaea3120"
+       data-published="2026-06-02T07:10:15-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-06-02T07:10:15-04:00" title="2 June 2026, 06:10">2 June 2026, 06:10</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Google fixes one actively exploited Android zero-day, 124 flaws</h3>
+      <p class="card-summary">Google has released the June 2026 Android security patches to address 124 vulnerabilities, including one zero-day flaw exploited in targeted attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/eb598a6aeaea3120.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/google-fixes-one-actively-exploited-android-zero-day-124-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

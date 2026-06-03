@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>4 high-severity advisories published today</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
@@ -49,7 +49,6 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
-      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -67,7 +66,6 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
@@ -76,12 +74,10 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
@@ -421,6 +417,37 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="over 116,000 minecraft systems infected in weedhack malware campaign"
+       data-id="891052dcef02c7d8"
+       data-published="2026-06-02T17:54:49-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-02T17:54:49-04:00" title="2 June 2026, 16:54">2 June 2026, 16:54</time>
+      </div>
+      <h3 class="card-title">Over 116,000 Minecraft systems infected in WeedHack malware campaign</h3>
+      <p class="card-summary">A large-scale malware campaign dubbed WeedHack is targeting Minecraft players and has infected more than 116,000 systems since January. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/891052dcef02c7d8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/over-116-000-minecraft-systems-infected-in-weedhack-malware-campaign/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="exploit,vulnerability"
        data-vendors=""
        data-severity="medium"
@@ -660,42 +687,6 @@
       <div class="detail-links">
         <a href="../articles/776664e11e6431a0.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyber-risk/assume-breach-ai-native-security-reshape-enterprise-defense" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="apt,exploit,malware,patch,phishing,vulnerability"
-       data-vendors="AWS"
-       data-severity="critical"
-       data-title="cisa and partners urge hardening automatic tank gauge systems"
-       data-id="05244668dff13a04"
-       data-published="2026-06-02T12:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-06-02T12:00:00+00:00" title="2 June 2026, 07:00">2 June 2026, 07:00</time>
-      </div>
-      <h3 class="card-title">CISA and Partners Urge Hardening Automatic Tank Gauge Systems</h3>
-      <p class="card-summary">CISA and Partners Urge Hardening Automatic Tank Gauge Systems</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">apt</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>CISA and Partners Urge Hardening Automatic Tank Gauge Systems</p>
-<p>Overview   The Cybersecurity and Infrastructure Security Agency (CISA), the Federal Bureau of Investigation (FBI), the National Security Agency (NSA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Transportation Security Administration (TSA), the Department of Transportation (DOT), and the U.S. Department of Agriculture (USDA)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting U.S.-based automatic tank gauge (ATG) systems.</p></div>
-      <div class="detail-links">
-        <a href="../articles/05244668dff13a04.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">4 June 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -36,7 +36,9 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>Google, Microsoft ecosystems affected by multiple advisories</li>
+        <li>5 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -49,7 +51,9 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -63,26 +67,120 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,patch"
+       data-vendors="Cisco"
+       data-severity="high"
+       data-title="cisco patches cve-2026-20230 in unified cm as exploit code goes public"
+       data-id="2ef8f6bdc8c3e4a3"
+       data-published="2026-06-04T22:25:51+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-06-04T22:25:51+05:30" title="4 June 2026, 11:55">4 June 2026, 11:55</time>
+      </div>
+      <h3 class="card-title">Cisco Patches CVE-2026-20230 in Unified CM as Exploit Code Goes Public</h3>
+      <p class="card-summary">Cisco has patched a bug in Unified Communications Manager that lets an unauthenticated attacker on the network write files to the box and, from there, climb to root.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2ef8f6bdc8c3e4a3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="claude code github action flaw let one malicious issue hijack repositories"
+       data-id="4fc350cff46f3f2f"
+       data-published="2026-06-04T20:45:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-04T20:45:26+05:30" title="4 June 2026, 10:15">4 June 2026, 10:15</time>
+      </div>
+      <h3 class="card-title">Claude Code GitHub Action Flaw Let One Malicious Issue Hijack Repositories</h3>
+      <p class="card-summary">A security researcher found a flaw in Anthropic&#39;s Claude Code GitHub Action that let an attacker take over vulnerable public repositories running it, with nothing more than a single opened GitHub issue. Because Anthropic&#39;s own action repo used the same…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A security researcher found a flaw in Anthropic&#39;s Claude Code GitHub Action that let an attacker take over vulnerable public repositories running it, with nothing more than a single opened GitHub issue. Because Anthropic&#39;s own action repo used the same workflow, a working attack could have pushed malicious code into the action itself and onto the projects downstream that pull it.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4fc350cff46f3f2f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/claude-code-github-action-flaw-let-one.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="agentic ai is transforming defense, but only secure it infrastructure will maximize it"
+       data-id="539917956aa4e1af"
+       data-published="2026-06-04T20:40:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-04T20:40:00+05:30" title="4 June 2026, 10:10">4 June 2026, 10:10</time>
+      </div>
+      <h3 class="card-title">Agentic AI Is Transforming Defense, But Only Secure IT Infrastructure Will Maximize It</h3>
+      <p class="card-summary">Over the past several weeks, the cybersecurity community has been reminded how quickly frontier and agentic AI in defense networks can challenge our assumptions. When Anthropic&#39;s Claude Mythos model was made available to a limited set of organizations as a…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Over the past several weeks, the cybersecurity community has been reminded how quickly frontier and agentic AI in defense networks can challenge our assumptions. When Anthropic&#39;s Claude Mythos model was made available to a limited set of organizations as a technical preview, it was reported that an unauthorized group claimed that it had gained access within hours. The incident, if true, was</p></div>
+      <div class="detail-links">
+        <a href="../articles/539917956aa4e1af.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/agentic-ai-is-transforming-defense-but.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -142,6 +240,38 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="../articles/c66acb10c1e1cf58.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/china-linked-ta4922-expands-phishing.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="china-linked ta4922 expands phishing attacks to u.k., germany, italy, and south africa"
+       data-id="907b5784ff9ffd0f"
+       data-published="2026-06-04T17:52:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-04T17:52:25+05:30" title="4 June 2026, 07:22">4 June 2026, 07:22</time>
+      </div>
+      <h3 class="card-title">China-Linked TA4922 Expands Phishing Attacks to U.K., Germany, Italy, and South Africa</h3>
+      <p class="card-summary">A new China-linked cybercrime group known as TA4922 has expanded its targeting focus to target European organizations in the U.K., Germany, Italy, and South Africa.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/907b5784ff9ffd0f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/china-linked-ta4922-expands-phishing.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
@@ -274,6 +404,229 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="un food agency discloses breach affecting 600,000 gaza households"
+       data-id="939db61cf195a2ec"
+       data-published="2026-06-04T12:38:49-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-04T12:38:49-04:00" title="4 June 2026, 11:38">4 June 2026, 11:38</time>
+      </div>
+      <h3 class="card-title">UN food agency discloses breach affecting 600,000 Gaza households</h3>
+      <p class="card-summary">The United Nations&#39; World Food Programme (WFP), the world&#39;s largest humanitarian organization, revealed over the weekend that its self-registration application (SRA) for Palestine was breached. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/939db61cf195a2ec.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/un-world-food-programme-breach-affects-600-000-gaza-households/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="navtor navbox"
+       data-id="505209b86577e650"
+       data-published="2026-06-04T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-04T12:00:00+00:00" title="4 June 2026, 07:00">4 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">NAVTOR NavBox</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow a local attacker to gain unauthorized access to SOAP methods, resulting in a disruption of operations. The following versions of NAVTOR NavBox are affected:</p>
+<p>NavBox 4.16.1.20 (CVE-2026-21404)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 6.3   NAVTOR   NAVTOR NavBox   Use of Hard-coded Credentials           Background     Critical Infrastructure Sectors: Information Technology</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Norway</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-21404     NAVTOR NavBox through version 4.16.1.20 contains hard-coded credentials within its Windows Communication Foundation (SOAP) implementation.</p></div>
+      <div class="detail-links">
+        <a href="../articles/505209b86577e650.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="hitachi energy mach hidraw"
+       data-id="88bb2f689dbb38e3"
+       data-published="2026-06-04T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-04T12:00:00+00:00" title="4 June 2026, 07:00">4 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hitachi Energy MACH HiDraw</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Hitachi Energy is aware of a buffer overflow vulnerability that affects MACH HiDraw product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service) and possible arbitrary code execution.</p></div>
+      <div class="detail-links">
+        <a href="../articles/88bb2f689dbb38e3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="hitachi energy itt600 explorer"
+       data-id="3b2a5124d449ba38"
+       data-published="2026-06-04T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-04T12:00:00+00:00" title="4 June 2026, 07:00">4 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hitachi Energy ITT600 Explorer</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Hitachi Energy is aware of vulnerabilities that affect ITT600 Explorer product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3b2a5124d449ba38.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="b&amp;r ppt30 operating system"
+       data-id="634b1ca3645df1e7"
+       data-published="2026-06-04T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-04T12:00:00+00:00" title="4 June 2026, 07:00">4 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">B&amp;R PPT30 Operating System</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   B&amp;R is aware of a vulnerability in the product versions listed as affected in the advisory. An attacker who successfully exploits this vulnerability could make the OPC-UA server of the product inaccessible.</p></div>
+      <div class="detail-links">
+        <a href="../articles/634b1ca3645df1e7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="hitachi energy rtu500"
+       data-id="e23c6255539ced05"
+       data-published="2026-06-04T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-04T12:00:00+00:00" title="4 June 2026, 07:00">4 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hitachi Energy RTU500</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Hitachi Energy is aware of vulnerabilities that affect RTU500 product versions listed in this document. If exploited, these vulnerabilities primarily impact product availability, with potential secondary impacts on confidentiality and integrity.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e23c6255539ced05.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
@@ -299,6 +652,35 @@
       <div class="detail-links">
         <a href="../articles/531db3c29fb74a1f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/doj-disrupts-southeast-asia-crypto.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new ironworm malware hits 36 packages in npm supply-chain attack"
+       data-id="529d4b39eb4a5835"
+       data-published="2026-06-04T11:25:37-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-04T11:25:37-04:00" title="4 June 2026, 10:25">4 June 2026, 10:25</time>
+      </div>
+      <h3 class="card-title">New IronWorm malware hits 36 packages in npm supply-chain attack</h3>
+      <p class="card-summary">A new supply-chain attack has infected 36 packages on the Node Package Manager (npm) index with infostealer malware called IronWorm. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/529d4b39eb4a5835.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-ironworm-malware-hits-36-packages-in-npm-supply-chain-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -357,125 +739,6 @@
       <div class="detail-links">
         <a href="../articles/774523a2fad98f74.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-unexpected-windows-driver-updates-on-caching-issue/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="police dismantles fake id marketplace used by migrant smugglers"
-       data-id="e4232d3cc29cde9e"
-       data-published="2026-06-04T08:29:12-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-04T08:29:12-04:00" title="4 June 2026, 07:29">4 June 2026, 07:29</time>
-      </div>
-      <h3 class="card-title">Police dismantles fake ID marketplace used by migrant smugglers</h3>
-      <p class="card-summary">French and Spanish authorities took down an online marketplace selling fake identity documents to migrant smuggling rings operating within the European Union. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/e4232d3cc29cde9e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/police-dismantles-fake-id-marketplace-used-by-migrant-smugglers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,patch"
-       data-vendors="Cisco"
-       data-severity="medium"
-       data-title="cisco warns of critical unified cm flaw with poc exploit code"
-       data-id="383dcfd5cd3df676"
-       data-published="2026-06-04T07:09:50-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-06-04T07:09:50-04:00" title="4 June 2026, 06:09">4 June 2026, 06:09</time>
-      </div>
-      <h3 class="card-title">Cisco warns of critical Unified CM flaw with PoC exploit code</h3>
-      <p class="card-summary">Cisco has released security updates to patch a critical-severity Unified Communications Manager (Unified CM) flaw that allows attackers to gain root privileges. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/383dcfd5cd3df676.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-unified-cm-flaw-with-poc-exploit-code/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="pakistan spies on afghan finance ministry with xeno rat"
-       data-id="b235583dd2f945c8"
-       data-published="2026-06-04T04:01:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-04T04:01:00+00:00" title="3 June 2026, 23:01">3 June 2026, 23:01</time>
-      </div>
-      <h3 class="card-title">Pakistan Spies on Afghan Finance Ministry With Xeno RAT</h3>
-      <p class="card-summary">Despite broadly connected digital infrastructure, standard fare TTPs are enough to cause trouble for Afghanistan&#39;s porous cybersecurity.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/b235583dd2f945c8.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyberattacks-data-breaches/pakistan-spies-afghan-finance-ministry-xeno-rat" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Google,Microsoft"
-       data-severity="medium"
-       data-title="whatsapp, slack notifications could hijack google gemini on android"
-       data-id="85759b25fd63127f"
-       data-published="2026-06-04T00:41:15+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-04T00:41:15+05:30" title="3 June 2026, 14:11">3 June 2026, 14:11</time>
-      </div>
-      <h3 class="card-title">WhatsApp, Slack Notifications Could Hijack Google Gemini on Android</h3>
-      <p class="card-summary">A single poisoned notification from WhatsApp, Slack, SMS, Signal, Instagram, or Messenger could have hijacked Google Gemini&#39;s voice assistant on Android and made it open a victim&#39;s connected windows, fake a message from their boss, push the phone into a…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>A single poisoned notification from WhatsApp, Slack, SMS, Signal, Instagram, or Messenger could have hijacked Google Gemini&#39;s voice assistant on Android and made it open a victim&#39;s connected windows, fake a message from their boss, push the phone into a Zoom call, or quietly poison its long-term memory.</p></div>
-      <div class="detail-links">
-        <a href="../articles/85759b25fd63127f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/06/whatsapp-slack-notifications-could.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

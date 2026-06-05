@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">5 June 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
@@ -36,6 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -62,9 +63,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
@@ -72,16 +73,47 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="new threat cluster op-512 targets microsoft iis servers with custom web shell framework"
+       data-id="fa0dafe709a10aa0"
+       data-published="2026-06-05T18:03:38+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-05T18:03:38+05:30" title="5 June 2026, 07:33">5 June 2026, 07:33</time>
+      </div>
+      <h3 class="card-title">New Threat Cluster OP-512 Targets Microsoft IIS Servers with Custom Web Shell Framework</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered a previously unreported threat cluster dubbed OP-512 (where &#34;OP&#34; stands for &#34;opponent&#34;) that has been observed targeting Microsoft Internet Information Services (IIS) servers to deploy a bespoke web shell framework.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fa0dafe709a10aa0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/new-threat-cluster-op-512-targets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -110,6 +142,37 @@
       <div class="detail-links">
         <a href="../articles/c066c447d5c07ab8.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/only-10-of-socs-say-theyre-getting.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="adaptive, agentic ai worms loom as next enterprise threat"
+       data-id="b4d48c2518a89a8c"
+       data-published="2026-06-05T14:40:11+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-05T14:40:11+00:00" title="5 June 2026, 09:40">5 June 2026, 09:40</time>
+      </div>
+      <h3 class="card-title">Adaptive, Agentic AI Worms Loom as Next Enterprise Threat</h3>
+      <p class="card-summary">AI worms, or &#34;viruses with wings and brains,&#34; adapt to new environments, seek out vulnerabilities, and will likely strike within a year, researchers say.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b4d48c2518a89a8c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/adaptive-agentic-ai-worms-enterprise-cyber-threat" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -142,6 +205,34 @@
       <div class="detail-links">
         <a href="../articles/9fad14e28aeaeb91.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="trump ai order seeks voluntary frontier model testing"
+       data-id="e5e9de84723bb277"
+       data-published="2026-06-05T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-05T13:00:00+00:00" title="5 June 2026, 08:00">5 June 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Trump AI Order Seeks Voluntary Frontier Model Testing</h3>
+      <p class="card-summary">The White House&#39;s executive order establishes voluntary framework for early government access to frontier models while investing in federal security.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e5e9de84723bb277.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/trump-ai-order-seeks-voluntary-frontier-model-testing" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -204,6 +295,67 @@
       <div class="detail-links">
         <a href="../articles/62e290b067094168.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/pcpjack-hijacks-230-aws-google-cloud.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="over 900 us gas station tank gauge systems exposed to attacks"
+       data-id="fbc5efa829cf417b"
+       data-published="2026-06-05T10:50:15-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-05T10:50:15-04:00" title="5 June 2026, 09:50">5 June 2026, 09:50</time>
+      </div>
+      <h3 class="card-title">Over 900 US gas station tank gauge systems exposed to attacks</h3>
+      <p class="card-summary">Over 900 automatic tank gauge (ATG) systems across the United States, used to monitor fuel and chemical storage tanks across various critical infrastructure sectors, have been found exposed online and are vulnerable to ongoing attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fbc5efa829cf417b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/over-900-us-gas-station-tank-gauge-systems-exposed-to-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="what 2026 dbir confirms: attacks are living in the browser"
+       data-id="5aae4e09b75fdadd"
+       data-published="2026-06-05T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-05T10:00:10-04:00" title="5 June 2026, 09:00">5 June 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">What 2026 DBIR Confirms: Attacks Are Living in the Browser</h3>
+      <p class="card-summary">Phishing, shadow AI, malicious extensions, and credential theft increasingly happen inside the browser. Keep Aware explains what the 2026 Verizon DBIR reveals about browser-layer security gaps and modern attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5aae4e09b75fdadd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/what-2026-dbir-confirms-attacks-are-living-in-the-browser/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

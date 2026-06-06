@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">6 June 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">5 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
       </ul>
     </div>
   </div>
@@ -49,6 +49,8 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -62,20 +64,153 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="free apps are quietly turning smart tvs into web-scraping proxies for ai"
+       data-id="a1177a354a805444"
+       data-published="2026-06-06T13:59:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-06T13:59:05+05:30" title="6 June 2026, 03:29">6 June 2026, 03:29</time>
+      </div>
+      <h3 class="card-title">Free Apps Are Quietly Turning Smart TVs Into Web-Scraping Proxies for AI</h3>
+      <p class="card-summary">A researcher has reverse-engineered the iOS SDK that Bright Data embeds in consumer apps and documented how it turns devices, including always-on smart TVs, into exit nodes that relay web-scraping traffic for a data business Bright Data markets heavily to…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A researcher has reverse-engineered the iOS SDK that Bright Data embeds in consumer apps and documented how it turns devices, including always-on smart TVs, into exit nodes that relay web-scraping traffic for a data business Bright Data markets heavily to the AI industry.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a1177a354a805444.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa adds actively exploited solarwinds serv-u dos flaw to kev catalog"
+       data-id="ad20f9fd78f1394a"
+       data-published="2026-06-06T13:44:31+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-06T13:44:31+05:30" title="6 June 2026, 03:14">6 June 2026, 03:14</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity security flaw impacting SolarWinds Serv-U multi-protocol file server software to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ad20f9fd78f1394a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,vulnerability,zero-day"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="ai agent uncovers 21 zero-days in ffmpeg; chrome patches record 429 bugs"
+       data-id="52fb043ea4be1511"
+       data-published="2026-06-06T12:58:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-06-06T12:58:30+05:30" title="6 June 2026, 02:28">6 June 2026, 02:28</time>
+      </div>
+      <h3 class="card-title">AI Agent Uncovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs</h3>
+      <p class="card-summary">Two things landed within days of each other this week. A security startup reported 21 previously unknown vulnerabilities in FFmpeg, the media library inside almost everything that touches video, all of them found by an autonomous AI agent.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/52fb043ea4be1511.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="miasma worm hits 73 microsoft github repositories in major supply chain attack"
+       data-id="73f483f824b53850"
+       data-published="2026-06-06T12:28:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-06T12:28:04+05:30" title="6 June 2026, 01:58">6 June 2026, 01:58</time>
+      </div>
+      <h3 class="card-title">Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack</h3>
+      <p class="card-summary">Microsoft&#39;s GitHub repositories have become the latest to fall victim to the ongoing Miasma self-replicating supply chain attack campaign.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/73f483f824b53850.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="cve,exploit,patch,vulnerability"
        data-vendors="Cisco"

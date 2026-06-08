@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">8 June 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Google, Microsoft ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -63,9 +65,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
@@ -73,10 +75,111 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="high"
+       data-title="ai phishing is crushing socs with alert volume: how to reduce tier 1 overload"
+       data-id="e3dfbb2427150bde"
+       data-published="2026-06-08T18:49:13+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-08T18:49:13+05:30" title="8 June 2026, 08:19">8 June 2026, 08:19</time>
+      </div>
+      <h3 class="card-title">AI Phishing Is Crushing SOCs with Alert Volume: How to Reduce Tier 1 Overload</h3>
+      <p class="card-summary">Phishing has always been a numbers game. AI has turned it into a volume machine.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e3dfbb2427150bde.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/ai-phishing-is-crushing-socs-with-alert.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,zero-day"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="weekly recap: instagram account hacks, android zero-day, github worm and more"
+       data-id="eea82d1dc2bb43b0"
+       data-published="2026-06-08T18:48:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-06-08T18:48:57+05:30" title="8 June 2026, 08:18">8 June 2026, 08:18</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Instagram Account Hacks, Android Zero-Day, GitHub Worm and More</h3>
+      <p class="card-summary">The weekend was meant to be quiet. Last week had poisoned packages, a broken AI helper, and a worm tearing through repos.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/eea82d1dc2bb43b0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/weekly-recap-instagram-account-hacks.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="the hardest fork"
+       data-id="6fbdfc2b0b067241"
+       data-published="2026-06-08T17:23:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-08T17:23:00+05:30" title="8 June 2026, 06:53">8 June 2026, 06:53</time>
+      </div>
+      <h3 class="card-title">The Hardest Fork</h3>
+      <p class="card-summary">I know a big chunk of the industry thinks it&#39;s a marketing stunt, and I get why. But I&#39;ve seen the findings, and they&#39;re bad.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6fbdfc2b0b067241.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/the-hardest-fork.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Linux,Microsoft"
@@ -165,6 +268,103 @@
       <div class="detail-links">
         <a href="../articles/d9c38ad2ae04ff1a.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="reducing security operations complexity with wazuh cloud"
+       data-id="f4ad31e14cd07c8a"
+       data-published="2026-06-08T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-08T10:01:11-04:00" title="8 June 2026, 09:01">8 June 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Reducing security operations complexity with Wazuh Cloud</h3>
+      <p class="card-summary">Security teams are increasingly overwhelmed by alert fatigue, infrastructure maintenance, and complex hybrid environments. This article explores how Wazuh Cloud helps simplify SIEM/XDR operations through managed infrastructure, automated scaling, and…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Security teams are increasingly overwhelmed by alert fatigue, infrastructure maintenance, and complex hybrid environments. This article explores how Wazuh Cloud helps simplify SIEM/XDR operations through managed infrastructure, automated scaling, and AI-driven security analysis. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/f4ad31e14cd07c8a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/reducing-security-operations-complexity-with-wazuh-cloud/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,ransomware,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="check point links vpn zero-day attacks to qilin ransomware gang"
+       data-id="442989dfc96b9e61"
+       data-published="2026-06-08T09:05:16-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-08T09:05:16-04:00" title="8 June 2026, 08:05">8 June 2026, 08:05</time>
+      </div>
+      <h3 class="card-title">Check Point links VPN zero-day attacks to Qilin ransomware gang</h3>
+      <p class="card-summary">Israeli cybersecurity company Check Point has released security updates to patch a critical flaw affecting Remote Access VPN and Mobile Access deployments, which was exploited in zero-day attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/442989dfc96b9e61.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/check-point-links-vpn-zero-day-attacks-to-qilin-ransomware-gang/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="oxford university discloses data breach after careers platform hack"
+       data-id="43a19aaa6426e72e"
+       data-published="2026-06-08T07:14:41-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-08T07:14:41-04:00" title="8 June 2026, 06:14">8 June 2026, 06:14</time>
+      </div>
+      <h3 class="card-title">Oxford University discloses data breach after careers platform hack</h3>
+      <p class="card-summary">The University of Oxford disclosed a new data breach last week after being informed by its third-party provider, Group GTI, that its CareerConnect career services platform had been compromised. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/43a19aaa6426e72e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/oxford-university-discloses-data-breach-after-careerconnect-platform-hack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

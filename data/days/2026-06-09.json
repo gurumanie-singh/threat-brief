@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1005b09d40f8dea8",
+    "title": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html",
+    "published": "2026-06-09T01:47:39+05:30",
+    "fetched_at": "2026-06-08T22:24:55.736511+00:00",
+    "summary": "Security researchers have published a detailed, working exploit for a Linux kernel use-after-free that lets an unprivileged local user escalate to root and break out of a container.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch"
+    ],
+    "day": "2026-06-09",
+    "cves": [
+      "CVE-2026-23111"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Security researchers have published a detailed, working exploit for a Linux kernel use-after-free that lets an unprivileged local user escalate to root and break out of a container.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "The flaw, CVE-2026-23111, sits in the kernel's nf_tables packet-filtering code and was patched upstream on February 5, 2026."
+    },
+    "email_summary": "Security researchers have published a detailed, working exploit for a Linux kernel use-after-free that lets an unprivileged local user escalate to root and break out of a container. Tracked as CVE-2026-23111. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  }
+]

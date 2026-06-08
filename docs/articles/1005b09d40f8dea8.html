@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Critical Check Point VPN Flaw Exploited to Bypass Passwords in IKEv1 Setups — Threat Brief</title>
+  <title>One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public — Threat Brief</title>
   <meta name="description" content="Daily cybersecurity intelligence briefing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,28 +23,29 @@
   <main>
 <div class="section-inner">
   <div class="article-page">
-    <a href="../daily/2026-06-08.html" class="back-link">← 8 June 2026 briefing</a>
+    <a href="../daily/2026-06-09.html" class="back-link">← 9 June 2026 briefing</a>
 
     <header class="article-header">
       <div class="meta-row">
         <span class="card-source">The Hacker News</span>
-        <span class="card-date">8 June 2026, 09:17</span>
-        <span class="card-severity critical">critical</span>
+        <span class="card-date">8 June 2026, 15:17</span>
+        <span class="card-severity high">high</span>
       </div>
 
-      <h1 class="title">Critical Check Point VPN Flaw Exploited to Bypass Passwords in IKEv1 Setups</h1>
+      <h1 class="title">One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public</h1>
 
-      <p class="subtitle">Check Point has warned of active exploitation of a critical vulnerability impacting Remote Access VPN and Mobile Access deployments that are configured to use the deprecated IKEv1 key exchange protocol. Tracked as CVE-2026-50751. Severity is rated critical.</p>
+      <p class="subtitle">Security researchers have published a detailed, working exploit for a Linux kernel use-after-free that lets an unprivileged local user escalate to root and break out of a container. Tracked as CVE-2026-23111. Severity is rated high.</p>
 
 
       <div class="article-tags">
+        <span class="vendor-tag">Linux</span>
         <span class="tag">cve</span>
         <span class="tag">exploit</span>
-        <span class="tag">vulnerability</span>
+        <span class="tag">patch</span>
       </div>
 
       <ul class="article-cve-list">
-        <li class="article-cve" data-cve="CVE-2026-50751">CVE-2026-50751<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-50751"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+        <li class="article-cve" data-cve="CVE-2026-23111">CVE-2026-23111<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-23111"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
       </ul>
     </header>
 
@@ -53,16 +54,16 @@
 
 
 
-
-
       <div class="article-section">
-        <div class="article-section-label">Also Reported By</div>
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
         <div class="article-section-content">
-          <p><a href="https://www.cisa.gov/news-events/alerts/2026/06/08/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Alerts</a></p>
+          <p>The flaw, CVE-2026-23111, sits in the kernel&#39;s nf_tables packet-filtering code and was patched upstream on February 5, 2026.</p>
         </div>
       </div>
 
-      <a href="https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html" class="source-card" target="_blank" rel="noopener">
+
+
+      <a href="https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html" class="source-card" target="_blank" rel="noopener">
         <div class="source-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         </div>

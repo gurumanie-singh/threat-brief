@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threat Brief — 8 June 2026</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">8 June 2026</h1>
+      <span class="brief-sub">4 articles</span>
+    </div>
+  </div>
+
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux,Microsoft"
+       data-severity="medium"
+       data-title="verdantbamboo deploys bsd variant of brickstorm on linux appliances"
+       data-id="6184be6f4d87865f"
+       data-published="2026-06-08T15:57:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-08T15:57:32+05:30" title="8 June 2026, 05:27">8 June 2026, 05:27</time>
+      </div>
+      <h3 class="card-title">VerdantBamboo Deploys BSD Variant of BRICKSTORM on Linux Appliances</h3>
+      <p class="card-summary">A China-nexus cyber espionage group has been observed deploying a BSD variant of a known backdoor called BRICKSTORM, as well as two other malware families codenamed PLENET (aka GRIMBOLT) and AGENTPSD to target Linux systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6184be6f4d87865f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/verdantbamboo-deploys-bsd-variant-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="unc3753 used vishing and physical intrusions in u.s. data theft extortion campaign"
+       data-id="52d1fe2c8d38db23"
+       data-published="2026-06-08T13:09:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-06-08T13:09:28+05:30" title="8 June 2026, 02:39">8 June 2026, 02:39</time>
+      </div>
+      <h3 class="card-title">UNC3753 Used Vishing and Physical Intrusions in U.S. Data Theft Extortion Campaign</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a financially motivated data theft extortion campaign that has targeted dozens of organizations across professional, legal, and financial services in the U.S. between January and May 2026.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/52d1fe2c8d38db23.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/unc3753-used-vishing-and-physical.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="vs code adds 2-hour extension auto-update delay to limit supply chain attacks"
+       data-id="d9c38ad2ae04ff1a"
+       data-published="2026-06-08T11:38:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-08T11:38:44+05:30" title="8 June 2026, 01:08">8 June 2026, 01:08</time>
+      </div>
+      <h3 class="card-title">VS Code Adds 2-Hour Extension Auto-Update Delay to Limit Supply Chain Attacks</h3>
+      <p class="card-summary">Microsoft has announced that Visual Studio Code (VS Code) will apply a two-hour delay before extensions for the integrated development environment (IDE) are updated automatically to a newer version in an attempt to tackle software supply chain threats.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d9c38ad2ae04ff1a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="over 20,000 instagram accounts stolen in meta ai support hack"
+       data-id="19c9933699d6dee8"
+       data-published="2026-06-08T02:00:27-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-08T02:00:27-04:00" title="8 June 2026, 01:00">8 June 2026, 01:00</time>
+      </div>
+      <h3 class="card-title">Over 20,000 Instagram accounts stolen in Meta AI support hack</h3>
+      <p class="card-summary">Meta has revealed that 20,225 Instagram users had their accounts hijacked in a recent incident where attackers used Meta&#39;s AI-powered support system to reset passwords. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/19c9933699d6dee8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/meta-ai-support-data-breach-affects-20-000-instagram-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

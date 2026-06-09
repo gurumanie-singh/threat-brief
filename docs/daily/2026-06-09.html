@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>5 items require immediate action — patches or mitigations available</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
@@ -53,7 +53,6 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
-      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -70,6 +69,7 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
       </div>
     </div>
@@ -77,12 +77,13 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
@@ -150,6 +151,41 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,patch,vulnerability,zero-day"
+       data-vendors="AWS,Adobe,Google,Microsoft"
+       data-severity="critical"
+       data-title="a record-breaking patch tuesday for june 2026"
+       data-id="72335fee46b61fd5"
+       data-published="2026-06-09T22:07:28+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-06-09T22:07:28+00:00" title="9 June 2026, 17:07">9 June 2026, 17:07</time>
+      </div>
+      <h3 class="card-title">A Record-Breaking Patch Tuesday for June 2026</h3>
+      <p class="card-summary">Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft s most dire critical rating, and exploit code for at least three of the weaknesses is now publicly available.</p></div>
+      <div class="detail-links">
+        <a href="../articles/72335fee46b61fd5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,vulnerability"
        data-vendors="Microsoft"
@@ -179,6 +215,37 @@
       <div class="detail-links">
         <a href="../articles/51a0edf85720016a.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/microsoft-restores-some-github-repos.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="blame ai: patch tuesday hits record 206 cves"
+       data-id="68e752a7e8819512"
+       data-published="2026-06-09T21:42:57+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-09T21:42:57+00:00" title="9 June 2026, 16:42">9 June 2026, 16:42</time>
+      </div>
+      <h3 class="card-title">Blame AI: Patch Tuesday Hits Record 206 CVEs</h3>
+      <p class="card-summary">Voluminous patch updates could soon be the norm, as artificial intelligence accelerates the speed and scale of vulnerability discovery.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/68e752a7e8819512.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/blame-ai-patch-tuesday-record-206-cves" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -278,6 +345,37 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="servicenow discloses security incident exposing customer data"
+       data-id="684891fb71cdfce6"
+       data-published="2026-06-09T17:34:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-09T17:34:09-04:00" title="9 June 2026, 16:34">9 June 2026, 16:34</time>
+      </div>
+      <h3 class="card-title">ServiceNow discloses security incident exposing customer data</h3>
+      <p class="card-summary">ServiceNow is warning about a security incident after attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, allowing them to query data from customer instances. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/684891fb71cdfce6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/servicenow-discloses-security-incident-exposing-customer-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
@@ -342,6 +440,38 @@
       <div class="detail-links">
         <a href="../articles/df9467a7811a1dbe.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="openclaw ai agent found falling for phishing attacks, spills user data"
+       data-id="1ca6d4d238ad7fce"
+       data-published="2026-06-09T17:20:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-09T17:20:20-04:00" title="9 June 2026, 16:20">9 June 2026, 16:20</time>
+      </div>
+      <h3 class="card-title">OpenClaw AI agent found falling for phishing attacks, spills user data</h3>
+      <p class="card-summary">Phishing simulation on an OpenClaw email agent with various configuration profiles showed that it was susceptible to tactics commonly used to compromise human users. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1ca6d4d238ad7fce.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/openclaw-ai-agent-found-falling-for-phishing-attacks-spills-user-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -590,151 +720,6 @@
       <div class="detail-links">
         <a href="../articles/359b493de0ddd12a.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/xbow-tests-anthropics-mythos-preview-for-offensive-security/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="cve,exploit,malware,patch,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="siemens kaco blueplanet inverters"
-       data-id="104d2c5eae0547c7"
-       data-published="2026-06-09T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-06-09T12:00:00+00:00" title="9 June 2026, 07:00">9 June 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Siemens KACO Blueplanet Inverters</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   KACO blueplanet Inverters contain multiple vulnerabilities that could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. KACO new energy GmbH has released new versions for several affected products and recommends to update to the latest versions.</p></div>
-      <div class="detail-links">
-        <a href="../articles/104d2c5eae0547c7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="schneider electric ecostruxure panel server"
-       data-id="30861c173ecca1d8"
-       data-published="2026-06-09T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-06-09T12:00:00+00:00" title="9 June 2026, 07:00">9 June 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Schneider Electric EcoStruxure Panel Server</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Schneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. The EcoStruxure Panel Server is a high performance, modular gateway with enhanced cybersecurity that provides easy and fast connections to multiple concurrent edge control or cloud applications.</p></div>
-      <div class="detail-links">
-        <a href="../articles/30861c173ecca1d8.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--low"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors=""
-       data-severity="low"
-       data-title="schneider electric modicon network managed switches"
-       data-id="2018d12c17d04a7a"
-       data-published="2026-06-09T12:00:00+00:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-        <time class="meta-time" data-iso="2026-06-09T12:00:00+00:00" title="9 June 2026, 07:00">9 June 2026, 07:00</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Schneider Electric Modicon Network Managed Switches</h3>
-      <p class="card-summary">View CSAF</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">CISA Alerts</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>View CSAF</p>
-<p>Summary   Schneider Electric is aware of a RADIUS protocol vulnerability affecting its Modicon Network Managed Switch product. The Modicon Network Managed Switch product provides connectivity for multiple Ethernet devices, network management, enhanced cyber security and more advanced switching features.</p></div>
-      <div class="detail-links">
-        <a href="../articles/2018d12c17d04a7a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--high"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors=""
-       data-severity="high"
-       data-title="litellm flaw cve-2026-42271 exploited in the wild, chains to unauthenticated rce"
-       data-id="31229db44a29b5d8"
-       data-published="2026-06-09T11:56:14+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-06-09T11:56:14+05:30" title="9 June 2026, 01:26">9 June 2026, 01:26</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity flaw impacting BerriAI LiteLLM to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/31229db44a29b5d8.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

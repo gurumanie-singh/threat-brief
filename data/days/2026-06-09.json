@@ -56,6 +56,51 @@
     "highlighted": false
   },
   {
+    "id": "72335fee46b61fd5",
+    "title": "A Record-Breaking Patch Tuesday for June 2026",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+    "published": "2026-06-09T22:07:28+00:00",
+    "fetched_at": "2026-06-09T22:23:06.429947+00:00",
+    "summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft s most dire critical rating, and exploit code for at least three of the weaknesses is now publicly available.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-06-09",
+    "cves": [
+      "CVE-2026-45586",
+      "CVE-2026-49160",
+      "CVE-2026-50507"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Adobe",
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft s most dire critical rating, and exploit code for at least three of the weaknesses is now publicly available.",
+      "technical": "Nightmare Eclipse also last month released YellowKey, an exploit for a Windows BitLocker vulnerability that allows an attacker with physical access to view encrypted data, and CVE-2026-50507 is a patch for an elevation of privilege bug in BitLocker. June s zero-day bugs include CVE-2026-49160 , a denial of service vulnerability affecting a range of web servers, including Microsoft Internet Information Services (IIS). Two of the zero-days addressed this month appear to stem from recent vulnerability disclosures by Nightmare Eclipse , the nickname chosen by a security researcher who has been dropping exploits for various Windows flaws. The company was forced to push a stopgap fix for the flaw on June 3, after a researcher published instructions showing how to exploit it.\n\nReferenced vulnerabilities: CVE-2026-45586, CVE-2026-49160, CVE-2026-50507.",
+      "impact": "June s zero-day bugs include CVE-2026-49160 , a denial of service vulnerability affecting a range of web servers, including Microsoft Internet Information Services (IIS). The advisories for CVE-2026-49160 and CVE-2026-50507 do not credit any researchers in the acknowledgement section, saying only that Microsoft recognizes the efforts of those in the security community who help us protect customers through coordinated vulnerability disclosure. Researchers found that all of the affected packages were connected to Microsoft official Azure Durable Task SDK, which got hit by the same Shai-Hulud worm in May.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Further reading:\n\n Microsoft s Security Update Guide \n\n Action1 s Patch Tuesday breakdown \n\n SANS Internet Storm Center notes on Patch Tuesday Adobe has released updates to fix a massive number of critical vulnerabilities across a range of products , including Adobe Experience Manager , Acrobat Reader and Cold Fusion . As ever, please consider backing up your data before applying operating system updates, and drop a note in the comments if you run into any problems with this month s patches.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company s monthly Patch Tuesday cycle. Tracked as CVE-2026-45586, CVE-2026-49160, CVE-2026-50507. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "51a0edf85720016a",
     "title": "Microsoft Restores Some GitHub Repos, Keeps Others Offline as Miasma Probe Continues",
     "source": "The Hacker News",
@@ -83,6 +128,33 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Microsoft on Monday confirmed that it temporarily removed some GitHub repositories in response to a recent security incident that led to 73 of its open-source projects being compromised to inject an information stealer into the code.\n\n\"Our priority is to protect customers and the broader ecosystem,\" a Microsoft spokesperson told The Hacker News via email. \"We temporarily removed some.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "68e752a7e8819512",
+    "title": "Blame AI: Patch Tuesday Hits Record 206 CVEs",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/blame-ai-patch-tuesday-record-206-cves",
+    "published": "2026-06-09T21:42:57+00:00",
+    "fetched_at": "2026-06-09T22:23:07.306147+00:00",
+    "summary": "Voluminous patch updates could soon be the norm, as artificial intelligence accelerates the speed and scale of vulnerability discovery.",
+    "tags": [
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-09",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Voluminous patch updates could soon be the norm, as artificial intelligence accelerates the speed and scale of vulnerability discovery.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Voluminous patch updates could soon be the norm, as artificial intelligence accelerates the speed and scale of vulnerability discovery.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -180,6 +252,33 @@
     "highlighted": false
   },
   {
+    "id": "684891fb71cdfce6",
+    "title": "ServiceNow discloses security incident exposing customer data",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/servicenow-discloses-security-incident-exposing-customer-data/",
+    "published": "2026-06-09T17:34:09-04:00",
+    "fetched_at": "2026-06-09T22:23:06.670053+00:00",
+    "summary": "ServiceNow is warning about a security incident after attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, allowing them to query data from customer instances. [...]",
+    "tags": [
+      "exploit"
+    ],
+    "day": "2026-06-09",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "ServiceNow is warning about a security incident after attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, allowing them to query data from customer instances. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "ServiceNow is warning about a security incident after attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, allowing them to query data from customer instances. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "ServiceNow is warning about a security incident after attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, allowing them to query data from customer instances. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "e2ff24b82902a8af",
     "title": "Researchers Build Self-Replicating AI Worm That Operates Entirely on Local, Open-Weight Models",
     "source": "The Hacker News",
@@ -246,6 +345,35 @@
         "link": "https://www.cisa.gov/news-events/alerts/2026/06/09/cisa-adds-three-known-exploited-vulnerabilities-catalog"
       }
     ],
+    "highlighted": false
+  },
+  {
+    "id": "1ca6d4d238ad7fce",
+    "title": "OpenClaw AI agent found falling for phishing attacks, spills user data",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/openclaw-ai-agent-found-falling-for-phishing-attacks-spills-user-data/",
+    "published": "2026-06-09T17:20:20-04:00",
+    "fetched_at": "2026-06-09T22:23:06.670239+00:00",
+    "summary": "Phishing simulation on an OpenClaw email agent with various configuration profiles showed that it was susceptible to tactics commonly used to compromise human users. [...]",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-06-09",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Phishing simulation on an OpenClaw email agent with various configuration profiles showed that it was susceptible to tactics commonly used to compromise human users. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Phishing simulation on an OpenClaw email agent with various configuration profiles showed that it was susceptible to tactics commonly used to compromise human users. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Phishing simulation on an OpenClaw email agent with various configuration profiles showed that it was susceptible to tactics commonly used to compromise human users. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
     "highlighted": false
   },
   {
@@ -469,144 +597,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Anthropic's Mythos Preview was highly effective at finding vulnerability candidates, especially when analyzing source code. XBOW explores how the model performed across exploit discovery, reverse engineering, and live-site validation. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "104d2c5eae0547c7",
-    "title": "Siemens KACO Blueplanet Inverters",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-02",
-    "published": "2026-06-09T12:00:00+00:00",
-    "fetched_at": "2026-06-09T18:02:40.241804+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-06-09",
-    "cves": [
-      "CVE-2025-40946",
-      "CVE-2026-41125"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n KACO blueplanet Inverters contain multiple vulnerabilities that could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. KACO new energy GmbH has released new versions for several affected products and recommends to update to the latest versions.",
-      "technical": "The following versions of Siemens KACO Blueplanet Inverters are affected:\n\n \n blueplanet 100 NX3 M8 vers:all/*\n\n blueplanet 100 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 105 TL3 vers:all/* \n\n blueplanet 105 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 110 TL3 vers:all/* \n\n blueplanet 125 NX3 M11 vers:all/* \n\n blueplanet 125 TL3 vers:all/* \n\n blueplanet 125 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 137 TL3 vers:all/* \n\n blueplanet 150 TL3 vers:all/* \n\n blueplanet 150 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 155 TL3 vers:all/* \n\n blueplanet 155 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 165 TL3 vers:all/* \n\n blueplanet 165 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 25.0 NX3-33.0 NX3 vers:all/* \n\n blueplanet 3.0 NX3-20.0 NX3 vers:all/* \n\n blueplanet 3.0 TL3-60.0 TL3 vers:all/* \n\n blueplanet 3.0-5.0 NX1 vers:all/* \n\n blueplanet 360 NX3 M6 vers:all/* \n\n blueplanet 50.0 NX3-60.0 NX3 vers:all/* \n\n blueplanet 87.0 TL3 vers:all/* \n\n blueplanet 87.0 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 92.0 TL3 vers:all/* \n\n blueplanet 92.0 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet gridsafe 110 TL3-S vers:intdot/<3.91, vers:all/* \n\n blueplanet gridsafe 137 TL3-S vers:intdot/<3.91, vers:all/*\n\n blueplanet gridsafe 92.0 TL3-S vers:all/*, vers:intdot/<3.91 \n\n blueplanet hybrid 10.0 TL3 vers:all/* \n\n blueplanet hybrid 6.0 NH3-12.0 NH3 vers:all/* \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.3 \n Siemens \n Siemens KACO Blueplanet Inverters \n Use of Hard-coded Cryptographic Key, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-40946 \n \n A CRC16-based algorithm for generating Technical Service credentials could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. View CVE Details \n\n \n Affected Products \n Siemens KACO Blueplanet Inverters \n \n Vendor: \nSiemens \n Product Version: \nblueplanet 100 NX3 M8, blueplanet 100 TL3 GEN2, blueplanet 105 TL3, blueplanet 105 TL3 GEN2, blueplanet 110 TL3, blueplanet 125 NX3 M11, blueplanet 125 TL3, blueplanet 125 TL3 GEN2, blueplanet 137 TL3, blueplanet 150 TL3, blueplanet 150 TL3 GEN2, blueplanet 155 TL3, blueplanet 155 TL3 GEN2, blueplanet 165 TL3, blueplanet 165 TL3 GEN2, blueplanet 3.0 TL3-60.0 TL3, blueplanet 87.0 TL3, blueplanet 87.0 TL3 GEN2, blueplanet 92.0 TL3, blueplanet 92.0 TL3 GEN2, blueplanet gridsafe 110 TL3-S, blueplanet gridsafe 137 TL3-S, blueplanet gridsafe 92.0 TL3-S \n Product Status: \nknown_affected, known_not_affected \n \n \n Remediations \n No fix planned \nCurrently no fix is planned\n\n None available \nCurrently no fix is available\n\n Vendor fix \nUpdate to V3.91 or later version\n https://kaco-newenergy.com/service/mykacocom-customer-portal \n\n Vendor fix \nUpdate to V6.1.4.9 or later version\n https://kaco-newenergy.com/service/mykacocom-customer-portal \n\n \n Relevant CWE: CWE-321 Use of Hard-coded Cryptographic Key \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.3 \n HIGH \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H \n \n \n \n \n \n \n \n CVE-2026-41125 \n \n Improper neutralization of special elements used in an sql command ('sql injection') in KACO Meteor server allows an authorized attacker to elevate privileges over a local network. Recommended Practices \n CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability. View CVE Details \n\n \n Affected Products \n Siemens KACO Blueplanet Inverters \n \n Vendor: \nSiemens \n Product Version: \nblueplanet 100 NX3 M8, blueplanet 100 TL3 GEN2, blueplanet 105 TL3, blueplanet 105 TL3 GEN2, blueplanet 110 TL3, blueplanet 125 NX3 M11, blueplanet 125 TL3, blueplanet 125 TL3 GEN2, blueplanet 137 TL3, blueplanet 150 TL3, blueplanet 150 TL3 GEN2, blueplanet 155 TL3, blueplanet 155 TL3 GEN2, blueplanet 165 TL3, blueplanet 165 TL3 GEN2, blueplanet 87.0 TL3, blueplanet 87.0 TL3 GEN2, blueplanet 92.0 TL3, blueplanet 92.0 TL3 GEN2, blueplanet gridsafe 110 TL3-S, blueplanet gridsafe 137 TL3-S, blueplanet gridsafe 92.0 TL3-S \n Product Status: \nknown_affected, known_not_affected \n \n \n Remediations \n None available \nCurrently no fix is available\n\n \n Relevant CWE: CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6 \n MEDIUM \n CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:U/C:L/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Siemens ProductCERT reported these vulnerabilities to CISA.\n\nReferenced vulnerabilities: CVE-2025-40946, CVE-2026-41125.",
-      "impact": "The following versions of Siemens KACO Blueplanet Inverters are affected:\n\n \n blueplanet 100 NX3 M8 vers:all/*\n\n blueplanet 100 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 105 TL3 vers:all/* \n\n blueplanet 105 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 110 TL3 vers:all/* \n\n blueplanet 125 NX3 M11 vers:all/* \n\n blueplanet 125 TL3 vers:all/* \n\n blueplanet 125 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 137 TL3 vers:all/* \n\n blueplanet 150 TL3 vers:all/* \n\n blueplanet 150 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 155 TL3 vers:all/* \n\n blueplanet 155 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 165 TL3 vers:all/* \n\n blueplanet 165 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 25.0 NX3-33.0 NX3 vers:all/* \n\n blueplanet 3.0 NX3-20.0 NX3 vers:all/* \n\n blueplanet 3.0 TL3-60.0 TL3 vers:all/* \n\n blueplanet 3.0-5.0 NX1 vers:all/* \n\n blueplanet 360 NX3 M6 vers:all/* \n\n blueplanet 50.0 NX3-60.0 NX3 vers:all/* \n\n blueplanet 87.0 TL3 vers:all/* \n\n blueplanet 87.0 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet 92.0 TL3 vers:all/* \n\n blueplanet 92.0 TL3 GEN2 vers:all/*, vers:intdot/<6.1.4.9 \n\n blueplanet gridsafe 110 TL3-S vers:intdot/<3.91, vers:all/* \n\n blueplanet gridsafe 137 TL3-S vers:intdot/<3.91, vers:all/*\n\n blueplanet gridsafe 92.0 TL3-S vers:all/*, vers:intdot/<3.91 \n\n blueplanet hybrid 10.0 TL3 vers:all/* \n\n blueplanet hybrid 6.0 NH3-12.0 NH3 vers:all/* \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 8.3 \n Siemens \n Siemens KACO Blueplanet Inverters \n Use of Hard-coded Cryptographic Key, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-40946 \n \n A CRC16-based algorithm for generating Technical Service credentials could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. View CVE Details \n\n \n Affected Products \n Siemens KACO Blueplanet Inverters \n \n Vendor: \nSiemens \n Product Version: \nblueplanet 100 NX3 M8, blueplanet 100 TL3 GEN2, blueplanet 105 TL3, blueplanet 105 TL3 GEN2, blueplanet 110 TL3, blueplanet 125 NX3 M11, blueplanet 125 TL3, blueplanet 125 TL3 GEN2, blueplanet 137 TL3, blueplanet 150 TL3, blueplanet 150 TL3 GEN2, blueplanet 155 TL3, blueplanet 155 TL3 GEN2, blueplanet 165 TL3, blueplanet 165 TL3 GEN2, blueplanet 3.0 TL3-60.0 TL3, blueplanet 87.0 TL3, blueplanet 87.0 TL3 GEN2, blueplanet 92.0 TL3, blueplanet 92.0 TL3 GEN2, blueplanet gridsafe 110 TL3-S, blueplanet gridsafe 137 TL3-S, blueplanet gridsafe 92.0 TL3-S \n Product Status: \nknown_affected, known_not_affected \n \n \n Remediations \n No fix planned \nCurrently no fix is planned\n\n None available \nCurrently no fix is available\n\n Vendor fix \nUpdate to V3.91 or later version\n https://kaco-newenergy.com/service/mykacocom-customer-portal \n\n Vendor fix \nUpdate to V6.1.4.9 or later version\n https://kaco-newenergy.com/service/mykacocom-customer-portal \n\n \n Relevant CWE: CWE-321 Use of Hard-coded Cryptographic Key \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.3 \n HIGH \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H \n \n \n \n \n \n \n \n CVE-2026-41125 \n \n Improper neutralization of special elements used in an sql command ('sql injection') in KACO Meteor server allows an authorized attacker to elevate privileges over a local network. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. KACO new energy GmbH has released new versions for several affected products and recommends to update to the latest versions. KACO new energy GmbH is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available."
-    },
-    "email_summary": "View CSAF \n\n Summary \n KACO blueplanet Inverters contain multiple vulnerabilities that could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. Tracked as CVE-2025-40946, CVE-2026-41125.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "30861c173ecca1d8",
-    "title": "Schneider Electric EcoStruxure Panel Server",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-03",
-    "published": "2026-06-09T12:00:00+00:00",
-    "fetched_at": "2026-06-09T18:02:40.243388+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-06-09",
-    "cves": [
-      "CVE-2026-6866"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Schneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. The EcoStruxure Panel Server is a high performance, modular gateway with enhanced cybersecurity that provides easy and fast connections to multiple concurrent edge control or cloud applications.",
-      "technical": "The following versions of Schneider Electric EcoStruxure Panel Server are affected:\n\n \n EcoStruxure Panel Server PAS800 vers:intdot/<=002.005.000 \n\n EcoStruxure Panel Server PAS800 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS800V2 vers:intdot/<=002.005.000\n\n EcoStruxure Panel Server PAS800V2 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS600 vers:intdot/<=002.005.000 \n\n EcoStruxure Panel Server PAS600 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS600V2 vers:intdot/<=002.005.000\n\n EcoStruxure Panel Server PAS600V2 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS400 vers:intdot/<=002.005.000 \n\n EcoStruxure Panel Server PAS400 vers:intdot/=002.006.000 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Schneider Electric \n Schneider Electric EcoStruxure Panel Server \n Initialization of a Resource with an Insecure Default \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: France\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6866 \n \n CWE-1188 Initialization of a Resource with an Insecure Default vulnerability exists that could cause unauthorized disclosure of sensitive information when credentials revert to initial settings in rare circumstances, enabling unauthorized authentication using known credentials\n\n View CVE Details \n\n \n Affected Products \n Schneider Electric EcoStruxure Panel Server \n \n Vendor: \nSchneider Electric \n Product Version: \nEcoStruxure Panel Server PAS800 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS800V2 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS600 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS600V2 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS400 Versions 002.005.000 and prior \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS800_Fir mware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS800_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS800V2_F irmware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS800V2_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS600_Fir mware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS600_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS600V2_ Firmware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS600V2_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS400_Fir mware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS400_Firmware_Package/ \n\n \n Relevant CWE: CWE-1188 Initialization of a Resource with an Insecure Default \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.5 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Schneider Electric CPCERT reported this vulnerability to CISA. View CSAF \n\n Summary \n Schneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. A Schneider Electric Partner reported this vulnerability to Schneider Electric. For More Information \n This document provides an overview of the identified vulnerability or vulnerabilities and actions required to mitigate.\n\nReferenced vulnerabilities: CVE-2026-6866.",
-      "impact": "The following versions of Schneider Electric EcoStruxure Panel Server are affected:\n\n \n EcoStruxure Panel Server PAS800 vers:intdot/<=002.005.000 \n\n EcoStruxure Panel Server PAS800 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS800V2 vers:intdot/<=002.005.000\n\n EcoStruxure Panel Server PAS800V2 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS600 vers:intdot/<=002.005.000 \n\n EcoStruxure Panel Server PAS600 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS600V2 vers:intdot/<=002.005.000\n\n EcoStruxure Panel Server PAS600V2 vers:intdot/=002.006.000 \n\n EcoStruxure Panel Server PAS400 vers:intdot/<=002.005.000 \n\n EcoStruxure Panel Server PAS400 vers:intdot/=002.006.000 \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.5 \n Schneider Electric \n Schneider Electric EcoStruxure Panel Server \n Initialization of a Resource with an Insecure Default \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: France\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6866 \n \n CWE-1188 Initialization of a Resource with an Insecure Default vulnerability exists that could cause unauthorized disclosure of sensitive information when credentials revert to initial settings in rare circumstances, enabling unauthorized authentication using known credentials\n\n View CVE Details \n\n \n Affected Products \n Schneider Electric EcoStruxure Panel Server \n \n Vendor: \nSchneider Electric \n Product Version: \nEcoStruxure Panel Server PAS800 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS800V2 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS600 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS600V2 Versions 002.005.000 and prior, EcoStruxure Panel Server PAS400 Versions 002.005.000 and prior \n Product Status: \nfixed, known_affected \n \n \n Remediations \n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS800_Fir mware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS800_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS800V2_F irmware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS800V2_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS600_Fir mware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS600_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS600V2_ Firmware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS600V2_Firmware_Package/ \n\n Vendor fix \nVersion 002.006.000 of EcoStruxure Panel Server includes a fix for this vulnerability and is available for download here: • https://www.se.com/ww/en/download/document/PAS400_Fir mware_Package/ • Reboot needed: Yes\n https://www.se.com/ww/en/download/document/PAS400_Firmware_Package/ \n\n \n Relevant CWE: CWE-1188 Initialization of a Resource with an Insecure Default \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.5 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Schneider Electric CPCERT reported this vulnerability to CISA. We are a people company with an ecosystem of 150,000 colleagues and more than a million partners operating in over 100 countries to ensure proximity to our customers and stakeholders. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "For further information related to cybersecurity in Schneider Electric's products, visit the company's cybersecurity support portal page: https://www.se.com/ww/en/work/support/cybersecurity/overview.jsp\n\n \n LEGAL DISCLAIMER \n THIS NOTIFICATION DOCUMENT, THE INFORMATION CONTAINED HEREIN, AND ANY MATERIALS LINKED FROM IT (COLLECTIVELY, THIS “NOTIFICATION”) ARE INTENDED TO HELP PROVIDE AN OVERVIEW OF THE IDENTIFIED SITUATION AND SUGGESTED MITIGATION ACTIONS, REMEDIATION, FIX, AND/OR GENERAL SECURITY RECOMMENDATIONS AND IS PROVIDED ON AN “AS-IS” BASIS WITHOUT WARRANTY OR GUARANTEE OF ANY KIND. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. General Security Recommendations \n We strongly recommend the following industry cybersecurity best practices. * Locate control and safety system networks and remote devices behind firewalls and isolate them from the business network. * Install physical controls so no unauthorized personnel can access your industrial control and safety systems, components, peripheral equipment, and networks. * Place all controllers in locked cabinets and never leave them in the “Program” mode. * Never connect programming software to any network other than the network intended for that device. * Scan all methods of mobile data exchange with the isolated network such as CDs, USB drives, etc. before use in the terminals or any node connected to these networks. * Never allow mobile devices that have connected to any other network besides the intended network to connect to the safety or control networks without proper sanitation. * Minimize network exposure for all control system devices and systems and ensure that they are not accessible from the Internet. * When remote access is required, use secure methods, such as Virtual Private Networks (VPNs). Recognize that VPNs may have vulnerabilities and should be updated to the most current version available."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Schneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. Tracked as CVE-2026-6866.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "2018d12c17d04a7a",
-    "title": "Schneider Electric Modicon Network Managed Switches",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-01",
-    "published": "2026-06-09T12:00:00+00:00",
-    "fetched_at": "2026-06-09T18:02:40.244808+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-06-09",
-    "cves": [
-      "CVE-2024-3596"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Schneider Electric is aware of a RADIUS protocol vulnerability affecting its Modicon Network Managed Switch product. The Modicon Network Managed Switch product provides connectivity for multiple Ethernet devices, network management, enhanced cyber security and more advanced switching features.",
-      "technical": "View CSAF \n\n Summary \n Schneider Electric is aware of a RADIUS protocol vulnerability affecting its Modicon Network Managed Switch product. The following versions of Schneider Electric Modicon Network Managed Switches are affected:\n\n \n Connexium Managed Switches vers:all/* \n\n Modicon Managed Switches vers:all/* \n\n Modicon Redundancy Switches vers:all/* \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9 \n Schneider Electric \n Schneider Electric Modicon Network Managed Switches \n Improper Enforcement of Message Integrity During Transmission in a Communication Channel \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Energy, Food and Agriculture, Government Services and Facilities, Transportation Systems, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: France\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2024-3596 \n \n Additional information about CVE-2024-3596 can be found here:https://www.cve.org/CVERecord?id=CVE-2024-3596\n\n View CVE Details \n\n \n Affected Products \n Schneider Electric Modicon Network Managed Switches \n \n Vendor: \nSchneider Electric \n Product Version: \nConnexium Managed Switches All Versions, Modicon Managed Switches All Versions, Modicon Redundancy Switches All Versions \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe default RADIUS configuration is not vulnerable. This parameter can be configured via CLI and SNMP:MCSESR* CLI: radius server auth modify msgauth MIB: hm2AgentRadiusServerMsgAuth\n\n \n Relevant CWE: CWE-924 Improper Enforcement of Message Integrity During Transmission in a Communication Channel \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9 \n CRITICAL \n CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Schneider Electric CPCERT reported this vulnerability to CISA. Failure to apply the mitigation provided below may risk forgery attacks in RADIUS Protocol, which could result in modification of any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response which could result in the possibility of denial of service and loss of confidentiality, integrity of the devices connected to the switch.\n\nReferenced vulnerabilities: CVE-2024-3596.",
-      "impact": "The following versions of Schneider Electric Modicon Network Managed Switches are affected:\n\n \n Connexium Managed Switches vers:all/* \n\n Modicon Managed Switches vers:all/* \n\n Modicon Redundancy Switches vers:all/* \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9 \n Schneider Electric \n Schneider Electric Modicon Network Managed Switches \n Improper Enforcement of Message Integrity During Transmission in a Communication Channel \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Energy, Food and Agriculture, Government Services and Facilities, Transportation Systems, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: France\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2024-3596 \n \n Additional information about CVE-2024-3596 can be found here:https://www.cve.org/CVERecord?id=CVE-2024-3596\n\n View CVE Details \n\n \n Affected Products \n Schneider Electric Modicon Network Managed Switches \n \n Vendor: \nSchneider Electric \n Product Version: \nConnexium Managed Switches All Versions, Modicon Managed Switches All Versions, Modicon Redundancy Switches All Versions \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe default RADIUS configuration is not vulnerable. We are a people company with an ecosystem of 150,000 colleagues and more than a million partners operating in over 100 countries to ensure proximity to our customers and stakeholders. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "For further information related to cybersecurity in Schneider Electric's products, visit the company's cybersecurity support portal page: https://www.se.com/ww/en/work/support/cybersecurity/overview.jsp\n\n \n LEGAL DISCLAIMER \n THIS NOTIFICATION DOCUMENT, THE INFORMATION CONTAINED HEREIN, AND ANY MATERIALS LINKED FROM IT (COLLECTIVELY, THIS “NOTIFICATION”) ARE INTENDED TO HELP PROVIDE AN OVERVIEW OF THE IDENTIFIED SITUATION AND SUGGESTED MITIGATION ACTIONS, REMEDIATION, FIX, AND/OR GENERAL SECURITY RECOMMENDATIONS AND IS PROVIDED ON AN “AS-IS” BASIS WITHOUT WARRANTY OR GUARANTEE OF ANY KIND. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. The following versions of Schneider Electric Modicon Network Managed Switches are affected:\n\n \n Connexium Managed Switches vers:all/* \n\n Modicon Managed Switches vers:all/* \n\n Modicon Redundancy Switches vers:all/* \n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9 \n Schneider Electric \n Schneider Electric Modicon Network Managed Switches \n Improper Enforcement of Message Integrity During Transmission in a Communication Channel \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Commercial Facilities, Energy, Food and Agriculture, Government Services and Facilities, Transportation Systems, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: France\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2024-3596 \n \n Additional information about CVE-2024-3596 can be found here:https://www.cve.org/CVERecord?id=CVE-2024-3596\n\n View CVE Details \n\n \n Affected Products \n Schneider Electric Modicon Network Managed Switches \n \n Vendor: \nSchneider Electric \n Product Version: \nConnexium Managed Switches All Versions, Modicon Managed Switches All Versions, Modicon Redundancy Switches All Versions \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nThe default RADIUS configuration is not vulnerable. This parameter can be configured via CLI and SNMP:TCSESM* CLI: radius server msgauthMIB: hmAgentRadiusServerMsgAuth\n\n Mitigation \nThe default RADIUS configuration is not vulnerable."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Schneider Electric is aware of a RADIUS protocol vulnerability affecting its Modicon Network Managed Switch product. Tracked as CVE-2024-3596.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "31229db44a29b5d8",
-    "title": "LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
-    "published": "2026-06-09T11:56:14+05:30",
-    "fetched_at": "2026-06-09T09:39:18.598087+00:00",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity flaw impacting BerriAI LiteLLM to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.",
-    "tags": [
-      "cve",
-      "exploit",
-      "vulnerability"
-    ],
-    "day": "2026-06-09",
-    "cves": [
-      "CVE-2026-42271"
-    ],
-    "cvss": 8.7,
-    "severity": "high",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity flaw impacting BerriAI LiteLLM to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.",
-    "quick_take": "",
-    "sections": {
-      "technical": "The vulnerability, tracked as CVE-2026-42271 (CVSS score: 8.7), is a command injection vulnerability that could allow any authenticated user to run arbitrary commands on the Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity flaw impacting BerriAI LiteLLM to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nReferenced vulnerabilities: CVE-2026-42271."
-    },
-    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity flaw impacting BerriAI LiteLLM to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Tracked as CVE-2026-42271. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

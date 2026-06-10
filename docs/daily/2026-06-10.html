@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">10 June 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">5 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,9 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -59,14 +61,117 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="anthropic releases claude fable 5, its most powerful ai yet, with cyber safeguards"
+       data-id="8fef7c35cc5d69ba"
+       data-published="2026-06-10T13:07:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-10T13:07:59+05:30" title="10 June 2026, 02:37">10 June 2026, 02:37</time>
+      </div>
+      <h3 class="card-title">Anthropic Releases Claude Fable 5, Its Most Powerful AI Yet, With Cyber Safeguards</h3>
+      <p class="card-summary">On June 9, Anthropic released Claude Fable 5, the most capable model it has ever made, generally available. It also did something unusual: it shipped one model as two products, split not by capability but by a layer of safety classifiers.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8fef7c35cc5d69ba.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/anthropic-releases-claude-fable-5-its.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,patch"
+       data-vendors=""
+       data-severity="high"
+       data-title="servicenow flaw exploited to gain unauthorized access to customer instances"
+       data-id="77e8b9e8bc3cd28d"
+       data-published="2026-06-10T12:32:08+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-10T12:32:08+05:30" title="10 June 2026, 02:02">10 June 2026, 02:02</time>
+      </div>
+      <h3 class="card-title">ServiceNow Flaw Exploited to Gain Unauthorized Access to Customer Instances</h3>
+      <p class="card-summary">ServiceNow has warned about a security incident in which unknown threat actors exploited a flaw to obtain deeper unauthorized access to susceptible instances.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/77e8b9e8bc3cd28d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/servicenow-flaw-exploited-to-gain.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft defender rogueplanet zero-day grants system access on updated windows"
+       data-id="2f74c09daa2c7d40"
+       data-published="2026-06-10T10:52:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-10T10:52:01+05:30" title="10 June 2026, 00:22">10 June 2026, 00:22</time>
+      </div>
+      <h3 class="card-title">Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows</h3>
+      <p class="card-summary">The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2f74c09daa2c7d40.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="exploit,vulnerability"
        data-vendors=""
@@ -97,6 +202,36 @@
       <div class="detail-links">
         <a href="../articles/d3f7725c128f5147.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/six-proto6-vulnerabilities-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="Ivanti"
+       data-severity="medium"
+       data-title="ivanti: max severity sentry flaw allows code execution as root"
+       data-id="7dab058aa55b3f4b"
+       data-published="2026-06-10T02:26:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-06-10T02:26:28-04:00" title="10 June 2026, 01:26">10 June 2026, 01:26</time>
+      </div>
+      <h3 class="card-title">Ivanti: Max severity Sentry flaw allows code execution as root</h3>
+      <p class="card-summary">Ivanti has patched two critical vulnerabilities in its Sentry secure mobile gateway solution, including a maximum-severity flaw that enables remote attackers to execute code with root privileges. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7dab058aa55b3f4b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

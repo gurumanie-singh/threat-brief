@@ -163,6 +163,33 @@
     "highlighted": false
   },
   {
+    "id": "19e7a3b3bd61ac98",
+    "title": "Max-Severity Ivanti Flaw Exploited 24 Hours After Disclosure",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ivanti-sentry-flaw-exploited-24-hours",
+    "published": "2026-06-11T18:43:57+00:00",
+    "fetched_at": "2026-06-11T22:01:46.425564+00:00",
+    "summary": "Initial methods suggest attackers had likely mapped out Ivanti's asset landscape upfront and acted quickly once the exploit became public.",
+    "tags": [
+      "exploit"
+    ],
+    "day": "2026-06-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Ivanti"
+    ],
+    "action_required": false,
+    "card_summary": "Initial methods suggest attackers had likely mapped out Ivanti's asset landscape upfront and acted quickly once the exploit became public.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Initial methods suggest attackers had likely mapped out Ivanti's asset landscape upfront and acted quickly once the exploit became public.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "c2f7816a79f02df8",
     "title": "AI Broke Vulnerability Management. That's Why CISOs Are Moving Budget to BAS.",
     "source": "The Hacker News",
@@ -185,6 +212,39 @@
       "overview": "For thirty years, vulnerability management ran on a buffer: the months between when a vulnerability was found and when someone could figure out how to weaponize it. The solution was straightforward enough; triage by severity, schedule the fix, validate, and move on. The buffer was what made that work."
     },
     "email_summary": "For thirty years, vulnerability management ran on a buffer: the months between when a vulnerability was found and when someone could figure out how to weaponize it. The solution was straightforward enough; triage by severity, schedule the fix, validate, and move on.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1d28dd1984e70315",
+    "title": "Oracle mitigates PeopleSoft zero-day exploited in data theft attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
+    "published": "2026-06-11T15:39:53-04:00",
+    "fetched_at": "2026-06-11T22:01:44.127055+00:00",
+    "summary": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273 that allows unauthenticated remote code execution, with the flaw actively exploited in ShinyHunter data theft attacks. [...]",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-06-11",
+    "cves": [
+      "CVE-2026-35273"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273 that allows unauthenticated remote code execution, with the flaw actively exploited in ShinyHunter data theft attacks. [...]",
+    "quick_take": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273 that allows unauthenticated remote code execution, with the flaw actively exploited in ShinyHunter data theft…",
+    "sections": {
+      "technical": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273 that allows unauthenticated remote code execution, with the flaw actively exploited in ShinyHunter data theft attacks. [...]\n\nReferenced vulnerabilities: CVE-2026-35273.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273 that allows unauthenticated remote code execution, with the flaw actively exploited in ShinyHunter data theft attacks. [...]. Tracked as CVE-2026-35273. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -359,6 +419,44 @@
     "highlighted": false
   },
   {
+    "id": "a06ebbb81f309e30",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/06/11/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "published": "2026-06-11T12:00:00+00:00",
+    "fetched_at": "2026-06-11T22:01:47.556808+00:00",
+    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "tags": [
+      "breach",
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-11",
+    "cves": [
+      "CVE-2026-10520"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Ivanti"
+    ],
+    "action_required": false,
+    "card_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
+    "quick_take": "",
+    "sections": {
+      "impact": "CVE-2026-10520 Ivanti Sentry OS Command Injection Vulnerability\n\n \n This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. BOD 26-04 reinforces the importance of the KEV catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-10520. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "27c9f37f1d35c994",
     "title": "Authorities dismantle 'AudiA6' ransomware crypto-laundering service",
     "source": "BleepingComputer",
@@ -490,92 +588,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) announced a new Binding Operational Directive, 26-04, that prioritizes security updates for Federal Civilian Executive Branch (FCEB) agencies. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "1513f874f66be746",
-    "title": "Microsoft fixes BitLocker recovery bug on Windows Server 2025",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bitlocker-recovery-bug-on-windows-server-2025/",
-    "published": "2026-06-11T04:44:22-04:00",
-    "fetched_at": "2026-06-11T12:44:19.126643+00:00",
-    "summary": "Microsoft has resolved a known issue causing some Windows Server 2025 devices to boot into BitLocker recovery after installing the April 2026 security update. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-06-11",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has resolved a known issue causing some Windows Server 2025 devices to boot into BitLocker recovery after installing the April 2026 security update. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft has resolved a known issue causing some Windows Server 2025 devices to boot into BitLocker recovery after installing the April 2026 security update. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "f45ebb5e9faf15b2",
-    "title": "Nottingham University data breach affects over 450,000 students",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/nottingham-university-data-breach-affects-over-450-000-students/",
-    "published": "2026-06-11T03:27:53-04:00",
-    "fetched_at": "2026-06-11T08:44:44.884417+00:00",
-    "summary": "The University of Nottingham confirmed on Wednesday that a hacking group gained access to its student records system in a breach affecting both current students and alums. [...]",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-06-11",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The University of Nottingham confirmed on Wednesday that a hacking group gained access to its student records system in a breach affecting both current students and alums. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The University of Nottingham confirmed on Wednesday that a hacking group gained access to its student records system in a breach affecting both current students and alums. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "The University of Nottingham confirmed on Wednesday that a hacking group gained access to its student records system in a breach affecting both current students and alums. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "64e91c36b3d151c1",
-    "title": "Max severity Ivanti Sentry vulnerability now exploited in attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/max-severity-ivanti-sentry-vulnerability-now-exploited-in-attacks/",
-    "published": "2026-06-11T02:20:22-04:00",
-    "fetched_at": "2026-06-11T08:44:44.884614+00:00",
-    "summary": "Attackers are now targeting a recently patched maximum-severity flaw in Ivanti Sentry, enabling them to execute code with root privileges on Internet-exposed secure mobile gateways. [...]",
-    "tags": [
-      "exploit",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-06-11",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Ivanti"
-    ],
-    "action_required": false,
-    "card_summary": "Attackers are now targeting a recently patched maximum-severity flaw in Ivanti Sentry, enabling them to execute code with root privileges on Internet-exposed secure mobile gateways. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Attackers are now targeting a recently patched maximum-severity flaw in Ivanti Sentry, enabling them to execute code with root privileges on Internet-exposed secure mobile gateways. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Attackers are now targeting a recently patched maximum-severity flaw in Ivanti Sentry, enabling them to execute code with root privileges on Internet-exposed secure mobile gateways. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

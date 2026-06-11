@@ -27,10 +27,18 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">11 June 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,13 +47,127 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+      </div>
+    </div>
+  </div>
 
+  <div class="article-card card--high"
+       data-tags=""
+       data-vendors=""
+       data-severity="high"
+       data-title="github to disable npm install scripts by default to stop supply chain attacks"
+       data-id="3f0f09f799d342a0"
+       data-published="2026-06-11T11:53:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-11T11:53:03+05:30" title="11 June 2026, 01:23">11 June 2026, 01:23</time>
+      </div>
+      <h3 class="card-title">GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks</h3>
+      <p class="card-summary">GitHub has announced what it said are &#34;breaking changes&#34; coming to npm version 12, one of which turns off install scripts by default to combat software supply chain threats.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3f0f09f799d342a0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/github-to-disable-npm-install-scripts.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="nottingham university data breach affects over 450,000 students"
+       data-id="f45ebb5e9faf15b2"
+       data-published="2026-06-11T03:27:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-11T03:27:53-04:00" title="11 June 2026, 02:27">11 June 2026, 02:27</time>
+      </div>
+      <h3 class="card-title">Nottingham University data breach affects over 450,000 students</h3>
+      <p class="card-summary">The University of Nottingham confirmed on Wednesday that a hacking group gained access to its student records system in a breach affecting both current students and alums. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f45ebb5e9faf15b2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/nottingham-university-data-breach-affects-over-450-000-students/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="Ivanti"
+       data-severity="medium"
+       data-title="max severity ivanti sentry vulnerability now exploited in attacks"
+       data-id="64e91c36b3d151c1"
+       data-published="2026-06-11T02:20:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-06-11T02:20:22-04:00" title="11 June 2026, 01:20">11 June 2026, 01:20</time>
+      </div>
+      <h3 class="card-title">Max severity Ivanti Sentry vulnerability now exploited in attacks</h3>
+      <p class="card-summary">Attackers are now targeting a recently patched maximum-severity flaw in Ivanti Sentry, enabling them to execute code with root privileges on Internet-exposed secure mobile gateways. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/64e91c36b3d151c1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/max-severity-ivanti-sentry-vulnerability-now-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">12 June 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -37,6 +37,7 @@
       <ul class="strip-bullets">
         <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
@@ -64,6 +65,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
@@ -72,12 +74,13 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
@@ -85,6 +88,67 @@
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="agentjacking attack tricks ai coding agents into running malicious code"
+       data-id="0332ec26795499a8"
+       data-published="2026-06-12T17:34:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-12T17:34:33+05:30" title="12 June 2026, 07:04">12 June 2026, 07:04</time>
+      </div>
+      <h3 class="card-title">Agentjacking Attack Tricks AI Coding Agents Into Running Malicious Code</h3>
+      <p class="card-summary">Cybersecurity researchers have described what they say is a new class of attack that can trick artificial intelligence (AI) coding agents into running arbitrary code on developer machines.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0332ec26795499a8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="rethinking mdr as attackers and defenders embrace ai"
+       data-id="52200bba7a8749f8"
+       data-published="2026-06-12T16:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-12T16:30:00+05:30" title="12 June 2026, 06:00">12 June 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">Rethinking MDR as Attackers and Defenders Embrace AI</h3>
+      <p class="card-summary">For most of the past decade, managed detection and response was the answer to a real problem. Security teams couldn&#39;t staff around the clock, couldn&#39;t hire enough analysts, and needed someone else to handle the alert queue.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/52200bba7a8749f8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/rethinking-mdr-as-attackers-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="patch,vulnerability"
        data-vendors="AWS"
@@ -148,6 +212,34 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="claude fable 5 doesn&#39;t change the mythos security story"
+       data-id="9032dbaf847e0b47"
+       data-published="2026-06-12T13:01:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-12T13:01:00+00:00" title="12 June 2026, 08:01">12 June 2026, 08:01</time>
+      </div>
+      <h3 class="card-title">Claude Fable 5 Doesn&#39;t Change the Mythos Security Story</h3>
+      <p class="card-summary">Stay cool: Mythos 5 is an upgrade over Mythos Preview while Fable 5 is Mythos &#34;made safe for general use,&#34; Anthropic explained.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9032dbaf847e0b47.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/claude-fable-5-doesnt-change-mythos-security-story" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="ransomware"
        data-vendors=""
        data-severity="medium"
@@ -175,6 +267,65 @@
       <div class="detail-links">
         <a href="../articles/5a7b82f7b47a7129.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes windows update failures linked to wusa installer"
+       data-id="fae3b447ff7a1d00"
+       data-published="2026-06-12T07:44:58-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-12T07:44:58-04:00" title="12 June 2026, 06:44">12 June 2026, 06:44</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes Windows update failures linked to WUSA installer</h3>
+      <p class="card-summary">Microsoft has fixed a known issue that caused Windows updates released since May 2025 to fail when installed via the Windows Update Standalone Installer (WUSA) from a network share. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fae3b447ff7a1d00.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-update-failures-linked-to-wusa-installer/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="pharma giant novo nordisk discloses breach of clinical trials data"
+       data-id="a3d22b7d1418316e"
+       data-published="2026-06-12T06:13:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-12T06:13:19-04:00" title="12 June 2026, 05:13">12 June 2026, 05:13</time>
+      </div>
+      <h3 class="card-title">Pharma giant Novo Nordisk discloses breach of clinical trials data</h3>
+      <p class="card-summary">Danish pharmaceutical giant Novo Nordisk, the world&#39;s largest producer of insulin, disclosed a data breach affecting patient information from some clinical trials. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a3d22b7d1418316e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/pharmaceutical-giant-novo-nordisk-discloses-security-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

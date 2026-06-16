@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">16 June 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -47,6 +50,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -62,6 +66,11 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
@@ -69,11 +78,209 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="fake microsoft alerts used to deploy north korean narwhalrat malware"
+       data-id="e0c52c8bf5cec1d1"
+       data-published="2026-06-16T13:44:55+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-16T13:44:55+05:30" title="16 June 2026, 03:14">16 June 2026, 03:14</time>
+      </div>
+      <h3 class="card-title">Fake Microsoft Alerts Used to Deploy North Korean NarwhalRAT Malware</h3>
+      <p class="card-summary">The North Korean state-sponsored hacking group known as ScarCruft (aka APT37) has been observed using spear-phishing messages impersonating Microsoft Account security notifications to deliver malware called NarwhalRAT.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e0c52c8bf5cec1d1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/fake-microsoft-alerts-used-to-deploy.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="cisco releases security updates for actively exploited sd-wan manager flaw"
+       data-id="1a4d1b37aafc8fe6"
+       data-published="2026-06-16T11:35:58+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-06-16T11:35:58+05:30" title="16 June 2026, 01:05">16 June 2026, 01:05</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Cisco Releases Security Updates for Actively Exploited SD-WAN Manager Flaw</h3>
+      <p class="card-summary">Cisco has released security updates for a medium-severity security flaw in Catalyst SD-WAN Manager that has come under active exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1a4d1b37aafc8fe6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa flags litespeed cpanel plugin flaw exploited for root privilege escalation"
+       data-id="4c5d0d3437f6c517"
+       data-published="2026-06-16T11:11:52+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-16T11:11:52+05:30" title="16 June 2026, 00:41">16 June 2026, 00:41</time>
+      </div>
+      <h3 class="card-title">CISA Flags LiteSpeed cPanel Plugin Flaw Exploited for Root Privilege Escalation</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw impacting LiteSpeed cPanel Plugin to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by June…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw impacting LiteSpeed cPanel Plugin to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by June 18, 2026.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4c5d0d3437f6c517.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS,Fortinet"
+       data-severity="medium"
+       data-title="critical fortinet fortisandbox flaws now exploited in attacks"
+       data-id="a2e16ad40d04b437"
+       data-published="2026-06-16T05:19:51-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-06-16T05:19:51-04:00" title="16 June 2026, 04:19">16 June 2026, 04:19</time>
+      </div>
+      <h3 class="card-title">Critical Fortinet FortiSandbox flaws now exploited in attacks</h3>
+      <p class="card-summary">Attackers are now exploiting several critical vulnerabilities in Fortinet&#39;s FortiSandbox cyber threat detection platform, according to threat intelligence company Defused. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a2e16ad40d04b437.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/critical-fortinet-fortisandbox-flaws-now-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux,Microsoft"
+       data-severity="medium"
+       data-title="windows version of sprysocks linux malware used to attack govt orgs"
+       data-id="fa24098c89d9b3be"
+       data-published="2026-06-16T05:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-16T05:00:00-04:00" title="16 June 2026, 04:00">16 June 2026, 04:00</time>
+      </div>
+      <h3 class="card-title">Windows version of SprySOCKS Linux malware used to attack govt orgs</h3>
+      <p class="card-summary">Windows variants for the SprySOCKS Linux malware have been used in attacks targeting government organizations in at least four countries. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fa24098c89d9b3be.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/windows-version-of-sprysocks-linux-malware-used-to-attack-govt-orgs/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="irhythm discloses data breach, says hackers stole patient info"
+       data-id="f9ae1d8a5a7af279"
+       data-published="2026-06-16T02:31:59-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-16T02:31:59-04:00" title="16 June 2026, 01:31">16 June 2026, 01:31</time>
+      </div>
+      <h3 class="card-title">iRhythm discloses data breach, says hackers stole patient info</h3>
+      <p class="card-summary">Digital healthcare company iRhythm Holdings has disclosed a data breach after hackers stole patients&#39; personal and health information stored on third-party-hosted business applications. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f9ae1d8a5a7af279.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/irhythm-discloses-data-breach-says-hackers-stole-patient-info/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Google"

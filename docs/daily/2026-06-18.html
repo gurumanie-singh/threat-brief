@@ -27,10 +27,20 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">18 June 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>3 high-severity advisories published today</li>
+        <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,21 +64,184 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="orphaned ai agents: how to find hidden access risks inside your network"
+       data-id="d18283c704fb16f4"
+       data-published="2026-06-18T21:03:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T21:03:49+05:30" title="18 June 2026, 10:33">18 June 2026, 10:33</time>
+      </div>
+      <h3 class="card-title">Orphaned AI Agents: How to Find Hidden Access Risks Inside Your Network</h3>
+      <p class="card-summary">If an autonomous AI agent interacts with your company&#39;s core intellectual property today, can your security team instantly name the person who authorized it?</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d18283c704fb16f4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="threatsday bulletin: claude chat abuse, nastyc2 npm packages, device-code phishing + 25 more stories"
+       data-id="6886407d66009fca"
+       data-published="2026-06-18T20:57:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-18T20:57:54+05:30" title="18 June 2026, 10:27">18 June 2026, 10:27</time>
+      </div>
+      <h3 class="card-title">ThreatsDay Bulletin: Claude Chat Abuse, NastyC2 npm Packages, Device-Code Phishing + 25 More Stories</h3>
+      <p class="card-summary">The internet did not break this week. It got used exactly as designed, which is worse.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6886407d66009fca.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/threatsday-bulletin-claude-chat-abuse.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft details windows clipper malware campaign using usb lnk worm and tor-based c2"
+       data-id="30d08d7cb513a405"
+       data-published="2026-06-18T20:00:42+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T20:00:42+05:30" title="18 June 2026, 09:30">18 June 2026, 09:30</time>
+      </div>
+      <h3 class="card-title">Microsoft Details Windows Clipper Malware Campaign Using USB LNK Worm and Tor-Based C2</h3>
+      <p class="card-summary">Microsoft has disclosed details of a Windows-based cryptocurrency clipper campaign that has targeted users since February 2026.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/30d08d7cb513a405.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="inc ransomware emerges as major raas threat in 2026 with 830+ victims since 2023"
+       data-id="4e62e6e062437dad"
+       data-published="2026-06-18T19:42:48+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T19:42:48+05:30" title="18 June 2026, 09:12">18 June 2026, 09:12</time>
+      </div>
+      <h3 class="card-title">INC Ransomware Emerges as Major RaaS Threat in 2026 with 830+ Victims Since 2023</h3>
+      <p class="card-summary">Cybersecurity researchers have charted the evolution of INC from an nascent ransomware-as-a-service (RaaS) operation to one of the most prolific cybercrime groups in 2026, claiming no less than 830 victims since August 2023.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4e62e6e062437dad.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,ransomware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="dragonforce hackers abuse microsoft teams relays to hide backdoor.turn c2 traffic"
+       data-id="27384e4ebdab9ef3"
+       data-published="2026-06-18T19:00:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T19:00:07+05:30" title="18 June 2026, 08:30">18 June 2026, 08:30</time>
+      </div>
+      <h3 class="card-title">DragonForce Hackers Abuse Microsoft Teams Relays to Hide Backdoor.Turn C2 Traffic</h3>
+      <p class="card-summary">Threat actors associated with the DragonForce ransomware have been observed using a custom Go-based remote access trojan (RAT) called Backdoor.Turn to conceal command-and-control (C2) traffic inside Microsoft Teams relay infrastructure.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/27384e4ebdab9ef3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -126,6 +300,251 @@
       <div class="detail-links">
         <a href="../articles/9ac3ea8dcd25b424.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/events/anatomy-of-a-data-breach-what-to-do-if-it-happens-to-you" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="get out of security debt by tackling the exposure problem"
+       data-id="b6d9f237f9abffa1"
+       data-published="2026-06-18T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T13:00:00+00:00" title="18 June 2026, 08:00">18 June 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Get Out of Security Debt by Tackling the Exposure Problem</h3>
+      <p class="card-summary">Teams digging out of security debt need to answer only two simple questions: Which vulnerabilities in our systems are exposed, and how long should they stay that way?</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b6d9f237f9abffa1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/security-debt-tackle-exposure-problem" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="usb worm spreads crypto-stealing malware via windows shortcut files"
+       data-id="82d56a2c41fca3b7"
+       data-published="2026-06-18T12:20:06-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T12:20:06-04:00" title="18 June 2026, 11:20">18 June 2026, 11:20</time>
+      </div>
+      <h3 class="card-title">USB worm spreads crypto-stealing malware via Windows shortcut files</h3>
+      <p class="card-summary">Threat actors targeting cryptocurrency wallets have been distributing clipboard-stealing malware with self-spreading capabilities and using the Tor network to conceal communication. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/82d56a2c41fca3b7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/usb-worm-spreads-crypto-stealing-malware-via-windows-shortcut-files/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="klue oauth breach linked to &#39;icarus&#39; salesforce data theft attacks"
+       data-id="c4d0a33bceff396f"
+       data-published="2026-06-18T10:19:50-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T10:19:50-04:00" title="18 June 2026, 09:19">18 June 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">Klue OAuth breach linked to &#39;Icarus&#39; Salesforce data theft attacks</h3>
+      <p class="card-summary">Market intelligence platform Klue suffered a OAuth breach that enabled the &#34;Icarus&#34; threat actors to steal Salesforce CRM data from multiple organizations in an ongoing extortion campaign. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c4d0a33bceff396f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="5 reasons microsoft 365 backup isn’t enough for business data protection"
+       data-id="ac3614c8b74218f0"
+       data-published="2026-06-18T09:48:56-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T09:48:56-04:00" title="18 June 2026, 08:48">18 June 2026, 08:48</time>
+      </div>
+      <h3 class="card-title">5 reasons Microsoft 365 backup isn’t enough for business data protection</h3>
+      <p class="card-summary">Microsoft 365 helps keep services running, but protecting and recovering business data remains your responsibility. Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ac3614c8b74218f0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/5-reasons-microsoft-365-backup-isnt-enough-for-business-data-protection/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="police cleans nearly 15,000 socgholish-infected sites tied to evil corp"
+       data-id="a3a6a5878aa65323"
+       data-published="2026-06-18T09:25:47-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T09:25:47-04:00" title="18 June 2026, 08:25">18 June 2026, 08:25</time>
+      </div>
+      <h3 class="card-title">Police cleans nearly 15,000 SocGholish-infected sites tied to Evil Corp</h3>
+      <p class="card-summary">International law enforcement agencies cleaned nearly 15,000 malware-infected WordPress websites and took down more than 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a3a6a5878aa65323.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="high"
+       data-title="shapedplugin update flow hacked to infect wordpress sites"
+       data-id="31839b34d4c1e099"
+       data-published="2026-06-18T08:55:36-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-18T08:55:36-04:00" title="18 June 2026, 07:55">18 June 2026, 07:55</time>
+      </div>
+      <h3 class="card-title">ShapedPlugin update flow hacked to infect WordPress sites</h3>
+      <p class="card-summary">Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack that distributed infected releases to paying customers via the vendor&#39;s official update system. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/31839b34d4c1e099.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors="Fortinet"
+       data-severity="medium"
+       data-title="fortibleed leak exposes fortinet vpn credentials for 73,000 devices."
+       data-id="d6dc46d56f63ddd1"
+       data-published="2026-06-18T08:54:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-06-18T08:54:39-04:00" title="18 June 2026, 07:54">18 June 2026, 07:54</time>
+      </div>
+      <h3 class="card-title">FortiBleed leak exposes Fortinet VPN credentials for 73,000 devices.</h3>
+      <p class="card-summary">A newly discovered data leak dubbed &#34;FortiBleed&#34; has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d6dc46d56f63ddd1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="patch"
+       data-vendors="Apple"
+       data-severity="high"
+       data-title="apple fixes beats studio buds flaw that let hackers spy on conversations"
+       data-id="f652f83df8907516"
+       data-published="2026-06-18T08:23:58-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-18T08:23:58-04:00" title="18 June 2026, 07:23">18 June 2026, 07:23</time>
+      </div>
+      <h3 class="card-title">Apple fixes Beats Studio Buds flaw that let hackers spy on conversations</h3>
+      <p class="card-summary">Apple has released security updates to patch a high-severity flaw affecting the Beats Studio Buds wireless earbuds that could allow attackers in Bluetooth range to spy on users&#39; conversations. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f652f83df8907516.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-beats-studio-buds-flaw-that-let-hackers-spy-on-conversations/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

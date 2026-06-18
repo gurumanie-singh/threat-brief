@@ -28,13 +28,15 @@
       <h1 class="brief-title">18 June 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-06-18T11:28:51.942573-05:00">18 June 2026, 11:28</time>
+        <time data-iso="2026-06-18T14:25:58.589805-05:00">18 June 2026, 14:25</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-high">3 high</span>
-      <span class="stat">19 articles today</span>
+      <span class="stat stat-critical">2 critical</span>
+      <span class="stat stat-high">2 high</span>
+      <span class="stat stat-action">2 action req.</span>
+      <span class="stat">20 articles today</span>
     </div>
   </div>
 
@@ -42,20 +44,21 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 high-severity advisories published today</li>
-        <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">microsoft<span class="trend-count">9</span></span>
-        <span class="trend-pill">breach<span class="trend-count">9</span></span>
         <span class="trend-pill">malware<span class="trend-count">8</span></span>
-        <span class="trend-pill">security<span class="trend-count">8</span></span>
-        <span class="trend-pill">windows<span class="trend-count">7</span></span>
-        <span class="trend-pill">attacks<span class="trend-count">7</span></span>
+        <span class="trend-pill">breach<span class="trend-count">8</span></span>
+        <span class="trend-pill">exploited<span class="trend-count">8</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">7</span></span>
+        <span class="trend-pill">packages<span class="trend-count">6</span></span>
+        <span class="trend-pill">windows<span class="trend-count">6</span></span>
       </div>
     </div>
   </div>
@@ -90,9 +93,9 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
       </div>
@@ -103,10 +106,10 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
@@ -152,10 +155,42 @@
   <div class="day-group">
     <h2 class="day-heading">
       18 June 2026
-      <span class="day-count">19</span>
+      <span class="day-count">20</span>
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="f5 patches two critical nginx open source flaws enabling remote code execution"
+       data-id="e5fe5065224885a2"
+       data-published="2026-06-18T23:02:14+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-06-18T23:02:14+05:30" title="18 June 2026, 12:32">18 June 2026, 12:32</time>
+      </div>
+      <h3 class="card-title">F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution</h3>
+      <p class="card-summary">F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e5fe5065224885a2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -316,6 +351,103 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fifa bug exposed world cup streams to remote takeover"
+       data-id="2c5b296f33ce8d74"
+       data-published="2026-06-18T18:20:07+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T18:20:07+00:00" title="18 June 2026, 13:20">18 June 2026, 13:20</time>
+      </div>
+      <h3 class="card-title">FIFA Bug Exposed World Cup Streams to Remote Takeover</h3>
+      <p class="card-summary">A hacker could have &#34;Rickrolled&#34; the World Cup — or worse — thanks to FIFA&#39;s unenforced Entra access controls.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/2c5b296f33ce8d74.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="apt,breach,malware,vulnerability"
+       data-vendors="Google,Microsoft"
+       data-severity="high"
+       data-title="‘popa’ botnet linked to publicly-traded israeli firm"
+       data-id="43cc148279396233"
+       data-published="2026-06-18T17:37:58+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T17:37:58+00:00" title="18 June 2026, 12:37">18 June 2026, 12:37</time>
+      </div>
+      <h3 class="card-title">‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm</h3>
+      <p class="card-summary">For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to NetNut , a residential proxy provider operated by the publicly-traded Israeli firm...</p></div>
+      <div class="detail-links">
+        <a href="articles/43cc148279396233.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="salesforce data thefts continue via klue app compromise"
+       data-id="73de996590fdc739"
+       data-published="2026-06-18T16:49:04+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T16:49:04+00:00" title="18 June 2026, 11:49">18 June 2026, 11:49</time>
+      </div>
+      <h3 class="card-title">Salesforce Data Thefts Continue via Klue App Compromise</h3>
+      <p class="card-summary">Klue&#39;s Battlecards is now the third integrated application that has been compromised to steal customers&#39; Salesforce data, and victims include Huntress, the cybersecurity vendor.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/73de996590fdc739.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/salesforce-data-thefts-klue-app-compromise" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
        data-severity="medium"
@@ -373,6 +505,38 @@
       <div class="detail-links">
         <a href="articles/9ac3ea8dcd25b424.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/events/anatomy-of-a-data-breach-what-to-do-if-it-happens-to-you" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="nintendo confirms data stolen in webmd subsidiary cyberattack"
+       data-id="f14e3961c74785cf"
+       data-published="2026-06-18T14:31:36-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-18T14:31:36-04:00" title="18 June 2026, 13:31">18 June 2026, 13:31</time>
+      </div>
+      <h3 class="card-title">Nintendo confirms data stolen in WebMD subsidiary cyberattack</h3>
+      <p class="card-summary">Nintendo of America has confirmed to BleepingComputer that threat actors stole survey data from the third-party TinyPulse service used internally, but its systems were not compromised. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/f14e3961c74785cf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/nintendo-confirms-data-stolen-in-webmd-subsidiary-cyberattack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -436,314 +600,260 @@
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="breach,vulnerability"
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
-       data-severity="medium"
-       data-title="klue oauth breach linked to &#39;icarus&#39; salesforce data theft attacks"
-       data-id="c4d0a33bceff396f"
-       data-published="2026-06-18T10:19:50-04:00"
+       data-severity="low"
+       data-title="apollo pharmacy blood glucose monitoring system apg-01 bt"
+       data-id="d1f57a1d634ca934"
+       data-published="2026-06-18T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-18T10:19:50-04:00" title="18 June 2026, 09:19">18 June 2026, 09:19</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-18T12:00:00+00:00" title="18 June 2026, 07:00">18 June 2026, 07:00</time>
       </div>
-      <h3 class="card-title">Klue OAuth breach linked to &#39;Icarus&#39; Salesforce data theft attacks</h3>
-      <p class="card-summary">Market intelligence platform Klue suffered a OAuth breach that enabled the &#34;Icarus&#34; threat actors to steal Salesforce CRM data from multiple organizations in an ongoing extortion campaign. [...]</p>
+      <h3 class="card-title">Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
-          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
           <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive health-related information and prevent legitimate users from establishing a connection with the device. The following versions of Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT are affected:</p>
+<p>Blood Glucose Monitoring System (Model No.</p></div>
       <div class="detail-links">
-        <a href="articles/c4d0a33bceff396f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/d1f57a1d634ca934.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-169-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="5 reasons microsoft 365 backup isn’t enough for business data protection"
-       data-id="ac3614c8b74218f0"
-       data-published="2026-06-18T09:48:56-04:00"
+  <div class="article-card card--critical"
+       data-tags="breach,cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa adds one known exploited vulnerability to catalog"
+       data-id="5833916af21dcd83"
+       data-published="2026-06-18T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T09:48:56-04:00" title="18 June 2026, 08:48">18 June 2026, 08:48</time>
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-18T12:00:00+00:00" title="18 June 2026, 07:00">18 June 2026, 07:00</time>
       </div>
-      <h3 class="card-title">5 reasons Microsoft 365 backup isn’t enough for business data protection</h3>
-      <p class="card-summary">Microsoft 365 helps keep services running, but protecting and recovering business data remains your responsibility. Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...]</p>
+      <h3 class="card-title">CISA Adds One Known Exploited Vulnerability to Catalog</h3>
+      <p class="card-summary">CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
       <div class="card-bottom">
         <div class="card-hints">
 <span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ac3614c8b74218f0.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/5-reasons-microsoft-365-backup-isnt-enough-for-business-data-protection/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="police cleans nearly 15,000 socgholish-infected sites tied to evil corp"
-       data-id="a3a6a5878aa65323"
-       data-published="2026-06-18T09:25:47-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-18T09:25:47-04:00" title="18 June 2026, 08:25">18 June 2026, 08:25</time>
-      </div>
-      <h3 class="card-title">Police cleans nearly 15,000 SocGholish-infected sites tied to Evil Corp</h3>
-      <p class="card-summary">International law enforcement agencies cleaned nearly 15,000 malware-infected WordPress websites and took down more than 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a3a6a5878aa65323.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="high"
-       data-title="shapedplugin update flow hacked to infect wordpress sites"
-       data-id="31839b34d4c1e099"
-       data-published="2026-06-18T08:55:36-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-06-18T08:55:36-04:00" title="18 June 2026, 07:55">18 June 2026, 07:55</time>
-      </div>
-      <h3 class="card-title">ShapedPlugin update flow hacked to infect WordPress sites</h3>
-      <p class="card-summary">Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack that distributed infected releases to paying customers via the vendor&#39;s official update system. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
           <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/31839b34d4c1e099.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors="Fortinet"
-       data-severity="medium"
-       data-title="fortibleed leak exposes fortinet vpn credentials for 73,000 devices."
-       data-id="d6dc46d56f63ddd1"
-       data-published="2026-06-18T08:54:39-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-06-18T08:54:39-04:00" title="18 June 2026, 07:54">18 June 2026, 07:54</time>
-      </div>
-      <h3 class="card-title">FortiBleed leak exposes Fortinet VPN credentials for 73,000 devices.</h3>
-      <p class="card-summary">A newly discovered data leak dubbed &#34;FortiBleed&#34; has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/d6dc46d56f63ddd1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="patch"
-       data-vendors="Apple"
-       data-severity="high"
-       data-title="apple fixes beats studio buds flaw that let hackers spy on conversations"
-       data-id="f652f83df8907516"
-       data-published="2026-06-18T08:23:58-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-18T08:23:58-04:00" title="18 June 2026, 07:23">18 June 2026, 07:23</time>
-      </div>
-      <h3 class="card-title">Apple fixes Beats Studio Buds flaw that let hackers spy on conversations</h3>
-      <p class="card-summary">Apple has released security updates to patch a high-severity flaw affecting the Beats Studio Buds wireless earbuds that could allow attackers in Bluetooth range to spy on users&#39; conversations. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/f652f83df8907516.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-beats-studio-buds-flaw-that-let-hackers-spy-on-conversations/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="telegram admits it couldn&#39;t police exam-leak channels, india tells court"
-       data-id="339f2b2a4091ab25"
-       data-published="2026-06-18T08:18:49-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-18T08:18:49-04:00" title="18 June 2026, 07:18">18 June 2026, 07:18</time>
-      </div>
-      <h3 class="card-title">Telegram admits it couldn&#39;t police exam-leak channels, India tells court</h3>
-      <p class="card-summary">India&#39;s government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers. Telegram says it cooperated and the ban…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>India&#39;s government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers. Telegram says it cooperated and the ban is unlawful. [...]</p></div>
-      <div class="detail-links">
-        <a href="articles/339f2b2a4091ab25.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/telegram-admits-it-couldnt-police-exam-leak-channels-india-tells-court/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="patch,vulnerability"
-       data-vendors="AWS"
-       data-severity="medium"
-       data-title="f5 issues out-of-band patches for critical nginx vulnerabilities"
-       data-id="48117c2cac844ed3"
-       data-published="2026-06-18T07:33:00-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-06-18T07:33:00-04:00" title="18 June 2026, 06:33">18 June 2026, 06:33</time>
-      </div>
-      <h3 class="card-title">F5 issues out-of-band patches for critical NGINX vulnerabilities</h3>
-      <p class="card-summary">Cybersecurity company F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws that could allow attackers to execute code on vulnerable systems. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="articles/48117c2cac844ed3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/f5-issues-out-of-band-patches-for-critical-nginx-vulnerabilities/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/5833916af21dcd83.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-adds-one-known-exploited-vulnerability-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags=""
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
        data-vendors=""
-       data-severity="medium"
-       data-title="eu gets a head start in developing 6g network security"
-       data-id="d663e3c3276845a7"
-       data-published="2026-06-18T07:00:00+00:00"
-       data-action="">
+       data-severity="low"
+       data-title="schneider electric easylogic t150 and saitel dp"
+       data-id="4f425fd4d157ce71"
+       data-published="2026-06-18T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-18T07:00:00+00:00" title="18 June 2026, 02:00">18 June 2026, 02:00</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-18T12:00:00+00:00" title="18 June 2026, 07:00">18 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">EU Gets a Head Start in Developing 6G Network Security</h3>
-      <p class="card-summary">&#34;Shield-6G&#34; will combine AI threat detection, digital twins, honeypots, and more, to help carriers protect 6G networks against the threats of tomorrow.</p>
+      <h3 class="card-title">Schneider Electric EasyLogic T150 and Saitel DP</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
         </div>
       </div>
-      <span class="card-source">Dark Reading</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation this vulnerability could allow an attacker to gain unauthorized access to sensitive files</p>
+<p>The following versions of Schneider Electric EasyLogic T150 and Saitel DP are affected:</p>
+<p>Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller (All versions) vers:semver/&lt;=11.06.31 (CVE-2026-6865)</p>
+<p>Schneider Electric Saitel DP Remote Terminal Unit &amp; Controller Firmware installed on Schneider Electric Saitel DP Remote Terminal Unit &amp; Controller (All versions) vers:semver/&lt;=11.06.36 (CVE-2026-6865)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.1   Schneider Electric   Schneider Electric EasyLogic T150 and Saitel DP   Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)           Background     Critical Infrastructure Sectors: Energy, Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: France</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-6865     CWE-22: Improper Limitation of a Pathname to a Restricted Directory (&#34;Path Traversal&#34;) vulnerability that could cause unauthorized access to sensitive files when user-supplied input is improperly handled during server-side file path processing. View CVE Details</p>
+<p>Affected Products   Schneider Electric EasyLogic T150 and Saitel DP     Vendor:  Schneider Electric   Product Version:  Schneider Electric Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller (All versions): vers:semver/&lt;=11.06.31, Schneider Electric Schneider Electric Saitel DP Remote Terminal Unit &amp; Controller Firmware installed on Schneider Electric Saitel DP Remote Terminal Unit &amp; Controller (All versions): vers:semver/&lt;=11.06.36   Product Status:  known_affected       Remediations   Mitigation  Schneider Electric has identified the following specific workarounds and mitigations users can apply to reduce risk: Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller Firmware (vers:semver/&lt;=11.06.31) installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller (All versions): Version 11.06.32 of EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller includes a fix for this vulnerability and is available for download here:</p>
+<p>Mitigation  Contact Schneider Electric&#39;s Customer Care Center to download this firmware.</p></div>
       <div class="detail-links">
-        <a href="articles/d663e3c3276845a7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/eu-6g-network-security" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/4f425fd4d157ce71.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="patch"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft fixes windows server 2016 security update failures"
-       data-id="cf477194505a5fba"
-       data-published="2026-06-18T06:14:20-04:00"
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="aver ptc cameras"
+       data-id="f5c54272a45701f0"
+       data-published="2026-06-18T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-18T06:14:20-04:00" title="18 June 2026, 05:14">18 June 2026, 05:14</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-18T12:00:00+00:00" title="18 June 2026, 07:00">18 June 2026, 07:00</time>
       </div>
-      <h3 class="card-title">Microsoft fixes Windows Server 2016 security update failures</h3>
-      <p class="card-summary">Microsoft has fixed a known issue causing the June 2026 security updates to fail on Windows Server 2016 systems that weren&#39;t up to date. [...]</p>
+      <h3 class="card-title">AVer PTC cameras</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow arbitrary code execution. The following versions of AVer PTC cameras are affected:</p>
+<p>PTC500S vers:all/* (CVE-2026-40624)</p>
+<p>PTC115 vers:all/* (CVE-2026-40624)</p>
+<p>PTC500+ vers:all/* (CVE-2026-40624)</p>
+<p>PTC115+ vers:all/* (CVE-2026-40624)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 9.8   AVer   AVer PTC cameras   Files or Directories Accessible to External Parties           Background     Critical Infrastructure Sectors: Government Services and Facilities, Commercial Facilities, Healthcare and Public Health</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Taiwan</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-40624     Improper input validation in AVer PTC500S, PTC115, PTC500+, and PTC115+ cameras may allow a remote, unauthenticated attacker to achieve arbitrary code execution via a specially crafted web request.</p></div>
+      <div class="detail-links">
+        <a href="articles/f5c54272a45701f0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="rockwell automation factorytalk historian site edition"
+       data-id="b7713ae505dc85c8"
+       data-published="2026-06-18T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-18T12:00:00+00:00" title="18 June 2026, 07:00">18 June 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Rockwell Automation FactoryTalk Historian Site Edition</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
           <span class="ttag">patch</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to obtain a valid authentication token, perform a denial of service, or crash the system. The following versions of Rockwell Automation FactoryTalk Historian Site Edition are affected:</p>
+<p>FactoryTalk Historian SE 11 (CVE-2025-13036)</p>
+<p>FactoryTalk Historian SE &lt;=11.00 (CVE-2025-44019)</p>
+<p>FactoryTalk Historian SE &lt;=11.00 (CVE-2025-36539)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.7   Rockwell Automation   Rockwell Automation FactoryTalk Historian Site Edition   Concurrent Execution using Shared Resource with Improper Synchronization (&#39;Race Condition&#39;), Uncaught Exception           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2025-13036     An authentication bypass security issue exists within FactoryTalk Historian Site Edition.</p></div>
       <div class="detail-links">
-        <a href="articles/cf477194505a5fba.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-server-2016-security-update-failures/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/b7713ae505dc85c8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="low"
+       data-title="azeotech daqfactory"
+       data-id="6d49c4394e95a94d"
+       data-published="2026-06-18T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-06-18T12:00:00+00:00" title="18 June 2026, 07:00">18 June 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">AzeoTech DAQFactory</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow an attacker to upload malicious .ctl files that may lead to arbitrary code execution. The following versions of AzeoTech DAQFactory are affected:</p>
+<p>DAQFactory &lt;=21.1 (CVE-2026-12390)</p>
+<p>CVSS   Vendor   Equipment   Vulnerabilities           v3 7.8   AzeoTech   AzeoTech DAQFactory   Access of Resource Using Incompatible Type (&#39;Type Confusion&#39;)           Background     Critical Infrastructure Sectors: Critical Manufacturing</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     Expand All +</p>
+<p>CVE-2026-12390     In AzeoTech DAQFactory versions 21.1 and prior, a Type Confusion vulnerability can be exploited by an attacker using specially crafted .ctl files which can result in code execution.</p></div>
+      <div class="detail-links">
+        <a href="articles/6d49c4394e95a94d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
   <div class="day-group">
     <h2 class="day-heading">
       17 June 2026
-      <span class="day-count">10</span>
+      <span class="day-count">9</span>
     </h2>
   </div>
 
@@ -1025,37 +1135,6 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="articles/b83c3144964da885.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyberattacks-data-breaches/sweeping-credential-harvesting-heist-compromises-30k-fortinet-devices" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors="Fortinet"
-       data-severity="medium"
-       data-title="sweeping credential-harvesting heist compromises 30k+ fortinet devices"
-       data-id="62e4bdfc4e84bafe"
-       data-published="2026-06-17T14:06:34+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-06-17T14:06:34+00:00" title="17 June 2026, 09:06">17 June 2026, 09:06</time>
-      </div>
-      <h3 class="card-title">Sweeping Credential-Harvesting Heist Compromises 30K+ Fortinet Devices</h3>
-      <p class="card-summary">Attackers are actively targeting various sectors across nearly 200 countries and already have compiled a list of working credentials for tens of thousands of compromised devices.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/62e4bdfc4e84bafe.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyberattacks-data-breaches/sweeping-credential-harvesting-heist-compromises-30k-fortinet-devices" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>

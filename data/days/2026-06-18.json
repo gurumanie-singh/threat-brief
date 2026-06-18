@@ -1,5 +1,37 @@
 [
   {
+    "id": "e5fe5065224885a2",
+    "title": "F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
+    "published": "2026-06-18T23:02:14+05:30",
+    "fetched_at": "2026-06-18T19:25:55.540229+00:00",
+    "summary": "F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-18",
+    "cves": [
+      "CVE-2026-42530"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems. Tracked as CVE-2026-42530. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "d18283c704fb16f4",
     "title": "Orphaned AI Agents: How to Find Hidden Access Risks Inside Your Network",
     "source": "The Hacker News",
@@ -150,6 +182,97 @@
     "highlighted": false
   },
   {
+    "id": "2c5b296f33ce8d74",
+    "title": "FIFA Bug Exposed World Cup Streams to Remote Takeover",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover",
+    "published": "2026-06-18T18:20:07+00:00",
+    "fetched_at": "2026-06-18T19:25:56.779282+00:00",
+    "summary": "A hacker could have \"Rickrolled\" the World Cup — or worse — thanks to FIFA's unenforced Entra access controls.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-06-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A hacker could have \"Rickrolled\" the World Cup — or worse — thanks to FIFA's unenforced Entra access controls.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A hacker could have \"Rickrolled\" the World Cup — or worse — thanks to FIFA's unenforced Entra access controls.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "43cc148279396233",
+    "title": "‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+    "published": "2026-06-18T17:37:58+00:00",
+    "fetched_at": "2026-06-18T19:25:55.705466+00:00",
+    "summary": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to NetNut , a residential proxy provider operated by the publicly-traded Israeli firm...",
+    "tags": [
+      "apt",
+      "breach",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-06-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple…",
+    "quick_take": "",
+    "sections": {
+      "overview": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to NetNut , a residential proxy provider operated by the publicly-traded Israeli firm...",
+      "technical": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This non-stop content scraping has spawned more than 70 copyright infringement lawsuits against major tech companies that have acknowledged large-scale data scraping as a major source of the brains behind their commercial AI offerings. Experts say Popa is a plugin component associated with the Vo1d botnet, a large-scale malware campaign targeting unofficial Android-based TV boxes. These devices, which are marketed under thousands of brand names and model numbers and broadly available for purchase at top e-commerce destinations, all advertise the ability to stream hundreds of subscription video services for an up front one-time fee.",
+      "impact": "In a report released today, the security firm Qurium described how it stumbled on some of those same domains while investigating a series of disruptive and expensive data scraping events targeting the company s hosted organizations in May 2026, in which the scraping activity was scattered evenly across more than 1.4 million Internet addresses. Perhaps even more concerning is that over 60% of government and banking customers have as well. These devices, which are marketed under thousands of brand names and model numbers and broadly available for purchase at top e-commerce destinations, all advertise the ability to stream hundreds of subscription video services for an up front one-time fee.\n\nAssessed severity: HIGH.",
+      "mitigation": "Alarum said NetNut places significant emphasis on appropriate notice and consent mechanisms, conducts customer due diligence, monitors for potential misuse, and takes steps intended to detect and mitigate suspicious or unauthorized activity. In January 2026, Synthient published research showing that multiple new large DDoS botnets had grown rapidly by tunneling through IPIDEA proxies into the local networks of unsuspecting TV box owners and infecting other Android-based devices behind the user s firewall. IPIDEA is based largely on SDKs used to view pirated streaming content on a vast number of TV box devices, but the service s numbers have dwindled since January, when Google and industry partners took legal action to seize domain names that IPIDEA used to control devices and proxy traffic through them. Meyer told KrebsOnSecurity that Nokia is monitoring 26 of at least 359 known relay nodes for the botnet, and estimates that each relay node handles between 35,000 and 60,000 clients simultaneously.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "73de996590fdc739",
+    "title": "Salesforce Data Thefts Continue via Klue App Compromise",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/salesforce-data-thefts-klue-app-compromise",
+    "published": "2026-06-18T16:49:04+00:00",
+    "fetched_at": "2026-06-18T19:25:56.779498+00:00",
+    "summary": "Klue's Battlecards is now the third integrated application that has been compromised to steal customers' Salesforce data, and victims include Huntress, the cybersecurity vendor.",
+    "tags": [
+      "breach",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-06-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Klue's Battlecards is now the third integrated application that has been compromised to steal customers' Salesforce data, and victims include Huntress, the cybersecurity vendor.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Klue's Battlecards is now the third integrated application that has been compromised to steal customers' Salesforce data, and victims include Huntress, the cybersecurity vendor.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "f555785cd5c20e23",
     "title": "The Scripts on Your Checkout Page Are Now a PCI DSS Problem",
     "source": "The Hacker News",
@@ -197,6 +320,35 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "[Virtual Event] Anatomy of a Data Breach: What to Do if it Happens to You.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f14e3961c74785cf",
+    "title": "Nintendo confirms data stolen in WebMD subsidiary cyberattack",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/nintendo-confirms-data-stolen-in-webmd-subsidiary-cyberattack/",
+    "published": "2026-06-18T14:31:36-04:00",
+    "fetched_at": "2026-06-18T19:25:55.896192+00:00",
+    "summary": "Nintendo of America has confirmed to BleepingComputer that threat actors stole survey data from the third-party TinyPulse service used internally, but its systems were not compromised. [...]",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-06-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Nintendo of America has confirmed to BleepingComputer that threat actors stole survey data from the third-party TinyPulse service used internally, but its systems were not compromised. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Nintendo of America has confirmed to BleepingComputer that threat actors stole survey data from the third-party TinyPulse service used internally, but its systems were not compromised. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Nintendo of America has confirmed to BleepingComputer that threat actors stole survey data from the third-party TinyPulse service used internally, but its systems were not compromised. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -256,277 +408,220 @@
     "highlighted": false
   },
   {
-    "id": "c4d0a33bceff396f",
-    "title": "Klue OAuth breach linked to 'Icarus' Salesforce data theft attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/",
-    "published": "2026-06-18T10:19:50-04:00",
-    "fetched_at": "2026-06-18T16:28:49.676196+00:00",
-    "summary": "Market intelligence platform Klue suffered a OAuth breach that enabled the \"Icarus\" threat actors to steal Salesforce CRM data from multiple organizations in an ongoing extortion campaign. [...]",
+    "id": "d1f57a1d634ca934",
+    "title": "Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-169-01",
+    "published": "2026-06-18T12:00:00+00:00",
+    "fetched_at": "2026-06-18T19:25:58.369266+00:00",
+    "summary": "View CSAF ",
     "tags": [
-      "breach",
-      "vulnerability"
-    ],
-    "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Market intelligence platform Klue suffered a OAuth breach that enabled the \"Icarus\" threat actors to steal Salesforce CRM data from multiple organizations in an ongoing extortion campaign. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Market intelligence platform Klue suffered a OAuth breach that enabled the \"Icarus\" threat actors to steal Salesforce CRM data from multiple organizations in an ongoing extortion campaign. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "Market intelligence platform Klue suffered a OAuth breach that enabled the \"Icarus\" threat actors to steal Salesforce CRM data from multiple organizations in an ongoing extortion campaign. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "ac3614c8b74218f0",
-    "title": "5 reasons Microsoft 365 backup isn’t enough for business data protection",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/5-reasons-microsoft-365-backup-isnt-enough-for-business-data-protection/",
-    "published": "2026-06-18T09:48:56-04:00",
-    "fetched_at": "2026-06-18T16:28:49.676406+00:00",
-    "summary": "Microsoft 365 helps keep services running, but protecting and recovering business data remains your responsibility. Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...]",
-    "tags": [],
-    "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft 365 helps keep services running, but protecting and recovering business data remains your responsibility. Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...]\n\nAssessed severity: MEDIUM.",
-      "mitigation": "Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...] Microsoft 365 helps keep services running, but protecting and recovering business data remains your responsibility."
-    },
-    "email_summary": "Microsoft 365 helps keep services running, but protecting and recovering business data remains your responsibility. Acronis breaks down five gaps organizations should consider when evaluating Microsoft 365 data protection. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "a3a6a5878aa65323",
-    "title": "Police cleans nearly 15,000 SocGholish-infected sites tied to Evil Corp",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/",
-    "published": "2026-06-18T09:25:47-04:00",
-    "fetched_at": "2026-06-18T16:28:49.676607+00:00",
-    "summary": "International law enforcement agencies cleaned nearly 15,000 malware-infected WordPress websites and took down more than 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. [...]",
-    "tags": [
+      "cve",
+      "exploit",
       "malware",
       "vulnerability"
     ],
     "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
+    "cves": [
+      "CVE-2026-50034",
+      "CVE-2026-52866"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
     "vendors": [],
     "action_required": false,
-    "card_summary": "International law enforcement agencies cleaned nearly 15,000 malware-infected WordPress websites and took down more than 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "International law enforcement agencies cleaned nearly 15,000 malware-infected WordPress websites and took down more than 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "31839b34d4c1e099",
-    "title": "ShapedPlugin update flow hacked to infect WordPress sites",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/",
-    "published": "2026-06-18T08:55:36-04:00",
-    "fetched_at": "2026-06-18T16:28:49.676833+00:00",
-    "summary": "Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack that distributed infected releases to paying customers via the vendor's official update system. [...]",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "high",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack that distributed infected releases to paying customers via the vendor's official update system. [...]",
+    "card_summary": "View CSAF",
     "quick_take": "",
     "sections": {
-      "impact": "Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack that distributed infected releases to paying customers via the vendor's official update system. [...]\n\nAssessed severity: HIGH.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive health-related information and prevent legitimate users from establishing a connection with the device. The following versions of Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT are affected:\n\n \n Blood Glucose Monitoring System (Model No.",
+      "technical": "APG-01 BT) 0x0110_v1.1.0 (CVE-2026-50034, CVE-2026-52866)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 6.5 \n Apollo Pharmacy \n Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT \n Cleartext Transmission of Sensitive Information, Missing Authorization \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Healthcare and Public Health\n\n Countries/Areas Deployed: India\n\n Company Headquarters Location: India\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-50034 \n \n An attacker within BLE communication range can passively intercept wireless traffic and obtain sensitive health-related information, including glucose measurement values. View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive health-related information and prevent legitimate users from establishing a connection with the device. Users are encouraged to reach out to Apollo Pharmacy directly for more information:https://www.apollopharmacy.in/contact-us.\n https://www.apollopharmacy.in/contact-us \n\n Mitigation \nCISA recommends users follow the guidance in the Understanding Bluetooth Technology blog https://www.cisa.gov/news-events/news/understanding-bluetooth-technology.\n https://www.cisa.gov/news-events/news/understanding-bluetooth-technology \n\n \n Relevant CWE: CWE-319 Cleartext Transmission of Sensitive Information \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N \n \n \n 4.0 \n 7.1 \n HIGH \n CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n CVE-2026-52866 \n \n An attacker within BLE communication range can monopolize the device's only available BLE connection slot, preventing legitimate users or applications from establishing a connection. Recommended Practices \n CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities.\n\nReferenced vulnerabilities: CVE-2026-50034, CVE-2026-52866.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Users are encouraged to reach out to Apollo Pharmacy directly for more information:https://www.apollopharmacy.in/contact-us.\n https://www.apollopharmacy.in/contact-us \n\n Mitigation \nCISA recommends users follow the guidance in the Understanding Bluetooth Technology blog https://www.cisa.gov/news-events/news/understanding-bluetooth-technology.\n https://www.cisa.gov/news-events/news/understanding-bluetooth-technology \n\n \n Relevant CWE: CWE-319 Cleartext Transmission of Sensitive Information \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N \n \n \n 4.0 \n 7.1 \n HIGH \n CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n CVE-2026-52866 \n \n An attacker within BLE communication range can monopolize the device's only available BLE connection slot, preventing legitimate users or applications from establishing a connection. Users are encouraged to reach out to Apollo Pharmacy directly for more information:https://www.apollopharmacy.in/contact-us.\n https://www.apollopharmacy.in/contact-us \n\n Mitigation \nCISA recommends users follow the guidance in the Understanding Bluetooth Technology blog https://www.cisa.gov/news-events/news/understanding-bluetooth-technology.\n https://www.cisa.gov/news-events/news/understanding-bluetooth-technology \n\n \n Relevant CWE: CWE-862 Missing Authorization \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H \n \n \n 4.0 \n 7.1 \n HIGH \n CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Rishitha Pucchakayala and Centre for Development of Advanced Computing (Hyderabad) reported these vulnerabilities to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available."
     },
-    "email_summary": "Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack that distributed infected releases to paying customers via the vendor's official update system. [...]. Severity is rated high.",
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive health-related information and prevent legitimate users from establishing a connection with the device. Tracked as CVE-2026-50034, CVE-2026-52866.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
   },
   {
-    "id": "d6dc46d56f63ddd1",
-    "title": "FortiBleed leak exposes Fortinet VPN credentials for 73,000 devices.",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/",
-    "published": "2026-06-18T08:54:39-04:00",
-    "fetched_at": "2026-06-18T16:28:49.677027+00:00",
-    "summary": "A newly discovered data leak dubbed \"FortiBleed\" has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. [...]",
+    "id": "5833916af21dcd83",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "published": "2026-06-18T12:00:00+00:00",
+    "fetched_at": "2026-06-18T19:25:58.369660+00:00",
+    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
     "tags": [
-      "breach"
-    ],
-    "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Fortinet"
-    ],
-    "action_required": false,
-    "card_summary": "A newly discovered data leak dubbed \"FortiBleed\" has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "A newly discovered data leak dubbed \"FortiBleed\" has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "A newly discovered data leak dubbed \"FortiBleed\" has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "f652f83df8907516",
-    "title": "Apple fixes Beats Studio Buds flaw that let hackers spy on conversations",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/apple-fixes-beats-studio-buds-flaw-that-let-hackers-spy-on-conversations/",
-    "published": "2026-06-18T08:23:58-04:00",
-    "fetched_at": "2026-06-18T16:28:49.677216+00:00",
-    "summary": "Apple has released security updates to patch a high-severity flaw affecting the Beats Studio Buds wireless earbuds that could allow attackers in Bluetooth range to spy on users' conversations. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "high",
-    "vendors": [
-      "Apple"
-    ],
-    "action_required": false,
-    "card_summary": "Apple has released security updates to patch a high-severity flaw affecting the Beats Studio Buds wireless earbuds that could allow attackers in Bluetooth range to spy on users' conversations. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Apple has released security updates to patch a high-severity flaw affecting the Beats Studio Buds wireless earbuds that could allow attackers in Bluetooth range to spy on users' conversations. [...]\n\nAssessed severity: HIGH."
-    },
-    "email_summary": "Apple has released security updates to patch a high-severity flaw affecting the Beats Studio Buds wireless earbuds that could allow attackers in Bluetooth range to spy on users' conversations. [...]. Severity is rated high.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "339f2b2a4091ab25",
-    "title": "Telegram admits it couldn't police exam-leak channels, India tells court",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/telegram-admits-it-couldnt-police-exam-leak-channels-india-tells-court/",
-    "published": "2026-06-18T08:18:49-04:00",
-    "fetched_at": "2026-06-18T12:23:45.668119+00:00",
-    "summary": "India's government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers. Telegram says it cooperated and the ban is unlawful. [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "India's government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers. Telegram says it cooperated and the ban…",
-    "quick_take": "",
-    "sections": {
-      "overview": "India's government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers. Telegram says it cooperated and the ban is unlawful. [...]",
-      "impact": "India's government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "India's government has told the Delhi High Court that Telegram was warned about two weeks before it was blocked, and that the platform admitted it could not proactively detect the channels selling leaked exam papers. Telegram says it cooperated and the ban is unlawful. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "48117c2cac844ed3",
-    "title": "F5 issues out-of-band patches for critical NGINX vulnerabilities",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/f5-issues-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-    "published": "2026-06-18T07:33:00-04:00",
-    "fetched_at": "2026-06-18T12:23:45.668281+00:00",
-    "summary": "Cybersecurity company F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws that could allow attackers to execute code on vulnerable systems. [...]",
-    "tags": [
+      "breach",
+      "cve",
+      "exploit",
+      "malware",
       "patch",
       "vulnerability"
     ],
     "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "AWS"
+    "cves": [
+      "CVE-2026-20253"
     ],
-    "action_required": false,
-    "card_summary": "Cybersecurity company F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws that could allow attackers to execute code on vulnerable systems. [...]",
-    "quick_take": "Cybersecurity company F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws that could allow attackers to execute code on vulnerable…",
-    "sections": {},
-    "email_summary": "Cybersecurity company F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws that could allow attackers to execute code on vulnerable systems. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "d663e3c3276845a7",
-    "title": "EU Gets a Head Start in Developing 6G Network Security",
-    "source": "Dark Reading",
-    "link": "https://www.darkreading.com/cybersecurity-operations/eu-6g-network-security",
-    "published": "2026-06-18T07:00:00+00:00",
-    "fetched_at": "2026-06-18T08:44:34.483388+00:00",
-    "summary": "\"Shield-6G\" will combine AI threat detection, digital twins, honeypots, and more, to help carriers protect 6G networks against the threats of tomorrow.",
-    "tags": [],
-    "day": "2026-06-18",
-    "cves": [],
     "cvss": null,
-    "severity": "medium",
+    "severity": "critical",
     "vendors": [],
     "action_required": false,
-    "card_summary": "\"Shield-6G\" will combine AI threat detection, digital twins, honeypots, and more, to help carriers protect 6G networks against the threats of tomorrow.",
+    "card_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
     "quick_take": "",
-    "sections": {},
-    "email_summary": "\"Shield-6G\" will combine AI threat detection, digital twins, honeypots, and more, to help carriers protect 6G networks against the threats of tomorrow.",
+    "sections": {
+      "impact": "CVE-2026-20253 Splunk Enterprise Missing Authentication for Critical Function Vulnerability\n\n \n This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-20253. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
   },
   {
-    "id": "cf477194505a5fba",
-    "title": "Microsoft fixes Windows Server 2016 security update failures",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-server-2016-security-update-failures/",
-    "published": "2026-06-18T06:14:20-04:00",
-    "fetched_at": "2026-06-18T12:23:45.668412+00:00",
-    "summary": "Microsoft has fixed a known issue causing the June 2026 security updates to fail on Windows Server 2016 systems that weren't up to date. [...]",
+    "id": "4f425fd4d157ce71",
+    "title": "Schneider Electric EasyLogic T150 and Saitel DP",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-04",
+    "published": "2026-06-18T12:00:00+00:00",
+    "fetched_at": "2026-06-18T19:25:58.370635+00:00",
+    "summary": "View CSAF ",
     "tags": [
-      "patch"
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
     ],
     "day": "2026-06-18",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
+    "cves": [
+      "CVE-2026-6865"
     ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "View CSAF \n\n Summary \n Successful exploitation this vulnerability could allow an attacker to gain unauthorized access to sensitive files \n\n The following versions of Schneider Electric EasyLogic T150 and Saitel DP…",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation this vulnerability could allow an attacker to gain unauthorized access to sensitive files \n\n The following versions of Schneider Electric EasyLogic T150 and Saitel DP are affected:\n\n \n Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller (All versions) vers:semver/<=11.06.31 (CVE-2026-6865)\n\n Schneider Electric Saitel DP Remote Terminal Unit & Controller Firmware installed on Schneider Electric Saitel DP Remote Terminal Unit & Controller (All versions) vers:semver/<=11.06.36 (CVE-2026-6865)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.1 \n Schneider Electric \n Schneider Electric EasyLogic T150 and Saitel DP \n Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy, Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: France\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-6865 \n \n CWE-22: Improper Limitation of a Pathname to a Restricted Directory (\"Path Traversal\") vulnerability that could cause unauthorized access to sensitive files when user-supplied input is improperly handled during server-side file path processing. View CVE Details \n\n \n Affected Products \n Schneider Electric EasyLogic T150 and Saitel DP \n \n Vendor: \nSchneider Electric \n Product Version: \nSchneider Electric Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller (All versions): vers:semver/<=11.06.31, Schneider Electric Schneider Electric Saitel DP Remote Terminal Unit & Controller Firmware installed on Schneider Electric Saitel DP Remote Terminal Unit & Controller (All versions): vers:semver/<=11.06.36 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nSchneider Electric has identified the following specific workarounds and mitigations users can apply to reduce risk: Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller Firmware (vers:semver/<=11.06.31) installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller (All versions): Version 11.06.32 of EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller includes a fix for this vulnerability and is available for download here:\n\n Mitigation \nContact Schneider Electric's Customer Care Center to download this firmware.",
+      "mitigation": "View CVE Details \n\n \n Affected Products \n Schneider Electric EasyLogic T150 and Saitel DP \n \n Vendor: \nSchneider Electric \n Product Version: \nSchneider Electric Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller (All versions): vers:semver/<=11.06.31, Schneider Electric Schneider Electric Saitel DP Remote Terminal Unit & Controller Firmware installed on Schneider Electric Saitel DP Remote Terminal Unit & Controller (All versions): vers:semver/<=11.06.36 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nSchneider Electric has identified the following specific workarounds and mitigations users can apply to reduce risk: Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller Firmware (vers:semver/<=11.06.31) installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller (All versions): Version 11.06.32 of EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller includes a fix for this vulnerability and is available for download here:\n\n Mitigation \nContact Schneider Electric's Customer Care Center to download this firmware. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Reboot needed: Yes\n\n Mitigation \nSchneider Electric Saitel DP Remote Terminal Unit & Controller Firmware (vers:semver/<=11.06.36) installed on Schneider Electric Saitel DP Remote Terminal Unit & Controller (All versions): Version 11.06.37 of Saitel DP Remote Terminal Unit & Controller includes a fix for this vulnerability and is available for download here:\n\n Mitigation \nContact Schneider Electric's Customer Care Center to download this firmware. Reboot needed: Yes\n\n Mitigation \nAll affected products: If customers choose not to apply the remediation provided above, they should immediately apply the following mitigations to reduce the risk of exploit: Ensure strict credential controls, even for low privilege users.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation this vulnerability could allow an attacker to gain unauthorized access to sensitive files \n\n The following versions of Schneider Electric EasyLogic T150 and Saitel DP are affected:\n\n \n Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller (All versions) vers:semver/<=11.06.31 (CVE-2026-6865)\n\n…",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f5c54272a45701f0",
+    "title": "AVer PTC cameras",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-01",
+    "published": "2026-06-18T12:00:00+00:00",
+    "fetched_at": "2026-06-18T19:25:58.371284+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-06-18",
+    "cves": [
+      "CVE-2026-40624"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
     "action_required": false,
-    "card_summary": "Microsoft has fixed a known issue causing the June 2026 security updates to fail on Windows Server 2016 systems that weren't up to date. [...]",
+    "card_summary": "View CSAF",
     "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft has fixed a known issue causing the June 2026 security updates to fail on Windows Server 2016 systems that weren't up to date. [...].",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow arbitrary code execution. The following versions of AVer PTC cameras are affected:\n\n \n PTC500S vers:all/* (CVE-2026-40624)\n\n PTC115 vers:all/* (CVE-2026-40624)\n\n PTC500+ vers:all/* (CVE-2026-40624)\n\n PTC115+ vers:all/* (CVE-2026-40624)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n AVer \n AVer PTC cameras \n Files or Directories Accessible to External Parties \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Government Services and Facilities, Commercial Facilities, Healthcare and Public Health\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Taiwan\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-40624 \n \n Improper input validation in AVer PTC500S, PTC115, PTC500+, and PTC115+ cameras may allow a remote, unauthenticated attacker to achieve arbitrary code execution via a specially crafted web request.",
+      "impact": "The following versions of AVer PTC cameras are affected:\n\n \n PTC500S vers:all/* (CVE-2026-40624)\n\n PTC115 vers:all/* (CVE-2026-40624)\n\n PTC500+ vers:all/* (CVE-2026-40624)\n\n PTC115+ vers:all/* (CVE-2026-40624)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 9.8 \n AVer \n AVer PTC cameras \n Files or Directories Accessible to External Parties \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Government Services and Facilities, Commercial Facilities, Healthcare and Public Health\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Taiwan\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-40624 \n \n Improper input validation in AVer PTC500S, PTC115, PTC500+, and PTC115+ cameras may allow a remote, unauthenticated attacker to achieve arbitrary code execution via a specially crafted web request. View CVE Details \n\n \n Affected Products \n AVer PTC cameras \n \n Vendor: \nAVer \n Product Version: \nAVer PTC500S: vers:all/*, AVer PTC115: vers:all/*, AVer PTC500+: vers:all/*, AVer PTC115+: vers:all/* \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nAVer has provided a firmware fix to address this vulnerability; users can find it at the following location: (https://presentation.aver.com/DownloadFile.aspx?n=6617|1C01A887-7CDC-4C96-AD9A-11D53DE1AD71&t=ServiceDownload).\n https://presentation.aver.com/DownloadFile.aspx?n=6617%7C1C01A887-7CDC-4C96-AD9A-11D53DE1AD71&t=ServiceDownload \n\n \n Relevant CWE: CWE-552 Files or Directories Accessible to External Parties \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9.8 \n CRITICAL \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \n \n \n 4.0 \n 9.3 \n CRITICAL \n CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n fj016 reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. View CVE Details \n\n \n Affected Products \n AVer PTC cameras \n \n Vendor: \nAVer \n Product Version: \nAVer PTC500S: vers:all/*, AVer PTC115: vers:all/*, AVer PTC500+: vers:all/*, AVer PTC115+: vers:all/* \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nAVer has provided a firmware fix to address this vulnerability; users can find it at the following location: (https://presentation.aver.com/DownloadFile.aspx?n=6617|1C01A887-7CDC-4C96-AD9A-11D53DE1AD71&t=ServiceDownload).\n https://presentation.aver.com/DownloadFile.aspx?n=6617%7C1C01A887-7CDC-4C96-AD9A-11D53DE1AD71&t=ServiceDownload \n\n \n Relevant CWE: CWE-552 Files or Directories Accessible to External Parties \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 9.8 \n CRITICAL \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \n \n \n 4.0 \n 9.3 \n CRITICAL \n CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n fj016 reported this vulnerability to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). When remote access is required, use more secure methods, such as virtual private networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow arbitrary code execution. Tracked as CVE-2026-40624.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b7713ae505dc85c8",
+    "title": "Rockwell Automation FactoryTalk Historian Site Edition",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-03",
+    "published": "2026-06-18T12:00:00+00:00",
+    "fetched_at": "2026-06-18T19:25:58.372264+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-06-18",
+    "cves": [
+      "CVE-2025-13036",
+      "CVE-2025-36539",
+      "CVE-2025-44019",
+      "CVE-2025-44109"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to obtain a valid authentication token, perform a denial of service, or crash the system. The following versions of Rockwell Automation FactoryTalk Historian Site Edition are affected:\n\n \n FactoryTalk Historian SE 11 (CVE-2025-13036)\n\n FactoryTalk Historian SE <=11.00 (CVE-2025-44019)\n\n FactoryTalk Historian SE <=11.00 (CVE-2025-36539)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.7 \n Rockwell Automation \n Rockwell Automation FactoryTalk Historian Site Edition \n Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'), Uncaught Exception \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13036 \n \n An authentication bypass security issue exists within FactoryTalk Historian Site Edition.",
+      "impact": "View CVE Details \n\n \n Affected Products \n Rockwell Automation FactoryTalk Historian Site Edition \n \n Vendor: \nRockwell Automation \n Product Version: \nRockwell Automation FactoryTalk Historian SE: 11 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nRockwell Automation recommends the following: Mitigations and Workarounds for CVE-2025-13036: Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use our security best practices and consider applying the available patch (BF32850) for their current version (https://support.rockwellautomation.com/app/answers/answer_view/a_id/1157978/loc/en_US).\n https://support.rockwellautomation.com/app/answers/answer_view/a_id/1157978/loc/en_US \n\n Mitigation \nFor more information, see Rockwell Automation Security Advisory SD1773 (https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1773.html)\n https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1773.html \n\n \n Relevant CWE: CWE-362 Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.7 \n HIGH \n CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L \n \n \n 4.0 \n 9.2 \n CRITICAL \n CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n CVE-2025-44019 \n \n AVEVA PI Data Archive products are vulnerable to an uncaught exception that, if exploited, could allow an authenticated user to shut down certain necessary PI Data Archive subsystems, resulting in a denial of service. The following versions of Rockwell Automation FactoryTalk Historian Site Edition are affected:\n\n \n FactoryTalk Historian SE 11 (CVE-2025-13036)\n\n FactoryTalk Historian SE <=11.00 (CVE-2025-44019)\n\n FactoryTalk Historian SE <=11.00 (CVE-2025-36539)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.7 \n Rockwell Automation \n Rockwell Automation FactoryTalk Historian Site Edition \n Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'), Uncaught Exception \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2025-13036 \n \n An authentication bypass security issue exists within FactoryTalk Historian Site Edition. View CVE Details \n\n \n Affected Products \n Rockwell Automation FactoryTalk Historian Site Edition \n \n Vendor: \nRockwell Automation \n Product Version: \nRockwell Automation FactoryTalk Historian SE: <=11.00 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nFor more information, see Rockwell Automation Security Advisory SD1773 (https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1773.html)\n https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1773.html \n\n \n Relevant CWE: CWE-248 Uncaught Exception \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.1 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H \n \n \n 4.0 \n 7.1 \n HIGH \n CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n CVE-2025-36539 \n \n AVEVA PI Data Archive products are vulnerable to an uncaught exception that, if exploited, could allow an authenticated user to shut down certain necessary PI Data Archive subsystems, resulting in a denial of service.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "View CVE Details \n\n \n Affected Products \n Rockwell Automation FactoryTalk Historian Site Edition \n \n Vendor: \nRockwell Automation \n Product Version: \nRockwell Automation FactoryTalk Historian SE: 11 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nRockwell Automation recommends the following: Mitigations and Workarounds for CVE-2025-13036: Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use our security best practices and consider applying the available patch (BF32850) for their current version (https://support.rockwellautomation.com/app/answers/answer_view/a_id/1157978/loc/en_US).\n https://support.rockwellautomation.com/app/answers/answer_view/a_id/1157978/loc/en_US \n\n Mitigation \nFor more information, see Rockwell Automation Security Advisory SD1773 (https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1773.html)\n https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1773.html \n\n \n Relevant CWE: CWE-362 Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.7 \n HIGH \n CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L \n \n \n 4.0 \n 9.2 \n CRITICAL \n CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n CVE-2025-44019 \n \n AVEVA PI Data Archive products are vulnerable to an uncaught exception that, if exploited, could allow an authenticated user to shut down certain necessary PI Data Archive subsystems, resulting in a denial of service. View CVE Details \n\n \n Affected Products \n Rockwell Automation FactoryTalk Historian Site Edition \n \n Vendor: \nRockwell Automation \n Product Version: \nRockwell Automation FactoryTalk Historian SE: <=11.00 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nMitigations and Workarounds for CVE-2025-36539 & CVE-2025-44109: Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use our security best practices and also consider the following: Monitor liveness of PI Network Manager and PI Archive Subsystem services. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to obtain a valid authentication token, perform a denial of service, or crash the system. Tracked as CVE-2025-13036, CVE-2025-36539, CVE-2025-44019.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6d49c4394e95a94d",
+    "title": "AzeoTech DAQFactory",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02",
+    "published": "2026-06-18T12:00:00+00:00",
+    "fetched_at": "2026-06-18T19:25:58.372892+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-06-18",
+    "cves": [
+      "CVE-2026-12390"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to upload malicious .ctl files that may lead to arbitrary code execution. The following versions of AzeoTech DAQFactory are affected:\n\n \n DAQFactory <=21.1 (CVE-2026-12390)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.8 \n AzeoTech \n AzeoTech DAQFactory \n Access of Resource Using Incompatible Type ('Type Confusion') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-12390 \n \n In AzeoTech DAQFactory versions 21.1 and prior, a Type Confusion vulnerability can be exploited by an attacker using specially crafted .ctl files which can result in code execution.",
+      "impact": "The following versions of AzeoTech DAQFactory are affected:\n\n \n DAQFactory <=21.1 (CVE-2026-12390)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n Vulnerabilities \n \n \n \n \n v3 7.8 \n AzeoTech \n AzeoTech DAQFactory \n Access of Resource Using Incompatible Type ('Type Confusion') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n \n Expand All + \n\n \n CVE-2026-12390 \n \n In AzeoTech DAQFactory versions 21.1 and prior, a Type Confusion vulnerability can be exploited by an attacker using specially crafted .ctl files which can result in code execution. View CVE Details \n\n \n Affected Products \n AzeoTech DAQFactory \n \n Vendor: \nAzeoTech \n Product Version: \nAzeoTech DAQFactory: <=21.1 \n Product Status: \nknown_affected \n \n \n Remediations \n Mitigation \nUsers are discouraged from using documents from unknown/untrusted sources. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. CISA also recommends users take the following measures to protect themselves from social engineering attacks:\n\n Do not click web links or open attachments in unsolicited email messages.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.\n\nThis reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow an attacker to upload malicious .ctl files that may lead to arbitrary code execution. Tracked as CVE-2026-12390.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

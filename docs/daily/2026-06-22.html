@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 June 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">5 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 high-severity advisories published today</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,15 +61,144 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="stop your legacy infrastructure from hijacking your ai agents"
+       data-id="d44fc460177f81a9"
+       data-published="2026-06-22T17:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-22T17:28:00+05:30" title="22 June 2026, 06:58">22 June 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">Stop Your Legacy Infrastructure from Hijacking Your AI Agents</h3>
+      <p class="card-summary">Earlier this month, I spoke at the Gartner Security &amp; Risk Management Summit about a blind spot most security programs are still not accounting for - how attackers are circumventing AI security programs by using legacy infrastructure to hijack AI agents.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d44fc460177f81a9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/stop-your-legacy-infrastructure-from.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,ransomware"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="weekly recap: browser bugs, edr killers, tv botnet, openbsd flaw, android trojan, and more"
+       data-id="9c99347d0e9d9a46"
+       data-published="2026-06-22T16:25:10+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-06-22T16:25:10+05:30" title="22 June 2026, 05:55">22 June 2026, 05:55</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBSD Flaw, Android Trojan, and More</h3>
+      <p class="card-summary">It’s Monday again.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9c99347d0e9d9a46.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/weekly-recap-browser-bugs-edr-killers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="canada’s spy agency used first-of-its-kind warrant to clean botnet-infected devices"
+       data-id="28e516f4a053814a"
+       data-published="2026-06-22T14:41:37+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-22T14:41:37+05:30" title="22 June 2026, 04:11">22 June 2026, 04:11</time>
+      </div>
+      <h3 class="card-title">Canada’s Spy Agency Used First-of-Its-Kind Warrant to Clean Botnet-Infected Devices</h3>
+      <p class="card-summary">Canada&#39;s spy service got a judge&#39;s permission to reach into infected servers, home routers, and IoT gear sitting on Canadian soil and neutralize two foreign-run botnets.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/28e516f4a053814a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/canadas-spy-agency-used-first-of-its.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="arystinger malware infects 4,300 legacy routers to build reconnaissance proxy network"
+       data-id="eff6457556c10662"
+       data-published="2026-06-22T12:27:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-22T12:27:44+05:30" title="22 June 2026, 01:57">22 June 2026, 01:57</time>
+      </div>
+      <h3 class="card-title">AryStinger Malware Infects 4,300 Legacy Routers to Build Reconnaissance Proxy Network</h3>
+      <p class="card-summary">A new malware family is turning forgotten home routers into a distributed reconnaissance and proxy network, not the DDoS botnet these devices usually end up in. QiAnXin&#39;s XLab calls it AryStinger and counts at least 4,300 infected routers, a total it says…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A new malware family is turning forgotten home routers into a distributed reconnaissance and proxy network, not the DDoS botnet these devices usually end up in. QiAnXin&#39;s XLab calls it AryStinger and counts at least 4,300 infected routers, a total it says is still rising.</p></div>
+      <div class="detail-links">
+        <a href="../articles/eff6457556c10662.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/arystinger-malware-infects-4300-legacy.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing,ransomware"
        data-vendors=""

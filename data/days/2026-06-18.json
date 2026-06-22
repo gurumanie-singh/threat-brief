@@ -119,6 +119,34 @@
     "highlighted": false
   },
   {
+    "id": "1d03a1871aa0a5df",
+    "title": "Novo Nordisk Breach Highlights Software Development Pipeline Risk",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/novo-nordisk-breach-exposes-dev-pipeline-risk",
+    "published": "2026-06-18T20:05:47+00:00",
+    "fetched_at": "2026-06-22T17:38:43.721795+00:00",
+    "summary": "A leaked GitHub token underscores what most organizations get wrong: Treating secrets management as a tooling problem rather than an identity problem.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-06-18",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A leaked GitHub token underscores what most organizations get wrong: Treating secrets management as a tooling problem rather than an identity problem.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A leaked GitHub token underscores what most organizations get wrong: Treating secrets management as a tooling problem rather than an identity problem.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "30d08d7cb513a405",
     "title": "Microsoft Details Windows Clipper Malware Campaign Using USB LNK Worm and Tor-Based C2",
     "source": "The Hacker News",
@@ -544,42 +572,6 @@
       "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Users are encouraged to reach out to Apollo Pharmacy directly for more information:https://www.apollopharmacy.in/contact-us.\n https://www.apollopharmacy.in/contact-us \n\n Mitigation \nCISA recommends users follow the guidance in the Understanding Bluetooth Technology blog https://www.cisa.gov/news-events/news/understanding-bluetooth-technology.\n https://www.cisa.gov/news-events/news/understanding-bluetooth-technology \n\n \n Relevant CWE: CWE-319 Cleartext Transmission of Sensitive Information \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N \n \n \n 4.0 \n 7.1 \n HIGH \n CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n CVE-2026-52866 \n \n An attacker within BLE communication range can monopolize the device's only available BLE connection slot, preventing legitimate users or applications from establishing a connection. Users are encouraged to reach out to Apollo Pharmacy directly for more information:https://www.apollopharmacy.in/contact-us.\n https://www.apollopharmacy.in/contact-us \n\n Mitigation \nCISA recommends users follow the guidance in the Understanding Bluetooth Technology blog https://www.cisa.gov/news-events/news/understanding-bluetooth-technology.\n https://www.cisa.gov/news-events/news/understanding-bluetooth-technology \n\n \n Relevant CWE: CWE-862 Missing Authorization \n\n \n Metrics \n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H \n \n \n 4.0 \n 7.1 \n HIGH \n CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N \n \n \n \n \n \n \n \n \n Acknowledgments \n \n Rishitha Pucchakayala and Centre for Development of Advanced Computing (Hyderabad) reported these vulnerabilities to CISA\n\n \n \n Legal Notice and Terms of Use \n This product is provided subject to this Notification (https://www.cisa.gov/notification) and this Privacy & Use policy (https://www.cisa.gov/privacy-policy). When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available."
     },
     "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive health-related information and prevent legitimate users from establishing a connection with the device. Tracked as CVE-2026-50034, CVE-2026-52866.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "5833916af21dcd83",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "published": "2026-06-18T12:00:00+00:00",
-    "fetched_at": "2026-06-18T19:25:58.369660+00:00",
-    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
-    "tags": [
-      "breach",
-      "cve",
-      "exploit",
-      "malware",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-06-18",
-    "cves": [
-      "CVE-2026-20253"
-    ],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.",
-    "quick_take": "",
-    "sections": {
-      "impact": "CVE-2026-20253 Splunk Enterprise Missing Authentication for Critical Function Vulnerability\n\n \n This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.\n\nAssessed severity: CRITICAL.",
-      "mitigation": "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. Tracked as CVE-2026-20253. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

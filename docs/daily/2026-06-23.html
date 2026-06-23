@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">23 June 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">11 articles</span>
     </div>
   </div>
 
@@ -35,6 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>2 high-severity advisories published today</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -47,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -62,19 +64,82 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="github updates actions/checkout to block common pwn request attack patterns"
+       data-id="56b1988fa5da2dce"
+       data-published="2026-06-23T19:52:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-23T19:52:03+05:30" title="23 June 2026, 09:22">23 June 2026, 09:22</time>
+      </div>
+      <h3 class="card-title">GitHub Updates actions/checkout to Block Common Pwn Request Attack Patterns</h3>
+      <p class="card-summary">GitHub is moving to strengthen software supply chain security by updating &#34;actions/checkout&#34; to block pwn request attacks that exploit the risky use of the &#34;pull_request_target workflow&#34; trigger to run malicious code with the workflow&#39;s full privileges.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/56b1988fa5da2dce.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/github-updates-actionscheckout-to-block.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="agentic ai: the weapon that no longer needs a warrior"
+       data-id="6b0c343056247814"
+       data-published="2026-06-23T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-23T17:00:00+05:30" title="23 June 2026, 06:30">23 June 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Agentic AI: The Weapon That No Longer Needs a Warrior</h3>
+      <p class="card-summary">Every weapon begins as an extension of the hand that holds it. The spear lengthened the reach of the arm.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6b0c343056247814.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/agentic-ai-weapon-that-no-longer-needs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Microsoft"
@@ -110,6 +175,90 @@
        data-tags=""
        data-vendors=""
        data-severity="medium"
+       data-title="socgholish takedown highlights malicious tds threats"
+       data-id="fa6d3f22fd17d423"
+       data-published="2026-06-23T13:51:33+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-23T13:51:33+00:00" title="23 June 2026, 08:51">23 June 2026, 08:51</time>
+      </div>
+      <h3 class="card-title">SocGholish Takedown Highlights Malicious TDS Threats</h3>
+      <p class="card-summary">SocGholish uses traffic distribution systems (TDSs) to provide initial access into victims&#39; networks for cybercrime groups such as the notorious Evil Corp.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fa6d3f22fd17d423.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/socgholish-takedown-malicious-tds-threats" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Fortinet"
+       data-severity="medium"
+       data-title="fortibleed attackers turn firewalls into credential stealers as heists persist"
+       data-id="b8ba8c2805ee140d"
+       data-published="2026-06-23T12:34:54+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-06-23T12:34:54+00:00" title="23 June 2026, 07:34">23 June 2026, 07:34</time>
+      </div>
+      <h3 class="card-title">FortiBleed Attackers Turn Firewalls Into Credential Stealers as Heists Persist</h3>
+      <p class="card-summary">The threat actors engineered a Golang-based sniffer to target 430,000 FortiGate firewalls and identify 110 million credentials in the ongoing global campaign.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b8ba8c2805ee140d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/fortibleed-attackers-firewalls-credentials-stealers" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="scattered spider members plead guilty to hacking transport for london"
+       data-id="c5aa9bdff0b14eab"
+       data-published="2026-06-23T11:31:59-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-23T11:31:59-04:00" title="23 June 2026, 10:31">23 June 2026, 10:31</time>
+      </div>
+      <h3 class="card-title">Scattered Spider members plead guilty to hacking Transport for London</h3>
+      <p class="card-summary">Two members of the &#39;Scattered Spider&#39; cybercrime group pleaded guilty to hacking the Transport for London (TfL) systems in 2024. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c5aa9bdff0b14eab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/scattered-spider-members-plead-guilty-to-hacking-transport-for-london/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
        data-title="whatsapp vbscript campaign uses fake documents to install manageengine rmm tool"
        data-id="eddb2821ba4e5470"
        data-published="2026-06-23T11:08:40+05:30"
@@ -133,6 +282,71 @@
       <div class="detail-links">
         <a href="../articles/eddb2821ba4e5470.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/whatsapp-vbscript-campaign-uses-fake.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="the exploit doesn&#39;t exist. you can still prove it works against you"
+       data-id="aa999a443d3d63af"
+       data-published="2026-06-23T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-23T10:01:11-04:00" title="23 June 2026, 09:01">23 June 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">The Exploit Doesn&#39;t Exist. You Can Still Prove It Works Against You</h3>
+      <p class="card-summary">Attackers can now weaponize newly disclosed vulnerabilities far faster than most organizations can patch them. Picus Security explains how security teams can validate exploitability before a public exploit even exists. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/aa999a443d3d63af.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/the-exploit-doesnt-exist-you-can-still-prove-it-works-against-you/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="lastpass confirms data breach in klue supply chain attack"
+       data-id="8e39f08369be82d9"
+       data-published="2026-06-23T09:58:25-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-23T09:58:25-04:00" title="23 June 2026, 08:58">23 June 2026, 08:58</time>
+      </div>
+      <h3 class="card-title">LastPass confirms data breach in Klue supply chain attack</h3>
+      <p class="card-summary">LastPass announced that hackers accessed customer data from its Salesforce environment after stealing the company&#39;s OAuth tokens in the Klue supply chain attack earlier this month. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8e39f08369be82d9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/lastpass-confirms-data-breach-in-klue-supply-chain-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -165,6 +379,39 @@
       <div class="detail-links">
         <a href="../articles/a788712d50731841.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: why email security teams are drowning in alerts"
+       data-id="1ef03cb6538f3eaf"
+       data-published="2026-06-23T08:12:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-23T08:12:20-04:00" title="23 June 2026, 07:12">23 June 2026, 07:12</time>
+      </div>
+      <h3 class="card-title">Webinar: Why email security teams are drowning in alerts</h3>
+      <p class="card-summary">Phishing, BEC, and account takeover attacks continue to overwhelm security teams with alerts and investigations. This webinar explores how behavioral AI can help automate detection and response workflows, reducing alert fatigue and improving operational…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Phishing, BEC, and account takeover attacks continue to overwhelm security teams with alerts and investigations. This webinar explores how behavioral AI can help automate detection and response workflows, reducing alert fatigue and improving operational efficiency. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/1ef03cb6538f3eaf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-why-email-security-teams-are-drowning-in-alerts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

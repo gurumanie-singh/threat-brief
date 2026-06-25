@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">25 June 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
@@ -48,6 +48,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -61,6 +62,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
@@ -68,14 +70,79 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="new gaslight macos malware uses prompt injection to disrupt ai-assisted analysis"
+       data-id="ff0c8ab9e107dd03"
+       data-published="2026-06-25T14:53:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-25T14:53:03+05:30" title="25 June 2026, 04:23">25 June 2026, 04:23</time>
+      </div>
+      <h3 class="card-title">New Gaslight macOS Malware Uses Prompt Injection to Disrupt AI-Assisted Analysis</h3>
+      <p class="card-summary">A previously undocumented Rust-based macOS implant and information stealer has been found to embed a prompt injection payload designed to trick a malware analyst&#39;s artificial intelligence (AI) tools and trick it into aborting or refusing an analysis of the…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A previously undocumented Rust-based macOS implant and information stealer has been found to embed a prompt injection payload designed to trick a malware analyst&#39;s artificial intelligence (AI) tools and trick it into aborting or refusing an analysis of the artifact.</p></div>
+      <div class="detail-links">
+        <a href="../articles/ff0c8ab9e107dd03.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new mistic backdoor linked to kongtuke in clickfix and modelorat campaigns"
+       data-id="22ccf39860be1024"
+       data-published="2026-06-25T14:24:37+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-25T14:24:37+05:30" title="25 June 2026, 03:54">25 June 2026, 03:54</time>
+      </div>
+      <h3 class="card-title">New Mistic Backdoor Linked to KongTuke in ClickFix and ModeloRAT Campaigns</h3>
+      <p class="card-summary">A new, stealthy backdoor named Mistic has been deployed as part of suspected financially motivated attacks aimed at multiple organizations spanning insurance, education, IT, and professional services sectors since April 2026.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/22ccf39860be1024.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,vulnerability,zero-day"
        data-vendors="Cisco,Google"
@@ -107,6 +174,37 @@
       <div class="detail-links">
         <a href="../articles/3de21419f2497adc.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-zero-day-cve-2026.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="europe evolves into ransomware&#39;s favorite region"
+       data-id="b3f233a32bf908d7"
+       data-published="2026-06-25T10:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-25T10:00:00+00:00" title="25 June 2026, 05:00">25 June 2026, 05:00</time>
+      </div>
+      <h3 class="card-title">Europe Evolves Into Ransomware&#39;s Favorite Region</h3>
+      <p class="card-summary">After a global lull, ransomware gangs are setting sights on a rich new arena: attacking EU organizations and their suppliers.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b3f233a32bf908d7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

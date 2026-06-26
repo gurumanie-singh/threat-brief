@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">26 June 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>3 high-severity advisories published today</li>
+        <li>Linux, Microsoft ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -47,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -61,6 +63,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
@@ -70,12 +73,180 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve,exploit,malware"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new linux pedit cow exploit enables root access by poisoning cached binaries"
+       data-id="afa24c52aa2fcabf"
+       data-published="2026-06-26T18:30:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-26T18:30:41+05:30" title="26 June 2026, 08:00">26 June 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">New Linux pedit COW Exploit Enables Root Access by Poisoning Cached Binaries</h3>
+      <p class="card-summary">A flaw in the Linux kernel&#39;s traffic-control subsystem can let a local unprivileged user gain root on affected systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/afa24c52aa2fcabf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa adds exploited ptc windchill rce flaw to kev as web shell attacks continue"
+       data-id="72ed3f9e2a1c39a6"
+       data-published="2026-06-26T18:01:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-26T18:01:56+05:30" title="26 June 2026, 07:31">26 June 2026, 07:31</time>
+      </div>
+      <h3 class="card-title">CISA Adds Exploited PTC Windchill RCE Flaw to KEV as Web Shell Attacks Continue</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and Product Lifecycle Management (PLM)…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and Product Lifecycle Management (PLM) software to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.</p></div>
+      <div class="detail-links">
+        <a href="../articles/72ed3f9e2a1c39a6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="new dirtyclone linux kernel flaw lets local users gain root via cloned packets"
+       data-id="e1cba5ba3dc9a58d"
+       data-published="2026-06-26T17:21:35+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-26T17:21:35+05:30" title="26 June 2026, 06:51">26 June 2026, 06:51</time>
+      </div>
+      <h3 class="card-title">New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets</h3>
+      <p class="card-summary">DirtyClone is a new Linux kernel privilege escalation in the DirtyFrag family. JFrog Security Research published a working exploit walkthrough for the flaw on June 25, the first public demonstration for this variant.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e1cba5ba3dc9a58d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="guardian agents: the next layer of identity governance"
+       data-id="cd09ba9ed1136d17"
+       data-published="2026-06-26T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-26T17:00:00+05:30" title="26 June 2026, 06:30">26 June 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Guardian Agents: The Next Layer of Identity Governance</h3>
+      <p class="card-summary">AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn&#39;t designed for autonomous…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn&#39;t designed for autonomous actors, and the gap between what enterprises are deploying and what their governance programs actually cover is widening fast. This guide breaks</p></div>
+      <div class="detail-links">
+        <a href="../articles/cd09ba9ed1136d17.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/guardian-agents-next-layer-of-identity.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="miasma malware targets npm packages and github actions in supply chain attack"
+       data-id="441f75d84fc3502f"
+       data-published="2026-06-26T16:35:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-26T16:35:45+05:30" title="26 June 2026, 06:05">26 June 2026, 06:05</time>
+      </div>
+      <h3 class="card-title">Miasma Malware Targets npm Packages and GitHub Actions in Supply Chain Attack</h3>
+      <p class="card-summary">Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has propagated to the Go ecosystem.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/441f75d84fc3502f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing"
        data-vendors="Microsoft"
@@ -133,6 +304,34 @@
       <div class="detail-links">
         <a href="../articles/d444f6b20c94bd4b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/russia-used-cellebrite-on-jailed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="thanks for crushing the submissions inbox. we&#39;re trying to keep up"
+       data-id="43a50538ab520b65"
+       data-published="2026-06-26T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-26T13:00:00+00:00" title="26 June 2026, 08:00">26 June 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Thanks for Crushing the Submissions Inbox. We&#39;re Trying to Keep Up</h3>
+      <p class="card-summary">It might be taking a bit longer than usual to respond to your submissions — here&#39;s why.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/43a50538ab520b65.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/submissions-guidelines-reminder" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -1,5 +1,157 @@
 [
   {
+    "id": "afa24c52aa2fcabf",
+    "title": "New Linux pedit COW Exploit Enables Root Access by Poisoning Cached Binaries",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+    "published": "2026-06-26T18:30:41+05:30",
+    "fetched_at": "2026-06-26T13:09:48.536041+00:00",
+    "summary": "A flaw in the Linux kernel's traffic-control subsystem can let a local unprivileged user gain root on affected systems.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware"
+    ],
+    "day": "2026-06-26",
+    "cves": [
+      "CVE-2026-46331"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A flaw in the Linux kernel's traffic-control subsystem can let a local unprivileged user gain root on affected systems.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "CVE-2026-46331, nicknamed \"pedit COW,\" is an out-of-bounds write in the packet-editing action (act_pedit) that corrupts shared page-cache memory."
+    },
+    "email_summary": "A flaw in the Linux kernel's traffic-control subsystem can let a local unprivileged user gain root on affected systems. Tracked as CVE-2026-46331.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "72ed3f9e2a1c39a6",
+    "title": "CISA Adds Exploited PTC Windchill RCE Flaw to KEV as Web Shell Attacks Continue",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
+    "published": "2026-06-26T18:01:56+05:30",
+    "fetched_at": "2026-06-26T13:09:48.536329+00:00",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and Product Lifecycle Management (PLM) software to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-06-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and Product Lifecycle Management (PLM)…",
+    "quick_take": "Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and…",
+    "sections": {
+      "overview": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and Product Lifecycle Management (PLM) software to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation."
+    },
+    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical remote code execution vulnerability impacting PTC Windchill PDMlink and PTC FlexPLM enterprise Product Data Management (PDM) and Product Lifecycle Management (PLM) software to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e1cba5ba3dc9a58d",
+    "title": "New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html",
+    "published": "2026-06-26T17:21:35+05:30",
+    "fetched_at": "2026-06-26T13:09:48.536574+00:00",
+    "summary": "DirtyClone is a new Linux kernel privilege escalation in the DirtyFrag family. JFrog Security Research published a working exploit walkthrough for the flaw on June 25, the first public demonstration for this variant.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-06-26",
+    "cves": [
+      "CVE-2026-43503"
+    ],
+    "cvss": 8.8,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "DirtyClone is a new Linux kernel privilege escalation in the DirtyFrag family. JFrog Security Research published a working exploit walkthrough for the flaw on June 25, the first public demonstration for this variant.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Tracked as CVE-2026-43503 (CVSS 8.8), it lets a local user corrupt file-backed memory through a cloned network packet and gain root.\n\nAssessed severity: HIGH. CVSS score: 8.8/10."
+    },
+    "email_summary": "DirtyClone is a new Linux kernel privilege escalation in the DirtyFrag family. Tracked as CVE-2026-43503. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "cd09ba9ed1136d17",
+    "title": "Guardian Agents: The Next Layer of Identity Governance",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/guardian-agents-next-layer-of-identity.html",
+    "published": "2026-06-26T17:00:00+05:30",
+    "fetched_at": "2026-06-26T13:09:48.536792+00:00",
+    "summary": "AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn't designed for autonomous actors, and the gap between what enterprises are deploying and what their governance programs actually cover is widening fast. This guide breaks",
+    "tags": [],
+    "day": "2026-06-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn't designed for autonomous…",
+    "quick_take": "",
+    "sections": {
+      "overview": "AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn't designed for autonomous actors, and the gap between what enterprises are deploying and what their governance programs actually cover is widening fast. This guide breaks",
+      "impact": "AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn't designed for autonomous actors, and the gap between what enterprises are deploying and what their governance programs actually cover is widening fast.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "AI agents are moving through enterprise environments, inheriting permissions, traversing systems, and executing decisions at machine speed with minimal oversight. The identity infrastructure built to govern human access wasn't designed for autonomous actors, and the gap between what enterprises are deploying and what their governance programs actually cover is widening fast.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "441f75d84fc3502f",
+    "title": "Miasma Malware Targets npm Packages and GitHub Actions in Supply Chain Attack",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html",
+    "published": "2026-06-26T16:35:45+05:30",
+    "fetched_at": "2026-06-26T13:09:48.537027+00:00",
+    "summary": "Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has propagated to the Go ecosystem.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-06-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has propagated to the Go ecosystem.",
+    "quick_take": "Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has…",
+    "sections": {
+      "technical": "Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has propagated to the Go ecosystem.\n\n\"The latest activity includes malicious npm releases affecting LeoPlatform and RStreams packages, GitHub Actions workflow abuse, and a related Go",
+      "impact": "Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has propagated to the Go ecosystem.\n\n\"The latest activity includes malicious npm releases affecting LeoPlatform and RStreams packages, GitHub Actions workflow abuse, and a related Go\n\nAssessed severity: HIGH.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Cybersecurity researchers have flagged yet another evolution of the supply chain attack linked to the Mini Shai-Hulud, Miasma, and Hades malware family that has compromised a new set of npm packages, even as it has propagated to the Go ecosystem.\n\n\"The latest activity includes malicious npm releases affecting LeoPlatform and RStreams packages, GitHub Actions workflow abuse, and a related Go. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "48e0e14fd9a78689",
     "title": "Microsoft Warns of Photo ZIP Phishing Campaign Targeting Hotels with Node.js Implant",
     "source": "The Hacker News",
@@ -50,6 +202,29 @@
     "quick_take": "Russian authorities used Cellebrite's UFED forensic tools to break into the iPhone of detained opposition activist Andrey Pivovarov in June 2021, three months after Cellebrite said it would stop selling its tools and…",
     "sections": {},
     "email_summary": "Russian authorities used Cellebrite's UFED forensic tools to break into the iPhone of detained opposition activist Andrey Pivovarov in June 2021, three months after Cellebrite said it would stop selling its tools and services to Russia and Belarus. The finding, published June 25 by the Citizen Lab, rests on two things that rarely line up: traces on the phone itself and an official Russian.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "43a50538ab520b65",
+    "title": "Thanks for Crushing the Submissions Inbox. We're Trying to Keep Up",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/submissions-guidelines-reminder",
+    "published": "2026-06-26T13:00:00+00:00",
+    "fetched_at": "2026-06-26T13:09:49.540222+00:00",
+    "summary": "It might be taking a bit longer than usual to respond to your submissions — here's why.",
+    "tags": [],
+    "day": "2026-06-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "It might be taking a bit longer than usual to respond to your submissions — here's why.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "It might be taking a bit longer than usual to respond to your submissions — here's why.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

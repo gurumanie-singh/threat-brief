@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">26 June 2026</h1>
-      <span class="brief-sub">18 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>5 high-severity advisories published today</li>
-        <li>Linux, Microsoft ecosystems affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Linux, Cisco ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -49,6 +50,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -65,9 +67,9 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
@@ -76,17 +78,49 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="new sharkloader malware deploys cobalt strike in strikeshark cyberattacks"
+       data-id="81f70925c0027f43"
+       data-published="2026-06-26T23:47:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-26T23:47:46+05:30" title="26 June 2026, 13:17">26 June 2026, 13:17</time>
+      </div>
+      <h3 class="card-title">New SharkLoader Malware Deploys Cobalt Strike in StrikeShark Cyberattacks</h3>
+      <p class="card-summary">A newly discovered cyber attack campaign has been observed delivering a previously undocumented malware family called SharkLoader that acts as a loader for deploying Cobalt Strike Beacon on compromised hosts.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/81f70925c0027f43.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="apt,malware"
        data-vendors="Palo Alto"
@@ -146,6 +180,35 @@
       <div class="detail-links">
         <a href="../articles/f3c5fbc6f5d7ee4d.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai decline? confidence in autonomous penetration testing falls"
+       data-id="47657061ed90638e"
+       data-published="2026-06-26T19:11:02+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-26T19:11:02+00:00" title="26 June 2026, 14:11">26 June 2026, 14:11</time>
+      </div>
+      <h3 class="card-title">AI Decline? Confidence in Autonomous Penetration Testing Falls</h3>
+      <p class="card-summary">Companies are still experimenting with automated AI systems to find security weaknesses, but fewer are relying on the technology.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/47657061ed90638e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/ai-decline-confidence-autonomous-penetration-testing" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -366,6 +429,38 @@
       <div class="detail-links">
         <a href="../articles/1f22d5dc84ade88a.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/ai-wont-wipe-out-entry-level-cybersecurity-jobs" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="cisa sets urgent deadline to fix cisco flaw exploited in attacks"
+       data-id="877bfa7612b212e6"
+       data-published="2026-06-26T15:43:06-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-06-26T15:43:06-04:00" title="26 June 2026, 14:43">26 June 2026, 14:43</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA sets urgent deadline to fix Cisco flaw exploited in attacks</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) is giving federal agencies until Sunday to patch a vulnerability in Cisco Unified Communications Manager Server that is being actively exploited. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/877bfa7612b212e6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -605,34 +700,6 @@
       <div class="detail-links">
         <a href="../articles/c9ee4e1b24a2f8d5.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/events/celebrate-20-years-of-dark-reading-name-that-toon-contest" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="your first grc agent: a red teamer&#39;s walkthrough"
-       data-id="65d862c52f8f8a6b"
-       data-published="2026-06-26T10:01:11-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-26T10:01:11-04:00" title="26 June 2026, 09:01">26 June 2026, 09:01</time>
-      </div>
-      <h3 class="card-title">Your First GRC Agent: A Red Teamer&#39;s Walkthrough</h3>
-      <p class="card-summary">AI won&#39;t replace GRC analysts, but it can eliminate much of the repetitive work they do. Anecdotes walks through building an agent that continuously monitors controls, identifies evidence gaps, and opens remediation tasks. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/65d862c52f8f8a6b.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

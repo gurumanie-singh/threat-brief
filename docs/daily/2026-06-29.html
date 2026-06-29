@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 June 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">11 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>Microsoft ecosystem affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>2 high-severity advisories published today</li>
+        <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -72,13 +74,114 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="236,000 dcloud uni-app sites used in crypto scams, phishing, and wallet drainers"
+       data-id="296fc039fa145d9c"
+       data-published="2026-06-29T17:27:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T17:27:40+05:30" title="29 June 2026, 06:57">29 June 2026, 06:57</time>
+      </div>
+      <h3 class="card-title">236,000 DCloud Uni-App Sites Used in Crypto Scams, Phishing, and Wallet Drainers</h3>
+      <p class="card-summary">New findings unearthed by Infoblox show that more than 236,000 websites are using investment scam templates built using a legitimate Chinese open-source, cross-platform application development framework called DCloud Uni-App.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/296fc039fa145d9c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/236000-dcloud-uni-app-sites-used-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="why post-quantum cryptography starts with credentials"
+       data-id="c88f16475d1204fd"
+       data-published="2026-06-29T17:12:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T17:12:16+05:30" title="29 June 2026, 06:42">29 June 2026, 06:42</time>
+      </div>
+      <h3 class="card-title">Why Post-Quantum Cryptography Starts With Credentials</h3>
+      <p class="card-summary">Today’s encrypted data, such as credentials, may no longer remain confidential in the future because the public-key cryptography protecting it will soon be broken by quantum computers. Although no machine today can break elliptic curve cryptography or RSA,…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Today’s encrypted data, such as credentials, may no longer remain confidential in the future because the public-key cryptography protecting it will soon be broken by quantum computers. Although no machine today can break elliptic curve cryptography or RSA, quantum hardware is advancing rapidly and will inevitably change how organizations protect their data. Ciphertext and credentials captured by</p></div>
+      <div class="detail-links">
+        <a href="../articles/c88f16475d1204fd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/why-post-quantum-cryptography-starts.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="gamaredon expands ukraine attacks with new malware and cloud service abuse"
+       data-id="ce402e8fff7eb155"
+       data-published="2026-06-29T17:10:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T17:10:24+05:30" title="29 June 2026, 06:40">29 June 2026, 06:40</time>
+      </div>
+      <h3 class="card-title">Gamaredon Expands Ukraine Attacks with New Malware and Cloud Service Abuse</h3>
+      <p class="card-summary">A Russian advanced persistent threat (APT) group has continued to evolve and expand its malware arsenal as part of its ongoing cyber onslaught against Ukraine throughout 2025.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ce402e8fff7eb155.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Microsoft"
@@ -170,6 +273,163 @@
       <div class="detail-links">
         <a href="../articles/9816ae4d4b583c2a.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="agentic ai has an identity problem and attackers know it"
+       data-id="7aad09f4fec33c1e"
+       data-published="2026-06-29T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T10:01:11-04:00" title="29 June 2026, 09:01">29 June 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Agentic AI Has an Identity Problem and Attackers Know It</h3>
+      <p class="card-summary">AI agents can access data, trigger workflows, and take action across enterprise systems. Token Security explains why governing these privileged identities is becoming essential for enterprise security. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7aad09f4fec33c1e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/agentic-ai-has-an-identity-problem-and-attackers-know-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Apple,Linux,Microsoft"
+       data-severity="high"
+       data-title="critical simplehelp flaw exploited to deploy new stealer malware"
+       data-id="6c24fc623b96755d"
+       data-published="2026-06-29T10:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Apple</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-29T10:00:00-04:00" title="29 June 2026, 09:00">29 June 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Critical SimpleHelp flaw exploited to deploy new stealer malware</h3>
+      <p class="card-summary">Hackers are exploiting a recently disclosed critical vulnerability (CVE-2026-48558) in SimpleHelp to deploy Djinn Stealer, a previously undocumented cross-platform information stealer targeting Windows, macOS, and Linux. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6c24fc623b96755d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers now exploit critical oracle e-business flaw in attacks"
+       data-id="d1fb3d6450574f9e"
+       data-published="2026-06-29T09:46:17-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-29T09:46:17-04:00" title="29 June 2026, 08:46">29 June 2026, 08:46</time>
+      </div>
+      <h3 class="card-title">Hackers now exploit critical Oracle E-Business flaw in attacks</h3>
+      <p class="card-summary">Attackers have begun exploiting a critical vulnerability (CVE-2026-46817) in the Oracle E-Business Suite (EBS) financial application, according to threat intelligence company Defused. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d1fb3d6450574f9e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-oracle-e-business-suite-flaw-now-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: why business email compromise attacks keep succeeding"
+       data-id="8d20be9dc68eb918"
+       data-published="2026-06-29T08:14:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T08:14:22-04:00" title="29 June 2026, 07:14">29 June 2026, 07:14</time>
+      </div>
+      <h3 class="card-title">Webinar: Why business email compromise attacks keep succeeding</h3>
+      <p class="card-summary">Business email compromise attacks increasingly rely on convincing impersonation rather than malware, making them harder for employees and traditional email defenses to detect. This webinar explores how behavioral AI can help identify sophisticated email…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Business email compromise attacks increasingly rely on convincing impersonation rather than malware, making them harder for employees and traditional email defenses to detect. This webinar explores how behavioral AI can help identify sophisticated email threats and automate response workflows. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/8d20be9dc68eb918.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-why-business-email-compromise-attacks-keep-succeeding/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="us seizes hundreds of fifa world cup illegal streaming domains"
+       data-id="87168a013eb7ae2b"
+       data-published="2026-06-29T07:21:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T07:21:03-04:00" title="29 June 2026, 06:21">29 June 2026, 06:21</time>
+      </div>
+      <h3 class="card-title">US seizes hundreds of FIFA World Cup illegal streaming domains</h3>
+      <p class="card-summary">Justice Department&#39;s Criminal Division has seized nearly 400 web domains used for illegally streaming matches at the FIFA World Cup. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/87168a013eb7ae2b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/us-seizes-hundreds-of-fifa-world-cup-illegal-streaming-domains/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

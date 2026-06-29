@@ -1,0 +1,94 @@
+[
+  {
+    "id": "64c806a8ff96c926",
+    "title": "Microsoft Removes 119 Edge Extensions That Hid Malware in Images and Fonts",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/microsoft-removes-119-edge-extensions.html",
+    "published": "2026-06-29T14:02:31+05:30",
+    "fetched_at": "2026-06-29T10:53:53.858080+00:00",
+    "summary": "Microsoft has shut down a long-running malicious extension operation on the Edge Add-ons store that hid its payloads inside ordinary image and font files, then woke up days after install to steal credentials and run ad fraud.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-06-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has shut down a long-running malicious extension operation on the Edge Add-ons store that hid its payloads inside ordinary image and font files, then woke up days after install to steal credentials and run ad fraud.",
+    "quick_take": "Microsoft has shut down a long-running malicious extension operation on the Edge Add-ons store that hid its payloads inside ordinary image and font files, then woke up days after install to steal credentials and run…",
+    "sections": {},
+    "email_summary": "Microsoft has shut down a long-running malicious extension operation on the Edge Add-ons store that hid its payloads inside ordinary image and font files, then woke up days after install to steal credentials and run ad fraud. The company calls it StegoAd, a mash-up of steganography and adware, and ties 119 extensions to a single threat actor it says has been active since at least 2021.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "93497e0a8d8fd8cb",
+    "title": "Public PoC Released for Critical libssh2 CVE-2026-55200 Client-Side SSH Flaw",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
+    "published": "2026-06-29T12:36:34+05:30",
+    "fetched_at": "2026-06-29T10:53:53.858347+00:00",
+    "summary": "A public proof-of-concept is now out for CVE-2026-55200, a critical flaw in libssh2 that lets a malicious or compromised SSH server trigger memory corruption on a connecting client, with possible code execution. No credentials, no user interaction. The bug affects every release up to and including 1.11.1 and carries a CVSS 4.0 score of 9.2.",
+    "tags": [
+      "breach",
+      "cve",
+      "exploit"
+    ],
+    "day": "2026-06-29",
+    "cves": [
+      "CVE-2026-55200"
+    ],
+    "cvss": 4.0,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A public proof-of-concept is now out for CVE-2026-55200, a critical flaw in libssh2 that lets a malicious or compromised SSH server trigger memory corruption on a connecting client, with possible code execution. No credentials, no user interaction.",
+    "quick_take": "",
+    "sections": {
+      "technical": "A public proof-of-concept is now out for CVE-2026-55200, a critical flaw in libssh2 that lets a malicious or compromised SSH server trigger memory corruption on a connecting client, with possible code execution. The bug affects every release up to and including 1.11.1 and carries a CVSS 4.0 score of 9.2.\n\nlibssh2 is a client-side SSH library, not a server.\n\nReferenced vulnerabilities: CVE-2026-55200.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A public proof-of-concept is now out for CVE-2026-55200, a critical flaw in libssh2 that lets a malicious or compromised SSH server trigger memory corruption on a connecting client, with possible code execution. Tracked as CVE-2026-55200.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "9816ae4d4b583c2a",
+    "title": "Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
+    "published": "2026-06-29T11:06:06+05:30",
+    "fetched_at": "2026-06-29T10:53:53.858560+00:00",
+    "summary": "Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-06-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "low",
+    "vendors": [
+      "Apple",
+      "Linux",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.",
+    "quick_take": "Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.\n\n\"This…",
+    "sections": {
+      "impact": "Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.\n\n\"This attack avoids the most common npm execution paths through lifecycle scripts, perhaps in an attempt to remain 'compatible' with npm v12's security hardenings,\" JFrog said in a\n\nAssessed severity: LOW.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.\n\n\"This attack avoids the most common npm execution paths through lifecycle scripts, perhaps in an attempt to remain 'compatible' with npm v12's security hardenings,\" JFrog said in a.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  }
+]

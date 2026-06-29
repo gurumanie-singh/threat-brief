@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
@@ -49,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
@@ -75,12 +76,13 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
@@ -110,6 +112,35 @@
       <div class="detail-links">
         <a href="../articles/c261f1a74c7906b2.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="vulnerabilities expose private data in indian government systems"
+       data-id="5124437bd2e0f593"
+       data-published="2026-06-29T21:05:29+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-29T21:05:29+00:00" title="29 June 2026, 16:05">29 June 2026, 16:05</time>
+      </div>
+      <h3 class="card-title">Vulnerabilities Expose Private Data in Indian Government Systems</h3>
+      <p class="card-summary">One critical vulnerability, among many discovered by a researcher, could have allowed anyone to walk in and take over a national government portal.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5124437bd2e0f593.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/vulnerabilities-private-data-indian-government-systems" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -330,6 +361,75 @@
       <div class="detail-links">
         <a href="../articles/ce402e8fff7eb155.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,exploit,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="nissan discloses employee data breach linked to oracle zero-day attacks"
+       data-id="673db769931e8ca7"
+       data-published="2026-06-29T16:40:44-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-29T16:40:44-04:00" title="29 June 2026, 15:40">29 June 2026, 15:40</time>
+      </div>
+      <h3 class="card-title">Nissan discloses employee data breach linked to Oracle zero-day attacks</h3>
+      <p class="card-summary">Nissan is warning that it suffered a data breach affecting current and former employees after threat actors exploited an Oracle PeopleSoft vulnerability in data theft attacks previously linked to the ShinyHunters extortion group. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/673db769931e8ca7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/nissan-discloses-employee-data-breach-linked-to-oracle-zero-day-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,exploit,malware,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="naic says public data stolen in shinyhunters&#39; peoplesoft breach"
+       data-id="bdaa507f28523dd3"
+       data-published="2026-06-29T16:30:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-29T16:30:28-04:00" title="29 June 2026, 15:30">29 June 2026, 15:30</time>
+      </div>
+      <h3 class="card-title">NAIC says public data stolen in ShinyHunters&#39; PeopleSoft breach</h3>
+      <p class="card-summary">The National Association of Insurance Commissioners (NAIC) says the ShinyHunters extortion group stole only publicly available data, outdated logs, and configuration files after breaching its systems by exploiting a zero-day vulnerability in an Oracle…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The National Association of Insurance Commissioners (NAIC) says the ShinyHunters extortion group stole only publicly available data, outdated logs, and configuration files after breaching its systems by exploiting a zero-day vulnerability in an Oracle PeopleSoft server. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/bdaa507f28523dd3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/naic-says-public-data-stolen-in-shinyhunters-peoplesoft-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -607,99 +707,6 @@
       <div class="detail-links">
         <a href="../articles/6c24fc623b96755d.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors=""
-       data-severity="high"
-       data-title="hackers now exploit critical oracle e-business flaw in attacks"
-       data-id="d1fb3d6450574f9e"
-       data-published="2026-06-29T09:46:17-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-06-29T09:46:17-04:00" title="29 June 2026, 08:46">29 June 2026, 08:46</time>
-      </div>
-      <h3 class="card-title">Hackers now exploit critical Oracle E-Business flaw in attacks</h3>
-      <p class="card-summary">Attackers have begun exploiting a critical vulnerability (CVE-2026-46817) in the Oracle E-Business Suite (EBS) financial application, according to threat intelligence company Defused. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/d1fb3d6450574f9e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/new-oracle-e-business-suite-flaw-now-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="webinar: why business email compromise attacks keep succeeding"
-       data-id="8d20be9dc68eb918"
-       data-published="2026-06-29T08:14:22-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-29T08:14:22-04:00" title="29 June 2026, 07:14">29 June 2026, 07:14</time>
-      </div>
-      <h3 class="card-title">Webinar: Why business email compromise attacks keep succeeding</h3>
-      <p class="card-summary">Business email compromise attacks increasingly rely on convincing impersonation rather than malware, making them harder for employees and traditional email defenses to detect. This webinar explores how behavioral AI can help identify sophisticated email…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Business email compromise attacks increasingly rely on convincing impersonation rather than malware, making them harder for employees and traditional email defenses to detect. This webinar explores how behavioral AI can help identify sophisticated email threats and automate response workflows. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/8d20be9dc68eb918.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/webinar-why-business-email-compromise-attacks-keep-succeeding/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="us seizes hundreds of fifa world cup illegal streaming domains"
-       data-id="87168a013eb7ae2b"
-       data-published="2026-06-29T07:21:03-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-29T07:21:03-04:00" title="29 June 2026, 06:21">29 June 2026, 06:21</time>
-      </div>
-      <h3 class="card-title">US seizes hundreds of FIFA World Cup illegal streaming domains</h3>
-      <p class="card-summary">Justice Department&#39;s Criminal Division has seized nearly 400 web domains used for illegally streaming matches at the FIFA World Cup. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/87168a013eb7ae2b.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/us-seizes-hundreds-of-fifa-world-cup-illegal-streaming-domains/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

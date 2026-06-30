@@ -35,10 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Apple, Microsoft ecosystems affected by multiple advisories</li>
-        <li>Elevated ransomware activity reported across multiple sources</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -66,9 +66,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
@@ -78,17 +78,74 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft warns poisoned mcp tool descriptions can make ai agents leak data"
+       data-id="dbcb0b5dd8c1532a"
+       data-published="2026-06-30T23:16:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-30T23:16:07+05:30" title="30 June 2026, 12:46">30 June 2026, 12:46</time>
+      </div>
+      <h3 class="card-title">Microsoft Warns Poisoned MCP Tool Descriptions Can Make AI Agents Leak Data</h3>
+      <p class="card-summary">New Microsoft research shows how attackers can hijack AI agents that act on a user&#39;s behalf, using nothing more than a poisoned tool description to make the agent quietly hand over company data to an outsider.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dbcb0b5dd8c1532a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="rustduck botnet rebuilds in rust to hijack routers and servers for ddos"
+       data-id="03a4ae4be2280753"
+       data-published="2026-06-30T23:15:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-06-30T23:15:25+05:30" title="30 June 2026, 12:45">30 June 2026, 12:45</time>
+      </div>
+      <h3 class="card-title">RustDuck Botnet Rebuilds in Rust to Hijack Routers and Servers for DDoS</h3>
+      <p class="card-summary">A new two-stage malware family called RustDuck is hijacking home routers, IP cameras, Android boxes, and poorly secured servers, then stitching them into a network built to knock websites and online services offline.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/03a4ae4be2280753.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors=""
@@ -639,72 +696,6 @@
       <div class="detail-links">
         <a href="../articles/0a7ab3e6bb6f8039.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/linux/kali-linux-20262-released-with-9-new-tools-nethunter-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="blackfield ransomware asks nidec corporation for $2 million ransom"
-       data-id="a627da9912d70129"
-       data-published="2026-06-30T05:41:05-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-30T05:41:05-04:00" title="30 June 2026, 04:41">30 June 2026, 04:41</time>
-      </div>
-      <h3 class="card-title">Blackfield ransomware asks Nidec Corporation for $2 million ransom</h3>
-      <p class="card-summary">The Blackfield ransomware gang is asking for a $2 million ransom from Nidec Corporation, a large Japanese manufacturer of electronic components for automotive and computing applications. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/a627da9912d70129.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,ransomware,vulnerability,zero-day"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="cisa: windows bluehammer flaw now exploited by ransomware gangs"
-       data-id="143f74589a1fec87"
-       data-published="2026-06-30T04:53:13-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-30T04:53:13-04:00" title="30 June 2026, 03:53">30 June 2026, 03:53</time>
-      </div>
-      <h3 class="card-title">CISA: Windows BlueHammer flaw now exploited by ransomware gangs</h3>
-      <p class="card-summary">CISA confirmed on Monday that ransomware gangs are now exploiting a Microsoft Defender privilege escalation vulnerability, dubbed BlueHammer, that has previously been abused in zero-day attacks. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">ransomware</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/143f74589a1fec87.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

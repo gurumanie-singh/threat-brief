@@ -1,5 +1,62 @@
 [
   {
+    "id": "b728f6b310fa671e",
+    "title": "Langflow RCE Exploited to Deploy Monero Miner on Exposed AI App Endpoints",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
+    "published": "2026-06-30T21:17:20+05:30",
+    "fetched_at": "2026-06-30T17:50:52.398165+00:00",
+    "summary": "Threat actors are continuing to exploit a critical Langflow vulnerability as part of fresh attacks designed to deliver a Monero cryptocurrency miner.",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-06-30",
+    "cves": [
+      "CVE-2026-33017"
+    ],
+    "cvss": 9.3,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors are continuing to exploit a critical Langflow vulnerability as part of fresh attacks designed to deliver a Monero cryptocurrency miner.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The activity has been found to weaponize CVE-2026-33017 (CVSS score: 9.3), an unauthenticated remote code execution (RCE) vulnerability in Langflow, indicating threat actors are scanning and targeting exposed artificial intelligence (AI) Threat actors are continuing to exploit a critical Langflow vulnerability as part of fresh attacks designed to deliver a Monero cryptocurrency miner.\n\nReferenced vulnerabilities: CVE-2026-33017.",
+      "impact": "The activity has been found to weaponize CVE-2026-33017 (CVSS score: 9.3), an unauthenticated remote code execution (RCE) vulnerability in Langflow, indicating threat actors are scanning and targeting exposed artificial intelligence (AI)\n\nAssessed severity: CRITICAL. CVSS score: 9.3/10."
+    },
+    "email_summary": "Threat actors are continuing to exploit a critical Langflow vulnerability as part of fresh attacks designed to deliver a Monero cryptocurrency miner. Tracked as CVE-2026-33017. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "cf7abb213176f620",
+    "title": "Silent Swap Crypto Clipper Uses Fake Google Notes Extension to Replace Wallet Addresses",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html",
+    "published": "2026-06-30T21:10:18+05:30",
+    "fetched_at": "2026-06-30T17:50:52.398456+00:00",
+    "summary": "Cybersecurity researchers have flagged an active browser extension campaign that is designed to steal cryptocurrency by stealthily replacing wallet addresses when unsuspecting users initiate a transaction.",
+    "tags": [],
+    "day": "2026-06-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have flagged an active browser extension campaign that is designed to steal cryptocurrency by stealthily replacing wallet addresses when unsuspecting users initiate a transaction.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have flagged an active browser extension campaign that is designed to steal cryptocurrency by stealthily replacing wallet addresses when unsuspecting users initiate a transaction. The cryptocurrency clipper activity has been codenamed Silent Swap by McAfee Labs.\n\n\"The campaign is delivered through unsigned installers – observed in both .NET and Golang variants – that.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "3f234323f13a1531",
     "title": "GuardFall Exposes Open-Source AI Coding Agents to Decades-Old Shell Injection Risks",
     "source": "The Hacker News",
@@ -256,6 +313,33 @@
     "highlighted": false
   },
   {
+    "id": "7c0c2242df2c8e72",
+    "title": "Fake Perplexity extension on Chrome Web Store tracked searches",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-perplexity-extension-on-chrome-web-store-tracked-searches/",
+    "published": "2026-06-30T11:46:19-04:00",
+    "fetched_at": "2026-06-30T17:50:52.753387+00:00",
+    "summary": "A malicious extension in the Chrome Web Store is masquerading as the Perplexity AI answer engine, intercepting search traffic and collecting browsing information. [...]",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-06-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "A malicious extension in the Chrome Web Store is masquerading as the Perplexity AI answer engine, intercepting search traffic and collecting browsing information. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A malicious extension in the Chrome Web Store is masquerading as the Perplexity AI answer engine, intercepting search traffic and collecting browsing information. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "788e369f55576a3b",
     "title": "Oracle E-Business Suite Flaw CVE-2026-46817 Actively Exploited in the Wild",
     "source": "The Hacker News",
@@ -475,37 +559,6 @@
       "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.\n\nThis aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
     },
     "email_summary": "CISA confirmed on Monday that ransomware gangs are now exploiting a Microsoft Defender privilege escalation vulnerability, dubbed BlueHammer, that has previously been abused in zero-day attacks. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "972c7bcdff3b25b5",
-    "title": "Malicious Perplexity Chrome Extension Intercepted Searches and Address Bar Input",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
-    "published": "2026-06-30T00:10:09+05:30",
-    "fetched_at": "2026-06-29T19:54:01.545746+00:00",
-    "summary": "Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before redirecting users to real results.",
-    "tags": [
-      "vulnerability"
-    ],
-    "day": "2026-06-30",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Google",
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before…",
-    "quick_take": "",
-    "sections": {
-      "overview": "Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before redirecting users to real results.",
-      "impact": "It routed every query and every character typed into the address bar through an attacker-controlled server before redirecting users to real results.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before redirecting users to real results.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

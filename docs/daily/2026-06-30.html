@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 June 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -67,6 +68,8 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
@@ -75,14 +78,80 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="attackers exploit simplehelp cve-2026-48558 to deploy taskweaver and djinn stealer"
+       data-id="8ff42b44c5fba1e3"
+       data-published="2026-06-30T16:48:47+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-30T16:48:47+05:30" title="30 June 2026, 06:18">30 June 2026, 06:18</time>
+      </div>
+      <h3 class="card-title">Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer</h3>
+      <p class="card-summary">An unknown threat actor has been observed exploiting a recently disclosed maximum-severity security flaw in SimpleHelp to deliver two previously unreported malware families, TaskWeaver and Djinn Stealer.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8ff42b44c5fba1e3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors="AWS,Apple"
+       data-severity="medium"
+       data-title="airdrop and quick share flaws let nearby attackers trigger crashes and bypass checks"
+       data-id="ee943e52b4b0aa4e"
+       data-published="2026-06-30T14:57:58+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-30T14:57:58+05:30" title="30 June 2026, 04:27">30 June 2026, 04:27</time>
+      </div>
+      <h3 class="card-title">AirDrop and Quick Share Flaws Let Nearby Attackers Trigger Crashes and Bypass Checks</h3>
+      <p class="card-summary">Two researchers have found six security flaws in AirDrop and Quick Share, the wireless features that beam files between nearby devices with no cables or shared network.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ee943e52b4b0aa4e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/airdrop-and-quick-share-flaws-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -213,6 +282,125 @@
       <div class="detail-links">
         <a href="../articles/788e369f55576a3b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/06/oracle-e-business-suite-flaw-cve-2026.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="insurance giant aflac discloses data breach after subsidiary hack"
+       data-id="6cdf32eba40bef61"
+       data-published="2026-06-30T07:12:18-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-30T07:12:18-04:00" title="30 June 2026, 06:12">30 June 2026, 06:12</time>
+      </div>
+      <h3 class="card-title">Insurance giant Aflac discloses data breach after subsidiary hack</h3>
+      <p class="card-summary">American insurance giant Aflac has disclosed a new data breach after attackers breached its Japan subsidiary&#39;s systems and stole personal and bank account information. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6cdf32eba40bef61.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/insurance-giant-aflac-discloses-data-breach-after-subsidiary-hack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft adds smarter bot protection to teams meetings"
+       data-id="83d000049fb80c8a"
+       data-published="2026-06-30T06:52:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-30T06:52:26-04:00" title="30 June 2026, 05:52">30 June 2026, 05:52</time>
+      </div>
+      <h3 class="card-title">Microsoft adds smarter bot protection to Teams meetings</h3>
+      <p class="card-summary">Microsoft has introduced a new Teams admin policy that allows organizers to prevent third-party bots from joining meetings without approval. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/83d000049fb80c8a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/mircosoft-adds-smarter-bot-protection-to-teams-meetings/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="kali linux 2026.2 released with 9 new tools, nethunter updates"
+       data-id="0a7ab3e6bb6f8039"
+       data-published="2026-06-30T05:46:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-30T05:46:39-04:00" title="30 June 2026, 04:46">30 June 2026, 04:46</time>
+      </div>
+      <h3 class="card-title">Kali Linux 2026.2 released with 9 new tools, NetHunter updates</h3>
+      <p class="card-summary">Kali Linux 2026.2, the second release of the year, is now available for download, featuring 9 new tools and numerous Kali NetHunter improvements. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0a7ab3e6bb6f8039.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/linux/kali-linux-20262-released-with-9-new-tools-nethunter-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="blackfield ransomware asks nidec corporation for $2 million ransom"
+       data-id="a627da9912d70129"
+       data-published="2026-06-30T05:41:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-30T05:41:05-04:00" title="30 June 2026, 04:41">30 June 2026, 04:41</time>
+      </div>
+      <h3 class="card-title">Blackfield ransomware asks Nidec Corporation for $2 million ransom</h3>
+      <p class="card-summary">The Blackfield ransomware gang is asking for a $2 million ransom from Nidec Corporation, a large Japanese manufacturer of electronic components for automotive and computing applications. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a627da9912d70129.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

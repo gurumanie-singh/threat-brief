@@ -28,15 +28,15 @@
       <h1 class="brief-title">30 June 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-06-30T04:30:40.617108-05:00">30 June 2026, 04:30</time>
+        <time data-iso="2026-06-30T07:06:43.533145-05:00">30 June 2026, 07:06</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-critical">2 critical</span>
+      <span class="stat stat-critical">3 critical</span>
       <span class="stat stat-high">2 high</span>
       <span class="stat stat-action">2 action req.</span>
-      <span class="stat">6 articles today</span>
+      <span class="stat">12 articles today</span>
     </div>
   </div>
 
@@ -44,20 +44,21 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, Apple ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
         <span class="trend-pill">attacks<span class="trend-count">12</span></span>
-        <span class="trend-pill">malware<span class="trend-count">12</span></span>
-        <span class="trend-pill">exploited<span class="trend-count">10</span></span>
+        <span class="trend-pill">malware<span class="trend-count">11</span></span>
+        <span class="trend-pill">exploited<span class="trend-count">9</span></span>
+        <span class="trend-pill">attackers<span class="trend-count">8</span></span>
         <span class="trend-pill">cisco<span class="trend-count">8</span></span>
         <span class="trend-pill">malicious<span class="trend-count">7</span></span>
-        <span class="trend-pill">attack<span class="trend-count">6</span></span>
       </div>
     </div>
   </div>
@@ -109,8 +110,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
@@ -118,10 +119,73 @@
   <div class="day-group">
     <h2 class="day-heading">
       30 June 2026
-      <span class="day-count">6</span>
+      <span class="day-count">12</span>
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="attackers exploit simplehelp cve-2026-48558 to deploy taskweaver and djinn stealer"
+       data-id="8ff42b44c5fba1e3"
+       data-published="2026-06-30T16:48:47+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-06-30T16:48:47+05:30" title="30 June 2026, 06:18">30 June 2026, 06:18</time>
+      </div>
+      <h3 class="card-title">Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer</h3>
+      <p class="card-summary">An unknown threat actor has been observed exploiting a recently disclosed maximum-severity security flaw in SimpleHelp to deliver two previously unreported malware families, TaskWeaver and Djinn Stealer.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/8ff42b44c5fba1e3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors="AWS,Apple"
+       data-severity="medium"
+       data-title="airdrop and quick share flaws let nearby attackers trigger crashes and bypass checks"
+       data-id="ee943e52b4b0aa4e"
+       data-published="2026-06-30T14:57:58+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-30T14:57:58+05:30" title="30 June 2026, 04:27">30 June 2026, 04:27</time>
+      </div>
+      <h3 class="card-title">AirDrop and Quick Share Flaws Let Nearby Attackers Trigger Crashes and Bypass Checks</h3>
+      <p class="card-summary">Two researchers have found six security flaws in AirDrop and Quick Share, the wireless features that beam files between nearby devices with no cables or shared network.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ee943e52b4b0aa4e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/airdrop-and-quick-share-flaws-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -255,6 +319,125 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="insurance giant aflac discloses data breach after subsidiary hack"
+       data-id="6cdf32eba40bef61"
+       data-published="2026-06-30T07:12:18-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-30T07:12:18-04:00" title="30 June 2026, 06:12">30 June 2026, 06:12</time>
+      </div>
+      <h3 class="card-title">Insurance giant Aflac discloses data breach after subsidiary hack</h3>
+      <p class="card-summary">American insurance giant Aflac has disclosed a new data breach after attackers breached its Japan subsidiary&#39;s systems and stole personal and bank account information. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/6cdf32eba40bef61.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/insurance-giant-aflac-discloses-data-breach-after-subsidiary-hack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft adds smarter bot protection to teams meetings"
+       data-id="83d000049fb80c8a"
+       data-published="2026-06-30T06:52:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-30T06:52:26-04:00" title="30 June 2026, 05:52">30 June 2026, 05:52</time>
+      </div>
+      <h3 class="card-title">Microsoft adds smarter bot protection to Teams meetings</h3>
+      <p class="card-summary">Microsoft has introduced a new Teams admin policy that allows organizers to prevent third-party bots from joining meetings without approval. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/83d000049fb80c8a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/mircosoft-adds-smarter-bot-protection-to-teams-meetings/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="kali linux 2026.2 released with 9 new tools, nethunter updates"
+       data-id="0a7ab3e6bb6f8039"
+       data-published="2026-06-30T05:46:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-30T05:46:39-04:00" title="30 June 2026, 04:46">30 June 2026, 04:46</time>
+      </div>
+      <h3 class="card-title">Kali Linux 2026.2 released with 9 new tools, NetHunter updates</h3>
+      <p class="card-summary">Kali Linux 2026.2, the second release of the year, is now available for download, featuring 9 new tools and numerous Kali NetHunter improvements. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/0a7ab3e6bb6f8039.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/linux/kali-linux-20262-released-with-9-new-tools-nethunter-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="blackfield ransomware asks nidec corporation for $2 million ransom"
+       data-id="a627da9912d70129"
+       data-published="2026-06-30T05:41:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-30T05:41:05-04:00" title="30 June 2026, 04:41">30 June 2026, 04:41</time>
+      </div>
+      <h3 class="card-title">Blackfield ransomware asks Nidec Corporation for $2 million ransom</h3>
+      <p class="card-summary">The Blackfield ransomware gang is asking for a $2 million ransom from Nidec Corporation, a large Japanese manufacturer of electronic components for automotive and computing applications. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/a627da9912d70129.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="exploit,ransomware,vulnerability,zero-day"
        data-vendors="Microsoft"
@@ -324,10 +507,39 @@
   <div class="day-group">
     <h2 class="day-heading">
       29 June 2026
-      <span class="day-count">20</span>
+      <span class="day-count">18</span>
     </h2>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve"
+       data-vendors=""
+       data-severity="medium"
+       data-title="nist enrichment reductions impact cve coverage, accuracy"
+       data-id="9c1b6a80701ccb44"
+       data-published="2026-06-29T22:46:45+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-06-29T22:46:45+00:00" title="29 June 2026, 17:46">29 June 2026, 17:46</time>
+      </div>
+      <h3 class="card-title">NIST Enrichment Reductions Impact CVE Coverage, Accuracy</h3>
+      <p class="card-summary">The National Institute of Standards and Technology (NIST) scaled back on the number of CVEs it selects for in-depth analysis, but the move has produced mixed results, according to researchers.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/9c1b6a80701ccb44.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/nist-enrichment-reductions-cve-coverage-accuracy" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -852,241 +1064,6 @@
       <div class="detail-links">
         <a href="articles/8b3537d1a76aa388.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/us-offers-10-million-for-hackers-targeting-whatsapp-signal-users/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--low"
-       data-tags="breach,malware"
-       data-vendors="Apple,Linux,Microsoft"
-       data-severity="low"
-       data-title="hijacked npm and go packages use vs code tasks to deploy python infostealer"
-       data-id="9816ae4d4b583c2a"
-       data-published="2026-06-29T11:06:06+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-<span class="vtag">Apple</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-29T11:06:06+05:30" title="29 June 2026, 00:36">29 June 2026, 00:36</time>
-      </div>
-      <h3 class="card-title">Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer</h3>
-      <p class="card-summary">Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/9816ae4d4b583c2a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="agentic ai has an identity problem and attackers know it"
-       data-id="7aad09f4fec33c1e"
-       data-published="2026-06-29T10:01:11-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-29T10:01:11-04:00" title="29 June 2026, 09:01">29 June 2026, 09:01</time>
-      </div>
-      <h3 class="card-title">Agentic AI Has an Identity Problem and Attackers Know It</h3>
-      <p class="card-summary">AI agents can access data, trigger workflows, and take action across enterprise systems. Token Security explains why governing these privileged identities is becoming essential for enterprise security. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/7aad09f4fec33c1e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/agentic-ai-has-an-identity-problem-and-attackers-know-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors="Apple,Linux,Microsoft"
-       data-severity="high"
-       data-title="critical simplehelp flaw exploited to deploy new stealer malware"
-       data-id="6c24fc623b96755d"
-       data-published="2026-06-29T10:00:00-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Apple</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-29T10:00:00-04:00" title="29 June 2026, 09:00">29 June 2026, 09:00</time>
-      </div>
-      <h3 class="card-title">Critical SimpleHelp flaw exploited to deploy new stealer malware</h3>
-      <p class="card-summary">Hackers are exploiting a recently disclosed critical vulnerability (CVE-2026-48558) in SimpleHelp to deploy Djinn Stealer, a previously undocumented cross-platform information stealer targeting Windows, macOS, and Linux. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <div class="card-related">Also: Dark Reading</div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/6c24fc623b96755d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      28 June 2026
-      <span class="day-count">1</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="data breach exposes up to 14.2 million email logins at six isps"
-       data-id="a255c9389ba14560"
-       data-published="2026-06-28T10:13:46-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-28T10:13:46-04:00" title="28 June 2026, 09:13">28 June 2026, 09:13</time>
-      </div>
-      <h3 class="card-title">Data breach exposes up to 14.2 million email logins at six ISPs</h3>
-      <p class="card-summary">Japanese telecommunications operator KDDI Corporation disclosed a data breach where threat actors gained access to one of its email systems used by five other internet service providers (ISPs) in the country. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a255c9389ba14560.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      27 June 2026
-      <span class="day-count">3</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ukraine says russian intelligence used fake support texts to steal messaging credentials"
-       data-id="95426f1b0e30ad43"
-       data-published="2026-06-27T22:57:11+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-27T22:57:11+05:30" title="27 June 2026, 12:27">27 June 2026, 12:27</time>
-      </div>
-      <h3 class="card-title">Ukraine Says Russian Intelligence Used Fake Support Texts to Steal Messaging Credentials</h3>
-      <p class="card-summary">The Security Service of Ukraine (SSU) said it, together with the U.S. Federal Bureau of Investigation (FBI), uncovered a long-running campaign orchestrated by Russian intelligence services to break into the messaging accounts of government officials,…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>The Security Service of Ukraine (SSU) said it, together with the U.S. Federal Bureau of Investigation (FBI), uncovered a long-running campaign orchestrated by Russian intelligence services to break into the messaging accounts of government officials, military personnel, politicians, and activists in Ukraine, Europe, and the U.S.</p></div>
-      <div class="detail-links">
-        <a href="articles/95426f1b0e30ad43.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="openai previews gpt-5.6 sol with restricted access and stronger cyber safeguards"
-       data-id="c80c86eea197db29"
-       data-published="2026-06-27T17:49:37+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-27T17:49:37+05:30" title="27 June 2026, 07:19">27 June 2026, 07:19</time>
-      </div>
-      <h3 class="card-title">OpenAI Previews GPT-5.6 Sol With Restricted Access and Stronger Cyber Safeguards</h3>
-      <p class="card-summary">OpenAI on Friday released three versions of GPT-5.6, called Sol, Terra, and Luna, as a limited preview to a small number of companies as part of an ongoing engagement with the U.S. government.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/c80c86eea197db29.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/06/openai-limits-gpt-56-rollout-as-sol.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="third-party breaches teach education sector a costly lesson in vendor risk"
-       data-id="455aaf8646f668ce"
-       data-published="2026-06-27T11:48:05+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-27T11:48:05+00:00" title="27 June 2026, 06:48">27 June 2026, 06:48</time>
-      </div>
-      <h3 class="card-title">Third-Party Breaches Teach Education Sector a Costly Lesson in Vendor Risk</h3>
-      <p class="card-summary">Rising threats from third-party actors are forcing institutions to play defense to protect student data from ransomware and other attacks.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/455aaf8646f668ce.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -36,7 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
@@ -52,7 +52,6 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
-      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -67,8 +66,9 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
@@ -76,11 +76,11 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
@@ -145,6 +145,70 @@
     </div>
   </div>
   <div class="article-card card--high"
+       data-tags="cve,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="&#39;djinn&#39; stealer targets cloud, ai credentials"
+       data-id="1090e0b723194228"
+       data-published="2026-06-29T21:29:15+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-06-29T21:29:15+00:00" title="29 June 2026, 16:29">29 June 2026, 16:29</time>
+      </div>
+      <h3 class="card-title">&#39;Djinn&#39; Stealer Targets Cloud, AI Credentials</h3>
+      <p class="card-summary">The infostealer was delivered via CVE-2026-48558, a critical authentication bypass vulnerability in SimpleHelp, targeting credentials linking development and admin environments to wider enterprise systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1090e0b723194228.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="malicious perplexity chrome extension intercepted searches and address bar input"
+       data-id="972c7bcdff3b25b5"
+       data-published="2026-06-29T21:10:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-06-29T21:10:00+05:30" title="29 June 2026, 10:40">29 June 2026, 10:40</time>
+      </div>
+      <h3 class="card-title">Malicious Perplexity Chrome Extension Intercepted Searches and Address Bar Input</h3>
+      <p class="card-summary">Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before redirecting users to real results.</p></div>
+      <div class="detail-links">
+        <a href="../articles/972c7bcdff3b25b5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
        data-tags="vulnerability"
        data-vendors=""
        data-severity="high"
@@ -170,6 +234,40 @@
       <div class="detail-links">
         <a href="../articles/5124437bd2e0f593.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/vulnerabilities-threats/vulnerabilities-private-data-indian-government-systems" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,patch,vulnerability"
+       data-vendors="Apple"
+       data-severity="high"
+       data-title="apple patches 30+ ios, macos, safari flaws, including ai-discovered webkit bugs"
+       data-id="56f27b138839f78e"
+       data-published="2026-06-29T21:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-06-29T21:00:00+05:30" title="29 June 2026, 10:30">29 June 2026, 10:30</time>
+      </div>
+      <h3 class="card-title">Apple Patches 30+ iOS, macOS, Safari Flaws, Including AI-Discovered WebKit Bugs</h3>
+      <p class="card-summary">Apple on Monday released security updates for iOS, macOS, and the Safari web browser to address over three dozen flaws, including four vulnerabilities in WebKit that were discovered using artificial intelligence (AI) tools like Anthropic Claude and OpenAI…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Apple on Monday released security updates for iOS, macOS, and the Safari web browser to address over three dozen flaws, including four vulnerabilities in WebKit that were discovered using artificial intelligence (AI) tools like Anthropic Claude and OpenAI Codex Security.</p></div>
+      <div class="detail-links">
+        <a href="../articles/56f27b138839f78e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/06/apple-patches-30-ios-macos-safari-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -610,98 +708,6 @@
       <div class="detail-links">
         <a href="../articles/166ca97ad36d0b5d.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cloud-security/amazon-q-vs-extension-flaw-leads-cloud-credential-theft" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="u.s. offers $10 million for hackers targeting whatsapp, signal users"
-       data-id="8b3537d1a76aa388"
-       data-published="2026-06-29T11:09:43-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-29T11:09:43-04:00" title="29 June 2026, 10:09">29 June 2026, 10:09</time>
-      </div>
-      <h3 class="card-title">U.S. offers $10 million for hackers targeting WhatsApp, Signal users</h3>
-      <p class="card-summary">Department of State is offering up to $10 million for information that helps identify or locate members of the UNC5792 and UNC4221 hacker groups, which are linked to Russia&#39;s intelligence and military services. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/8b3537d1a76aa388.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/us-offers-10-million-for-hackers-targeting-whatsapp-signal-users/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--low"
-       data-tags="breach,malware"
-       data-vendors="Apple,Linux,Microsoft"
-       data-severity="low"
-       data-title="hijacked npm and go packages use vs code tasks to deploy python infostealer"
-       data-id="9816ae4d4b583c2a"
-       data-published="2026-06-29T11:06:06+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-low">low</span>
-<span class="vtag">Apple</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-06-29T11:06:06+05:30" title="29 June 2026, 00:36">29 June 2026, 00:36</time>
-      </div>
-      <h3 class="card-title">Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer</h3>
-      <p class="card-summary">Cybersecurity researchers have uncovered two hijacked npm packages and a cluster of Go packages that are designed to deploy a Python-based information stealer on compromised Windows, Linux, and macOS hosts.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/9816ae4d4b583c2a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="agentic ai has an identity problem and attackers know it"
-       data-id="7aad09f4fec33c1e"
-       data-published="2026-06-29T10:01:11-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-06-29T10:01:11-04:00" title="29 June 2026, 09:01">29 June 2026, 09:01</time>
-      </div>
-      <h3 class="card-title">Agentic AI Has an Identity Problem and Attackers Know It</h3>
-      <p class="card-summary">AI agents can access data, trigger workflows, and take action across enterprise systems. Token Security explains why governing these privileged identities is becoming essential for enterprise security. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/7aad09f4fec33c1e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/agentic-ai-has-an-identity-problem-and-attackers-know-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

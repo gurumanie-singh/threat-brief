@@ -27,10 +27,18 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">6 July 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +47,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -56,20 +65,57 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="exploit,malware,ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="weekly recap: proxy botnets, browser ransomware, ai agent tricks, fake poc malware and more"
+       data-id="2217c20ab6e5d4b1"
+       data-published="2026-07-06T18:31:14+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-06T18:31:14+05:30" title="6 July 2026, 08:01">6 July 2026, 08:01</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Proxy Botnets, Browser Ransomware, AI Agent Tricks, Fake PoC Malware and More</h3>
+      <p class="card-summary">A streaming box should not need a threat model. Neither should a username field, a demo repo, a reset flow, or a browser permission prompt.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2217c20ab6e5d4b1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -253,6 +299,67 @@
       <div class="detail-links">
         <a href="../articles/25929924b62bf311.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="software is now written at the speed of thought. security isn&#39;t."
+       data-id="0ba7eee8db20018b"
+       data-published="2026-07-06T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-06T10:00:10-04:00" title="6 July 2026, 09:00">6 July 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Software Is Now Written at the Speed of Thought. Security Isn&#39;t.</h3>
+      <p class="card-summary">Every evolution in software development has reduced the friction between an idea and a deployable application. AI may remove the final barrier, but it also removes many of the moments where security decisions have traditionally taken place. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0ba7eee8db20018b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/software-is-now-written-at-the-speed-of-thought-security-isnt/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="Adobe"
+       data-severity="medium"
+       data-title="max severity adobe coldfusion flaw now exploited in attacks"
+       data-id="6c88b943d1beb169"
+       data-published="2026-07-06T09:18:37-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-07-06T09:18:37-04:00" title="6 July 2026, 08:18">6 July 2026, 08:18</time>
+      </div>
+      <h3 class="card-title">Max severity Adobe ColdFusion flaw now exploited in attacks</h3>
+      <p class="card-summary">Attackers are now exploiting a maximum-severity Adobe ColdFusion vulnerability tracked as CVE-2026-48282, according to vulnerability intelligence company KEVIntel. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6c88b943d1beb169.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/max-severity-adobe-coldfusion-flaw-now-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

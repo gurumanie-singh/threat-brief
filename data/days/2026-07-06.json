@@ -1,5 +1,69 @@
 [
   {
+    "id": "fc94da5a71fd11e8",
+    "title": "16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
+    "published": "2026-07-06T23:07:01+05:30",
+    "fetched_at": "2026-07-06T18:54:01.835656+00:00",
+    "summary": "A use-after-free bug in Linux's KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware"
+    ],
+    "day": "2026-07-06",
+    "cves": [
+      "CVE-2026-53359"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A use-after-free bug in Linux's KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A use-after-free bug in Linux's KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it. Tracked as CVE-2026-53359. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "392c27c982d3ece8",
+    "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
+    "published": "2026-07-06T21:58:59+05:30",
+    "fetched_at": "2026-07-06T18:54:01.835929+00:00",
+    "summary": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-06",
+    "cves": [
+      "CVE-2026-20896"
+    ],
+    "cvss": 9.8,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The vulnerability in question is CVE-2026-20896 (CVSS score: 9.8), a vulnerability that stems from the DevOps platform trusting the \"X-WEBAUTH-USER\" header from any source IP address, effectively allowing an unauthenticated internet client to get elevated Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig.\n\nReferenced vulnerabilities: CVE-2026-20896.",
+      "impact": "The vulnerability in question is CVE-2026-20896 (CVSS score: 9.8), a vulnerability that stems from the DevOps platform trusting the \"X-WEBAUTH-USER\" header from any source IP address, effectively allowing an unauthenticated internet client to get elevated\n\nAssessed severity: CRITICAL. CVSS score: 9.8/10."
+    },
+    "email_summary": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig. Tracked as CVE-2026-20896. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "2217c20ab6e5d4b1",
     "title": "Weekly Recap: Proxy Botnets, Browser Ransomware, AI Agent Tricks, Fake PoC Malware and More",
     "source": "The Hacker News",
@@ -57,6 +121,34 @@
     "highlighted": false
   },
   {
+    "id": "ca4aa854d90631a3",
+    "title": "JadePuffer: The First Complete LLM-Driven Ransomware Attack",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack",
+    "published": "2026-07-06T16:36:50+00:00",
+    "fetched_at": "2026-07-06T18:54:04.012224+00:00",
+    "summary": "An \"agentic threat actor\" successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems.",
+    "tags": [
+      "exploit",
+      "ransomware"
+    ],
+    "day": "2026-07-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "An \"agentic threat actor\" successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems.",
+    "quick_take": "",
+    "sections": {
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "An \"agentic threat actor\" successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "d3503d41eaa8f88b",
     "title": "Suspected China-Nexus Hackers Use Fake Indian Tax Filing Utility to Deploy DcRAT",
     "source": "The Hacker News",
@@ -81,6 +173,29 @@
       "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "A suspected China-nexus threat activity cluster has been observed targeting Indian taxpayers, tax professionals, and corporate finance teams to deliver a remote access trojan designed to steal sensitive data from compromised hosts. The multi-stage campaign, codenamed Operation DragonReturn by Seqrite Labs, involves sending spear-phishing emails impersonating the Income Tax Department of India.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "337652370a3f8bf1",
+    "title": "Vietnam arrests suspects behind HiAnime anime piracy service",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/vietnam-arrests-suspects-behind-hianime-anime-piracy-service/",
+    "published": "2026-07-06T14:25:06-04:00",
+    "fetched_at": "2026-07-06T18:54:02.089858+00:00",
+    "summary": "​Vietnamese authorities have arrested and are prosecuting seven suspects believed to have run HiAnime, the largest anime piracy streaming service before its shutdown in June. [...]",
+    "tags": [],
+    "day": "2026-07-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "​Vietnamese authorities have arrested and are prosecuting seven suspects believed to have run HiAnime, the largest anime piracy streaming service before its shutdown in June. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "​Vietnamese authorities have arrested and are prosecuting seven suspects believed to have run HiAnime, the largest anime piracy streaming service before its shutdown in June. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

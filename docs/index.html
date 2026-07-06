@@ -28,13 +28,14 @@
       <h1 class="brief-title">6 July 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-07-06T11:18:55.727991-05:00">6 July 2026, 11:18</time>
+        <time data-iso="2026-07-06T13:54:05.132747-05:00">6 July 2026, 13:54</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-high">1 high</span>
-      <span class="stat">9 articles today</span>
+      <span class="stat stat-critical">1 critical</span>
+      <span class="stat stat-high">2 high</span>
+      <span class="stat">13 articles today</span>
     </div>
   </div>
 
@@ -42,18 +43,20 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Linux ecosystem affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">ransomware<span class="trend-count">12</span></span>
+        <span class="trend-pill">ransomware<span class="trend-count">13</span></span>
         <span class="trend-pill">malware<span class="trend-count">9</span></span>
         <span class="trend-pill">microsoft<span class="trend-count">9</span></span>
+        <span class="trend-pill">attack<span class="trend-count">6</span></span>
         <span class="trend-pill">flaws<span class="trend-count">6</span></span>
         <span class="trend-pill">attackers<span class="trend-count">6</span></span>
-        <span class="trend-pill">proxy<span class="trend-count">5</span></span>
       </div>
     </div>
   </div>
@@ -101,11 +104,11 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
@@ -115,10 +118,75 @@
   <div class="day-group">
     <h2 class="day-heading">
       6 July 2026
-      <span class="day-count">9</span>
+      <span class="day-count">13</span>
     </h2>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="16-year-old linux kvm flaw lets guest vms escape to host on intel and amd x86 systems"
+       data-id="fc94da5a71fd11e8"
+       data-published="2026-07-06T23:07:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-07-06T23:07:01+05:30" title="6 July 2026, 12:37">6 July 2026, 12:37</time>
+      </div>
+      <h3 class="card-title">16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems</h3>
+      <p class="card-summary">A use-after-free bug in Linux&#39;s KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/fc94da5a71fd11e8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="threat actors probe gitea docker flaw cve-2026-20896 13 days after disclosure"
+       data-id="392c27c982d3ece8"
+       data-published="2026-07-06T21:58:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-06T21:58:59+05:30" title="6 July 2026, 11:28">6 July 2026, 11:28</time>
+      </div>
+      <h3 class="card-title">Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure</h3>
+      <p class="card-summary">Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/392c27c982d3ece8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="exploit,malware,ransomware"
        data-vendors=""
@@ -184,6 +252,38 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="exploit,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="jadepuffer: the first complete llm-driven ransomware attack"
+       data-id="ca4aa854d90631a3"
+       data-published="2026-07-06T16:36:50+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-06T16:36:50+00:00" title="6 July 2026, 11:36">6 July 2026, 11:36</time>
+      </div>
+      <h3 class="card-title">JadePuffer: The First Complete LLM-Driven Ransomware Attack</h3>
+      <p class="card-summary">An &#34;agentic threat actor&#34; successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ca4aa854d90631a3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="breach,malware,phishing"
        data-vendors=""
        data-severity="medium"
@@ -213,6 +313,34 @@
       <div class="detail-links">
         <a href="articles/d3503d41eaa8f88b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="vietnam arrests suspects behind hianime anime piracy service"
+       data-id="337652370a3f8bf1"
+       data-published="2026-07-06T14:25:06-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-06T14:25:06-04:00" title="6 July 2026, 13:25">6 July 2026, 13:25</time>
+      </div>
+      <h3 class="card-title">Vietnam arrests suspects behind HiAnime anime piracy service</h3>
+      <p class="card-summary">​Vietnamese authorities have arrested and are prosecuting seven suspects believed to have run HiAnime, the largest anime piracy streaming service before its shutdown in June. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/337652370a3f8bf1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/vietnam-arrests-suspects-behind-hianime-anime-piracy-service/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -917,7 +1045,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       2 July 2026
-      <span class="day-count">5</span>
+      <span class="day-count">1</span>
     </h2>
   </div>
 
@@ -946,125 +1074,6 @@
       <div class="detail-links">
         <a href="articles/253854c9787d13ed.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-analytics/aussies-face-reduced-cybercrime-risk-pressure-shifts-smbs" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="claude fable 5 isn’t permanently leaving subscriptions, anthropic says"
-       data-id="889ddac4b6087bdb"
-       data-published="2026-07-02T21:37:09-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-02T21:37:09-04:00" title="2 July 2026, 20:37">2 July 2026, 20:37</time>
-      </div>
-      <h3 class="card-title">Claude Fable 5 isn’t permanently leaving subscriptions, Anthropic says</h3>
-      <p class="card-summary">Anthropic says Claude Fable 5 won&#39;t be accessible via Claude subscriptions after July 7, but it&#39;s not a permanent change, and the company expects the model to return outside the usage-based plan soon. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/889ddac4b6087bdb.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="ransomware"
-       data-vendors="Apple"
-       data-severity="medium"
-       data-title="threatsday: ai compute hijacking, apple email flaw, bluehammer ransomware + 14 stories"
-       data-id="3013c294e1acabf4"
-       data-published="2026-07-02T20:54:18+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-07-02T20:54:18+05:30" title="2 July 2026, 10:24">2 July 2026, 10:24</time>
-      </div>
-      <h3 class="card-title">ThreatsDay: AI Compute Hijacking, Apple Email Flaw, BlueHammer Ransomware + 14 Stories</h3>
-      <p class="card-summary">This week’s security news is mostly about weak spots.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/3013c294e1acabf4.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/threatsday-ai-compute-hijacking-apple.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="claude fable relaunch disappoints users with nerfed performance"
-       data-id="7d3c91d02a2e9ef3"
-       data-published="2026-07-02T20:48:30-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-02T20:48:30-04:00" title="2 July 2026, 19:48">2 July 2026, 19:48</time>
-      </div>
-      <h3 class="card-title">Claude Fable relaunch disappoints users with nerfed performance</h3>
-      <p class="card-summary">Claude Fable, the company&#39;s most powerful model, is now available to all users, but early impressions are disappointing, as it appears to be nowhere near the original release. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/7d3c91d02a2e9ef3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,patch"
-       data-vendors="Apple"
-       data-severity="medium"
-       data-title="apple reverses age-old patch policy to keep up with ai"
-       data-id="f758dba3f4a115e8"
-       data-published="2026-07-02T19:31:58+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-07-02T19:31:58+00:00" title="2 July 2026, 14:31">2 July 2026, 14:31</time>
-      </div>
-      <h3 class="card-title">Apple Reverses Age-Old Patch Policy to Keep Up With AI</h3>
-      <p class="card-summary">Expect more compressed patching cycles from Apple going forward, as attackers leverage artificial intelligence to reduce time to exploit.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/f758dba3f4a115e8.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/apple-patch-policy-ai" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

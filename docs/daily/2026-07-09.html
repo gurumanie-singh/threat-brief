@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">9 July 2026</h1>
-      <span class="brief-sub">18 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>2 high-severity advisories published today</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -49,7 +49,6 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
-      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -74,17 +73,103 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware,ransomware"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="new gigawiper windows backdoor bundles disk wiping, fake ransomware, and spyware"
+       data-id="4ab3d28041434685"
+       data-published="2026-07-09T23:38:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T23:38:07+05:30" title="9 July 2026, 13:08">9 July 2026, 13:08</time>
+      </div>
+      <h3 class="card-title">New GigaWiper Windows Backdoor Bundles Disk Wiping, Fake Ransomware, and Spyware</h3>
+      <p class="card-summary">Microsoft has taken apart a destructive Windows backdoor it calls GigaWiper. What stands out is how it is built: not one tool but three older destructive programs bolted into one, offered as commands the operator can choose from.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4ab3d28041434685.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="npm 12 disables install scripts by default to reduce supply chain risk"
+       data-id="122ed58e413de3b1"
+       data-published="2026-07-09T22:19:02+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T22:19:02+05:30" title="9 July 2026, 11:49">9 July 2026, 11:49</time>
+      </div>
+      <h3 class="card-title">npm 12 Disables Install Scripts by Default to Reduce Supply Chain Risk</h3>
+      <p class="card-summary">GitHub has officially announced the release of npm version 12 with install scripts disabled by default, along with deprecating granular access tokens (GATs) designed to bypass two-factor authentication (2FA).</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/122ed58e413de3b1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="threatsday: cloud bucket hijacking, windows lpe chain, global fraud bust + 17 more stories"
+       data-id="8bce78ffbba22ef7"
+       data-published="2026-07-09T20:39:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T20:39:28+05:30" title="9 July 2026, 10:09">9 July 2026, 10:09</time>
+      </div>
+      <h3 class="card-title">ThreatsDay: Cloud Bucket Hijacking, Windows LPE Chain, Global Fraud Bust + 17 More Stories</h3>
+      <p class="card-summary">Most security mess starts as admin work. A link gets clicked.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8bce78ffbba22ef7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -241,6 +326,37 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="new helix vishing group emerges in sharepoint data theft attacks"
+       data-id="bfc46345d91c5194"
+       data-published="2026-07-09T13:08:29-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T13:08:29-04:00" title="9 July 2026, 12:08">9 July 2026, 12:08</time>
+      </div>
+      <h3 class="card-title">New Helix vishing group emerges in SharePoint data theft attacks</h3>
+      <p class="card-summary">A new data-extortion group called Helix is using identity-focused tactics such as voice phishing (vishing), device code phishing, and multi-factor authentication (MFA) abuse to steal data from SharePoint environments. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bfc46345d91c5194.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
        data-severity="medium"
@@ -265,6 +381,38 @@
       <div class="detail-links">
         <a href="../articles/380d321f55a0750c.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyber-risk/ai-gateways-keys-kingdom" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="medium"
+       data-title="microsoft expects more windows security updates from ai-discovered flaws"
+       data-id="1a0fc1997c2b8948"
+       data-published="2026-07-09T13:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T13:00:00-04:00" title="9 July 2026, 12:00">9 July 2026, 12:00</time>
+      </div>
+      <h3 class="card-title">Microsoft expects more Windows security updates from AI-discovered flaws</h3>
+      <p class="card-summary">Microsoft says Windows users should expect to see an increase in security updates as the company increasingly relies on artificial intelligence to discover vulnerabilities in its codebase. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1a0fc1997c2b8948.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -534,102 +682,6 @@
       <div class="detail-links">
         <a href="../articles/38e9c73c709f6f55.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-owa-light-retirement-in-exchange-server/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="police arrests 5,800 suspects in global anti-fraud crackdown"
-       data-id="3883436f575e3546"
-       data-published="2026-07-09T05:47:28-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-09T05:47:28-04:00" title="9 July 2026, 04:47">9 July 2026, 04:47</time>
-      </div>
-      <h3 class="card-title">Police arrests 5,800 suspects in global anti-fraud crackdown</h3>
-      <p class="card-summary">Law enforcement agencies have arrested 5,811 suspects and seized $293 million in illicit assets in a global anti-fraud operation spanning 97 countries. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/3883436f575e3546.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="assuranceamerica data breach exposes records of 6.9 million drivers"
-       data-id="de727b5233526c40"
-       data-published="2026-07-09T03:47:16-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-09T03:47:16-04:00" title="9 July 2026, 02:47">9 July 2026, 02:47</time>
-      </div>
-      <h3 class="card-title">AssuranceAmerica data breach exposes records of 6.9 million drivers</h3>
-      <p class="card-summary">American insurance company AssuranceAmerica has disclosed a data breach impacting nearly 7 million drivers after attackers gained access to its systems earlier this year.  [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/de727b5233526c40.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="patch,vulnerability,zero-day"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="microsoft patches rogueplanet defender zero-day vulnerability"
-       data-id="5cb91a32fbd74ee0"
-       data-published="2026-07-09T01:42:49-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T01:42:49-04:00" title="9 July 2026, 00:42">9 July 2026, 00:42</time>
-      </div>
-      <h3 class="card-title">Microsoft patches RoguePlanet Defender zero-day vulnerability</h3>
-      <p class="card-summary">Microsoft has released a security patch to address a Defender zero-day vulnerability known as &#34;RoguePlanet,&#34; disclosed after the June 2026 Patch Tuesday. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/5cb91a32fbd74ee0.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

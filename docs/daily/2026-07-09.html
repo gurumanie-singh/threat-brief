@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">9 July 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
@@ -36,6 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -62,22 +64,88 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,malware,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="microsoft patches rogueplanet defender flaw that can grant system privileges"
+       data-id="f153dbb820e71ff6"
+       data-published="2026-07-09T14:18:48+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T14:18:48+05:30" title="9 July 2026, 03:48">9 July 2026, 03:48</time>
+      </div>
+      <h3 class="card-title">Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges</h3>
+      <p class="card-summary">Microsoft has released security updates for a Defender vulnerability known as RoguePlanet, nearly a month after details of the flaw became public.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f153dbb820e71ff6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="meta&#39;s new ai image tool lets others use your public instagram photos in ai images"
+       data-id="93915a0a8bbae2ed"
+       data-published="2026-07-09T12:51:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-09T12:51:06+05:30" title="9 July 2026, 02:21">9 July 2026, 02:21</time>
+      </div>
+      <h3 class="card-title">Meta&#39;s New AI Image Tool Lets Others Use Your Public Instagram Photos in AI Images</h3>
+      <p class="card-summary">Meta has announced that its new artificial intelligence (AI) model Muse Image lets people use public Instagram posts and reels to generate AI content, and it&#39;s enabled by default.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/93915a0a8bbae2ed.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/metas-new-ai-image-tool-lets-others-use.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors=""
@@ -104,6 +172,37 @@
       <div class="detail-links">
         <a href="../articles/43e78bd50bd7182d.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="&#39;goddamn&#39; ransomware uses byovd to smite us companies"
+       data-id="ec85522c95ca1cd3"
+       data-published="2026-07-09T10:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-09T10:00:00+00:00" title="9 July 2026, 05:00">9 July 2026, 05:00</time>
+      </div>
+      <h3 class="card-title">&#39;GodDamn&#39; Ransomware Uses BYOVD to Smite US Companies</h3>
+      <p class="card-summary">Microsoft co-signed a malicious kernel driver, and now it&#39;s being used to kill security software in ransomware attacks.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ec85522c95ca1cd3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/goddamn-ransomware-byovd-smite-companies" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -164,6 +263,98 @@
       <div class="detail-links">
         <a href="../articles/8bd50349d86a71b9.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/fake-7-zip-installers-turn-devices-into.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="european organizations have a collaboration security confidence gap"
+       data-id="78b63031dcc04528"
+       data-published="2026-07-09T08:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-09T08:00:00+00:00" title="9 July 2026, 03:00">9 July 2026, 03:00</time>
+      </div>
+      <h3 class="card-title">European Organizations Have a Collaboration Security Confidence Gap</h3>
+      <p class="card-summary">A new survey shows security leaders have an inflated sense of safety regarding their collaboration tools and platforms.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/78b63031dcc04528.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/european-organizations-collaboration-security-confidence-gap" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="police arrests 5,800 suspects in global anti-fraud crackdown"
+       data-id="3883436f575e3546"
+       data-published="2026-07-09T05:47:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-09T05:47:28-04:00" title="9 July 2026, 04:47">9 July 2026, 04:47</time>
+      </div>
+      <h3 class="card-title">Police arrests 5,800 suspects in global anti-fraud crackdown</h3>
+      <p class="card-summary">Law enforcement agencies have arrested 5,811 suspects and seized $293 million in illicit assets in a global anti-fraud operation spanning 97 countries. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3883436f575e3546.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="assuranceamerica data breach exposes records of 6.9 million drivers"
+       data-id="de727b5233526c40"
+       data-published="2026-07-09T03:47:16-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-09T03:47:16-04:00" title="9 July 2026, 02:47">9 July 2026, 02:47</time>
+      </div>
+      <h3 class="card-title">AssuranceAmerica data breach exposes records of 6.9 million drivers</h3>
+      <p class="card-summary">American insurance company AssuranceAmerica has disclosed a data breach impacting nearly 7 million drivers after attackers gained access to its systems earlier this year.  [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/de727b5233526c40.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

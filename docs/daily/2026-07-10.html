@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">10 July 2026</h1>
-      <span class="brief-sub">14 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>3 high-severity advisories published today</li>
+        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -50,6 +50,7 @@
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -63,6 +64,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
@@ -75,12 +77,75 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="laser attack resets tangem wallet passwords on cards that can&#39;t be patched"
+       data-id="b9b6f9bb05e257bb"
+       data-published="2026-07-10T20:21:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-10T20:21:49+05:30" title="10 July 2026, 09:51">10 July 2026, 09:51</time>
+      </div>
+      <h3 class="card-title">Laser Attack Resets Tangem Wallet Passwords on Cards That Can&#39;t Be Patched</h3>
+      <p class="card-summary">Researchers at Ledger&#39;s Donjon security team have shown that a precisely timed laser pulse, aimed at the chip inside a Tangem crypto wallet card, can reset the card&#39;s password to anything the attacker picks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b9b6f9bb05e257bb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,malware,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="researcher details whatsapp-to-host attack chain using three openclaw flaws"
+       data-id="702e34f298fb9e93"
+       data-published="2026-07-10T19:49:50+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-10T19:49:50+05:30" title="10 July 2026, 09:19">10 July 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws</h3>
+      <p class="card-summary">Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/702e34f298fb9e93.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -354,6 +419,36 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--low"
+       data-tags=""
+       data-vendors="AWS"
+       data-severity="low"
+       data-title="more countries jump on the social media ban wagon"
+       data-id="97b91e1d60d78ae6"
+       data-published="2026-07-10T13:50:24+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-10T13:50:24+00:00" title="10 July 2026, 08:50">10 July 2026, 08:50</time>
+      </div>
+      <h3 class="card-title">More Countries Jump on the Social Media Ban Wagon</h3>
+      <p class="card-summary">Age restrictions on accounts may be more of a ban(d) aid, because industry compliance is already falling short. Tech giants are struggling to follow the laws without affecting users.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/97b91e1d60d78ae6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/more-countries-jump-on-the-social-media-ban-wagon" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -381,6 +476,130 @@
       <div class="detail-links">
         <a href="../articles/3fe80914c0410573.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/application-security/ai-coding-security-risks-productivity-gains" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="police suspects dutch hackers were involved in odido breach"
+       data-id="269c28173404405e"
+       data-published="2026-07-10T12:37:01-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-10T12:37:01-04:00" title="10 July 2026, 11:37">10 July 2026, 11:37</time>
+      </div>
+      <h3 class="card-title">Police suspects Dutch hackers were involved in Odido breach</h3>
+      <p class="card-summary">The Dutch National Police (Politie) says it has found &#34;strong indications&#34; that Dutch hackers have been involved in a February breach at the telecommunications provider Odido. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/269c28173404405e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/police-suspects-dutch-hackers-were-involved-in-odido-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="progress urges sharefile customers to shut down servers over &#34;credible&#34; threat"
+       data-id="58c41d7c3f95e685"
+       data-published="2026-07-10T12:26:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-10T12:26:10-04:00" title="10 July 2026, 11:26">10 July 2026, 11:26</time>
+      </div>
+      <h3 class="card-title">Progress urges ShareFile customers to shut down servers over &#34;credible&#34; threat</h3>
+      <p class="card-summary">Progress Software is emailing ShareFile customers who use Storage Zone Controllers to immediately shut down their servers after identifying what it describes as a &#34;credible external security threat&#34; targeting the on-premises secure file-sharing software. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/58c41d7c3f95e685.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers exploit critical auth bypass in gitea docker image"
+       data-id="5d6a471a509fb19b"
+       data-published="2026-07-10T11:48:38-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-10T11:48:38-04:00" title="10 July 2026, 10:48">10 July 2026, 10:48</time>
+      </div>
+      <h3 class="card-title">Hackers exploit critical auth bypass in Gitea Docker image</h3>
+      <p class="card-summary">Hackers are actively exploiting a critical vulnerability in the official Docker image for the Gitea self-hosted Git service that allows attackers to impersonate any user, including administrators. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5d6a471a509fb19b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="money launderer accused of stealing seized crypto while in prison"
+       data-id="4d861ade46e4fb5a"
+       data-published="2026-07-10T11:30:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-10T11:30:19-04:00" title="10 July 2026, 10:30">10 July 2026, 10:30</time>
+      </div>
+      <h3 class="card-title">Money launderer accused of stealing seized crypto while in prison</h3>
+      <p class="card-summary">A Bulgarian national has been charged with stealing $290,000 in government-seized cryptocurrency while serving 121 months in prison for helping launder millions stolen from American fraud victims. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4d861ade46e4fb5a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -478,38 +697,6 @@
       <div class="detail-links">
         <a href="../articles/199fbd35b6ed8ad5.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/us-ransomware-negotiator-gets-4-years-in-prison-for-blackcat-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="dormant github accounts help attackers blend in while mapping corporate orgs"
-       data-id="326250b583db0645"
-       data-published="2026-07-10T00:08:49+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-10T00:08:49+05:30" title="9 July 2026, 13:38">9 July 2026, 13:38</time>
-      </div>
-      <h3 class="card-title">Dormant GitHub Accounts Help Attackers Blend In While Mapping Corporate Orgs</h3>
-      <p class="card-summary">Datadog Security Labs is warning of &#34;several overlapping campaigns&#34; that are systematically enumerating corporate GitHub organizations, repositories, and user accounts through the GitHub API.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/326250b583db0645.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

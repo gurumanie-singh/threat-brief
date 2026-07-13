@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">13 July 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">16 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -48,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,21 +68,243 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors="Citrix"
+       data-severity="medium"
+       data-title="weekly recap: sharefile threat, citrix bleed 2 ransomware, ai coding attacks, and more"
+       data-id="d3c467bddf631e65"
+       data-published="2026-07-13T20:35:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-07-13T20:35:57+05:30" title="13 July 2026, 10:05">13 July 2026, 10:05</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks, and More</h3>
+      <p class="card-summary">Somewhere right now, a security tool is quietly finding bugs faster than any human can fix them. That&#39;s supposed to be the good news.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d3c467bddf631e65.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/weekly-recap-sharefile-threat-citrix.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="new memghost attack plants persistent false memories in ai agents through one email"
+       data-id="40f5c2db3fb5f609"
+       data-published="2026-07-13T19:19:48+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T19:19:48+05:30" title="13 July 2026, 08:49">13 July 2026, 08:49</time>
+      </div>
+      <h3 class="card-title">New MemGhost Attack Plants Persistent False Memories in AI Agents Through One Email</h3>
+      <p class="card-summary">Give an AI assistant a memory and access to your inbox, and you hand an attacker a way to rewrite what it thinks it knows about you. A single email can trick that agent into saving a false &#34;fact&#34; about the user, hide the change, and quietly steer its…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Give an AI assistant a memory and access to your inbox, and you hand an attacker a way to rewrite what it thinks it knows about you. A single email can trick that agent into saving a false &#34;fact&#34; about the user, hide the change, and quietly steer its answers in later sessions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/40f5c2db3fb5f609.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="forg365 phaas targets microsoft 365 with device code and aitm session theft"
+       data-id="d7f7b54b6f813ae0"
+       data-published="2026-07-13T18:33:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-13T18:33:33+05:30" title="13 July 2026, 08:03">13 July 2026, 08:03</time>
+      </div>
+      <h3 class="card-title">Forg365 PhaaS Targets Microsoft 365 with Device Code and AitM Session Theft</h3>
+      <p class="card-summary">A new phishing-as-a-service (PhaaS) operation called Forg365 is using a combination of device code phishing, adversary-in-the-middle (AitM) tactics, antibot evasion, artificial intelligence (AI)-assisted lure creation, and post-compromise mailbox…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A new phishing-as-a-service (PhaaS) operation called Forg365 is using a combination of device code phishing, adversary-in-the-middle (AitM) tactics, antibot evasion, artificial intelligence (AI)-assisted lure creation, and post-compromise mailbox operations targeting Microsoft 365 accounts.</p></div>
+      <div class="detail-links">
+        <a href="../articles/d7f7b54b6f813ae0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="meta files patent for ai that can listen all day and track how you&#39;re feeling"
+       data-id="70999c4dd8b52790"
+       data-published="2026-07-13T17:24:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T17:24:46+05:30" title="13 July 2026, 06:54">13 July 2026, 06:54</time>
+      </div>
+      <h3 class="card-title">Meta Files Patent for AI That Can Listen All Day and Track How You&#39;re Feeling</h3>
+      <p class="card-summary">Meta has filed a patent application for an AI that listens to your voice throughout the day, works out how it thinks you are feeling from the way you sound, and keeps a timestamped log of every read.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/70999c4dd8b52790.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/meta-files-patent-for-ai-that-can.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="thinking fast and slow in the soc: the case for combining autonomous ai with analyst copilots"
+       data-id="76a15d42d6f8dbf9"
+       data-published="2026-07-13T17:07:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T17:07:05+05:30" title="13 July 2026, 06:37">13 July 2026, 06:37</time>
+      </div>
+      <h3 class="card-title">Thinking Fast and Slow in the SOC: The Case for Combining Autonomous AI with Analyst Copilots</h3>
+      <p class="card-summary">A few days ago, I was sitting with the CISO of a Fortune 50 company, walking through how his security team was thinking about AI agents in the SOC. Serious program.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/76a15d42d6f8dbf9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/thinking-fast-and-slow-in-soc-case-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="attacker uses suspected ai-generated powershell script to map active directory"
+       data-id="3e0dc5dfe494cdab"
+       data-published="2026-07-13T16:32:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-13T16:32:33+05:30" title="13 July 2026, 06:02">13 July 2026, 06:02</time>
+      </div>
+      <h3 class="card-title">Attacker Uses Suspected AI-Generated PowerShell Script to Map Active Directory</h3>
+      <p class="card-summary">Cybersecurity researchers have flagged an intrusion in which an unknown threat actor leveraged a vibe-coded PowerShell script for Active Directory (AD) enumeration.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3e0dc5dfe494cdab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="lessons learned from cisa’s recent github leak"
+       data-id="a25e4e34407705a0"
+       data-published="2026-07-13T15:03:28+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-13T15:03:28+00:00" title="13 July 2026, 10:03">13 July 2026, 10:03</time>
+      </div>
+      <h3 class="card-title">Lessons Learned from CISA’s Recent GitHub Leak</h3>
+      <p class="card-summary">The Cybersecurity and Infrastructure Security Agency (CISA) has issued a postmortem on a recent data leak in which a contractor published dozens of internal CISA credentials including AWS Govcloud keys in a public GitHub repository for almost six months…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The Cybersecurity and Infrastructure Security Agency (CISA) has issued a postmortem on a recent data leak in which a contractor published dozens of internal CISA credentials including AWS Govcloud keys in a public GitHub repository for almost six months before being notified by KrebsOnSecurity. Experts say the gaps identified in the agency s initial response provide important lessons that all...</p></div>
+      <div class="detail-links">
+        <a href="../articles/a25e4e34407705a0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing"
        data-vendors="Microsoft"
@@ -108,6 +334,70 @@
       <div class="detail-links">
         <a href="../articles/4955b3008efcf36c.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/misconfigured-server-reveals-three.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="turning the tables on email scammers with &#39;scambuster&#39;"
+       data-id="8f45ffcba811391e"
+       data-published="2026-07-13T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T13:00:00+00:00" title="13 July 2026, 08:00">13 July 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Turning the Tables on Email Scammers With &#39;ScamBuster&#39;</h3>
+      <p class="card-summary">An open source, AI-driven system adopts victim personas to engage with phishing attackers, allowing organizations and law enforcement to gather relevant data on cybercriminal operations.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8f45ffcba811391e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/turning-tables-email-scammers-scambuster" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="cisa warns of actively exploited rce flaws in joomla extensions"
+       data-id="7e60ba8f292f3bc5"
+       data-published="2026-07-13T11:20:16-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-13T11:20:16-04:00" title="13 July 2026, 10:20">13 July 2026, 10:20</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA warns of actively exploited RCE flaws in Joomla extensions</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are exploiting vulnerabilities in the iCagenda and Balbooa Forms extensions for Joomla to achieve remote code execution through arbitrary file uploads. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7e60ba8f292f3bc5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-rce-flaws-in-joomla-extensions/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -143,6 +433,128 @@
       <div class="detail-links">
         <a href="../articles/011a49a73b0b5192.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="lidl discloses online shop breach after service provider hack"
+       data-id="5f1d90a5a6098913"
+       data-published="2026-07-13T10:19:43-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T10:19:43-04:00" title="13 July 2026, 09:19">13 July 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">Lidl discloses online shop breach after service provider hack</h3>
+      <p class="card-summary">German discount supermarket chain Lidl notified customers in Germany, Belgium, and the Netherlands that attackers stole their personal information in a breach at a service provider. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5f1d90a5a6098913.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/lidl-discloses-online-shop-breach-after-service-provider-hack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,breach"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="breach at the beach: play the ultimate entra id ctf"
+       data-id="06dd1273e81f4efd"
+       data-published="2026-07-13T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-13T10:01:11-04:00" title="13 July 2026, 09:01">13 July 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Breach at the Beach: Play the Ultimate Entra ID CTF</h3>
+      <p class="card-summary">Learn how attackers abuse Entra ID through a free hands-on Capture the Flag. Varonis created the Breach at the Beach CTF to teach defenders how to investigate Entra ID attack techniques using realistic scenarios. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/06dd1273e81f4efd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/breach-at-the-beach-play-the-ultimate-entra-id-ctf/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="uk charges suspects linked to russian coms call spoofing platform"
+       data-id="e44f51f433c42c08"
+       data-published="2026-07-13T09:23:30-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T09:23:30-04:00" title="13 July 2026, 08:23">13 July 2026, 08:23</time>
+      </div>
+      <h3 class="card-title">UK charges suspects linked to Russian Coms call spoofing platform</h3>
+      <p class="card-summary">UK authorities charged five people following a National Crime Agency (NCA) investigation into Russian Coms, a major caller ID spoofing platform used by criminals to make over 1.8 million scam calls. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e44f51f433c42c08.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="eu sanctions russian gru military hackers over cyberattacks"
+       data-id="5f98f39309139be7"
+       data-published="2026-07-13T07:19:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-13T07:19:05-04:00" title="13 July 2026, 06:19">13 July 2026, 06:19</time>
+      </div>
+      <h3 class="card-title">EU sanctions Russian GRU military hackers over cyberattacks</h3>
+      <p class="card-summary">The European Union and the United Kingdom jointly sanctioned dozens of Russian individuals and entities and accused Russia of coordinating a network of hacking groups responsible for attacks across Europe. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5f98f39309139be7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

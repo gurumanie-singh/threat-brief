@@ -1,5 +1,64 @@
 [
   {
+    "id": "7fb888d78ff7cc68",
+    "title": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+    "published": "2026-07-14T23:47:57+05:30",
+    "fetched_at": "2026-07-14T20:08:29.094482+00:00",
+    "summary": "SAP has rolled out updates to address multiple vulnerabilities as part of its July 2026 security updates, including a critical flaw in SAP NetWeaver Application Server ABAP.",
+    "tags": [
+      "cve",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-14",
+    "cves": [
+      "CVE-2026-44747"
+    ],
+    "cvss": 9.9,
+    "severity": "critical",
+    "vendors": [
+      "SAP"
+    ],
+    "action_required": false,
+    "card_summary": "SAP has rolled out updates to address multiple vulnerabilities as part of its July 2026 security updates, including a critical flaw in SAP NetWeaver Application Server ABAP.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The vulnerability in question is CVE-2026-44747 (CVSS score: 9.9), an out-of-bounds write flaw that allows an authenticated attacker to leverage logical errors in memory management to cause a memory corruption that could SAP has rolled out updates to address multiple vulnerabilities as part of its July 2026 security updates, including a critical flaw in SAP NetWeaver Application Server ABAP.\n\nReferenced vulnerabilities: CVE-2026-44747.",
+      "impact": "Assessed severity: CRITICAL. CVSS score: 9.9/10."
+    },
+    "email_summary": "SAP has rolled out updates to address multiple vulnerabilities as part of its July 2026 security updates, including a critical flaw in SAP NetWeaver Application Server ABAP. Tracked as CVE-2026-44747. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "bedaec52fbe664f2",
+    "title": "Researchers Say Claude for Chrome Flaw Lets Rogue Extensions Trigger Gmail Reads",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/claude-for-chrome-flaw-lets-other.html",
+    "published": "2026-07-14T22:57:23+05:30",
+    "fetched_at": "2026-07-14T20:08:29.094786+00:00",
+    "summary": "Any other browser extension that can run a script on claude.ai can still trigger Claude for Chrome tasks aimed at your Gmail, your latest Google Doc and its comments, and your Calendar.",
+    "tags": [],
+    "day": "2026-07-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Any other browser extension that can run a script on claude.ai can still trigger Claude for Chrome tasks aimed at your Gmail, your latest Google Doc and its comments, and your Calendar.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Any other browser extension that can run a script on claude.ai can still trigger Claude for Chrome tasks aimed at your Gmail, your latest Google Doc and its comments, and your Calendar. Both this and ClaudeBleed need a rogue extension that can already run a script on claude.ai; the difference is scope.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "c08db56a7cddf916",
     "title": "LabubaRAT Masquerades as NVIDIA Software to Control Windows Hosts",
     "source": "The Hacker News",
@@ -25,6 +84,54 @@
       "impact": "Cybersecurity researchers have flagged a previously undocumented Rust-based remote access trojan (RAT) codenamed LabubaRAT that masquerades as NVIDIA software to blend into target environments.\n\n\"LabubaRAT creates a reusable foothold for hands-on activity,\" Blackpoint Cyber researchers Sam Decker and Nevan Beal said in an analysis published today. \"Once deployed, it can profile the host,\n\nAssessed severity: MEDIUM."
     },
     "email_summary": "Cybersecurity researchers have flagged a previously undocumented Rust-based remote access trojan (RAT) codenamed LabubaRAT that masquerades as NVIDIA software to blend into target environments.\n\n\"LabubaRAT creates a reusable foothold for hands-on activity,\" Blackpoint Cyber researchers Sam Decker and Nevan Beal said in an analysis published today. \"Once deployed, it can profile the host,.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3bdfd7745b6d3a95",
+    "title": "Microsoft Patches a Record 570 Security Flaws",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+    "published": "2026-07-14T19:22:42+00:00",
+    "fetched_at": "2026-07-14T20:08:29.276210+00:00",
+    "summary": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last month. Microsoft attributed the burgeoning patch counts to vulnerability discoveries aided by artificial intelligence.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-07-14",
+    "cves": [
+      "CVE-2026-48561",
+      "CVE-2026-50661",
+      "CVE-2026-56155",
+      "CVE-2026-56164"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Adobe",
+      "Cisco",
+      "Google",
+      "Ivanti",
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last…",
+    "quick_take": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its…",
+    "sections": {
+      "overview": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last month. Microsoft attributed the burgeoning patch counts to vulnerability discoveries aided by artificial intelligence.",
+      "technical": "Jack Bicer , director of vulnerability research at Action1 , called attention to CVE-2026-48561 , a remote code execution flaw in Microsoft Copilot (with a 9.6 CVSS threat score) that allows an unauthorized attacker to execute code over the network. Two of the zero-day weaknesses allow an attacker to elevate their user rights on a Windows system, as do approximately 250 other elevation of privilege flaws fixed this month; they include CVE-2026-56155 an Active Directory Federation Services bug and CVE-2026-56164 , a Microsoft Sharepoint vulnerability. As AI advances the state of vulnerability discovery and remediation, it is also making it easier for attackers to quickly devise working exploits for known software flaws. Microsoft has long labeled security bugs using its exploitability index, which is Redmond s best guess as to how likely it is that attackers will be able to figure out a reliable way to exploit a given vulnerability.\n\nReferenced vulnerabilities: CVE-2026-48561, CVE-2026-50661, CVE-2026-56155, CVE-2026-56164.",
+      "impact": "Nearly 60 of the bugs quashed in July s Patch Tuesday earned a critical severity rating, meaning miscreants or malware could use them to seize remote control over a Windows device with little or no help from the user. Two of the zero-day weaknesses allow an attacker to elevate their user rights on a Windows system, as do approximately 250 other elevation of privilege flaws fixed this month; they include CVE-2026-56155 an Active Directory Federation Services bug and CVE-2026-56164 , a Microsoft Sharepoint vulnerability. In a blog post on July 9, Microsoft Executive Vice President Pavan Davuluri wrote that Windows users will notice “a higher volume of security updates included in each security release” as a result of AI aiding in the discovery of vulnerabilities.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last month. Cisco , Mozilla and Oracle also are shipping updates more frequently, while Google s patch batches in June 2026 totaled more than 900 security fixes, Goettl noted. What this means is that our way of looking at Patch Tuesday has changed, because the exploitability index is centered around humans, not AI tools, and as these tools continue to improve, defense needs to improve alongside it. Given the volume of patches addressed this month it may be wise for end users to wait a few days before applying these fixes.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last month. Tracked as CVE-2026-48561, CVE-2026-50661, CVE-2026-56155. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -83,6 +190,29 @@
       "technical": "Cybersecurity researchers have discovered 11 old, Microsoft-signed, Unified Extensible Firmware Interface (UEFI) applications that could be abused to bypass Secure Boot on most systems using the modern firmware standard.\n\n\"An attacker exploiting one of these vulnerable applications can execute untrusted code during system boot, enabling deployment of malicious UEFI bootkits or other malware,\""
     },
     "email_summary": "Cybersecurity researchers have discovered 11 old, Microsoft-signed, Unified Extensible Firmware Interface (UEFI) applications that could be abused to bypass Secure Boot on most systems using the modern firmware standard.\n\n\"An attacker exploiting one of these vulnerable applications can execute untrusted code during system boot, enabling deployment of malicious UEFI bootkits or other malware,\".",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "cbf20a2e31498436",
+    "title": "Manage Vendor Risk in a Few Practical Steps",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/manage-vendor-risk-in-a-few-practical-steps",
+    "published": "2026-07-14T17:44:55+00:00",
+    "fetched_at": "2026-07-14T20:08:29.846405+00:00",
+    "summary": "Risk tolerance, exposure visibility, board oversight — handling third-party risk is complicated but achievable with disciplined, precise governance.",
+    "tags": [],
+    "day": "2026-07-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Risk tolerance, exposure visibility, board oversight — handling third-party risk is complicated but achievable with disciplined, precise governance.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Risk tolerance, exposure visibility, board oversight — handling third-party risk is complicated but achievable with disciplined, precise governance.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -220,6 +350,61 @@
     "highlighted": false
   },
   {
+    "id": "c1e89c5f9b854006",
+    "title": "Nearly 300 GitHub repos pose as legit software to push malware",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/",
+    "published": "2026-07-14T15:15:17-04:00",
+    "fetched_at": "2026-07-14T20:08:29.382403+00:00",
+    "summary": "A threat actor has published hundreds of fake GitHub repositories impersonating legitimate software and security projects to distribute infostealer malware. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-07-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A threat actor has published hundreds of fake GitHub repositories impersonating legitimate software and security projects to distribute infostealer malware. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A threat actor has published hundreds of fake GitHub repositories impersonating legitimate software and security projects to distribute infostealer malware. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A threat actor has published hundreds of fake GitHub repositories impersonating legitimate software and security projects to distribute infostealer malware. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "19560b03e85d37d1",
+    "title": "Microsoft releases Windows 10 KB5099539 extended security update",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5099539-extended-security-update/",
+    "published": "2026-07-14T14:49:28-04:00",
+    "fetched_at": "2026-07-14T20:08:29.382611+00:00",
+    "summary": "Microsoft has released the Windows 10 KB5099539 extended security update, which includes the July 2026 Patch Tuesday security updates for 570 vulnerabilities, along with additional security fixes. [...]",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has released the Windows 10 KB5099539 extended security update, which includes the July 2026 Patch Tuesday security updates for 570 vulnerabilities, along with additional security fixes. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft has released the Windows 10 KB5099539 extended security update, which includes the July 2026 Patch Tuesday security updates for 570 vulnerabilities, along with additional security fixes. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "44aa1fd92e5459ca",
     "title": "Grok Build Uploads Entire Git Repositories to xAI Storage, Not Just Files It Reads",
     "source": "The Hacker News",
@@ -275,6 +460,38 @@
       "technical": "A researcher publishing as cereblab, testing version 0.2.93, captured one of those uploads, cloned the git bundle out of the intercepted request, and pulled back a file the agent had been told in plain terms not"
     },
     "email_summary": "xAI's Grok Build coding CLI was uploading entire Git repositories, full commit history and all, to a Google Cloud Storage bucket run by xAI, not just the files a coding task needed. A researcher publishing as cereblab, testing version 0.2.93, captured one of those uploads, cloned the git bundle out of the intercepted request, and pulled back a file the agent had been told in plain terms not.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "86abf0cf7b9722e3",
+    "title": "Microsoft July 2026 Patch Tuesday fixes massive 570 flaws, 3 zero-days",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+    "published": "2026-07-14T14:01:36-04:00",
+    "fetched_at": "2026-07-14T20:08:29.382835+00:00",
+    "summary": "Today is Microsoft's July 2026 Patch Tuesday, and with it comes security updates for a record-breaking 570 flaws, including two zero-day vulnerabilities exploited in attacks and one publicly disclosed. [...]",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-07-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Today is Microsoft's July 2026 Patch Tuesday, and with it comes security updates for a record-breaking 570 flaws, including two zero-day vulnerabilities exploited in attacks and one publicly disclosed. [...]",
+    "quick_take": "",
+    "sections": {
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Today is Microsoft's July 2026 Patch Tuesday, and with it comes security updates for a record-breaking 570 flaws, including two zero-day vulnerabilities exploited in attacks and one publicly disclosed. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -356,206 +573,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Researchers reported the vulnerability to Cursor in December, but it still remains in the popular AI coding platform and can be exploited in poisoned repository attacks.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "495d2e21a2009c66",
-    "title": "148 npm Packages Disguised as Student Proxies Turned Browsers Into a DDoS Botnet",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/07/148-npm-packages-disguised-as-student.html",
-    "published": "2026-07-14T12:38:36+05:30",
-    "fetched_at": "2026-07-14T10:06:24.747434+00:00",
-    "summary": "A campaign of 148 npm packages disguised as student web proxies turned visitors' browsers into a distributed denial-of-service botnet for roughly two weeks in May, according to new research from JFrog.",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "A campaign of 148 npm packages disguised as student web proxies turned visitors' browsers into a distributed denial-of-service botnet for roughly two weeks in May, according to new research from JFrog.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "A campaign of 148 npm packages disguised as student web proxies turned visitors' browsers into a distributed denial-of-service botnet for roughly two weeks in May, according to new research from JFrog. The packages did not go after the developers who might install them.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "6d28920ab324b6c9",
-    "title": "Progress confirms ShareFile zero-day flaw behind Storage Zone shutdown",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/",
-    "published": "2026-07-14T12:08:47-04:00",
-    "fetched_at": "2026-07-14T16:12:26.213561+00:00",
-    "summary": "Progress Software has confirmed that a high-severity zero-day vulnerability is behind the emergency shutdown of ShareFile Storage Zone Controllers last week and has released security updates to patch the flaw. [...]",
-    "tags": [
-      "patch",
-      "vulnerability",
-      "zero-day"
-    ],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Progress Software has confirmed that a high-severity zero-day vulnerability is behind the emergency shutdown of ShareFile Storage Zone Controllers last week and has released security updates to patch the flaw. [...]",
-    "quick_take": "",
-    "sections": {
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "Progress Software has confirmed that a high-severity zero-day vulnerability is behind the emergency shutdown of ShareFile Storage Zone Controllers last week and has released security updates to patch the flaw. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "9dc9104641cfde42",
-    "title": "Microsoft Maps Year-Long ShinyHunters-Linked Salesforce Data Theft Across Three Paths",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html",
-    "published": "2026-07-14T11:49:24+05:30",
-    "fetched_at": "2026-07-14T07:59:41.563429+00:00",
-    "summary": "Attackers whose methods line up with the data-extortion group ShinyHunters have spent the past year walking into corporate Salesforce environments without exploiting a single flaw in the platform.",
-    "tags": [
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Attackers whose methods line up with the data-extortion group ShinyHunters have spent the past year walking into corporate Salesforce environments without exploiting a single flaw in the platform.",
-    "quick_take": "",
-    "sections": {
-      "impact": "The way in has been the trust the organization had already extended, usually through the OAuth connections that tie Salesforce to the apps and third-party vendors around it.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Attackers whose methods line up with the data-extortion group ShinyHunters have spent the past year walking into corporate Salesforce environments without exploiting a single flaw in the platform. The way in has been the trust the organization had already extended, usually through the OAuth connections that tie Salesforce to the apps and third-party vendors around it.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "fe115ebecdcc3bd9",
-    "title": "Microsoft Maps Three Salesforce Attack Paths Tied to a Year of ShinyHunters Activity",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html",
-    "published": "2026-07-14T11:49:24+05:30",
-    "fetched_at": "2026-07-14T10:06:24.747648+00:00",
-    "summary": "Attackers whose methods line up with the data-extortion group ShinyHunters have spent the past year walking into corporate Salesforce environments without exploiting a single flaw in the platform.",
-    "tags": [
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Attackers whose methods line up with the data-extortion group ShinyHunters have spent the past year walking into corporate Salesforce environments without exploiting a single flaw in the platform.",
-    "quick_take": "",
-    "sections": {
-      "impact": "The way in has been the trust the organization had already extended, usually through the OAuth connections that tie Salesforce to the apps and third-party vendors around it.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Attackers whose methods line up with the data-extortion group ShinyHunters have spent the past year walking into corporate Salesforce environments without exploiting a single flaw in the platform. The way in has been the trust the organization had already extended, usually through the OAuth connections that tie Salesforce to the apps and third-party vendors around it.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "c6e3bd8b2445d5d9",
-    "title": "LastPass, Bitwarden users targeted with fake security alerts",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/",
-    "published": "2026-07-14T11:31:52-04:00",
-    "fetched_at": "2026-07-14T16:12:26.213717+00:00",
-    "summary": "LastPass is warning users about an ongoing phishing campaign that is using fake security notices to direct them to fraudulent websites. [...]",
-    "tags": [
-      "phishing"
-    ],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "LastPass is warning users about an ongoing phishing campaign that is using fake security notices to direct them to fraudulent websites. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "LastPass is warning users about an ongoing phishing campaign that is using fake security notices to direct them to fraudulent websites. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "LastPass is warning users about an ongoing phishing campaign that is using fake security notices to direct them to fraudulent websites. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "cff312e44100c0f8",
-    "title": "You Don't Have to Run an Exploit to Know If You're Vulnerable",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/you-dont-have-to-run-an-exploit-to-know-if-youre-vulnerable/",
-    "published": "2026-07-14T10:00:10-04:00",
-    "fetched_at": "2026-07-14T14:47:38.597380+00:00",
-    "summary": "Many vulnerabilities cannot be safely validated with live exploits, either because no exploit exists or the affected systems are too critical to test. Picus explains how TTP chaining helps organizations determine exploitability by validating the attack techniques an exploit depends on, without launching the exploit itself. [...]",
-    "tags": [
-      "exploit",
-      "vulnerability"
-    ],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Many vulnerabilities cannot be safely validated with live exploits, either because no exploit exists or the affected systems are too critical to test. Picus explains how TTP chaining helps organizations determine exploitability by validating the attack…",
-    "quick_take": "",
-    "sections": {
-      "overview": "Many vulnerabilities cannot be safely validated with live exploits, either because no exploit exists or the affected systems are too critical to test. Picus explains how TTP chaining helps organizations determine exploitability by validating the attack techniques an exploit depends on, without launching the exploit itself. [...]",
-      "impact": "Many vulnerabilities cannot be safely validated with live exploits, either because no exploit exists or the affected systems are too critical to test. Picus explains how TTP chaining helps organizations determine exploitability by validating the attack techniques an exploit depends on, without launching the exploit itself. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Many vulnerabilities cannot be safely validated with live exploits, either because no exploit exists or the affected systems are too critical to test. Picus explains how TTP chaining helps organizations determine exploitability by validating the attack techniques an exploit depends on, without launching the exploit itself. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "ae9cbee3595ab55b",
-    "title": "Microsoft Entra ID gets passkeys default authentication starting September",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/",
-    "published": "2026-07-14T08:49:56-04:00",
-    "fetched_at": "2026-07-14T14:47:38.597595+00:00",
-    "summary": "Microsoft has announced that passkeys will become the default authentication method for the Entra ID enterprise identity service starting September 2026. [...]",
-    "tags": [],
-    "day": "2026-07-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has announced that passkeys will become the default authentication method for the Entra ID enterprise identity service starting September 2026. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Microsoft has announced that passkeys will become the default authentication method for the Entra ID enterprise identity service starting September 2026. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Microsoft has announced that passkeys will become the default authentication method for the Entra ID enterprise identity service starting September 2026. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

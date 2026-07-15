@@ -1,5 +1,34 @@
 [
   {
+    "id": "f778b4028367ae13",
+    "title": "Cursor Flaw Lets Malicious Cloned Repositories Trigger Windows Code Execution",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/cursor-flaw-lets-malicious-cloned.html",
+    "published": "2026-07-15T16:25:22+05:30",
+    "fetched_at": "2026-07-15T12:12:55.498058+00:00",
+    "summary": "Open a repository in Cursor on Windows and, if a file named git.exe is sitting in the project root, Cursor runs it. No click, no approval dialog, no warning that anything in the folder is about to execute.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-07-15",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Open a repository in Cursor on Windows and, if a file named git.exe is sitting in the project root, Cursor runs it. No click, no approval dialog, no warning that anything in the folder is about to execute.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Whatever that binary does, it does as you, with your source, your SSH keys and your cloud tokens."
+    },
+    "email_summary": "Open a repository in Cursor on Windows and, if a file named git.exe is sitting in the project root, Cursor runs it. No click, no approval dialog, no warning that anything in the folder is about to execute.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "9bbe8cc0619ea2e6",
     "title": "Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware",
     "source": "The Hacker News",

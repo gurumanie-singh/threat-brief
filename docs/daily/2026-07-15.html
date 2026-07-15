@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">15 July 2026</h1>
-      <span class="brief-sub">8 articles</span>
+      <span class="brief-sub">15 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -50,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -66,23 +67,150 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="AWS,Adobe,Google,VMware"
+       data-severity="high"
+       data-title="firefox, chrome, adobe, and vmware updates fix multiple critical security flaws"
+       data-id="65c46984d4645e36"
+       data-published="2026-07-15T18:48:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-07-15T18:48:53+05:30" title="15 July 2026, 08:18">15 July 2026, 08:18</time>
+      </div>
+      <h3 class="card-title">Firefox, Chrome, Adobe, and VMware Updates Fix Multiple Critical Security Flaws</h3>
+      <p class="card-summary">Mozilla has released updates to address two critical flaws in Firefox for which it warned that exploit code has been published.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/65c46984d4645e36.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="sase has an ai blind spot. inspecting packets is no longer enough."
+       data-id="278c41d7af9a22d9"
+       data-published="2026-07-15T17:20:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-15T17:20:01+05:30" title="15 July 2026, 06:50">15 July 2026, 06:50</time>
+      </div>
+      <h3 class="card-title">SASE Has An AI Blind Spot. Inspecting Packets Is No Longer Enough.</h3>
+      <p class="card-summary">For years, routing traffic through cloud proxies was good enough. Then work moved to the browser, AI entered the workflow, and the inspection model stopped keeping up.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/278c41d7af9a22d9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/sase-has-ai-blind-spot-inspecting.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="researcher drops new windows zero-day poc hours after microsoft patch tuesday"
+       data-id="f2efd2cc4cae9d35"
+       data-published="2026-07-15T16:37:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-15T16:37:07+05:30" title="15 July 2026, 06:07">15 July 2026, 06:07</time>
+      </div>
+      <h3 class="card-title">Researcher Drops New Windows Zero-Day PoC Hours After Microsoft Patch Tuesday</h3>
+      <p class="card-summary">Security researcher Chaotic Eclipse (aka Nightmare-Eclipse) has released a new proof-of-concept (PoC) exploit called LegacyHive.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f2efd2cc4cae9d35.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="new webinar: closing the approval gap in ai-era ad tech"
+       data-id="68bd951062eb4764"
+       data-published="2026-07-15T16:36:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-15T16:36:57+05:30" title="15 July 2026, 06:06">15 July 2026, 06:06</time>
+      </div>
+      <h3 class="card-title">New Webinar: Closing the Approval Gap in AI-Era Ad Tech</h3>
+      <p class="card-summary">A single approved marketing tag can quietly load fourth-party code your security team has never seen, granting full access to your forms, customer data, and checkout pages.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/68bd951062eb4764.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/new-webinar-closing-approval-gap-in-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors="Microsoft"
@@ -146,6 +274,36 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="2-click cursor exploit enables dev environment takeover"
+       data-id="3eaf1bbeae816b7f"
+       data-published="2026-07-15T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-15T13:00:00+00:00" title="15 July 2026, 08:00">15 July 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">2-Click Cursor Exploit Enables Dev Environment Takeover</h3>
+      <p class="card-summary">Simple age-old bugs give bad actors access to developers&#39; secrets and source code-rich environments.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3eaf1bbeae816b7f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability,zero-day"
        data-vendors=""
@@ -177,6 +335,40 @@
       <div class="detail-links">
         <a href="../articles/fe87d3273049dffe.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="we built a vulnerability vending machine: ai tokens in, zero-days out"
+       data-id="ab06a1e28b11b525"
+       data-published="2026-07-15T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-15T10:01:11-04:00" title="15 July 2026, 09:01">15 July 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">We built a vulnerability vending machine: AI tokens in, zero-days out</h3>
+      <p class="card-summary">Intruder built an AI-powered &#34;vulnerability vending machine&#34; that combines code slicing with LLMs to automatically discover complex software vulnerabilities. The company explains how the system found and exploited a previously unknown WordPress plugin…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Intruder built an AI-powered &#34;vulnerability vending machine&#34; that combines code slicing with LLMs to automatically discover complex software vulnerabilities. The company explains how the system found and exploited a previously unknown WordPress plugin zero-day, with additional discoveries already under responsible disclosure. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/ab06a1e28b11b525.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/we-built-a-vulnerability-vending-machine-ai-tokens-in-zero-days-out/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -336,6 +528,37 @@
       <div class="detail-links">
         <a href="../articles/d6e10f8d9ab68791.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="cribl adds agentic detection engineering &amp;amp; boosts secops with cardinalops deal"
+       data-id="39e187407f4c97b5"
+       data-published="2026-07-15T00:05:31+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-15T00:05:31+00:00" title="14 July 2026, 19:05">14 July 2026, 19:05</time>
+      </div>
+      <h3 class="card-title">Cribl Adds Agentic Detection Engineering &amp;amp; Boosts SecOps With CardinalOps Deal</h3>
+      <p class="card-summary">CardinalOps will give Cribl customers the ability to map detection rules and security controls to the MITRE ATT&amp;CK framework. SecOps teams can identify coverage gaps and operationalize threat intelligence.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/39e187407f4c97b5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/cribl-adds-agentic-detection-engineering-boosts-secops-with-cardinalops-deal" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">15 July 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
       </ul>
     </div>
   </div>
@@ -48,6 +48,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -68,12 +69,112 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="two sonicwall sma 1000 zero-days exploited, one could enable admin commands"
+       data-id="fe87d3273049dffe"
+       data-published="2026-07-15T11:00:21+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-15T11:00:21+05:30" title="15 July 2026, 00:30">15 July 2026, 00:30</time>
+      </div>
+      <h3 class="card-title">Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands</h3>
+      <p class="card-summary">SonicWall has warned of active exploitation of two zero-day vulnerabilities impacting Secure Mobile Access (SMA) 1000 series appliances, one of which could be exploited to achieve arbitrary command execution.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fe87d3273049dffe.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="nigeria deepens cybersecurity efforts as cybercriminals see more profits"
+       data-id="b4fc08c8c5475bc0"
+       data-published="2026-07-15T08:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-15T08:00:00+00:00" title="15 July 2026, 03:00">15 July 2026, 03:00</time>
+      </div>
+      <h3 class="card-title">Nigeria Deepens Cybersecurity Efforts as Cybercriminals See More Profits</h3>
+      <p class="card-summary">The West African country advanced rules to force organizations to disclose cyberattacks, joining other nations in a shift to mandated transparency.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b4fc08c8c5475bc0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/nigeria-cybersecurity-efforts-cybercriminals-profits" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="us charges alleged operators of russian bulletproof hosting service"
+       data-id="1d27ab1e570b4b97"
+       data-published="2026-07-15T03:45:50-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-15T03:45:50-04:00" title="15 July 2026, 02:45">15 July 2026, 02:45</time>
+      </div>
+      <h3 class="card-title">US charges alleged operators of Russian bulletproof hosting service</h3>
+      <p class="card-summary">U.S. federal prosecutors have unsealed charges against three Russian nationals, accusing them of providing bulletproof hosting (BPH) services to ransomware gangs that caused over $62 million in damages to victims worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1d27ab1e570b4b97.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/us-charges-alleged-russian-bulletproof-hosting-service-operators/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="exploit,patch,zero-day"
        data-vendors="Microsoft"

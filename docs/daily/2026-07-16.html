@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">16 July 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,13 +62,154 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai can find bugs, but human knowledge still proves them"
+       data-id="f6efe1892bd34d7e"
+       data-published="2026-07-16T15:40:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-16T15:40:00+05:30" title="16 July 2026, 05:10">16 July 2026, 05:10</time>
+      </div>
+      <h3 class="card-title">AI Can Find Bugs, But Human Knowledge Still Proves Them</h3>
+      <p class="card-summary">Artificial intelligence (AI) is changing offensive security, but it has not changed the standard that matters most: a finding has to be proven before it becomes useful. AI-assisted tools can read code quickly, generate payloads, summarize attack surfaces,…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Artificial intelligence (AI) is changing offensive security, but it has not changed the standard that matters most: a finding has to be proven before it becomes useful. AI-assisted tools can read code quickly, generate payloads, summarize attack surfaces, explain unfamiliar APIs, and run repetitive testing workflows at impressive speed. That is a real advantage for security teams. It also</p></div>
+      <div class="detail-links">
+        <a href="../articles/f6efe1892bd34d7e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/ai-can-find-bugs-but-human-knowledge.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="unpatched shark vacuum flaw could let attackers control other vacuums region-wide"
+       data-id="365ded480d6766ef"
+       data-published="2026-07-16T14:53:19+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-16T14:53:19+05:30" title="16 July 2026, 04:23">16 July 2026, 04:23</time>
+      </div>
+      <h3 class="card-title">Unpatched Shark Vacuum Flaw Could Let Attackers Control Other Vacuums Region-Wide</h3>
+      <p class="card-summary">Pull the certificate off the flash of a Shark RV2320EDUS robot vacuum, and you can run root commands on other people&#39;s Shark vacuums across the same AWS region: watch the camera, drive the robot, read the map of the house, and take the Wi-Fi password in…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Pull the certificate off the flash of a Shark RV2320EDUS robot vacuum, and you can run root commands on other people&#39;s Shark vacuums across the same AWS region: watch the camera, drive the robot, read the map of the house, and take the Wi-Fi password in plaintext.</p></div>
+      <div class="detail-links">
+        <a href="../articles/365ded480d6766ef.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/unpatched-shark-vacuum-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai’s gpt-red automates prompt injection testing to harden gpt-5.6 sol"
+       data-id="67114141f9e24157"
+       data-published="2026-07-16T14:12:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-16T14:12:31+05:30" title="16 July 2026, 03:42">16 July 2026, 03:42</time>
+      </div>
+      <h3 class="card-title">OpenAI’s GPT-Red Automates Prompt Injection Testing to Harden GPT-5.6 Sol</h3>
+      <p class="card-summary">OpenAI has disclosed details of GPT-Red, an internal automated red-teaming model that scales prompt injection vulnerability discovery with an aim to fix issues before the tools are deployed widely.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/67114141f9e24157.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/openais-gpt-red-automates-prompt.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="zoom patches critical windows flaw that could enable account takeover"
+       data-id="3583aed52de78ec9"
+       data-published="2026-07-16T12:52:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-16T12:52:44+05:30" title="16 July 2026, 02:22">16 July 2026, 02:22</time>
+      </div>
+      <h3 class="card-title">Zoom Patches Critical Windows Flaw That Could Enable Account Takeover</h3>
+      <p class="card-summary">Zoom has released security updates for a critical security flaw impacting Zoom Workplace for Windows that could facilitate account takeover.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3583aed52de78ec9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -84,6 +236,103 @@
       <div class="detail-links">
         <a href="../articles/10220200654a6def.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/threat-intelligence/police-disrupt-140m-euro-cyber-fraud-ring-spain" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa orders feds to patch actively exploited oracle flaw by saturday"
+       data-id="24904aeaa4c57059"
+       data-published="2026-07-16T06:56:03-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-16T06:56:03-04:00" title="16 July 2026, 05:56">16 July 2026, 05:56</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA orders feds to patch actively exploited Oracle flaw by Saturday</h3>
+      <p class="card-summary">CISA has ordered federal agencies to secure their systems by Saturday against ongoing attacks exploiting a critical vulnerability in the Oracle E-Business Suite financial application. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/24904aeaa4c57059.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors="Cisco"
+       data-severity="high"
+       data-title="russian hackers trojanize webex, zoom apps to push starland malware"
+       data-id="ef21b95f67dba9a5"
+       data-published="2026-07-16T06:19:34-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-07-16T06:19:34-04:00" title="16 July 2026, 05:19">16 July 2026, 05:19</time>
+      </div>
+      <h3 class="card-title">Russian hackers trojanize WebEx, Zoom apps to push Starland malware</h3>
+      <p class="card-summary">A financially motivated Russian threat actor tracked as UAT-11795 is using trojanized software to steal credentials and cryptocurrency by deploying a new backdoor called Starland RAT. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ef21b95f67dba9a5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new spirals ransomware encrypts victim network in under 24 hours"
+       data-id="18793d9bf67e9d22"
+       data-published="2026-07-16T06:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-16T06:00:00-04:00" title="16 July 2026, 05:00">16 July 2026, 05:00</time>
+      </div>
+      <h3 class="card-title">New Spirals ransomware encrypts victim network in under 24 hours</h3>
+      <p class="card-summary">A new ransomware actor called Spirals completed a corporate intrusion, from initial access to data theft and encryption, in less than 24 hours. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/18793d9bf67e9d22.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">18 July 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">7 articles</span>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
         <li>AWS ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -73,14 +73,47 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--action card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="update now: 7-zip fixes rce flaw exploitable with malicious archives"
+       data-id="6aea24dc2f90e31a"
+       data-published="2026-07-18T15:32:02-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-18T15:32:02-04:00" title="18 July 2026, 14:32">18 July 2026, 14:32</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Update now: 7-Zip fixes RCE flaw exploitable with malicious archives</h3>
+      <p class="card-summary">7-Zip version 26.02 was released to fix a remote code execution vulnerability that could allow attackers to execute malicious code by convincing users to open specially crafted compressed files. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6aea24dc2f90e31a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,malware,patch,vulnerability"
        data-vendors="AWS"

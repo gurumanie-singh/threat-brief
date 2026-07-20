@@ -1,5 +1,66 @@
 [
   {
+    "id": "8dd603a3ec7b02f9",
+    "title": "New 7-Zip Vulnerability Could Let Crafted XZ Archives Run Code During Extraction",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+    "published": "2026-07-20T14:40:56+05:30",
+    "fetched_at": "2026-07-20T12:20:26.968235+00:00",
+    "summary": "Opening a crafted XZ archive in 7-Zip could let an attacker run code on the machine. The flaw, CVE-2026-14266, is a heap-based buffer overflow in how the archiver processes XZ chunked data, and Trend Micro's Zero Day Initiative (ZDI) detailed it on July 15. A fix shipped on June 25 in 7-Zip 26.02.",
+    "tags": [
+      "cve",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-07-20",
+    "cves": [
+      "CVE-2026-14266"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Opening a crafted XZ archive in 7-Zip could let an attacker run code on the machine. The flaw, CVE-2026-14266, is a heap-based buffer overflow in how the archiver processes XZ chunked data, and Trend Micro's Zero Day Initiative (ZDI) detailed it on July 15.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw, CVE-2026-14266, is a heap-based buffer overflow in how the archiver processes XZ chunked data, and Trend Micro's Zero Day Initiative (ZDI) detailed it on July 15.\n\nReferenced vulnerabilities: CVE-2026-14266.",
+      "mitigation": "A fix shipped on June 25 in 7-Zip 26.02.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Opening a crafted XZ archive in 7-Zip could let an attacker run code on the machine. Tracked as CVE-2026-14266. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "5e41bcf360c3a08e",
+    "title": "Russian-Speaking Hacker Uses Google Gemini CLI to Control Botnet of Eight Dental Clinic PCs",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html",
+    "published": "2026-07-20T14:37:11+05:30",
+    "fetched_at": "2026-07-20T12:20:26.968534+00:00",
+    "summary": "A solo Russian-speaking threat actor known as \"bandcampro\" outsourced a chunk of their operations to Google's open-source Gemini CLI artificial intelligence (AI) and commandeered a live botnet.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-07-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "A solo Russian-speaking threat actor known as \"bandcampro\" outsourced a chunk of their operations to Google's open-source Gemini CLI artificial intelligence (AI) and commandeered a live botnet.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A solo Russian-speaking threat actor known as \"bandcampro\" outsourced a chunk of their operations to Google's open-source Gemini CLI artificial intelligence (AI) and commandeered a live botnet. The findings come from an analysis of 200 Gemini CLI session logs between March 19 and April 21, 2026, which found the threat actor using AI, among other things, to crack passwords, set up a residential.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "5623f853279af25a",
     "title": "World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent",
     "source": "The Hacker News",
@@ -49,6 +110,88 @@
     "quick_take": "Cybersecurity researchers have flagged a new software supply chain attack codenamed SleeperGem targeting the Ruby ecosystem after three malicious gems were published to RubyGems with the end goal of serving…",
     "sections": {},
     "email_summary": "Cybersecurity researchers have flagged a new software supply chain attack codenamed SleeperGem targeting the Ruby ecosystem after three malicious gems were published to RubyGems with the end goal of serving additional payloads. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "eb4cf57e7f84221e",
+    "title": "Hugging Face discloses breach linked to autonomous AI agent",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
+    "published": "2026-07-20T07:56:28-04:00",
+    "fetched_at": "2026-07-20T12:20:27.311547+00:00",
+    "summary": "The Hugging Face artificial intelligence repository disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-07-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Hugging Face artificial intelligence repository disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The Hugging Face artificial intelligence repository disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The Hugging Face artificial intelligence repository disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "7c030a4e6904344b",
+    "title": "Microsoft confirms Windows Server Update Services sync delays",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/",
+    "published": "2026-07-20T06:47:28-04:00",
+    "fetched_at": "2026-07-20T12:20:27.311757+00:00",
+    "summary": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week. [...]",
+    "tags": [],
+    "day": "2026-07-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "cf3ddeae6cfa0247",
+    "title": "Windows KB5121767 OOB update fixes shutdowns on some Dell PCs",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-bug-causing-some-dell-pcs-to-shut-down/",
+    "published": "2026-07-20T06:06:17-04:00",
+    "fetched_at": "2026-07-20T12:20:27.311957+00:00",
+    "summary": "Microsoft has released emergency updates to fix a known issue causing some Dell PCs to shut down after installing the July 2026 Windows 11 security updates. [...]",
+    "tags": [
+      "patch"
+    ],
+    "day": "2026-07-20",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "Microsoft has released emergency updates to fix a known issue causing some Dell PCs to shut down after installing the July 2026 Windows 11 security updates. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft has released emergency updates to fix a known issue causing some Dell PCs to shut down after installing the July 2026 Windows 11 security updates. [...]. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

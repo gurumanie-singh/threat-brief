@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 July 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -61,18 +64,89 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="new 7-zip vulnerability could let crafted xz archives run code during extraction"
+       data-id="8dd603a3ec7b02f9"
+       data-published="2026-07-20T14:40:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-20T14:40:56+05:30" title="20 July 2026, 04:10">20 July 2026, 04:10</time>
+      </div>
+      <h3 class="card-title">New 7-Zip Vulnerability Could Let Crafted XZ Archives Run Code During Extraction</h3>
+      <p class="card-summary">Opening a crafted XZ archive in 7-Zip could let an attacker run code on the machine. The flaw, CVE-2026-14266, is a heap-based buffer overflow in how the archiver processes XZ chunked data, and Trend Micro&#39;s Zero Day Initiative (ZDI) detailed it on July 15.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8dd603a3ec7b02f9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="russian-speaking hacker uses google gemini cli to control botnet of eight dental clinic pcs"
+       data-id="5e41bcf360c3a08e"
+       data-published="2026-07-20T14:37:11+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-20T14:37:11+05:30" title="20 July 2026, 04:07">20 July 2026, 04:07</time>
+      </div>
+      <h3 class="card-title">Russian-Speaking Hacker Uses Google Gemini CLI to Control Botnet of Eight Dental Clinic PCs</h3>
+      <p class="card-summary">A solo Russian-speaking threat actor known as &#34;bandcampro&#34; outsourced a chunk of their operations to Google&#39;s open-source Gemini CLI artificial intelligence (AI) and commandeered a live botnet.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5e41bcf360c3a08e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,malware,vulnerability"
        data-vendors=""
@@ -131,6 +205,97 @@
       <div class="detail-links">
         <a href="../articles/31ae375b9e2b0efc.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/sleepergem-uses-three-malicious.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hugging face discloses breach linked to autonomous ai agent"
+       data-id="eb4cf57e7f84221e"
+       data-published="2026-07-20T07:56:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-20T07:56:28-04:00" title="20 July 2026, 06:56">20 July 2026, 06:56</time>
+      </div>
+      <h3 class="card-title">Hugging Face discloses breach linked to autonomous AI agent</h3>
+      <p class="card-summary">The Hugging Face artificial intelligence repository disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/eb4cf57e7f84221e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft confirms windows server update services sync delays"
+       data-id="7c030a4e6904344b"
+       data-published="2026-07-20T06:47:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-20T06:47:28-04:00" title="20 July 2026, 05:47">20 July 2026, 05:47</time>
+      </div>
+      <h3 class="card-title">Microsoft confirms Windows Server Update Services sync delays</h3>
+      <p class="card-summary">Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7c030a4e6904344b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="windows kb5121767 oob update fixes shutdowns on some dell pcs"
+       data-id="cf3ddeae6cfa0247"
+       data-published="2026-07-20T06:06:17-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-20T06:06:17-04:00" title="20 July 2026, 05:06">20 July 2026, 05:06</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Windows KB5121767 OOB update fixes shutdowns on some Dell PCs</h3>
+      <p class="card-summary">Microsoft has released emergency updates to fix a known issue causing some Dell PCs to shut down after installing the July 2026 Windows 11 security updates. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cf3ddeae6cfa0247.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-bug-causing-some-dell-pcs-to-shut-down/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

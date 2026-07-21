@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">21 July 2026</h1>
-      <span class="brief-sub">10 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, Palo Alto ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -66,17 +66,17 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
@@ -85,6 +85,70 @@
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,patch,ransomware,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="high"
+       data-title="qilin ransomware attackers exploit pan-os authentication bypass for initial access"
+       data-id="cb2f91dd88b3ef42"
+       data-published="2026-07-21T19:34:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-07-21T19:34:57+05:30" title="21 July 2026, 09:04">21 July 2026, 09:04</time>
+      </div>
+      <h3 class="card-title">Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access</h3>
+      <p class="card-summary">Threat actors have been observed exploiting a now-patched high-severity Palo Alto Networks PAN-OS vulnerability as an entry point to deploy Qilin (aka Agenda) ransomware on victim environments.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cb2f91dd88b3ef42.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="zimbra patches critical snmp command injection and four xss vulnerabilities"
+       data-id="7052f75a2b270ea1"
+       data-published="2026-07-21T18:48:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-21T18:48:31+05:30" title="21 July 2026, 08:18">21 July 2026, 08:18</time>
+      </div>
+      <h3 class="card-title">Zimbra Patches Critical SNMP Command Injection and Four XSS Vulnerabilities</h3>
+      <p class="card-summary">Zimbra has rolled out fixes to address multiple critical security issues, including a command injection flaw in the Simple Network Management Protocol (SNMP) monitoring component.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7052f75a2b270ea1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/zimbra-patches-critical-snmp-command.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors="Google,Microsoft"
@@ -242,6 +306,36 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="choose wisely: ai-generated coding risk varies, a lot"
+       data-id="9f9bcf77080a012c"
+       data-published="2026-07-21T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-21T13:00:00+00:00" title="21 July 2026, 08:00">21 July 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Choose Wisely: AI-Generated Coding Risk Varies, A Lot</h3>
+      <p class="card-summary">AI-generated code introduces 15 vulnerabilities on average per codebase, but the actual risk depends on framework pairing more than the model used.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9f9bcf77080a012c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,patch,vulnerability"
        data-vendors=""
@@ -271,6 +365,37 @@
       <div class="detail-links">
         <a href="../articles/a560073940ff5603.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/critical-servicenow-ai-platform-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="closing the identity gaps in critical infrastructure security"
+       data-id="1cd75c73ebb0dfda"
+       data-published="2026-07-21T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-21T10:00:10-04:00" title="21 July 2026, 09:00">21 July 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Closing the Identity Gaps in Critical Infrastructure Security</h3>
+      <p class="card-summary">Critical infrastructure attacks often begin with stolen credentials, compromised devices, or trusted accounts. Specops Software explains why Zero Trust should verify both user identities and device trust before granting access to critical systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1cd75c73ebb0dfda.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/closing-the-identity-gaps-in-critical-infrastructure-security/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

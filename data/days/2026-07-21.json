@@ -1,5 +1,101 @@
 [
   {
+    "id": "46c0a684bb82bbab",
+    "title": "AWS Kiro Flaw Let a Poisoned Web Page Rewrite Its Config and Run Code",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
+    "published": "2026-07-21T21:36:12+05:30",
+    "fetched_at": "2026-07-21T17:15:39.047640+00:00",
+    "summary": "Hidden text on a web page was enough to make Kiro, AWS's agentic coding IDE, rewrite its own configuration file and run an attacker's code on a developer's machine, with no approval step able to stop it.",
+    "tags": [
+      "cve",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Hidden text on a web page was enough to make Kiro, AWS's agentic coding IDE, rewrite its own configuration file and run an attacker's code on a developer's machine, with no approval step able to stop it.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Intezer, in research with Kodem Security, found that a request as ordinary as asking Kiro to summarize a page could end in remote code execution."
+    },
+    "email_summary": "Hidden text on a web page was enough to make Kiro, AWS's agentic coding IDE, rewrite its own configuration file and run an attacker's code on a developer's machine, with no approval step able to stop it. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0977e8614509e4f5",
+    "title": "Google Launches Gemini 3.5 Flash Cyber AI to Find and Fix Software Vulnerabilities",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html",
+    "published": "2026-07-21T20:39:28+05:30",
+    "fetched_at": "2026-07-21T17:15:39.047904+00:00",
+    "summary": "Google's DeepMind on Tuesday announced the release of Gemini 3.5 Flash Cyber, a specialized artificial intelligence (AI) model built atop 3.5 Flash that's designed to discover, validate, and patch vulnerabilities quickly and efficiently.",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Google's DeepMind on Tuesday announced the release of Gemini 3.5 Flash Cyber, a specialized artificial intelligence (AI) model built atop 3.5 Flash that's designed to discover, validate, and patch vulnerabilities quickly and efficiently.",
+    "quick_take": "Google's DeepMind on Tuesday announced the release of Gemini 3.5 Flash Cyber, a specialized artificial intelligence (AI) model built atop 3.5 Flash that's designed to discover, validate, and patch vulnerabilities…",
+    "sections": {
+      "impact": "According to the tech giant, the model will be exclusively available to governments and trusted partners via CodeMender as part of a limited-access pilot\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Google's DeepMind on Tuesday announced the release of Gemini 3.5 Flash Cyber, a specialized artificial intelligence (AI) model built atop 3.5 Flash that's designed to discover, validate, and patch vulnerabilities quickly and efficiently. According to the tech giant, the model will be exclusively available to governments and trusted partners via CodeMender as part of a limited-access pilot.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ba3f326da5d8a0fa",
+    "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+    "published": "2026-07-21T20:27:51+05:30",
+    "fetched_at": "2026-07-21T17:15:39.048104+00:00",
+    "summary": "A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-21",
+    "cves": [
+      "CVE-2026-50522"
+    ],
+    "cvss": 9.8,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Assessed severity: CRITICAL. CVSS score: 9.8/10."
+    },
+    "email_summary": "A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr. Tracked as CVE-2026-50522. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "cb2f91dd88b3ef42",
     "title": "Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access",
     "source": "The Hacker News",
@@ -174,7 +270,12 @@
     "sections": {},
     "email_summary": "Attackers have begun to exploit two critical vulnerabilities in WordPress that, when combined together, enable unauthenticated remote code execution (RCE) and complete compromise of vulnerable websites. Tracked as CVE-2026-60137, CVE-2026-63030. Severity is rated critical.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/"
+      }
+    ],
     "highlighted": false
   },
   {

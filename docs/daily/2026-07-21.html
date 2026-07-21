@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">21 July 2026</h1>
-      <span class="brief-sub">14 articles</span>
+      <span class="brief-sub">17 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>Microsoft, Palo Alto ecosystems affected by multiple advisories</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -66,18 +67,19 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
@@ -85,6 +87,107 @@
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,malware,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="aws kiro flaw let a poisoned web page rewrite its config and run code"
+       data-id="46c0a684bb82bbab"
+       data-published="2026-07-21T21:36:12+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-21T21:36:12+05:30" title="21 July 2026, 11:06">21 July 2026, 11:06</time>
+      </div>
+      <h3 class="card-title">AWS Kiro Flaw Let a Poisoned Web Page Rewrite Its Config and Run Code</h3>
+      <p class="card-summary">Hidden text on a web page was enough to make Kiro, AWS&#39;s agentic coding IDE, rewrite its own configuration file and run an attacker&#39;s code on a developer&#39;s machine, with no approval step able to stop it.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/46c0a684bb82bbab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="google launches gemini 3.5 flash cyber ai to find and fix software vulnerabilities"
+       data-id="0977e8614509e4f5"
+       data-published="2026-07-21T20:39:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-21T20:39:28+05:30" title="21 July 2026, 10:09">21 July 2026, 10:09</time>
+      </div>
+      <h3 class="card-title">Google Launches Gemini 3.5 Flash Cyber AI to Find and Fix Software Vulnerabilities</h3>
+      <p class="card-summary">Google&#39;s DeepMind on Tuesday announced the release of Gemini 3.5 Flash Cyber, a specialized artificial intelligence (AI) model built atop 3.5 Flash that&#39;s designed to discover, validate, and patch vulnerabilities quickly and efficiently.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0977e8614509e4f5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="critical sharepoint rce cve-2026-50522 under active exploitation after public poc"
+       data-id="ba3f326da5d8a0fa"
+       data-published="2026-07-21T20:27:51+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-21T20:27:51+05:30" title="21 July 2026, 09:57">21 July 2026, 09:57</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC</h3>
+      <p class="card-summary">A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ba3f326da5d8a0fa.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,patch,ransomware,vulnerability"
        data-vendors="Palo Alto"
@@ -264,6 +367,7 @@
           <span class="ttag">vulnerability</span>
         </div>
       </div>
+      <div class="card-related">Also: BleepingComputer</div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">

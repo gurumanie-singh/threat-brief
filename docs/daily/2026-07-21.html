@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threat Brief — 21 July 2026</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">21 July 2026</h1>
+      <span class="brief-sub">6 articles</span>
+    </div>
+  </div>
+
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="wordpress wp2shell exploitation grows as public exploit fuels mass scanning"
+       data-id="e66df430a8086544"
+       data-published="2026-07-21T14:29:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-21T14:29:30+05:30" title="21 July 2026, 03:59">21 July 2026, 03:59</time>
+      </div>
+      <h3 class="card-title">WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning</h3>
+      <p class="card-summary">Attackers have begun to exploit two critical vulnerabilities in WordPress that, when combined together, enable unauthenticated remote code execution (RCE) and complete compromise of vulnerable websites.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e66df430a8086544.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="new encforge ransomware targets ai model files in langflow rce attack"
+       data-id="8c707fc27239eb40"
+       data-published="2026-07-21T13:04:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-21T13:04:32+05:30" title="21 July 2026, 02:34">21 July 2026, 02:34</time>
+      </div>
+      <h3 class="card-title">New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack</h3>
+      <p class="card-summary">Researchers at Sysdig have linked a second attack on the same Langflow server to JADEPUFFER, the AI-agent-driven operator it first documented earlier this month.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8c707fc27239eb40.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical servicenow ai platform flaw exploited for unauthenticated code execution"
+       data-id="a560073940ff5603"
+       data-published="2026-07-21T11:59:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-21T11:59:26+05:30" title="21 July 2026, 01:29">21 July 2026, 01:29</time>
+      </div>
+      <h3 class="card-title">Critical ServiceNow AI Platform Flaw Exploited for Unauthenticated Code Execution</h3>
+      <p class="card-summary">Threat actors are now exploiting a recently disclosed critical security flaw impacting ServiceNow AI Platform, according to Defused Cyber.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a560073940ff5603.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/critical-servicenow-ai-platform-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,exploit,ransomware"
+       data-vendors="Palo Alto"
+       data-severity="high"
+       data-title="critical palo alto vpn bug now exploited by qilin ransomware gang"
+       data-id="8c61e70f73b35299"
+       data-published="2026-07-21T06:12:24-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-07-21T06:12:24-04:00" title="21 July 2026, 05:12">21 July 2026, 05:12</time>
+      </div>
+      <h3 class="card-title">Critical Palo Alto VPN bug now exploited by Qilin ransomware gang</h3>
+      <p class="card-summary">The Qilin ransomware gang is exploiting a critical PAN-OS GlobalProtect authentication bypass flaw to breach victims&#39; networks, according to cybersecurity company Arctic Wolf. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8c61e70f73b35299.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft shares manual fix for wsus sync delays and timeouts"
+       data-id="c8273e8110af0698"
+       data-published="2026-07-21T05:05:50-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-21T05:05:50-04:00" title="21 July 2026, 04:05">21 July 2026, 04:05</time>
+      </div>
+      <h3 class="card-title">Microsoft shares manual fix for WSUS sync delays and timeouts</h3>
+      <p class="card-summary">Microsoft has shared manual mitigations to help IT administrators fix Windows Server Update Services (WSUS) servers affected by a known issue that causes Windows Update scans to fail or time out. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c8273e8110af0698.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-manual-fix-for-wsus-sync-delays-and-timeouts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="windows legacyhive zero-day flaw gets free, unofficial patches"
+       data-id="6bbf67eb0eccc792"
+       data-published="2026-07-21T04:06:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-21T04:06:26-04:00" title="21 July 2026, 03:06">21 July 2026, 03:06</time>
+      </div>
+      <h3 class="card-title">Windows LegacyHive zero-day flaw gets free, unofficial patches</h3>
+      <p class="card-summary">Free unofficial patches are available for a recently disclosed Windows zero-day flaw that allows attackers to escalate privileges on up-to-date Windows systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6bbf67eb0eccc792.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

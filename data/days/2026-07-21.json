@@ -1,5 +1,33 @@
 [
   {
+    "id": "fe4ccae8dfa4bdf7",
+    "title": "Ransomware Is Accelerating, But It's Not Because of AI",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
+    "published": "2026-07-21T21:48:05+00:00",
+    "fetched_at": "2026-07-21T22:53:53.011686+00:00",
+    "summary": "Researchers pointed to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expansion of attacks on less defended organizations.",
+    "tags": [
+      "malware",
+      "ransomware"
+    ],
+    "day": "2026-07-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Researchers pointed to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expansion of attacks on less defended organizations.",
+    "quick_take": "",
+    "sections": {
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "Researchers pointed to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expansion of attacks on less defended organizations.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "46c0a684bb82bbab",
     "title": "AWS Kiro Flaw Let a Poisoned Web Page Rewrite Its Config and Run Code",
     "source": "The Hacker News",
@@ -27,6 +55,32 @@
       "technical": "Intezer, in research with Kodem Security, found that a request as ordinary as asking Kiro to summarize a page could end in remote code execution."
     },
     "email_summary": "Hidden text on a web page was enough to make Kiro, AWS's agentic coding IDE, rewrite its own configuration file and run an attacker's code on a developer's machine, with no approval step able to stop it. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0d27b8da41e76934",
+    "title": "Using LLMs to Find and Prioritize Vulnerabilities Is No Easy Task",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
+    "published": "2026-07-21T21:27:37+00:00",
+    "fetched_at": "2026-07-21T22:53:53.011900+00:00",
+    "summary": "The latest large language models have high false-positive rates and fail to take into account the context of scans, leading to more work for AppSec professionals.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-07-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The latest large language models have high false-positive rates and fail to take into account the context of scans, leading to more work for AppSec professionals.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The latest large language models have high false-positive rates and fail to take into account the context of scans, leading to more work for AppSec professionals.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -183,6 +237,33 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A Russian-speaking actor, \"Trim,\" dismantled publicly available frontier models and integrated them with offensive security tools.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d1a733e56b1c6953",
+    "title": "FakeGit campaign uses 7,600 GitHub repos to push SmartLoader malware",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/",
+    "published": "2026-07-21T18:34:17-04:00",
+    "fetched_at": "2026-07-21T22:53:52.865540+00:00",
+    "summary": "A large-scale operation dubbed 'FakeGit' is pushing SmartLoader and StealC malware through 7,600 malicious GitHub repositories that accumulated more than 14 million downloads. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-07-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A large-scale operation dubbed 'FakeGit' is pushing SmartLoader and StealC malware through 7,600 malicious GitHub repositories that accumulated more than 14 million downloads. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A large-scale operation dubbed 'FakeGit' is pushing SmartLoader and StealC malware through 7,600 malicious GitHub repositories that accumulated more than 14 million downloads. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A large-scale operation dubbed 'FakeGit' is pushing SmartLoader and StealC malware through 7,600 malicious GitHub repositories that accumulated more than 14 million downloads. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -503,65 +584,6 @@
       "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "The Qilin ransomware gang is exploiting a critical PAN-OS GlobalProtect authentication bypass flaw to breach victims' networks, according to cybersecurity company Arctic Wolf. [...]. Severity is rated high.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "c8273e8110af0698",
-    "title": "Microsoft shares manual fix for WSUS sync delays and timeouts",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-manual-fix-for-wsus-sync-delays-and-timeouts/",
-    "published": "2026-07-21T05:05:50-04:00",
-    "fetched_at": "2026-07-21T10:22:57.249260+00:00",
-    "summary": "Microsoft has shared manual mitigations to help IT administrators fix Windows Server Update Services (WSUS) servers affected by a known issue that causes Windows Update scans to fail or time out. [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-07-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has shared manual mitigations to help IT administrators fix Windows Server Update Services (WSUS) servers affected by a known issue that causes Windows Update scans to fail or time out. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Microsoft has shared manual mitigations to help IT administrators fix Windows Server Update Services (WSUS) servers affected by a known issue that causes Windows Update scans to fail or time out. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Microsoft has shared manual mitigations to help IT administrators fix Windows Server Update Services (WSUS) servers affected by a known issue that causes Windows Update scans to fail or time out. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "6bbf67eb0eccc792",
-    "title": "Windows LegacyHive zero-day flaw gets free, unofficial patches",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
-    "published": "2026-07-21T04:06:26-04:00",
-    "fetched_at": "2026-07-21T10:22:57.249414+00:00",
-    "summary": "Free unofficial patches are available for a recently disclosed Windows zero-day flaw that allows attackers to escalate privileges on up-to-date Windows systems. [...]",
-    "tags": [
-      "patch",
-      "zero-day"
-    ],
-    "day": "2026-07-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Free unofficial patches are available for a recently disclosed Windows zero-day flaw that allows attackers to escalate privileges on up-to-date Windows systems. [...]",
-    "quick_take": "",
-    "sections": {
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "Free unofficial patches are available for a recently disclosed Windows zero-day flaw that allows attackers to escalate privileges on up-to-date Windows systems. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

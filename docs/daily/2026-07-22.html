@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 July 2026</h1>
-      <span class="brief-sub">9 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -35,6 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -47,7 +49,9 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -62,6 +66,8 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
@@ -70,13 +76,47 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="why modern socs need multi-layered detections"
+       data-id="2aa16685737f7719"
+       data-published="2026-07-22T16:55:35+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-22T16:55:35+05:30" title="22 July 2026, 06:25">22 July 2026, 06:25</time>
+      </div>
+      <h3 class="card-title">Why Modern SOCs Need Multi-Layered Detections</h3>
+      <p class="card-summary">The cycle is over. For years, cybersecurity followed a familiar pattern: defenses improved, attackers adapted, and the back-and-forth continued.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2aa16685737f7719.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/why-modern-socs-need-multi-layered.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing,vulnerability"
        data-vendors="Microsoft"
@@ -139,6 +179,34 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--low"
+       data-tags=""
+       data-vendors=""
+       data-severity="low"
+       data-title="eu financial institutions leak data through cookie trackers"
+       data-id="685c731c5e25f92e"
+       data-published="2026-07-22T11:30:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-07-22T11:30:00+00:00" title="22 July 2026, 06:30">22 July 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">EU Financial Institutions Leak Data Through Cookie Trackers</h3>
+      <p class="card-summary">European banks inadvertently transmitted customer data to ad platforms via tracking pixels, raising serious compliance, security, and privacy concerns.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/685c731c5e25f92e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Microsoft"
@@ -195,6 +263,98 @@
       <div class="detail-links">
         <a href="../articles/bd238122741ff0b5.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/openai-says-its-own-ai-models-escaped.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Adobe,Google"
+       data-severity="medium"
+       data-title="adobe chrome extension flaw let sites access private whatsapp chats"
+       data-id="607d8a6a3c996305"
+       data-published="2026-07-22T09:22:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Adobe</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-22T09:22:20-04:00" title="22 July 2026, 08:22">22 July 2026, 08:22</time>
+      </div>
+      <h3 class="card-title">Adobe Chrome extension flaw let sites access private WhatsApp chats</h3>
+      <p class="card-summary">The Adobe Acrobat extension for Chrome could be used to access conversations and data rendered in WhatsApp Web without any form of authentication. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/607d8a6a3c996305.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/adobe-chrome-extension-flaw-let-sites-access-private-whatsapp-chats/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa orders urgent action on actively exploited langflow rce flaw"
+       data-id="c7557e9ef4196be1"
+       data-published="2026-07-22T07:43:28-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-22T07:43:28-04:00" title="22 July 2026, 06:43">22 July 2026, 06:43</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA orders urgent action on actively exploited Langflow RCE flaw</h3>
+      <p class="card-summary">The Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday ordered U.S. government agencies to prioritize patching an actively exploited vulnerability in the Langflow visual framework for building AI agents. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c7557e9ef4196be1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="stop renting storage space — this lifetime 2tb plan is yours for $59"
+       data-id="939f4a5e43b31c3e"
+       data-published="2026-07-22T07:09:16-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-22T07:09:16-04:00" title="22 July 2026, 06:09">22 July 2026, 06:09</time>
+      </div>
+      <h3 class="card-title">Stop renting storage space — this lifetime 2TB plan is yours for $59</h3>
+      <p class="card-summary">Cloud storage costs tend to creep up over time, since most services charge monthly or annually for as long as you use them. FileJump&#39;s Lifetime Plan skips that model entirely, offering 2TB of cloud storage for a single payment of $59 (MSRP $467). [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/939f4a5e43b31c3e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/stop-renting-storage-space-this-lifetime-2tb-plan-is-yours-for-59/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

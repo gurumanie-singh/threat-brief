@@ -1,5 +1,68 @@
 [
   {
+    "id": "db72d3872e21148a",
+    "title": "Ubuntu snap-confine Flaw Could Give Local Users Root on Default Desktop Installs",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+    "published": "2026-07-22T23:37:16+05:30",
+    "fetched_at": "2026-07-22T19:13:29.607680+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a target environment.",
+    "tags": [
+      "cve",
+      "vulnerability"
+    ],
+    "day": "2026-07-22",
+    "cves": [
+      "CVE-2026-8933"
+    ],
+    "cvss": 7.8,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a target environment.",
+    "quick_take": "Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a…",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have disclosed details of a new local privilege escalation (LPE) vulnerability in snap-confine that an unprivileged user can trigger to obtain root access and gain complete control of a target environment. Tracked as CVE-2026-8933. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "4fd0564f94e947ae",
+    "title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
+    "published": "2026-07-22T20:31:21+05:30",
+    "fetched_at": "2026-07-22T19:13:29.607921+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a user's WhatsApp data.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-22",
+    "cves": [
+      "CVE-2026-48294"
+    ],
+    "cvss": 7.4,
+    "severity": "high",
+    "vendors": [
+      "Adobe",
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a user's WhatsApp data.",
+    "quick_take": "Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a…",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability chain in the Adobe Acrobat Chrome extension that has over 314 million users, which, if exploited, could facilitate a silent hijack of a user's WhatsApp data. Tracked as CVE-2026-48294. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "1efb26f03c6a929d",
     "title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
     "source": "The Hacker News",
@@ -491,66 +554,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "OpenAI says its AI models, including GPT‑5.6 Sol and a pre-release model, hacked into the Hugging Face artificial intelligence repository while being tested in a sandboxed testing environment. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "9c1e35997323bae6",
-    "title": "LG to Ban Residential Proxies from Smart TV Apps",
-    "source": "Krebs on Security",
-    "link": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
-    "published": "2026-07-22T01:10:38+00:00",
-    "fetched_at": "2026-07-22T02:27:33.365626+00:00",
-    "summary": "The home appliance giant LG Electronics USA said this week it plans to suspend any apps built for its smart TVs that turn one s television into an always-on residential proxy node. The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG s webOS store allow unknown third-parties to route their Internet traffic through...",
-    "tags": [
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-07-22",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "The home appliance giant LG Electronics USA said this week it plans to suspend any apps built for its smart TVs that turn one s television into an always-on residential proxy node. The move comes less than a month after researchers found that more than 42…",
-    "quick_take": "",
-    "sections": {
-      "overview": "The home appliance giant LG Electronics USA said this week it plans to suspend any apps built for its smart TVs that turn one s television into an always-on residential proxy node. The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG s webOS store allow unknown third-parties to route their Internet traffic through...",
-      "technical": "The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG s webOS store allow unknown third-parties to route their Internet traffic through a user s TV. Spur found more than 42 percent of apps available for download on LG smart TVs include SDKs that turn one’s television in a proxy node indefinitely, and that more than a quarter of the apps made for Samsung’s Tizen operating system had similar residential proxy components. Bright Data and other proxy providers named in Spur s report all say they follow rigorous know-your-customer processes to validate legitimate uses of their services, which is often heavily tied to content-scraping activities by said customers.",
-      "impact": "App makers looking for ways to monetize their creations can turn to residential proxy providers, which pay developers to include SDKs that turn the user s device into a residential proxy node that is rented to paying customers. The proxy companies also say they incorporate technological countermeasures to prevent proxy service customers from being able to interact with and control other devices on the proxy user s local network . The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG s webOS store allow unknown third-parties to route their Internet traffic through a user s TV.\n\nAssessed severity: MEDIUM.",
-      "mitigation": "Earlier this week, the Youtube channel Gamers Nexus showed that certain LG LCD monitors will automatically install an app that promotes paid McAfee antivirus subscriptions, and that the app arrives through Windows Update without an approval prompt. The risk is amplified when consent comes from individuals within the household who use the device but shouldn’t give consent, such as minors. LG s announcement that it is culling residential proxy SDKs from its app store is welcome news, but the company recently came under fire for another questionable partnership: Pimping McAfee security products via software drivers included in its high-end LCD monitors."
-    },
-    "email_summary": "The home appliance giant LG Electronics USA said this week it plans to suspend any apps built for its smart TVs that turn one s television into an always-on residential proxy node. The move comes less than a month after researchers found that more than 42 percent of games and other apps available for download on LG s webOS store allow unknown third-parties to route their Internet traffic through a user s TV.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "5d840af53bf11e86",
-    "title": "Apple Fixes Hide My Email Bug That Exposed Real Addresses in Mail Logs",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/07/apple-fixes-hide-my-email-bug-that.html",
-    "published": "2026-07-22T00:16:32+05:30",
-    "fetched_at": "2026-07-21T21:06:07.324469+00:00",
-    "summary": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees.",
-    "tags": [],
-    "day": "2026-07-22",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Apple"
-    ],
-    "action_required": false,
-    "card_summary": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees.",
-    "quick_take": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees.\n\n404 Media reported Tuesday…",
-    "sections": {
-      "technical": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees.\n\n404 Media reported Tuesday that a fix for the issue was deployed by Apple on July 3, 2026, after more than a year, when it was disclosed to the company by Tyler Murphy, co-founder of EasyOptOuts."
-    },
-    "email_summary": "Apple has moved to address a security flaw in its Hide My Email service that enabled users' real email addresses to be unmasked, effectively undermining the feature's privacy guarantees.\n\n404 Media reported Tuesday that a fix for the issue was deployed by Apple on July 3, 2026, after more than a year, when it was disclosed to the company by Tyler Murphy, co-founder of EasyOptOuts.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

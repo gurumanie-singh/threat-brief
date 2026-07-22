@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 July 2026</h1>
-      <span class="brief-sub">14 articles</span>
+      <span class="brief-sub">18 articles</span>
     </div>
   </div>
 
@@ -36,8 +36,9 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -50,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -66,6 +68,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
@@ -77,14 +80,83 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers exploit windmill flaw to read arbitrary server files without authentication"
+       data-id="1efb26f03c6a929d"
+       data-published="2026-07-22T18:06:36+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-22T18:06:36+05:30" title="22 July 2026, 07:36">22 July 2026, 07:36</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication</h3>
+      <p class="card-summary">A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1efb26f03c6a929d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="the fastest path to ai adoption runs through security"
+       data-id="08ada1ad91931da4"
+       data-published="2026-07-22T17:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-22T17:28:00+05:30" title="22 July 2026, 06:58">22 July 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">The Fastest Path to AI Adoption Runs Through Security</h3>
+      <p class="card-summary">Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic influence they have earned.</p></div>
+      <div class="detail-links">
+        <a href="../articles/08ada1ad91931da4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/the-fastest-path-to-ai-adoption-runs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt,malware"
        data-vendors=""
@@ -179,6 +251,40 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how enterprise genai can amplify ransomware risk — and how to contain it"
+       data-id="8e00f032706d57ae"
+       data-published="2026-07-22T11:30:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-22T11:30:00-04:00" title="22 July 2026, 10:30">22 July 2026, 10:30</time>
+      </div>
+      <h3 class="card-title">How enterprise GenAI can amplify ransomware risk — and how to contain it</h3>
+      <p class="card-summary">Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk while supporting secure AI adoption. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/8e00f032706d57ae.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--low"
        data-tags=""
        data-vendors=""
@@ -234,6 +340,40 @@
       <div class="detail-links">
         <a href="../articles/5f5b0e09cd4f9a8c.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/microsoft-azure-devops-mcp-flaw-lets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--medium"
+       data-tags="malware,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="new infratrust report reveals infrastructure flaws admins should patch first"
+       data-id="09ada37f726c84f0"
+       data-published="2026-07-22T10:15:00-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-22T10:15:00-04:00" title="22 July 2026, 09:15">22 July 2026, 09:15</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">New InfraTrust report reveals infrastructure flaws admins should patch first</h3>
+      <p class="card-summary">Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware, networking, and edge devices. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/09ada37f726c84f0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-infratrust-report-reveals-infrastructure-flaws-admins-should-patch-first/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

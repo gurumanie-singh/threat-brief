@@ -1,5 +1,66 @@
 [
   {
+    "id": "1efb26f03c6a929d",
+    "title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+    "published": "2026-07-22T18:06:36+05:30",
+    "fetched_at": "2026-07-22T15:39:05.039448+00:00",
+    "summary": "A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-07-22",
+    "cves": [
+      "CVE-2026-29059"
+    ],
+    "cvss": 7.5,
+    "severity": "high",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The vulnerability in question is CVE-2026-29059 (CVSS score: 7.5), a case of unauthenticated path traversal impacting Windmill's \"get_log_file\" endpoint (\"/api/w/{workspace}/jobs_u/get_log_file/{filename}\").\n\n\"The filename parameter is concatenated into A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck.\n\nReferenced vulnerabilities: CVE-2026-29059."
+    },
+    "email_summary": "A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck. Tracked as CVE-2026-29059. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "08ada1ad91931da4",
+    "title": "The Fastest Path to AI Adoption Runs Through Security",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/the-fastest-path-to-ai-adoption-runs.html",
+    "published": "2026-07-22T17:28:00+05:30",
+    "fetched_at": "2026-07-22T15:39:05.039663+00:00",
+    "summary": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic influence they have earned.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-07-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic influence they have earned.",
+      "technical": "According to McKinsey's State of AI report, 76 percent of employees now use AI in some capacity at work, up from 55",
+      "impact": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Security leaders who build fast, visible paths to AI adoption are becoming the most valued partners in their organizations. AI governance done right gives security teams the visibility they need, employees the tools they want, and CISOs the strategic influence they have earned.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "2aa16685737f7719",
     "title": "Why Modern SOCs Need Multi-Layered Detections",
     "source": "The Hacker News",
@@ -85,6 +146,37 @@
     "highlighted": false
   },
   {
+    "id": "8e00f032706d57ae",
+    "title": "How enterprise GenAI can amplify ransomware risk — and how to contain it",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/",
+    "published": "2026-07-22T11:30:00-04:00",
+    "fetched_at": "2026-07-22T15:39:05.385174+00:00",
+    "summary": "Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk while supporting secure AI adoption. [...]",
+    "tags": [
+      "breach",
+      "malware",
+      "ransomware"
+    ],
+    "day": "2026-07-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk while supporting secure AI adoption. [...]",
+      "impact": "Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk while supporting secure AI adoption. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Enterprise AI can accelerate ransomware attacks when AI assistants and agents inherit excessive permissions or compromised identities. Acronis explains how identity controls, governance, and least-privilege access help reduce AI-enabled ransomware risk while supporting secure AI adoption. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "685c731c5e25f92e",
     "title": "EU Financial Institutions Leak Data Through Cookie Trackers",
     "source": "Dark Reading",
@@ -130,6 +222,37 @@
       "technical": "The flaw is in Microsoft's official Azure DevOps MCP server, and it works because one of its tools returns pull request descriptions without a prompt-injection guardrail the company had"
     },
     "email_summary": "A single invisible comment in an Azure DevOps pull request can turn a reviewer's own AI coding agent against them, driving it into projects the attacker has no rights to reach and quietly leaking what it finds. The flaw is in Microsoft's official Azure DevOps MCP server, and it works because one of its tools returns pull request descriptions without a prompt-injection guardrail the company had.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "09ada37f726c84f0",
+    "title": "New InfraTrust report reveals infrastructure flaws admins should patch first",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/new-infratrust-report-reveals-infrastructure-flaws-admins-should-patch-first/",
+    "published": "2026-07-22T10:15:00-04:00",
+    "fetched_at": "2026-07-22T15:39:05.385339+00:00",
+    "summary": "Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware, networking, and edge devices. [...]",
+    "tags": [
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-22",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": true,
+    "card_summary": "Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware, networking, and edge devices. [...]",
+    "quick_take": "Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware,…",
+    "sections": {
+      "impact": "Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware, networking, and edge devices. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Eclypsium has launched InfraTrust, a new infrastructure cybersecurity knowledge base and monthly InfraTrust Pulse report designed to help organizations prioritize vulnerabilities affecting infrastructure, firmware, networking, and edge devices. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

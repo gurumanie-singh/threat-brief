@@ -1,5 +1,68 @@
 [
   {
+    "id": "34e4ca43aceb7504",
+    "title": "Nine-Year-Old RefluXFS Linux Flaw Gives Local Users Root on Default RHEL Installs",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
+    "published": "2026-07-23T13:34:35+05:30",
+    "fetched_at": "2026-07-23T10:20:20.074817+00:00",
+    "summary": "RefluXFS, a new Linux kernel flaw disclosed on July 22 and tracked as CVE-2026-64600, lets an unprivileged local user overwrite root-owned files on an XFS filesystem and gain persistent root access.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware"
+    ],
+    "day": "2026-07-23",
+    "cves": [
+      "CVE-2026-64600"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "RefluXFS, a new Linux kernel flaw disclosed on July 22 and tracked as CVE-2026-64600, lets an unprivileged local user overwrite root-owned files on an XFS filesystem and gain persistent root access.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "RefluXFS, a new Linux kernel flaw disclosed on July 22 and tracked as CVE-2026-64600, lets an unprivileged local user overwrite root-owned files on an XFS filesystem and gain persistent root access. Tracked as CVE-2026-64600.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1e24dc6e2c8e54ef",
+    "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+    "published": "2026-07-23T12:04:36+05:30",
+    "fetched_at": "2026-07-23T10:20:20.075078+00:00",
+    "summary": "Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active exploitation in the wild.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-23",
+    "cves": [
+      "CVE-2026-16232"
+    ],
+    "cvss": 9.3,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active exploitation in the wild.",
+    "quick_take": "Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active…",
+    "sections": {
+      "technical": "The security flaw, tracked as CVE-2026-16232 (CVSS score: 9.3), is an authentication bypass affecting the Check Point SmartConsole login process that allows an Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active exploitation in the wild.\n\nReferenced vulnerabilities: CVE-2026-16232."
+    },
+    "email_summary": "Check Point has released security updates to address multiple vulnerabilities impacting Security Management and Multi-Domain Management (MDSM) products, including a critical flaw that has come under active exploitation in the wild. Tracked as CVE-2026-16232. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "35fa5714f14115fe",
     "title": "Brazilian Banking Trojan Actively Spreading in Portugal",
     "source": "Dark Reading",
@@ -20,6 +83,94 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Portuguese businesses operate in the same native language as Brazilian hackers, making those businesses easy targets.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "611f5af65088dc2f",
+    "title": "New msaRAT malware uses Chrome, Edge browsers to route C2 traffic",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+    "published": "2026-07-23T06:00:00-04:00",
+    "fetched_at": "2026-07-23T10:20:20.576325+00:00",
+    "summary": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers. [...]",
+    "tags": [
+      "malware",
+      "ransomware"
+    ],
+    "day": "2026-07-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers. [...]\n\nAssessed severity: HIGH.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers. [...]. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "7bd9f15c5b759ca0",
+    "title": "Microsoft working to fix Exchange Online mailbox quarantine issue",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
+    "published": "2026-07-23T05:20:10-04:00",
+    "fetched_at": "2026-07-23T10:20:20.576508+00:00",
+    "summary": "Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday. [...]",
+    "tags": [],
+    "day": "2026-07-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b4a8e76d432d7dc0",
+    "title": "Check Point warns of SmartConsole zero-day exploited in attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-smartconsole-zero-day-exploited-in-attacks/",
+    "published": "2026-07-23T04:13:07-04:00",
+    "fetched_at": "2026-07-23T10:20:20.576669+00:00",
+    "summary": "Israeli cybersecurity firm Check Point Software has addressed an actively exploited zero-day flaw in the company's SmartConsole graphical user interface (GUI) admin panel. [...]",
+    "tags": [
+      "exploit",
+      "zero-day"
+    ],
+    "day": "2026-07-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "Israeli cybersecurity firm Check Point Software has addressed an actively exploited zero-day flaw in the company's SmartConsole graphical user interface (GUI) admin panel. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Israeli cybersecurity firm Check Point Software has addressed an actively exploited zero-day flaw in the company's SmartConsole graphical user interface (GUI) admin panel. [...]\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Israeli cybersecurity firm Check Point Software has addressed an actively exploited zero-day flaw in the company's SmartConsole graphical user interface (GUI) admin panel. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

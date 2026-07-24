@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">24 July 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">6 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,8 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -59,14 +62,181 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="exploit,malware,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="nodebb patches eight ai-found flaws exposing admin access and private chats"
+       data-id="371cd3a51c5dd399"
+       data-published="2026-07-24T13:11:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-24T13:11:06+05:30" title="24 July 2026, 02:41">24 July 2026, 02:41</time>
+      </div>
+      <h3 class="card-title">NodeBB Patches Eight AI-Found Flaws Exposing Admin Access and Private Chats</h3>
+      <p class="card-summary">Eight security flaws in NodeBB went public on Wednesday, along with the code to exploit them. Aikido Security rates all eight as high severity and says its AI pentest agents found them in a six-hour review of the forum software&#39;s source code.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/371cd3a51c5dd399.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/nodebb-patches-eight-ai-found-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="kimi k3 agents found redis zero-days and built rce exploit, researchers say"
+       data-id="82292c0694c41d2f"
+       data-published="2026-07-24T12:28:27+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-24T12:28:27+05:30" title="24 July 2026, 01:58">24 July 2026, 01:58</time>
+      </div>
+      <h3 class="card-title">Kimi K3 Agents Found Redis Zero-Days and Built RCE Exploit, Researchers Say</h3>
+      <p class="card-summary">Redis shipped seven security releases on July 23 after researchers published authenticated RCE PoCs for stock Redis 6.2.22, 7.4.9, 8.6.4, and 8.8.0.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/82292c0694c41d2f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="AWS,Microsoft"
+       data-severity="medium"
+       data-title="fake notepad++ plugin delivers matchboil.v2 in uac-0099 attacks"
+       data-id="4888bed3055df22b"
+       data-published="2026-07-24T12:20:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-24T12:20:57+05:30" title="24 July 2026, 01:50">24 July 2026, 01:50</time>
+      </div>
+      <h3 class="card-title">Fake Notepad++ Plugin Delivers MATCHBOIL.V2 in UAC-0099 Attacks</h3>
+      <p class="card-summary">The Computer Emergency Response Team of Ukraine (CERT-UA) has warned of a new campaign that involves the use of a malicious program that&#39;s dressed up as a Notepad++ plugin to compromise Windows systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4888bed3055df22b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/fake-notepad-plugin-delivers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="europe&#39;s multilingual reality exposes ai security gaps"
+       data-id="0791c07deb9d0791"
+       data-published="2026-07-24T07:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-24T07:00:00+00:00" title="24 July 2026, 02:00">24 July 2026, 02:00</time>
+      </div>
+      <h3 class="card-title">Europe&#39;s Multilingual Reality Exposes AI Security Gaps</h3>
+      <p class="card-summary">The AI security layer and guardrails for many AI products don&#39;t evenly protect against jailbreaking and unsafe actions in every single language.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0791c07deb9d0791.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/europes-multilingual-reality-exposes-ai-security-gaps" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="clop ransomware targets windchill, flexplm in data theft attacks"
+       data-id="7cd053f4d86beae8"
+       data-published="2026-07-24T03:36:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-24T03:36:39-04:00" title="24 July 2026, 02:36">24 July 2026, 02:36</time>
+      </div>
+      <h3 class="card-title">Clop ransomware targets Windchill, FlexPLM in data theft attacks</h3>
+      <p class="card-summary">The Clop ransomware gang (also tracked as Cl0p) is targeting Internet-exposed PTC Windchill and FlexPLM instances in a new data theft extortion campaign. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7cd053f4d86beae8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="exploit,zero-day"
        data-vendors=""

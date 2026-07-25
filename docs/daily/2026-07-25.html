@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">25 July 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">7 articles</span>
     </div>
   </div>
 
@@ -49,6 +49,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -69,17 +70,52 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="fastjson 1.x rce vulnerability targeted in attacks with no patched available"
+       data-id="f9bdd5e96640ebf3"
+       data-published="2026-07-25T18:22:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-25T18:22:43+05:30" title="25 July 2026, 07:52">25 July 2026, 07:52</time>
+      </div>
+      <h3 class="card-title">Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available</h3>
+      <p class="card-summary">Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba&#39;s JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba&#39;s JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process.</p></div>
+      <div class="detail-links">
+        <a href="../articles/f9bdd5e96640ebf3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,malware,phishing"
        data-vendors=""
@@ -209,6 +245,37 @@
       <div class="detail-links">
         <a href="../articles/58a181fbecb70b25.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="high"
+       data-title="shinyhunters data leaks fuel $2,000 sextortion email scam"
+       data-id="a0b2d66a174fd0c9"
+       data-published="2026-07-25T10:16:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-25T10:16:26-04:00" title="25 July 2026, 09:16">25 July 2026, 09:16</time>
+      </div>
+      <h3 class="card-title">ShinyHunters data leaks fuel $2,000 sextortion email scam</h3>
+      <p class="card-summary">Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a0b2d66a174fd0c9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

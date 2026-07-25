@@ -1,5 +1,37 @@
 [
   {
+    "id": "f9bdd5e96640ebf3",
+    "title": "Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
+    "published": "2026-07-25T18:22:43+05:30",
+    "fetched_at": "2026-07-25T15:00:14.791252+00:00",
+    "summary": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process.",
+    "tags": [
+      "cve",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-25",
+    "cves": [
+      "CVE-2026-16723"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process.",
+      "technical": "Tracked as CVE-2026-16723, the vulnerability carries an Alibaba-assigned CVSS score of 9.0. Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java.\n\nReferenced vulnerabilities: CVE-2026-16723."
+    },
+    "email_summary": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. Tracked as CVE-2026-16723. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "fc3ae847956b9931",
     "title": "CTM360 Research Reveals How Insurance Phishing Has Evolved Into Real-Time Account Hijacking",
     "source": "The Hacker News",
@@ -115,6 +147,34 @@
       "impact": "An ordinary authenticated user triggers it by committing two crafted Jupyter notebooks and requesting their diff. The chain needs no administrator rights, continuous integration (CI) runner access, victim interaction\n\nAssessed severity: MEDIUM."
     },
     "email_summary": "Security researcher Yuhang Wu at depthfirst has published a working proof-of-concept (PoC) exploit that executes commands as git on an unpatched self-managed GitLab 18.11.3 server. An ordinary authenticated user triggers it by committing two crafted Jupyter notebooks and requesting their diff.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a0b2d66a174fd0c9",
+    "title": "ShinyHunters data leaks fuel $2,000 sextortion email scam",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/",
+    "published": "2026-07-25T10:16:26-04:00",
+    "fetched_at": "2026-07-25T15:00:15.100817+00:00",
+    "summary": "Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-07-25",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]\n\nAssessed severity: HIGH.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

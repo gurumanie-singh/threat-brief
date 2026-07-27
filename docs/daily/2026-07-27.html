@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 July 2026</h1>
-      <span class="brief-sub">9 articles</span>
+      <span class="brief-sub">11 articles</span>
     </div>
   </div>
 
@@ -50,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -66,22 +67,57 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="exploit,malware,patch"
+       data-vendors=""
+       data-severity="high"
+       data-title="public exploit released for patched vbulletin pre-auth code execution flaw"
+       data-id="5b328168fbdbbc3a"
+       data-published="2026-07-27T20:10:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-27T20:10:00+05:30" title="27 July 2026, 09:40">27 July 2026, 09:40</time>
+      </div>
+      <h3 class="card-title">Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw</h3>
+      <p class="card-summary">Public exploit details released on July 27 show how an unauthenticated request can reach PHP&#39;s eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Public exploit details released on July 27 show how an unauthenticated request can reach PHP&#39;s eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from another user.</p></div>
+      <div class="detail-links">
+        <a href="../articles/5b328168fbdbbc3a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/public-exploit-released-for-patched.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit"
        data-vendors="AWS"
@@ -271,6 +307,36 @@
       <div class="detail-links">
         <a href="../articles/3e251542246eddec.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/github-adds-3-day-dependabot-cooldown.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="apple sued over fake app store crypto wallet app stealing $1.8m in bitcoin"
+       data-id="1c80580c83f6c952"
+       data-published="2026-07-27T13:29:07-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-07-27T13:29:07-04:00" title="27 July 2026, 12:29">27 July 2026, 12:29</time>
+      </div>
+      <h3 class="card-title">Apple sued over fake App Store crypto wallet app stealing $1.8M in Bitcoin</h3>
+      <p class="card-summary">Apple is being sued by three people who claim approximately $1.8 million in Bitcoin was stolen after downloading and using a fraudulent Sparrow Wallet application from the App Store. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1c80580c83f6c952.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

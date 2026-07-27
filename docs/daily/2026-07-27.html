@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 July 2026</h1>
-      <span class="brief-sub">16 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -66,10 +67,11 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
@@ -79,12 +81,12 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
@@ -148,6 +150,36 @@
       <div class="detail-links">
         <a href="../articles/d8e1a06226eea3e0.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS,Google,Microsoft"
+       data-severity="medium"
+       data-title="&#39;confused deputy&#39; flaws persist in google cloud, microsoft azure"
+       data-id="588c2f79b4eca5f5"
+       data-published="2026-07-27T20:57:26+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-27T20:57:26+00:00" title="27 July 2026, 15:57">27 July 2026, 15:57</time>
+      </div>
+      <h3 class="card-title">&#39;Confused Deputy&#39; Flaws Persist in Google Cloud, Microsoft Azure</h3>
+      <p class="card-summary">This category of vulnerabilities allows an attacker to easily acquire administrative level permissions and bypass cloud providers&#39; access controls.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/588c2f79b4eca5f5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/confused-deputy-flaws-google-cloud-microsoft-azure" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -249,6 +281,41 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,malware,patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="arista patches velocloud orchestrator zero-day exploited in attacks"
+       data-id="049e655cb0060815"
+       data-published="2026-07-27T18:49:44-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-27T18:49:44-04:00" title="27 July 2026, 17:49">27 July 2026, 17:49</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Arista patches VeloCloud Orchestrator zero-day exploited in attacks</h3>
+      <p class="card-summary">Arista has patched a maximum-severity command injection vulnerability in on-premises VeloCloud Orchestrator deployments that is being actively exploited in attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/049e655cb0060815.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/arista-patches-velocloud-orchestrator-zero-day-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,malware,patch"
        data-vendors=""
@@ -344,6 +411,38 @@
       <div class="detail-links">
         <a href="../articles/2bfe7ff76e66d0a9.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="new dysphoria ddos botnet spreads to 200k devices worldwide"
+       data-id="6680e55521ed61a9"
+       data-published="2026-07-27T17:08:15-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-27T17:08:15-04:00" title="27 July 2026, 16:08">27 July 2026, 16:08</time>
+      </div>
+      <h3 class="card-title">New Dysphoria DDoS botnet spreads to 200k devices worldwide</h3>
+      <p class="card-summary">A botnet called Dysphoria has compromised around 200,000 devices across the world and is using them for distributed denial of service (DDoS) attacks and traffic relay operations. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6680e55521ed61a9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

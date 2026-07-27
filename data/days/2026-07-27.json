@@ -1,5 +1,100 @@
 [
   {
+    "id": "8d70cc9f49b248a9",
+    "title": "Weekly Recap: Rogue AI Agents, Check Point Exploit, Slopsquatting, ClickFix Lures and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html",
+    "published": "2026-07-27T19:40:54+05:30",
+    "fetched_at": "2026-07-27T15:40:30.759171+00:00",
+    "summary": "Monday starts with the usual promise that everything is under control. Then the logs wake up.",
+    "tags": [
+      "exploit"
+    ],
+    "day": "2026-07-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Monday starts with the usual promise that everything is under control. Then the logs wake up.",
+    "quick_take": "",
+    "sections": {
+      "technical": "This week, trusted tools crossed lines, old flaws found new work, exposed systems stayed exposed, and attackers kept hiding inside normal-looking services."
+    },
+    "email_summary": "Monday starts with the usual promise that everything is under control. Then the logs wake up.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3c0296c3d9425f36",
+    "title": "n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html",
+    "published": "2026-07-27T18:35:15+05:30",
+    "fetched_at": "2026-07-27T15:40:30.759445+00:00",
+    "summary": "n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Security Joes found the flaw while probing n8n's February fix for CVE-2026-27577 for another bypass.",
+    "tags": [
+      "cve",
+      "malware",
+      "patch"
+    ],
+    "day": "2026-07-27",
+    "cves": [
+      "CVE-2026-27577"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Security Joes found the flaw while probing n8n's February fix for…",
+    "quick_take": "",
+    "sections": {
+      "overview": "n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Security Joes found the flaw while probing n8n's February fix for CVE-2026-27577 for another bypass.",
+      "technical": "Security Joes found the flaw while probing n8n's February fix for CVE-2026-27577 for another bypass. The affected ranges are <2.31.5 and >=2.32.0,<2.32.1. n8n fixed the flaw in versions 2.31.5 and\n\nReferenced vulnerabilities: CVE-2026-27577.",
+      "impact": "The affected ranges are <2.31.5 and >=2.32.0,<2.32.1. n8n fixed the flaw in versions 2.31.5 and\n\nAssessed severity: CRITICAL."
+    },
+    "email_summary": "n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Tracked as CVE-2026-27577. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "7f2d05299fe3975e",
+    "title": "Operation BlueDash Deploys Level RMM and ScreenConnect via Fake Teams Update",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/operation-bluedash-deploys-level-rmm.html",
+    "published": "2026-07-27T18:07:49+05:30",
+    "fetched_at": "2026-07-27T15:40:30.759683+00:00",
+    "summary": "Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs \"secure document\" lures to deliver legitimate remote monitoring and management (RMM) tools.",
+    "tags": [
+      "breach",
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-07-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs \"secure document\" lures to deliver legitimate remote monitoring and management (RMM) tools.",
+    "quick_take": "Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs \"secure document\" lures to deliver legitimate remote monitoring and management (RMM) tools.\n\n\"The victim was directed…",
+    "sections": {
+      "impact": "Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs \"secure document\" lures to deliver legitimate remote monitoring and management (RMM) tools.\n\n\"The victim was directed through compromised web infrastructure to a counterfeit Microsoft Store page claiming that Microsoft Teams had to be updated before the shared document could be opened,\" ZeroBEC said in\n\nAssessed severity: MEDIUM.",
+      "mitigation": "Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs \"secure document\" lures to deliver legitimate remote monitoring and management (RMM) tools.\n\n\"The victim was directed through compromised web infrastructure to a counterfeit Microsoft Store page claiming that Microsoft Teams had to be updated before the shared document could be opened,\" ZeroBEC said in",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs \"secure document\" lures to deliver legitimate remote monitoring and management (RMM) tools.\n\n\"The victim was directed through compromised web infrastructure to a counterfeit Microsoft Store page claiming that Microsoft Teams had to be updated before the shared document could be opened,\" ZeroBEC said in.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "27bf7f64a3054481",
     "title": "Cruciferra Crypter Uses BYOVD and Process Ghosting to Hide Windows Malware",
     "source": "The Hacker News",
@@ -82,6 +177,88 @@
       "mitigation": "GitHub has announced a new cooldown mechanism in Dependabot, allowing the tool to wait at least three days after a release is published before opening a pull request.\n\n\"The cooldown configuration option in the dependabot.yml still controls the behavior, though, so you can choose a different cooldown parameter that fits your project,\" the Microsoft-owned subsidiary said."
     },
     "email_summary": "GitHub has announced a new cooldown mechanism in Dependabot, allowing the tool to wait at least three days after a release is published before opening a pull request.\n\n\"The cooldown configuration option in the dependabot.yml still controls the behavior, though, so you can choose a different cooldown parameter that fits your project,\" the Microsoft-owned subsidiary said. According to GitHub, the.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ca1a19e5fa11d61d",
+    "title": "Coca-Cola confirms data theft in Fairlife ransomware attack",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+    "published": "2026-07-27T11:39:51-04:00",
+    "fetched_at": "2026-07-27T15:40:31.045528+00:00",
+    "summary": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]",
+    "tags": [
+      "ransomware"
+    ],
+    "day": "2026-07-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f3bd961dfe8cd87a",
+    "title": "Ernst & Young data breach claimed by ShinyHunters extortion gang",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+    "published": "2026-07-27T11:12:27-04:00",
+    "fetched_at": "2026-07-27T15:40:31.045784+00:00",
+    "summary": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-07-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "13fc0df23e436f76",
+    "title": "Shadow AI agents are multiplying. Here's how to find and secure them.",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/shadow-ai-agents-are-multiplying-heres-how-to-find-and-secure-them/",
+    "published": "2026-07-27T10:01:11-04:00",
+    "fetched_at": "2026-07-27T15:40:31.046002+00:00",
+    "summary": "Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create security risks. [...]",
+    "tags": [],
+    "day": "2026-07-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create security risks. [...]",
+      "impact": "Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create security risks. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create security risks. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

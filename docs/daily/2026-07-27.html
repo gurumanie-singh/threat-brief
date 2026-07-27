@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 July 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -47,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -62,17 +65,121 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="weekly recap: rogue ai agents, check point exploit, slopsquatting, clickfix lures and more"
+       data-id="8d70cc9f49b248a9"
+       data-published="2026-07-27T19:40:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-27T19:40:54+05:30" title="27 July 2026, 09:10">27 July 2026, 09:10</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Rogue AI Agents, Check Point Exploit, Slopsquatting, ClickFix Lures and More</h3>
+      <p class="card-summary">Monday starts with the usual promise that everything is under control. Then the logs wake up.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8d70cc9f49b248a9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,malware,patch"
+       data-vendors=""
+       data-severity="critical"
+       data-title="n8n sandbox escape lets workflow editors run os commands as the n8n process"
+       data-id="3c0296c3d9425f36"
+       data-published="2026-07-27T18:35:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-27T18:35:15+05:30" title="27 July 2026, 08:05">27 July 2026, 08:05</time>
+      </div>
+      <h3 class="card-title">n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process</h3>
+      <p class="card-summary">n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Security Joes found the flaw while probing n8n&#39;s February fix for…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>n8n has patched a high-severity expression-sandbox escape that could let an authenticated workflow editor execute operating-system commands on the server running the automation platform. Security Joes found the flaw while probing n8n&#39;s February fix for CVE-2026-27577 for another bypass.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3c0296c3d9425f36.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="operation bluedash deploys level rmm and screenconnect via fake teams update"
+       data-id="7f2d05299fe3975e"
+       data-published="2026-07-27T18:07:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-27T18:07:49+05:30" title="27 July 2026, 07:37">27 July 2026, 07:37</time>
+      </div>
+      <h3 class="card-title">Operation BlueDash Deploys Level RMM and ScreenConnect via Fake Teams Update</h3>
+      <p class="card-summary">Cybersecurity researchers have flagged a Microsoft Teams-themed phishing campaign that employs &#34;secure document&#34; lures to deliver legitimate remote monitoring and management (RMM) tools.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7f2d05299fe3975e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/operation-bluedash-deploys-level-rmm.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing"
        data-vendors="Microsoft"
@@ -164,6 +271,99 @@
       <div class="detail-links">
         <a href="../articles/3e251542246eddec.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/github-adds-3-day-dependabot-cooldown.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="coca-cola confirms data theft in fairlife ransomware attack"
+       data-id="ca1a19e5fa11d61d"
+       data-published="2026-07-27T11:39:51-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-27T11:39:51-04:00" title="27 July 2026, 10:39">27 July 2026, 10:39</time>
+      </div>
+      <h3 class="card-title">Coca-Cola confirms data theft in Fairlife ransomware attack</h3>
+      <p class="card-summary">The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ca1a19e5fa11d61d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ernst &amp; young data breach claimed by shinyhunters extortion gang"
+       data-id="f3bd961dfe8cd87a"
+       data-published="2026-07-27T11:12:27-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-27T11:12:27-04:00" title="27 July 2026, 10:12">27 July 2026, 10:12</time>
+      </div>
+      <h3 class="card-title">Ernst &amp; Young data breach claimed by ShinyHunters extortion gang</h3>
+      <p class="card-summary">The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst &amp; Young data breach, saying it obtained credentials for some of the company&#39;s systems via a supply-chain attack. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f3bd961dfe8cd87a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="shadow ai agents are multiplying. here&#39;s how to find and secure them."
+       data-id="13fc0df23e436f76"
+       data-published="2026-07-27T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-27T10:01:11-04:00" title="27 July 2026, 09:01">27 July 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Shadow AI agents are multiplying. Here&#39;s how to find and secure them.</h3>
+      <p class="card-summary">Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create security risks. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/13fc0df23e436f76.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/shadow-ai-agents-are-multiplying-heres-how-to-find-and-secure-them/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">28 July 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">3 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,13 +61,89 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says new cybersecurity ai model helps mdash hit 95.95% at half the cost"
+       data-id="8cd81409344cf768"
+       data-published="2026-07-28T11:37:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-28T11:37:22+05:30" title="28 July 2026, 01:07">28 July 2026, 01:07</time>
+      </div>
+      <h3 class="card-title">Microsoft Says New Cybersecurity AI Model Helps MDASH Hit 95.95% at Half the Cost</h3>
+      <p class="card-summary">Microsoft has launched its first cybersecurity-specific model inside MDASH, its multi-model vulnerability identification and remediation harness.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8cd81409344cf768.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="attackers exploit arista velocloud orchestrator command injection flaw"
+       data-id="5d012126d2c36999"
+       data-published="2026-07-28T10:13:53+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-28T10:13:53+05:30" title="27 July 2026, 23:43">27 July 2026, 23:43</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw</h3>
+      <p class="card-summary">A maximum-severity security flaw impacting on-premises versions of Arista VeloCloud Orchestrator (VCO) has come under active exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5d012126d2c36999.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors=""

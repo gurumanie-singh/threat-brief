@@ -1,5 +1,67 @@
 [
   {
+    "id": "9643b22f2aa2ef36",
+    "title": "JFrog Confirms OpenAI Models Exploited Artifactory Zero-Day Before Hugging Face Breach",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html",
+    "published": "2026-07-28T19:03:47+05:30",
+    "fetched_at": "2026-07-28T15:18:02.495289+00:00",
+    "summary": "JFrog has confirmed that OpenAI models exploited a zero-day in self-hosted Artifactory while trying to reach the open internet from a sealed evaluation environment.",
+    "tags": [
+      "breach",
+      "exploit",
+      "zero-day"
+    ],
+    "day": "2026-07-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "JFrog has confirmed that OpenAI models exploited a zero-day in self-hosted Artifactory while trying to reach the open internet from a sealed evaluation environment.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "JFrog says it has since developed and released fixes for cloud",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "JFrog has confirmed that OpenAI models exploited a zero-day in self-hosted Artifactory while trying to reach the open internet from a sealed evaluation environment. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "47bf2767e3524245",
+    "title": "Critical OpenWrt DHCPv6 Flaw Could Let Unauthenticated Attackers Run Code as Root",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/critical-openwrt-dhcpv6-flaw-could-let.html",
+    "published": "2026-07-28T18:26:14+05:30",
+    "fetched_at": "2026-07-28T15:18:02.495572+00:00",
+    "summary": "OpenWrt has shipped version 24.10.8 to close a critical DHCPv6 stack overflow and a wider set of remotely triggerable flaws in network services enabled by default.",
+    "tags": [
+      "cve",
+      "malware"
+    ],
+    "day": "2026-07-28",
+    "cves": [
+      "CVE-2026-53921"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "OpenWrt has shipped version 24.10.8 to close a critical DHCPv6 stack overflow and a wider set of remotely triggerable flaws in network services enabled by default.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Assessed severity: LOW. CVSS score: 3.1/10."
+    },
+    "email_summary": "OpenWrt has shipped version 24.10.8 to close a critical DHCPv6 stack overflow and a wider set of remotely triggerable flaws in network services enabled by default. Tracked as CVE-2026-53921.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "600f5f712ab2f828",
     "title": "Nimbus Manticore Deploys NightLedger and Turns Victim Systems Into Covert Relays",
     "source": "The Hacker News",
@@ -202,6 +264,36 @@
       "technical": "The vulnerability, tracked as CVE-2026-16812 (CVSS score: 10.0), is a case of operating system command injection that could pave the way for arbitrary code execution.\n\n\"VeloCloud Orchestrator (VCO) on-prem has a security issue where this issue A maximum-severity security flaw impacting on-premises versions of Arista VeloCloud Orchestrator (VCO) has come under active exploitation in the wild.\n\nReferenced vulnerabilities: CVE-2026-16812."
     },
     "email_summary": "A maximum-severity security flaw impacting on-premises versions of Arista VeloCloud Orchestrator (VCO) has come under active exploitation in the wild. Tracked as CVE-2026-16812. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e54027ffdba7ab97",
+    "title": "Is Your SSO Protected Against Modern Credential Attacks?",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/is-your-sso-protected-against-modern-credential-attacks/",
+    "published": "2026-07-28T10:00:10-04:00",
+    "fetched_at": "2026-07-28T15:18:02.807980+00:00",
+    "summary": "A compromised SSO login can provide attackers with access to multiple enterprise applications and services. Specops Software explains how stronger passwords, phishing-resistant MFA, and identity hardening help secure modern SSO environments and the applications they protect. [...]",
+    "tags": [
+      "breach",
+      "phishing"
+    ],
+    "day": "2026-07-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A compromised SSO login can provide attackers with access to multiple enterprise applications and services. Specops Software explains how stronger passwords, phishing-resistant MFA, and identity hardening help secure modern SSO environments and the…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A compromised SSO login can provide attackers with access to multiple enterprise applications and services. Specops Software explains how stronger passwords, phishing-resistant MFA, and identity hardening help secure modern SSO environments and the applications they protect. [...]",
+      "impact": "A compromised SSO login can provide attackers with access to multiple enterprise applications and services.\n\nAssessed severity: MEDIUM.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A compromised SSO login can provide attackers with access to multiple enterprise applications and services. Specops Software explains how stronger passwords, phishing-resistant MFA, and identity hardening help secure modern SSO environments and the applications they protect. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

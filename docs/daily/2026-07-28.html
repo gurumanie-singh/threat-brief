@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">28 July 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">7 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -49,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,19 +66,84 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical teamcity flaw could let attackers run os commands without logging in"
+       data-id="717472dfaec750e7"
+       data-published="2026-07-28T13:41:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-28T13:41:22+05:30" title="28 July 2026, 03:11">28 July 2026, 03:11</time>
+      </div>
+      <h3 class="card-title">Critical TeamCity Flaw Could Let Attackers Run OS Commands Without Logging In</h3>
+      <p class="card-summary">JetBrains is urging customers of on-premise versions of TeamCity to update to the latest version following the discovery of a critical security issue that could result in arbitrary code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/717472dfaec750e7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/critical-teamcity-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="researcher says ai helped develop linux traffic-control race into root exploit"
+       data-id="3d9c73ccdad8f195"
+       data-published="2026-07-28T13:34:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-07-28T13:34:44+05:30" title="28 July 2026, 03:04">28 July 2026, 03:04</time>
+      </div>
+      <h3 class="card-title">Researcher Says AI Helped Develop Linux Traffic-Control Race Into Root Exploit</h3>
+      <p class="card-summary">STAR Labs has published a Linux kernel exploit that turns an ordinary local user into root on the CentOS Stream 9 build it targeted. The flaw, tracked as CVE-2026-53264 (CVSS score: 7.8), is a use-after-free race in the kernel&#39;s network traffic-control…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>STAR Labs has published a Linux kernel exploit that turns an ordinary local user into root on the CentOS Stream 9 build it targeted. The flaw, tracked as CVE-2026-53264 (CVSS score: 7.8), is a use-after-free race in the kernel&#39;s network traffic-control subsystem.Researcher Lee Jia Jie said artificial intelligence (AI) helped him find the bug and speed up exploit development. This is local</p></div>
+      <div class="detail-links">
+        <a href="../articles/3d9c73ccdad8f195.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/researcher-says-ai-helped-develop-linux.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors="Microsoft"
@@ -105,6 +172,38 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="../articles/8cd81409344cf768.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says new cybersecurity ai model helps mdash score 95.95% at half the cost"
+       data-id="c1e94103290c3998"
+       data-published="2026-07-28T11:37:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-28T11:37:22+05:30" title="28 July 2026, 01:07">28 July 2026, 01:07</time>
+      </div>
+      <h3 class="card-title">Microsoft Says New Cybersecurity AI Model Helps MDASH Score 95.95% at Half the Cost</h3>
+      <p class="card-summary">Microsoft has launched its first cybersecurity-specific model inside MDASH, its multi-model vulnerability identification and remediation harness.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c1e94103290c3998.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
@@ -141,6 +240,37 @@
       <div class="detail-links">
         <a href="../articles/5d012126d2c36999.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="data breach at medical billing firm mcbs affects 1.26 million people"
+       data-id="16729bec90e71e2a"
+       data-published="2026-07-28T05:10:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-28T05:10:03-04:00" title="28 July 2026, 04:10">28 July 2026, 04:10</time>
+      </div>
+      <h3 class="card-title">Data breach at medical billing firm MCBS affects 1.26 million people</h3>
+      <p class="card-summary">Healthcare billing company Medical Computer Business Services (MCBS) has disclosed that a 2025 network breach exposed the sensitive information of more than 1.2 million people. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/16729bec90e71e2a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/data-breach-at-medical-billing-firm-mcbs-affects-126-million-people/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

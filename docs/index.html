@@ -28,14 +28,15 @@
       <h1 class="brief-title">28 July 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-07-28T02:35:59.116653-05:00">28 July 2026, 02:35</time>
+        <time data-iso="2026-07-28T05:31:35.096461-05:00">28 July 2026, 05:31</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-critical">1 critical</span>
+      <span class="stat stat-critical">2 critical</span>
+      <span class="stat stat-high">1 high</span>
       <span class="stat stat-action">1 action req.</span>
-      <span class="stat">3 articles today</span>
+      <span class="stat">7 articles today</span>
     </div>
   </div>
 
@@ -43,17 +44,18 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">exploit<span class="trend-count">12</span></span>
+        <span class="trend-pill">exploit<span class="trend-count">13</span></span>
         <span class="trend-pill">attacks<span class="trend-count">12</span></span>
         <span class="trend-pill">malware<span class="trend-count">11</span></span>
-        <span class="trend-pill">microsoft<span class="trend-count">9</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">10</span></span>
         <span class="trend-pill">attack<span class="trend-count">8</span></span>
         <span class="trend-pill">agents<span class="trend-count">7</span></span>
       </div>
@@ -102,8 +104,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
@@ -116,10 +118,73 @@
   <div class="day-group">
     <h2 class="day-heading">
       28 July 2026
-      <span class="day-count">3</span>
+      <span class="day-count">7</span>
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical teamcity flaw could let attackers run os commands without logging in"
+       data-id="717472dfaec750e7"
+       data-published="2026-07-28T13:41:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-28T13:41:22+05:30" title="28 July 2026, 03:11">28 July 2026, 03:11</time>
+      </div>
+      <h3 class="card-title">Critical TeamCity Flaw Could Let Attackers Run OS Commands Without Logging In</h3>
+      <p class="card-summary">JetBrains is urging customers of on-premise versions of TeamCity to update to the latest version following the discovery of a critical security issue that could result in arbitrary code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/717472dfaec750e7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/critical-teamcity-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="researcher says ai helped develop linux traffic-control race into root exploit"
+       data-id="3d9c73ccdad8f195"
+       data-published="2026-07-28T13:34:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-07-28T13:34:44+05:30" title="28 July 2026, 03:04">28 July 2026, 03:04</time>
+      </div>
+      <h3 class="card-title">Researcher Says AI Helped Develop Linux Traffic-Control Race Into Root Exploit</h3>
+      <p class="card-summary">STAR Labs has published a Linux kernel exploit that turns an ordinary local user into root on the CentOS Stream 9 build it targeted. The flaw, tracked as CVE-2026-53264 (CVSS score: 7.8), is a use-after-free race in the kernel&#39;s network traffic-control…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>STAR Labs has published a Linux kernel exploit that turns an ordinary local user into root on the CentOS Stream 9 build it targeted. The flaw, tracked as CVE-2026-53264 (CVSS score: 7.8), is a use-after-free race in the kernel&#39;s network traffic-control subsystem.Researcher Lee Jia Jie said artificial intelligence (AI) helped him find the bug and speed up exploit development. This is local</p></div>
+      <div class="detail-links">
+        <a href="articles/3d9c73ccdad8f195.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/researcher-says-ai-helped-develop-linux.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors="Microsoft"
@@ -148,6 +213,38 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="articles/8cd81409344cf768.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says new cybersecurity ai model helps mdash score 95.95% at half the cost"
+       data-id="c1e94103290c3998"
+       data-published="2026-07-28T11:37:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-28T11:37:22+05:30" title="28 July 2026, 01:07">28 July 2026, 01:07</time>
+      </div>
+      <h3 class="card-title">Microsoft Says New Cybersecurity AI Model Helps MDASH Score 95.95% at Half the Cost</h3>
+      <p class="card-summary">Microsoft has launched its first cybersecurity-specific model inside MDASH, its multi-model vulnerability identification and remediation harness.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/c1e94103290c3998.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
@@ -184,6 +281,37 @@
       <div class="detail-links">
         <a href="articles/5d012126d2c36999.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="data breach at medical billing firm mcbs affects 1.26 million people"
+       data-id="16729bec90e71e2a"
+       data-published="2026-07-28T05:10:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-28T05:10:03-04:00" title="28 July 2026, 04:10">28 July 2026, 04:10</time>
+      </div>
+      <h3 class="card-title">Data breach at medical billing firm MCBS affects 1.26 million people</h3>
+      <p class="card-summary">Healthcare billing company Medical Computer Business Services (MCBS) has disclosed that a 2025 network breach exposed the sensitive information of more than 1.2 million people. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/16729bec90e71e2a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/data-breach-at-medical-billing-firm-mcbs-affects-126-million-people/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -953,141 +1081,6 @@
       <div class="detail-links">
         <a href="articles/7b947d4fa32e4814.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      25 July 2026
-      <span class="day-count">4</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="steam forum clickfix attacks infect gamers with xmrig cryptominers"
-       data-id="8593d1c4e443b472"
-       data-published="2026-07-25T18:37:47-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-25T18:37:47-04:00" title="25 July 2026, 17:37">25 July 2026, 17:37</time>
-      </div>
-      <h3 class="card-title">Steam forum ClickFix attacks infect gamers with XMRig cryptominers</h3>
-      <p class="card-summary">Steam discussion forums are being abused in ClickFix attacks that pretend to be fixes for game and computer problems but actually infect devices with cryptominers. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/8593d1c4e443b472.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="cve,patch,vulnerability"
-       data-vendors=""
-       data-severity="high"
-       data-title="fastjson 1.x rce vulnerability targeted in attacks with no patched available"
-       data-id="f9bdd5e96640ebf3"
-       data-published="2026-07-25T18:22:43+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-07-25T18:22:43+05:30" title="25 July 2026, 07:52">25 July 2026, 07:52</time>
-      </div>
-      <h3 class="card-title">Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available</h3>
-      <p class="card-summary">Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba&#39;s JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba&#39;s JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process.</p></div>
-      <div class="detail-links">
-        <a href="articles/f9bdd5e96640ebf3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware,phishing"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ctm360 research reveals how insurance phishing has evolved into real-time account hijacking"
-       data-id="fc3ae847956b9931"
-       data-published="2026-07-25T15:44:21+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-25T15:44:21+05:30" title="25 July 2026, 05:14">25 July 2026, 05:14</time>
-      </div>
-      <h3 class="card-title">CTM360 Research Reveals How Insurance Phishing Has Evolved Into Real-Time Account Hijacking</h3>
-      <p class="card-summary">For years, phishing campaigns targeting financial institutions followed the same playbook. Victims were tricked into entering usernames and passwords, attackers collected the credentials, and accounts were compromised later when an opportunity arose.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/fc3ae847956b9931.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/ctm360-research-reveals-how-insurance.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,ransomware,vulnerability"
-       data-vendors="AWS"
-       data-severity="critical"
-       data-title="cl0p affiliates target internet-exposed ptc windchill and flexplm with unauthenticated rce"
-       data-id="a4dacc495927369e"
-       data-published="2026-07-25T15:44:03+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-07-25T15:44:03+05:30" title="25 July 2026, 05:14">25 July 2026, 05:14</time>
-      </div>
-      <h3 class="card-title">Cl0p Affiliates Target Internet-Exposed PTC Windchill and FlexPLM with Unauthenticated RCE</h3>
-      <p class="card-summary">Threat actors linked to the Cl0p (aka Chubby Scorpius, FIN11, Graceful Spider, and Lace Tempest) ransomware campaign are exploiting flaws in internet-exposed PTC Windmill and FlexPLM deployments as part of a new data extortion campaign.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">ransomware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a4dacc495927369e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/cl0p-affiliates-target-internet-exposed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

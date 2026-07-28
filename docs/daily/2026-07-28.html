@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">28 July 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">16 articles</span>
     </div>
   </div>
 
@@ -37,7 +37,7 @@
       <ul class="strip-bullets">
         <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -68,24 +68,88 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors="Linux,Microsoft"
+       data-severity="medium"
+       data-title="tengu botnet reboots compromised linux devices when defenders kill its process"
+       data-id="a1d3f105659bc1d1"
+       data-published="2026-07-28T20:31:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-28T20:31:33+05:30" title="28 July 2026, 10:01">28 July 2026, 10:01</time>
+      </div>
+      <h3 class="card-title">Tengu Botnet Reboots Compromised Linux Devices When Defenders Kill Its Process</h3>
+      <p class="card-summary">A new Mirai-derived botnet called Tengu can use a compromised Linux device&#39;s hardware watchdog to trigger a reboot when defenders kill its main process.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a1d3f105659bc1d1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="24,650 internet-exposed bmcs disclose ipmi password hashes before login"
+       data-id="1838fbac3a72109c"
+       data-published="2026-07-28T20:11:36+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-28T20:11:36+05:30" title="28 July 2026, 09:41">28 July 2026, 09:41</time>
+      </div>
+      <h3 class="card-title">24,650 Internet-Exposed BMCs Disclose IPMI Password Hashes Before Login</h3>
+      <p class="card-summary">Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the public internet.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1838fbac3a72109c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/24650-internet-exposed-bmcs-disclose.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="breach,exploit,zero-day"
        data-vendors=""
@@ -179,6 +243,36 @@
       <div class="detail-links">
         <a href="../articles/600f5f712ab2f828.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="&#39;certighost&#39; flaw haunts microsoft active directory certificates"
+       data-id="c1a73cbc01d6d214"
+       data-published="2026-07-28T16:38:48+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-28T16:38:48+00:00" title="28 July 2026, 11:38">28 July 2026, 11:38</time>
+      </div>
+      <h3 class="card-title">&#39;Certighost&#39; Flaw Haunts Microsoft Active Directory Certificates</h3>
+      <p class="card-summary">Microsoft patched a high-severity vulnerability earlier this month that allows a threat actor to escalate privileges and compromise an AD environment.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c1a73cbc01d6d214.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

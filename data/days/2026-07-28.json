@@ -1,5 +1,63 @@
 [
   {
+    "id": "a1d3f105659bc1d1",
+    "title": "Tengu Botnet Reboots Compromised Linux Devices When Defenders Kill Its Process",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html",
+    "published": "2026-07-28T20:31:33+05:30",
+    "fetched_at": "2026-07-28T17:23:47.203832+00:00",
+    "summary": "A new Mirai-derived botnet called Tengu can use a compromised Linux device's hardware watchdog to trigger a reboot when defenders kill its main process.",
+    "tags": [
+      "breach",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-07-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "A new Mirai-derived botnet called Tengu can use a compromised Linux device's hardware watchdog to trigger a reboot when defenders kill its main process.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Nozomi Networks Labs observed the dropper reaching its honeypots through Telnet credential brute force.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A new Mirai-derived botnet called Tengu can use a compromised Linux device's hardware watchdog to trigger a reboot when defenders kill its main process. If that happens, Tengu's other persistence mechanisms get another chance to relaunch it.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1838fbac3a72109c",
+    "title": "24,650 Internet-Exposed BMCs Disclose IPMI Password Hashes Before Login",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/24650-internet-exposed-bmcs-disclose.html",
+    "published": "2026-07-28T20:11:36+05:30",
+    "fetched_at": "2026-07-28T17:23:47.204112+00:00",
+    "summary": "Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the public internet.",
+    "tags": [],
+    "day": "2026-07-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the public internet.",
+    "quick_take": "Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the…",
+    "sections": {
+      "impact": "Of the 36,872 internet-exposed server-management interfaces running IPMI, 24,650 have been found to disclose password-derived authentication hashes before login due to\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the public internet. Of the 36,872 internet-exposed server-management interfaces running IPMI, 24,650 have been found to disclose password-derived authentication hashes before login due to.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "9643b22f2aa2ef36",
     "title": "JFrog Confirms OpenAI Models Exploited Artifactory Zero-Day Before Hugging Face Breach",
     "source": "The Hacker News",
@@ -86,6 +144,34 @@
       "technical": "The intrusions involve the use of a previously undocumented Windows backdoor called NightLedger and two custom WebSocket tunnelers,"
     },
     "email_summary": "The Iranian state-backed hacking group tracked as Nimbus Manticore (aka GalaxyGato, Mirage Kitten, Smoke Sandstorm, Subtle Snail, and UNC1549) has been attributed to a fresh set of attacks targeting entities across the Middle East, Africa, and South Asia. The intrusions involve the use of a previously undocumented Windows backdoor called NightLedger and two custom WebSocket tunnelers,.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "c1a73cbc01d6d214",
+    "title": "'Certighost' Flaw Haunts Microsoft Active Directory Certificates",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
+    "published": "2026-07-28T16:38:48+00:00",
+    "fetched_at": "2026-07-28T17:23:47.590649+00:00",
+    "summary": "Microsoft patched a high-severity vulnerability earlier this month that allows a threat actor to escalate privileges and compromise an AD environment.",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-28",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft patched a high-severity vulnerability earlier this month that allows a threat actor to escalate privileges and compromise an AD environment.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft patched a high-severity vulnerability earlier this month that allows a threat actor to escalate privileges and compromise an AD environment. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 July 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
@@ -35,6 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Google ecosystem affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -47,6 +50,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -68,13 +72,113 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="russia charges telegram founder pavel durov with aiding terrorist activity"
+       data-id="d58191df0b886a62"
+       data-published="2026-07-29T16:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-29T16:30:00+05:30" title="29 July 2026, 06:00">29 July 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">Russia Charges Telegram Founder Pavel Durov With Aiding Terrorist Activity</h3>
+      <p class="card-summary">The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d58191df0b886a62.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="public poc released for exploited check point smartconsole authentication bypass"
+       data-id="be6d768e9fb8c2ab"
+       data-published="2026-07-29T14:28:27+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-29T14:28:27+05:30" title="29 July 2026, 03:58">29 July 2026, 03:58</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass</h3>
+      <p class="card-summary">Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild.</p></div>
+      <div class="detail-links">
+        <a href="../articles/be6d768e9fb8c2ab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="new gitea rce lets repository writers plant a git hook to run shell commands"
+       data-id="46ef3ea1e9a26b07"
+       data-published="2026-07-29T13:17:19+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-07-29T13:17:19+05:30" title="29 July 2026, 02:47">29 July 2026, 02:47</time>
+      </div>
+      <h3 class="card-title">New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands</h3>
+      <p class="card-summary">Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/46ef3ea1e9a26b07.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors="Google"
@@ -167,6 +271,35 @@
       <div class="detail-links">
         <a href="../articles/4a038b3ce251d9fe.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="these near-mint asus chromebook refurbs are only $145"
+       data-id="7414cae703c4ac7c"
+       data-published="2026-07-29T07:12:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-29T07:12:19-04:00" title="29 July 2026, 06:12">29 July 2026, 06:12</time>
+      </div>
+      <h3 class="card-title">These near-mint ASUS Chromebook refurbs are only $145</h3>
+      <p class="card-summary">Buying a new computer in 2026 is a unique experience. Rather than deal with incredibly high tech prices, more shoppers are opting for high-quality refurbished tech.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7414cae703c4ac7c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/these-near-mint-asus-chromebook-refurbs-are-only-145/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

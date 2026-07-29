@@ -1,5 +1,95 @@
 [
   {
+    "id": "d58191df0b886a62",
+    "title": "Russia Charges Telegram Founder Pavel Durov With Aiding Terrorist Activity",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html",
+    "published": "2026-07-29T16:30:00+05:30",
+    "fetched_at": "2026-07-29T11:23:51.544321+00:00",
+    "summary": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-07-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law.",
+    "quick_take": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information…",
+    "sections": {},
+    "email_summary": "The Federal Security Service of the Russian Federation (FSB) on Wednesday said it charged Telegram founder Pavel Durov for allegedly facilitating terrorist activities and for failing to remove prohibited information in violation of Russian law. The principal security agency said the instant messaging platform \"failed to remove numerous channels, chats, and bots on the platform that are.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "be6d768e9fb8c2ab",
+    "title": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
+    "published": "2026-07-29T14:28:27+05:30",
+    "fetched_at": "2026-07-29T11:23:51.544597+00:00",
+    "summary": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-29",
+    "cves": [
+      "CVE-2026-16232"
+    ],
+    "cvss": 9.3,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in…",
+    "quick_take": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS)…",
+    "sections": {
+      "overview": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild.",
+      "technical": "The vulnerability, tracked as CVE-2026-16232 (CVSS score: 9.3), is an authentication bypass in the SmartConsole login process that Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild.\n\nReferenced vulnerabilities: CVE-2026-16232."
+    },
+    "email_summary": "Cybersecurity researchers have shared additional technical details about a recently patched critical security flaw impacting Check Point Security Management Server and Multi-Domain Security Management Server (MDS) that has come under active exploitation in the wild. Tracked as CVE-2026-16232. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "46ef3ea1e9a26b07",
+    "title": "New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
+    "published": "2026-07-29T13:17:19+05:30",
+    "fetched_at": "2026-07-29T11:23:51.545051+00:00",
+    "summary": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account.",
+    "tags": [
+      "cve",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-07-29",
+    "cves": [
+      "CVE-2026-60004"
+    ],
+    "cvss": 9.8,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. Tracked as CVE-2026-60004 (CVSS score: 9.8), the flaw affects Gitea versions 1.17 and later before 1.27.1 and is fixed in 1.27.1.\n\nReferenced vulnerabilities: CVE-2026-60004.",
+      "impact": "A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account. Tracked as CVE-2026-60004 (CVSS score: 9.8), the flaw affects Gitea versions 1.17 and later before 1.27.1 and is fixed in 1.27.1.\n\nAssessed severity: CRITICAL. CVSS score: 9.8/10."
+    },
+    "email_summary": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. Tracked as CVE-2026-60004. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "e982d3761955ae12",
     "title": "Flying Eagle Android RAT Traces Found on 170 Servers as Source Code Circulates",
     "source": "The Hacker News",
@@ -80,6 +170,33 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Beta release versions of two npm packages in the @joyfill namespace have been compromised to deliver a remote access trojan (RAT) associated with the DEV#POPPER malware family. The list of affected packages is as follows -\n\n @joyfill/layouts@0.1.2-2773.beta.0\n @joyfill/components@4.0.0-rc24-2773-beta.4\n\nThe two packages \"contain an import-time JavaScript implant that resolves encrypted code.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "7414cae703c4ac7c",
+    "title": "These near-mint ASUS Chromebook refurbs are only $145",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/these-near-mint-asus-chromebook-refurbs-are-only-145/",
+    "published": "2026-07-29T07:12:19-04:00",
+    "fetched_at": "2026-07-29T11:23:52.159595+00:00",
+    "summary": "Buying a new computer in 2026 is a unique experience. Rather than deal with incredibly high tech prices, more shoppers are opting for high-quality refurbished tech. This ASUS Chromebook CM30 refurb is in near-mint condition with a grade \"A\" rating, but it still only costs $144.97 (reg. $369.99) on sale. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-07-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Buying a new computer in 2026 is a unique experience. Rather than deal with incredibly high tech prices, more shoppers are opting for high-quality refurbished tech.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Buying a new computer in 2026 is a unique experience. Rather than deal with incredibly high tech prices, more shoppers are opting for high-quality refurbished tech.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

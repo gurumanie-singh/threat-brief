@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 July 2026</h1>
-      <span class="brief-sub">19 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -37,7 +37,6 @@
       <ul class="strip-bullets">
         <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Google ecosystem affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -51,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -65,10 +65,10 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
@@ -236,6 +236,65 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="who&#39;s liable when ai agents escape? hugging face breach raises hard questions"
+       data-id="f31b7a08d5f1b430"
+       data-published="2026-07-29T17:43:38+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-29T17:43:38+00:00" title="29 July 2026, 12:43">29 July 2026, 12:43</time>
+      </div>
+      <h3 class="card-title">Who&#39;s Liable When AI Agents Escape? Hugging Face Breach Raises Hard Questions</h3>
+      <p class="card-summary">Dark Reading walks through the many twists and turns in the bizarre story of how OpenAI&#39;s agent AI system broke out of its sandbox and decided to target Hugging Face, and what CISOs should be aware of.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f31b7a08d5f1b430.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/liable-ai-agents-escape-hugging-face-breach-questions" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="hugging face hack lessons for cyber defenders"
+       data-id="fb8c0f064abb9842"
+       data-published="2026-07-29T17:35:23+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-29T17:35:23+00:00" title="29 July 2026, 12:35">29 July 2026, 12:35</time>
+      </div>
+      <h3 class="card-title">Hugging Face Hack Lessons for Cyber Defenders</h3>
+      <p class="card-summary">Dark Reading Confidential Episode 20: Expert Rich Mogull reflects on lessons cyber teams should pull from the OpenAI agent&#39;s attack on Hugging Face.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fb8c0f064abb9842.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/hugging-face-hack-lessons-cyber-defenders" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,malware,patch"
        data-vendors=""
@@ -266,6 +325,34 @@
       <div class="detail-links">
         <a href="../articles/3e96d166e9c26bad.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/researchers-show-single-malicious.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags=""
+       data-vendors=""
+       data-severity="high"
+       data-title="when appsec scanners become a supply chain attack vector"
+       data-id="7d2204d8cceaf233"
+       data-published="2026-07-29T17:06:52+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-07-29T17:06:52+00:00" title="29 July 2026, 12:06">29 July 2026, 12:06</time>
+      </div>
+      <h3 class="card-title">When AppSec Scanners Become a Supply Chain Attack Vector</h3>
+      <p class="card-summary">New research shows how security scanners embedded in the software supply chain can be attacked to serve as a foothold for downstream attacks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7d2204d8cceaf233.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/when-appsec-scanners-become-supply-chain-attack-vector" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -392,6 +479,36 @@
       <div class="detail-links">
         <a href="../articles/be6d768e9fb8c2ab.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="health-isac warns of rising shinyhunters data theft attacks on healthcare"
+       data-id="917f4526442bad22"
+       data-published="2026-07-29T13:54:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-29T13:54:05-04:00" title="29 July 2026, 12:54">29 July 2026, 12:54</time>
+      </div>
+      <h3 class="card-title">Health-ISAC warns of rising ShinyHunters data theft attacks on healthcare</h3>
+      <p class="card-summary">Health-ISAC, a cybersecurity information-sharing organization for the health sector, is warning healthcare and medical technology organizations of an observed increase in successful attacks by ShinyHunters. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/917f4526442bad22.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/health-isac-warns-of-rising-shinyhunters-data-theft-attacks-on-healthcare/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -524,6 +641,37 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers disrupt over 30 minnesota water utilities in coordinated ot attack"
+       data-id="35861098a5b7c1b3"
+       data-published="2026-07-29T10:55:57-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-29T10:55:57-04:00" title="29 July 2026, 09:55">29 July 2026, 09:55</time>
+      </div>
+      <h3 class="card-title">Hackers disrupt over 30 Minnesota water utilities in coordinated OT attack</h3>
+      <p class="card-summary">The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in &#34;a coordinated cyberattack.&#34; [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/35861098a5b7c1b3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-target-over-30-minnesota-water-utilities-in-coordinated-ot-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
        data-severity="medium"
@@ -548,127 +696,6 @@
       <div class="detail-links">
         <a href="../articles/2a7d77509fbc6ed9.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/your-ai-agents-are-guessing-at-scale-permissions-decide-the-damage/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="windows 11 kb5101684 update released with 42 changes and fixes"
-       data-id="dc28faf5f4a538ac"
-       data-published="2026-07-29T09:56:22-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-29T09:56:22-04:00" title="29 July 2026, 08:56">29 July 2026, 08:56</time>
-      </div>
-      <h3 class="card-title">Windows 11 KB5101684 update released with 42 changes and fixes</h3>
-      <p class="card-summary">​​Microsoft has released the KB5101684 preview cumulative update for Windows 11 24H2 and 25H2, which 42 bug fixes and additional feature improvements for the operating system. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/dc28faf5f4a538ac.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5101684-update-released-with-42-changes-and-fixes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="two compromised joyfill npm packages run rat when imported into node.js"
-       data-id="4a038b3ce251d9fe"
-       data-published="2026-07-29T09:50:57+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-29T09:50:57+05:30" title="28 July 2026, 23:20">28 July 2026, 23:20</time>
-      </div>
-      <h3 class="card-title">Two Compromised joyfill npm Packages Run RAT When Imported Into Node.js</h3>
-      <p class="card-summary">Beta release versions of two npm packages in the @joyfill namespace have been compromised to deliver a remote access trojan (RAT) associated with the DEV#POPPER malware family.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/4a038b3ce251d9fe.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="these near-mint asus chromebook refurbs are only $145"
-       data-id="7414cae703c4ac7c"
-       data-published="2026-07-29T07:12:19-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-29T07:12:19-04:00" title="29 July 2026, 06:12">29 July 2026, 06:12</time>
-      </div>
-      <h3 class="card-title">These near-mint ASUS Chromebook refurbs are only $145</h3>
-      <p class="card-summary">Buying a new computer in 2026 is a unique experience. Rather than deal with incredibly high tech prices, more shoppers are opting for high-quality refurbished tech.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/7414cae703c4ac7c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/these-near-mint-asus-chromebook-refurbs-are-only-145/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit"
-       data-vendors=""
-       data-severity="medium"
-       data-title="claude ai just cracked a post-quantum test scheme and found a faster 7-round aes attack"
-       data-id="47e15924bb6c1002"
-       data-published="2026-07-29T00:29:07+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-07-29T00:29:07+05:30" title="28 July 2026, 13:59">28 July 2026, 13:59</time>
-      </div>
-      <h3 class="card-title">Claude AI Just Cracked a Post-Quantum Test Scheme and Found a Faster 7-Round AES Attack</h3>
-      <p class="card-summary">Anthropic says Claude Mythos Preview helped derive an end-to-end key-recovery attack against HAWK-256 and a 200- to 800-fold speedup for an attack on seven-round AES-128.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/47e15924bb6c1002.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

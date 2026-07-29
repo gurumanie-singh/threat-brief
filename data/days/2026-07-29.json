@@ -1,5 +1,36 @@
 [
   {
+    "id": "f66096e25fbad8de",
+    "title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+    "published": "2026-07-29T23:40:00+05:30",
+    "fetched_at": "2026-07-29T20:10:52.095276+00:00",
+    "summary": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.",
+    "tags": [
+      "cve",
+      "vulnerability"
+    ],
+    "day": "2026-07-29",
+    "cves": [
+      "CVE-2026-66066"
+    ],
+    "cvss": 9.5,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Tracked as CVE-2026-66066 (CVSS score: 9.5), the flaw can expose the Rails process environment and secrets such as secret_key_base, the Rails master key, database passwords, cloud storage credentials, Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads.\n\nReferenced vulnerabilities: CVE-2026-66066.",
+      "impact": "Tracked as CVE-2026-66066 (CVSS score: 9.5), the flaw can expose the Rails process environment and secrets such as secret_key_base, the Rails master key, database passwords, cloud storage credentials,\n\nAssessed severity: CRITICAL. CVSS score: 9.5/10."
+    },
+    "email_summary": "Ruby on Rails has released fixes for a critical Active Storage vulnerability that could let unauthenticated attackers read arbitrary files from application servers through crafted image uploads. Tracked as CVE-2026-66066. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "483f50ae82e7861d",
     "title": "Ruflo MCP Flaw Lets Unauthenticated Attackers Run Commands and Poison AI Memory",
     "source": "The Hacker News",
@@ -59,6 +90,29 @@
       "technical": "The first of the three critical-rated flaws is CVE-2026-59309 (CVSS score: 9.8), which has been described as an authentication bypass in VMware vCenter.\n\n\"A malicious actor with network access to vCenter Broadcom has released security updates to address multiple security flaws impacting VMware ESX, vCenter, Workstation, and Fusion, three of which have been designated as critical in severity.\n\nReferenced vulnerabilities: CVE-2026-59309."
     },
     "email_summary": "Broadcom has released security updates to address multiple security flaws impacting VMware ESX, vCenter, Workstation, and Fusion, three of which have been designated as critical in severity. Tracked as CVE-2026-59309. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "2d2411285074a418",
+    "title": "Red Agents vs. Blue Agents: How to Make AI Better At Defense",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/red-agents-vs-blue-agents-make-ai-better-defense",
+    "published": "2026-07-29T19:46:20+00:00",
+    "fetched_at": "2026-07-29T20:10:52.757925+00:00",
+    "summary": "The agentic AI playing field was heavily tilted toward offense, so researchers began using red team agents to help teach their blue counterparts.",
+    "tags": [],
+    "day": "2026-07-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The agentic AI playing field was heavily tilted toward offense, so researchers began using red team agents to help teach their blue counterparts.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The agentic AI playing field was heavily tilted toward offense, so researchers began using red team agents to help teach their blue counterparts.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -497,56 +551,6 @@
       "impact": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]\n\nAssessed severity: MEDIUM."
     },
     "email_summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "35861098a5b7c1b3",
-    "title": "Hackers disrupt over 30 Minnesota water utilities in coordinated OT attack",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-target-over-30-minnesota-water-utilities-in-coordinated-ot-attack/",
-    "published": "2026-07-29T10:55:57-04:00",
-    "fetched_at": "2026-07-29T18:04:41.335708+00:00",
-    "summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-07-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "2a7d77509fbc6ed9",
-    "title": "Your AI Agents Are Guessing at Scale: Permissions Decide the Damage",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/your-ai-agents-are-guessing-at-scale-permissions-decide-the-damage/",
-    "published": "2026-07-29T10:02:12-04:00",
-    "fetched_at": "2026-07-29T16:19:42.073064+00:00",
-    "summary": "AI agents are designed to improvise as they complete tasks, making broad permissions a growing security risk. Token Security explains why identity, intent-based access controls, and least privilege are becoming the foundation for securing agentic AI. [...]",
-    "tags": [],
-    "day": "2026-07-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "AI agents are designed to improvise as they complete tasks, making broad permissions a growing security risk. Token Security explains why identity, intent-based access controls, and least privilege are becoming the foundation for securing agentic AI. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "AI agents are designed to improvise as they complete tasks, making broad permissions a growing security risk. Token Security explains why identity, intent-based access controls, and least privilege are becoming the foundation for securing agentic AI. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

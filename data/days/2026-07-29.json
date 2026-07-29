@@ -95,6 +95,33 @@
     "highlighted": false
   },
   {
+    "id": "99cd89f93e369bef",
+    "title": "OpenAI's Rogue Model Claims More Victims Beyond Hugging Face",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/openai-rogue-model-claims-more-victims-beyond-hugging-face",
+    "published": "2026-07-29T19:48:12+00:00",
+    "fetched_at": "2026-07-29T21:58:34.158860+00:00",
+    "summary": "OpenAI revealed rogue AI models compromised more services than initially disclosed, including a Modal customer environment and others.",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-07-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "OpenAI revealed rogue AI models compromised more services than initially disclosed, including a Modal customer environment and others.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "OpenAI revealed rogue AI models compromised more services than initially disclosed, including a Modal customer environment and others.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "2d2411285074a418",
     "title": "Red Agents vs. Blue Agents: How to Make AI Better At Defense",
     "source": "Dark Reading",
@@ -214,6 +241,66 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Dark Reading walks through the many twists and turns in the bizarre story of how OpenAI's agent AI system broke out of its sandbox and decided to target Hugging Face, and what CISOs should be aware of.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b083636f650fa378",
+    "title": "Anthropic confirms Claude is down worldwide",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-worldwide/",
+    "published": "2026-07-29T17:39:29-04:00",
+    "fetched_at": "2026-07-29T21:58:33.363290+00:00",
+    "summary": "Claude is down for some users, with Anthropic confirming elevated errors across multiple AI models. [...]",
+    "tags": [],
+    "day": "2026-07-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Claude is down for some users, with Anthropic confirming elevated errors across multiple AI models. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Claude is down for some users, with Anthropic confirming elevated errors across multiple AI models. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Claude is down for some users, with Anthropic confirming elevated errors across multiple AI models. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "8f5d15abadbc1530",
+    "title": "Cisco warns of FMC static credential flaw exploited in zero-day attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+    "published": "2026-07-29T17:35:40-04:00",
+    "fetched_at": "2026-07-29T21:58:33.363513+00:00",
+    "summary": "Cisco is warning that a high-severity Secure Firewall Management Center (FMC) static credential vulnerability, tracked as CVE-2026-20316, was actively exploited in zero-day attacks to gain unauthorized access to vulnerable devices. [...]",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-07-29",
+    "cves": [
+      "CVE-2026-20316"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": true,
+    "card_summary": "Cisco is warning that a high-severity Secure Firewall Management Center (FMC) static credential vulnerability, tracked as CVE-2026-20316, was actively exploited in zero-day attacks to gain unauthorized access to vulnerable devices. [...]",
+    "quick_take": "Cisco is warning that a high-severity Secure Firewall Management Center (FMC) static credential vulnerability, tracked as CVE-2026-20316, was actively exploited in zero-day attacks to gain unauthorized access to…",
+    "sections": {
+      "technical": "Cisco is warning that a high-severity Secure Firewall Management Center (FMC) static credential vulnerability, tracked as CVE-2026-20316, was actively exploited in zero-day attacks to gain unauthorized access to vulnerable devices. [...]\n\nReferenced vulnerabilities: CVE-2026-20316.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Cisco is warning that a high-severity Secure Firewall Management Center (FMC) static credential vulnerability, tracked as CVE-2026-20316, was actively exploited in zero-day attacks to gain unauthorized access to vulnerable devices. [...]. Tracked as CVE-2026-20316. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -462,95 +549,6 @@
       "impact": "A user with ordinary repository write access can turn attacker-controlled patch content into a live Git hook and run shell commands as the Gitea service account. Tracked as CVE-2026-60004 (CVSS score: 9.8), the flaw affects Gitea versions 1.17 and later before 1.27.1 and is fixed in 1.27.1.\n\nAssessed severity: CRITICAL. CVSS score: 9.8/10."
     },
     "email_summary": "Gitea, the self-hosted Git platform, has patched a critical remote code execution vulnerability. Tracked as CVE-2026-60004. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "e982d3761955ae12",
-    "title": "Flying Eagle Android RAT Traces Found on 170 Servers as Source Code Circulates",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/07/flying-eagle-android-rat-traces-found.html",
-    "published": "2026-07-29T12:37:23+05:30",
-    "fetched_at": "2026-07-29T08:36:20.688999+00:00",
-    "summary": "Source code for the Flying Eagle Android remote access trojan (RAT) framework is circulating through criminal Telegram channels. Hunt.io and independent researcher NetAskari traced matching control panels and certificates to 170 internet servers.",
-    "tags": [
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-07-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Google"
-    ],
-    "action_required": false,
-    "card_summary": "Source code for the Flying Eagle Android remote access trojan (RAT) framework is circulating through criminal Telegram channels. Hunt.io and independent researcher NetAskari traced matching control panels and certificates to 170 internet servers.",
-    "quick_take": "",
-    "sections": {
-      "impact": "They linked the framework to a fake \"公安一网通办\" Public Security service application targeting Android users in China. The kit supports payment-password\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Source code for the Flying Eagle Android remote access trojan (RAT) framework is circulating through criminal Telegram channels. Hunt.io and independent researcher NetAskari traced matching control panels and certificates to 170 internet servers.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "1248370d12b62f13",
-    "title": "OpenAI Agent Used Exposed Credentials Across Four Services During Hugging Face Breach",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html",
-    "published": "2026-07-29T12:15:02+05:30",
-    "fetched_at": "2026-07-29T08:36:20.689321+00:00",
-    "summary": "OpenAI on Tuesday revealed the rogue artificial intelligence (AI) agent that escaped its sealed evaluation environment and broke into Hugging Face's production environment, and also hacked multiple third-party accounts and services as part of the attack.",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-07-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "OpenAI on Tuesday revealed the rogue artificial intelligence (AI) agent that escaped its sealed evaluation environment and broke into Hugging Face's production environment, and also hacked multiple third-party accounts and services as part of the attack.",
-    "quick_take": "OpenAI on Tuesday revealed the rogue artificial intelligence (AI) agent that escaped its sealed evaluation environment and broke into Hugging Face's production environment, and also hacked multiple third-party…",
-    "sections": {
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "OpenAI on Tuesday revealed the rogue artificial intelligence (AI) agent that escaped its sealed evaluation environment and broke into Hugging Face's production environment, and also hacked multiple third-party accounts and services as part of the attack. The latest disclosure shows that the security incident, which stemmed from an internal security test, was more extensive in scope than.",
-    "content_model_version": 2,
-    "related_sources": [
-      {
-        "source": "BleepingComputer",
-        "link": "https://www.bleepingcomputer.com/news/security/openai-agent-used-exposed-credentials-at-4-services-in-hugging-face-breach/"
-      }
-    ],
-    "highlighted": false
-  },
-  {
-    "id": "fec9dcaf55b23f54",
-    "title": "Hackers target over 30 Minnesota water utilities in coordinated OT attack",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-target-over-30-minnesota-water-utilities-in-coordinated-ot-attack/",
-    "published": "2026-07-29T10:55:57-04:00",
-    "fetched_at": "2026-07-29T16:19:42.072883+00:00",
-    "summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-07-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "The Minnesota IT Services (MNIT) agency activated its cybersecurity incident response capabilities across the entire state after hackers targeted more than 30 community water systems in \"a coordinated cyberattack.\" [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

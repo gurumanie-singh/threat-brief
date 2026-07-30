@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 July 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>2 high-severity advisories published today</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -66,6 +66,9 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
@@ -74,16 +77,49 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="threatsday: ai-powered hacking, 370 chrome flaws, sonicwall attacks, dns hijacking + 22 more stories"
+       data-id="5d8247e48ae38f51"
+       data-published="2026-07-30T20:55:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-30T20:55:57+05:30" title="30 July 2026, 10:25">30 July 2026, 10:25</time>
+      </div>
+      <h3 class="card-title">ThreatsDay: AI-Powered Hacking, 370 Chrome Flaws, SonicWall Attacks, DNS Hijacking + 22 More Stories</h3>
+      <p class="card-summary">A lot of security still comes down to trusting the wrong screen.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5d8247e48ae38f51.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/07/threatsday-ai-powered-hacking-370.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="exploit,patch,vulnerability"
        data-vendors="Microsoft"
@@ -178,6 +214,39 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="apt,malware,vulnerability"
+       data-vendors="AWS,Adobe,Google"
+       data-severity="high"
+       data-title="read this before you buy that tv streaming stick"
+       data-id="032820458b106a79"
+       data-published="2026-07-30T16:49:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-07-30T16:49:00+00:00" title="30 July 2026, 11:49">30 July 2026, 11:49</time>
+      </div>
+      <h3 class="card-title">Read This Before You Buy That TV Streaming Stick</h3>
+      <p class="card-summary">Security experts have been sounding the alarm for years about the risks of using generic TV boxes that promise unlimited content streaming for a one-time fee, warning that they secretly rent the user s Internet connection out to strangers. But a…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/032820458b106a79.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt,breach,exploit,malware"
        data-vendors=""
@@ -246,6 +315,34 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="claude mythos — hype vs. reality: what security teams need to know"
+       data-id="4905c6c5a77c1134"
+       data-published="2026-07-30T15:28:43+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-30T15:28:43+00:00" title="30 July 2026, 10:28">30 July 2026, 10:28</time>
+      </div>
+      <h3 class="card-title">Claude Mythos — Hype vs. Reality: What Security Teams Need to Know</h3>
+      <p class="card-summary">In this edition of Reporters&#39; Notebook, our journalists discuss the ins and outs of Anthropic&#39;s Claude Mythos rollout. How seriously should we take its risks?</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4905c6c5a77c1134.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/claude-mythos-hype-vs-reality" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="exploit,patch,vulnerability"
        data-vendors="Microsoft"
        data-severity="medium"
@@ -280,6 +377,36 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="google says ai helped chrome fix 1,072 security bugs in two releases"
+       data-id="d193a8758febe81b"
+       data-published="2026-07-30T13:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-07-30T13:00:00-04:00" title="30 July 2026, 12:00">30 July 2026, 12:00</time>
+      </div>
+      <h3 class="card-title">Google says AI helped Chrome fix 1,072 security bugs in two releases</h3>
+      <p class="card-summary">Google says artificial intelligence is dramatically increasing the number of security vulnerabilities it can find and fix in Chrome, with more than 1,000 security bugs patched across the browser&#39;s two most recent releases as it expands its use of AI. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d193a8758febe81b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/google/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
        data-severity="medium"
@@ -307,6 +434,70 @@
       <div class="detail-links">
         <a href="../articles/e19d296fc85fa1ca.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/07/fcc-blocks-new-foreign-produced-robots.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="shinyhunters claims brinks home breach, threatens to leak stolen data"
+       data-id="651e08699227949f"
+       data-published="2026-07-30T12:46:15-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-07-30T12:46:15-04:00" title="30 July 2026, 11:46">30 July 2026, 11:46</time>
+      </div>
+      <h3 class="card-title">ShinyHunters claims Brinks Home breach, threatens to leak stolen data</h3>
+      <p class="card-summary">Residential security company Brinks Home has disclosed that hackers breached some of its systems and are threatening to leak allegedly stolen data. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/651e08699227949f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing,ransomware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft teams vishing attacks lead to chaos ransomware attacks"
+       data-id="4cd6235c61fbf5d3"
+       data-published="2026-07-30T11:56:33-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-07-30T11:56:33-04:00" title="30 July 2026, 10:56">30 July 2026, 10:56</time>
+      </div>
+      <h3 class="card-title">Microsoft Teams vishing attacks lead to Chaos ransomware attacks</h3>
+      <p class="card-summary">Threat actors are impersonating IT support staff in Microsoft Teams calls to gain remote access to corporate devices and deploy Chaos ransomware in attacks targeting North American organizations. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4cd6235c61fbf5d3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

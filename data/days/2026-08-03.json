@@ -1,5 +1,65 @@
 [
   {
+    "id": "a2eb64c7b7f81ca7",
+    "title": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
+    "published": "2026-08-03T21:54:47+05:30",
+    "fetched_at": "2026-08-03T18:49:00.478722+00:00",
+    "summary": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-03",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen. Unit 42 detailed three attack paths against Chrome's Google Password Manager cloud authenticator, which it calls Pass-ta-key, Silver Pass-ta-key and Golden Pass-ta-key; the strongest targets the master key.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "fbb63cb73e61b3cf",
+    "title": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
+    "published": "2026-08-03T21:45:13+05:30",
+    "fetched_at": "2026-08-03T18:49:00.478979+00:00",
+    "summary": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances.",
+    "tags": [
+      "breach",
+      "exploit",
+      "malware",
+      "ransomware"
+    ],
+    "day": "2026-08-03",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances.",
+    "quick_take": "",
+    "sections": {
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "b368c9f2c23d7f83",
     "title": "Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
     "source": "The Hacker News",
@@ -74,6 +134,33 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "An unknown Chinese-threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit. Attack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which are fake Amazon Web Services (AWS) sign-in pages on a domain that also hosts the exploit toolkit.\n\n\".",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "796965e98c02a1a5",
+    "title": "Chinese Actor Weaponizes Deepseek AI Agent to Attack Security Firm",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-deepseek-ai-agent-attack-security-firm",
+    "published": "2026-08-03T15:42:18+00:00",
+    "fetched_at": "2026-08-03T18:49:02.941540+00:00",
+    "summary": "Researchers from Jesta intercepted and investigated the model, which was attempting to compromise more than 1,200 hosts for proxyjacking and to launch further attacks",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-08-03",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Researchers from Jesta intercepted and investigated the model, which was attempting to compromise more than 1,200 hosts for proxyjacking and to launch further attacks",
+    "quick_take": "",
+    "sections": {
+      "impact": "Researchers from Jesta intercepted and investigated the model, which was attempting to compromise more than 1,200 hosts for proxyjacking and to launch further attacks\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Researchers from Jesta intercepted and investigated the model, which was attempting to compromise more than 1,200 hosts for proxyjacking and to launch further attacks.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -185,7 +272,12 @@
     },
     "email_summary": "N-able said attackers exploited an authentication bypass in N-central to gain remote administrative access and reach the customer systems managed through those servers. Tracked as CVE-2026-18577. Severity is rated high.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/"
+      }
+    ],
     "highlighted": false
   },
   {

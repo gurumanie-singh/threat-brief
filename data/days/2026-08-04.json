@@ -1,5 +1,91 @@
 [
   {
+    "id": "d7755ce86f55f041",
+    "title": "When Vibe Hacking Turns AI into the Junior Hacker Every Adversary Always Wanted",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/when-vibe-hacking-turns-ai-into-junior.html",
+    "published": "2026-08-04T17:00:00+05:30",
+    "fetched_at": "2026-08-04T12:59:49.430174+00:00",
+    "summary": "The cybersecurity industry has spent decades assuming that offensive capability scales with technical expertise.",
+    "tags": [
+      "apt"
+    ],
+    "day": "2026-08-04",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The cybersecurity industry has spent decades assuming that offensive capability scales with technical expertise.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The cybersecurity industry has spent decades assuming that offensive capability scales with technical expertise. That assumption is starting to break.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6a314f21afa87e1e",
+    "title": "Google Deletes 3 ADK AI Workflows After Malicious GitHub Issue Could Trigger Privileged Agent",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/google-deletes-3-adk-ai-workflows-after.html",
+    "published": "2026-08-04T16:46:23+05:30",
+    "fetched_at": "2026-08-04T12:59:49.430472+00:00",
+    "summary": "Google deleted three AI agent workflows from its Agent Development Kit (ADK) Python repository. Pillar Security showed that a public GitHub issue could manipulate a triage agent into triggering a privileged code-fixing agent.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-04",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Google deleted three AI agent workflows from its Agent Development Kit (ADK) Python repository. Pillar Security showed that a public GitHub issue could manipulate a triage agent into triggering a privileged code-fixing agent.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "Pillar Security showed that a public GitHub issue could manipulate a triage agent into triggering a privileged code-fixing agent. The researchers said the public agent could be prompt-injected into posting /adk-issue-fix as adk-bot."
+    },
+    "email_summary": "Google deleted three AI agent workflows from its Agent Development Kit (ADK) Python repository. Pillar Security showed that a public GitHub issue could manipulate a triage agent into triggering a privileged code-fixing agent.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "2d33806e9b944ff5",
+    "title": "New cPanel Critical Flaw Could Let Hosting Customers Run SQL as Database Root",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html",
+    "published": "2026-08-04T16:06:27+05:30",
+    "fetched_at": "2026-08-04T12:59:49.430764+00:00",
+    "summary": "cPanel has patched a flaw that let an authenticated hosting customer execute SQL in the database's root context, crossing the privilege boundary between a cPanel account and the server's administrative database identity. It shipped in a targeted security release that closes two other routes past account boundaries.",
+    "tags": [
+      "cve",
+      "malware",
+      "patch"
+    ],
+    "day": "2026-08-04",
+    "cves": [
+      "CVE-2026-58048"
+    ],
+    "cvss": 4.0,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "cPanel has patched a flaw that let an authenticated hosting customer execute SQL in the database's root context, crossing the privilege boundary between a cPanel account and the server's administrative database identity. It shipped in a targeted security…",
+    "quick_take": "",
+    "sections": {
+      "overview": "cPanel has patched a flaw that let an authenticated hosting customer execute SQL in the database's root context, crossing the privilege boundary between a cPanel account and the server's administrative database identity. It shipped in a targeted security release that closes two other routes past account boundaries.",
+      "technical": "The database bug is tracked as CVE-2026-58048 (CVSS 4.0 score: 9.4) and affects cPanel has patched a flaw that let an authenticated hosting customer execute SQL in the database's root context, crossing the privilege boundary between a cPanel account and the server's administrative database identity.\n\nReferenced vulnerabilities: CVE-2026-58048."
+    },
+    "email_summary": "cPanel has patched a flaw that let an authenticated hosting customer execute SQL in the database's root context, crossing the privilege boundary between a cPanel account and the server's administrative database identity. Tracked as CVE-2026-58048.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "a113159c5d11e8de",
     "title": "DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT",
     "source": "The Hacker News",

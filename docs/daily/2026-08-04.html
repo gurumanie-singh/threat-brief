@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">4 August 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -36,6 +36,8 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 high-severity advisories published today</li>
+        <li>Google ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -63,22 +65,87 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="keyv-linked npm worm poisons hundreds of packages, plants claude code and vs code hooks"
+       data-id="dd32bf59d9c3bc07"
+       data-published="2026-08-04T19:00:23+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-04T19:00:23+05:30" title="4 August 2026, 08:30">4 August 2026, 08:30</time>
+      </div>
+      <h3 class="card-title">Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code and VS Code Hooks</h3>
+      <p class="card-summary">A credential-stealing npm worm that first appeared in keyv@6.0.0 spread beyond the Keyv and Cacheable namespaces into hundreds of packages across multiple organizations on August 4, 2026.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dd32bf59d9c3bc07.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Adobe"
+       data-severity="medium"
+       data-title="fake adobe and zoom updates install screenconnect for persistent remote access"
+       data-id="3d16add61c524a65"
+       data-published="2026-08-04T18:41:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-08-04T18:41:22+05:30" title="4 August 2026, 08:11">4 August 2026, 08:11</time>
+      </div>
+      <h3 class="card-title">Fake Adobe and Zoom Updates Install ScreenConnect for Persistent Remote Access</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of an active, multi-wave campaign that employs social engineering lures themed around Adobe and Zoom software updates, business document reviews, and system maintenance utilities to stealthily deploy Remote…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have disclosed details of an active, multi-wave campaign that employs social engineering lures themed around Adobe and Zoom software updates, business document reviews, and system maintenance utilities to stealthily deploy Remote Monitoring and Management (RMM) programs like ConnectWise ScreenConnect.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3d16add61c524a65.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/fake-adobe-and-zoom-updates-install.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt"
        data-vendors=""
@@ -205,6 +272,35 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="ai notetaker lets hackers spy on government, corporate video calls"
+       data-id="4b242ffe3d669428"
+       data-published="2026-08-04T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-04T13:00:00+00:00" title="4 August 2026, 08:00">4 August 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">AI Notetaker Lets Hackers Spy on Government, Corporate Video Calls</h3>
+      <p class="card-summary">A Google Firebase misconfiguration lets users of tl;dv, an AI meeting tool, query any other users&#39; meeting information and potentially join calls.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4b242ffe3d669428.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/ai-notetaker-spy-government-corporate-video-calls" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,patch,vulnerability"
        data-vendors=""
@@ -236,6 +332,70 @@
       <div class="detail-links">
         <a href="../articles/f0a3e559bbf52776.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="massive chaindrop npm supply-chain attack infects hundreds of packages"
+       data-id="876d40c5baf8aaad"
+       data-published="2026-08-04T11:24:35-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-04T11:24:35-04:00" title="4 August 2026, 10:24">4 August 2026, 10:24</time>
+      </div>
+      <h3 class="card-title">Massive ChainDrop npm supply-chain attack infects hundreds of packages</h3>
+      <p class="card-summary">Self-propagating malware named &#39;ChainDrop&#39; has compromised more than 1,300 packages with a combined 2 billion monthly downloads on the Node Package Manager (npm) registry. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/876d40c5baf8aaad.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="varonis agent ibac keeps ai agents within their intended boundaries"
+       data-id="d8a5c0cc835b4d9d"
+       data-published="2026-08-04T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-04T10:00:10-04:00" title="4 August 2026, 09:00">4 August 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Varonis Agent IBAC keeps AI agents within their intended boundaries</h3>
+      <p class="card-summary">AI agents need broad access to be useful, but traditional access controls cannot determine whether an action aligns with a user&#39;s intent. Varonis explains how Agent IBAC detects intent drift and enforces real-time guardrails to keep agents within their…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI agents need broad access to be useful, but traditional access controls cannot determine whether an action aligns with a user&#39;s intent. Varonis explains how Agent IBAC detects intent drift and enforces real-time guardrails to keep agents within their intended boundaries. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/d8a5c0cc835b4d9d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/varonis-agent-ibac-keeps-ai-agents-within-their-intended-boundaries/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

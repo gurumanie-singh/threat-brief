@@ -1,5 +1,116 @@
 [
   {
+    "id": "1d358e512e6cad7a",
+    "title": "Poison Claude Sells Discounted Claude Access While Its Operator Sees Every Customer Prompt",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html",
+    "published": "2026-08-05T21:06:03+05:30",
+    "fetched_at": "2026-08-05T16:39:41.008500+00:00",
+    "summary": "Cybersecurity researchers have discovered more than half-a-dozen services advertisements for illegal access to artificial intelligence (AI) models on underground cybercrime forums and messaging platforms.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have discovered more than half-a-dozen services advertisements for illegal access to artificial intelligence (AI) models on underground cybercrime forums and messaging platforms.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have discovered more than half-a-dozen services advertisements for illegal access to artificial intelligence (AI) models on underground cybercrime forums and messaging platforms. One such service, Poison Claude, claims to offer access to Anthropic's large language models (LLMs), including Opus 4.8, Opus 4.7, Opus 4.6, and Sonnet 4.6.\n\n\"Advertisements for Poison Claude.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0394844493b2f1e5",
+    "title": "Paperclip AI Flaws Let Attackers Run Host Commands via Malicious Agent Imports",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/paperclip-ai-flaws-let-attackers-run.html",
+    "published": "2026-08-05T20:44:05+05:30",
+    "fetched_at": "2026-08-05T16:39:41.008674+00:00",
+    "summary": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it.",
+      "technical": "A third flaw could expose sensitive data and control-plane details through application programming interface (API) routes Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it.",
+      "impact": "A third flaw could expose sensitive data and control-plane details through application programming interface (API) routes\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "25a92f8c870a7bd0",
+    "title": "Veeam, Terraform MCP, Django Patch Critical Flaws, Led by CVSS 10.0 Cross-Tenant Bug",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/veeam-terraform-mcp-django-patch.html",
+    "published": "2026-08-05T19:57:30+05:30",
+    "fetched_at": "2026-08-05T16:39:41.008805+00:00",
+    "summary": "HashiCorp, Veeam, and the Django Software Foundation have patched 11 vulnerabilities across Terraform MCP Server, Veeam Service Provider Console, and Django.",
+    "tags": [
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": 10.0,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "HashiCorp, Veeam, and the Django Software Foundation have patched 11 vulnerabilities across Terraform MCP Server, Veeam Service Provider Console, and Django.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The three most serious:\n\n An unauthenticated flaw in Veeam's console that hands over a managed agent's credentials, rated 9.5\n A cross-tenant flaw in HashiCorp's MCP server that lets one user's Terraform token be reused for later users'",
+      "impact": "The three most serious:\n\n An unauthenticated flaw in Veeam's console that hands over a managed agent's credentials, rated 9.5\n A cross-tenant flaw in HashiCorp's MCP server that lets one user's Terraform token be reused for later users'\n\nAssessed severity: CRITICAL. CVSS score: 10.0/10."
+    },
+    "email_summary": "HashiCorp, Veeam, and the Django Software Foundation have patched 11 vulnerabilities across Terraform MCP Server, Veeam Service Provider Console, and Django. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d2c6006091c461f2",
+    "title": "Trojanized npm Packages Employ NullReceiver Tactic to Decode C2 IP from Blockchain",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
+    "published": "2026-08-05T19:11:27+05:30",
+    "fetched_at": "2026-08-05T16:39:41.008928+00:00",
+    "summary": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer.",
+    "quick_take": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely…",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have flagged an evolution of the EtherHiding blockchain-based command-and-control (C2) technique that conceals the C2 server IP address inside a made-up destination address of a completely empty Ethereum transfer. The new dead drop resolver approach, observed in two trojanized npm packages \"bianira-ui\" and \"fluid-type-ui,\" has been codenamed NullReceiver by.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "5558192b986680c4",
     "title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
     "source": "The Hacker News",
@@ -206,6 +317,34 @@
     "highlighted": false
   },
   {
+    "id": "abddfd63dcc98ae8",
+    "title": "CISA warns of hackers exploiting Langflow, N-central, Apache Tomcat flaws",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-langflow-n-central-apache-tomcat-flaws/",
+    "published": "2026-08-05T11:51:33-04:00",
+    "fetched_at": "2026-08-05T16:39:41.965002+00:00",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency is giving federal agencies three days to mitigate vulnerabilities in IBM Langflow, N-central, and Apache Tomcat, all actively exploited. [...]",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": true,
+    "card_summary": "Cybersecurity and Infrastructure Security Agency is giving federal agencies three days to mitigate vulnerabilities in IBM Langflow, N-central, and Apache Tomcat, all actively exploited. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity and Infrastructure Security Agency is giving federal agencies three days to mitigate vulnerabilities in IBM Langflow, N-central, and Apache Tomcat, all actively exploited. [...]. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "9bd5d99994a6c358",
     "title": "QuickFox Supply Chain Attack Delivers FDMTP Backdoor via Trojanized Windows Installer",
     "source": "The Hacker News",
@@ -231,6 +370,64 @@
       "technical": "According to Fortinet FortiGuard Labs, the supply chain attack has been ongoing since at least August 2025 and involves a trojanized version of the application to deliver FDMTP, a"
     },
     "email_summary": "Cybersecurity researchers have disclosed what has been described as a \"long-standing supply chain attack\" on QuickFox, a virtual private network (VPN) and network acceleration tool designed for overseas Chinese users. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a482d4ded2617c81",
+    "title": "Google Blogger locks hundreds of blogs in malware false positive",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/google/google-blogger-locks-hundreds-of-blogs-in-malware-false-positive/",
+    "published": "2026-08-05T10:59:29-04:00",
+    "fetched_at": "2026-08-05T16:39:41.965126+00:00",
+    "summary": "Google has locked hundreds of Blogger websites after a false positive claimed they violated its \"Malware and Similar Malicious Content\" policy, with some sites deleted from the platform. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Google has locked hundreds of Blogger websites after a false positive claimed they violated its \"Malware and Similar Malicious Content\" policy, with some sites deleted from the platform. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Google has locked hundreds of Blogger websites after a false positive claimed they violated its \"Malware and Similar Malicious Content\" policy, with some sites deleted from the platform. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Google has locked hundreds of Blogger websites after a false positive claimed they violated its \"Malware and Similar Malicious Content\" policy, with some sites deleted from the platform. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "85058f4dc14f43e0",
+    "title": "How AI-powered phishing killed blocklists for good",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/how-ai-powered-phishing-killed-blocklists-for-good/",
+    "published": "2026-08-05T10:01:11-04:00",
+    "fetched_at": "2026-08-05T16:39:41.965245+00:00",
+    "summary": "AI is helping attackers create disposable phishing infrastructure and rapidly evolving toolkits that blocklists cannot track fast enough. Push Security explains why browser-level, technique-based detection offers a more durable defense than relying on domains, signatures, and other known-bad indicators. [...]",
+    "tags": [
+      "phishing"
+    ],
+    "day": "2026-08-05",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "AI is helping attackers create disposable phishing infrastructure and rapidly evolving toolkits that blocklists cannot track fast enough. Push Security explains why browser-level, technique-based detection offers a more durable defense than relying on…",
+    "quick_take": "",
+    "sections": {
+      "overview": "AI is helping attackers create disposable phishing infrastructure and rapidly evolving toolkits that blocklists cannot track fast enough. Push Security explains why browser-level, technique-based detection offers a more durable defense than relying on domains, signatures, and other known-bad indicators. [...]",
+      "mitigation": "Push Security explains why browser-level, technique-based detection offers a more durable defense than relying on domains, signatures, and other known-bad indicators. [...] AI is helping attackers create disposable phishing infrastructure and rapidly evolving toolkits that blocklists cannot track fast enough.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "AI is helping attackers create disposable phishing infrastructure and rapidly evolving toolkits that blocklists cannot track fast enough. Push Security explains why browser-level, technique-based detection offers a more durable defense than relying on domains, signatures, and other known-bad indicators. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

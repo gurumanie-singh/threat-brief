@@ -27,10 +27,20 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">6 August 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,19 +64,217 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="attackers compile khunt inside oracle to turn sql injection into windows system access"
+       data-id="b735da6a2241abbf"
+       data-published="2026-08-06T14:49:23+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-06T14:49:23+05:30" title="6 August 2026, 04:19">6 August 2026, 04:19</time>
+      </div>
+      <h3 class="card-title">Attackers Compile khunt Inside Oracle to Turn SQL Injection Into Windows SYSTEM Access</h3>
+      <p class="card-summary">Attackers broke into an organization&#39;s Oracle database through a SQL injection flaw in a public-facing web application, then installed a post-exploitation toolkit without writing an executable to disk. They fed Java source code to the database, let Oracle…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers broke into an organization&#39;s Oracle database through a SQL injection flaw in a public-facing web application, then installed a post-exploitation toolkit without writing an executable to disk. They fed Java source code to the database, let Oracle compile it into stored schema objects, and ran commands from inside the database engine.</p></div>
+      <div class="detail-links">
+        <a href="../articles/b735da6a2241abbf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/attackers-compile-khunt-inside-oracle.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="AWS,Google"
+       data-severity="medium"
+       data-title="aws, google, and vercel agent flaws let attackers trigger tools without running the model"
+       data-id="4a4249f0ed7a5e75"
+       data-published="2026-08-06T14:27:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-06T14:27:30+05:30" title="6 August 2026, 03:57">6 August 2026, 03:57</time>
+      </div>
+      <h3 class="card-title">AWS, Google, and Vercel Agent Flaws Let Attackers Trigger Tools Without Running the Model</h3>
+      <p class="card-summary">Security flaws in agent infrastructure from Amazon Web Services (AWS), Google, and Vercel let untrusted or forged instructions reach an agent&#39;s tools with no check that a model turn had authorized them.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4a4249f0ed7a5e75.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/aws-google-and-vercel-patch-agent-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chinese-made zbtlink routers ship with backdoor that opens unauthenticated root shells"
+       data-id="d172fd3f6fb0b4df"
+       data-published="2026-08-06T13:35:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T13:35:22+05:30" title="6 August 2026, 03:05">6 August 2026, 03:05</time>
+      </div>
+      <h3 class="card-title">Chinese-Made Zbtlink Routers Ship With Backdoor That Opens Unauthenticated Root Shells</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a &#34;factory-shipped backdoor&#34; implanted in at least 20 Chinese router models from Zbtlink.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d172fd3f6fb0b4df.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/chinese-made-zbtlink-routers-ship-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ransom cartel creator gets 16 years in prison for operating ransomware-as-a-service"
+       data-id="c4ed838a5f23d8e3"
+       data-published="2026-08-06T12:49:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T12:49:54+05:30" title="6 August 2026, 02:19">6 August 2026, 02:19</time>
+      </div>
+      <h3 class="card-title">Ransom Cartel Creator Gets 16 Years in Prison for Operating Ransomware-as-a-Service</h3>
+      <p class="card-summary">A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c4ed838a5f23d8e3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/ransom-cartel-creator-gets-16-years-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa flags teamcity cve-2026-63077 rce flaw under active exploitation in the wild"
+       data-id="fa293c1efacbdc34"
+       data-published="2026-08-06T12:21:43+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-06T12:21:43+05:30" title="6 August 2026, 01:51">6 August 2026, 01:51</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild</h3>
+      <p class="card-summary">A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA).</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fa293c1efacbdc34.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="snowflake hacker pleads guilty over breaches affecting at least 100 million people"
+       data-id="59d6b7c0defd6a38"
+       data-published="2026-08-06T11:34:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T11:34:30+05:30" title="6 August 2026, 01:04">6 August 2026, 01:04</time>
+      </div>
+      <h3 class="card-title">Snowflake Hacker Pleads Guilty Over Breaches Affecting at Least 100 Million People</h3>
+      <p class="card-summary">Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/59d6b7c0defd6a38.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/snowflake-hacker-pleads-guilty-over.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Apple,Microsoft"

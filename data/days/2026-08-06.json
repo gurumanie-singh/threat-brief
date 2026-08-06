@@ -1,5 +1,251 @@
 [
   {
+    "id": "dbc610938cc6c9b4",
+    "title": "New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape to Linux Hosts",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html",
+    "published": "2026-08-06T23:28:30+05:30",
+    "fetched_at": "2026-08-06T23:55:30.255910+00:00",
+    "summary": "Zapscape, a new Linux kernel vulnerability, could allow an attacker with kernel privileges inside an L1 guest virtual machine (VM) to escape KVM isolation and execute code on the host. The risk applies when nested virtualization is exposed to untrusted guests.",
+    "tags": [
+      "cve",
+      "vulnerability"
+    ],
+    "day": "2026-08-06",
+    "cves": [
+      "CVE-2026-64561"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Zapscape, a new Linux kernel vulnerability, could allow an attacker with kernel privileges inside an L1 guest virtual machine (VM) to escape KVM isolation and execute code on the host. The risk applies when nested virtualization is exposed to untrusted guests.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw is tracked as CVE-2026-64561 and affects KVM/x86's shadow memory management unit (MMU), which manages shadow page Zapscape, a new Linux kernel vulnerability, could allow an attacker with kernel privileges inside an L1 guest virtual machine (VM) to escape KVM isolation and execute code on the host.\n\nReferenced vulnerabilities: CVE-2026-64561.",
+      "impact": "The risk applies when nested virtualization is exposed to untrusted guests. The flaw is tracked as CVE-2026-64561 and affects KVM/x86's shadow memory management unit (MMU), which manages shadow page\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Zapscape, a new Linux kernel vulnerability, could allow an attacker with kernel privileges inside an L1 guest virtual machine (VM) to escape KVM isolation and execute code on the host. Tracked as CVE-2026-64561.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "539df8b785df5512",
+    "title": "Cisco Patches 12 SD-WAN and IOS XE Flaws, Including Three 9.8 CVSS Score Bugs",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html",
+    "published": "2026-08-06T22:43:15+05:30",
+    "fetched_at": "2026-08-06T23:55:30.256169+00:00",
+    "summary": "Cisco has rolled out updates to address multiple critical security vulnerabilities impacting Catalyst SD-WAN and IOS XE Software as part of a comprehensive internal security review.",
+    "tags": [
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": false,
+    "card_summary": "Cisco has rolled out updates to address multiple critical security vulnerabilities impacting Catalyst SD-WAN and IOS XE Software as part of a comprehensive internal security review.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cisco has rolled out updates to address multiple critical security vulnerabilities impacting Catalyst SD-WAN and IOS XE Software as part of a comprehensive internal security review. The security issues affect Cisco Catalyst SD-WAN Software, regardless of device configuration, and Cisco IOS XE Software when it is running in autonomous or controller mode.\n\n\"These vulnerabilities were found.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "455c07e35879771c",
+    "title": "New Interrupt Injection Attack Can Bypass Spectre v2 Defenses on Intel and AMD CPUs",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/new-interrupt-injection-attack-can.html",
+    "published": "2026-08-06T21:47:13+05:30",
+    "fetched_at": "2026-08-06T23:55:30.256429+00:00",
+    "summary": "An unprivileged Linux program can time a hardware interrupt to land in the gap between a processor sanitizing its branch predictor and the kernel using it, re-poisoning the predictor after the defense has run.",
+    "tags": [],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "An unprivileged Linux program can time a hardware interrupt to land in the gap between a processor sanitizing its branch predictor and the kernel using it, re-poisoning the predictor after the defense has run.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "An unprivileged Linux program can time a hardware interrupt to land in the gap between a processor sanitizing its branch predictor and the kernel using it, re-poisoning the predictor after the defense has run. MIT CSAIL researchers Daniël Trujillo and Mengjia Yan named the technique INTERRUPT INJECTION.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "bfa32599679f6e31",
+    "title": "The Coordination Gap: How Attackers Are Outpacing Law Enforcement",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement",
+    "published": "2026-08-06T21:42:50+00:00",
+    "fetched_at": "2026-08-06T23:55:30.998074+00:00",
+    "summary": "The fight against cybercrime continues because threat actors have adapted their strategies to avoid deterrents, but law enforcement still operates in silos.",
+    "tags": [
+      "apt",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The fight against cybercrime continues because threat actors have adapted their strategies to avoid deterrents, but law enforcement still operates in silos.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The fight against cybercrime continues because threat actors have adapted their strategies to avoid deterrents, but law enforcement still operates in silos.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3a974b20ceb0e303",
+    "title": "ThreatsDay: Odysseus RCE, Samsung One-Click Takeover, iCloud Backdoor Fight + 27 More Stories",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html",
+    "published": "2026-08-06T20:54:31+05:30",
+    "fetched_at": "2026-08-06T23:55:30.256643+00:00",
+    "summary": "Apparently, opening the thing is now enough. A repo can run before the first prompt, a package can hide among hundreds, and a harmless-looking PDF can finish the job.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Apparently, opening the thing is now enough. A repo can run before the first prompt, a package can hide among hundreds, and a harmless-looking PDF can finish the job.",
+    "quick_take": "",
+    "sections": {
+      "technical": "This week runs on cheap leverage: exposed servers, recycled bugs, poisoned agent instructions, remote-access tools dressed as support software, and trusted defaults doing attackers a favor."
+    },
+    "email_summary": "Apparently, opening the thing is now enough. A repo can run before the first prompt, a package can hide among hundreds, and a harmless-looking PDF can finish the job.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d4ad891a96975c0c",
+    "title": "Researcher Claims Control of ChatGPT Secure Sandbox",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cloud-security/researcher-claims-control-chatgpt-secure-sandbox",
+    "published": "2026-08-06T20:38:51+00:00",
+    "fetched_at": "2026-08-06T23:55:30.998264+00:00",
+    "summary": "A researcher demonstrated a proof-of-concept attack chain that provided C2-style influence over ChatGPT's isolated sandbox during a session at Black Hat USA 2026.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A researcher demonstrated a proof-of-concept attack chain that provided C2-style influence over ChatGPT's isolated sandbox during a session at Black Hat USA 2026.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A researcher demonstrated a proof-of-concept attack chain that provided C2-style influence over ChatGPT's isolated sandbox during a session at Black Hat USA 2026.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "87e73b2d6fb0f530",
+    "title": "From Bobmojis to Bobbleheads: How the Democratic Party Built a Security-First Culture",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/from-bobmojis-to-bobbleheads-how-the-democratic-party-built-a-security-first-culture",
+    "published": "2026-08-06T19:00:11+00:00",
+    "fetched_at": "2026-08-06T23:55:30.998466+00:00",
+    "summary": "Former chief security officers of the Democratic National Committee explain that a strong security-first mindset requires executive support – and a dose of absurdity.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Former chief security officers of the Democratic National Committee explain that a strong security-first mindset requires executive support – and a dose of absurdity.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Former chief security officers of the Democratic National Committee explain that a strong security-first mindset requires executive support – and a dose of absurdity.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "16deaf3d2a3757eb",
+    "title": "OpenAI rolls out a major ChatGPT upgrade, even if you don’t pay for it",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-a-major-chatgpt-upgrade-even-if-you-dont-pay-for-it/",
+    "published": "2026-08-06T18:48:22-04:00",
+    "fetched_at": "2026-08-06T23:55:30.582543+00:00",
+    "summary": "OpenAI is rolling out a more reliable version of ChatGPT GPT-5.6 Sol for Plus and Pro users, while Free users are getting unlimited text chats with GPT-5.6 Luna. [...]",
+    "tags": [],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "OpenAI is rolling out a more reliable version of ChatGPT GPT-5.6 Sol for Plus and Pro users, while Free users are getting unlimited text chats with GPT-5.6 Luna. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "OpenAI is rolling out a more reliable version of ChatGPT GPT-5.6 Sol for Plus and Pro users, while Free users are getting unlimited text chats with GPT-5.6 Luna. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "OpenAI is rolling out a more reliable version of ChatGPT GPT-5.6 Sol for Plus and Pro users, while Free users are getting unlimited text chats with GPT-5.6 Luna. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "7bae83910028c3cc",
+    "title": "ClickFix attack pushes macOS infostealer for crypto theft attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
+    "published": "2026-08-06T18:37:17-04:00",
+    "fetched_at": "2026-08-06T23:55:30.582744+00:00",
+    "summary": "A Go-based malware delivered in ClickFix attacks targeting macOS users is stealing cryptocurrency assets, browser-stored passwords, Apple Keychain data, and cached credentials. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
+    "card_summary": "A Go-based malware delivered in ClickFix attacks targeting macOS users is stealing cryptocurrency assets, browser-stored passwords, Apple Keychain data, and cached credentials. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A Go-based malware delivered in ClickFix attacks targeting macOS users is stealing cryptocurrency assets, browser-stored passwords, Apple Keychain data, and cached credentials. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A Go-based malware delivered in ClickFix attacks targeting macOS users is stealing cryptocurrency assets, browser-stored passwords, Apple Keychain data, and cached credentials. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "ab795304b0dd06f0",
     "title": "Over 4,400 Rockwell PLCs Exposed Online, 22 Found in Water Attack Cities",
     "source": "The Hacker News",
@@ -81,6 +327,40 @@
     "highlighted": false
   },
   {
+    "id": "29e4aee0e2245438",
+    "title": "Canadian Man Pleads Guilty in Snowflake Extortions",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+    "published": "2026-08-06T17:00:56+00:00",
+    "fetched_at": "2026-08-06T23:55:30.484326+00:00",
+    "summary": "A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud provider Snowflake . Connor Riley Moucka , of Kitchener, Ontario, also admitted to stealing call and text history records of more than 100 million AT&T customers.",
+    "tags": [
+      "breach",
+      "malware",
+      "phishing",
+      "ransomware",
+      "vulnerability"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud provider Snowflake . Connor…",
+    "quick_take": "A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used…",
+    "sections": {
+      "technical": "The hackers targeted stolen credentials for Snowflake customer accounts that did not enforce multi-factor authentication, and extorted or attempted to extort a host of well-known companies, including TicketMaster, Lending Tree, Advance Auto Parts and Neiman Marcus. The government says Moucka and others used their unauthorized access to steal billions of sensitive customer records and download terabytes of information, including individuals’ non-content call and text history records, banking and other financial information, payroll records, Drug Enforcement Administration (DEA) registration numbers, driver’s license numbers, passport numbers, social security numbers and other personally identifiable information. Sources close to the investigation said Binns, also known as IRDev and IntelSecrets , was until recently incarcerated in a Turkish prison, but that he has since been released and has resurfaced online. Those sources said Binns also recently obtained Turkish citizenship, and under Turkish law a citizen cannot be extradited to a foreign country.",
+      "impact": "The government says Moucka and others used their unauthorized access to steal billions of sensitive customer records and download terabytes of information, including individuals’ non-content call and text history records, banking and other financial information, payroll records, Drug Enforcement Administration (DEA) registration numbers, driver’s license numbers, passport numbers, social security numbers and other personally identifiable information. The Justice Department said the conspirators made over $2.5 million in ransom payments, and that in at least one instance, Moucka re-extorted a victim with threats of further disclosure of the victim’s stolen data. The third alleged co-conspirator is John Erin Binns , 26, an elusive American man who fled the United States after being indicted for his admitted role in a 2021 breach at T-Mobile that exposed the personal information of at least 76 million customers.\n\nAssessed severity: HIGH.",
+      "mitigation": "The hackers targeted stolen credentials for Snowflake customer accounts that did not enforce multi-factor authentication, and extorted or attempted to extort a host of well-known companies, including TicketMaster, Lending Tree, Advance Auto Parts and Neiman Marcus. Snowflake responded to the data thefts by increasing password complexity requirements and enforcing multi-factor authentication.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis reflects continued use of phishing as an initial-access path in broader intrusion chains.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud provider Snowflake . Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "d941861c2c5056ce",
     "title": "AI Recommendation Poisoning: How \"Ask AI\" Buttons Silently Alter LLM Memory",
     "source": "The Hacker News",
@@ -107,6 +387,33 @@
       "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
     },
     "email_summary": "A new class of prompt injection is spreading across commercial websites. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "27a204b1f2f89d51",
+    "title": "Hedge fund cyberattacks tied to BlackFile-linked UNC6671 extortion group",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hedge-fund-cyberattacks-tied-to-blackfile-linked-unc6671-extortion-group/",
+    "published": "2026-08-06T16:07:24-04:00",
+    "fetched_at": "2026-08-06T23:55:30.582924+00:00",
+    "summary": "A recent wave of cyberattacks targeting hedge funds, private-equity firms, and other financial organizations has been linked to UNC6671, an extortion group reportedly associated with the BlackFile threat actors. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A recent wave of cyberattacks targeting hedge funds, private-equity firms, and other financial organizations has been linked to UNC6671, an extortion group reportedly associated with the BlackFile threat actors. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A recent wave of cyberattacks targeting hedge funds, private-equity firms, and other financial organizations has been linked to UNC6671, an extortion group reportedly associated with the BlackFile threat actors. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A recent wave of cyberattacks targeting hedge funds, private-equity firms, and other financial organizations has been linked to UNC6671, an extortion group reportedly associated with the BlackFile threat actors. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -173,6 +480,65 @@
     "highlighted": false
   },
   {
+    "id": "8f20a5c9228a25a3",
+    "title": "Swiss government SharePoint breach compromised 200 accounts",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/swiss-government-sharepoint-breach-compromised-200-accounts/",
+    "published": "2026-08-06T14:14:19-04:00",
+    "fetched_at": "2026-08-06T23:55:30.583084+00:00",
+    "summary": "Switzerland's federal IT office says hackers exploited vulnerabilities to breach its Microsoft SharePoint servers and compromised approximately 200 accounts. [...]",
+    "tags": [
+      "breach",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Switzerland's federal IT office says hackers exploited vulnerabilities to breach its Microsoft SharePoint servers and compromised approximately 200 accounts. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Switzerland's federal IT office says hackers exploited vulnerabilities to breach its Microsoft SharePoint servers and compromised approximately 200 accounts. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Switzerland's federal IT office says hackers exploited vulnerabilities to breach its Microsoft SharePoint servers and compromised approximately 200 accounts. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "bcfcccccba10f85b",
+    "title": "New TONTOU CPU attack bypasses Spectre v2 fixes, leaks Linux password hashes",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/new-tontou-cpu-attack-bypasses-spectre-v2-fixes-leaks-linux-password-hashes/",
+    "published": "2026-08-06T14:03:45-04:00",
+    "fetched_at": "2026-08-06T23:55:30.583246+00:00",
+    "summary": "Researchers found a way to bypass recent mitigations for Spectre v2 speculative execution side-channel attacks and developed an exploit to leak secrets from Linux machines. [...]",
+    "tags": [
+      "exploit"
+    ],
+    "day": "2026-08-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Researchers found a way to bypass recent mitigations for Spectre v2 speculative execution side-channel attacks and developed an exploit to leak secrets from Linux machines. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Researchers found a way to bypass recent mitigations for Spectre v2 speculative execution side-channel attacks and developed an exploit to leak secrets from Linux machines. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "d172fd3f6fb0b4df",
     "title": "Chinese-Made Zbtlink Routers Ship With Backdoor That Opens Unauthenticated Root Shells",
     "source": "The Hacker News",
@@ -193,176 +559,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Cybersecurity researchers have disclosed details of a \"factory-shipped backdoor\" implanted in at least 20 Chinese router models from Zbtlink. According to a new report from VulnCheck, the implant appears in all 21 firmware images currently available from Zbtlink that span more than 2 years.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "c4ed838a5f23d8e3",
-    "title": "Ransom Cartel Creator Gets 16 Years in Prison for Operating Ransomware-as-a-Service",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/ransom-cartel-creator-gets-16-years-in.html",
-    "published": "2026-08-06T12:49:54+05:30",
-    "fetched_at": "2026-08-06T09:37:18.003790+00:00",
-    "summary": "A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021.",
-    "tags": [
-      "malware",
-      "ransomware"
-    ],
-    "day": "2026-08-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021.",
-    "quick_take": "",
-    "sections": {
-      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
-    },
-    "email_summary": "A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021. Between 2021 and 2023, Ransom Cartel conspirators attacked at least 18 companies, including firms in California, New York and Nebraska, and others abroad, according to the Justice Department.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "fa293c1efacbdc34",
-    "title": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
-    "published": "2026-08-06T12:21:43+05:30",
-    "fetched_at": "2026-08-06T09:37:18.004013+00:00",
-    "summary": "A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA).",
-    "tags": [
-      "cve",
-      "exploit",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-08-06",
-    "cves": [
-      "CVE-2026-63077"
-    ],
-    "cvss": 9.8,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA).",
-    "quick_take": "",
-    "sections": {
-      "technical": "The vulnerability in question is CVE-2026-63077 (CVSS score: 9.8), a case of deserialization of untrusted data that could allow an unauthenticated attacker with access to a TeamCity server A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S.\n\nReferenced vulnerabilities: CVE-2026-63077.",
-      "impact": "A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S.\n\nAssessed severity: CRITICAL. CVSS score: 9.8/10."
-    },
-    "email_summary": "A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Tracked as CVE-2026-63077. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "59d6b7c0defd6a38",
-    "title": "Snowflake Hacker Pleads Guilty Over Breaches Affecting at Least 100 Million People",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/snowflake-hacker-pleads-guilty-over.html",
-    "published": "2026-08-06T11:34:30+05:30",
-    "fetched_at": "2026-08-06T09:37:18.004235+00:00",
-    "summary": "Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts.",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-08-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts.",
-    "quick_take": "",
-    "sections": {
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts. The intrusions reached at least 165 organizations and exposed records belonging to at least 100 million people.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "f491df1ea9d23838",
-    "title": "How AI Exposed a Browser Security Gap that Enterprises Cannot Ignore",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/how-ai-exposed-a-browser-security-gap-that-enterprises-cannot-ignore/",
-    "published": "2026-08-06T10:02:12-04:00",
-    "fetched_at": "2026-08-06T15:11:22.391607+00:00",
-    "summary": "AI did not create a new browser security problem. It exposed one that enterprises have long been able to ignore. Skyhigh Security explains why browsers have become a critical control point for governing data movement, AI interactions, and modern work. [...]",
-    "tags": [],
-    "day": "2026-08-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "AI did not create a new browser security problem. It exposed one that enterprises have long been able to ignore.",
-    "quick_take": "",
-    "sections": {
-      "impact": "It exposed one that enterprises have long been able to ignore.\n\nAssessed severity: MEDIUM.",
-      "mitigation": "Skyhigh Security explains why browsers have become a critical control point for governing data movement, AI interactions, and modern work. [...]"
-    },
-    "email_summary": "AI did not create a new browser security problem. It exposed one that enterprises have long been able to ignore.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "00c04ae343e5d1b7",
-    "title": "Over 250 ClickFix Domains Use Browser Fingerprinting to Hide macOS Malware Lures",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/over-250-clickfix-domains-use-browser.html",
-    "published": "2026-08-06T00:14:31+05:30",
-    "fetched_at": "2026-08-05T20:24:33.057756+00:00",
-    "summary": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks.",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-08-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Apple",
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks.",
-    "quick_take": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it…",
-    "sections": {
-      "impact": "The server-side gate hides the malicious page from crawlers and sandboxes while presenting selected Mac users with a fake software download.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks. The server-side gate hides the malicious page from crawlers and sandboxes while presenting selected Mac users with a fake software download.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "45bcccd6d9397d5f",
-    "title": "OpenAI Disrupts Poipet Scam Network Using ChatGPT Across Multiple Fraud Schemes",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html",
-    "published": "2026-08-06T00:03:47+05:30",
-    "fetched_at": "2026-08-05T20:24:33.058045+00:00",
-    "summary": "OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement impersonation schemes.",
-    "tags": [
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-08-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement impersonation schemes.",
-    "quick_take": "OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement…",
-    "sections": {},
-    "email_summary": "OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement impersonation schemes. To that end, it banned a coordinated network of ChatGPT accounts likely originating from Southeast Asia and operating from the city of Poipet, a region with extensive.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

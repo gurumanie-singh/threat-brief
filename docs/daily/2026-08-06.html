@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">6 August 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Apple, Microsoft ecosystems affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Linux, Apple ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -51,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -65,8 +65,10 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
@@ -78,14 +80,289 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new zapscape kvm flaw could let privileged l1 guest code escape to linux hosts"
+       data-id="dbc610938cc6c9b4"
+       data-published="2026-08-06T23:28:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-08-06T23:28:30+05:30" title="6 August 2026, 12:58">6 August 2026, 12:58</time>
+      </div>
+      <h3 class="card-title">New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape to Linux Hosts</h3>
+      <p class="card-summary">Zapscape, a new Linux kernel vulnerability, could allow an attacker with kernel privileges inside an L1 guest virtual machine (VM) to escape KVM isolation and execute code on the host. The risk applies when nested virtualization is exposed to untrusted guests.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dbc610938cc6c9b4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,patch,vulnerability"
+       data-vendors="Cisco"
+       data-severity="medium"
+       data-title="cisco patches 12 sd-wan and ios xe flaws, including three 9.8 cvss score bugs"
+       data-id="539df8b785df5512"
+       data-published="2026-08-06T22:43:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-08-06T22:43:15+05:30" title="6 August 2026, 12:13">6 August 2026, 12:13</time>
+      </div>
+      <h3 class="card-title">Cisco Patches 12 SD-WAN and IOS XE Flaws, Including Three 9.8 CVSS Score Bugs</h3>
+      <p class="card-summary">Cisco has rolled out updates to address multiple critical security vulnerabilities impacting Catalyst SD-WAN and IOS XE Software as part of a comprehensive internal security review.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/539df8b785df5512.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new interrupt injection attack can bypass spectre v2 defenses on intel and amd cpus"
+       data-id="455c07e35879771c"
+       data-published="2026-08-06T21:47:13+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-08-06T21:47:13+05:30" title="6 August 2026, 11:17">6 August 2026, 11:17</time>
+      </div>
+      <h3 class="card-title">New Interrupt Injection Attack Can Bypass Spectre v2 Defenses on Intel and AMD CPUs</h3>
+      <p class="card-summary">An unprivileged Linux program can time a hardware interrupt to land in the gap between a processor sanitizing its branch predictor and the kernel using it, re-poisoning the predictor after the defense has run.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/455c07e35879771c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/new-interrupt-injection-attack-can.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="the coordination gap: how attackers are outpacing law enforcement"
+       data-id="bfa32599679f6e31"
+       data-published="2026-08-06T21:42:50+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T21:42:50+00:00" title="6 August 2026, 16:42">6 August 2026, 16:42</time>
+      </div>
+      <h3 class="card-title">The Coordination Gap: How Attackers Are Outpacing Law Enforcement</h3>
+      <p class="card-summary">The fight against cybercrime continues because threat actors have adapted their strategies to avoid deterrents, but law enforcement still operates in silos.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bfa32599679f6e31.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="threatsday: odysseus rce, samsung one-click takeover, icloud backdoor fight + 27 more stories"
+       data-id="3a974b20ceb0e303"
+       data-published="2026-08-06T20:54:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T20:54:31+05:30" title="6 August 2026, 10:24">6 August 2026, 10:24</time>
+      </div>
+      <h3 class="card-title">ThreatsDay: Odysseus RCE, Samsung One-Click Takeover, iCloud Backdoor Fight + 27 More Stories</h3>
+      <p class="card-summary">Apparently, opening the thing is now enough. A repo can run before the first prompt, a package can hide among hundreds, and a harmless-looking PDF can finish the job.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3a974b20ceb0e303.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="researcher claims control of chatgpt secure sandbox"
+       data-id="d4ad891a96975c0c"
+       data-published="2026-08-06T20:38:51+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T20:38:51+00:00" title="6 August 2026, 15:38">6 August 2026, 15:38</time>
+      </div>
+      <h3 class="card-title">Researcher Claims Control of ChatGPT Secure Sandbox</h3>
+      <p class="card-summary">A researcher demonstrated a proof-of-concept attack chain that provided C2-style influence over ChatGPT&#39;s isolated sandbox during a session at Black Hat USA 2026.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d4ad891a96975c0c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/researcher-claims-control-chatgpt-secure-sandbox" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="from bobmojis to bobbleheads: how the democratic party built a security-first culture"
+       data-id="87e73b2d6fb0f530"
+       data-published="2026-08-06T19:00:11+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T19:00:11+00:00" title="6 August 2026, 14:00">6 August 2026, 14:00</time>
+      </div>
+      <h3 class="card-title">From Bobmojis to Bobbleheads: How the Democratic Party Built a Security-First Culture</h3>
+      <p class="card-summary">Former chief security officers of the Democratic National Committee explain that a strong security-first mindset requires executive support – and a dose of absurdity.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/87e73b2d6fb0f530.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/from-bobmojis-to-bobbleheads-how-the-democratic-party-built-a-security-first-culture" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai rolls out a major chatgpt upgrade, even if you don’t pay for it"
+       data-id="16deaf3d2a3757eb"
+       data-published="2026-08-06T18:48:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T18:48:22-04:00" title="6 August 2026, 17:48">6 August 2026, 17:48</time>
+      </div>
+      <h3 class="card-title">OpenAI rolls out a major ChatGPT upgrade, even if you don’t pay for it</h3>
+      <p class="card-summary">OpenAI is rolling out a more reliable version of ChatGPT GPT-5.6 Sol for Plus and Pro users, while Free users are getting unlimited text chats with GPT-5.6 Luna. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/16deaf3d2a3757eb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-a-major-chatgpt-upgrade-even-if-you-dont-pay-for-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="clickfix attack pushes macos infostealer for crypto theft attacks"
+       data-id="7bae83910028c3cc"
+       data-published="2026-08-06T18:37:17-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-08-06T18:37:17-04:00" title="6 August 2026, 17:37">6 August 2026, 17:37</time>
+      </div>
+      <h3 class="card-title">ClickFix attack pushes macOS infostealer for crypto theft attacks</h3>
+      <p class="card-summary">A Go-based malware delivered in ClickFix attacks targeting macOS users is stealing cryptocurrency assets, browser-stored passwords, Apple Keychain data, and cached credentials. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7bae83910028c3cc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,malware"
        data-vendors=""
@@ -177,6 +454,40 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware,phishing,ransomware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="canadian man pleads guilty in snowflake extortions"
+       data-id="29e4aee0e2245438"
+       data-published="2026-08-06T17:00:56+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-06T17:00:56+00:00" title="6 August 2026, 12:00">6 August 2026, 12:00</time>
+      </div>
+      <h3 class="card-title">Canadian Man Pleads Guilty in Snowflake Extortions</h3>
+      <p class="card-summary">A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud provider Snowflake . Connor…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/29e4aee0e2245438.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="exploit,malware,zero-day"
        data-vendors=""
@@ -207,6 +518,37 @@
       <div class="detail-links">
         <a href="../articles/d941861c2c5056ce.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hedge fund cyberattacks tied to blackfile-linked unc6671 extortion group"
+       data-id="27a204b1f2f89d51"
+       data-published="2026-08-06T16:07:24-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-06T16:07:24-04:00" title="6 August 2026, 15:07">6 August 2026, 15:07</time>
+      </div>
+      <h3 class="card-title">Hedge fund cyberattacks tied to BlackFile-linked UNC6671 extortion group</h3>
+      <p class="card-summary">A recent wave of cyberattacks targeting hedge funds, private-equity firms, and other financial organizations has been linked to UNC6671, an extortion group reportedly associated with the BlackFile threat actors. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/27a204b1f2f89d51.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hedge-fund-cyberattacks-tied-to-blackfile-linked-unc6671-extortion-group/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -275,6 +617,68 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="breach,exploit,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="swiss government sharepoint breach compromised 200 accounts"
+       data-id="8f20a5c9228a25a3"
+       data-published="2026-08-06T14:14:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-06T14:14:19-04:00" title="6 August 2026, 13:14">6 August 2026, 13:14</time>
+      </div>
+      <h3 class="card-title">Swiss government SharePoint breach compromised 200 accounts</h3>
+      <p class="card-summary">Switzerland&#39;s federal IT office says hackers exploited vulnerabilities to breach its Microsoft SharePoint servers and compromised approximately 200 accounts. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8f20a5c9228a25a3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/swiss-government-sharepoint-breach-compromised-200-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new tontou cpu attack bypasses spectre v2 fixes, leaks linux password hashes"
+       data-id="bcfcccccba10f85b"
+       data-published="2026-08-06T14:03:45-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-08-06T14:03:45-04:00" title="6 August 2026, 13:03">6 August 2026, 13:03</time>
+      </div>
+      <h3 class="card-title">New TONTOU CPU attack bypasses Spectre v2 fixes, leaks Linux password hashes</h3>
+      <p class="card-summary">Researchers found a way to bypass recent mitigations for Spectre v2 speculative execution side-channel attacks and developed an exploit to leak secrets from Linux machines. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bcfcccccba10f85b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-tontou-cpu-attack-bypasses-spectre-v2-fixes-leaks-linux-password-hashes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
@@ -300,195 +704,6 @@
       <div class="detail-links">
         <a href="../articles/d172fd3f6fb0b4df.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/chinese-made-zbtlink-routers-ship-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ransom cartel creator gets 16 years in prison for operating ransomware-as-a-service"
-       data-id="c4ed838a5f23d8e3"
-       data-published="2026-08-06T12:49:54+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-06T12:49:54+05:30" title="6 August 2026, 02:19">6 August 2026, 02:19</time>
-      </div>
-      <h3 class="card-title">Ransom Cartel Creator Gets 16 Years in Prison for Operating Ransomware-as-a-Service</h3>
-      <p class="card-summary">A federal judge in Alexandria, Virginia, sentenced Maksim Silnikau to 16 years in prison on August 5 for creating and running Ransom Cartel, the ransomware-as-a-service operation he stood up in 2021.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/c4ed838a5f23d8e3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/ransom-cartel-creator-gets-16-years-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="cve,exploit,patch,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="cisa flags teamcity cve-2026-63077 rce flaw under active exploitation in the wild"
-       data-id="fa293c1efacbdc34"
-       data-published="2026-08-06T12:21:43+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-08-06T12:21:43+05:30" title="6 August 2026, 01:51">6 August 2026, 01:51</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild</h3>
-      <p class="card-summary">A newly patched security flaw impacting on-premise versions of JetBrains TeamCity has come under active exploitation in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA).</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/fa293c1efacbdc34.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="snowflake hacker pleads guilty over breaches affecting at least 100 million people"
-       data-id="59d6b7c0defd6a38"
-       data-published="2026-08-06T11:34:30+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-06T11:34:30+05:30" title="6 August 2026, 01:04">6 August 2026, 01:04</time>
-      </div>
-      <h3 class="card-title">Snowflake Hacker Pleads Guilty Over Breaches Affecting at Least 100 Million People</h3>
-      <p class="card-summary">Connor Riley Moucka pleaded guilty in Seattle federal court on Wednesday to computer fraud, wire fraud, aggravated identity theft and a related conspiracy over the 2024 breaches of Snowflake customer accounts.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/59d6b7c0defd6a38.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/snowflake-hacker-pleads-guilty-over.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="how ai exposed a browser security gap that enterprises cannot ignore"
-       data-id="f491df1ea9d23838"
-       data-published="2026-08-06T10:02:12-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-06T10:02:12-04:00" title="6 August 2026, 09:02">6 August 2026, 09:02</time>
-      </div>
-      <h3 class="card-title">How AI Exposed a Browser Security Gap that Enterprises Cannot Ignore</h3>
-      <p class="card-summary">AI did not create a new browser security problem. It exposed one that enterprises have long been able to ignore.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/f491df1ea9d23838.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/how-ai-exposed-a-browser-security-gap-that-enterprises-cannot-ignore/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Apple,Microsoft"
-       data-severity="medium"
-       data-title="over 250 clickfix domains use browser fingerprinting to hide macos malware lures"
-       data-id="00c04ae343e5d1b7"
-       data-published="2026-08-06T00:14:31+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Apple</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-06T00:14:31+05:30" title="5 August 2026, 13:44">5 August 2026, 13:44</time>
-      </div>
-      <h3 class="card-title">Over 250 ClickFix Domains Use Browser Fingerprinting to Hide macOS Malware Lures</h3>
-      <p class="card-summary">A macOS ClickFix operation spanning more than 250 front-end domains now fingerprints visitors before deciding whether to show them a malware lure, a change Microsoft Threat Intelligence tracked on infrastructure it had been watching for weeks.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/00c04ae343e5d1b7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/over-250-clickfix-domains-use-browser.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="openai disrupts poipet scam network using chatgpt across multiple fraud schemes"
-       data-id="45bcccd6d9397d5f"
-       data-published="2026-08-06T00:03:47+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-06T00:03:47+05:30" title="5 August 2026, 13:33">5 August 2026, 13:33</time>
-      </div>
-      <h3 class="card-title">OpenAI Disrupts Poipet Scam Network Using ChatGPT Across Multiple Fraud Schemes</h3>
-      <p class="card-summary">OpenAI said it disrupted a Cambodia-based scam operation that used its generative artificial intelligence (AI) chatbot ChatGPT to facilitate a wide range of investment, romance, gambling, and law enforcement impersonation schemes.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/45bcccd6d9397d5f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

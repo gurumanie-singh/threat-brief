@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">7 August 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">6 articles</span>
     </div>
   </div>
 
@@ -35,6 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
@@ -47,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -70,10 +72,76 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft 365 aitm phishing hijacks accounts to collect payroll and finance emails"
+       data-id="0a831062347e5e32"
+       data-published="2026-08-07T16:08:27+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-07T16:08:27+05:30" title="7 August 2026, 05:38">7 August 2026, 05:38</time>
+      </div>
+      <h3 class="card-title">Microsoft 365 AitM Phishing Hijacks Accounts to Collect Payroll and Finance Emails</h3>
+      <p class="card-summary">Cybersecurity researchers have called attention to an active &#34;widespread email-driven phishing campaign&#34; that employs adversary-in-the-middle (AitM) techniques to take control of Microsoft 365 accounts with an aim to identify key personnel involved in…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have called attention to an active &#34;widespread email-driven phishing campaign&#34; that employs adversary-in-the-middle (AitM) techniques to take control of Microsoft 365 accounts with an aim to identify key personnel involved in financial workflows and gather related email.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0a831062347e5e32.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="ai-assisted http terminator finds novel http desync techniques and apache zero-day"
+       data-id="45df417b80720140"
+       data-published="2026-08-07T15:39:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-07T15:39:54+05:30" title="7 August 2026, 05:09">7 August 2026, 05:09</time>
+      </div>
+      <h3 class="card-title">AI-Assisted HTTP Terminator Finds Novel HTTP Desync Techniques and Apache Zero-Day</h3>
+      <p class="card-summary">PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate attack vectors.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/45df417b80720140.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/ai-assisted-http-terminator-finds-novel.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Microsoft"

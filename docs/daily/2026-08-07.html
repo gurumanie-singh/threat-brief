@@ -27,10 +27,18 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">7 August 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -51,6 +59,14 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
@@ -58,6 +74,99 @@
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="new natjack attacks hijack tcp sessions and spoof dns by manipulating nat tables"
+       data-id="ca5fc73e5df5cda4"
+       data-published="2026-08-07T15:02:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-07T15:02:57+05:30" title="7 August 2026, 04:32">7 August 2026, 04:32</time>
+      </div>
+      <h3 class="card-title">New NatJack Attacks Hijack TCP Sessions and Spoof DNS by Manipulating NAT Tables</h3>
+      <p class="card-summary">Security researcher Malcolm Stagg has disclosed a new attack class called NatJack that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, expose mapped ports, and exhaust NAT tables.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ca5fc73e5df5cda4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/new-natjack-attacks-hijack-tcp-sessions.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="malware can abuse windows hello for business keys for persistent entra id access"
+       data-id="3e79eb128817486c"
+       data-published="2026-08-07T14:22:11+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-07T14:22:11+05:30" title="7 August 2026, 03:52">7 August 2026, 03:52</time>
+      </div>
+      <h3 class="card-title">Malware Can Abuse Windows Hello for Business Keys for Persistent Entra ID Access</h3>
+      <p class="card-summary">Security researcher Malcolm Stagg has disclosed a new attack class called NatJack that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, disclose victim IP addresses and mapped ports, and…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Security researcher Malcolm Stagg has disclosed a new attack class called NatJack that manipulates network address translation (NAT) connection state to hijack active TCP sessions, spoof DNS responses, disclose victim IP addresses and mapped ports, and exhaust NAT tables.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3e79eb128817486c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/malware-can-abuse-windows-hello-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="AWS,Google"
+       data-severity="medium"
+       data-title="claude code and gemini cli flaws let a github issue reach ci workflow secrets"
+       data-id="31ab805100c539ad"
+       data-published="2026-08-07T13:48:35+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-07T13:48:35+05:30" title="7 August 2026, 03:18">7 August 2026, 03:18</time>
+      </div>
+      <h3 class="card-title">Claude Code and Gemini CLI Flaws Let a GitHub Issue Reach CI Workflow Secrets</h3>
+      <p class="card-summary">A GitHub issue opened by an account with no repository privileges was enough to execute code on the CI runners behind Anthropic&#39;s and Google&#39;s own coding-agent repositories. On OpenAI&#39;s, it was enough to hijack the next agent run.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/31ab805100c539ad.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/claude-code-and-gemini-cli-flaws-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""

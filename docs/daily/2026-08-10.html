@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">10 August 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -37,6 +37,7 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -49,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,17 +66,116 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="new passkey attacks can recover synced private keys or bypass phishing-resistant mfa"
+       data-id="efb174d73d33b085"
+       data-published="2026-08-10T17:55:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-10T17:55:04+05:30" title="10 August 2026, 07:25">10 August 2026, 07:25</time>
+      </div>
+      <h3 class="card-title">New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA</h3>
+      <p class="card-summary">Three separate research efforts last week demonstrated ways to defeat passkey protections without breaking the cryptography they rest on.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/efb174d73d33b085.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="shipping 10–50× more code? watch this webinar on securing ai-speed development"
+       data-id="224eda502d6fa150"
+       data-published="2026-08-10T17:22:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-10T17:22:16+05:30" title="10 August 2026, 06:52">10 August 2026, 06:52</time>
+      </div>
+      <h3 class="card-title">Shipping 10–50× More Code? Watch This Webinar on Securing AI-Speed Development</h3>
+      <p class="card-summary">AI is helping development teams produce far more code, far faster. But security teams still have to review vulnerabilities, manage dependencies, prioritize fixes, and control risk at human speed.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/224eda502d6fa150.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/shipping-1050-more-code-watch-this.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="trueconf server flaws exploited to replace client installers with phantomcore"
+       data-id="820c9be820200e50"
+       data-published="2026-08-10T17:03:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-10T17:03:41+05:30" title="10 August 2026, 06:33">10 August 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">TrueConf Server Flaws Exploited to Replace Client Installers with PhantomCore</h3>
+      <p class="card-summary">The threat actor known as Head Mare has been observed weaponizing security flaws in unpatched TrueConf servers once again in attacks targeting Russian companies spanning instrumentation, electronics, transport, energy, IT, and software development sectors.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/820c9be820200e50.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/head-mare-exploits-trueconf-flaws-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Microsoft"
@@ -128,6 +229,95 @@
       <div class="detail-links">
         <a href="../articles/d8dfff3f32da6274.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="member of the com sent to prison for blackmail, sextortion"
+       data-id="9fb87a4a6e34819b"
+       data-published="2026-08-10T08:56:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-10T08:56:28-04:00" title="10 August 2026, 07:56">10 August 2026, 07:56</time>
+      </div>
+      <h3 class="card-title">Member of The Com sent to prison for blackmail, sextortion</h3>
+      <p class="card-summary">A member of &#34;The Com,&#34; a loose-knit online cybercrime collective that targets children and teenagers, has been sentenced to two years in prison for blackmail and sextortion offenses against nearly 120 victims worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9fb87a4a6e34819b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/member-of-the-com-sent-to-prison-for-blackmail-sextortion/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="lexisnexis shuts down services after suspicious activity on servers"
+       data-id="c9dd330f725d337b"
+       data-published="2026-08-10T08:11:52-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-10T08:11:52-04:00" title="10 August 2026, 07:11">10 August 2026, 07:11</time>
+      </div>
+      <h3 class="card-title">LexisNexis shuts down services after suspicious activity on servers</h3>
+      <p class="card-summary">LexisNexis took its Diligence, Metabase API, and Newsdesk services offline as part of its response to unusual activity on servers hosted and managed by an unnamed third-party vendor. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c9dd330f725d337b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/lexisnexis-shuts-down-services-after-suspicious-activity-on-servers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="valve notifies steam hardware customers of a data breach"
+       data-id="04f532a68c33e047"
+       data-published="2026-08-10T07:47:55-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-10T07:47:55-04:00" title="10 August 2026, 06:47">10 August 2026, 06:47</time>
+      </div>
+      <h3 class="card-title">Valve notifies Steam hardware customers of a data breach</h3>
+      <p class="card-summary">Video game publisher and digital distribution giant Valve is notifying Steam hardware customers in Europe that hackers stole their data after hacking its shipping partner, CEVA Logistics. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/04f532a68c33e047.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/valve-notifies-steam-hardware-customers-of-a-data-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

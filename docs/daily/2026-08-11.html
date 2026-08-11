@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">11 August 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">11 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
-        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -49,6 +50,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -64,8 +66,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
@@ -75,13 +78,102 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="a malicious sim card can run attacker code inside the modems behind cellular iot devices"
+       data-id="6bbdb347cc52777f"
+       data-published="2026-08-11T17:35:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-11T17:35:03+05:30" title="11 August 2026, 07:05">11 August 2026, 07:05</time>
+      </div>
+      <h3 class="card-title">A Malicious SIM Card Can Run Attacker Code Inside the Modems Behind Cellular IoT Devices</h3>
+      <p class="card-summary">A malicious SIM card can order the device it sits in to run commands of the attacker&#39;s choosing. On the cellular modules built into electric-vehicle chargers, industrial routers, and car telematics units, that is enough to take the whole device over.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6bbdb347cc52777f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/a-malicious-sim-card-can-run-attacker.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="mozilla revokes firefox and thunderbird linux signing key after key lands in private repo"
+       data-id="f63ddd8f6cde1af0"
+       data-published="2026-08-11T17:34:51+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-08-11T17:34:51+05:30" title="11 August 2026, 07:04">11 August 2026, 07:04</time>
+      </div>
+      <h3 class="card-title">Mozilla Revokes Firefox and Thunderbird Linux Signing Key After Key Lands in Private Repo</h3>
+      <p class="card-summary">Mozilla has scrapped the cryptographic key behind Firefox and Thunderbird downloads for Linux after an unencrypted copy of it was committed by mistake to one of the company&#39;s own private code repositories.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f63ddd8f6cde1af0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/mozilla-revokes-firefox-and-thunderbird.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="researchers built a fake crypto startup and hired three suspected north korean it workers"
+       data-id="08d5142afe1aebc5"
+       data-published="2026-08-11T17:05:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-11T17:05:03+05:30" title="11 August 2026, 06:35">11 August 2026, 06:35</time>
+      </div>
+      <h3 class="card-title">Researchers Built a Fake Crypto Startup and Hired Three Suspected North Korean IT Workers</h3>
+      <p class="card-summary">Security researchers invented a cryptocurrency startup, advertised developer jobs, and hired three people they believe were North Korean operatives. Every virtual machine the company issued was recording.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/08d5142afe1aebc5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/researchers-built-fake-crypto-startup.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Microsoft"
@@ -233,6 +325,40 @@
       <div class="detail-links">
         <a href="../articles/dd28b0a0e144b327.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,ransomware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="cisa: microsoft sharepoint flaw now exploited in ransomware attacks"
+       data-id="16fda70cf3b630db"
+       data-published="2026-08-11T08:12:16-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-11T08:12:16-04:00" title="11 August 2026, 07:12">11 August 2026, 07:12</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA: Microsoft SharePoint flaw now exploited in ransomware attacks</h3>
+      <p class="card-summary">CISA confirmed today that ransomware gangs have begun abusing a high-severity Microsoft SharePoint remote code execution vulnerability, which has been flagged as actively exploited since early July. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/16fda70cf3b630db.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

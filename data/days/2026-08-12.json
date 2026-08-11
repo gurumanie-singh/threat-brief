@@ -1,5 +1,97 @@
 [
   {
+    "id": "44e709e0edfd06af",
+    "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
+    "published": "2026-08-12T01:40:55+05:30",
+    "fetched_at": "2026-08-11T21:42:35.118851+00:00",
+    "summary": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks.",
+    "tags": [
+      "cve",
+      "malware",
+      "patch",
+      "zero-day"
+    ],
+    "day": "2026-08-12",
+    "cves": [
+      "CVE-2026-68820"
+    ],
+    "cvss": 7.0,
+    "severity": "high",
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw is tracked as CVE-2026-68820 (CVSS score: 7.0) and is the only Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks. The bug sits in a core Windows kernel driver that handles network socket operations.\n\nReferenced vulnerabilities: CVE-2026-68820.",
+      "impact": "Assessed severity: HIGH. CVSS score: 7.0/10.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks. Tracked as CVE-2026-68820. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3988fb34a4316bc2",
+    "title": "Kimwolf v7 Android Botnet Makes HTTP/2 DDoS Traffic Look Like Legitimate Browsing",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/kimwolf-v7-android-botnet-makes-http2.html",
+    "published": "2026-08-12T01:06:37+05:30",
+    "fetched_at": "2026-08-11T21:42:35.119112+00:00",
+    "summary": "Cybersecurity researchers have discovered a new version of the Kimwolf/AISURU Android and Internet of Things (IoT) botnet that comes with significant improvements to improve its operational resilience and conduct distributed denial-of-service (DDoS) attacks.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-08-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google",
+      "Palo Alto"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have discovered a new version of the Kimwolf/AISURU Android and Internet of Things (IoT) botnet that comes with significant improvements to improve its operational resilience and conduct distributed denial-of-service (DDoS) attacks.",
+    "quick_take": "Cybersecurity researchers have discovered a new version of the Kimwolf/AISURU Android and Internet of Things (IoT) botnet that comes with significant improvements to improve its operational resilience and conduct…",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have discovered a new version of the Kimwolf/AISURU Android and Internet of Things (IoT) botnet that comes with significant improvements to improve its operational resilience and conduct distributed denial-of-service (DDoS) attacks. The new version, tracked as Kimwolf v7, was discovered by Palo Alto Networks Unit 42 in February 2026.\n\n\"Kimwolf v7 adds an HTTP/2-based.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0ec57a0e47751400",
+    "title": "Zoom Annotation Flaws Could Let a Meeting Participant Hijack Another Attendee's Client",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/zoom-annotation-flaws-could-let-meeting.html",
+    "published": "2026-08-12T00:38:47+05:30",
+    "fetched_at": "2026-08-11T21:42:35.119328+00:00",
+    "summary": "Anyone sharing their screen on a Zoom call could have taken over the computers of everyone watching, and anyone watching could have taken over the presenter's.",
+    "tags": [],
+    "day": "2026-08-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Anyone sharing their screen on a Zoom call could have taken over the computers of everyone watching, and anyone watching could have taken over the presenter's.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw sat in the annotation tool, the feature that lets participants draw and type on a shared screen, and it asked nothing of the victim beyond being in the meeting."
+    },
+    "email_summary": "Anyone sharing their screen on a Zoom call could have taken over the computers of everyone watching, and anyone watching could have taken over the presenter's. The flaw sat in the annotation tool, the feature that lets participants draw and type on a shared screen, and it asked nothing of the victim beyond being in the meeting.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "b453205f9ea9bfac",
     "title": "Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands",
     "source": "The Hacker News",

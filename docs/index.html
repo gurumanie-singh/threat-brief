@@ -28,13 +28,15 @@
       <h1 class="brief-title">12 August 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-08-12T01:11:30.137333-05:00">12 August 2026, 01:11</time>
+        <time data-iso="2026-08-12T03:14:36.611923-05:00">12 August 2026, 03:14</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-high">2 high</span>
-      <span class="stat">4 articles today</span>
+      <span class="stat stat-critical">1 critical</span>
+      <span class="stat stat-high">4 high</span>
+      <span class="stat stat-action">1 action req.</span>
+      <span class="stat">7 articles today</span>
     </div>
   </div>
 
@@ -42,8 +44,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
-        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
@@ -51,10 +54,10 @@
       <div class="trending-pills">
         <span class="trend-pill">flaws<span class="trend-count">14</span></span>
         <span class="trend-pill">attacks<span class="trend-count">12</span></span>
+        <span class="trend-pill">attackers<span class="trend-count">8</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">8</span></span>
         <span class="trend-pill">attack<span class="trend-count">8</span></span>
-        <span class="trend-pill">microsoft<span class="trend-count">7</span></span>
         <span class="trend-pill">ransomware<span class="trend-count">7</span></span>
-        <span class="trend-pill">attackers<span class="trend-count">7</span></span>
       </div>
     </div>
   </div>
@@ -91,6 +94,7 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
       </div>
@@ -102,8 +106,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
@@ -115,10 +119,109 @@
   <div class="day-group">
     <h2 class="day-heading">
       12 August 2026
-      <span class="day-count">4</span>
+      <span class="day-count">7</span>
     </h2>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="apt,cve,malware,patch,vulnerability"
+       data-vendors="SAP"
+       data-severity="critical"
+       data-title="sap commerce cloud flaw could let unauthenticated attackers execute arbitrary code"
+       data-id="6cd02200c4c60fc0"
+       data-published="2026-08-12T13:01:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">SAP</span>        <time class="meta-time" data-iso="2026-08-12T13:01:40+05:30" title="12 August 2026, 02:31">12 August 2026, 02:31</time>
+      </div>
+      <h3 class="card-title">SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code</h3>
+      <p class="card-summary">SAP has released patches to address a maximum-severity security flaw impacting Commerce Cloud (Data Hub Adapter) that could result in arbitrary code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/6cd02200c4c60fc0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="shieldbreak zero-day poc claims microsoft defender patch bypass with system access"
+       data-id="ec1e9711622d9621"
+       data-published="2026-08-12T12:11:38+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-12T12:11:38+05:30" title="12 August 2026, 01:41">12 August 2026, 01:41</time>
+      </div>
+      <h3 class="card-title">ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access</h3>
+      <p class="card-summary">The security researcher going by the name Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has released a proof-of-concept (PoC) for a new Microsoft zero-day called ShieldBreak.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ec1e9711622d9621.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="apt,cve,exploit,vulnerability"
+       data-vendors="Cisco"
+       data-severity="high"
+       data-title="cisco asa and ftd flaw exploited in the wild can trigger remote dos"
+       data-id="8d70cd4a424954d0"
+       data-published="2026-08-12T11:45:58+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-08-12T11:45:58+05:30" title="12 August 2026, 01:15">12 August 2026, 01:15</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS</h3>
+      <p class="card-summary">Cisco has warned that a new vulnerability impacting Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software has been exploited in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/8d70cd4a424954d0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,malware,patch,zero-day"
        data-vendors="AWS,Microsoft"
@@ -885,7 +988,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       10 August 2026
-      <span class="day-count">6</span>
+      <span class="day-count">3</span>
     </h2>
   </div>
 
@@ -973,104 +1076,6 @@
       <div class="detail-links">
         <a href="articles/60d2eb4259c0a646.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/ics-ot-security/multistate-water-system-attacks-widen-iran-suspected" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="malware,vulnerability,zero-day"
-       data-vendors=""
-       data-severity="critical"
-       data-title="metabase sql zero-day attacks could have wide blast radius"
-       data-id="671349c2f076ef90"
-       data-published="2026-08-10T21:02:23+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-08-10T21:02:23+00:00" title="10 August 2026, 16:02">10 August 2026, 16:02</time>
-      </div>
-      <h3 class="card-title">Metabase SQL Zero-Day Attacks Could Have Wide Blast Radius</h3>
-      <p class="card-summary">The maximum-severity vulnerability, which still has no CVE, allows malicious, remote administrator access to the business-analytics platform and its downstream users.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/671349c2f076ef90.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/vulnerabilities-threats/metabase-sql-zero-day-attacks-wide-blast-radius" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,malware,zero-day"
-       data-vendors=""
-       data-severity="critical"
-       data-title="weekly recap: ai goes rogue, metabase 0-day, mcp supply-chain attacks, and router backdoors"
-       data-id="f27262974b38ae0f"
-       data-published="2026-08-10T20:30:29+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-08-10T20:30:29+05:30" title="10 August 2026, 10:00">10 August 2026, 10:00</time>
-      </div>
-      <h3 class="card-title">Weekly Recap: AI Goes Rogue, Metabase 0-Day, MCP Supply-Chain Attacks, and Router Backdoors</h3>
-      <p class="card-summary">A lot of security problems still begin with someone doing a completely normal thing. Answering a call.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/f27262974b38ae0f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/weekly-recap-ai-goes-rogue-metabase-0.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="hackers breached a small polish energy plant via private apn last year"
-       data-id="d03acf9c81713570"
-       data-published="2026-08-10T19:07:21-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-10T19:07:21-04:00" title="10 August 2026, 18:07">10 August 2026, 18:07</time>
-      </div>
-      <h3 class="card-title">Hackers breached a small Polish energy plant via private APN last year</h3>
-      <p class="card-summary">Hackers breached a heat-and-power plant facility in Poland, which supplies heat to about 50,000 residents, using a private APN (Access Point Name) to access an OT (Operational Technology) network. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/d03acf9c81713570.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/hackers-breached-a-small-polish-energy-plant-via-private-apn-last-year/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

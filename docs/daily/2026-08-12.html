@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">12 August 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
       </ul>
@@ -67,6 +67,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
@@ -76,11 +77,11 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
@@ -88,6 +89,69 @@
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="VMware"
+       data-severity="critical"
+       data-title="attackers exploit vmware vcenter vulnerability to gain persistent remote access"
+       data-id="6913895983e2706d"
+       data-published="2026-08-12T14:31:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">VMware</span>        <time class="meta-time" data-iso="2026-08-12T14:31:54+05:30" title="12 August 2026, 04:01">12 August 2026, 04:01</time>
+      </div>
+      <h3 class="card-title">Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access</h3>
+      <p class="card-summary">Threat actors have begun to actively exploit a recently patched critical security flaw in Broadcom VMware vCenter, according to new findings from QUIRSO.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6913895983e2706d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious litellm releases tied to trivy hack may have exposed 2,100+ organizations"
+       data-id="68de491273baa140"
+       data-published="2026-08-12T13:34:52+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-12T13:34:52+05:30" title="12 August 2026, 03:04">12 August 2026, 03:04</time>
+      </div>
+      <h3 class="card-title">Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations</h3>
+      <p class="card-summary">Two malicious LiteLLM releases sat on PyPI for about 40 minutes in March carrying credential-stealing code capable of harvesting cloud keys, SSH keys, Kubernetes tokens, database passwords, and other secrets from systems that installed them.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/68de491273baa140.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="apt,cve,malware,patch,vulnerability"
        data-vendors="SAP"

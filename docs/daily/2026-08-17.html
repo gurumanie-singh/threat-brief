@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">17 August 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
@@ -36,6 +36,8 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -63,28 +65,91 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how mcp servers can expose enterprise secrets"
+       data-id="1e56551591f71f93"
+       data-published="2026-08-17T17:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-17T17:28:00+05:30" title="17 August 2026, 06:58">17 August 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">How MCP Servers Can Expose Enterprise Secrets</h3>
+      <p class="card-summary">MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that exposure can silently become a major gap in MCP server security. The Model Context Protocol (MCP) allows AI agents to reach the tools and data,</p></div>
+      <div class="detail-links">
+        <a href="../articles/1e56551591f71f93.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="unisoc volte video call exploit chain can give attackers full android kernel access"
+       data-id="8eff45d2aea9981b"
+       data-published="2026-08-17T16:22:34+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-17T16:22:34+05:30" title="17 August 2026, 05:52">17 August 2026, 05:52</time>
+      </div>
+      <h3 class="card-title">Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access</h3>
+      <p class="card-summary">Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8eff45d2aea9981b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="exploit,malware,vulnerability"
        data-vendors="AWS,Linux"
@@ -149,6 +214,67 @@
       <div class="detail-links">
         <a href="../articles/b82dca11dd0e54b2.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="windows server 2022 reaches end of mainstream support in 60 days"
+       data-id="35414a8c4b3250a2"
+       data-published="2026-08-17T08:33:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-17T08:33:11-04:00" title="17 August 2026, 07:33">17 August 2026, 07:33</time>
+      </div>
+      <h3 class="card-title">Windows Server 2022 reaches end of mainstream support in 60 days</h3>
+      <p class="card-summary">Microsoft has reminded IT administrators that Windows Server 2022 is rapidly approaching its mainstream end date of October 2026, when it will switch to extended support. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/35414a8c4b3250a2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="philips and ge investigating clop ransomware data theft claims"
+       data-id="ed727cb49aedc2f2"
+       data-published="2026-08-17T07:25:02-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-17T07:25:02-04:00" title="17 August 2026, 06:25">17 August 2026, 06:25</time>
+      </div>
+      <h3 class="card-title">Philips and GE investigating Clop ransomware data theft claims</h3>
+      <p class="card-summary">Tech giants General Electric (GE) and Philips have also confirmed they&#39;re investigating claims that the Clop ransomware gang breached their systems and stole data. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ed727cb49aedc2f2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

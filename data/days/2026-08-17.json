@@ -1,5 +1,38 @@
 [
   {
+    "id": "f42ba01b33be9c9a",
+    "title": "Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html",
+    "published": "2026-08-17T18:53:51+05:30",
+    "fetched_at": "2026-08-17T14:23:57.503080+00:00",
+    "summary": "The expensive attacks are not always the clever ones.",
+    "tags": [
+      "exploit",
+      "zero-day"
+    ],
+    "day": "2026-08-17",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft",
+      "VMware"
+    ],
+    "action_required": false,
+    "card_summary": "The expensive attacks are not always the clever ones.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Exposed services got hit, old bugs found fresh use, browser sessions became attack paths, and supply-chain problems kept spreading farther than the original compromise.",
+      "mitigation": "A lot of it came down to access that was already there and defenses that assumed nobody would look too closely.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "The expensive attacks are not always the clever ones. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "1e56551591f71f93",
     "title": "How MCP Servers Can Expose Enterprise Secrets",
     "source": "The Hacker News",
@@ -122,6 +155,37 @@
       "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
     },
     "email_summary": "Cybersecurity researchers have attributed the exploitation of a newly patched security flaw in Broadcom VMware vCenter to a suspected China-nexus advanced persistent threat (APT). Tracked as CVE-2026-59310. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d40c673ee2269b78",
+    "title": "Certighost and the Privilege Hiding in Your Certificate Authority",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/certighost-and-the-privilege-hiding-in-your-certificate-authority/",
+    "published": "2026-08-17T10:00:10-04:00",
+    "fetched_at": "2026-08-17T14:23:57.862168+00:00",
+    "summary": "CVE-2026-54121 lets a standard domain user turn your Enterprise CA into a Domain Controller. The patch is the easy part. The lesson is standing privilege, implicit trust, and treating PKI as the Tier 0 identity infrastructure it has always been. [...]",
+    "tags": [
+      "cve",
+      "patch"
+    ],
+    "day": "2026-08-17",
+    "cves": [
+      "CVE-2026-54121"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "CVE-2026-54121 lets a standard domain user turn your Enterprise CA into a Domain Controller. The patch is the easy part.",
+    "quick_take": "",
+    "sections": {
+      "technical": "CVE-2026-54121 lets a standard domain user turn your Enterprise CA into a Domain Controller.\n\nReferenced vulnerabilities: CVE-2026-54121.",
+      "impact": "CVE-2026-54121 lets a standard domain user turn your Enterprise CA into a Domain Controller.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "CVE-2026-54121 lets a standard domain user turn your Enterprise CA into a Domain Controller. Tracked as CVE-2026-54121.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

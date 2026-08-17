@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">15 August 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,6 +64,8 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
@@ -60,10 +73,81 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="SAP"
+       data-severity="high"
+       data-title="sap commerce cloud cve-2026-58231 targeted in exploitation attempts days after patch"
+       data-id="252e81cc6a646004"
+       data-published="2026-08-15T14:08:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">SAP</span>        <time class="meta-time" data-iso="2026-08-15T14:08:46+05:30" title="15 August 2026, 03:38">15 August 2026, 03:38</time>
+      </div>
+      <h3 class="card-title">SAP Commerce Cloud CVE-2026-58231 Targeted in Exploitation Attempts Days After Patch</h3>
+      <p class="card-summary">A maximum-severity security vulnerability impacting SAP Commerce Cloud is witnessing active exploitation efforts.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/252e81cc6a646004.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Apple"
+       data-severity="critical"
+       data-title="apple macos screen sharing flaw exploited on internet-exposed macs to install monero miner"
+       data-id="cc0feed85a1f43a7"
+       data-published="2026-08-15T12:54:04+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-08-15T12:54:04+05:30" title="15 August 2026, 02:24">15 August 2026, 02:24</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner</h3>
+      <p class="card-summary">A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC) has warned.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cc0feed85a1f43a7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="Linux"
@@ -92,6 +176,35 @@
       <div class="detail-links">
         <a href="../articles/e0d7a5fcfeaa3b95.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers spend nearly $7 million on expired domains to redirect traffic to scams and malware"
+       data-id="6b3a89abe2ba5dc5"
+       data-published="2026-08-15T00:18:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-15T00:18:46+05:30" title="14 August 2026, 13:48">14 August 2026, 13:48</time>
+      </div>
+      <h3 class="card-title">Hackers Spend Nearly $7 Million on Expired Domains to Redirect Traffic to Scams and Malware</h3>
+      <p class="card-summary">Threat actors are acquiring expired domains to inherit website traffic and reputation to redirect victims to scams and malware on a large scale.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6b3a89abe2ba5dc5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/hackers-spend-nearly-7-million-on.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

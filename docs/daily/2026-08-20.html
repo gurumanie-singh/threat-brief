@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 August 2026</h1>
-      <span class="brief-sub">14 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -36,8 +36,8 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>AWS, Google ecosystems affected by multiple advisories</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>AWS, Citrix ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -66,23 +66,123 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="isolated-vm flaw lets sandboxed javascript escape to host for potential rce"
+       data-id="5ef9d4ff03d8aea7"
+       data-published="2026-08-20T19:18:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-20T19:18:24+05:30" title="20 August 2026, 08:48">20 August 2026, 08:48</time>
+      </div>
+      <h3 class="card-title">Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed a critical security flaw in isolated-vm, a popular open-source sandbox with more than 2,900 stars and 190 forks on GitHub, that could allow attackers to escape the confines of the isolated environment.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5ef9d4ff03d8aea7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="vulnerability"
+       data-vendors="AWS,Citrix"
+       data-severity="high"
+       data-title="critical netscaler flaw can bypass authentication on certain gateway and aaa servers"
+       data-id="1e0aeb028ed52a5e"
+       data-published="2026-08-20T19:05:13+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-08-20T19:05:13+05:30" title="20 August 2026, 08:35">20 August 2026, 08:35</time>
+      </div>
+      <h3 class="card-title">Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers</h3>
+      <p class="card-summary">Citrix has released updates to address two security flaws impacting NetScaler ADC and NetScaler Gateway deployments, including a critical-severity authentication bypass vulnerability.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1e0aeb028ed52a5e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="attackers exploit zimbra snmp flaw for unauthenticated remote code execution"
+       data-id="531fafe6a25dadca"
+       data-published="2026-08-20T18:54:28+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-20T18:54:28+05:30" title="20 August 2026, 08:24">20 August 2026, 08:24</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution</h3>
+      <p class="card-summary">A now-patched security flaw impacting Zimbra Collaboration (ZCS) has come under active exploitation in the wild, according to the Polish Computer Emergency Response Team (CERT Polska).</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/531fafe6a25dadca.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -332,6 +432,37 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how msps can catch phishing attacks email filters miss"
+       data-id="f24c7e99cd91c6f5"
+       data-published="2026-08-20T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-20T10:01:11-04:00" title="20 August 2026, 09:01">20 August 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">How MSPs can catch phishing attacks email filters miss</h3>
+      <p class="card-summary">AI is making phishing attacks more personalized, convincing, and difficult for traditional email filters to detect. Kaseya explains how MSPs can monitor identity, email, and endpoint activity to detect and contain attacks that make it past the inbox. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f24c7e99cd91c6f5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/how-msps-can-catch-phishing-attacks-email-filters-miss/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="patch,vulnerability"
        data-vendors="AWS,Citrix"
        data-severity="medium"
@@ -454,6 +585,36 @@
       <div class="detail-links">
         <a href="../articles/a55247c4e11f215e.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="pakistan&#39;s transparent tribe refreshes toolset for afghan cyberattacks"
+       data-id="af943f49740a2c0e"
+       data-published="2026-08-20T04:15:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-20T04:15:00+00:00" title="19 August 2026, 23:15">19 August 2026, 23:15</time>
+      </div>
+      <h3 class="card-title">Pakistan&#39;s Transparent Tribe Refreshes Toolset for Afghan Cyberattacks</h3>
+      <p class="card-summary">A nation-state threat actor is picking on immature organizations run by the Taliban, but failing against more prepared government agencies in India.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/af943f49740a2c0e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/pakistan-transparent-tribe-afghan-cyberattacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,10 +27,18 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 August 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">2 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +47,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,11 +62,45 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="elementor pro flaw could let unauthenticated attackers upload php and execute code"
+       data-id="757164b8c47d461e"
+       data-published="2026-08-20T11:34:34+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-20T11:34:34+05:30" title="20 August 2026, 01:04">20 August 2026, 01:04</time>
+      </div>
+      <h3 class="card-title">Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/757164b8c47d461e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 August 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -37,6 +37,7 @@
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Google ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -49,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,6 +66,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
@@ -71,13 +74,108 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="nasa ait-gui flaws could let unauthenticated attackers issue spacecraft commands"
+       data-id="b5c8dc90ca6c3863"
+       data-published="2026-08-20T16:35:11+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-20T16:35:11+05:30" title="20 August 2026, 06:05">20 August 2026, 06:05</time>
+      </div>
+      <h3 class="card-title">NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands</h3>
+      <p class="card-summary">Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL&#39;s open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software&#39;s…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL&#39;s open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software&#39;s spacecraft and instrument command bus.</p></div>
+      <div class="detail-links">
+        <a href="../articles/b5c8dc90ca6c3863.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="toxicpanda 2.0 and golddigger expand android banking attacks with on-device fraud"
+       data-id="c778b23e8342d7de"
+       data-published="2026-08-20T16:08:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-20T16:08:28+05:30" title="20 August 2026, 05:38">20 August 2026, 05:38</time>
+      </div>
+      <h3 class="card-title">ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud</h3>
+      <p class="card-summary">Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with &#34;significant enhancements,&#34; including a set of 167 remote commands and expands its targeting footprint globally.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c778b23e8342d7de.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/toxicpanda-20-and-golddigger-expand.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="40 malicious firefox extensions pose as web3 products to steal wallet secrets"
+       data-id="040d4b1f9860a324"
+       data-published="2026-08-20T14:12:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-20T14:12:03+05:30" title="20 August 2026, 03:42">20 August 2026, 03:42</time>
+      </div>
+      <h3 class="card-title">40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets</h3>
+      <p class="card-summary">A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/040d4b1f9860a324.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors=""
@@ -106,6 +204,36 @@
       <div class="detail-links">
         <a href="../articles/757164b8c47d461e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa warns of hackers exploiting critical mlflow vulnerability"
+       data-id="bd9a346e9936617f"
+       data-published="2026-08-20T07:06:14-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-20T07:06:14-04:00" title="20 August 2026, 06:06">20 August 2026, 06:06</time>
+      </div>
+      <h3 class="card-title">CISA warns of hackers exploiting critical MLflow vulnerability</h3>
+      <p class="card-summary">The Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that threat actors are now exploiting a critical vulnerability in the MLflow open-source AI engineering platform. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bd9a346e9936617f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

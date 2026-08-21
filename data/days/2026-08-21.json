@@ -59,6 +59,29 @@
     "highlighted": false
   },
   {
+    "id": "a0fe9d49611c7d40",
+    "title": "OWASP Flags Top AI Skill Risks in New Security Blueprint",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint",
+    "published": "2026-08-21T17:36:53+00:00",
+    "fetched_at": "2026-08-21T18:32:30.823391+00:00",
+    "summary": "The Open Worldwide Application Security Project has a brand-new top 10 security list tailored for the modern era, and it debuts a Universal Skill Format to add consistency and security to the AI add-ons.",
+    "tags": [],
+    "day": "2026-08-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Open Worldwide Application Security Project has a brand-new top 10 security list tailored for the modern era, and it debuts a Universal Skill Format to add consistency and security to the AI add-ons.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The Open Worldwide Application Security Project has a brand-new top 10 security list tailored for the modern era, and it debuts a Universal Skill Format to add consistency and security to the AI add-ons.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "bfb837736055c7df",
     "title": "Wazuh and AI For Enhanced SOC Workflows",
     "source": "The Hacker News",
@@ -113,6 +136,37 @@
       "impact": "Four of the security vulnerabilities affect Crosswork Data Gateway, Crosswork Network Controller, and Crosswork Planning, regardless of the device configuration.\n\nAssessed severity: CRITICAL. CVSS score: 10.0/10."
     },
     "email_summary": "Cisco has published another round of security updates for Crosswork platforms and Secure Workload Software as part of a continued comprehensive internal security review. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e9519b321c17ed41",
+    "title": "New SynkLoader malware pushed in Microsoft Teams phishing campaign",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
+    "published": "2026-08-21T14:01:30-04:00",
+    "fetched_at": "2026-08-21T18:32:30.226494+00:00",
+    "summary": "A previously unknown malware family dubbed SynkLoader is being distributed in Microsoft Teams phishing campaigns to steal credentials via a fake lock screen. [...]",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-08-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "A previously unknown malware family dubbed SynkLoader is being distributed in Microsoft Teams phishing campaigns to steal credentials via a fake lock screen. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A previously unknown malware family dubbed SynkLoader is being distributed in Microsoft Teams phishing campaigns to steal credentials via a fake lock screen. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "A previously unknown malware family dubbed SynkLoader is being distributed in Microsoft Teams phishing campaigns to steal credentials via a fake lock screen. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -273,6 +327,37 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Microsoft on Thursday warned of a maximum-severity security flaw in Entra ID that it said has been exploited in the wild, but noted that no customer action is required. Tracked as CVE-2026-69836. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e01ab39afc947fe9",
+    "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+    "published": "2026-08-21T11:36:11+05:30",
+    "fetched_at": "2026-08-21T18:32:29.800994+00:00",
+    "summary": "Update: The story was updated after publication to note that the vulnerability has not been exploited.",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-08-21",
+    "cves": [],
+    "cvss": 10.0,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Update: The story was updated after publication to note that the vulnerability has not been exploited.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Assessed severity: CRITICAL. CVSS score: 10.0/10."
+    },
+    "email_summary": "Update: The story was updated after publication to note that the vulnerability has not been exploited. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -469,64 +554,6 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Toronto's Hospital for Sick Children (SickKids) says a cybersecurity incident exposed the personal information of some current and former employees and job applicants, stemming from a flaw in third-party software. Clinical systems and patient records were not affected. (264) [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "3ce40089fc1a9ea7",
-    "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
-    "published": "2026-08-21T01:52:35+05:30",
-    "fetched_at": "2026-08-20T22:23:57.968320+00:00",
-    "summary": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.",
-    "tags": [
-      "breach",
-      "malware"
-    ],
-    "day": "2026-08-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "high",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload…",
-    "quick_take": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script…",
-    "sections": {
-      "overview": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation. Severity is rated high.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "ab244f15e3ac2492",
-    "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
-    "published": "2026-08-21T01:29:19+05:30",
-    "fetched_at": "2026-08-20T20:24:22.235042+00:00",
-    "summary": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S.",
-    "tags": [
-      "apt"
-    ],
-    "day": "2026-08-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Google"
-    ],
-    "action_required": false,
-    "card_summary": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as…",
-    "quick_take": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and…",
-    "sections": {
-      "overview": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S."
-    },
-    "email_summary": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S. These clusters include UNC6293, UNC7005, and UNC5976.\n\n\"These clusters engage in persistent, adaptive.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

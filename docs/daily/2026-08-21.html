@@ -38,7 +38,6 @@
         <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>3 items require immediate action — patches or mitigations available</li>
         <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -75,13 +74,13 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
@@ -643,6 +642,37 @@
     </div>
   </div>
   <div class="article-card card--high"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="high"
+       data-title="microsoft patches max severity code execution, privilege escalation flaws"
+       data-id="bbcad82935a9fc32"
+       data-published="2026-08-21T07:04:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-21T07:04:10-04:00" title="21 August 2026, 06:04">21 August 2026, 06:04</time>
+      </div>
+      <h3 class="card-title">Microsoft patches max severity code execution, privilege escalation flaws</h3>
+      <p class="card-summary">Microsoft has patched a maximum-severity vulnerability in the Entra ID identity and access management (IAM) platform that has been exploited in attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bbcad82935a9fc32.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
        data-tags="malware"
        data-vendors="Microsoft"
        data-severity="high"
@@ -668,38 +698,6 @@
       <div class="detail-links">
         <a href="../articles/bbcff2990a509082.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-ftp-server-banners-to-deliver-new-windows-malware/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="sickkids data breach exposes employee and job applicant info"
-       data-id="f821caf523e3bcb0"
-       data-published="2026-08-21T06:10:42-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-21T06:10:42-04:00" title="21 August 2026, 05:10">21 August 2026, 05:10</time>
-      </div>
-      <h3 class="card-title">SickKids data breach exposes employee and job applicant info</h3>
-      <p class="card-summary">Toronto&#39;s Hospital for Sick Children (SickKids) says a cybersecurity incident exposed the personal information of some current and former employees and job applicants, stemming from a flaw in third-party software. Clinical systems and patient records were…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Toronto&#39;s Hospital for Sick Children (SickKids) says a cybersecurity incident exposed the personal information of some current and former employees and job applicants, stemming from a flaw in third-party software. Clinical systems and patient records were not affected. (264) [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/f821caf523e3bcb0.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/sickkids-data-breach-exposes-employee-and-job-applicant-info/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

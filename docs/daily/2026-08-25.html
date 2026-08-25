@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">25 August 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">8 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -64,6 +65,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
@@ -71,14 +73,144 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="mirage2fa surge hits 4,500 us and eu companies, abusing microsoft 365 login flows"
+       data-id="8e6c993bd9261d44"
+       data-published="2026-08-25T17:26:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-25T17:26:15+05:30" title="25 August 2026, 06:56">25 August 2026, 06:56</time>
+      </div>
+      <h3 class="card-title">Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows</h3>
+      <p class="card-summary">Thousands of companies have been affected by the Mirage2FA campaign from 2024 to 2026. The commercial phishing-as-a-service toolkit targets Microsoft 365 accounts by abusing legitimate login flows and bypassing two-factor authentication.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8e6c993bd9261d44.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity="high"
+       data-title="24 npm packages abuse unpkg mirrors to host fake cloudflare captcha pages"
+       data-id="c9f46094c415c0b7"
+       data-published="2026-08-25T17:22:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-25T17:22:43+05:30" title="25 August 2026, 06:52">25 August 2026, 06:52</time>
+      </div>
+      <h3 class="card-title">24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a new campaign that uses a cluster of 24 npm packages as free phishing infrastructure for redirecting to ClickFix-style fake CAPTCHA pages.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c9f46094c415c0b7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="e4del and pinhole rats turn ftp banners into dead drops for malware commands"
+       data-id="cfa1e5a1323b39a7"
+       data-published="2026-08-25T17:03:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-25T17:03:44+05:30" title="25 August 2026, 06:33">25 August 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands</h3>
+      <p class="card-summary">Cybersecurity researchers are calling attention to a new campaign that employs FTP banners as dead drop resolvers (DDRs) to deliver two previously unreported remote access trojans (RATs) tracked as E4del and PINHOLE.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cfa1e5a1323b39a7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="frontier ai: vulnerability management&#39;s systemic revolution"
+       data-id="035f16244ee2f6f4"
+       data-published="2026-08-25T16:44:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-25T16:44:07+05:30" title="25 August 2026, 06:14">25 August 2026, 06:14</time>
+      </div>
+      <h3 class="card-title">Frontier AI: Vulnerability Management&#39;s Systemic Revolution</h3>
+      <p class="card-summary">Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Vulnerability management has been a staple of security programs since the dawn of the cybersecurity discipline. The symbiotic relationship between vulnerability and patch management teams has also existed for that time and has gone through waves of contention and thankfulness. While this relationship required thoughtful care and feeding from both sides, both sides were aiming to work toward a</p></div>
+      <div class="detail-links">
+        <a href="../articles/035f16244ee2f6f4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,malware,patch,vulnerability"
        data-vendors="AWS"
@@ -142,6 +274,39 @@
       <div class="detail-links">
         <a href="../articles/5c47c12b9a6bb669.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="hackers breached over 270 zimbra servers in ongoing attacks"
+       data-id="54f06b9355138bb6"
+       data-published="2026-08-25T08:04:02-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-25T08:04:02-04:00" title="25 August 2026, 07:04">25 August 2026, 07:04</time>
+      </div>
+      <h3 class="card-title">Hackers breached over 270 Zimbra servers in ongoing attacks</h3>
+      <p class="card-summary">Threat actors have already compromised over 270 Zimbra instances in remote code execution attacks targeting a high-severity Zimbra Collaboration Suite (ZCS) vulnerability. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/54f06b9355138bb6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

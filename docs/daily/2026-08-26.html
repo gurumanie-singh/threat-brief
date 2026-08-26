@@ -51,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -66,6 +67,7 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
@@ -75,16 +77,76 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fbi disrupts china-linked qtfy infrastructure used to steal data from u.s. organizations"
+       data-id="739db4d037ad926d"
+       data-published="2026-08-26T22:12:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-26T22:12:03+05:30" title="26 August 2026, 11:42">26 August 2026, 11:42</time>
+      </div>
+      <h3 class="card-title">FBI Disrupts China-Linked QTFY Infrastructure Used to Steal Data From U.S. Organizations</h3>
+      <p class="card-summary">Department of Justice (DoJ) on Wednesday announced the disruption of two hacking platforms named QScan and QTRouter operated by Chinese threat actors to target critical infrastructure and other sensitive networks in the country.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/739db4d037ad926d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="nimbus manticore expands toolset with twostroke-like backdoor and ssh tunneler"
+       data-id="a7eb5fd8a857ee5f"
+       data-published="2026-08-26T21:05:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-26T21:05:05+05:30" title="26 August 2026, 10:35">26 August 2026, 10:35</time>
+      </div>
+      <h3 class="card-title">Nimbus Manticore Expands Toolset With TWOSTROKE-Like Backdoor and SSH Tunneler</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered additional infrastructure and previously undocumented malware associated with Nimbus Manticore, an Iranian state-sponsored hacking group affiliated with the Islamic Revolutionary Guard Corps (IRGC).</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a7eb5fd8a857ee5f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt,phishing"
        data-vendors="Microsoft"
@@ -146,6 +208,35 @@
       <div class="detail-links">
         <a href="../articles/b142a5655e86021b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="android malware hijacks update system for car head units"
+       data-id="6f1f5cddcdb39379"
+       data-published="2026-08-26T17:33:45+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-26T17:33:45+00:00" title="26 August 2026, 12:33">26 August 2026, 12:33</time>
+      </div>
+      <h3 class="card-title">Android Malware Hijacks Update System for Car Head Units</h3>
+      <p class="card-summary">Threat actors behind a notorious click-fraud botnet have set their sights on vehicle infotainment modules and are abusing legitimate functionality to spread infections.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6f1f5cddcdb39379.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/android-malware-hijacks-update-system-car-head-units" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -275,6 +366,35 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="new gputhor attack defeats nvidia ecc protection for root access"
+       data-id="8e63341abaca7170"
+       data-published="2026-08-26T14:48:24-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-26T14:48:24-04:00" title="26 August 2026, 13:48">26 August 2026, 13:48</time>
+      </div>
+      <h3 class="card-title">New GPUThor attack defeats NVIDIA ECC protection for root access</h3>
+      <p class="card-summary">A newly disclosed Rowhammer attack called GPUThor can bypass error-correcting code (ECC) protections on NVIDIA GPUs, enabling denial-of-service (DoS) and root-level privilege escalation. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8e63341abaca7170.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-gputhor-attack-defeats-nvidia-ecc-protection-for-root-access/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -367,6 +487,38 @@
       <div class="detail-links">
         <a href="../articles/2c1d2105e2c9f3ef.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="meta agrees to $18 billion settlement over teen social media harms"
+       data-id="487c3c1e04c2479b"
+       data-published="2026-08-26T12:41:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-26T12:41:05-04:00" title="26 August 2026, 11:41">26 August 2026, 11:41</time>
+      </div>
+      <h3 class="card-title">Meta agrees to $18 billion settlement over teen social media harms</h3>
+      <p class="card-summary">Meta has reached a proposed settlement worth up to approximately $18 billion with a bipartisan coalition of 52 attorneys generals over allegations that Facebook and Instagram were deliberately designed to encourage compulsive use by children and teenagers.…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Meta has reached a proposed settlement worth up to approximately $18 billion with a bipartisan coalition of 52 attorneys generals over allegations that Facebook and Instagram were deliberately designed to encourage compulsive use by children and teenagers. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/487c3c1e04c2479b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/technology/meta-agrees-to-18-billion-settlement-over-teen-social-media-harms/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -558,157 +710,6 @@
       <div class="detail-links">
         <a href="../articles/1cf364d3d3f354cd.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/fbi-disrupts-proxy-network-enabling-chinese-espionage-operations/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="snowflake ends service-account passwords. now comes the hard part"
-       data-id="17c61bfd7ea6124d"
-       data-published="2026-08-26T10:01:11-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-26T10:01:11-04:00" title="26 August 2026, 09:01">26 August 2026, 09:01</time>
-      </div>
-      <h3 class="card-title">Snowflake ends service-account passwords. Now comes the hard part</h3>
-      <p class="card-summary">Snowflake is ending password authentication for legacy service accounts, forcing organizations to migrate them to passwordless methods. Token Security explains why the harder challenge is identifying what uses each account, who owns it, and how much access…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Snowflake is ending password authentication for legacy service accounts, forcing organizations to migrate them to passwordless methods. Token Security explains why the harder challenge is identifying what uses each account, who owns it, and how much access it still needs. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/17c61bfd7ea6124d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/snowflake-ends-service-account-passwords-now-comes-the-hard-part/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,patch,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ubiquiti patches three max severity security vulnerabilities"
-       data-id="22c4d42ad6e2a89c"
-       data-published="2026-08-26T09:17:54-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-26T09:17:54-04:00" title="26 August 2026, 08:17">26 August 2026, 08:17</time>
-      </div>
-      <h3 class="card-title">Ubiquiti patches three max severity security vulnerabilities</h3>
-      <p class="card-summary">Ubiquiti has released security patches for three new maximum-severity vulnerabilities that threat actors can exploit remotely without privileges. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/22c4d42ad6e2a89c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="interpol&#39;s jackal iv disrupts west african crime infrastructure"
-       data-id="830be71bbad91328"
-       data-published="2026-08-26T08:30:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-26T08:30:00+00:00" title="26 August 2026, 03:30">26 August 2026, 03:30</time>
-      </div>
-      <h3 class="card-title">Interpol&#39;s Jackal IV Disrupts West African Crime Infrastructure</h3>
-      <p class="card-summary">The international law enforcement operation focused on disrupting crime-as-a-service networks and supporting infrastructure behind groups like Black Axe.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/830be71bbad91328.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/threat-intelligence/interpols-jackal-iv-west-african-crime-infrastructure" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft tests new privacy controls for windows 11 desktop apps"
-       data-id="7d46edad71bab6b1"
-       data-published="2026-08-26T08:06:28-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-26T08:06:28-04:00" title="26 August 2026, 07:06">26 August 2026, 07:06</time>
-      </div>
-      <h3 class="card-title">Microsoft tests new privacy controls for Windows 11 desktop apps</h3>
-      <p class="card-summary">Microsoft has begun testing new privacy controls that will let Windows 11 users choose which desktop applications can access their camera, microphone, and precise location. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/7d46edad71bab6b1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-privacy-controls-for-windows-11-desktop-apps/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="nigeria looks to sovereign cloud for cyber, national security"
-       data-id="a9ce1fdc07cc5570"
-       data-published="2026-08-26T08:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-26T08:00:00+00:00" title="26 August 2026, 03:00">26 August 2026, 03:00</time>
-      </div>
-      <h3 class="card-title">Nigeria Looks to Sovereign Cloud for Cyber, National Security</h3>
-      <p class="card-summary">The West African nation launched financing, procurement, and infrastructure policies to boost its sovereign cloud initiative and increase domestic technical knowledge.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/a9ce1fdc07cc5570.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/nigeria-sovereign-cloud-cyber-national-security" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

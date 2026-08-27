@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 August 2026</h1>
-      <span class="brief-sub">14 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,10 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
-        <li>Elevated ransomware activity reported across multiple sources</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -68,9 +67,9 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
@@ -80,16 +79,174 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="next.js patches critical avif and windows flaws enabling unauthenticated rce"
+       data-id="beccbdc1d081111c"
+       data-published="2026-08-27T20:43:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-27T20:43:00+05:30" title="27 August 2026, 10:13">27 August 2026, 10:13</time>
+      </div>
+      <h3 class="card-title">Next.js Patches Critical AVIF and Windows Flaws Enabling Unauthenticated RCE</h3>
+      <p class="card-summary">Credit: Hacktron</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Credit: Hacktron Vercel has released security patches for two critical-severity vulnerabilities in the Next.js web framework, both of which allow unauthenticated remote code execution, one exploitable via specially crafted AVIF image files and the other through a path traversal flaw affecting servers that use a Windows filesystem. The Windows path traversal, tracked as CVE-2026-75604&amp;</p></div>
+      <div class="detail-links">
+        <a href="../articles/beccbdc1d081111c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="threatsday: 296k iot botnet, 100+ water systems targeted, sharepoint rce chain + 27 new stories"
+       data-id="9cfed70f7a201b4b"
+       data-published="2026-08-27T20:42:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-27T20:42:16+05:30" title="27 August 2026, 10:12">27 August 2026, 10:12</time>
+      </div>
+      <h3 class="card-title">ThreatsDay: 296K IoT Botnet, 100+ Water Systems Targeted, SharePoint RCE Chain + 27 New Stories</h3>
+      <p class="card-summary">A fake login page. A fake security scan.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9cfed70f7a201b4b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/threatsday-296k-iot-botnet-100-water.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chinese routers sold worldwide contain backdoors"
+       data-id="5ae0b3a7899cfb8f"
+       data-published="2026-08-27T19:31:45+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-27T19:31:45+00:00" title="27 August 2026, 14:31">27 August 2026, 14:31</time>
+      </div>
+      <h3 class="card-title">Chinese Routers Sold Worldwide Contain Backdoors</h3>
+      <p class="card-summary">An untold number of ZBT routers sold around the world as white-label products come with several implants built by the manufacturer.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5ae0b3a7899cfb8f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/chinese-routers-sold-worldwide-backdoors" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="amazon kiro prompt injection can exfiltrate sensitive data through kiro powers"
+       data-id="a0f9c95b75e647d9"
+       data-published="2026-08-27T19:09:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-27T19:09:56+05:30" title="27 August 2026, 08:39">27 August 2026, 08:39</time>
+      </div>
+      <h3 class="card-title">Amazon Kiro Prompt Injection Can Exfiltrate Sensitive Data Through Kiro Powers</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a vulnerability in Amazon Kiro, an artificial intelligence (AI)-powered, agentic integrated development environment (IDE), that could facilitate data exfiltration via prompt injection and Kiro Powers.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a0f9c95b75e647d9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/amazon-kiro-prompt-injection-can.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="nearly 700 rogue ai agents coordinated in the hugging face attack"
+       data-id="6934a119f23ff83f"
+       data-published="2026-08-27T17:38:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-27T17:38:53-04:00" title="27 August 2026, 16:38">27 August 2026, 16:38</time>
+      </div>
+      <h3 class="card-title">Nearly 700 rogue AI agents coordinated in the Hugging Face attack</h3>
+      <p class="card-summary">New details about the July attack on Hugging Face reveal that hundreds of AI agents driven by OpenAI&#39;s internal IM1 model coordinated the compromise through an unauthorized message board. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6934a119f23ff83f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/nearly-700-rogue-ai-agents-coordinated-in-the-hugging-face-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit,malware,vulnerability"
        data-vendors="Microsoft"
@@ -154,6 +311,36 @@
       <div class="detail-links">
         <a href="../articles/e86baab7fde46e65.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/alleged-teampcp-hackers-charged-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="agentic ai risks, cve program concerns permeate black hat usa 2026"
+       data-id="abb65bf18eae2c42"
+       data-published="2026-08-27T17:25:09+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-27T17:25:09+00:00" title="27 August 2026, 12:25">27 August 2026, 12:25</time>
+      </div>
+      <h3 class="card-title">Agentic AI Risks, CVE Program Concerns Permeate Black Hat USA 2026</h3>
+      <p class="card-summary">This installment of the Reporters&#39; Notebook video series discusses the topics that dominated the cybersecurity conference, such as AI&#39;s effects on vulnerability reporting and security research.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/abb65bf18eae2c42.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/agentic-ai-risks-cve-program-concerns-black-hat-usa-2026" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -313,6 +500,70 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="papercut warns of ng, mf flaw exploited in zero-day attacks"
+       data-id="d62b8ffa3e7383e6"
+       data-published="2026-08-27T12:31:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-27T12:31:53-04:00" title="27 August 2026, 11:31">27 August 2026, 11:31</time>
+      </div>
+      <h3 class="card-title">PaperCut warns of NG, MF flaw exploited in zero-day attacks</h3>
+      <p class="card-summary">PaperCut is warning that hackers are actively exploiting a vulnerability in all versions of its PaperCut NG and PaperCut MF print management software in zero-day attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d62b8ffa3e7383e6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/papercut-warns-of-ng-mf-flaw-exploited-in-zero-day-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="manchester airports group says hackers stole travelers&#39; data"
+       data-id="657b961c4dbbda1f"
+       data-published="2026-08-27T12:12:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-27T12:12:26-04:00" title="27 August 2026, 11:12">27 August 2026, 11:12</time>
+      </div>
+      <h3 class="card-title">Manchester Airports Group says hackers stole travelers&#39; data</h3>
+      <p class="card-summary">The Manchester Airports Group (MAG) disclosed that hackers breached its systems and stole customer data, including Wi-Fi sign-ups from Manchester, Stansted, and East Midlands airports. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/657b961c4dbbda1f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/manchester-airports-group-says-hackers-stole-travelers-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt"
        data-vendors=""
@@ -377,6 +628,69 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="how threat research and mdr help smbs build a defensive edge"
+       data-id="eefb7104d4562c5f"
+       data-published="2026-08-27T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-27T10:00:10-04:00" title="27 August 2026, 09:00">27 August 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">How Threat Research and MDR Help SMBs Build a Defensive Edge</h3>
+      <p class="card-summary">Threat research gives security teams insight into how attackers operate, while MDR turns that intelligence into faster detection and response. ESET explains how combining threat intelligence, continuous monitoring, and human expertise can help SMBs…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat research gives security teams insight into how attackers operate, while MDR turns that intelligence into faster detection and response. ESET explains how combining threat intelligence, continuous monitoring, and human expertise can help SMBs strengthen their defenses. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/eefb7104d4562c5f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/how-threat-research-and-mdr-help-smbs-build-a-defensive-edge/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="android 17 adds ech support to make web browsing harder to track"
+       data-id="f3e0bc6314bc7d76"
+       data-published="2026-08-27T10:00:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-27T10:00:00-04:00" title="27 August 2026, 09:00">27 August 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Android 17 adds ECH support to make web browsing harder to track</h3>
+      <p class="card-summary">Google is introducing new network security protections in Android 17 to strengthen connection privacy, address cellular vulnerabilities, and protect the privacy of users&#39; home networks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f3e0bc6314bc7d76.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/android-17-adds-ech-support-to-make-web-browsing-harder-to-track/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags=""
        data-vendors="Microsoft"
        data-severity="medium"
@@ -401,139 +715,6 @@
       <div class="detail-links">
         <a href="../articles/2c9a05922fa768b1.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-fix-for-windows-11-crashes-gaming-issues/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,exploit,malware,phishing"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="webinar: how google workspace breaches happen and what to do next"
-       data-id="0beac59cc759f634"
-       data-published="2026-08-27T08:16:24-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-27T08:16:24-04:00" title="27 August 2026, 07:16">27 August 2026, 07:16</time>
-      </div>
-      <h3 class="card-title">Webinar: How Google Workspace breaches happen and what to do next</h3>
-      <p class="card-summary">Google Workspace breaches can begin with social engineering or forgotten third-party integrations rather than sophisticated exploits. This webinar examines real-world breaches, what happens during the critical first hours, and the security controls that…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Google Workspace breaches can begin with social engineering or forgotten third-party integrations rather than sophisticated exploits. This webinar examines real-world breaches, what happens during the critical first hours, and the security controls that can make the greatest difference. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/0beac59cc759f634.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/webinar-how-google-workspace-breaches-happen-and-what-to-do-next/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="carhartt data breach exposes information of 12.9 million accounts"
-       data-id="22c079cef698614d"
-       data-published="2026-08-27T07:10:04-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-08-27T07:10:04-04:00" title="27 August 2026, 06:10">27 August 2026, 06:10</time>
-      </div>
-      <h3 class="card-title">Carhartt data breach exposes information of 12.9 million accounts</h3>
-      <p class="card-summary">The ShinyHunters extortion group has published sensitive data from nearly 13 million accounts stolen from clothing retailer giant Carhartt earlier this month, according to data breach notification service Have I Been Pwned. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/22c079cef698614d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/carhartt-data-breach-exposes-information-of-129-million-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="exploit,patch,vulnerability"
-       data-vendors="Citrix"
-       data-severity="critical"
-       data-title="cisa orders feds to patch citrix netscaler rce flaw by saturday"
-       data-id="b8302d6e1e113c6a"
-       data-published="2026-08-27T05:16:50-04:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-08-27T05:16:50-04:00" title="27 August 2026, 04:16">27 August 2026, 04:16</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">CISA orders feds to patch Citrix NetScaler RCE flaw by Saturday</h3>
-      <p class="card-summary">CISA has ordered U.S. government agencies to patch their Citrix NetScaler appliances against an actively exploited remote code execution vulnerability by Saturday. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/b8302d6e1e113c6a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploiting-citrix-netscaler-rce-flaw-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,ransomware,vulnerability"
-       data-vendors="AWS"
-       data-severity="medium"
-       data-title="atf confirms “major incident” after recent qilin breach claims"
-       data-id="574d7825fd1d5372"
-       data-published="2026-08-27T04:13:50-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-27T04:13:50-04:00" title="27 August 2026, 03:13">27 August 2026, 03:13</time>
-      </div>
-      <h3 class="card-title">ATF confirms “major incident” after recent Qilin breach claims</h3>
-      <p class="card-summary">ATF, the regulatory agency that enforces federal laws governing firearms and explosives in the United States, has confirmed that one of its systems was compromised after breach claims made by the Qilin ransomware gang. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">ransomware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/574d7825fd1d5372.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/atf-confirms-major-incident-after-recent-qilin-breach-claims/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

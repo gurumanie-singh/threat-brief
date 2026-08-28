@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">28 August 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>6 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -50,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,23 +65,456 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="exploit,malware,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="attackers chain two papercut flaws to execute code without authentication"
+       data-id="64660bd4e2ab2e63"
+       data-published="2026-08-28T22:42:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-28T22:42:15+05:30" title="28 August 2026, 12:12">28 August 2026, 12:12</time>
+      </div>
+      <h3 class="card-title">Attackers Chain Two PaperCut Flaws to Execute Code Without Authentication</h3>
+      <p class="card-summary">Malicious actors are exploiting a newly patched security flaw in PaperCut NG and MF to execute arbitrary code on susceptible instances, as the company released a fresh emergency fix with additional hardening.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/64660bd4e2ab2e63.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="android 17 adds os-wide ech to hide website visits from network providers"
+       data-id="c1e89063bc40244e"
+       data-published="2026-08-28T21:50:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-08-28T21:50:46+05:30" title="28 August 2026, 11:20">28 August 2026, 11:20</time>
+      </div>
+      <h3 class="card-title">Android 17 Adds OS-Wide ECH to Hide Website Visits From Network Providers</h3>
+      <p class="card-summary">Google on Thursday announced new network security protections in Android 17 to bolster connection privacy, address cellular vulnerabilities, and safeguard the privacy of users&#39; home networks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c1e89063bc40244e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="owncloud flaw exploited to steal nuclear records from philippine research body"
+       data-id="ab715f4d941771af"
+       data-published="2026-08-28T21:26:55+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-28T21:26:55+05:30" title="28 August 2026, 10:56">28 August 2026, 10:56</time>
+      </div>
+      <h3 class="card-title">ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical security flaw impacting ownCloud to its Known Exploited Vulnerabilities (KEV) catalog following reports that a Chinese-speaking threat actor weaponized the vulnerability…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical security flaw impacting ownCloud to its Known Exploited Vulnerabilities (KEV) catalog following reports that a Chinese-speaking threat actor weaponized the vulnerability to target a nuclear research body in the Philippines.</p></div>
+      <div class="detail-links">
+        <a href="../articles/ab715f4d941771af.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="19 chrome and edge extensions found with wallet-stealing and crypto-draining code"
+       data-id="2a4674fec044216a"
+       data-published="2026-08-28T20:57:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-28T20:57:26+05:30" title="28 August 2026, 10:27">28 August 2026, 10:27</time>
+      </div>
+      <h3 class="card-title">19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered a cluster of 18 Google Chrome and one Microsoft Edge extensions that were published over the last six months and harbored wallet secret stealing and cryptocurrency draining capabilities.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2a4674fec044216a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hundreds of openai agents invaded hugging face servers"
+       data-id="fdbdab4087c0a971"
+       data-published="2026-08-28T20:19:22+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T20:19:22+00:00" title="28 August 2026, 15:19">28 August 2026, 15:19</time>
+      </div>
+      <h3 class="card-title">Hundreds of OpenAI Agents Invaded Hugging Face Servers</h3>
+      <p class="card-summary">The Hugging Face incident was bigger and worse than previously thought, with approximately 700 agents collaborating on a sophisticated, multistage attack.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fdbdab4087c0a971.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/hundreds-openai-agents-invaded-hugging-face-servers" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="offensive security investments surge as ai threats increase"
+       data-id="b4052243cd330777"
+       data-published="2026-08-28T18:25:43+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T18:25:43+00:00" title="28 August 2026, 13:25">28 August 2026, 13:25</time>
+      </div>
+      <h3 class="card-title">Offensive Security Investments Surge as AI Threats Increase</h3>
+      <p class="card-summary">Omdia&#39;s Theresa Lanowitz talks with the Dark Reading News Desk about the potential — and risks — of using agentic AI for penetration testing, red teaming, and other practices.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b4052243cd330777.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/offensive-security-investments-surge-ai-threats-increase" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="two unitree g1 edu humanoid robot flaws enable root rce, one starts over bluetooth"
+       data-id="da6e9c8d5310a217"
+       data-published="2026-08-28T17:37:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-28T17:37:24+05:30" title="28 August 2026, 07:07">28 August 2026, 07:07</time>
+      </div>
+      <h3 class="card-title">Two Unitree G1 EDU Humanoid Robot Flaws Enable Root RCE, One Starts Over Bluetooth</h3>
+      <p class="card-summary">Security researcher Olivier Laflamme has disclosed two independent root remote code execution (RCE) chains affecting the Unitree G1 EDU, including a Bluetooth Low Energy (BLE) path that can reach root on the robot&#39;s Locomotion PC.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/da6e9c8d5310a217.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="key reasons why identity fabric matters in 2026"
+       data-id="b69540abea1991dd"
+       data-published="2026-08-28T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T17:00:00+05:30" title="28 August 2026, 06:30">28 August 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">Key Reasons Why Identity Fabric Matters in 2026</h3>
+      <p class="card-summary">An Identity Fabric knits fragmented identity systems into a coherent layer that observes how identities behave across applications, APIs, and infrastructure. As enterprise access spans more cloud services and automated workloads, identity security depends…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An Identity Fabric knits fragmented identity systems into a coherent layer that observes how identities behave across applications, APIs, and infrastructure. As enterprise access spans more cloud services and automated workloads, identity security depends less on static configuration and more on runtime visibility. This article covers the architecture, the risks of unmanaged identities, and</p></div>
+      <div class="detail-links">
+        <a href="../articles/b69540abea1991dd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/key-reasons-why-identity-fabric-matters.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,patch"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="three cvss 10.0 servicenow flaws could let unauthenticated attackers execute code and sql"
+       data-id="94a69b9b2cf3c1bf"
+       data-published="2026-08-28T16:50:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-28T16:50:32+05:30" title="28 August 2026, 06:20">28 August 2026, 06:20</time>
+      </div>
+      <h3 class="card-title">Three CVSS 10.0 ServiceNow Flaws Could Let Unauthenticated Attackers Execute Code and SQL</h3>
+      <p class="card-summary">ServiceNow has released patches for four security flaws impacting the ServiceNow AI Platform, three of them rated 10.0 on the CVSS scoring system and exploitable, in certain circumstances, by an unauthenticated attacker.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/94a69b9b2cf3c1bf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="china-made zbt routers ship with two implants giving unauthenticated attackers root access"
+       data-id="c0f73bf820201581"
+       data-published="2026-08-28T16:28:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-28T16:28:29+05:30" title="28 August 2026, 05:58">28 August 2026, 05:58</time>
+      </div>
+      <h3 class="card-title">China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access</h3>
+      <p class="card-summary">VulnCheck has disclosed two previously undocumented factory implants in firmware for routers built by Shenzhen Zhibotong Electronics (ZBT), each of which gives an unauthenticated remote attacker the ability to run commands as root on affected devices.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c0f73bf820201581.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical cpanel flaw could let one hosting customer take root control of a whole server"
+       data-id="71766022ca288969"
+       data-published="2026-08-28T15:15:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-08-28T15:15:15+05:30" title="28 August 2026, 04:45">28 August 2026, 04:45</time>
+      </div>
+      <h3 class="card-title">Critical cPanel Flaw Could Let One Hosting Customer Take Root Control of a Whole Server</h3>
+      <p class="card-summary">cPanel has released patches for a security flaw affecting domain parking and addon domain functionality in cPanel and WebHost Manager (WHM), which could allow code execution as the root user.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/71766022ca288969.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="papercut releases second emergency patch for exploited flaws"
+       data-id="6c14241ef36a6edb"
+       data-published="2026-08-28T15:08:26-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-08-28T15:08:26-04:00" title="28 August 2026, 14:08">28 August 2026, 14:08</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">PaperCut releases second emergency patch for exploited flaws</h3>
+      <p class="card-summary">PaperCut has released a second emergency security update for two actively exploited vulnerabilities in its PaperCut NG and MF print management software after researchers discovered multiple ways to bypass the initial fixes. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6c14241ef36a6edb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="givewp wordpress donation plugin flaw lets hackers execute server commands"
+       data-id="7f416a36aac17d63"
+       data-published="2026-08-28T14:18:55-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T14:18:55-04:00" title="28 August 2026, 13:18">28 August 2026, 13:18</time>
+      </div>
+      <h3 class="card-title">GiveWP WordPress donation plugin flaw lets hackers execute server commands</h3>
+      <p class="card-summary">A maximum-severity vulnerability in the GiveWP plugin for WordPress allows an unauthenticated attacker to execute arbitrary commands on the hosting server. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7f416a36aac17d63.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/givewp-wordpress-donation-plugin-flaw-lets-hackers-execute-server-commands/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="you need cyber deception for ot"
+       data-id="642b26fbc625b988"
+       data-published="2026-08-28T14:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T14:00:00+00:00" title="28 August 2026, 09:00">28 August 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">You Need Cyber Deception for OT</h3>
+      <p class="card-summary">The frustrating reality after an OT cyberattack: no data, no trail, and no history.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/642b26fbc625b988.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/ics-ot-security/you-need-cyber-deception-ot" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,patch,vulnerability,zero-day"
        data-vendors=""
@@ -150,62 +584,123 @@
   </div>
   <div class="article-card card--medium"
        data-tags=""
-       data-vendors="Microsoft"
+       data-vendors=""
        data-severity="medium"
-       data-title="windows 11 kb5120998 update released with 35 changes and fixes"
-       data-id="d25d9bfda2aa7938"
-       data-published="2026-08-28T05:10:13-04:00"
+       data-title="defining an ai kill switch is hard, but necessary"
+       data-id="1a0cb18def2a71f3"
+       data-published="2026-08-28T13:30:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
         <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-28T05:10:13-04:00" title="28 August 2026, 04:10">28 August 2026, 04:10</time>
+        <time class="meta-time" data-iso="2026-08-28T13:30:00+00:00" title="28 August 2026, 08:30">28 August 2026, 08:30</time>
       </div>
-      <h3 class="card-title">Windows 11 KB5120998 update released with 35 changes and fixes</h3>
-      <p class="card-summary">Microsoft released the KB5120998 preview cumulative update for Windows 11 versions 25H2 and 24H2, which comes with 35 changes, including improvements to the Start menu, taskbar, and Windows search. [...]</p>
+      <h3 class="card-title">Defining an AI Kill Switch Is Hard, but Necessary</h3>
+      <p class="card-summary">Proposed legislation could mandate that companies be able to &#34;throttle, suspend, or shut ... down&#34; AI agents, but how and when to do that remain open questions.</p>
       <div class="card-bottom">
         <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1a0cb18def2a71f3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/defining-ai-kill-switch-hard-but-necessary" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="the vulnpocalypse is repricing the bug bounty economy"
+       data-id="cbab850a65749901"
+       data-published="2026-08-28T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T13:00:00+00:00" title="28 August 2026, 08:00">28 August 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">The Vulnpocalypse Is Repricing the Bug Bounty Economy</h3>
+      <p class="card-summary">The surge of AI-powered vulnerability reports is driving down bug bounty prices, and that could spell trouble for independent researchers.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cbab850a65749901.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/vulnpocalypse-repricing-bug-bounty-economy" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="68-year-old imprisoned after making $1.3 million by pirating iptv services"
+       data-id="dded40f3a9a75aa9"
+       data-published="2026-08-28T12:36:47-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-28T12:36:47-04:00" title="28 August 2026, 11:36">28 August 2026, 11:36</time>
+      </div>
+      <h3 class="card-title">68-year-old imprisoned after making $1.3 million by pirating IPTV services</h3>
+      <p class="card-summary">A 68-year-old has been sentenced in the U.K. to more than six years in prison for operating an illegal IPTV (Internet Protocol Television) service that generated £980,812 ($1.3 million) over three years. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
         </div>
       </div>
       <span class="card-source">BleepingComputer</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="../articles/d25d9bfda2aa7938.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/windows-11-kb5120998-update-released-with-35-changes-and-fixes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/dded40f3a9a75aa9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/68-year-old-imprisoned-after-making-13-million-by-pirating-iptv-services/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--critical"
-       data-tags="breach,exploit,zero-day"
-       data-vendors=""
-       data-severity="critical"
-       data-title="openai says reward hacking drove ai agents to exploit zero-days and breach hugging face"
-       data-id="8a8b9f2b98ad8217"
-       data-published="2026-08-28T00:06:19+05:30"
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="medium"
+       data-title="ai is accelerating vulnerability discovery. can defenders keep up?"
+       data-id="ce1ddc078af16e19"
+       data-published="2026-08-28T10:00:10-04:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-08-28T00:06:19+05:30" title="27 August 2026, 13:36">27 August 2026, 13:36</time>
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-28T10:00:10-04:00" title="28 August 2026, 09:00">28 August 2026, 09:00</time>
       </div>
-      <h3 class="card-title">OpenAI Says Reward Hacking Drove AI Agents to Exploit Zero-Days and Breach Hugging Face</h3>
-      <p class="card-summary">OpenAI on Wednesday revealed that reward hacking was a key driver behind the artificial intelligence (AI)-powered hack of Hugging Face last month, adding that it found evidence of misaligned behavior as early as late May.</p>
+      <h3 class="card-title">AI Is Accelerating Vulnerability Discovery. Can Defenders Keep Up?</h3>
+      <p class="card-summary">AI is accelerating vulnerability discovery, putting pressure on systems built to enrich, prioritize, and remediate flaws at a slower pace. Action1 explains why defenders increasingly need to correlate multiple intelligence sources and turn vulnerability…</p>
       <div class="card-bottom">
         <div class="card-hints">
         </div>
         <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">zero-day</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">The Hacker News</span>
+      <span class="card-source">BleepingComputer</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI is accelerating vulnerability discovery, putting pressure on systems built to enrich, prioritize, and remediate flaws at a slower pace. Action1 explains why defenders increasingly need to correlate multiple intelligence sources and turn vulnerability data into faster remediation. [...]</p></div>
       <div class="detail-links">
-        <a href="../articles/8a8b9f2b98ad8217.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/ce1ddc078af16e19.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ai-is-accelerating-vulnerability-discovery-can-defenders-keep-up/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

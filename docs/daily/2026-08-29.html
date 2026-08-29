@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 August 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">2 articles</span>
     </div>
   </div>
 
@@ -48,6 +48,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -61,14 +62,45 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="berlin refuses to pay hackers who stole data from the city&#39;s state network"
+       data-id="b11c05e11fc20c88"
+       data-published="2026-08-29T03:00:52+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-29T03:00:52+05:30" title="28 August 2026, 16:30">28 August 2026, 16:30</time>
+      </div>
+      <h3 class="card-title">Berlin Refuses to Pay Hackers Who Stole Data From the City&#39;s State Network</h3>
+      <p class="card-summary">Berlin&#39;s state government has confirmed that it is the target of an extortion attempt following the August compromise of the city&#39;s state administrative network, and said it will not meet the extortionists&#39; demands.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b11c05e11fc20c88.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""

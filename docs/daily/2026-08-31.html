@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">31 August 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">15 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>2 high-severity advisories published today</li>
+        <li>Microsoft, Cisco ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -47,7 +49,9 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -71,10 +75,162 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="weekly recap: chinese spy proxy, ai agents go off-task, router backdoors and more"
+       data-id="29511bfd80300e33"
+       data-published="2026-08-31T19:20:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-31T19:20:00+05:30" title="31 August 2026, 08:50">31 August 2026, 08:50</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More</h3>
+      <p class="card-summary">The boring parts caused most of the trouble.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/29511bfd80300e33.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="valleyrat backdoor hides in signed adware that users add to antivirus exclusions"
+       data-id="46c7944ff1e7aff4"
+       data-published="2026-08-31T17:44:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-31T17:44:00+05:30" title="31 August 2026, 07:14">31 August 2026, 07:14</time>
+      </div>
+      <h3 class="card-title">ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions</h3>
+      <p class="card-summary">The threat actor known as Silver Fox has been observed distributing the ValleyRAT backdoor disguised as a signed Chinese adware application, running the malware under a trusted process to slip past users who add such software to their antivirus exclusions.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/46c7944ff1e7aff4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai model rules are not security controls"
+       data-id="71d26d7a831f2489"
+       data-published="2026-08-31T17:34:26+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-31T17:34:26+00:00" title="31 August 2026, 12:34">31 August 2026, 12:34</time>
+      </div>
+      <h3 class="card-title">AI Model Rules Are Not Security Controls</h3>
+      <p class="card-summary">OpenAI&#39;s Hugging Face attack postmortem shows agents don&#39;t care about rules — they need strong controls.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/71d26d7a831f2489.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="aurora ransomware operators use cursor ai in attacks against 10 targets"
+       data-id="2563f9dffac8deb1"
+       data-published="2026-08-31T17:17:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-31T17:17:24+05:30" title="31 August 2026, 06:47">31 August 2026, 06:47</time>
+      </div>
+      <h3 class="card-title">Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets</h3>
+      <p class="card-summary">Threat actors associated with Aurora (aka Aur0ra) ransomware have been observed using SpaceX&#39;s artificial intelligence (AI)-powered coding assistant Cursor to break into target networks, according to findings from CloudSEK and Gambit Security.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2563f9dffac8deb1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags=""
+       data-vendors=""
+       data-severity="low"
+       data-title="securing claude code: the new compliance api, local visibility, and identity governance"
+       data-id="c05ae2ebcf00d207"
+       data-published="2026-08-31T17:01:47+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-08-31T17:01:47+05:30" title="31 August 2026, 06:31">31 August 2026, 06:31</time>
+      </div>
+      <h3 class="card-title">Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance</h3>
+      <p class="card-summary">Claude Code reads files, runs shell commands, invokes MCP tools, and acts through the credentials available on a developer’s machine. Anthropic’s new Compliance API endpoints give security teams their clearest view yet into that activity.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c05ae2ebcf00d207.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Cisco,Linux,VMware"
@@ -132,6 +288,160 @@
       <div class="detail-links">
         <a href="../articles/2afd1a8ae1a4f177.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft exchange online outage causes email failures, auth issues"
+       data-id="d23bdd13b10e1309"
+       data-published="2026-08-31T12:56:57-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-08-31T12:56:57-04:00" title="31 August 2026, 11:56">31 August 2026, 11:56</time>
+      </div>
+      <h3 class="card-title">Microsoft Exchange Online outage causes email failures, auth issues</h3>
+      <p class="card-summary">Microsoft is investigating a widespread service issue causing authentication issues, email delays and failures, and various other issues for Exchange Online customers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d23bdd13b10e1309.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai confirms chatgpt outage as users report errors"
+       data-id="75f7828b673ff9eb"
+       data-published="2026-08-31T12:50:50-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-08-31T12:50:50-04:00" title="31 August 2026, 11:50">31 August 2026, 11:50</time>
+      </div>
+      <h3 class="card-title">OpenAI confirms ChatGPT outage as users report errors</h3>
+      <p class="card-summary">ChatGPT Work is experiencing a partial outage, and users across multiple subscription plans may be unable to start or continue tasks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/75f7828b673ff9eb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-outage-as-users-report-errors/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Cisco"
+       data-severity="medium"
+       data-title="chinese fire ant hackers turn cisco routers into spying platforms"
+       data-id="c16d15124a2b9936"
+       data-published="2026-08-31T10:52:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-08-31T10:52:03-04:00" title="31 August 2026, 09:52">31 August 2026, 09:52</time>
+      </div>
+      <h3 class="card-title">Chinese Fire Ant hackers turn Cisco routers into spying platforms</h3>
+      <p class="card-summary">The researchers discovered Fire Ant&#39;s new tactic after finding an active GRE (Generic Routing Encapsulation) tunnel interface on a Cisco IOS XR router that could not be explained by a running configuration or commit history. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c16d15124a2b9936.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/chinese-fire-ant-hackers-turn-cisco-routers-into-spying-platforms/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="low"
+       data-title="file servers are here to stay. here’s how to manage them securely"
+       data-id="f10ea5c3f10695b9"
+       data-published="2026-08-31T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-08-31T10:00:10-04:00" title="31 August 2026, 09:00">31 August 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">File servers are here to stay. Here’s how to manage them securely</h3>
+      <p class="card-summary">File servers remain a critical part of many IT environments, but managing access securely can become complex as permissions accumulate. tenfold Software outlines five best practices for simplifying file server administration and maintaining least-privilege…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>File servers remain a critical part of many IT environments, but managing access securely can become complex as permissions accumulate. tenfold Software outlines five best practices for simplifying file server administration and maintaining least-privilege access. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/f10ea5c3f10695b9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/file-servers-are-here-to-stay-heres-how-to-manage-them-securely/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware,ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="berlin confirms data theft after rhysida ransomware attack claims"
+       data-id="01401d164849879f"
+       data-published="2026-08-31T09:30:01-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-08-31T09:30:01-04:00" title="31 August 2026, 08:30">31 August 2026, 08:30</time>
+      </div>
+      <h3 class="card-title">Berlin confirms data theft after Rhysida ransomware attack claims</h3>
+      <p class="card-summary">Berlin&#39;s city administration has confirmed that cybercriminals are attempting to extort the city after the Rhysida ransomware gang listed it on their data leak site. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/01401d164849879f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

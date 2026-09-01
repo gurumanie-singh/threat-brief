@@ -29,7 +29,12 @@
     },
     "email_summary": "Threat actors are exploiting a newly patched critical security flaw impacting JFrog Artifactory merely days after public disclosure, according to watchTowr. Tracked as CVE-2026-82329. Severity is rated critical.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "Dark Reading",
+        "link": "https://www.darkreading.com/application-security/attackers-pounce-critical-artifactory-flaw-disclosure"
+      }
+    ],
     "highlighted": false
   },
   {
@@ -55,6 +60,90 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Brazilian financial services, retail, and e-commerce organizations have become the target of a financially motivated threat actor dubbed Breeze Comet (formerly UNC5669) since 2024. Google Threat Intelligence Group (GTIG) and Mandiant teams described the threat actor as \"specializing in manipulating payment systems and banking software in Brazil to conduct fraudulent transfers.\" The adversary.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "96ebd739012f392a",
+    "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+    "published": "2026-09-01T22:40:28+00:00",
+    "fetched_at": "2026-09-01T23:00:09.908275+00:00",
+    "summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana. KrebsOnSecurity...",
+    "tags": [
+      "breach",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-09-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana. KrebsOnSecurity...",
+      "technical": "On Monday, Aug. 31, a source alerted KrebsOnSecurity to a service advertised by a new user on the Russian cybercrime forum Exploit , offering access to digital scans of identity documents on more than 170 million people in North America. The source brought it to my attention because the proprietor of this identity theft service offered my Virginia drivers license as a free sample in their initial sales thread on Exploit. KrebsOnSecurity also has learned that the New Orleans field office of the Federal Bureau of Investigation (FBI) today launched an official inquiry into the source of the images. Some of the records list their source as CDL, presumably short for commercial drivers license.",
+      "impact": "On Monday, Aug. 31, a source alerted KrebsOnSecurity to a service advertised by a new user on the Russian cybercrime forum Exploit , offering access to digital scans of identity documents on more than 170 million people in North America. The people behind Nexus claim the license images are coming from an active breach at a major identity verification company whose customers include multiple Fortune 500 companies. The trust page of idscan.net states that the company provides identity verification services for numerous big brands, including Hertz, Target , Fedex , Motorola Solutions , the financial services giant Jack Henry , and Caesars Entertainment .\n\nAssessed severity: MEDIUM.",
+      "mitigation": "This episode should further strengthen the resolve for people who are fighting back against online ID schemes which are requiring countless providers to ask for drivers licenses in order to access services under the guise of protecting kids, Edwards told KrebsOnSecurity. Defense Secretary Pete Hegseth, who is one of several high-ranking U.S. government officials whose drivers licenses can be found for sale. KrebsOnSecurity sought comment from Hertz and will update this story in the event they reply. To enter Planet13 s weed dispensary in Las Vegas, one must pass through a red telephone booth.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0f91ac469efbbb7e",
+    "title": "Stronger Security Drives Ransomware Groups to Recruit From Within",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/stronger-security-drives-ransomware-groups-to-recruit-from-within",
+    "published": "2026-09-01T21:03:19+00:00",
+    "fetched_at": "2026-09-01T23:00:11.318749+00:00",
+    "summary": "Some security researchers have observed an uptick in insider-assisted ransomware attacks, but malicious insiders pose other threats that cost companies millions.",
+    "tags": [
+      "ransomware"
+    ],
+    "day": "2026-09-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Some security researchers have observed an uptick in insider-assisted ransomware attacks, but malicious insiders pose other threats that cost companies millions.",
+    "quick_take": "",
+    "sections": {
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "Some security researchers have observed an uptick in insider-assisted ransomware attacks, but malicious insiders pose other threats that cost companies millions.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d28e00016dbe1b9d",
+    "title": "AI Model Evaluator METR Hit by Credential Theft, Probing",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/identity-access-management-security/ai-model-evaluator-metr-credential-theft-probing",
+    "published": "2026-09-01T20:13:09+00:00",
+    "fetched_at": "2026-09-01T23:00:11.319147+00:00",
+    "summary": "In one attack, threat actors stole an API key that ultimately led to the consumption of $600,000 in public AI model credits for the security nonprofit.",
+    "tags": [],
+    "day": "2026-09-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "In one attack, threat actors stole an API key that ultimately led to the consumption of $600,000 in public AI model credits for the security nonprofit.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "In one attack, threat actors stole an API key that ultimately led to the consumption of $600,000 in public AI model credits for the security nonprofit.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -143,6 +232,35 @@
       "technical": "The technique is called ClickFix, and it was the most common initial access method Microsoft’s team observed last year, accounting"
     },
     "email_summary": "The most common way into a company last year was to ask. A web page tells the visitor to prove they are not a robot.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a1daa84416dcdf4f",
+    "title": "Hackers abuse Faronics Deploy admin tool to install ScreenConnect",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-abuse-faronics-deploy-admin-tool-to-install-screenconnect/",
+    "published": "2026-09-01T16:53:23-04:00",
+    "fetched_at": "2026-09-01T23:00:10.142702+00:00",
+    "summary": "Phishing actors are abusing the legitimate Faronics Deploy endpoint-management platform to gain remote administrative control over victim computers and install the ScreenConnect remote support software. [...]",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-09-01",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Phishing actors are abusing the legitimate Faronics Deploy endpoint-management platform to gain remote administrative control over victim computers and install the ScreenConnect remote support software. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Phishing actors are abusing the legitimate Faronics Deploy endpoint-management platform to gain remote administrative control over victim computers and install the ScreenConnect remote support software. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Phishing actors are abusing the legitimate Faronics Deploy endpoint-management platform to gain remote administrative control over victim computers and install the ScreenConnect remote support software. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -279,6 +397,10 @@
     "email_summary": "Threat actors are exploiting two critical flaws impacting Langflow and Ruby on Rails, according to new findings from VulnCheck. Tracked as CVE-2026-0768, CVE-2026-66066. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [
+      {
+        "source": "Dark Reading",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise"
+      },
       {
         "source": "BleepingComputer",
         "link": "https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/"

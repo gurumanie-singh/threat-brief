@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">2 September 2026</h1>
-      <span class="brief-sub">18 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -37,8 +37,8 @@
       <ul class="strip-bullets">
         <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>AWS, Google ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -51,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -65,27 +66,58 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="fake software installers disable windows update and weaken microsoft defender"
+       data-id="3d05f5e7afff8b86"
+       data-published="2026-09-02T22:11:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-02T22:11:06+05:30" title="2 September 2026, 11:41">2 September 2026, 11:41</time>
+      </div>
+      <h3 class="card-title">Fake Software Installers Disable Windows Update and Weaken Microsoft Defender</h3>
+      <p class="card-summary">An active malware campaign is using bogus software-download websites to impersonate trusted vendors and distribute malicious installers.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3d05f5e7afff8b86.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/fake-software-installers-disable.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit,malware,patch"
        data-vendors="AWS"
@@ -238,6 +270,38 @@
       <div class="detail-links">
         <a href="../articles/de77fbeb11946326.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/how-to-secure-enterprise-ai-from.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="threat gang &#39;springs&#39; vishing attacks on microsoft teams users"
+       data-id="63c125e0c1da26c4"
+       data-published="2026-09-02T16:51:21+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-02T16:51:21+00:00" title="2 September 2026, 11:51">2 September 2026, 11:51</time>
+      </div>
+      <h3 class="card-title">Threat Gang &#39;Springs&#39; Vishing Attacks on Microsoft Teams Users</h3>
+      <p class="card-summary">The &#34;Spring Ring&#34; operation aims to compromise users of the collaboration suite to remotely access their sessions, spread malware, and even take over infrastructure.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/63c125e0c1da26c4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -429,6 +493,40 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers exploit critical jfrog artifactory flaw to forge admin tokens"
+       data-id="bebd37f8bd152da5"
+       data-published="2026-09-02T11:47:08-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-02T11:47:08-04:00" title="2 September 2026, 10:47">2 September 2026, 10:47</time>
+      </div>
+      <h3 class="card-title">Hackers exploit critical JFrog Artifactory flaw to forge admin tokens</h3>
+      <p class="card-summary">A critical authentication bypass vulnerability (CVE-2026-82329) in JFrog Artifactory is being exploited in attacks to create tokens that provide administrative access. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bebd37f8bd152da5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,ransomware"
        data-vendors=""
@@ -615,36 +713,6 @@
       <div class="detail-links">
         <a href="../articles/ff7ddfdcedf3d980.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,patch"
-       data-vendors="AWS"
-       data-severity="medium"
-       data-title="old, unpatched flaws give attackers access to philippines nuclear agency"
-       data-id="b7a587c74990749f"
-       data-published="2026-09-02T01:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-02T01:00:00+00:00" title="1 September 2026, 20:00">1 September 2026, 20:00</time>
-      </div>
-      <h3 class="card-title">Old, Unpatched Flaws Give Attackers Access to Philippines Nuclear Agency</h3>
-      <p class="card-summary">Threat actors exploited commodity in ownCloud to gain initial access, resulting in stolen reactor databases, personnel records, and credential stores.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/b7a587c74990749f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyberattacks-data-breaches/old-unpatched-flaws-attackers-philippines-nuclear-agency" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

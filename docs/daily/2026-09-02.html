@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">2 September 2026</h1>
-      <span class="brief-sub">10 articles</span>
+      <span class="brief-sub">18 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>5 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>AWS, Google ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -72,17 +73,208 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,patch"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="malicious .git configs can make claude, codex, cursor, and other ai agents run attacker code"
+       data-id="1bd41ee5b86956bd"
+       data-published="2026-09-02T19:36:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-02T19:36:59+05:30" title="2 September 2026, 09:06">2 September 2026, 09:06</time>
+      </div>
+      <h3 class="card-title">Malicious .git Configs Can Make Claude, Codex, Cursor, and Other AI Agents Run Attacker Code</h3>
+      <p class="card-summary">Manifold Security has disclosed eight security flaws across seven command-line AI coding agents in which a repository&#39;s own Git configuration names a command that the agent runs on the developer&#39;s machine, four of them still unpatched at publication.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1bd41ee5b86956bd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious apache modules hijack brazilian government site traffic to push betting pages"
+       data-id="52036bdf9d5e6638"
+       data-published="2026-09-02T19:14:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-02T19:14:16+05:30" title="2 September 2026, 08:44">2 September 2026, 08:44</time>
+      </div>
+      <h3 class="card-title">Malicious Apache Modules Hijack Brazilian Government Site Traffic to Push Betting Pages</h3>
+      <p class="card-summary">A Chinese-speaking cybercrime cluster known as Gambling Goblin has been observed installing malicious Apache modules on compromised web servers run by Brazilian government and educational institutions, and using them to divert visitors to…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A Chinese-speaking cybercrime cluster known as Gambling Goblin has been observed installing malicious Apache modules on compromised web servers run by Brazilian government and educational institutions, and using them to divert visitors to attacker-controlled pages promoting online gambling and sports betting.</p></div>
+      <div class="detail-links">
+        <a href="../articles/52036bdf9d5e6638.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/malicious-apache-modules-hijack.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="bgp hijack delivers malicious virtualizor update that establishes persistent root access"
+       data-id="b3d859d245d745c3"
+       data-published="2026-09-02T18:42:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-02T18:42:45+05:30" title="2 September 2026, 08:12">2 September 2026, 08:12</time>
+      </div>
+      <h3 class="card-title">BGP Hijack Delivers Malicious Virtualizor Update That Establishes Persistent Root Access</h3>
+      <p class="card-summary">Virtualizor said hackers used a Border Gateway Protocol (BGP) hijack to divert Softaculous traffic. The hackers then used the diverted update traffic to deliver a malicious Virtualizor package to some installations.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b3d859d245d745c3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/bgp-hijack-delivers-malicious.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="meta ads push streamrat android trojan that can gain near-complete device control"
+       data-id="2dc784d623e84727"
+       data-published="2026-09-02T17:52:02+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-02T17:52:02+05:30" title="2 September 2026, 07:22">2 September 2026, 07:22</time>
+      </div>
+      <h3 class="card-title">Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a new Android banking trojan called StreamRat that was promoted to Spanish-speaking users through a fake television-streaming campaign on Meta and can give operators near-complete control of infected devices.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2dc784d623e84727.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/meta-ads-push-streamrat-android-trojan.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="how to secure enterprise ai: from adoption to incident readiness"
+       data-id="de77fbeb11946326"
+       data-published="2026-09-02T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-02T17:00:00+05:30" title="2 September 2026, 06:30">2 September 2026, 06:30</time>
+      </div>
+      <h3 class="card-title">How to Secure Enterprise AI: From Adoption to Incident Readiness</h3>
+      <p class="card-summary">The debate about whether AI delivers business value is over. The challenge now is implementing it at scale and securely across every function while meeting board-level pressure to move fast.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/de77fbeb11946326.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/how-to-secure-enterprise-ai-from.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="attackers exploit two sonicwall sma 1000 zero-days that may form an attack chain"
+       data-id="1514bc76e8fbf1f9"
+       data-published="2026-09-02T16:23:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-02T16:23:49+05:30" title="2 September 2026, 05:53">2 September 2026, 05:53</time>
+      </div>
+      <h3 class="card-title">Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain</h3>
+      <p class="card-summary">SonicWall has released security updates to address two security flaws impacting its Secure Mobile Access (SMA) 1000 series VPN appliances that have been exploited in zero-day attacks.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1514bc76e8fbf1f9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="vulnerability"
        data-vendors=""
@@ -234,6 +426,71 @@
       <div class="detail-links">
         <a href="../articles/01e0a7102c073f11.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ransomware protection for msps: a 6-point checklist for faster recovery"
+       data-id="4bff26df30b517a8"
+       data-published="2026-09-02T10:02:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-02T10:02:12-04:00" title="2 September 2026, 09:02">2 September 2026, 09:02</time>
+      </div>
+      <h3 class="card-title">Ransomware protection for MSPs: A 6-point checklist for faster recovery</h3>
+      <p class="card-summary">Ransomware resilience requires more than backups or endpoint detection alone. Acronis outlines six capabilities MSPs should test across client environments, from reducing exposure and detecting attacks to preserving recovery points and restoring operations…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Ransomware resilience requires more than backups or endpoint detection alone. Acronis outlines six capabilities MSPs should test across client environments, from reducing exposure and detecting attacks to preserving recovery points and restoring operations quickly. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/4bff26df30b517a8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ransomware-protection-for-msps-a-6-point-checklist-for-faster-recovery/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="dropbox accounts breached through lenovo email verification flaw"
+       data-id="9a947ad2f2747263"
+       data-published="2026-09-02T08:30:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-02T08:30:22-04:00" title="2 September 2026, 07:30">2 September 2026, 07:30</time>
+      </div>
+      <h3 class="card-title">Dropbox accounts breached through Lenovo email verification flaw</h3>
+      <p class="card-summary">Dropbox is warning some users that an unauthorized party accessed their accounts by exploiting a flaw in Lenovo&#39;s email verification process to register fraudulent Lenovo IDs. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9a947ad2f2747263.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

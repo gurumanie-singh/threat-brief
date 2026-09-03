@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">3 September 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -36,6 +36,7 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,8 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -61,6 +64,8 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
@@ -68,13 +73,139 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="attackers turn trusted node.js runtime into malware delivery tool in targeted attacks"
+       data-id="35b47b561613c05d"
+       data-published="2026-09-03T16:13:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-03T16:13:01+05:30" title="3 September 2026, 05:43">3 September 2026, 05:43</time>
+      </div>
+      <h3 class="card-title">Attackers Turn Trusted Node.js Runtime Into Malware Delivery Tool in Targeted Attacks</h3>
+      <p class="card-summary">Threat actors are leveraging the trusted Node.js JavaScript runtime in multiple cyber attacks as a way to deploy malicious payloads.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/35b47b561613c05d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-turn-trusted-nodejs-runtime.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="shai-hulud&#39;s reach just grew to 469 credential locations. here&#39;s what that means"
+       data-id="417ebdbd48eeb605"
+       data-published="2026-09-03T16:06:39+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-03T16:06:39+05:30" title="3 September 2026, 05:36">3 September 2026, 05:36</time>
+      </div>
+      <h3 class="card-title">Shai-Hulud&#39;s Reach Just Grew to 469 Credential Locations. Here&#39;s What That Means</h3>
+      <p class="card-summary">In early August, GitGuardian researchers found that a recent Shai-Hulud infostealer worm variant had evolved to scan for credentials across 469 locations across developer environments, Continuous Integration/Continuous Deployment (CI/CD) tooling, cloud…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>In early August, GitGuardian researchers found that a recent Shai-Hulud infostealer worm variant had evolved to scan for credentials across 469 locations across developer environments, Continuous Integration/Continuous Deployment (CI/CD) tooling, cloud configurations, and even AI tool configs.</p></div>
+      <div class="detail-links">
+        <a href="../articles/417ebdbd48eeb605.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/shai-huluds-reach-just-grew-to-469.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="pegasus zero-click spyware exploit infects serbian student movement member&#39;s iphone"
+       data-id="5cfc9706a2ecfa46"
+       data-published="2026-09-03T14:13:17+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-09-03T14:13:17+05:30" title="3 September 2026, 03:43">3 September 2026, 03:43</time>
+      </div>
+      <h3 class="card-title">Pegasus Zero-Click Spyware Exploit Infects Serbian Student Movement Member&#39;s iPhone</h3>
+      <p class="card-summary">The iPhone belonging to a member of Serbia&#39;s student protest movement was infected with NSO Group&#39;s Pegasus spyware, according to new findings from the Citizen Lab in collaboration with the SHARE Foundation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5cfc9706a2ecfa46.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/pegasus-zero-click-spyware-exploit.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="&#39;breeze comet&#39; tears into brazilian &amp;amp; global financial systems"
+       data-id="febf1f11e01d3e58"
+       data-published="2026-09-03T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-03T12:00:00+00:00" title="3 September 2026, 07:00">3 September 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">&#39;Breeze Comet&#39; Tears Into Brazilian &amp;amp; Global Financial Systems</h3>
+      <p class="card-summary">Brazil&#39;s most sophisticated threat group is making light work of the country&#39;s financial systems, putting money directly into its own pocket.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/febf1f11e01d3e58.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/breeze-comet-brazilian-global-financial-systems" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="exploit,vulnerability,zero-day"
        data-vendors=""
@@ -138,6 +269,97 @@
       <div class="detail-links">
         <a href="../articles/3650572829386b7b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says kb5120998 windows update resets desktop settings"
+       data-id="4904b92988fbfeb9"
+       data-published="2026-09-03T08:16:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-03T08:16:32-04:00" title="3 September 2026, 07:16">3 September 2026, 07:16</time>
+      </div>
+      <h3 class="card-title">Microsoft says KB5120998 Windows update resets desktop settings</h3>
+      <p class="card-summary">Microsoft has confirmed that desktop settings are lost or reset on some Windows devices after installing the KB5120998 August 2026 preview update. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4904b92988fbfeb9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-kb5120998-windows-update-resets-desktop-settings/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="plex warns users to patch security vulnerabilities immediately"
+       data-id="a844ba96681dbd28"
+       data-published="2026-09-03T07:02:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-03T07:02:22-04:00" title="3 September 2026, 06:02">3 September 2026, 06:02</time>
+      </div>
+      <h3 class="card-title">Plex warns users to patch security vulnerabilities immediately</h3>
+      <p class="card-summary">Plex urged users this week to update their desktop clients and media servers immediately to patch multiple security vulnerabilities. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a844ba96681dbd28.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/plex-warns-users-to-patch-security-vulnerabilities-immediately/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft teams, outlook fail to launch on arm-based windows pcs"
+       data-id="a8f14d6c7080c03a"
+       data-published="2026-09-03T04:55:25-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-03T04:55:25-04:00" title="3 September 2026, 03:55">3 September 2026, 03:55</time>
+      </div>
+      <h3 class="card-title">Microsoft Teams, Outlook fail to launch on ARM-based Windows PCs</h3>
+      <p class="card-summary">Microsoft is working to fix a known issue that causes crashes and launch failures for Microsoft Teams and New Outlook users after installing updates released since the August 2026 Patch Tuesday. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a8f14d6c7080c03a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-outlook-fail-to-launch-on-arm-based-windows-pcs/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

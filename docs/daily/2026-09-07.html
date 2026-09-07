@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">7 September 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">15 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -64,7 +66,10 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
@@ -72,13 +77,178 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="fake it calls target executives in microsoft 365 data theft and extortion attacks"
+       data-id="5a96f0ef0c99dcf8"
+       data-published="2026-09-07T21:21:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-07T21:21:56+05:30" title="7 September 2026, 10:51">7 September 2026, 10:51</time>
+      </div>
+      <h3 class="card-title">Fake IT Calls Target Executives in Microsoft 365 Data Theft and Extortion Attacks</h3>
+      <p class="card-summary">Threat hunters have disclosed details of a widespread data theft and extortion threat cluster that&#39;s targeting Microsoft 365 and other software-as-a-service (SaaS) offerings through information technology (IT) help desk vishing, adversary-in-the-middle…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat hunters have disclosed details of a widespread data theft and extortion threat cluster that&#39;s targeting Microsoft 365 and other software-as-a-service (SaaS) offerings through information technology (IT) help desk vishing, adversary-in-the-middle (AitM) token theft, and residential-proxy sign-ins.</p></div>
+      <div class="detail-links">
+        <a href="../articles/5a96f0ef0c99dcf8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability,zero-day"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="weekly recap: chrome 0-day, router hijacks, coder supply chain attack and more"
+       data-id="6261858de4632a5e"
+       data-published="2026-09-07T20:06:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-07T20:06:07+05:30" title="7 September 2026, 09:36">7 September 2026, 09:36</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More</h3>
+      <p class="card-summary">Turning off email images should at least stop the pictures. This week, attackers had a workaround: a scannable QR code built out of text.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6261858de4632a5e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="your cloud security checklist doesn&#39;t work the way you think it does"
+       data-id="6e8d069e412a87ac"
+       data-published="2026-09-07T17:15:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-07T17:15:00+05:30" title="7 September 2026, 06:45">7 September 2026, 06:45</time>
+      </div>
+      <h3 class="card-title">Your Cloud Security Checklist Doesn&#39;t Work the Way You Think It Does</h3>
+      <p class="card-summary">If managing security across multiple cloud providers wasn&#39;t hard enough, each one fails in a different way. For the 2026 Cloud Security Index, Intruder analyzed misconfiguration data from 3,000 organizations across AWS, Azure, and Google Cloud and found…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>If managing security across multiple cloud providers wasn&#39;t hard enough, each one fails in a different way. For the 2026 Cloud Security Index, Intruder analyzed misconfiguration data from 3,000 organizations across AWS, Azure, and Google Cloud and found that risk profiles across providers have almost nothing in common. Here’s what the data looks like.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6e8d069e412a87ac.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/your-cloud-security-checklist-doesnt.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="rogue screenconnect clients spread four-stage vbscript chain to newly connected hosts"
+       data-id="f90132f2a6d8dc1e"
+       data-published="2026-09-07T17:06:39+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-07T17:06:39+05:30" title="7 September 2026, 06:36">7 September 2026, 06:36</time>
+      </div>
+      <h3 class="card-title">Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of worm-like activity that abuses ConnectWise ScreenConnect to distribute a malicious Visual Basic Script (VBScript) payload to newly connected systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f90132f2a6d8dc1e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="telerik ui padding-oracle bug chained to unauthenticated rce — public exploit released"
+       data-id="772d1a8e7e99b242"
+       data-published="2026-09-07T16:50:14+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-07T16:50:14+05:30" title="7 September 2026, 06:20">7 September 2026, 06:20</time>
+      </div>
+      <h3 class="card-title">Telerik UI Padding-Oracle Bug Chained to Unauthenticated RCE — Public Exploit Released</h3>
+      <p class="card-summary">A TantoSec proof-of-concept turns an AES-CBC &#34;padding oracle&#34; in Telerik UI for ASP.NET AJAX into unauthenticated remote code execution — but only against applications in a specific non-default configuration, and Progress patched the chain in July. There…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/772d1a8e7e99b242.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/telerik-ui-padding-oracle-bug-chained.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,patch,vulnerability"
        data-vendors=""
@@ -142,6 +312,133 @@
       <div class="detail-links">
         <a href="../articles/e1322b5461174eb6.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/jsceal-malware-can-bypass-google.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,vulnerability,zero-day"
+       data-vendors="Adobe,Linux"
+       data-severity="critical"
+       data-title="magento stylesmuggler zero-day exploited to deploy linux backdoor"
+       data-id="fc882423aa829a95"
+       data-published="2026-09-07T12:50:29-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Adobe</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-07T12:50:29-04:00" title="7 September 2026, 11:50">7 September 2026, 11:50</time>
+      </div>
+      <h3 class="card-title">Magento StyleSmuggler zero-day exploited to deploy Linux backdoor</h3>
+      <p class="card-summary">A zero-day vulnerability dubbed &#34;StyleSmuggler&#34; affecting all versions of Magento and Adobe Commerce is being exploited in attacks to deploy a backdoor. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fc882423aa829a95.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/magento-stylesmuggler-zero-day-exploited-to-deploy-linux-backdoor/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="bigbear microsoft 365 phishing service bypassed mfa at 258 organizations"
+       data-id="2cd6d27514c64b80"
+       data-published="2026-09-07T11:39:51-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-07T11:39:51-04:00" title="7 September 2026, 10:39">7 September 2026, 10:39</time>
+      </div>
+      <h3 class="card-title">BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations</h3>
+      <p class="card-summary">A phishing-as-a-service framework called BigBear 2.0 has been used to bypass multi-factor authentication at 258 organizations and steal more than 5,000 Microsoft 365 credentials. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2cd6d27514c64b80.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="mathspace discloses data breach affecting over 1 million people"
+       data-id="891a160da1dd1437"
+       data-published="2026-09-07T09:05:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-07T09:05:11-04:00" title="7 September 2026, 08:05">7 September 2026, 08:05</time>
+      </div>
+      <h3 class="card-title">Mathspace discloses data breach affecting over 1 million people</h3>
+      <p class="card-summary">Online maths learning platform Mathspace disclosed over the weekend that attackers stole data from more than 1 million students, staff, and parents after breaching its Metabase internal reporting system. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/891a160da1dd1437.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/mathspace-discloses-data-breach-affecting-over-1-million-people/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="trezor data breach impact now reaches 81,000 customers"
+       data-id="211b598ebb7d6576"
+       data-published="2026-09-07T08:16:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-07T08:16:32-04:00" title="7 September 2026, 07:16">7 September 2026, 07:16</time>
+      </div>
+      <h3 class="card-title">Trezor data breach impact now reaches 81,000 customers</h3>
+      <p class="card-summary">Cryptocurrency hardware wallet maker Trezor says an August data breach at its shipping and logistics provider, ShipMonk, affects an additional 67,000 U.S. customers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/211b598ebb7d6576.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/trezor-data-breach-impact-now-reaches-81-000-customers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

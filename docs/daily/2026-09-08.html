@@ -27,10 +27,20 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">8 September 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Google ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,11 +64,183 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Apple,Google"
+       data-severity="medium"
+       data-title="wechat zero-click worm took over accounts on iphone and android via incoming calls"
+       data-id="cb147e9292d6ac1d"
+       data-published="2026-09-08T17:24:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-08T17:24:29+05:30" title="8 September 2026, 06:54">8 September 2026, 06:54</time>
+      </div>
+      <h3 class="card-title">WeChat Zero-Click Worm Took Over Accounts on iPhone and Android via Incoming Calls</h3>
+      <p class="card-summary">Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and demonstrated it spreading among three test phones.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cb147e9292d6ac1d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="what it took to reach 1 billion build manifests"
+       data-id="da3cb064a6ba489b"
+       data-published="2026-09-08T17:19:02+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-08T17:19:02+05:30" title="8 September 2026, 06:49">8 September 2026, 06:49</time>
+      </div>
+      <h3 class="card-title">What It Took to Reach 1 Billion Build Manifests</h3>
+      <p class="card-summary">In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/da3cb064a6ba489b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="freeipa flaw chain lets anonymous clients create reusable administrator credentials"
+       data-id="2e2059d93baa612d"
+       data-published="2026-09-08T16:52:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-08T16:52:07+05:30" title="8 September 2026, 06:22">8 September 2026, 06:22</time>
+      </div>
+      <h3 class="card-title">FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials</h3>
+      <p class="card-summary">A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2e2059d93baa612d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,malware,patch,vulnerability,zero-day"
+       data-vendors="Adobe"
+       data-severity="critical"
+       data-title="adobe patches magento zero-day exploited to deploy rust backdoor and php web shell"
+       data-id="f9593cb804845d0e"
+       data-published="2026-09-08T14:43:47+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-09-08T14:43:47+05:30" title="8 September 2026, 04:13">8 September 2026, 04:13</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell</h3>
+      <p class="card-summary">Adobe on Monday released security patches to address a maximum-severity flaw impacting Adobe Commerce and Magento Open Source that has come under active exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f9593cb804845d0e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="bengalseo poisons bing search results to deliver mayabot and tech support scams"
+       data-id="d1a39f3e3b4ae086"
+       data-published="2026-09-08T14:13:51+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-08T14:13:51+05:30" title="8 September 2026, 03:43">8 September 2026, 03:43</time>
+      </div>
+      <h3 class="card-title">BengalSEO Poisons Bing Search Results to Deliver MayaBot and Tech Support Scams</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a sprawling search engine optimization (SEO) poisoning campaign that paves the way for malware deployment and tech support scams.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d1a39f3e3b4ae086.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/bengalseo-poisons-bing-search-results.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="AWS"
@@ -83,6 +266,97 @@
       <div class="detail-links">
         <a href="../articles/b0b8cea934865bae.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="webinar: the forgotten google workspace access that can lead to a breach"
+       data-id="e9aef72e60863769"
+       data-published="2026-09-08T08:40:48-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-08T08:40:48-04:00" title="8 September 2026, 07:40">8 September 2026, 07:40</time>
+      </div>
+      <h3 class="card-title">Webinar: The forgotten Google Workspace access that can lead to a breach</h3>
+      <p class="card-summary">Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing companies reduce their exposure. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/e9aef72e60863769.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-the-forgotten-google-workspace-access-that-can-lead-to-a-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers build ai frameworks for widescale credential theft"
+       data-id="878239f57e545596"
+       data-published="2026-09-08T08:03:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-08T08:03:03-04:00" title="8 September 2026, 07:03">8 September 2026, 07:03</time>
+      </div>
+      <h3 class="card-title">Hackers build AI frameworks for widescale credential theft</h3>
+      <p class="card-summary">Threat actors are increasingly switching from AI-powered coding assistants to multi-agent frameworks that automate every stage of an attack. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/878239f57e545596.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-build-ai-frameworks-for-widescale-credential-theft/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft: windows server 2025 changes causing app crashes"
+       data-id="6e0ae71a361af072"
+       data-published="2026-09-08T07:57:51-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-08T07:57:51-04:00" title="8 September 2026, 06:57">8 September 2026, 06:57</time>
+      </div>
+      <h3 class="card-title">Microsoft: Windows Server 2025 changes causing app crashes</h3>
+      <p class="card-summary">Microsoft warned customers last week that they may experience application crashes on some Windows Server 2025 due to recent memory management changes. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6e0ae71a361af072.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2025-changes-may-cause-app-crashes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

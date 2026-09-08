@@ -1,5 +1,154 @@
 [
   {
+    "id": "cb147e9292d6ac1d",
+    "title": "WeChat Zero-Click Worm Took Over Accounts on iPhone and Android via Incoming Calls",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html",
+    "published": "2026-09-08T17:24:29+05:30",
+    "fetched_at": "2026-09-08T14:07:34.017639+00:00",
+    "summary": "Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and demonstrated it spreading among three test phones.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Apple",
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and demonstrated it spreading among three test phones.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Calif reported the flaw to Tencent in July and says the company has since",
+      "mitigation": "The person being called does not have to answer or touch their phone for it to work, but the caller must already be one of their WeChat contacts."
+    },
+    "email_summary": "Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and demonstrated it spreading among three test phones. The person being called does not have to answer or touch their phone for it to work, but the caller must already be one of their WeChat contacts.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "da3cb064a6ba489b",
+    "title": "What It Took to Reach 1 Billion Build Manifests",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html",
+    "published": "2026-09-08T17:19:02+05:30",
+    "fetched_at": "2026-09-08T14:07:34.017944+00:00",
+    "summary": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog. Those are the headline numbers, but I want to share what's actually behind them. The number itself is less interesting than the system that produced it, and why we had to fundamentally",
+    "tags": [],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog.",
+    "quick_take": "",
+    "sections": {
+      "impact": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "2e2059d93baa612d",
+    "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html",
+    "published": "2026-09-08T16:52:07+05:30",
+    "fetched_at": "2026-09-08T14:07:34.018227+00:00",
+    "summary": "A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says. FreeIPA is the system that determines who may log in across a Linux domain and maintains all identities in a 389 Directory Server database accessed via LDAP.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f9593cb804845d0e",
+    "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+    "published": "2026-09-08T14:43:47+05:30",
+    "fetched_at": "2026-09-08T14:07:34.018469+00:00",
+    "summary": "Adobe on Monday released security patches to address a maximum-severity flaw impacting Adobe Commerce and Magento Open Source that has come under active exploitation in the wild.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-09-08",
+    "cves": [
+      "CVE-2026-75650"
+    ],
+    "cvss": 10.0,
+    "severity": "critical",
+    "vendors": [
+      "Adobe"
+    ],
+    "action_required": true,
+    "card_summary": "Adobe on Monday released security patches to address a maximum-severity flaw impacting Adobe Commerce and Magento Open Source that has come under active exploitation in the wild.",
+    "quick_take": "",
+    "sections": {
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Adobe on Monday released security patches to address a maximum-severity flaw impacting Adobe Commerce and Magento Open Source that has come under active exploitation in the wild. Tracked as CVE-2026-75650. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [
+      {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/"
+      }
+    ],
+    "highlighted": false
+  },
+  {
+    "id": "d1a39f3e3b4ae086",
+    "title": "BengalSEO Poisons Bing Search Results to Deliver MayaBot and Tech Support Scams",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/bengalseo-poisons-bing-search-results.html",
+    "published": "2026-09-08T14:13:51+05:30",
+    "fetched_at": "2026-09-08T14:07:34.018696+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of a sprawling search engine optimization (SEO) poisoning campaign that paves the way for malware deployment and tech support scams.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of a sprawling search engine optimization (SEO) poisoning campaign that paves the way for malware deployment and tech support scams.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have disclosed details of a sprawling search engine optimization (SEO) poisoning campaign that paves the way for malware deployment and tech support scams. The campaign, discovered by the DFIR Report in March 2026, has been codenamed BengalSEO.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "b0b8cea934865bae",
     "title": "Grindr to Pay £26 Million to Settle U.K. Claims Over HIV Status Data Sharing",
     "source": "The Hacker News",
@@ -20,6 +169,88 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Online dating app Grindr has opted to pay £26 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties. Grindr, which is the largest LGBTQ+ dating app, was sued in April 2024, accusing it of violating U.K. privacy laws by sharing sensitive data for commercial purposes such as advertising.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e9aef72e60863769",
+    "title": "Webinar: The forgotten Google Workspace access that can lead to a breach",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/webinar-the-forgotten-google-workspace-access-that-can-lead-to-a-breach/",
+    "published": "2026-09-08T08:40:48-04:00",
+    "fetched_at": "2026-09-08T14:07:34.360530+00:00",
+    "summary": "Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing companies reduce their exposure. [...]",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing companies reduce their exposure. [...]",
+      "impact": "This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing companies reduce their exposure. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing companies reduce their exposure. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "878239f57e545596",
+    "title": "Hackers build AI frameworks for widescale credential theft",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-build-ai-frameworks-for-widescale-credential-theft/",
+    "published": "2026-09-08T08:03:03-04:00",
+    "fetched_at": "2026-09-08T14:07:34.360728+00:00",
+    "summary": "Threat actors are increasingly switching from AI-powered coding assistants to multi-agent frameworks that automate every stage of an attack. [...]",
+    "tags": [],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors are increasingly switching from AI-powered coding assistants to multi-agent frameworks that automate every stage of an attack. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Threat actors are increasingly switching from AI-powered coding assistants to multi-agent frameworks that automate every stage of an attack. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6e0ae71a361af072",
+    "title": "Microsoft: Windows Server 2025 changes causing app crashes",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2025-changes-may-cause-app-crashes/",
+    "published": "2026-09-08T07:57:51-04:00",
+    "fetched_at": "2026-09-08T14:07:34.360920+00:00",
+    "summary": "Microsoft warned customers last week that they may experience application crashes on some Windows Server 2025 due to recent memory management changes. [...]",
+    "tags": [],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft warned customers last week that they may experience application crashes on some Windows Server 2025 due to recent memory management changes. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft warned customers last week that they may experience application crashes on some Windows Server 2025 due to recent memory management changes. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft warned customers last week that they may experience application crashes on some Windows Server 2025 due to recent memory management changes. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

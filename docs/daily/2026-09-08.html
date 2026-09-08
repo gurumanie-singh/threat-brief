@@ -35,10 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>3 items require immediate action — patches or mitigations available</li>
         <li>Google, Microsoft ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -51,7 +51,6 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
-      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -72,19 +71,18 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
@@ -116,6 +114,65 @@
       <div class="detail-links">
         <a href="../articles/62004936877094bf.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="attackers use multi-hop google redirects for phishing campaign"
+       data-id="daf097f74989760a"
+       data-published="2026-09-08T21:03:46+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-08T21:03:46+00:00" title="8 September 2026, 16:03">8 September 2026, 16:03</time>
+      </div>
+      <h3 class="card-title">Attackers Use Multi-Hop Google Redirects for Phishing Campaign</h3>
+      <p class="card-summary">Threat actors are abusing multiple Google services to evade detection, ultimately harvesting credentials or installing ScreenConnect remote access.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/daf097f74989760a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/attackers-multi-hop-google-redirects-phishing-campaign" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai agents took over wiki site before hugging face attack"
+       data-id="4f224f67f75b96f4"
+       data-published="2026-09-08T20:36:15+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-08T20:36:15+00:00" title="8 September 2026, 15:36">8 September 2026, 15:36</time>
+      </div>
+      <h3 class="card-title">OpenAI Agents Took Over Wiki Site Before Hugging Face Attack</h3>
+      <p class="card-summary">Researchers and OpenAI disagree on whether the earlier incident involving DseWiki was a “hack” that the company did not disclose.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4f224f67f75b96f4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/openai-agents-wiki-site-hugging-face-attack" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -332,6 +389,133 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="doppelcart fraud network uses 119,000 fake shops to steal credit cards"
+       data-id="d53f1365bf2ea6ef"
+       data-published="2026-09-08T16:35:14-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-08T16:35:14-04:00" title="8 September 2026, 15:35">8 September 2026, 15:35</time>
+      </div>
+      <h3 class="card-title">DoppelCart fraud network uses 119,000 fake shops to steal credit cards</h3>
+      <p class="card-summary">A massive operation dubbed &#34;DoppelCart&#34; uses more than 119,000 domains to run a network of fake e-shops that steal payment card details. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d53f1365bf2ea6ef.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/doppelcart-fraud-network-uses-119-000-fake-shops-to-steal-credit-cards/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="the eu cra&#39;s real question: what shipped, and when did you know?"
+       data-id="9704d3be9e2d46c7"
+       data-published="2026-09-08T16:24:16-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-08T16:24:16-04:00" title="8 September 2026, 15:24">8 September 2026, 15:24</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">The EU CRA&#39;s Real Question: What Shipped, and When Did You Know?</h3>
+      <p class="card-summary">The EU Cyber Resilience Act&#39;s vulnerability reporting requirements take effect September 11, giving software vendors as little as 24 hours to report actively exploited flaws. ActiveState explains why knowing exactly what shipped and when vulnerabilities…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The EU Cyber Resilience Act&#39;s vulnerability reporting requirements take effect September 11, giving software vendors as little as 24 hours to report actively exploited flaws. ActiveState explains why knowing exactly what shipped and when vulnerabilities were discovered will be critical to meeting the new requirements. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/9704d3be9e2d46c7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/the-eu-cras-real-question-what-shipped-and-when-did-you-know/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="hackers breach f5 big-ip apm devices to deploy linux rootkit"
+       data-id="41ec86bbb224bf0d"
+       data-published="2026-09-08T16:08:55-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-08T16:08:55-04:00" title="8 September 2026, 15:08">8 September 2026, 15:08</time>
+      </div>
+      <h3 class="card-title">Hackers breach F5 BIG-IP APM devices to deploy Linux rootkit</h3>
+      <p class="card-summary">A Linux rootkit targeting devices in F5 BIG-IP APM environments can intercept PHP file loading and inject a fileless web shell directly into memory, avoiding the need to write malicious code to disk. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/41ec86bbb224bf0d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-breach-f5-big-ip-apm-devices-to-deploy-linux-rootkit/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft releases windows 10 kb5122878 extended security update"
+       data-id="12858b51dcbeb2bc"
+       data-published="2026-09-08T14:49:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-08T14:49:19-04:00" title="8 September 2026, 13:49">8 September 2026, 13:49</time>
+      </div>
+      <h3 class="card-title">Microsoft releases Windows 10 KB5122878 extended security update</h3>
+      <p class="card-summary">Microsoft has released the Windows 10 KB5122878 extended security update, which includes this month&#39;s record-breaking September 2026 Patch Tuesday fixes, along with a few bug fixes. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/12858b51dcbeb2bc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5122878-extended-security-update/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="cve,exploit,malware,patch,vulnerability,zero-day"
        data-vendors="Adobe"
@@ -365,6 +549,41 @@
       <div class="detail-links">
         <a href="../articles/f9593cb804845d0e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft september 2026 patch tuesday fixes 966 flaws, 2 zero-days"
+       data-id="075cbd194d37e14a"
+       data-published="2026-09-08T14:18:05-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-08T14:18:05-04:00" title="8 September 2026, 13:18">8 September 2026, 13:18</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Microsoft September 2026 Patch Tuesday fixes 966 flaws, 2 zero-days</h3>
+      <p class="card-summary">Today is Microsoft&#39;s September 2026 Patch Tuesday, with security updates released for a record-breaking 966 flaws, including two actively exploited zero-day vulnerabilities. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/075cbd194d37e14a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -482,216 +701,6 @@
       <div class="detail-links">
         <a href="../articles/b0b8cea934865bae.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="openai says chatgpt outage causes image generation errors"
-       data-id="01269f2916af7839"
-       data-published="2026-09-08T12:28:42-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-08T12:28:42-04:00" title="8 September 2026, 11:28">8 September 2026, 11:28</time>
-      </div>
-      <h3 class="card-title">OpenAI says ChatGPT outage causes image generation errors</h3>
-      <p class="card-summary">OpenAI is investigating an ongoing incident causing ChatGPT image generation failures and delays when uploading files. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/01269f2916af7839.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/technology/openai-says-chatgpt-outage-causes-image-generation-errors/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="patch"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="august updates trigger 0xc0000409 errors on windows server 2016"
-       data-id="229de6282f4488ec"
-       data-published="2026-09-08T11:22:33-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-08T11:22:33-04:00" title="8 September 2026, 10:22">8 September 2026, 10:22</time>
-      </div>
-      <h3 class="card-title">August updates trigger 0xc0000409 errors on Windows Server 2016</h3>
-      <p class="card-summary">Microsoft says the August 2026 security update may trigger 0xc0000409 errors on Windows Server 2016 systems where the Compatibility Appraiser diagnostic service is enabled. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/229de6282f4488ec.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/august-updates-trigger-0xc0000409-errors-on-windows-server-2016/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="patch,vulnerability"
-       data-vendors="Linux,SAP"
-       data-severity="high"
-       data-title="sap warns of maximum severity &#39;overpass&#39; kernel vulnerability"
-       data-id="29b7ea2009110d03"
-       data-published="2026-09-08T10:55:20-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Linux</span><span class="vtag">SAP</span>        <time class="meta-time" data-iso="2026-09-08T10:55:20-04:00" title="8 September 2026, 09:55">8 September 2026, 09:55</time>
-      </div>
-      <h3 class="card-title">SAP warns of maximum severity &#39;OVERPASS&#39; kernel vulnerability</h3>
-      <p class="card-summary">SAP has addressed 20 vulnerabilities across multiple products in its September 2026 security updates, including a maximum-severity memory corruption flaw in the SAP Kernel code. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/29b7ea2009110d03.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-overpass-kernel-vulnerability/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="zero-day"
-       data-vendors=""
-       data-severity="critical"
-       data-title="openai says gpt-6 astra can find zero-days, but is also harder to monitor"
-       data-id="81d50f74ed60c6db"
-       data-published="2026-09-08T10:40:32-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-09-08T10:40:32-04:00" title="8 September 2026, 09:40">8 September 2026, 09:40</time>
-      </div>
-      <h3 class="card-title">OpenAI says GPT-6 Astra can find zero-days, but is also harder to monitor</h3>
-      <p class="card-summary">OpenAI confirmed that GPT-6 Astra is the first model it has broadly deployed to reach the &#34;Critical level&#34; for cybersecurity capabilities. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/81d50f74ed60c6db.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-6-astra-can-find-zero-days-but-is-also-harder-to-monitor/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="webinar: the forgotten google workspace access that can lead to a breach"
-       data-id="e9aef72e60863769"
-       data-published="2026-09-08T08:40:48-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-08T08:40:48-04:00" title="8 September 2026, 07:40">8 September 2026, 07:40</time>
-      </div>
-      <h3 class="card-title">Webinar: The forgotten Google Workspace access that can lead to a breach</h3>
-      <p class="card-summary">Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Third-party applications connected to Google Workspace can retain access long after their original purpose is forgotten. This webinar examines how overly permissive integrations contribute to breaches and which security controls can help fast-growing companies reduce their exposure. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/e9aef72e60863769.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/webinar-the-forgotten-google-workspace-access-that-can-lead-to-a-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="hackers build ai frameworks for widescale credential theft"
-       data-id="878239f57e545596"
-       data-published="2026-09-08T08:03:03-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-08T08:03:03-04:00" title="8 September 2026, 07:03">8 September 2026, 07:03</time>
-      </div>
-      <h3 class="card-title">Hackers build AI frameworks for widescale credential theft</h3>
-      <p class="card-summary">Threat actors are increasingly switching from AI-powered coding assistants to multi-agent frameworks that automate every stage of an attack. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/878239f57e545596.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/hackers-build-ai-frameworks-for-widescale-credential-theft/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft: windows server 2025 changes causing app crashes"
-       data-id="6e0ae71a361af072"
-       data-published="2026-09-08T07:57:51-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-08T07:57:51-04:00" title="8 September 2026, 06:57">8 September 2026, 06:57</time>
-      </div>
-      <h3 class="card-title">Microsoft: Windows Server 2025 changes causing app crashes</h3>
-      <p class="card-summary">Microsoft warned customers last week that they may experience application crashes on some Windows Server 2025 due to recent memory management changes. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/6e0ae71a361af072.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2025-changes-may-cause-app-crashes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -25,6 +25,82 @@
     "highlighted": false
   },
   {
+    "id": "f976e6265e54bf55",
+    "title": "Microsoft Plugs Nearly 1,000 Security Holes",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+    "published": "2026-09-08T21:44:22+00:00",
+    "fetched_at": "2026-09-08T23:48:53.629732+00:00",
+    "summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and...",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-09-08",
+    "cves": [
+      "CVE-2026-69730",
+      "CVE-2026-69829",
+      "CVE-2026-81963",
+      "CVE-2026-85880"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Adobe",
+      "Cisco",
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and...",
+      "technical": "Also scary is CVE-2026-69829 , a critical, remote code execution flaw in the Windows Shell. There are two zero-day flaws fixed this month that are being actively exploited: both CVE-2026-81963 and CVE-2026-85880 allow an attacker to elevate their privileges on Windows system. Fully 113 of the bugs addressed today earned Microsoft s critical rating, meaning they could be abused by malware or miscreants to seize control over a vulnerable Windows machine with little or no help from the user. Among the more serious critical flaws this month is CVE-2026-69730 , a DNS weakness present in Windows Server 2012 onward and on Windows 10.\n\nReferenced vulnerabilities: CVE-2026-69730, CVE-2026-69829, CVE-2026-81963, CVE-2026-85880.",
+      "impact": "Narang said it s important to recognize that while the number of vulnerabilities being patched by Microsoft is rising, the number of flaws that can and will affect most organizations remains quite low. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and deploying so many fixes each month. Fully 113 of the bugs addressed today earned Microsoft s critical rating, meaning they could be abused by malware or miscreants to seize control over a vulnerable Windows machine with little or no help from the user.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. This month s patch bundle obliterates the software giant s previous record set in July , when it released updates for at least 570 security vulnerabilities. Many other large software companies, including Adobe, Cisco, Google, Mozilla and Oracle, all have recently credited AI-assisted research with increasing their patch cadence and volume (Google said today it is now going to ship security updates every two weeks). Of course, regular Windows users don t need to test patches before deploying them, but they still need to open Windows Update periodically or else assent to the program s nag notices about pending updates.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Tracked as CVE-2026-69730, CVE-2026-69829, CVE-2026-81963. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "9758a687733008ce",
+    "title": "Patch Tuesday Sets Another Record With 974 CVEs",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/vulnerabilities-threats/patch-tuesday-another-record-974-cves",
+    "published": "2026-09-08T21:26:02+00:00",
+    "fetched_at": "2026-09-08T23:48:54.446514+00:00",
+    "summary": "Attackers are actively exploiting two of the vulnerabilities and another 58 are more likely to be exploited, according to Microsoft.",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-09-08",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers are actively exploiting two of the vulnerabilities and another 58 are more likely to be exploited, according to Microsoft.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Attackers are actively exploiting two of the vulnerabilities and another 58 are more likely to be exploited, according to Microsoft.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "daf097f74989760a",
     "title": "Attackers Use Multi-Hop Google Redirects for Phishing Campaign",
     "source": "Dark Reading",
@@ -501,59 +577,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Microsoft has released Windows 11 KB5124008 and KB5122880 cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "ef51747e17f7abe5",
-    "title": "ShinyHunters hackers claim breach of Florida \"DAVID\" DMV database",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-hackers-claim-breach-of-florida-david-dmv-database/",
-    "published": "2026-09-08T12:35:47-04:00",
-    "fetched_at": "2026-09-08T18:17:28.448796+00:00",
-    "summary": "The ShinyHunters extortion gang claims it breached an online platform for the Florida Department of Motor Vehicles database known as \"DAVID\" and stole over 200,000 records about drivers in the state. [...]",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-09-08",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The ShinyHunters extortion gang claims it breached an online platform for the Florida Department of Motor Vehicles database known as \"DAVID\" and stole over 200,000 records about drivers in the state. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The ShinyHunters extortion gang claims it breached an online platform for the Florida Department of Motor Vehicles database known as \"DAVID\" and stole over 200,000 records about drivers in the state. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "The ShinyHunters extortion gang claims it breached an online platform for the Florida Department of Motor Vehicles database known as \"DAVID\" and stole over 200,000 records about drivers in the state. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "b0b8cea934865bae",
-    "title": "Grindr to Pay £26 Million to Settle U.K. Claims Over HIV Status Data Sharing",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html",
-    "published": "2026-09-08T12:30:43+05:30",
-    "fetched_at": "2026-09-08T09:21:28.324729+00:00",
-    "summary": "Online dating app Grindr has opted to pay £26 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties.",
-    "tags": [],
-    "day": "2026-09-08",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "AWS"
-    ],
-    "action_required": false,
-    "card_summary": "Online dating app Grindr has opted to pay £26 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Online dating app Grindr has opted to pay £26 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties. Grindr, which is the largest LGBTQ+ dating app, was sued in April 2024, accusing it of violating U.K. privacy laws by sharing sensitive data for commercial purposes such as advertising.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

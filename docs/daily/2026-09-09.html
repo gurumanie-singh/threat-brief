@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">9 September 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">15 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
-        <li>3 items require immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>6 critical-severity issues detected with active exploitation reported</li>
+        <li>4 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -50,6 +50,9 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -64,23 +67,309 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: learn how to answer “are we exposed?” faster after a new cve"
+       data-id="238f2ec2eb871be1"
+       data-published="2026-09-09T17:27:36+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T17:27:36+05:30" title="9 September 2026, 06:57">9 September 2026, 06:57</time>
+      </div>
+      <h3 class="card-title">Webinar: Learn How to Answer “Are We Exposed?” Faster After a New CVE</h3>
+      <p class="card-summary">A major vulnerability is disclosed. The alert lands immediately.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/238f2ec2eb871be1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/webinar-learn-how-to-answer-are-we.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="deepseek harness flaw let ai agents disable their own file sandbox without approval"
+       data-id="ad6628b63d162d06"
+       data-published="2026-09-09T16:47:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T16:47:07+05:30" title="9 September 2026, 06:17">9 September 2026, 06:17</time>
+      </div>
+      <h3 class="card-title">DeepSeek Harness Flaw Let AI Agents Disable Their Own File Sandbox Without Approval</h3>
+      <p class="card-summary">A flaw in DeepSeek Harness, DeepSeek&#39;s open-source tool for running AI coding agents on a developer&#39;s machine, let a sandboxed agent turn off its own sandbox with a single command.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ad6628b63d162d06.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags=""
+       data-vendors=""
+       data-severity="high"
+       data-title="alby hub critical flaw could let attackers take over internet-exposed bitcoin wallets"
+       data-id="21ad807eab8992d8"
+       data-published="2026-09-09T16:13:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-09T16:13:04+05:30" title="9 September 2026, 05:43">9 September 2026, 05:43</time>
+      </div>
+      <h3 class="card-title">Alby Hub Critical Flaw Could Let Attackers Take Over Internet-Exposed Bitcoin Wallets</h3>
+      <p class="card-summary">Bitcoin wallet company Alby has warned of a critical flaw in Alby Hub that could have let an attacker take over a wallet and send its funds, but only where the owner had made the Hub reachable from the internet.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/21ad807eab8992d8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="u.s. agencies accuse china ai firms of distilling claude, gpt, gemini, and grok"
+       data-id="c73828f9cd9efe63"
+       data-published="2026-09-09T15:02:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T15:02:26+05:30" title="9 September 2026, 04:32">9 September 2026, 04:32</time>
+      </div>
+      <h3 class="card-title">U.S. Agencies Accuse China AI Firms of Distilling Claude, GPT, Gemini, and Grok</h3>
+      <p class="card-summary">U.S. cybersecurity and intelligence agencies have accused China-based artificial intelligence (AI) companies of conducting &#34;systematic extraction&#34; of proprietary functionalities and capabilities of American frontier models through distillation attacks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c73828f9cd9efe63.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/us-agencies-accuse-china-ai-firms-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="chrome v8 zero-day exploited in the wild enables code execution inside sandbox"
+       data-id="5120e36ed9d5b718"
+       data-published="2026-09-09T14:41:03+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-09T14:41:03+05:30" title="9 September 2026, 04:11">9 September 2026, 04:11</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox</h3>
+      <p class="card-summary">Google on Thursday released updates to patch 230 security vulnerabilities, including one that has come under active exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5120e36ed9d5b718.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="low"
+       data-title="new cpanel flaw lets a hosting account with mail privileges run code as root"
+       data-id="3f561d5ee28505d3"
+       data-published="2026-09-09T13:49:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-09-09T13:49:32+05:30" title="9 September 2026, 03:19">9 September 2026, 03:19</time>
+      </div>
+      <h3 class="card-title">New cPanel Flaw Lets a Hosting Account With Mail Privileges Run Code as Root</h3>
+      <p class="card-summary">cPanel has patched a flaw that it says lets a single hosting account take control of an entire server. An authenticated account holder with mail-related privileges can create files of their choosing on the server through EmailTrack and, from there, run…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>cPanel has patched a flaw that it says lets a single hosting account take control of an entire server. An authenticated account holder with mail-related privileges can create files of their choosing on the server through EmailTrack and, from there, run code as the root user.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3f561d5ee28505d3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="f5 big-ip apm malware injects a php web shell into memory, evading disk scans"
+       data-id="5c42aaf0d41a5993"
+       data-published="2026-09-09T13:06:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T13:06:49+05:30" title="9 September 2026, 02:36">9 September 2026, 02:36</time>
+      </div>
+      <h3 class="card-title">F5 BIG-IP APM Malware Injects a PHP Web Shell Into Memory, Evading Disk Scans</h3>
+      <p class="card-summary">Malware linked to break-ins at F5 BIG-IP Access Policy Manager appliances hides a PHP web shell in memory instead of in a file on disk, Sophos said in an analysis published on September 7.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5c42aaf0d41a5993.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="researcher drops new microsoft defender poc showing shieldbreak patch can be bypassed"
+       data-id="82eef789fce86f1c"
+       data-published="2026-09-09T12:17:27+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-09T12:17:27+05:30" title="9 September 2026, 01:47">9 September 2026, 01:47</time>
+      </div>
+      <h3 class="card-title">Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed</h3>
+      <p class="card-summary">The security researcher known as Chaotic Eclipse has dropped a proof-of-concept (PoC) for yet another zero-day in Microsoft Defender.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/82eef789fce86f1c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors="SAP"
+       data-severity="critical"
+       data-title="sap patches cvss 10.0 kernel flaw enabling unauthenticated remote code execution"
+       data-id="b0384e2c8fb0df7e"
+       data-published="2026-09-09T11:55:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">SAP</span>        <time class="meta-time" data-iso="2026-09-09T11:55:45+05:30" title="9 September 2026, 01:25">9 September 2026, 01:25</time>
+      </div>
+      <h3 class="card-title">SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution</h3>
+      <p class="card-summary">SAP has released security updates to address multiple vulnerabilities, including a maximum-severity flaw in SAP Extended Passport (EPP) Processing that could have a severe impact on the confidentiality, integrity, and availability of the application</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b0384e2c8fb0df7e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,malware,patch,vulnerability,zero-day"
        data-vendors="AWS,Microsoft"
@@ -148,6 +437,69 @@
       <div class="detail-links">
         <a href="../articles/7a3def8ce5f0b83b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="over 36,000 exposed plex servers vulnerable to recent flaws"
+       data-id="e4f343b0c9720f97"
+       data-published="2026-09-09T06:11:29-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-09T06:11:29-04:00" title="9 September 2026, 05:11">9 September 2026, 05:11</time>
+      </div>
+      <h3 class="card-title">Over 36,000 exposed Plex servers vulnerable to recent flaws</h3>
+      <p class="card-summary">Over 36,000 Plex Media servers exposed online remain unpatched against multiple security vulnerabilities and are vulnerable to attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e4f343b0c9720f97.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/over-36-000-plex-servers-unpatched-against-recently-disclosed-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="man gets 15 years for extorting women with ai-generated porn videos"
+       data-id="5976a5870a87a17b"
+       data-published="2026-09-09T04:44:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T04:44:22-04:00" title="9 September 2026, 03:44">9 September 2026, 03:44</time>
+      </div>
+      <h3 class="card-title">Man gets 15 years for extorting women with AI-generated porn videos</h3>
+      <p class="card-summary">An Ohio man was sentenced to 15 years in prison for multiple cybercrimes, including sextortion and cyberstalking of numerous victims using AI-generated sexually explicit content. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5976a5870a87a17b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/man-gets-15-years-in-prison-for-cyberstalking-and-sextortion/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>4 critical-severity issues detected with active exploitation reported</li>
-        <li>3 items require immediate action — patches or mitigations available</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
         <li>Google, Microsoft ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
@@ -69,7 +69,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
       </div>
     </div>
@@ -78,14 +78,13 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
@@ -154,6 +153,35 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="mythos vulnerability firehose hits a human bottleneck"
+       data-id="b257ff6f2979d818"
+       data-published="2026-09-09T21:19:55+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T21:19:55+00:00" title="9 September 2026, 16:19">9 September 2026, 16:19</time>
+      </div>
+      <h3 class="card-title">Mythos Vulnerability Firehose Hits a Human Bottleneck</h3>
+      <p class="card-summary">An analysis of Project Glasswing findings shows only a fraction have reached disclosure, and an even smaller number have been fixed.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b257ff6f2979d818.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/mythos-vulnerability-firehose-hits-human-bottleneck" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="breach,malware"
        data-vendors="Google"
        data-severity="medium"
@@ -213,6 +241,72 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="cisco confirms cve-2026-20079 secure fmc flaw exploited in attacks"
+       data-id="bc4dc484914deec8"
+       data-published="2026-09-09T17:40:44-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-09-09T17:40:44-04:00" title="9 September 2026, 16:40">9 September 2026, 16:40</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks</h3>
+      <p class="card-summary">Cisco has confirmed that a maximum-severity authentication bypass vulnerability tracked as CVE-2026-20079 in its Secure Firewall Management Center (FMC) software is being actively exploited in attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bc4dc484914deec8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="adapthealth confirms 4.1 million people exposed in july cyberattack"
+       data-id="5a6c07a0020c873d"
+       data-published="2026-09-09T17:30:36-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T17:30:36-04:00" title="9 September 2026, 16:30">9 September 2026, 16:30</time>
+      </div>
+      <h3 class="card-title">AdaptHealth confirms 4.1 million people exposed in July cyberattack</h3>
+      <p class="card-summary">Healthcare company AdaptHealth has confirmed that data of 4.1 million people was exposed in a cyberattack discovered in July that was attributed to the ShinyHunters threat group. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5a6c07a0020c873d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/adapthealth-confirms-41-million-people-exposed-in-july-cyberattack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="cve,malware,vulnerability"
        data-vendors=""
@@ -243,6 +337,36 @@
       <div class="detail-links">
         <a href="../articles/238f2ec2eb871be1.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/webinar-learn-how-to-answer-are-we.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="skullcandy dime 3 earbuds expose users to bluetooth hijacking"
+       data-id="727b060d22c2e270"
+       data-published="2026-09-09T17:02:14-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-09T17:02:14-04:00" title="9 September 2026, 16:02">9 September 2026, 16:02</time>
+      </div>
+      <h3 class="card-title">Skullcandy Dime 3 earbuds expose users to Bluetooth hijacking</h3>
+      <p class="card-summary">The Carnegie Mellon University CERT Coordination Center (CERT/CC) is warning that Skullcandy Dime 3 wireless earbuds accept Bluetooth pairing requests from nearby unpaired devices without requiring user interaction. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/727b060d22c2e270.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/skullcandy-dime-3-earbuds-expose-users-to-bluetooth-hijacking/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -583,140 +707,6 @@
       <div class="detail-links">
         <a href="../articles/acde523d2b35da22.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/veradigm-discloses-patient-data-breach-after-gentlemen-gang-claims-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="exploit,malware,patch,vulnerability,zero-day"
-       data-vendors="AWS,Microsoft"
-       data-severity="critical"
-       data-title="microsoft patches record 974 flaws, including two exploited windows zero-days"
-       data-id="32bd18057f024a4f"
-       data-published="2026-09-09T10:11:29+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-09T10:11:29+05:30" title="8 September 2026, 23:41">8 September 2026, 23:41</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days</h3>
-      <p class="card-summary">Microsoft on Tuesday broke Patch Tuesday records by addressing an earth-shattering 974 vulnerabilities spanning its software portfolio, including two flaws that it said have been actively exploited in the wild.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/32bd18057f024a4f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="phishing"
-       data-vendors=""
-       data-severity="medium"
-       data-title="mfa&#39;s weakest link: account recovery is the new attack path"
-       data-id="f777477bdfd2a876"
-       data-published="2026-09-09T10:01:11-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-09T10:01:11-04:00" title="9 September 2026, 09:01">9 September 2026, 09:01</time>
-      </div>
-      <h3 class="card-title">MFA&#39;s Weakest Link: Account Recovery Is the New Attack Path</h3>
-      <p class="card-summary">MFA makes account takeover harder, but attackers are increasingly targeting the recovery processes used to reset passwords and authentication methods. Specops explains why stronger identity verification at the service desk is critical to preventing social…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>MFA makes account takeover harder, but attackers are increasingly targeting the recovery processes used to reset passwords and authentication methods. Specops explains why stronger identity verification at the service desk is critical to preventing social engineering attacks from turning account recovery into account takeover. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/f777477bdfd2a876.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/mfas-weakest-link-account-recovery-is-the-new-attack-path/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="n-able n-central pre-auth rce flaw exploited in the wild"
-       data-id="7a3def8ce5f0b83b"
-       data-published="2026-09-09T09:57:51+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-09-09T09:57:51+05:30" title="8 September 2026, 23:27">8 September 2026, 23:27</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">N-able N-central Pre-Auth RCE Flaw Exploited in the Wild</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a maximum-severity security flaw impacting N-able N-central to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a maximum-severity security flaw impacting N-able N-central to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by September 11, 2026.</p></div>
-      <div class="detail-links">
-        <a href="../articles/7a3def8ce5f0b83b.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="patch,vulnerability"
-       data-vendors="AWS"
-       data-severity="medium"
-       data-title="over 36,000 exposed plex servers vulnerable to recent flaws"
-       data-id="e4f343b0c9720f97"
-       data-published="2026-09-09T06:11:29-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-09T06:11:29-04:00" title="9 September 2026, 05:11">9 September 2026, 05:11</time>
-      </div>
-      <h3 class="card-title">Over 36,000 exposed Plex servers vulnerable to recent flaws</h3>
-      <p class="card-summary">Over 36,000 Plex Media servers exposed online remain unpatched against multiple security vulnerabilities and are vulnerable to attacks. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/e4f343b0c9720f97.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/over-36-000-plex-servers-unpatched-against-recently-disclosed-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

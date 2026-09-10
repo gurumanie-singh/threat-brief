@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">10 September 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Google, AWS ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -64,7 +65,12 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
       </div>
     </div>
     <div class="adv-group">
@@ -72,15 +78,174 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="google play early access abused to push thousands of deceptive android apps"
+       data-id="848827af33c41b33"
+       data-published="2026-09-10T20:06:47+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-10T20:06:47+05:30" title="10 September 2026, 09:36">10 September 2026, 09:36</time>
+      </div>
+      <h3 class="card-title">Google Play Early Access Abused to Push Thousands of Deceptive Android Apps</h3>
+      <p class="card-summary">Bad actors are misusing Google Play&#39;s Early Access program to push deceptive apps that claim to offer money, rewards, casino winnings, and premium content.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/848827af33c41b33.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="check point discloses two 9.8-rated vpn certificate flaws enabling unauthenticated rce"
+       data-id="a617313c66a39ecb"
+       data-published="2026-09-10T17:15:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-10T17:15:05+05:30" title="10 September 2026, 06:45">10 September 2026, 06:45</time>
+      </div>
+      <h3 class="card-title">Check Point Discloses Two 9.8-Rated VPN Certificate Flaws Enabling Unauthenticated RCE</h3>
+      <p class="card-summary">Check Point has patched two critical vulnerabilities in the way its firewall and management products handle VPN certificates. The company says both could allow an unauthenticated remote attacker to run code, but only &#34;under specific conditions&#34; that it has…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Check Point has patched two critical vulnerabilities in the way its firewall and management products handle VPN certificates. The company says both could allow an unauthenticated remote attacker to run code, but only &#34;under specific conditions&#34; that it has not described.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a617313c66a39ecb.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="papercut attacker uses hundreds of ai agents to compromise 440+ instances"
+       data-id="142184914b08d2d1"
+       data-published="2026-09-10T17:11:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-10T17:11:53+05:30" title="10 September 2026, 06:41">10 September 2026, 06:41</time>
+      </div>
+      <h3 class="card-title">PaperCut Attacker Uses Hundreds of AI Agents to Compromise 440+ Instances</h3>
+      <p class="card-summary">A suspected Russian-speaking cyber actor has been attributed to the use of artificial intelligence (AI) to devise exploits targeting a recently disclosed pair of security flaws in PaperCut NG/MF and break into hundreds of instances.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/142184914b08d2d1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="gigabud creates android work profiles to hide from banking app malware checks"
+       data-id="f07dfde59d1724fe"
+       data-published="2026-09-10T17:03:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-10T17:03:43+05:30" title="10 September 2026, 06:33">10 September 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">Gigabud Creates Android Work Profiles to Hide From Banking App Malware Checks</h3>
+      <p class="card-summary">The Gigabud banking trojan now installs a second Android app that creates a work profile on an infected phone and drops a tampered banking app inside it, security firm Group-IB said in a report published on September 9.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f07dfde59d1724fe.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/gigabud-creates-android-work-profiles.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Cisco,Citrix,Fortinet"
+       data-severity="critical"
+       data-title="cisa flags exploited cisco, citrix, fortinet flaws, sets sept. 12 federal patch deadline"
+       data-id="4cc27a2ad4ddab32"
+       data-published="2026-09-10T16:06:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span><span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-09-10T16:06:46+05:30" title="10 September 2026, 05:36">10 September 2026, 05:36</time>
+      </div>
+      <h3 class="card-title">CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added three flaws, each impacting Cisco, Citrix, and Fortinet, to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added three flaws, each impacting Cisco, Citrix, and Fortinet, to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the patches by September 12, 2026.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4cc27a2ad4ddab32.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors=""
@@ -142,6 +307,98 @@
       <div class="detail-links">
         <a href="../articles/d377ff8e996d86c5.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/anthropic-ai-models-breached-real.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors="AWS,Google,Microsoft"
+       data-severity="critical"
+       data-title="new &#39;bluemoon&#39; kit exploited windows and chrome zero-day flaws"
+       data-id="01f719c871340481"
+       data-published="2026-09-10T10:11:34-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-10T10:11:34-04:00" title="10 September 2026, 09:11">10 September 2026, 09:11</time>
+      </div>
+      <h3 class="card-title">New &#39;BlueMoon&#39; kit exploited Windows and Chrome zero-day flaws</h3>
+      <p class="card-summary">Multiple cyber-espionage groups deployed an exploit kit dubbed &#34;BlueMoon&#34; that leveraged zero-day vulnerabilities in Microsoft Windows and Google Chrome. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/01f719c871340481.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="the top 4 threats we found by investigating every alert for a quarter"
+       data-id="878ff428cb53f449"
+       data-published="2026-09-10T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-10T10:00:10-04:00" title="10 September 2026, 09:00">10 September 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">The Top 4 Threats We Found by Investigating Every Alert for a Quarter</h3>
+      <p class="card-summary">Identity was the target in roughly half of all confirmed malicious activity. Prophet Security breaks down the four main attack patterns seen across customer environments between May and July 2026, and explains why some attacks succeeded while others were…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Identity was the target in roughly half of all confirmed malicious activity. Prophet Security breaks down the four main attack patterns seen across customer environments between May and July 2026, and explains why some attacks succeeded while others were blocked. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/878ff428cb53f449.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/the-top-4-threats-we-found-by-investigating-every-alert-for-a-quarter/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says september updates fix mouse settings reset issues"
+       data-id="669e6a7657beb087"
+       data-published="2026-09-10T07:14:28-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-10T07:14:28-04:00" title="10 September 2026, 06:14">10 September 2026, 06:14</time>
+      </div>
+      <h3 class="card-title">Microsoft says September updates fix mouse settings reset issues</h3>
+      <p class="card-summary">Microsoft has fixed a known issue that wiped mouse settings on some Windows 11 systems after installing the KB5120998 August 2026 preview update. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/669e6a7657beb087.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-resolves-mouse-settings-reset-bug-windows-11-update/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

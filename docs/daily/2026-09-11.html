@@ -27,10 +27,21 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">11 September 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">6 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +50,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,6 +65,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
@@ -61,10 +76,174 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="attackers chain jfrog artifactory flaws to gain admin control and plant backdoors"
+       data-id="3e543d7147488d80"
+       data-published="2026-09-11T13:01:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-11T13:01:05+05:30" title="11 September 2026, 02:31">11 September 2026, 02:31</time>
+      </div>
+      <h3 class="card-title">Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors</h3>
+      <p class="card-summary">Attackers have chained two flaws in JFrog Artifactory, the repository that software build pipelines pull from, to take administrator control of self-hosted servers and plant backdoors, cloud security company Wiz said in a report.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3e543d7147488d80.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="china-linked unc3569 exploited sogou input method flaw to deploy grayrabbit backdoor"
+       data-id="0d27afbb83422a99"
+       data-published="2026-09-11T12:44:09+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-11T12:44:09+05:30" title="11 September 2026, 02:14">11 September 2026, 02:14</time>
+      </div>
+      <h3 class="card-title">China-Linked UNC3569 Exploited Sogou Input Method Flaw to Deploy GRAYRABBIT Backdoor</h3>
+      <p class="card-summary">A China-linked hacking group exploited a flaw in Sogou Input Method, one of the most widely used tools for typing Chinese characters on Windows, to install a backdoor on victims&#39; computers, security company Gen Digital said in research published Thursday.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0d27afbb83422a99.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="papercut replaces emergency patches with fixes for two actively exploited flaws"
+       data-id="38e5ce4e6b301b62"
+       data-published="2026-09-11T12:16:18+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-11T12:16:18+05:30" title="11 September 2026, 01:46">11 September 2026, 01:46</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws</h3>
+      <p class="card-summary">PaperCut on Thursday released a new security maintenance release that replaces all previously published emergency patches that were pushed to address two security flaws that have come under active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/38e5ce4e6b301b62.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="apt,cve,exploit,patch,ransomware,vulnerability"
+       data-vendors="AWS,Cisco"
+       data-severity="critical"
+       data-title="cisco fmc flaws exploited to steal credentials and deploy qilin ransomware"
+       data-id="ee770b4664a04792"
+       data-published="2026-09-11T11:49:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-09-11T11:49:59+05:30" title="11 September 2026, 01:19">11 September 2026, 01:19</time>
+      </div>
+      <h3 class="card-title">Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware</h3>
+      <p class="card-summary">Cisco has revealed that three distinct threat clusters linked to ransomware and state-sponsored attacks have been exploiting two recently patched Secure Firewall Management Center (FMC) vulnerabilities.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ee770b4664a04792.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="conti ransomware gang member sentenced to 4 years in prison"
+       data-id="017fb6f38b916c6c"
+       data-published="2026-09-11T02:48:37-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-11T02:48:37-04:00" title="11 September 2026, 01:48">11 September 2026, 01:48</time>
+      </div>
+      <h3 class="card-title">Conti ransomware gang member sentenced to 4 years in prison</h3>
+      <p class="card-summary">A Ukrainian national has been sentenced to four years in prison for his role in Conti ransomware attacks between 2021 and 2022. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/017fb6f38b916c6c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit,malware"
        data-vendors="Google"

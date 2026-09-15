@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">15 September 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">13 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Cisco, Microsoft ecosystems affected by multiple advisories</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -65,26 +66,162 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux,Microsoft"
+       data-severity="medium"
+       data-title="bambootoken malware uses mqtt to control windows and linux systems"
+       data-id="608eaa147b329749"
+       data-published="2026-09-15T20:53:19+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-15T20:53:19+05:30" title="15 September 2026, 10:23">15 September 2026, 10:23</time>
+      </div>
+      <h3 class="card-title">BambooToken Malware Uses MQTT to Control Windows and Linux Systems</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a multi-platform campaign that uses the Message Queueing Telemetry Transport (MQTT) protocol as a communication channel to control Windows and Linux systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/608eaa147b329749.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/bambootoken-malware-uses-mqtt-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="human attacker exploits marimo rce, reaches ssh bastion in eight seconds"
+       data-id="3dd760d6f8fce87e"
+       data-published="2026-09-15T17:22:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-15T17:22:28+05:30" title="15 September 2026, 06:52">15 September 2026, 06:52</time>
+      </div>
+      <h3 class="card-title">Human Attacker Exploits Marimo RCE, Reaches SSH Bastion in Eight Seconds</h3>
+      <p class="card-summary">With artificial intelligence (AI) shrinking the window between vulnerability discovery and exploitation and lowering the barrier to entry for bad actors, new findings from Sysdig show that skilled human operators can move just as swiftly after gaining…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>With artificial intelligence (AI) shrinking the window between vulnerability discovery and exploitation and lowering the barrier to entry for bad actors, new findings from Sysdig show that skilled human operators can move just as swiftly after gaining initial access.</p></div>
+      <div class="detail-links">
+        <a href="../articles/3dd760d6f8fce87e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/human-attacker-exploits-marimo-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="attack chains, not just attack surfaces: why testing individual techniques misses the point"
+       data-id="4e7760363abb40c9"
+       data-published="2026-09-15T16:56:36+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-15T16:56:36+05:30" title="15 September 2026, 06:26">15 September 2026, 06:26</time>
+      </div>
+      <h3 class="card-title">Attack Chains, Not Just Attack Surfaces: Why Testing Individual Techniques Misses the Point</h3>
+      <p class="card-summary">Introduction</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Introduction</p>
+<p>Security teams have gotten pretty good at testing against what can hurt them. Can this EDR agent catch this payload?</p></div>
+      <div class="detail-links">
+        <a href="../articles/4e7760363abb40c9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attack-chains-not-just-attack-surfaces.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="AWS,Microsoft"
+       data-severity="medium"
+       data-title="mass-scanning campaign exploits vite flaw to extract cloud credentials from exposed dev servers"
+       data-id="a950eb1ab5e6eb41"
+       data-published="2026-09-15T16:42:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-15T16:42:32+05:30" title="15 September 2026, 06:12">15 September 2026, 06:12</time>
+      </div>
+      <h3 class="card-title">Mass-Scanning Campaign Exploits Vite Flaw to Extract Cloud Credentials From Exposed Dev Servers</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a mass-scanning campaign that has targeted Vite deployments siphon sensitive data.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a950eb1ab5e6eb41.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/mass-scanning-campaign-exploits-vite.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="exploit,vulnerability"
        data-vendors=""
@@ -180,6 +317,107 @@
       <div class="detail-links">
         <a href="../articles/467b1d83ec1034c0.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="apt,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers target wordpress sites via third-party woocommerce plugin"
+       data-id="5995229fa7eb3709"
+       data-published="2026-09-15T10:45:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-15T10:45:10-04:00" title="15 September 2026, 09:45">15 September 2026, 09:45</time>
+      </div>
+      <h3 class="card-title">Hackers target WordPress sites via third-party WooCommerce plugin</h3>
+      <p class="card-summary">Hackers are actively exploiting a critical vulnerability in the WooCommerce Wholesale Lead Capture premium plugin for WordPress to upload a PHP backdoor. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5995229fa7eb3709.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-via-third-party-woocommerce-plugin/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,vulnerability,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="what zero-day response should be in the post-mythos era"
+       data-id="be8a2f83766f9fb8"
+       data-published="2026-09-15T09:45:54-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-15T09:45:54-04:00" title="15 September 2026, 08:45">15 September 2026, 08:45</time>
+      </div>
+      <h3 class="card-title">What Zero-Day Response Should Be in the Post-Mythos Era</h3>
+      <p class="card-summary">AI is shrinking the time between vulnerability disclosure and exploitation, leaving defenders less time to wait for patches or public exploits. Picus Security explains how exploitability validation, security control testing, and autonomous pentesting can…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI is shrinking the time between vulnerability disclosure and exploitation, leaving defenders less time to wait for patches or public exploits. Picus Security explains how exploitability validation, security control testing, and autonomous pentesting can help teams close exposure gaps before attackers arrive. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/be8a2f83766f9fb8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/what-zero-day-response-should-be-in-the-post-mythos-era/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,ransomware,vulnerability"
+       data-vendors="VMware"
+       data-severity="medium"
+       data-title="cisa: critical vmware rce flaw now exploited by ransomware gangs"
+       data-id="21d91a058c6267f7"
+       data-published="2026-09-15T08:16:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">VMware</span>        <time class="meta-time" data-iso="2026-09-15T08:16:32-04:00" title="15 September 2026, 07:16">15 September 2026, 07:16</time>
+      </div>
+      <h3 class="card-title">CISA: Critical VMware RCE flaw now exploited by ransomware gangs</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) warned security teams that ransomware gangs have now joined ongoing attacks exploiting a critical VMware vCenter vulnerability patched in July. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/21d91a058c6267f7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-critical-vmware-vcenter-rce-flaw-now-exploited-by-ransomware-gangs/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

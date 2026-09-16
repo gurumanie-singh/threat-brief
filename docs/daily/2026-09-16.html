@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">16 September 2026</h1>
-      <span class="brief-sub">5 articles</span>
+      <span class="brief-sub">13 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Google ecosystem affected by multiple advisories</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>4 items require immediate action — patches or mitigations available</li>
+        <li>Google, Linux ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -50,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -66,6 +68,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
@@ -73,15 +76,154 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="breach,malware,phishing"
+       data-vendors=""
+       data-severity="high"
+       data-title="n0va phishkit targets us and eu businesses: a new challenge for identity security"
+       data-id="4a634b7566dbd3db"
+       data-published="2026-09-16T17:28:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-16T17:28:00+05:30" title="16 September 2026, 06:58">16 September 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">N0va Phishkit Targets US and EU Businesses: A New Challenge for Identity Security</h3>
+      <p class="card-summary">N0va is targeting organizations across North America and Europe with phishing campaigns that impersonate trusted services and abuse legitimate authentication flows. Successful attacks can give threat actors access to valid accounts without relying on…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>N0va is targeting organizations across North America and Europe with phishing campaigns that impersonate trusted services and abuse legitimate authentication flows. Successful attacks can give threat actors access to valid accounts without relying on obvious malware activity.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4a634b7566dbd3db.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/n0va-phishkit-targets-us-and-eu.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Google"
+       data-severity="high"
+       data-title="google patches pixel modem flaw amid signs of limited targeted exploitation"
+       data-id="6a8cb3cc04640a68"
+       data-published="2026-09-16T16:45:58+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-16T16:45:58+05:30" title="16 September 2026, 06:15">16 September 2026, 06:15</time>
+      </div>
+      <h3 class="card-title">Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation</h3>
+      <p class="card-summary">Google has disclosed that a high-severity security flaw in its Pixel Cellular Modem has come under exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6a8cb3cc04640a68.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="threat intelligence alone won&#39;t close the exploitation gap"
+       data-id="64a47db73c1e4193"
+       data-published="2026-09-16T16:45:48+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-16T16:45:48+05:30" title="16 September 2026, 06:15">16 September 2026, 06:15</time>
+      </div>
+      <h3 class="card-title">Threat Intelligence Alone Won&#39;t Close the Exploitation Gap</h3>
+      <p class="card-summary">A leaked credential shows up in a criminal marketplace, or a vulnerability gets a disclosure advisory, and either one can be weaponized against a real target before most security teams have triaged the alert. Attackers are combining that kind of…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A leaked credential shows up in a criminal marketplace, or a vulnerability gets a disclosure advisory, and either one can be weaponized against a real target before most security teams have triaged the alert. Attackers are combining that kind of intelligence with AI-assisted exploitation to accelerate the path from exposure to breach faster than most security programs are built to react.</p></div>
+      <div class="detail-links">
+        <a href="../articles/64a47db73c1e4193.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/threat-intelligence-alone-wont-close.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="acronis cpanel backup plugin vulnerability exploited in targeted attacks"
+       data-id="644bcdd6b6872f2a"
+       data-published="2026-09-16T16:38:54+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-16T16:38:54+05:30" title="16 September 2026, 06:08">16 September 2026, 06:08</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks</h3>
+      <p class="card-summary">Acronis has warned that a high-severity security flaw in its Backup plugin for cPanel and Web Host Manager (WHM) deployments has been exploited in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/644bcdd6b6872f2a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="apt,exploit,malware,vulnerability"
        data-vendors=""
@@ -147,6 +289,128 @@
       <div class="detail-links">
         <a href="../articles/e87ed160d2297869.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/active-exploitation-attempts-target.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft says copilot buttons still missing in classic outlook"
+       data-id="efcc5247a8ebadf4"
+       data-published="2026-09-16T08:16:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-16T08:16:32-04:00" title="16 September 2026, 07:16">16 September 2026, 07:16</time>
+      </div>
+      <h3 class="card-title">Microsoft says Copilot buttons still missing in classic Outlook</h3>
+      <p class="card-summary">Microsoft says it&#39;s still investigating a known issue that causes the Copilot and Copilot Chat buttons in Classic Outlook to disappear for some Windows users. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/efcc5247a8ebadf4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-workaround-for-missing-outlook-copilot-buttons/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="webinar: what happens in the first hours of a google workspace breach"
+       data-id="0f2d13a804e2fb6b"
+       data-published="2026-09-16T08:11:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-16T08:11:19-04:00" title="16 September 2026, 07:11">16 September 2026, 07:11</time>
+      </div>
+      <h3 class="card-title">Webinar: What happens in the first hours of a Google Workspace breach</h3>
+      <p class="card-summary">The first hours after discovering a Google Workspace breach can determine how an incident unfolds. This webinar examines real-world breaches to show which early response decisions can limit the impact and which can make matters worse. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0f2d13a804e2fb6b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-what-happens-in-the-first-hours-of-a-google-workspace-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical screenconnect flaw now actively exploited in attacks"
+       data-id="2d36c3256afab234"
+       data-published="2026-09-16T07:14:28-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-16T07:14:28-04:00" title="16 September 2026, 06:14">16 September 2026, 06:14</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Critical ScreenConnect flaw now actively exploited in attacks</h3>
+      <p class="card-summary">Attackers now exploit a critical-severity ConnectWise ScreenConnect vulnerability in the wild, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA). [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2d36c3256afab234.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-screenconnect-flaw/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="windows server 2022 reaches end of mainstream support next month"
+       data-id="2ac612b08189e434"
+       data-published="2026-09-16T05:10:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-16T05:10:20-04:00" title="16 September 2026, 04:10">16 September 2026, 04:10</time>
+      </div>
+      <h3 class="card-title">Windows Server 2022 reaches end of mainstream support next month</h3>
+      <p class="card-summary">Microsoft has reminded customers that Windows Server 2022 will reach the end of mainstream support next month and enter extended support until October 2031. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2ac612b08189e434.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-next-month/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

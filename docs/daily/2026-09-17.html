@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">17 September 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -63,21 +65,366 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical unbound dnssec validator flaw could allow rce via a malicious dns zone"
+       data-id="86363fe399db7eb0"
+       data-published="2026-09-17T18:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-17T18:00:00+05:30" title="17 September 2026, 07:30">17 September 2026, 07:30</time>
+      </div>
+      <h3 class="card-title">Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone</h3>
+      <p class="card-summary">Every release of the Unbound DNS resolver before 1.26.1 has a critical heap overflow in its DNSSEC validator, maintainer NLnet Labs said in an advisory on Wednesday.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/86363fe399db7eb0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="can you prove a new cve is exploitable before attackers do? learn how in this webinar"
+       data-id="ae98776a8d8758fe"
+       data-published="2026-09-17T17:20:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T17:20:00+05:30" title="17 September 2026, 06:50">17 September 2026, 06:50</time>
+      </div>
+      <h3 class="card-title">Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar</h3>
+      <p class="card-summary">A new CVE drops. Your scanner finds it.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ae98776a8d8758fe.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit,patch,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="ciso&#39;s expert guide to agentic pentesting for websites"
+       data-id="a07c6b615f0cae30"
+       data-published="2026-09-17T16:20:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-17T16:20:53+05:30" title="17 September 2026, 05:50">17 September 2026, 05:50</time>
+      </div>
+      <h3 class="card-title">CISO&#39;s Expert Guide to Agentic Pentesting for Websites</h3>
+      <p class="card-summary">Attackers now weaponize new vulnerabilities in about five days (Mandiant, part of Google Cloud). The median organization takes 43 days to patch one (Verizon DBIR 2026).</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a07c6b615f0cae30.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="china-aligned famoussparrow deploys sparrowocky backdoor across latin america"
+       data-id="79a0652a4045bc54"
+       data-published="2026-09-17T15:35:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T15:35:45+05:30" title="17 September 2026, 05:05">17 September 2026, 05:05</time>
+      </div>
+      <h3 class="card-title">China-Aligned FamousSparrow Deploys SparroWocky Backdoor Across Latin America</h3>
+      <p class="card-summary">The China-aligned state-sponsored threat actor known as FamousSparrow has been observed deploying a previously unreported backdoor called SparroWocky in attacks targeting multiple countries in Latin America since at least August 2025.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/79a0652a4045bc54.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/china-aligned-famoussparrow-deploys.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai reveals six model incidents involving hidden failures and unauthorized uploads"
+       data-id="9f04a4eac2276e67"
+       data-published="2026-09-17T15:23:38+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T15:23:38+05:30" title="17 September 2026, 04:53">17 September 2026, 04:53</time>
+      </div>
+      <h3 class="card-title">OpenAI Reveals Six Model Incidents Involving Hidden Failures and Unauthorized Uploads</h3>
+      <p class="card-summary">OpenAI on Wednesday disclosed six new instances of &#34;unexpected or concerning model behavior&#34; that took place over the past six months, while sharing a new framework for reporting, tracking, investigating, and disclosing model misalignment in a bid to…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>OpenAI on Wednesday disclosed six new instances of &#34;unexpected or concerning model behavior&#34; that took place over the past six months, while sharing a new framework for reporting, tracking, investigating, and disclosing model misalignment in a bid to improve transparency.</p></div>
+      <div class="detail-links">
+        <a href="../articles/9f04a4eac2276e67.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/openai-reveals-six-model-incidents.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="bind 9 update fixes 14 flaws, including an unauthenticated crash over dns-over-https"
+       data-id="4d7903ed46c42437"
+       data-published="2026-09-17T13:30:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-17T13:30:29+05:30" title="17 September 2026, 03:00">17 September 2026, 03:00</time>
+      </div>
+      <h3 class="card-title">BIND 9 Update Fixes 14 Flaws, Including an Unauthenticated Crash Over DNS-over-HTTPS</h3>
+      <p class="card-summary">The Internet Systems Consortium (ISC) has released BIND 9.20.29 and 9.21.26 to fix fourteen security flaws it disclosed on 16 September in BIND 9, its open-source DNS server software. One of them affects any BIND server that answers DNS-over-HTTPS (DoH).</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4d7903ed46c42437.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/bind-9-update-fixes-14-flaws-including.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="gyazo breach exposes 23.62 million user records and 490 million image metadata records"
+       data-id="7da49087e7a70e7d"
+       data-published="2026-09-17T13:00:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T13:00:01+05:30" title="17 September 2026, 02:30">17 September 2026, 02:30</time>
+      </div>
+      <h3 class="card-title">Gyazo Breach Exposes 23.62 Million User Records and 490 Million Image Metadata Records</h3>
+      <p class="card-summary">A security breach at Gyazo, Helpfeel&#39;s image-sharing service, exposed about 23.62 million user records, including email addresses and password hashes, the Kyoto-based company said in a notice published Wednesday.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7da49087e7a70e7d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/gyazo-breach-exposes-2362-million-user.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="u.s. seizes nightmarestresser domains linked to hundreds of thousands of ddos attacks"
+       data-id="563becd3d47e7942"
+       data-published="2026-09-17T10:43:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T10:43:46+05:30" title="17 September 2026, 00:13">17 September 2026, 00:13</time>
+      </div>
+      <h3 class="card-title">U.S. Seizes NightmareStresser Domains Linked to Hundreds of Thousands of DDoS Attacks</h3>
+      <p class="card-summary">Department of Justice (DoJ) on Tuesday announced the court-authorized seizure of internet domains associated with a distributed denial-of-service (DDoS)-for-hire service known as NightmareStresser.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/563becd3d47e7942.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/us-seizes-nightmarestresser-domains.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="what recent ai-powered attacks mean for your identity security"
+       data-id="258a131917a420da"
+       data-published="2026-09-17T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T10:01:11-04:00" title="17 September 2026, 09:01">17 September 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">What Recent AI-Powered Attacks Mean for Your Identity Security</h3>
+      <p class="card-summary">AI is making credential theft faster and easier to scale, giving attackers more opportunities to abuse valid identities. Specops explains why identity security must go beyond successful authentication by verifying that both the user and the device…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI is making credential theft faster and easier to scale, giving attackers more opportunities to abuse valid identities. Specops explains why identity security must go beyond successful authentication by verifying that both the user and the device requesting access can be trusted. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/258a131917a420da.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/what-recent-ai-powered-attacks-mean-for-your-identity-security/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="windows 11 24h2 home and pro reach end of support in october"
+       data-id="7779a3651cf0b9e6"
+       data-published="2026-09-17T09:09:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-17T09:09:09-04:00" title="17 September 2026, 08:09">17 September 2026, 08:09</time>
+      </div>
+      <h3 class="card-title">Windows 11 24H2 Home and Pro reach end of support in October</h3>
+      <p class="card-summary">Microsoft reminded customers this week that devices running Windows 11 24H2 Home and Pro editions will stop receiving updates next month. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7779a3651cf0b9e6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-october/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="us takes down nightmarestresser ddos-for-hire platform"
+       data-id="2551249bab4ad1c7"
+       data-published="2026-09-17T07:33:35-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-17T07:33:35-04:00" title="17 September 2026, 06:33">17 September 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">US takes down NightmareStresser DDoS-for-hire platform</h3>
+      <p class="card-summary">Federal Bureau of Investigation (FBI) seized the domains used by NightmareStresser, one of the world&#39;s longest-running distributed denial-of-service (DDoS) platforms. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2551249bab4ad1c7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fbi-seizes-nightmarestresser-service-linked-to-thousands-of-ddos-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -165,6 +512,7 @@
           <span class="ttag">zero-day</span>
         </div>
       </div>
+      <div class="card-related">Also: The Hacker News</div>
       <span class="card-source">BleepingComputer</span>
     </div>
     <div class="card-detail" aria-hidden="true">

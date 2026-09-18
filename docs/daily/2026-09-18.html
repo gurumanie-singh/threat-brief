@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">18 September 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">16 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
-        <li>Google, Microsoft ecosystems affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -49,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -64,8 +65,8 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
@@ -73,13 +74,142 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="transparent tribe deploys new rust backdoor using private github repositories for c2"
+       data-id="ac17c0f1bc494cb5"
+       data-published="2026-09-18T20:54:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-18T20:54:16+05:30" title="18 September 2026, 10:24">18 September 2026, 10:24</time>
+      </div>
+      <h3 class="card-title">Transparent Tribe Deploys New Rust Backdoor Using Private GitHub Repositories for C2</h3>
+      <p class="card-summary">The Pakistan-aligned threat group tracked as Transparent Tribe (aka APT36 and Earth Karkaddan) has been attributed to a fresh set of cyber attacks targeting government and defense entities in India and Afghanistan.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ac17c0f1bc494cb5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="microsoft patches cvss 10.0 azure ai foundry flaw enabling unauthorized privilege escalation"
+       data-id="67f28986b7691ba3"
+       data-published="2026-09-18T18:17:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-18T18:17:04+05:30" title="18 September 2026, 07:47">18 September 2026, 07:47</time>
+      </div>
+      <h3 class="card-title">Microsoft Patches CVSS 10.0 Azure AI Foundry Flaw Enabling Unauthorized Privilege Escalation</h3>
+      <p class="card-summary">Microsoft has released fixes for a maximum-severity security flaw in Azure AI Foundry that could be exploited to achieve privilege escalation. No customer action is required.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/67f28986b7691ba3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="an abandoned cdn domain was re-registered. thousands of sites still call it."
+       data-id="bd4a6407a806e1da"
+       data-published="2026-09-18T16:31:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-18T16:31:16+05:30" title="18 September 2026, 06:01">18 September 2026, 06:01</time>
+      </div>
+      <h3 class="card-title">An Abandoned CDN Domain Was Re-Registered. Thousands of Sites Still Call It.</h3>
+      <p class="card-summary">In July 2025, someone registered a domain that used to belong to a content delivery network. The CDN had been wound down years earlier, and the domain it served assets from was allowed to expire.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bd4a6407a806e1da.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="plugin4shell lets repository owners swap pinned plugin code across four ai coding agents"
+       data-id="7709574e4e363f48"
+       data-published="2026-09-18T16:31:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-18T16:31:01+05:30" title="18 September 2026, 06:01">18 September 2026, 06:01</time>
+      </div>
+      <h3 class="card-title">Plugin4Shell Lets Repository Owners Swap Pinned Plugin Code Across Four AI Coding Agents</h3>
+      <p class="card-summary">A flaw in four widely used AI coding agents lets someone who controls a plugin&#39;s code repository swap the plugin an agent installs for a malicious one, even when the agent locked that plugin to a specific reviewed version, security firm Air Security said…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A flaw in four widely used AI coding agents lets someone who controls a plugin&#39;s code repository swap the plugin an agent installs for a malicious one, even when the agent locked that plugin to a specific reviewed version, security firm Air Security said on Thursday.</p></div>
+      <div class="detail-links">
+        <a href="../articles/7709574e4e363f48.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors="Google"
@@ -143,6 +273,39 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="gyazo server flaw exploited to steal 23.6 million user records"
+       data-id="04a18d0dc98d863b"
+       data-published="2026-09-18T12:00:38-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-18T12:00:38-04:00" title="18 September 2026, 11:00">18 September 2026, 11:00</time>
+      </div>
+      <h3 class="card-title">Gyazo server flaw exploited to steal 23.6 million user records</h3>
+      <p class="card-summary">The Gyazo image-sharing platform has confirmed it suffered a data breach after hackers exploited a server vulnerability that allowed them to steal 23.6 million user records. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/04a18d0dc98d863b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="breach,malware,phishing"
        data-vendors="Google"
@@ -173,6 +336,129 @@
       <div class="detail-links">
         <a href="../articles/c6cf40cc8ba6a829.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fake lastpass authenticator github repos push new rapuncel infostealer"
+       data-id="05d8961aeaf9969d"
+       data-published="2026-09-18T11:19:06-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-18T11:19:06-04:00" title="18 September 2026, 10:19">18 September 2026, 10:19</time>
+      </div>
+      <h3 class="card-title">Fake LastPass Authenticator GitHub repos push new Rapuncel infostealer</h3>
+      <p class="card-summary">An ongoing malware campaign uses SEO-optimized GitHub repositories to impersonate well-known software firms to push a previously undocumented information stealer called Rapuncel. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/05d8961aeaf9969d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="secure enterprise sharing with access reviews for microsoft 365"
+       data-id="bdcb5f8ba03d68c7"
+       data-published="2026-09-18T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-18T10:00:10-04:00" title="18 September 2026, 09:00">18 September 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Secure enterprise sharing with access reviews for Microsoft 365</h3>
+      <p class="card-summary">Microsoft 365 makes sharing files easy, but access can remain long after its original purpose has ended, leaving organizations with little visibility into who can still reach sensitive data. tenfold Software explains how centralized access governance and…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Microsoft 365 makes sharing files easy, but access can remain long after its original purpose has ended, leaving organizations with little visibility into who can still reach sensitive data. tenfold Software explains how centralized access governance and owner-driven reviews can help identify and remove unnecessary access. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/bdcb5f8ba03d68c7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft teams will let admins block custom file extensions"
+       data-id="c097276cb8371f8b"
+       data-published="2026-09-18T09:58:40-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-18T09:58:40-04:00" title="18 September 2026, 08:58">18 September 2026, 08:58</time>
+      </div>
+      <h3 class="card-title">Microsoft Teams will let admins block custom file extensions</h3>
+      <p class="card-summary">Microsoft Teams will soon let administrators tweak the list of file extensions commonly associated with security threats to meet their company&#39;s security requirements. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c097276cb8371f8b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="webinar: which google workspace security controls actually matter?"
+       data-id="228e0b7539e8a38c"
+       data-published="2026-09-18T09:10:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-18T09:10:19-04:00" title="18 September 2026, 08:10">18 September 2026, 08:10</time>
+      </div>
+      <h3 class="card-title">Webinar: Which Google Workspace security controls actually matter?</h3>
+      <p class="card-summary">Fast-growing companies face countless recommendations for securing Google Workspace, but not every control provides the same value. This webinar examines real-world breaches to explore which security controls matter most, which may be overrated, and where…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Fast-growing companies face countless recommendations for securing Google Workspace, but not every control provides the same value. This webinar examines real-world breaches to explore which security controls matter most, which may be overrated, and where lean security teams should focus their resources. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/228e0b7539e8a38c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-which-google-workspace-security-controls-actually-matter/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

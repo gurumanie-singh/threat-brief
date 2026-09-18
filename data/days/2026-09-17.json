@@ -1,5 +1,64 @@
 [
   {
+    "id": "ef4967760671abd7",
+    "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
+    "published": "2026-09-17T23:38:28+05:30",
+    "fetched_at": "2026-09-18T07:01:49.929006+00:00",
+    "summary": "A critical vulnerability in Check Point's Security Management and Log Servers could allow an attacker without login credentials to run code as root on those servers over the network.",
+    "tags": [
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-09-17",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A critical vulnerability in Check Point's Security Management and Log Servers could allow an attacker without login credentials to run code as root on those servers over the network.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "Check Point has released a fix through its LivePatch update channel and says it has no indication that the flaw The Security Management Server is the system that controls firewall policy and administrator access."
+    },
+    "email_summary": "A critical vulnerability in Check Point's Security Management and Log Servers could allow an attacker without login credentials to run code as root on those servers over the network. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "da23192b357a6e64",
+    "title": "ThreatsDay: Self-Rewriting Agents, 800+ Flaws Patched, Insider SIM Swaps and 22 More New Stories",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/threatsday-self-rewriting-agents-800.html",
+    "published": "2026-09-17T23:02:22+05:30",
+    "fetched_at": "2026-09-18T07:01:49.929243+00:00",
+    "summary": "Attackers keep finding new keys. The funny part is that defenders keep inventing where to store them.",
+    "tags": [
+      "patch"
+    ],
+    "day": "2026-09-17",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers keep finding new keys. The funny part is that defenders keep inventing where to store them.",
+    "quick_take": "",
+    "sections": {
+      "technical": "This week, those keys sit in AI tools, exposed services, old bugs, weak logins, and software sold like a monthly subscription."
+    },
+    "email_summary": "Attackers keep finding new keys. The funny part is that defenders keep inventing where to store them.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "796bcf00edaa561a",
     "title": "CISA Ditches Weekly Vulnerability Roundups for Risk-Based Focus",
     "source": "Dark Reading",
@@ -20,6 +79,67 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "The move is consistent with the agency's advice on the need for organizations to prioritize the vulnerabilities that actually matter.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "c9a12d10dc18c05f",
+    "title": "Critical Docker Sandboxes Flaw Lets Malicious Guest Code Read and Modify macOS Host Files",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/critical-docker-sandboxes-flaw-lets.html",
+    "published": "2026-09-17T21:07:56+05:30",
+    "fetched_at": "2026-09-18T07:01:49.929506+00:00",
+    "summary": "Malicious code running inside a Docker Sandboxes virtual machine on macOS could escape the project directory shared into it and read or change files anywhere else on the host, Docker warns in a security announcement on September 15.",
+    "tags": [
+      "cve",
+      "malware"
+    ],
+    "day": "2026-09-17",
+    "cves": [
+      "CVE-2026-77179"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
+    "card_summary": "Malicious code running inside a Docker Sandboxes virtual machine on macOS could escape the project directory shared into it and read or change files anywhere else on the host, Docker warns in a security announcement on September 15.",
+    "quick_take": "Malicious code running inside a Docker Sandboxes virtual machine on macOS could escape the project directory shared into it and read or change files anywhere else on the host, Docker warns in a security announcement…",
+    "sections": {
+      "technical": "The flaw, CVE-2026-77179, is rated Critical, affects versions\n\nReferenced vulnerabilities: CVE-2026-77179.",
+      "impact": "The flaw, CVE-2026-77179, is rated Critical, affects versions\n\nAssessed severity: HIGH."
+    },
+    "email_summary": "Malicious code running inside a Docker Sandboxes virtual machine on macOS could escape the project directory shared into it and read or change files anywhere else on the host, Docker warns in a security announcement on September 15. Tracked as CVE-2026-77179. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "c0ca0e1880a5380d",
+    "title": "Iran-Linked Handala Hack Tied to HEAVYGRAM Telegram Backdoor That Can Steal Passwords",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/iran-linked-handala-hack-tied-to.html",
+    "published": "2026-09-17T19:33:13+05:30",
+    "fetched_at": "2026-09-18T07:01:49.929739+00:00",
+    "summary": "The Iran-linked \"hacktivist\" persona known as Handala Hack has been attributed to a Telegram-based surveillance backdoor called HEAVYGRAM and a Delphi-based utility known as CRUDEEXCLUDE.",
+    "tags": [
+      "apt",
+      "malware"
+    ],
+    "day": "2026-09-17",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Iran-linked \"hacktivist\" persona known as Handala Hack has been attributed to a Telegram-based surveillance backdoor called HEAVYGRAM and a Delphi-based utility known as CRUDEEXCLUDE.",
+    "quick_take": "The Iran-linked \"hacktivist\" persona known as Handala Hack has been attributed to a Telegram-based surveillance backdoor called HEAVYGRAM and a Delphi-based utility known as CRUDEEXCLUDE.\n\n\"HEAVYGRAM offers builtin…",
+    "sections": {
+      "technical": "The Iran-linked \"hacktivist\" persona known as Handala Hack has been attributed to a Telegram-based surveillance backdoor called HEAVYGRAM and a Delphi-based utility known as CRUDEEXCLUDE.\n\n\"HEAVYGRAM offers builtin commands supporting remote command execution, system, network and process information discovery, data and Telegram session files exfiltration, screenshot capture, DLL sideloading,"
+    },
+    "email_summary": "The Iran-linked \"hacktivist\" persona known as Handala Hack has been attributed to a Telegram-based surveillance backdoor called HEAVYGRAM and a Delphi-based utility known as CRUDEEXCLUDE.\n\n\"HEAVYGRAM offers builtin commands supporting remote command execution, system, network and process information discovery, data and Telegram session files exfiltration, screenshot capture, DLL sideloading,.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -436,99 +556,6 @@
     "email_summary": "Federal Bureau of Investigation (FBI) seized the domains used by NightmareStresser, one of the world's longest-running distributed denial-of-service (DDoS) platforms. [...].",
     "content_model_version": 2,
     "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "c4763dae763d83b4",
-    "title": "Chinese hackers use SparroWocky malware in govt espionage attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-sparrowocky-malware-in-govt-espionage-attacks/",
-    "published": "2026-09-17T05:00:00-04:00",
-    "fetched_at": "2026-09-17T10:57:10.944606+00:00",
-    "summary": "The China-linked espionage group FamousSparrow has been using a new backdoor named SparroWocky in attacks on government organizations in Latin America. [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-09-17",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The China-linked espionage group FamousSparrow has been using a new backdoor named SparroWocky in attacks on government organizations in Latin America. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The China-linked espionage group FamousSparrow has been using a new backdoor named SparroWocky in attacks on government organizations in Latin America. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "The China-linked espionage group FamousSparrow has been using a new backdoor named SparroWocky in attacks on government organizations in Latin America. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "c604960710d9fe7a",
-    "title": "Microsoft shares workaround for Windows domain login issues",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-workaround-for-windows-domain-login-authentication-issues/",
-    "published": "2026-09-17T04:24:48-04:00",
-    "fetched_at": "2026-09-17T10:57:10.944828+00:00",
-    "summary": "Microsoft shared a temporary fix on Wednesday for a known issue that prevents Windows 11 users from logging in with valid domain credentials after installing the September 2026 security updates. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-09-17",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft shared a temporary fix on Wednesday for a known issue that prevents Windows 11 users from logging in with valid domain credentials after installing the September 2026 security updates. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Microsoft shared a temporary fix on Wednesday for a known issue that prevents Windows 11 users from logging in with valid domain credentials after installing the September 2026 security updates. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Microsoft shared a temporary fix on Wednesday for a known issue that prevents Windows 11 users from logging in with valid domain credentials after installing the September 2026 security updates. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "4973f791ad732f58",
-    "title": "Cisco warns of max severity ISE zero-day exploited in attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/",
-    "published": "2026-09-17T03:20:54-04:00",
-    "fetched_at": "2026-09-17T10:57:10.945051+00:00",
-    "summary": "Cisco has released security updates to address a maximum-severity Identity Services Engine vulnerability that attackers are actively exploiting in the wild. [...]",
-    "tags": [
-      "exploit",
-      "patch",
-      "vulnerability",
-      "zero-day"
-    ],
-    "day": "2026-09-17",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [
-      "Cisco"
-    ],
-    "action_required": false,
-    "card_summary": "Cisco has released security updates to address a maximum-severity Identity Services Engine vulnerability that attackers are actively exploiting in the wild. [...]",
-    "quick_take": "",
-    "sections": {
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "Cisco has released security updates to address a maximum-severity Identity Services Engine vulnerability that attackers are actively exploiting in the wild. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [
-      {
-        "source": "The Hacker News",
-        "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html"
-      }
-    ],
     "highlighted": false
   }
 ]

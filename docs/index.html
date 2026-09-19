@@ -28,15 +28,15 @@
       <h1 class="brief-title">19 September 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-09-19T05:18:10.127578-05:00">19 September 2026, 05:18</time>
+        <time data-iso="2026-09-19T09:09:33.809117-05:00">19 September 2026, 09:09</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-critical">2 critical</span>
-      <span class="stat stat-high">1 high</span>
+      <span class="stat stat-critical">3 critical</span>
+      <span class="stat stat-high">2 high</span>
       <span class="stat stat-action">2 action req.</span>
-      <span class="stat">4 articles today</span>
+      <span class="stat">9 articles today</span>
     </div>
   </div>
 
@@ -44,19 +44,21 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
         <span class="trend-pill">exploited<span class="trend-count">9</span></span>
+        <span class="trend-pill">hackers<span class="trend-count">8</span></span>
         <span class="trend-pill">microsoft<span class="trend-count">8</span></span>
         <span class="trend-pill">malware<span class="trend-count">8</span></span>
-        <span class="trend-pill">hackers<span class="trend-count">7</span></span>
-        <span class="trend-pill">critical<span class="trend-count">6</span></span>
-        <span class="trend-pill">security<span class="trend-count">6</span></span>
+        <span class="trend-pill">openai<span class="trend-count">6</span></span>
+        <span class="trend-pill">flaws<span class="trend-count">6</span></span>
       </div>
     </div>
   </div>
@@ -71,6 +73,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-action" data-filter-group="special" data-filter-value="action">Action req.</button>
       <button class="qf-btn" data-filter-group="special" data-filter-value="6h">Last 6h</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -222,10 +225,72 @@
   <div class="day-group">
     <h2 class="day-heading">
       19 September 2026
-      <span class="day-count">4</span>
+      <span class="day-count">9</span>
     </h2>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="claude opus 5 helped researchers take over openai staff accounts via chained flaws"
+       data-id="e17f1f97b789b9ba"
+       data-published="2026-09-19T15:31:10+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-19T15:31:10+05:30" title="19 September 2026, 05:01">19 September 2026, 05:01</time>
+      </div>
+      <h3 class="card-title">Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws</h3>
+      <p class="card-summary">Three researchers at the security firm Hacktron used Anthropic&#39;s Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e17f1f97b789b9ba.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="solarwinds patches arm hard-coded key flaw enabling unauthenticated rce"
+       data-id="8caa17faeb630587"
+       data-published="2026-09-19T15:01:17+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-19T15:01:17+05:30" title="19 September 2026, 04:31">19 September 2026, 04:31</time>
+      </div>
+      <h3 class="card-title">SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE</h3>
+      <p class="card-summary">SolarWinds has released security updates to address a high-severity flaw in Access Rights Manager (ARM) that, if successfully exploited, could lead to an unauthenticated remote code execution vulnerability.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/8caa17faeb630587.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors="Fortinet"
@@ -352,10 +417,106 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--low"
+       data-tags="breach,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="north korean waterplum hackers infected 30,000 devices worldwide"
+       data-id="7e8c472a0a2e743e"
+       data-published="2026-09-19T10:05:15-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-09-19T10:05:15-04:00" title="19 September 2026, 09:05">19 September 2026, 09:05</time>
+      </div>
+      <h3 class="card-title">North Korean WaterPlum hackers infected 30,000 devices worldwide</h3>
+      <p class="card-summary">A joint law enforcement advisory warns that the North Korean hacking group WaterPlum compromised at least 30,000 devices worldwide from December 2025 through July 2026 and transferred more than $10.7 million in stolen cryptocurrency to North Korea. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/7e8c472a0a2e743e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/north-korean-waterplum-hackers-infected-30-000-devices-worldwide/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware,ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="shinyhunters hacks clop leak site, threatens to extort ransomware gang"
+       data-id="96f3940d5a03b10d"
+       data-published="2026-09-19T09:48:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-19T09:48:32-04:00" title="19 September 2026, 08:48">19 September 2026, 08:48</time>
+      </div>
+      <h3 class="card-title">ShinyHunters hacks Clop leak site, threatens to extort ransomware gang</h3>
+      <p class="card-summary">The ShinyHunters extortion gang breached the Clop (aka Cl0p) ransomware operation&#39;s data leak site, defacing the Tor site and allegedly stealing server data and the private keys for its onion service. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/96f3940d5a03b10d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-hacks-clop-leak-site-threatens-to-extort-ransomware-gang/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="calling viral ai actress tilly norwood? agree to a face scan first"
+       data-id="033e398dafbc4768"
+       data-published="2026-09-19T07:38:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-19T07:38:20-04:00" title="19 September 2026, 06:38">19 September 2026, 06:38</time>
+      </div>
+      <h3 class="card-title">Calling viral AI actress Tilly Norwood? Agree to a face scan first</h3>
+      <p class="card-summary">AI actress Tilly Norwood went viral after glitching into Chinese on Piers Morgan Uncensored last night. Her &#34;Talking Tilly&#34; video call service face-scans every caller for an 18+ age check, senses callers&#39; moods during calls, and shuts down permanently on…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI actress Tilly Norwood went viral after glitching into Chinese on Piers Morgan Uncensored last night. Her &#34;Talking Tilly&#34; video call service face-scans every caller for an 18+ age check, senses callers&#39; moods during calls, and shuts down permanently on September 27. We tried it and read the fine print. [...]</p></div>
+      <div class="detail-links">
+        <a href="articles/033e398dafbc4768.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/calling-viral-ai-actress-tilly-norwood-agree-to-a-face-scan-first/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="day-group">
     <h2 class="day-heading">
       18 September 2026
-      <span class="day-count">20</span>
+      <span class="day-count">18</span>
     </h2>
   </div>
 
@@ -916,166 +1077,6 @@
       <div class="detail-links">
         <a href="articles/228e0b7539e8a38c.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/webinar-which-google-workspace-security-controls-actually-matter/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft fixes bug behind ‘defender antivirus is turned off’ alerts"
-       data-id="96e7ddce0a665ad1"
-       data-published="2026-09-18T08:16:32-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-18T08:16:32-04:00" title="18 September 2026, 07:16">18 September 2026, 07:16</time>
-      </div>
-      <h3 class="card-title">Microsoft fixes bug behind ‘Defender Antivirus is turned off’ alerts</h3>
-      <p class="card-summary">Microsoft has resolved a known issue that causes incorrect alerts warning that Defender Antivirus was turned off after installing recent updates. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/96e7ddce0a665ad1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ai agent breaches spanish organization, modifies personal data"
-       data-id="f216fe0c72db75fe"
-       data-published="2026-09-18T07:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-18T07:00:00+00:00" title="18 September 2026, 02:00">18 September 2026, 02:00</time>
-      </div>
-      <h3 class="card-title">AI Agent Breaches Spanish Organization, Modifies Personal Data</h3>
-      <p class="card-summary">AI-driven cyberattacks used to be exotic. Soon, it&#39;ll be odd if threat actors aren&#39;t using agents to do all of their bidding.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/f216fe0c72db75fe.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="day-group">
-    <h2 class="day-heading">
-      17 September 2026
-      <span class="day-count">3</span>
-    </h2>
-  </div>
-
-  <div class="article-card card--high"
-       data-tags="malware,patch,vulnerability"
-       data-vendors=""
-       data-severity="high"
-       data-title="critical check point management flaw lets unauthenticated attackers run code as root"
-       data-id="ef4967760671abd7"
-       data-published="2026-09-17T23:38:28+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-09-17T23:38:28+05:30" title="17 September 2026, 13:08">17 September 2026, 13:08</time>
-      </div>
-      <h3 class="card-title">Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root</h3>
-      <p class="card-summary">A critical vulnerability in Check Point&#39;s Security Management and Log Servers could allow an attacker without login credentials to run code as root on those servers over the network.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ef4967760671abd7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/critical-check-point-management-server.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="patch"
-       data-vendors="AWS,Microsoft"
-       data-severity="medium"
-       data-title="threatsday: self-rewriting agents, 800+ flaws patched, insider sim swaps and 22 more new stories"
-       data-id="da23192b357a6e64"
-       data-published="2026-09-17T23:02:22+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-17T23:02:22+05:30" title="17 September 2026, 12:32">17 September 2026, 12:32</time>
-      </div>
-      <h3 class="card-title">ThreatsDay: Self-Rewriting Agents, 800+ Flaws Patched, Insider SIM Swaps and 22 More New Stories</h3>
-      <p class="card-summary">Attackers keep finding new keys. The funny part is that defenders keep inventing where to store them.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/da23192b357a6e64.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/threatsday-self-rewriting-agents-800.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="cisa ditches weekly vulnerability roundups for risk-based focus"
-       data-id="796bcf00edaa561a"
-       data-published="2026-09-17T21:23:50+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-17T21:23:50+00:00" title="17 September 2026, 16:23">17 September 2026, 16:23</time>
-      </div>
-      <h3 class="card-title">CISA Ditches Weekly Vulnerability Roundups for Risk-Based Focus</h3>
-      <p class="card-summary">The move is consistent with the agency&#39;s advice on the need for organizations to prioritize the vulnerabilities that actually matter.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/796bcf00edaa561a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/cisa-ditches-weekly-vuln-roundups-risk-based-focus" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

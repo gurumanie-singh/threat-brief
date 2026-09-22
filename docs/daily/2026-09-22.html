@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 September 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">13 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -48,6 +50,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -63,21 +66,184 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="dora year two: can your soc actually see the attack?"
+       data-id="42e9a5330c6bf36c"
+       data-published="2026-09-22T17:15:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-22T17:15:00+05:30" title="22 September 2026, 06:45">22 September 2026, 06:45</time>
+      </div>
+      <h3 class="card-title">DORA Year Two: Can Your SOC Actually See the Attack?</h3>
+      <p class="card-summary">When the Digital Operational Resilience Act (DORA) became enforceable across the European Union in January 2025, it triggered an administrative sprint. Financial entities spent the first year establishing risk governance, assessing third-party service…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>When the Digital Operational Resilience Act (DORA) became enforceable across the European Union in January 2025, it triggered an administrative sprint. Financial entities spent the first year establishing risk governance, assessing third-party service providers, updating contract clauses, and documenting incident escalation workflows.</p></div>
+      <div class="detail-links">
+        <a href="../articles/42e9a5330c6bf36c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/dora-year-two-can-your-soc-actually-see.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new linux kernel flaw gives arm64 kvm guests read-write access to host memory"
+       data-id="e5b970bf4d5c6324"
+       data-published="2026-09-22T17:08:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-22T17:08:40+05:30" title="22 September 2026, 06:38">22 September 2026, 06:38</time>
+      </div>
+      <h3 class="card-title">New Linux Kernel Flaw Gives ARM64 KVM Guests Read-Write Access to Host Memory</h3>
+      <p class="card-summary">A new flaw in the Linux kernel&#39;s KVM virtualization code for ARM64 processors can leave a freed piece of host memory exposed to a guest virtual machine on hosts with nested virtualization enabled.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e5b970bf4d5c6324.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/new-linux-kernel-flaw-gives-arm64-kvm.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="sharepoint flaw initially listed as spoofing by microsoft enables authenticated rce"
+       data-id="78580357b103b156"
+       data-published="2026-09-22T16:47:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-22T16:47:41+05:30" title="22 September 2026, 06:17">22 September 2026, 06:17</time>
+      </div>
+      <h3 class="card-title">SharePoint Flaw Initially Listed as Spoofing by Microsoft Enables Authenticated RCE</h3>
+      <p class="card-summary">A SharePoint Server vulnerability that Microsoft initially classified as a spoofing flaw with a CVSS score of 6.5 actually enables authenticated remote code execution, according to full technical details published today by Viettel Cyber Security researcher…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A SharePoint Server vulnerability that Microsoft initially classified as a spoofing flaw with a CVSS score of 6.5 actually enables authenticated remote code execution, according to full technical details published today by Viettel Cyber Security researcher Dinh Ho Anh Khoa.</p></div>
+      <div class="detail-links">
+        <a href="../articles/78580357b103b156.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/sharepoint-flaw-initially-listed-as.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious npm package indexed-btree hid its loader in runtime code before removal"
+       data-id="0548c86d53e82393"
+       data-published="2026-09-22T15:08:18+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-22T15:08:18+05:30" title="22 September 2026, 04:38">22 September 2026, 04:38</time>
+      </div>
+      <h3 class="card-title">Malicious npm Package indexed-btree Hid Its Loader in Runtime Code Before Removal</h3>
+      <p class="card-summary">A malicious npm package named &#34;indexed-btree&#34; has been observed hiding its malicious behavior within application code rather than using lifecycle scripts, indicating that threat actors are likely shifting tactics in response to recent security controls.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0548c86d53e82393.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/malicious-npm-package-indexed-btree-hid.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="sidecopy broadens india targeting to academia with reverserat spear-phishing"
+       data-id="3a7110554aedcb23"
+       data-published="2026-09-22T13:22:03+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-22T13:22:03+05:30" title="22 September 2026, 02:52">22 September 2026, 02:52</time>
+      </div>
+      <h3 class="card-title">SideCopy Broadens India Targeting to Academia With ReverseRAT Spear-Phishing</h3>
+      <p class="card-summary">The threat actor known as SideCopy has been observed using spear-phishing lures to target academic institutions in India, expanding their strategic focus beyond government entities.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3a7110554aedcb23.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/sidecopy-broadens-india-targeting-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="malware"
        data-vendors=""
@@ -106,6 +272,35 @@
       <div class="detail-links">
         <a href="../articles/df00ce1d5adf8d05.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="more than a third of industrial orgs see cybersecurity risk as a top obstacle to growth, study finds"
+       data-id="9a74f7593f4ffe50"
+       data-published="2026-09-22T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-22T12:00:00+00:00" title="22 September 2026, 07:00">22 September 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">More Than a Third of Industrial Orgs See Cybersecurity Risk as a Top Obstacle to Growth, Study Finds</h3>
+      <p class="card-summary">Industrial companies are increasing cybersecurity investment as connected operations, AI adoption, and IT/OT convergence expand operational risk.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9a74f7593f4ffe50.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/third-industrial-orgs-see-cybersecurity-risk-top-obstacle" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -174,6 +369,136 @@
       <div class="detail-links">
         <a href="../articles/53df301220eb3bd6.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,phishing"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="webinar tomorrow: inside real-world google workspace breaches"
+       data-id="a1c9b9329ffa324e"
+       data-published="2026-09-22T08:57:07-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-22T08:57:07-04:00" title="22 September 2026, 07:57">22 September 2026, 07:57</time>
+      </div>
+      <h3 class="card-title">Webinar tomorrow: Inside real-world Google Workspace breaches</h3>
+      <p class="card-summary">Tomorrow&#39;s webinar examines real Google Workspace breaches involving social engineering and malicious OAuth applications, from initial access through the critical first hours of incident response. Learn which security controls and response decisions can…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Tomorrow&#39;s webinar examines real Google Workspace breaches involving social engineering and malicious OAuth applications, from initial access through the critical first hours of incident response. Learn which security controls and response decisions can make the greatest difference. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/a1c9b9329ffa324e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/webinar-tomorrow-inside-real-world-google-workspace-breaches/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="d-link warns of max severity zero-day bug in dir-822a routers"
+       data-id="c1f1c34e7c741f2f"
+       data-published="2026-09-22T08:48:06-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-22T08:48:06-04:00" title="22 September 2026, 07:48">22 September 2026, 07:48</time>
+      </div>
+      <h3 class="card-title">D-Link warns of max severity zero-day bug in DIR-822A routers</h3>
+      <p class="card-summary">D-Link warned customers of a maximum-severity vulnerability (CVE-2026-86296) with public proof-of-concept (PoC) exploit code and no patch, affecting legacy DIR-822A dual-band Wi-Fi routers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c1f1c34e7c741f2f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/d-link-warns-of-max-severity-zero-day-bug-in-dir-822a-routers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="new windows defender zero-day blocks microsoft antivirus updates"
+       data-id="b2d4900df6f09ef8"
+       data-published="2026-09-22T05:55:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-22T05:55:11-04:00" title="22 September 2026, 04:55">22 September 2026, 04:55</time>
+      </div>
+      <h3 class="card-title">New Windows Defender zero-day blocks Microsoft antivirus updates</h3>
+      <p class="card-summary">Over the weekend, security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) released another Microsoft Defender zero-day exploit that blocks antivirus updates. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b2d4900df6f09ef8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa orders feds to patch zyxel flaw exploited for data theft"
+       data-id="846797074073064a"
+       data-published="2026-09-22T04:53:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-22T04:53:09-04:00" title="22 September 2026, 03:53">22 September 2026, 03:53</time>
+      </div>
+      <h3 class="card-title">CISA orders feds to patch Zyxel flaw exploited for data theft</h3>
+      <p class="card-summary">​Attackers are now actively exploiting a high-severity vulnerability in Zyxel GS1900 series switches, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA). [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/846797074073064a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-zyxel-flaw-by-thursday/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

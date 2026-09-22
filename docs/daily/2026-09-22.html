@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>5 critical-severity issues detected with active exploitation reported</li>
-        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>6 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
@@ -76,17 +76,75 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="high"
+       data-title="wordpress issues patch for critical flaw that can enable code execution on some servers"
+       data-id="43188b27169afd53"
+       data-published="2026-09-22T23:33:10+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-22T23:33:10+05:30" title="22 September 2026, 13:03">22 September 2026, 13:03</time>
+      </div>
+      <h3 class="card-title">WordPress Issues Patch for Critical Flaw That Can Enable Code Execution on Some Servers</h3>
+      <p class="card-summary">WordPress has fixed a critical flaw in its core software that lets an attacker with no account make a site load a PHP file from outside its theme folders.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/43188b27169afd53.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/wordpress-issues-patch-for-critical.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious npm package poses as twilio bug-bounty probe, can exfiltrate credentials"
+       data-id="286ba4019fee0c31"
+       data-published="2026-09-22T23:28:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-22T23:28:15+05:30" title="22 September 2026, 12:58">22 September 2026, 12:58</time>
+      </div>
+      <h3 class="card-title">Malicious npm Package Poses as Twilio Bug-Bounty Probe, Can Exfiltrate Credentials</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a malicious npm package named &#34;tw-pkgprobe-7731&#34; that masquerades as a security tool targeting developers integrating Twilio into their applications, while stealthily attempting to harvest sensitive data.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/286ba4019fee0c31.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="phishing"
        data-vendors="Microsoft"
@@ -109,6 +167,7 @@
           <span class="ttag">phishing</span>
         </div>
       </div>
+      <div class="card-related">Also: Dark Reading</div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">
@@ -147,6 +206,40 @@
       <div class="detail-links">
         <a href="../articles/f5da058768b356a4.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="researcher drops bigdiskbuster zero-day poc that blocks microsoft defender updates"
+       data-id="ff028ed78210151c"
+       data-published="2026-09-22T21:44:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-22T21:44:04+05:30" title="22 September 2026, 11:14">22 September 2026, 11:14</time>
+      </div>
+      <h3 class="card-title">Researcher Drops BigDiskBuster Zero-Day PoC That Blocks Microsoft Defender Updates</h3>
+      <p class="card-summary">A zero-day proof-of-concept tool that stops Microsoft Defender from installing platform and signature updates by filling all available disk space was published on GitHub on September 19.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ff028ed78210151c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -365,6 +458,71 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="chinese hackers exploit wordpress, zyxel flaws to steal govt data"
+       data-id="9e89ffc1998edb5f"
+       data-published="2026-09-22T16:35:24-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-22T16:35:24-04:00" title="22 September 2026, 15:35">22 September 2026, 15:35</time>
+      </div>
+      <h3 class="card-title">Chinese hackers exploit WordPress, Zyxel flaws to steal govt data</h3>
+      <p class="card-summary">A Chinese-speaking threat actor has been exploiting vulnerabilities in ZyXEL GS1900 Smart Managed Switches and WordPress to steal sensitive data from 996 devices and more than 18,500 records stored in backend databases. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9e89ffc1998edb5f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="shinyhunters claims fbi hack, data theft in peoplesoft zero-day breach"
+       data-id="19cb246fd6b285c1"
+       data-published="2026-09-22T15:13:29-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-22T15:13:29-04:00" title="22 September 2026, 14:13">22 September 2026, 14:13</time>
+      </div>
+      <h3 class="card-title">ShinyHunters claims FBI hack, data theft in PeopleSoft zero-day breach</h3>
+      <p class="card-summary">The ShinyHunters extortion gang claims it breached FBI systems using a new Oracle PeopleSoft zero-day vulnerability, gaining access to internal services and stealing sensitive data on employees and job applicants. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/19cb246fd6b285c1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
@@ -390,6 +548,37 @@
       <div class="detail-links">
         <a href="../articles/0548c86d53e82393.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/malicious-npm-package-indexed-btree-hid.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="new closedquorum windows malware uses ai for attack decisions"
+       data-id="4f91b237eebce043"
+       data-published="2026-09-22T14:04:39-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-22T14:04:39-04:00" title="22 September 2026, 13:04">22 September 2026, 13:04</time>
+      </div>
+      <h3 class="card-title">New ClosedQuorum Windows malware uses AI for attack decisions</h3>
+      <p class="card-summary">A new Windows malware named ClosedQuorum uses Google Gemini, DeepSeek, Qwen, and Mistral AI models to autonomously determine the actions to take during post-compromise stages of an attack. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4f91b237eebce043.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -481,6 +670,7 @@
           <span class="ttag">zero-day</span>
         </div>
       </div>
+      <div class="card-related">Also: The Hacker News</div>
       <span class="card-source">BleepingComputer</span>
     </div>
     <div class="card-detail" aria-hidden="true">
@@ -518,201 +708,6 @@
       <div class="detail-links">
         <a href="../articles/df00ce1d5adf8d05.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="more than a third of industrial orgs see cybersecurity risk as a top obstacle to growth, study finds"
-       data-id="9a74f7593f4ffe50"
-       data-published="2026-09-22T12:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-22T12:00:00+00:00" title="22 September 2026, 07:00">22 September 2026, 07:00</time>
-      </div>
-      <h3 class="card-title">More Than a Third of Industrial Orgs See Cybersecurity Risk as a Top Obstacle to Growth, Study Finds</h3>
-      <p class="card-summary">Industrial companies are increasing cybersecurity investment as connected operations, AI adoption, and IT/OT convergence expand operational risk.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/9a74f7593f4ffe50.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/third-industrial-orgs-see-cybersecurity-risk-top-obstacle" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="cve,malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="wordpress comment2shell flaw can turn anonymous comment xss into rce via admin session"
-       data-id="cc00a898126dc40c"
-       data-published="2026-09-22T11:33:14+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-22T11:33:14+05:30" title="22 September 2026, 01:03">22 September 2026, 01:03</time>
-      </div>
-      <h3 class="card-title">WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session</h3>
-      <p class="card-summary">A new flaw in WordPress core let an anonymous visitor leave a comment that planted a hidden script on the page. If a logged-in administrator later opened that page, the script could run code on the site&#39;s server.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/cc00a898126dc40c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--high"
-       data-tags="cve,exploit,malware,patch,vulnerability"
-       data-vendors="AWS"
-       data-severity="high"
-       data-title="zyxel and veeam flaws under active exploitation with command and system access"
-       data-id="53df301220eb3bd6"
-       data-published="2026-09-22T11:01:59+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-09-22T11:01:59+05:30" title="22 September 2026, 00:31">22 September 2026, 00:31</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a now-patched security flaw impacting Zyxel GS1900 series switches to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/53df301220eb3bd6.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="eviltokens phaas disrupted after compromising 12,000 microsoft accounts"
-       data-id="db11d5dd95a26304"
-       data-published="2026-09-22T11:00:00-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-22T11:00:00-04:00" title="22 September 2026, 10:00">22 September 2026, 10:00</time>
-      </div>
-      <h3 class="card-title">EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts</h3>
-      <p class="card-summary">The EvilTokens platform that compromised more than 12,000 Microsoft accounts at over 10,000 organizations has been disrupted in an effort led by Microsoft&#39;s Digital Crimes Unit (DCU). [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/db11d5dd95a26304.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,phishing"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="webinar tomorrow: inside real-world google workspace breaches"
-       data-id="a1c9b9329ffa324e"
-       data-published="2026-09-22T08:57:07-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-22T08:57:07-04:00" title="22 September 2026, 07:57">22 September 2026, 07:57</time>
-      </div>
-      <h3 class="card-title">Webinar tomorrow: Inside real-world Google Workspace breaches</h3>
-      <p class="card-summary">Tomorrow&#39;s webinar examines real Google Workspace breaches involving social engineering and malicious OAuth applications, from initial access through the critical first hours of incident response. Learn which security controls and response decisions can…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Tomorrow&#39;s webinar examines real Google Workspace breaches involving social engineering and malicious OAuth applications, from initial access through the critical first hours of incident response. Learn which security controls and response decisions can make the greatest difference. [...]</p></div>
-      <div class="detail-links">
-        <a href="../articles/a1c9b9329ffa324e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/webinar-tomorrow-inside-real-world-google-workspace-breaches/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="cve,exploit,patch,vulnerability,zero-day"
-       data-vendors=""
-       data-severity="critical"
-       data-title="d-link warns of max severity zero-day bug in dir-822a routers"
-       data-id="c1f1c34e7c741f2f"
-       data-published="2026-09-22T08:48:06-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-09-22T08:48:06-04:00" title="22 September 2026, 07:48">22 September 2026, 07:48</time>
-      </div>
-      <h3 class="card-title">D-Link warns of max severity zero-day bug in DIR-822A routers</h3>
-      <p class="card-summary">D-Link warned customers of a maximum-severity vulnerability (CVE-2026-86296) with public proof-of-concept (PoC) exploit code and no patch, affecting legacy DIR-822A dual-band Wi-Fi routers. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/c1f1c34e7c741f2f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/d-link-warns-of-max-severity-zero-day-bug-in-dir-822a-routers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

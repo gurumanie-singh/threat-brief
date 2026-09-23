@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">23 September 2026</h1>
-      <span class="brief-sub">15 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -37,7 +37,7 @@
       <ul class="strip-bullets">
         <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -67,26 +67,122 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="a leaked gitlab issue email address lets anyone push code and run ci jobs as you"
+       data-id="2fefab2d37da81ee"
+       data-published="2026-09-23T22:23:10+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-23T22:23:10+05:30" title="23 September 2026, 11:53">23 September 2026, 11:53</time>
+      </div>
+      <h3 class="card-title">A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You</h3>
+      <p class="card-summary">The private email address GitLab gives you for filing issues by email is a credential. Anyone who gets it can email a patch that GitLab commits in your name, to any branch you can push to, including main, and can start CI/CD jobs that run as you.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2fefab2d37da81ee.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="mikrotrick chain let attackers take over mikrotik routers without a password or ssh key"
+       data-id="6acf5fae781aac9d"
+       data-published="2026-09-23T21:36:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-23T21:36:41+05:30" title="23 September 2026, 11:06">23 September 2026, 11:06</time>
+      </div>
+      <h3 class="card-title">MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key</h3>
+      <p class="card-summary">Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6acf5fae781aac9d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Cisco,Microsoft"
+       data-severity="medium"
+       data-title="this windows malware is built to let up to four ai models vote on its next move"
+       data-id="2d33f9668ab2dadf"
+       data-published="2026-09-23T19:47:58+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Cisco</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-23T19:47:58+05:30" title="23 September 2026, 09:17">23 September 2026, 09:17</time>
+      </div>
+      <h3 class="card-title">This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move</h3>
+      <p class="card-summary">A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker&#39;s server, Cisco Talos said on September 22.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2d33f9668ab2dadf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors="Apple,Linux,Microsoft"
@@ -270,6 +366,69 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="attackers manipulate ai chatbots in mass disinformation, phishing campaign"
+       data-id="0c2b55acaca715fc"
+       data-published="2026-09-23T14:47:09+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-23T14:47:09+00:00" title="23 September 2026, 09:47">23 September 2026, 09:47</time>
+      </div>
+      <h3 class="card-title">Attackers Manipulate AI Chatbots in Mass Disinformation, Phishing Campaign</h3>
+      <p class="card-summary">Threat actors are poisoning ChatGPT, Gemini, and Google AI Overview answers by seeding the Web with malicious links and data and then optimizing the content.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0c2b55acaca715fc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/attackers-manipulate-ai-chatbots-mass-disinformation-phishing-campaign" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers start exploiting critical wordpress flaw for code execution"
+       data-id="1650d7bde1782da4"
+       data-published="2026-09-23T14:31:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-23T14:31:22-04:00" title="23 September 2026, 13:31">23 September 2026, 13:31</time>
+      </div>
+      <h3 class="card-title">Hackers start exploiting critical WordPress flaw for code execution</h3>
+      <p class="card-summary">Threat actors have moved from probing WordPress sites vulnerable to CVE-2026-87902 to exploiting the flaw to write files to disk that execute shell commands when accessed. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1650d7bde1782da4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,patch,vulnerability,zero-day"
        data-vendors=""
@@ -368,6 +527,37 @@
       <div class="detail-links">
         <a href="../articles/380fbfc6b1cb5f25.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious ai agents steal 600k credit cards, infect 100+ sites with skimmers"
+       data-id="6a93b779aaa6c1ee"
+       data-published="2026-09-23T12:20:54-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-23T12:20:54-04:00" title="23 September 2026, 11:20">23 September 2026, 11:20</time>
+      </div>
+      <h3 class="card-title">Malicious AI agents steal 600K credit cards, infect 100+ sites with skimmers</h3>
+      <p class="card-summary">A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6a93b779aaa6c1ee.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -530,37 +720,6 @@
       <div class="detail-links">
         <a href="../articles/3b635a06f7efe56f.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-windows-updates-break-always-on-vpn-connections/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ryuk ransomware member sentenced to 24 months in prison"
-       data-id="3781fbbada692c37"
-       data-published="2026-09-23T04:20:05-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-23T04:20:05-04:00" title="23 September 2026, 03:20">23 September 2026, 03:20</time>
-      </div>
-      <h3 class="card-title">Ryuk ransomware member sentenced to 24 months in prison</h3>
-      <p class="card-summary">An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/3781fbbada692c37.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

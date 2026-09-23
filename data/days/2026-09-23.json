@@ -1,5 +1,94 @@
 [
   {
+    "id": "2fefab2d37da81ee",
+    "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
+    "published": "2026-09-23T22:23:10+05:30",
+    "fetched_at": "2026-09-23T18:49:34.889855+00:00",
+    "summary": "The private email address GitLab gives you for filing issues by email is a credential. Anyone who gets it can email a patch that GitLab commits in your name, to any branch you can push to, including main, and can start CI/CD jobs that run as you.",
+    "tags": [
+      "patch"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The private email address GitLab gives you for filing issues by email is a credential. Anyone who gets it can email a patch that GitLab commits in your name, to any branch you can push to, including main, and can start CI/CD jobs that run as you.",
+    "quick_take": "",
+    "sections": {
+      "impact": "GitLab shows each user this address behind a button labeled \"Email work item to this project.\" Mail sent to it opens an issue in that project, authored\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "The private email address GitLab gives you for filing issues by email is a credential. Anyone who gets it can email a patch that GitLab commits in your name, to any branch you can push to, including main, and can start CI/CD jobs that run as you.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6acf5fae781aac9d",
+    "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+    "published": "2026-09-23T21:36:41+05:30",
+    "fetched_at": "2026-09-23T18:49:34.890120+00:00",
+    "summary": "Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication.",
+    "tags": [
+      "cve",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-09-23",
+    "cves": [
+      "CVE-2026-67279",
+      "CVE-2026-86060"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The chain, which CERT Polska calls MikroTrick, combines an SSH state-machine flaw (CVE-2026-67279) with an argument-injection bug in the RouterOS login process (CVE-2026-86060).\n\nReferenced vulnerabilities: CVE-2026-67279, CVE-2026-86060."
+    },
+    "email_summary": "Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication. Tracked as CVE-2026-67279, CVE-2026-86060.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "2d33f9668ab2dadf",
+    "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+    "published": "2026-09-23T19:47:58+05:30",
+    "fetched_at": "2026-09-23T18:49:34.890378+00:00",
+    "summary": "A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker's server, Cisco Talos said on September 22.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Cisco",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker's server, Cisco Talos said on September 22.",
+    "quick_take": "",
+    "sections": {
+      "impact": "The models can choose to steal Windows credentials, saved browser passwords, and crypto wallet data.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A Windows malware called CLOSEDQUORUM is built to take orders from a vote of up to four AI models instead of an attacker's server, Cisco Talos said on September 22. The models can choose to steal Windows credentials, saved browser passwords, and crypto wallet data.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "7fbca8b41affcee1",
     "title": "Compromised MemTensor Packages Deliver sckit Credential Stealer via npm and PyPI",
     "source": "The Hacker News",
@@ -165,6 +254,65 @@
     "highlighted": false
   },
   {
+    "id": "0c2b55acaca715fc",
+    "title": "Attackers Manipulate AI Chatbots in Mass Disinformation, Phishing Campaign",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/threat-intelligence/attackers-manipulate-ai-chatbots-mass-disinformation-phishing-campaign",
+    "published": "2026-09-23T14:47:09+00:00",
+    "fetched_at": "2026-09-23T18:49:35.665627+00:00",
+    "summary": "Threat actors are poisoning ChatGPT, Gemini, and Google AI Overview answers by seeding the Web with malicious links and data and then optimizing the content.",
+    "tags": [
+      "phishing"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Threat actors are poisoning ChatGPT, Gemini, and Google AI Overview answers by seeding the Web with malicious links and data and then optimizing the content.",
+    "quick_take": "",
+    "sections": {
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Threat actors are poisoning ChatGPT, Gemini, and Google AI Overview answers by seeding the Web with malicious links and data and then optimizing the content.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1650d7bde1782da4",
+    "title": "Hackers start exploiting critical WordPress flaw for code execution",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/",
+    "published": "2026-09-23T14:31:22-04:00",
+    "fetched_at": "2026-09-23T18:49:35.265486+00:00",
+    "summary": "Threat actors have moved from probing WordPress sites vulnerable to CVE-2026-87902 to exploiting the flaw to write files to disk that execute shell commands when accessed. [...]",
+    "tags": [
+      "cve",
+      "exploit"
+    ],
+    "day": "2026-09-23",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors have moved from probing WordPress sites vulnerable to CVE-2026-87902 to exploiting the flaw to write files to disk that execute shell commands when accessed. [...]",
+    "quick_take": "",
+    "sections": {
+      "technical": "Threat actors have moved from probing WordPress sites vulnerable to CVE-2026-87902 to exploiting the flaw to write files to disk that execute shell commands when accessed. [...]\n\nReferenced vulnerabilities: CVE-2026-87902."
+    },
+    "email_summary": "Threat actors have moved from probing WordPress sites vulnerable to CVE-2026-87902 to exploiting the flaw to write files to disk that execute shell commands when accessed. [...]. Tracked as CVE-2026-87902. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "b4b1f92eca46f789",
     "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
     "source": "The Hacker News",
@@ -268,6 +416,33 @@
       "mitigation": "Vercel, which develops Next.js, fixed the flaw on September 22 in version"
     },
     "email_summary": "A new security vulnerability in Next.js could allow attackers to run code on a server via ImageResponse, the feature that generates Open Graph and other social preview images, Vercel said. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6a93b779aaa6c1ee",
+    "title": "Malicious AI agents steal 600K credit cards, infect 100+ sites with skimmers",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/",
+    "published": "2026-09-23T12:20:54-04:00",
+    "fetched_at": "2026-09-23T18:49:35.265680+00:00",
+    "summary": "A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...]",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -414,34 +589,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Microsoft warned that the September 2026 security updates may also break Always On VPN connections on some Windows 11 systems. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "3781fbbada692c37",
-    "title": "Ryuk ransomware member sentenced to 24 months in prison",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/",
-    "published": "2026-09-23T04:20:05-04:00",
-    "fetched_at": "2026-09-23T09:04:01.924375+00:00",
-    "summary": "An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...]",
-    "tags": [
-      "ransomware"
-    ],
-    "day": "2026-09-23",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
-    },
-    "email_summary": "An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

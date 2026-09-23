@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threat Brief — 23 September 2026</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">23 September 2026</h1>
+      <span class="brief-sub">5 articles</span>
+    </div>
+  </div>
+
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="f5 patches critical big-ip apm zero-day exploited for unauthenticated rce on oauth servers"
+       data-id="b4b1f92eca46f789"
+       data-published="2026-09-23T13:59:48+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-23T13:59:48+05:30" title="23 September 2026, 03:29">23 September 2026, 03:29</time>
+      </div>
+      <h3 class="card-title">F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers</h3>
+      <p class="card-summary">Attackers are exploiting a critical flaw in F5 BIG-IP Access Policy Manager (APM) that lets them run code on a BIG-IP system without logging in, F5 says.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b4b1f92eca46f789.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability,zero-day"
+       data-vendors="Google,Microsoft"
+       data-severity="critical"
+       data-title="chinese hackers exploit chrome-windows zero-day chain to deploy cleangulp malware"
+       data-id="0c9ca924b5830988"
+       data-published="2026-09-23T13:59:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-23T13:59:24+05:30" title="23 September 2026, 03:29">23 September 2026, 03:29</time>
+      </div>
+      <h3 class="card-title">Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware</h3>
+      <p class="card-summary">A Chinese threat actor codenamed UTA0565 has been observed exploiting the recently disclosed Google Chrome-Microsoft Windows exploit chain as zero-days through fake websites.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0c9ca924b5830988.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="critical next.js imageresponse flaw can lead to server code execution via crafted svg input"
+       data-id="380fbfc6b1cb5f25"
+       data-published="2026-09-23T12:34:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-23T12:34:40+05:30" title="23 September 2026, 02:04">23 September 2026, 02:04</time>
+      </div>
+      <h3 class="card-title">Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input</h3>
+      <p class="card-summary">A new security vulnerability in Next.js could allow attackers to run code on a server via ImageResponse, the feature that generates Open Graph and other social preview images, Vercel said.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/380fbfc6b1cb5f25.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="shinyhunters claims fbi breach, says it stole data on agents and job applicants"
+       data-id="285d8af487415de8"
+       data-published="2026-09-23T11:00:09+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-23T11:00:09+05:30" title="23 September 2026, 00:30">23 September 2026, 00:30</time>
+      </div>
+      <h3 class="card-title">ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants</h3>
+      <p class="card-summary">The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/285d8af487415de8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ryuk ransomware member sentenced to 24 months in prison"
+       data-id="3781fbbada692c37"
+       data-published="2026-09-23T04:20:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-23T04:20:05-04:00" title="23 September 2026, 03:20">23 September 2026, 03:20</time>
+      </div>
+      <h3 class="card-title">Ryuk ransomware member sentenced to 24 months in prison</h3>
+      <p class="card-summary">An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3781fbbada692c37.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

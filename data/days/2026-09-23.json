@@ -1,5 +1,30 @@
 [
   {
+    "id": "26524004cef9c7cd",
+    "title": "Attackers Use Malicious Terraform Providers to Deliver Go Malware via HashiCorp Registry",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
+    "published": "2026-09-23T23:36:30+05:30",
+    "fetched_at": "2026-09-23T22:02:41.070303+00:00",
+    "summary": "Cybersecurity researchers have disclosed Go-based malware distributed via two Go Modules and two Terraform providers, marking the first time threat actors are using the centralized repository hosted by HashiCorp as a distribution vector for malicious payloads.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed Go-based malware distributed via two Go Modules and two Terraform providers, marking the first time threat actors are using the centralized repository hosted by HashiCorp as a distribution vector for malicious payloads.",
+    "quick_take": "Cybersecurity researchers have disclosed Go-based malware distributed via two Go Modules and two Terraform providers, marking the first time threat actors are using the centralized repository hosted by HashiCorp as a…",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have disclosed Go-based malware distributed via two Go Modules and two Terraform providers, marking the first time threat actors are using the centralized repository hosted by HashiCorp as a distribution vector for malicious payloads. According to Aikido, the list of Terraform providers and Go modules is below -\n\n gocommunity-io/dockerd (222 downloads)\n kreuzwenker/.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "2fefab2d37da81ee",
     "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
     "source": "The Hacker News",
@@ -54,6 +79,56 @@
       "technical": "The chain, which CERT Polska calls MikroTrick, combines an SSH state-machine flaw (CVE-2026-67279) with an argument-injection bug in the RouterOS login process (CVE-2026-86060).\n\nReferenced vulnerabilities: CVE-2026-67279, CVE-2026-86060."
     },
     "email_summary": "Two MikroTik RouterOS SSH vulnerabilities chained together let attackers take full administrative control of Internet-exposed routers without a password, SSH key, or completed authentication. Tracked as CVE-2026-67279, CVE-2026-86060.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6359985e292e47f9",
+    "title": "EDR Evasion Stack Helps Process Injection Slip Past Defenses",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/endpoint-security/edr-evasion-stack-helps-process-injection-slip-past-defenses",
+    "published": "2026-09-23T21:03:01+00:00",
+    "fetched_at": "2026-09-23T22:02:41.961709+00:00",
+    "summary": "A process parameter-poisoning technique evades EDR by injecting code into process initialization structures without using the Windows APIs that EDR tools typically watch out for.",
+    "tags": [],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "A process parameter-poisoning technique evades EDR by injecting code into process initialization structures without using the Windows APIs that EDR tools typically watch out for.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A process parameter-poisoning technique evades EDR by injecting code into process initialization structures without using the Windows APIs that EDR tools typically watch out for.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "89a194a602c8d747",
+    "title": "GitLab Email Addresses Can Be Weaponized for Supply Chain Attacks",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks",
+    "published": "2026-09-23T20:53:38+00:00",
+    "fetched_at": "2026-09-23T22:02:41.961855+00:00",
+    "summary": "Incoming email addresses automatically assigned to each user on the platform contain highly privileged access tokens that attackers can use.",
+    "tags": [
+      "exploit"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Incoming email addresses automatically assigned to each user on the platform contain highly privileged access tokens that attackers can use.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Incoming email addresses automatically assigned to each user on the platform contain highly privileged access tokens that attackers can use. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -140,6 +215,35 @@
       "mitigation": "A second bug in the WP Toolkit plugin, used to install and manage WordPress sites, allows an account holder to change databases that belong to other accounts.\n\ncPanel has released fixed versions for both,"
     },
     "email_summary": "A flaw in cPanel's CalDAV and CardDAV service lets anyone with a cPanel hosting account run code as root and take \"full control of the server,\" the company said on September 22. A second bug in the WP Toolkit plugin, used to install and manage WordPress sites, allows an account holder to change databases that belong to other accounts.\n\ncPanel has released fixed versions for both,.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "5d64bf0db1e9975a",
+    "title": "New RemControl Android banking malware targets users in Europe and Canada",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/",
+    "published": "2026-09-23T17:25:13-04:00",
+    "fetched_at": "2026-09-23T22:02:41.448707+00:00",
+    "summary": "A new Android malware-as-a-service (MaaS) platform called RemControl is targeting users through malvertising campaigns that impersonate the TVTap IPTV application. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-09-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "A new Android malware-as-a-service (MaaS) platform called RemControl is targeting users through malvertising campaigns that impersonate the TVTap IPTV application. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A new Android malware-as-a-service (MaaS) platform called RemControl is targeting users through malvertising campaigns that impersonate the TVTap IPTV application. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A new Android malware-as-a-service (MaaS) platform called RemControl is targeting users through malvertising campaigns that impersonate the TVTap IPTV application. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -249,6 +353,37 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "The United Arab Emirates and Kingdom of Saudi Arabia together absorbed 50% of all cyberattacks recorded across the Gulf region in the first half of 2026.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "53270e27606cc4e5",
+    "title": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+    "published": "2026-09-23T15:53:54-04:00",
+    "fetched_at": "2026-09-23T22:02:41.448866+00:00",
+    "summary": "Cybersecurity company Check Point has confirmed active exploitation of CVE-2026-85102, a pre-authentication remote code execution (RCE) vulnerability in the VPN certificate-handling functionality of its Security Gateway product. [...]",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-09-23",
+    "cves": [
+      "CVE-2026-85102"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity company Check Point has confirmed active exploitation of CVE-2026-85102, a pre-authentication remote code execution (RCE) vulnerability in the VPN certificate-handling functionality of its Security Gateway product. [...]",
+    "quick_take": "Cybersecurity company Check Point has confirmed active exploitation of CVE-2026-85102, a pre-authentication remote code execution (RCE) vulnerability in the VPN certificate-handling functionality of its Security…",
+    "sections": {
+      "technical": "Cybersecurity company Check Point has confirmed active exploitation of CVE-2026-85102, a pre-authentication remote code execution (RCE) vulnerability in the VPN certificate-handling functionality of its Security Gateway product. [...]\n\nReferenced vulnerabilities: CVE-2026-85102."
+    },
+    "email_summary": "Cybersecurity company Check Point has confirmed active exploitation of CVE-2026-85102, a pre-authentication remote code execution (RCE) vulnerability in the VPN certificate-handling functionality of its Security Gateway product. [...]. Tracked as CVE-2026-85102. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -443,152 +578,6 @@
       "impact": "A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...]\n\nAssessed severity: MEDIUM."
     },
     "email_summary": "A financially motivated threat actor is using open-source AI agent frameworks to attack hundreds of online retailers at scale, stealing more than 600,000 credit card records. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "285d8af487415de8",
-    "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
-    "published": "2026-09-23T11:00:09+05:30",
-    "fetched_at": "2026-09-23T09:04:01.475692+00:00",
-    "summary": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-09-23",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.",
-    "quick_take": "",
-    "sections": {
-      "impact": "Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.\n\n\"We have compromised the FBI. The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. We hold very sensitive data on almost ALL FBI Agents and individuals who filed an application with the FBI for a job,\" the group said in a statement posted on their dark\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency.\n\n\"We have compromised the FBI.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "3f5bfe31f723b84d",
-    "title": "InfraTrust report warns network management systems under attack",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-network-management-systems-under-attack/",
-    "published": "2026-09-23T10:35:26-04:00",
-    "fetched_at": "2026-09-23T14:40:03.718434+00:00",
-    "summary": "Attackers are increasingly targeting the management systems used to control enterprise infrastructure, with several critical vulnerabilities actively exploited before or shortly after vendors disclosed them. [...]",
-    "tags": [
-      "exploit",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-09-23",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "Attackers are increasingly targeting the management systems used to control enterprise infrastructure, with several critical vulnerabilities actively exploited before or shortly after vendors disclosed them. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Attackers are increasingly targeting the management systems used to control enterprise infrastructure, with several critical vulnerabilities actively exploited before or shortly after vendors disclosed them. [...]\n\nAssessed severity: CRITICAL."
-    },
-    "email_summary": "Attackers are increasingly targeting the management systems used to control enterprise infrastructure, with several critical vulnerabilities actively exploited before or shortly after vendors disclosed them. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "3782a141417de040",
-    "title": "How One Kubernetes YAML Can Hand Over a GCP Organization",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/how-one-kubernetes-yaml-can-hand-over-a-gcp-organization/",
-    "published": "2026-09-23T10:01:11-04:00",
-    "fetched_at": "2026-09-23T14:40:03.718732+00:00",
-    "summary": "A Kubernetes user with limited permissions can potentially gain control of an entire Google Cloud organization by exploiting the authority granted to Google Kubernetes Config Connector. Varonis explains how this confused deputy problem can turn a single Kubernetes YAML file into a path to organization-wide privilege escalation. [...]",
-    "tags": [
-      "exploit",
-      "vulnerability"
-    ],
-    "day": "2026-09-23",
-    "cves": [],
-    "cvss": null,
-    "severity": "high",
-    "vendors": [
-      "Google"
-    ],
-    "action_required": false,
-    "card_summary": "A Kubernetes user with limited permissions can potentially gain control of an entire Google Cloud organization by exploiting the authority granted to Google Kubernetes Config Connector. Varonis explains how this confused deputy problem can turn a single…",
-    "quick_take": "",
-    "sections": {
-      "overview": "A Kubernetes user with limited permissions can potentially gain control of an entire Google Cloud organization by exploiting the authority granted to Google Kubernetes Config Connector. Varonis explains how this confused deputy problem can turn a single Kubernetes YAML file into a path to organization-wide privilege escalation. [...]",
-      "impact": "A Kubernetes user with limited permissions can potentially gain control of an entire Google Cloud organization by exploiting the authority granted to Google Kubernetes Config Connector. Varonis explains how this confused deputy problem can turn a single Kubernetes YAML file into a path to organization-wide privilege escalation. [...]\n\nAssessed severity: HIGH."
-    },
-    "email_summary": "A Kubernetes user with limited permissions can potentially gain control of an entire Google Cloud organization by exploiting the authority granted to Google Kubernetes Config Connector. Severity is rated high.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "d63cc34cc1ecb098",
-    "title": "Arista patches actively exploited VeloCloud Orchestrator zero-day",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/",
-    "published": "2026-09-23T08:29:53-04:00",
-    "fetched_at": "2026-09-23T14:40:03.718951+00:00",
-    "summary": "Arista Networks has released security patches for a zero-day flaw that is being actively exploited and affects VeloCloud Orchestrator (VCO) On-Prem deployments. [...]",
-    "tags": [
-      "exploit",
-      "malware",
-      "patch",
-      "zero-day"
-    ],
-    "day": "2026-09-23",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "Arista Networks has released security patches for a zero-day flaw that is being actively exploited and affects VeloCloud Orchestrator (VCO) On-Prem deployments. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Arista Networks has released security patches for a zero-day flaw that is being actively exploited and affects VeloCloud Orchestrator (VCO) On-Prem deployments. [...]\n\nAssessed severity: CRITICAL.",
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "Arista Networks has released security patches for a zero-day flaw that is being actively exploited and affects VeloCloud Orchestrator (VCO) On-Prem deployments. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "3b635a06f7efe56f",
-    "title": "Microsoft: September Windows updates break Always On VPN connections",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-windows-updates-break-always-on-vpn-connections/",
-    "published": "2026-09-23T07:18:13-04:00",
-    "fetched_at": "2026-09-23T14:40:03.719144+00:00",
-    "summary": "Microsoft warned that the September 2026 security updates may also break Always On VPN connections on some Windows 11 systems. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-09-23",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft warned that the September 2026 security updates may also break Always On VPN connections on some Windows 11 systems. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft warned that the September 2026 security updates may also break Always On VPN connections on some Windows 11 systems. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

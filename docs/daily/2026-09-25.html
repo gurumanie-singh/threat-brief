@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threat Brief — 25 September 2026</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <a href="../index.html" class="back-link">← Back to latest</a>
+
+  <div class="brief-header">
+    <div class="brief-primary">
+      <h1 class="brief-title">25 September 2026</h1>
+      <span class="brief-sub">7 articles</span>
+    </div>
+  </div>
+
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 high-severity advisories published today</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="controls-bar" id="controlsBar">
+    <div class="search-wrap">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="search-input" id="searchInput" placeholder="Search articles, CVEs, vendors..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
+    </div>
+  </div>
+
+  <div class="filter-results-count" id="filterCount" style="display:none"></div>
+
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="bitget says suspected north korean hackers stole $351.6m after backend compromise"
+       data-id="b9a0fee628656f62"
+       data-published="2026-09-25T16:05:55+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-25T16:05:55+05:30" title="25 September 2026, 05:35">25 September 2026, 05:35</time>
+      </div>
+      <h3 class="card-title">Bitget Says Suspected North Korean Hackers Stole $351.6M After Backend Compromise</h3>
+      <p class="card-summary">Cryptocurrency exchange Bitget said suspected North Korean threat actors have stolen $351.6 million from its hot and warm wallets.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b9a0fee628656f62.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="roundcube pre-auth sql injection flaw actively exploited in the wild"
+       data-id="ff726e7016539f86"
+       data-published="2026-09-25T15:44:02+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-09-25T15:44:02+05:30" title="25 September 2026, 05:14">25 September 2026, 05:14</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild</h3>
+      <p class="card-summary">The Canadian Centre for Cyber Security has warned that a now-patched Roundcube Webmail vulnerability is being actively exploited in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ff726e7016539f86.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="cloudflare fixes flaw that let one container read another customer&#39;s leftover disk data"
+       data-id="b3f6b52e3eb4039b"
+       data-published="2026-09-25T10:19:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-25T10:19:22+05:30" title="24 September 2026, 23:49">24 September 2026, 23:49</time>
+      </div>
+      <h3 class="card-title">Cloudflare Fixes Flaw That Let One Container Read Another Customer&#39;s Leftover Disk Data</h3>
+      <p class="card-summary">A flaw in Cloudflare Containers let a paying customer read data that other customers&#39; containers had left behind on the same server, Cloudflare and the researchers who found it said on Thursday.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b3f6b52e3eb4039b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="AWS,Adobe"
+       data-severity="high"
+       data-title="wso2 and adobe commerce flaws exploited in attacks, added to cisa kev"
+       data-id="8619c6c078f43d38"
+       data-published="2026-09-25T10:16:34+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Adobe</span>        <time class="meta-time" data-iso="2026-09-25T10:16:34+05:30" title="24 September 2026, 23:46">24 September 2026, 23:46</time>
+      </div>
+      <h3 class="card-title">WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added two critical security flaws impacting WSO2 and Adobe Commerce and Magento to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8619c6c078f43d38.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="russia&#39;s hybrid cyber-physical war in europe heats up"
+       data-id="ee7af2e79d61abff"
+       data-published="2026-09-25T07:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-25T07:00:00+00:00" title="25 September 2026, 02:00">25 September 2026, 02:00</time>
+      </div>
+      <h3 class="card-title">Russia&#39;s Hybrid Cyber-Physical War in Europe Heats Up</h3>
+      <p class="card-summary">A storm is raging in the form of cyber sabotage, disinformation, and drone attacks on European nations, particularly those that provide material support to Ukraine.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ee7af2e79d61abff.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft: recent windows updates cause desktop loading issues"
+       data-id="72c574b8380c3168"
+       data-published="2026-09-25T06:30:38-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-25T06:30:38-04:00" title="25 September 2026, 05:30">25 September 2026, 05:30</time>
+      </div>
+      <h3 class="card-title">Microsoft: Recent Windows updates cause desktop loading issues</h3>
+      <p class="card-summary">Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/72c574b8380c3168.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-desktop-loading-issues/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers steal $351.6 million in bitget crypto exchange hack"
+       data-id="6dd27d801ab5e2a0"
+       data-published="2026-09-25T04:33:44-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-25T04:33:44-04:00" title="25 September 2026, 03:33">25 September 2026, 03:33</time>
+      </div>
+      <h3 class="card-title">Hackers steal $351.6 million in Bitget crypto exchange hack</h3>
+      <p class="card-summary">​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6dd27d801ab5e2a0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

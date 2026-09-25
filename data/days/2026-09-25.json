@@ -1,5 +1,44 @@
 [
   {
+    "id": "8b48a62fc6c6bd82",
+    "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+    "published": "2026-09-25T21:44:40+00:00",
+    "fetched_at": "2026-09-25T23:48:14.869762+00:00",
+    "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+    "tags": [
+      "breach",
+      "cve",
+      "exploit",
+      "malware",
+      "ransomware",
+      "vulnerability"
+    ],
+    "day": "2026-09-25",
+    "cves": [
+      "CVE-2023-45208"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly…",
+    "quick_take": "Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal…",
+    "sections": {
+      "overview": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+      "technical": "The memo states that less than a week later, Wagenius used a different inmate s email account and requested that the email recipient prompt an AI tool to “[p]rovide the step by step for CVE-2023-45208 , code for this if any, and if no code exists make some, make sure to describe everything in detail.” CVE-2023-45208 is a three-year-old command injection vulnerability in D-Link networking devices. Working with three alleged co-conspirators, Kiberphant0m downloaded data from several large customers of the cloud data storage service Snowflake that had exposed credentials and did not enforce multi-factor authentication (Snowflake has since mandated MFA on all accounts). In October 2024, Kiberphant0m bragged on the cybercrime forums that he d stolen the call and text metadata (e.g. source and destination number, timestamp, duration, etc.) for tens of millions of AT&T customers. The government s memo notes that while incarcerated and awaiting sentencing, Wagenius violated the computer use policies of the Bureau of Prisons (BOP) in attempts to learn about vulnerabilities in BOP computer systems.\n\nReferenced vulnerabilities: CVE-2023-45208.",
+      "mitigation": "Working with three alleged co-conspirators, Kiberphant0m downloaded data from several large customers of the cloud data storage service Snowflake that had exposed credentials and did not enforce multi-factor authentication (Snowflake has since mandated MFA on all accounts). Paul Russell is a resident agent in charge at the Defense Criminal Investigative Service (DCIS), the criminal investigative arm of the U.S. Department of Defense Office of Inspector General.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims. Tracked as CVE-2023-45208. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "735a1fee44ae9c6b",
     "title": "Compromised GitHub Actions Came Back Online and Resumed Executing Mini Shai-Hulud Malware",
     "source": "The Hacker News",
@@ -107,6 +146,35 @@
     "highlighted": false
   },
   {
+    "id": "8f23fcd7eee1a26f",
+    "title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
+    "published": "2026-09-25T17:41:07-04:00",
+    "fetched_at": "2026-09-25T23:48:15.035912+00:00",
+    "summary": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent cyberattack. [...]",
+    "tags": [
+      "malware",
+      "zero-day"
+    ],
+    "day": "2026-09-25",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent cyberattack. [...]",
+    "quick_take": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially…",
+    "sections": {
+      "impact": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent cyberattack. [...]\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent cyberattack. [...]. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "7121651d03003515",
     "title": "The SOC Doesn't Need to Start Over with Every Alert",
     "source": "The Hacker News",
@@ -130,6 +198,38 @@
       "technical": "The nearer change is quieter and already visible: AI has made a failed attack cheap to retry. An attacker lands on a low-privilege cloud account, and the first try at privilege escalation goes nowhere."
     },
     "email_summary": "Security leaders keep debating whether AI will produce an entirely new class of cyberattack. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3b401c80975c070f",
+    "title": "ShinyHunters hacked Clop leak site using Grav CMS path traversal flaw",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
+    "published": "2026-09-25T16:57:55-04:00",
+    "fetched_at": "2026-09-25T23:48:15.036142+00:00",
+    "summary": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unauthenticated path traversal vulnerability. [...]",
+    "tags": [
+      "breach",
+      "patch",
+      "ransomware",
+      "vulnerability"
+    ],
+    "day": "2026-09-25",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unauthenticated path traversal…",
+    "quick_take": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an…",
+    "sections": {
+      "overview": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unauthenticated path traversal vulnerability. [...]",
+      "impact": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unauthenticated path traversal vulnerability. [...]\n\nAssessed severity: HIGH.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unauthenticated path traversal vulnerability. [...]. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -451,58 +551,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A storm is raging in the form of cyber sabotage, disinformation, and drone attacks on European nations, particularly those that provide material support to Ukraine.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "72c574b8380c3168",
-    "title": "Microsoft: Recent Windows updates cause desktop loading issues",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-desktop-loading-issues/",
-    "published": "2026-09-25T06:30:38-04:00",
-    "fetched_at": "2026-09-25T11:08:18.408608+00:00",
-    "summary": "Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...]",
-    "tags": [],
-    "day": "2026-09-25",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "6dd27d801ab5e2a0",
-    "title": "Hackers steal $351.6 million in Bitget crypto exchange hack",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/",
-    "published": "2026-09-25T04:33:44-04:00",
-    "fetched_at": "2026-09-25T11:08:18.408835+00:00",
-    "summary": "​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...]",
-    "tags": [],
-    "day": "2026-09-25",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

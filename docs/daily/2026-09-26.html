@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">26 September 2026</h1>
-      <span class="brief-sub">4 articles</span>
+      <span class="brief-sub">9 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -63,8 +65,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
@@ -73,11 +76,78 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability,zero-day"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="attackers bypass wafs to exploit oracle peoplesoft flaw and deploy web shells"
+       data-id="d9f8ff7b380291d9"
+       data-published="2026-09-26T17:16:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-26T17:16:40+05:30" title="26 September 2026, 06:46">26 September 2026, 06:46</time>
+      </div>
+      <h3 class="card-title">Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells</h3>
+      <p class="card-summary">Google is warning of renewed mass exploitation of a known security vulnerability in Oracle PeopleSoft as part of a campaign targeting multiple sectors globally.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d9f8ff7b380291d9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="zero trust for ai agents starts with fixing zero visibility"
+       data-id="ec7e3c6ee2aea640"
+       data-published="2026-09-26T16:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-26T16:00:00+05:30" title="26 September 2026, 05:30">26 September 2026, 05:30</time>
+      </div>
+      <h3 class="card-title">Zero Trust for AI Agents Starts With Fixing Zero Visibility</h3>
+      <p class="card-summary">The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of recent incidents, including a widely discussed intrusion at Hugging Face during an evaluation of OpenAI agents, has spurred organizations to</p></div>
+      <div class="detail-links">
+        <a href="../articles/ec7e3c6ee2aea640.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors=""
@@ -171,6 +241,95 @@
       <div class="detail-links">
         <a href="../articles/4521c393743e7d64.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="claude opus 5.5 uses 95% fewer em dashes, but its answers are getting longer"
+       data-id="d84aefa9b3c5ecda"
+       data-published="2026-09-26T12:26:58-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-26T12:26:58-04:00" title="26 September 2026, 11:26">26 September 2026, 11:26</time>
+      </div>
+      <h3 class="card-title">Claude Opus 5.5 uses 95% fewer em dashes, but its answers are getting longer</h3>
+      <p class="card-summary">Anthropic&#39;s Claude Opus 5.5 appears to be changing how it writes, with new analysis showing fewer obvious AI writing patterns, shorter sentences, and simpler wording compared with Opus 5. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d84aefa9b3c5ecda.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft pauses kb5002907 update after office license deactivations"
+       data-id="f807d44d0155aedc"
+       data-published="2026-09-26T11:50:38-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-26T11:50:38-04:00" title="26 September 2026, 10:50">26 September 2026, 10:50</time>
+      </div>
+      <h3 class="card-title">Microsoft pauses KB5002907 update after Office license deactivations</h3>
+      <p class="card-summary">Microsoft has paused the rollout of the KB5002907 Microsoft 365 update after users report that it deactivated, or in some cases completely removed, perpetual Office 2016 and Office 2019 installations. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f807d44d0155aedc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="github actions re-enabled with mini shai-hulud payload still active"
+       data-id="a7578efb1437b399"
+       data-published="2026-09-26T10:19:46-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-26T10:19:46-04:00" title="26 September 2026, 09:19">26 September 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">GitHub Actions re-enabled with Mini Shai-Hulud payload still active</h3>
+      <p class="card-summary">Two third-party GitHub Actions previously compromised in a Mini Shai-Hulud campaign were re-enabled by their maintainer and remained accessible for more than a week despite still pointing to malicious code. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a7578efb1437b399.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

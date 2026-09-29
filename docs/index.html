@@ -28,14 +28,14 @@
       <h1 class="brief-title">29 September 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-09-29T06:05:06.805163-05:00">29 September 2026, 06:05</time>
+        <time data-iso="2026-09-29T12:37:24.488779-05:00">29 September 2026, 12:37</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat stat-critical">2 critical</span>
+      <span class="stat stat-critical">4 critical</span>
       <span class="stat stat-action">1 action req.</span>
-      <span class="stat">7 articles today</span>
+      <span class="stat">16 articles today</span>
     </div>
   </div>
 
@@ -43,8 +43,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Linux ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
@@ -55,7 +57,7 @@
         <span class="trend-pill">malware<span class="trend-count">10</span></span>
         <span class="trend-pill">exploited<span class="trend-count">9</span></span>
         <span class="trend-pill">attacks<span class="trend-count">8</span></span>
-        <span class="trend-pill">openai<span class="trend-count">7</span></span>
+        <span class="trend-pill">attack<span class="trend-count">7</span></span>
       </div>
     </div>
   </div>
@@ -88,9 +90,9 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
@@ -102,8 +104,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
@@ -221,10 +223,166 @@
   <div class="day-group">
     <h2 class="day-heading">
       29 September 2026
-      <span class="day-count">7</span>
+      <span class="day-count">16</span>
     </h2>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new spectre-v2 btr attack leaks linux memory despite existing defenses"
+       data-id="bdc49d22a6a4f346"
+       data-published="2026-09-29T22:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-29T22:30:00+05:30" title="29 September 2026, 12:00">29 September 2026, 12:00</time>
+      </div>
+      <h3 class="card-title">New Spectre-v2 BTR Attack Leaks Linux Memory Despite Existing Defenses</h3>
+      <p class="card-summary">A group of academics from VUSec and Scuola Superiore Sant&#39;Anna have disclosed details of a new Spectre CPU vulnerability variant that affects Just-In-Time (JIT) engines present in web browsers, language runtimes, and the operating system kernel, across…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A group of academics from VUSec and Scuola Superiore Sant&#39;Anna have disclosed details of a new Spectre CPU vulnerability variant that affects Just-In-Time (JIT) engines present in web browsers, language runtimes, and the operating system kernel, across multiple CPU vendors.</p></div>
+      <div class="detail-links">
+        <a href="articles/bdc49d22a6a4f346.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/new-spectre-v2-btr-attack-leaks-linux.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="kiteworks fixes critical flaw found during nine-hour precautionary shutdown"
+       data-id="ff8f6ffab9b879a6"
+       data-published="2026-09-29T19:43:20+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-29T19:43:20+05:30" title="29 September 2026, 09:13">29 September 2026, 09:13</time>
+      </div>
+      <h3 class="card-title">Kiteworks Fixes Critical Flaw Found During Nine-Hour Precautionary Shutdown</h3>
+      <p class="card-summary">Kiteworks on Monday said it worked with federal intelligence authorities over the weekend as it identified and addressed a critical security vulnerability during the scheduled precautionary shutdown.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ff8f6ffab9b879a6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/kiteworks-fixes-critical-flaw-found.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="101 malicious npm packages add developers&#39; whatsapp accounts to groups without consent"
+       data-id="6e74d629836d8f5d"
+       data-published="2026-09-29T19:15:10+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-29T19:15:10+05:30" title="29 September 2026, 08:45">29 September 2026, 08:45</time>
+      </div>
+      <h3 class="card-title">101 Malicious npm Packages Add Developers&#39; WhatsApp Accounts to Groups Without Consent</h3>
+      <p class="card-summary">Cybersecurity researchers have identified a cluster of 101 npm packages that are used to trap developers into a WhatsApp group subscriber campaign dubbed PhantomSub.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/6e74d629836d8f5d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="cloudflare announces public certificate authority for the post-quantum web"
+       data-id="b13a08b27e167305"
+       data-published="2026-09-29T17:02:16+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-29T17:02:16+00:00" title="29 September 2026, 12:02">29 September 2026, 12:02</time>
+      </div>
+      <h3 class="card-title">Cloudflare Announces Public Certificate Authority for the Post-Quantum Web</h3>
+      <p class="card-summary">Automated certificates for everyone, built for today, and hardened for the era of quantum computing.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/b13a08b27e167305.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,vulnerability,zero-day"
+       data-vendors="Citrix"
+       data-severity="critical"
+       data-title="dual netscaler zero-days trigger chaos for citrix customers"
+       data-id="4c1ccf341f3da055"
+       data-published="2026-09-29T14:19:43+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-09-29T14:19:43+00:00" title="29 September 2026, 09:19">29 September 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">Dual NetScaler Zero-Days Trigger Chaos for Citrix Customers</h3>
+      <p class="card-summary">The critical vulnerabilities, which impact default configurations of NetScaler products, essentially give attackers a skeleton key to customers&#39; networks.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/4c1ccf341f3da055.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/vulnerabilities-threats/netscaler-zero-days-chaos-citrix" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -250,6 +408,69 @@
       <div class="detail-links">
         <a href="articles/730082f6128987fb.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/dutch-police-arrest-24-year-old.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="new spectre v2 attack variant leaks linux root password hash in minutes"
+       data-id="e61482341f8409d3"
+       data-published="2026-09-29T13:10:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-09-29T13:10:11-04:00" title="29 September 2026, 12:10">29 September 2026, 12:10</time>
+      </div>
+      <h3 class="card-title">New Spectre v2 attack variant leaks Linux root password hash in minutes</h3>
+      <p class="card-summary">A new Branch Target Reuse (BTR) attack has been devised that can recover root password hashes on Intel computers running Linux in 3-5 minutes on average. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e61482341f8409d3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="automated ai agent used to breach cybersecurity nonprofit divd"
+       data-id="abc258560f86069f"
+       data-published="2026-09-29T11:39:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-29T11:39:19-04:00" title="29 September 2026, 10:39">29 September 2026, 10:39</time>
+      </div>
+      <h3 class="card-title">Automated AI agent used to breach cybersecurity nonprofit DIVD</h3>
+      <p class="card-summary">The Dutch Institute for Vulnerability Disclosure (DIVD) suffered an AI-driven cyberattack that the organization described as &#34;loud and very, very messy.&#34; [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/abc258560f86069f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -345,6 +566,67 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="catch threats before they escalate with real-time identity telemetry"
+       data-id="6fed2ba131726c37"
+       data-published="2026-09-29T10:01:11-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-29T10:01:11-04:00" title="29 September 2026, 09:01">29 September 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Catch threats before they escalate with real-time Identity Telemetry</h3>
+      <p class="card-summary">Identity governance helps control who should have access, but periodic reviews alone may not reveal attacks as they happen. tenfold Software explains how real-time identity telemetry can help security teams investigate suspicious activity before it…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Identity governance helps control who should have access, but periodic reviews alone may not reveal attacks as they happen. tenfold Software explains how real-time identity telemetry can help security teams investigate suspicious activity before it escalates. [...]</p></div>
+      <div class="detail-links">
+        <a href="articles/6fed2ba131726c37.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/catch-threats-before-they-escalate-with-real-time-identity-telemetry/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="vietnamese man charged in $16 million &#39;pig butchering&#39; crypto scam"
+       data-id="541ccf3af8740195"
+       data-published="2026-09-29T07:41:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-29T07:41:53-04:00" title="29 September 2026, 06:41">29 September 2026, 06:41</time>
+      </div>
+      <h3 class="card-title">Vietnamese man charged in $16 million &#39;pig butchering&#39; crypto scam</h3>
+      <p class="card-summary">A Vietnamese national was charged with money laundering for his role in a massive &#34;pig butchering&#34; scam, which defrauded a victim out of $16 million worth of cryptocurrency. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/541ccf3af8740195.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="patch,vulnerability"
        data-vendors=""
@@ -433,6 +715,7 @@
           <span class="ttag">malware</span>
         </div>
       </div>
+      <div class="card-related">Also: Dark Reading</div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">
@@ -445,7 +728,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       28 September 2026
-      <span class="day-count">20</span>
+      <span class="day-count">11</span>
     </h2>
   </div>
 
@@ -537,6 +820,34 @@
       <div class="detail-links">
         <a href="articles/922c832a824866ae.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="nvidia launches ai agent safety platform to prevent rogue activities"
+       data-id="ad3dbf6708766054"
+       data-published="2026-09-28T22:02:46+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-28T22:02:46+00:00" title="28 September 2026, 17:02">28 September 2026, 17:02</time>
+      </div>
+      <h3 class="card-title">Nvidia Launches AI Agent Safety Platform to Prevent Rogue Activities</h3>
+      <p class="card-summary">The Open Agent Safety Platform relies on both hardware and software components to monitor agent activities and quarantine unruly agents before they cause harm.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ad3dbf6708766054.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/nvidia-launches-ai-agent-safety-platform-prevent-rogue-activities" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -754,318 +1065,6 @@
       <div class="detail-links">
         <a href="articles/edfe0207d75b9e96.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="chrome store hosts &#39;poper blocker&#39; spyware downloaded by millions"
-       data-id="38ac5194dc02d042"
-       data-published="2026-09-28T16:51:25+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-09-28T16:51:25+00:00" title="28 September 2026, 11:51">28 September 2026, 11:51</time>
-      </div>
-      <h3 class="card-title">Chrome Store Hosts &#39;Poper Blocker&#39; Spyware Downloaded by Millions</h3>
-      <p class="card-summary">A purported ad-blocker exfiltrates reams of sensitive information and benefits from having Google&#39;s stamp of approval despite researcher warnings.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/38ac5194dc02d042.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="times car confirms data breach affecting 6.6 million user accounts"
-       data-id="a9919fee34165fc4"
-       data-published="2026-09-28T16:31:16-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-28T16:31:16-04:00" title="28 September 2026, 15:31">28 September 2026, 15:31</time>
-      </div>
-      <h3 class="card-title">Times Car confirms data breach affecting 6.6 million user accounts</h3>
-      <p class="card-summary">Japanese car-sharing service Times Car has confirmed that approximately 6.6 million user accounts were compromised in a cyberattack disclosed late last week. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a9919fee34165fc4.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="dutch police confirm arrest in shinyhunters hacking investigation"
-       data-id="9610cfcf15aaef77"
-       data-published="2026-09-28T15:49:10-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-28T15:49:10-04:00" title="28 September 2026, 14:49">28 September 2026, 14:49</time>
-      </div>
-      <h3 class="card-title">Dutch police confirm arrest in ShinyHunters hacking investigation</h3>
-      <p class="card-summary">Dutch police have confirmed that a 24-year-old Amsterdam man arrested earlier this month was detained as part of an investigation into the ShinyHunters hacking group. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/9610cfcf15aaef77.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/dutch-police-confirm-arrest-in-shinyhunters-hacking-investigation/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="vulnerability"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="jadepuffer ai actor compromises azure tenant in destructive cloud attack"
-       data-id="a88d159880d4e1a6"
-       data-published="2026-09-28T15:33:21+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-28T15:33:21+00:00" title="28 September 2026, 10:33">28 September 2026, 10:33</time>
-      </div>
-      <h3 class="card-title">JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack</h3>
-      <p class="card-summary">The &#34;agentic threat actor&#34; may have used exposed credentials to access resources and delete cloud-based storage, applications, and databases.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/a88d159880d4e1a6.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="breach,cve,exploit,malware,patch,ransomware,vulnerability,zero-day"
-       data-vendors="Google,Microsoft"
-       data-severity="critical"
-       data-title="dutch police arrest ‘reformed’ hacker in shiny hunters investigation"
-       data-id="7adc09a696f3f4b8"
-       data-published="2026-09-28T15:08:57+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-28T15:08:57+00:00" title="28 September 2026, 10:08">28 September 2026, 10:08</time>
-      </div>
-      <h3 class="card-title">Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation</h3>
-      <p class="card-summary">Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters . In the days immediately following the suspect s arrest, remaining…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Krebs on Security</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters . In the days immediately following the suspect s arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p .</p></div>
-      <div class="detail-links">
-        <a href="articles/7adc09a696f3f4b8.html" class="detail-read">Read full analysis →</a>
-        <a href="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="over 16,000 supabase databases expose pii, passwords, auth tokens"
-       data-id="dcdb2aae2d5d273f"
-       data-published="2026-09-28T14:50:59-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-28T14:50:59-04:00" title="28 September 2026, 13:50">28 September 2026, 13:50</time>
-      </div>
-      <h3 class="card-title">Over 16,000 Supabase databases expose PII, passwords, auth tokens</h3>
-      <p class="card-summary">Researchers found more than 16,000 misconfigured Supabase databases exposing readable tables with personally identifiable information, passwords, or authentication tokens. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/dcdb2aae2d5d273f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware,vulnerability"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="jadepuffer-linked attackers used compromised service principals to delete azure resources"
-       data-id="f04d44833bdd1e64"
-       data-published="2026-09-28T14:38:21+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-28T14:38:21+05:30" title="28 September 2026, 04:08">28 September 2026, 04:08</time>
-      </div>
-      <h3 class="card-title">JADEPUFFER-Linked Attackers Used Compromised Service Principals to Delete Azure Resources</h3>
-      <p class="card-summary">The threat actor known as JADEPUFFER has been observed orchestrating destructive actions within a Microsoft Azure environment using compromised service principals.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/f04d44833bdd1e64.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="cve,exploit,vulnerability"
-       data-vendors="AWS,Citrix"
-       data-severity="critical"
-       data-title="cisa says attackers are exploiting two critical citrix netscaler flaws globally"
-       data-id="ac488e19f0468f41"
-       data-published="2026-09-28T12:51:49+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">AWS</span><span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-09-28T12:51:49+05:30" title="28 September 2026, 02:21">28 September 2026, 02:21</time>
-      </div>
-      <h3 class="card-title">CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Sunday added two critical Citrix NetScaler ADC and Gateway flaws to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ac488e19f0468f41.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,ransomware,vulnerability"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="jadepuffer agentic ai attacks target azure, destroy cloud resources"
-       data-id="d82b39593f849b29"
-       data-published="2026-09-28T11:49:27-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-28T11:49:27-04:00" title="28 September 2026, 10:49">28 September 2026, 10:49</time>
-      </div>
-      <h3 class="card-title">JadePuffer agentic AI attacks target Azure, destroy cloud resources</h3>
-      <p class="card-summary">The JadePuffer ransomware operator is targeting Azure tenants with agent-driven attacks that conduct reconnaissance, steal credentials, and destroy core components. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">ransomware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/d82b39593f849b29.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="80,000+ organizations had ai logins stolen: from shadow ai to llmjacking"
-       data-id="32d027403193e7b4"
-       data-published="2026-09-28T10:00:10-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-28T10:00:10-04:00" title="28 September 2026, 09:00">28 September 2026, 09:00</time>
-      </div>
-      <h3 class="card-title">80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking</h3>
-      <p class="card-summary">Infostealer logs exposed AI account credentials and sessions tied to more than 80,000 corporate domains, creating risks ranging from stolen conversations to LLMjacking. SOCRadar examines the growing market for stolen AI logins and how organizations can…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Infostealer logs exposed AI account credentials and sessions tied to more than 80,000 corporate domains, creating risks ranging from stolen conversations to LLMjacking. SOCRadar examines the growing market for stolen AI logins and how organizations can identify their exposure. [...]</p></div>
-      <div class="detail-links">
-        <a href="articles/32d027403193e7b4.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -35,8 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
@@ -68,9 +67,9 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
@@ -79,10 +78,10 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
@@ -182,6 +181,41 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,vulnerability,zero-day"
+       data-vendors="Apple"
+       data-severity="critical"
+       data-title="apple zero-day vulnerability weaponized in targeted attacks"
+       data-id="c2f27e189eca95fc"
+       data-published="2026-09-29T21:31:29+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-09-29T21:31:29+00:00" title="29 September 2026, 16:31">29 September 2026, 16:31</time>
+      </div>
+      <h3 class="card-title">Apple Zero-Day Vulnerability Weaponized in Targeted Attacks</h3>
+      <p class="card-summary">Attackers are exploiting CVE-2026-86950, an out-of-bounds write flaw, in an extremely sophisticated fashion, according to Apple.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <div class="card-related">Also: The Hacker News</div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c2f27e189eca95fc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="patch,vulnerability"
        data-vendors=""
@@ -209,6 +243,34 @@
       <div class="detail-links">
         <a href="../articles/2a1a4730cb8f2e80.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Linux,Microsoft"
+       data-severity="medium"
+       data-title="microsoft is rolling out linux container support to wsl"
+       data-id="09ef5a4862ff8c53"
+       data-published="2026-09-29T20:40:57-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-29T20:40:57-04:00" title="29 September 2026, 19:40">29 September 2026, 19:40</time>
+      </div>
+      <h3 class="card-title">Microsoft is rolling out Linux container support to WSL</h3>
+      <p class="card-summary">Microsoft is taking Windows Subsystem for Linux beyond just running Linux distributions, as WSL Containers is now generally available. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/09ef5a4862ff8c53.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-is-rolling-out-linux-container-support-to-wsl/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -387,6 +449,39 @@
       <div class="detail-links">
         <a href="../articles/b44bfba307a18e77.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="&#39;needymantis&#39; provides long-term access to compromised networks"
+       data-id="889feb0f6b246983"
+       data-published="2026-09-29T15:12:39+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-29T15:12:39+00:00" title="29 September 2026, 10:12">29 September 2026, 10:12</time>
+      </div>
+      <h3 class="card-title">&#39;NeedyMantis&#39; Provides Long-Term Access to Compromised Networks</h3>
+      <p class="card-summary">Microsoft observed a China-based actor using a previously unidentified malware framework in targeted intrusions against telcos, universities, medical, and government-related organizations.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <div class="card-related">Also: The Hacker News</div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/889feb0f6b246983.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/needymantis-long-term-access-compromised-networks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -605,98 +700,6 @@
       <div class="detail-links">
         <a href="../articles/abc258560f86069f.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="official mcp python sdk flaw can let malicious servers steal oauth credentials"
-       data-id="6aa502877d009180"
-       data-published="2026-09-29T11:38:25+05:30"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-29T11:38:25+05:30" title="29 September 2026, 01:08">29 September 2026, 01:08</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials</h3>
-      <p class="card-summary">A malicious MCP server could trick an application built on the official MCP Python SDK into handing over the OAuth credentials it uses to log in to a real service, the SDK&#39;s maintainers said in a security advisory.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/6aa502877d009180.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="openai shelves gpt-6.1 astra after tests find deception and unauthorized actions"
-       data-id="a4d2b9db7806a25f"
-       data-published="2026-09-29T10:42:32+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-29T10:42:32+05:30" title="29 September 2026, 00:12">29 September 2026, 00:12</time>
-      </div>
-      <h3 class="card-title">OpenAI Shelves GPT-6.1 Astra After Tests Find Deception and Unauthorized Actions</h3>
-      <p class="card-summary">OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation artificial intelligence (AI) model that was planned for an October launch, after it failed internal safety and alignment audits.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/a4d2b9db7806a25f.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="openai pauses tool use after agent bypasses internet controls to reach external chatbot"
-       data-id="1e045fd94deaf4c3"
-       data-published="2026-09-29T10:15:20+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-09-29T10:15:20+05:30" title="28 September 2026, 23:45">28 September 2026, 23:45</time>
-      </div>
-      <h3 class="card-title">OpenAI Pauses Tool Use After Agent Bypasses Internet Controls to Reach External Chatbot</h3>
-      <p class="card-summary">OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/1e045fd94deaf4c3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

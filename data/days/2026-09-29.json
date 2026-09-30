@@ -86,6 +86,45 @@
     "highlighted": false
   },
   {
+    "id": "c2f27e189eca95fc",
+    "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
+    "published": "2026-09-29T21:31:29+00:00",
+    "fetched_at": "2026-09-30T01:03:08.006399+00:00",
+    "summary": "Attackers are exploiting CVE-2026-86950, an out-of-bounds write flaw, in an extremely sophisticated fashion, according to Apple.",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-09-29",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers are exploiting CVE-2026-86950, an out-of-bounds write flaw, in an extremely sophisticated fashion, according to Apple.",
+    "quick_take": "",
+    "sections": {
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Attackers are exploiting CVE-2026-86950, an out-of-bounds write flaw, in an extremely sophisticated fashion, according to Apple. Tracked as CVE-2026-86950. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [
+      {
+        "source": "The Hacker News",
+        "link": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html"
+      }
+    ],
+    "highlighted": false
+  },
+  {
     "id": "2a1a4730cb8f2e80",
     "title": "Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution",
     "source": "Dark Reading",
@@ -107,6 +146,32 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A patched Unsloth Studio vulnerability allows malicious AI models to execute arbitrary Python code during inspection, via the trust_remote_code setting. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "09ef5a4862ff8c53",
+    "title": "Microsoft is rolling out Linux container support to WSL",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-rolling-out-linux-container-support-to-wsl/",
+    "published": "2026-09-29T20:40:57-04:00",
+    "fetched_at": "2026-09-30T01:03:07.457109+00:00",
+    "summary": "Microsoft is taking Windows Subsystem for Linux beyond just running Linux distributions, as WSL Containers is now generally available. [...]",
+    "tags": [],
+    "day": "2026-09-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft is taking Windows Subsystem for Linux beyond just running Linux distributions, as WSL Containers is now generally available. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft is taking Windows Subsystem for Linux beyond just running Linux distributions, as WSL Containers is now generally available. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -270,6 +335,41 @@
     "email_summary": "The FBI is warning members of the ShinyHunters extortion group to turn themselves in after Dutch police arrested a man the bureau described as one of the group's alleged leaders. [...].",
     "content_model_version": 2,
     "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "889feb0f6b246983",
+    "title": "'NeedyMantis' Provides Long-Term Access to Compromised Networks",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/threat-intelligence/needymantis-long-term-access-compromised-networks",
+    "published": "2026-09-29T15:12:39+00:00",
+    "fetched_at": "2026-09-30T01:03:08.006988+00:00",
+    "summary": "Microsoft observed a China-based actor using a previously unidentified malware framework in targeted intrusions against telcos, universities, medical, and government-related organizations.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-09-29",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft observed a China-based actor using a previously unidentified malware framework in targeted intrusions against telcos, universities, medical, and government-related organizations.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Microsoft observed a China-based actor using a previously unidentified malware framework in targeted intrusions against telcos, universities, medical, and government-related organizations.",
+    "content_model_version": 2,
+    "related_sources": [
+      {
+        "source": "The Hacker News",
+        "link": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html"
+      }
+    ],
     "highlighted": false
   },
   {
@@ -469,84 +569,6 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) suffered an AI-driven cyberattack that the organization described as \"loud and very, very messy.\" [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "6aa502877d009180",
-    "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
-    "published": "2026-09-29T11:38:25+05:30",
-    "fetched_at": "2026-09-29T11:05:04.400458+00:00",
-    "summary": "A malicious MCP server could trick an application built on the official MCP Python SDK into handing over the OAuth credentials it uses to log in to a real service, the SDK's maintainers said in a security advisory.",
-    "tags": [],
-    "day": "2026-09-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "A malicious MCP server could trick an application built on the official MCP Python SDK into handing over the OAuth credentials it uses to log in to a real service, the SDK's maintainers said in a security advisory.",
-    "quick_take": "",
-    "sections": {
-      "technical": "Affected versions sent the client secret, the authorization code, and the PKCE proof key to a token endpoint the attacker controlled."
-    },
-    "email_summary": "A malicious MCP server could trick an application built on the official MCP Python SDK into handing over the OAuth credentials it uses to log in to a real service, the SDK's maintainers said in a security advisory. Affected versions sent the client secret, the authorization code, and the PKCE proof key to a token endpoint the attacker controlled.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "a4d2b9db7806a25f",
-    "title": "OpenAI Shelves GPT-6.1 Astra After Tests Find Deception and Unauthorized Actions",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html",
-    "published": "2026-09-29T10:42:32+05:30",
-    "fetched_at": "2026-09-29T11:05:04.400709+00:00",
-    "summary": "OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation artificial intelligence (AI) model that was planned for an October launch, after it failed internal safety and alignment audits.",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-09-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation artificial intelligence (AI) model that was planned for an October launch, after it failed internal safety and alignment audits.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation artificial intelligence (AI) model that was planned for an October launch, after it failed internal safety and alignment audits. The development was first reported by The Wall Street Journal.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "1e045fd94deaf4c3",
-    "title": "OpenAI Pauses Tool Use After Agent Bypasses Internet Controls to Reach External Chatbot",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html",
-    "published": "2026-09-29T10:15:20+05:30",
-    "fetched_at": "2026-09-29T11:05:04.400933+00:00",
-    "summary": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions.",
-    "tags": [
-      "exploit",
-      "vulnerability"
-    ],
-    "day": "2026-09-29",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions.",
-    "quick_take": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its…",
-    "sections": {
-      "technical": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions.\n\n\"An agent attempting to complete a search-based training task queried a public chatbot service through a gap in our internet-access restrictions:"
-    },
-    "email_summary": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions.\n\n\"An agent attempting to complete a search-based training task queried a public chatbot service through a gap in our internet-access restrictions:.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

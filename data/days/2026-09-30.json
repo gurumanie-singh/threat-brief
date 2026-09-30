@@ -1,5 +1,163 @@
 [
   {
+    "id": "5213536733253d0c",
+    "title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
+    "published": "2026-09-30T22:16:29+05:30",
+    "fetched_at": "2026-09-30T19:48:53.140362+00:00",
+    "summary": "Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-09-30",
+    "cves": [
+      "CVE-2026-73570"
+    ],
+    "cvss": 8.9,
+    "severity": "high",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The attack exploits CVE-2026-73570 (CVSS score: 8.9), an unauthenticated operating system command injection flaw that can lead to remote code execution when Simple Network Management Protocol Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team.\n\nReferenced vulnerabilities: CVE-2026-73570.",
+      "impact": "Assessed severity: HIGH. CVSS score: 8.9/10."
+    },
+    "email_summary": "Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team. Tracked as CVE-2026-73570. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "dcacf46ac432f531",
+    "title": "Attackers Abuse MSP360 to Deploy ScreenConnect in Dual-RMM Phishing Attacks",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
+    "published": "2026-09-30T22:02:59+05:30",
+    "fetched_at": "2026-09-30T19:48:53.140582+00:00",
+    "summary": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.",
+    "tags": [
+      "phishing"
+    ],
+    "day": "2026-09-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.",
+    "quick_take": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts,…",
+    "sections": {
+      "impact": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.\n\n\"Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected\n\nAssessed severity: MEDIUM.",
+      "mitigation": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.\n\n\"Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.\n\n\"Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "0af64d0bd4dd4c4b",
+    "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+    "published": "2026-09-30T20:54:54+05:30",
+    "fetched_at": "2026-09-30T19:48:53.140755+00:00",
+    "summary": "Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an advisory on September 30.",
+    "tags": [
+      "cve",
+      "exploit",
+      "zero-day"
+    ],
+    "day": "2026-09-30",
+    "cves": [
+      "CVE-2026-76504"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an advisory on September 30.",
+    "quick_take": "",
+    "sections": {
+      "impact": "The flaw, CVE-2026-76504, could allow a remote attacker with no login access to use the Manager's API as the admin user.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "Fixed releases are available, and there is no workaround.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an advisory on September 30. Tracked as CVE-2026-76504. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [
+      {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/"
+      }
+    ],
+    "highlighted": false
+  },
+  {
+    "id": "4823d35121277c37",
+    "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
+    "published": "2026-09-30T20:30:15+05:30",
+    "fetched_at": "2026-09-30T19:48:53.140912+00:00",
+    "summary": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware.",
+    "tags": [
+      "exploit",
+      "malware"
+    ],
+    "day": "2026-09-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware. Huntress, which observed the activity in late September 2026, said it marks the abuse of yet another feature in trusted artificial intelligence (AI) platforms.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a22ce0537d7669a6",
+    "title": "As AI Reshapes the SOC Career Ladder, Satisfaction Rises for 91%, but Entry Gets Harder for Nearly Half",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
+    "published": "2026-09-30T18:56:56+00:00",
+    "fetched_at": "2026-09-30T19:48:54.106063+00:00",
+    "summary": "New Swimlane research underscores a paradox: While AI detection and response is essential to giving defenders an edge, one in four security pros say AI limits their skill development.",
+    "tags": [],
+    "day": "2026-09-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "New Swimlane research underscores a paradox: While AI detection and response is essential to giving defenders an edge, one in four security pros say AI limits their skill development.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "New Swimlane research underscores a paradox: While AI detection and response is essential to giving defenders an edge, one in four security pros say AI limits their skill development.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "7ba780995a7177c4",
     "title": "Know Your Enemy: Browser-Based Attack Techniques in 2026",
     "source": "The Hacker News",
@@ -86,6 +244,60 @@
     "highlighted": false
   },
   {
+    "id": "bb1d696eb9a9736d",
+    "title": "Russia's Star Blizzard Ditches ClickFix to Widen Phishing Net",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
+    "published": "2026-09-30T15:02:25+00:00",
+    "fetched_at": "2026-09-30T19:48:54.106214+00:00",
+    "summary": "The APT actor is using a new tactic, dubbed \"RedFlick,\" against Ukrainian-linked targets such as NGOs, think tanks, and journalists to deploy its CosmicPulse backdoor.",
+    "tags": [
+      "apt",
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-09-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The APT actor is using a new tactic, dubbed \"RedFlick,\" against Ukrainian-linked targets such as NGOs, think tanks, and journalists to deploy its CosmicPulse backdoor.",
+    "quick_take": "",
+    "sections": {
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "The APT actor is using a new tactic, dubbed \"RedFlick,\" against Ukrainian-linked targets such as NGOs, think tanks, and journalists to deploy its CosmicPulse backdoor.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "cd30aceb5b002351",
+    "title": "Over 543,000 valid credentials exposed in public GitHub repositories",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
+    "published": "2026-09-30T14:08:34-04:00",
+    "fetched_at": "2026-09-30T19:48:53.594732+00:00",
+    "summary": "More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform's security measures to prevent accidental leaks of sensitive data. [...]",
+    "tags": [],
+    "day": "2026-09-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform's security measures to prevent accidental leaks of sensitive data. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform's security measures to prevent accidental leaks of sensitive data. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform's security measures to prevent accidental leaks of sensitive data. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "4ce524e0b4507f71",
     "title": "Attackers Exploit NetScaler Flaw for Root Access, Deploy WHIPSHOT and SLAPSHOT",
     "source": "The Hacker News",
@@ -135,6 +347,31 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A High-severity OpenSSL flaw can leak heap memory to the other side of a DTLS connection or crash the program, OpenSSL said on September 29 as it released fixes. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "15e558a74a02938e",
+    "title": "CISA warns of critical pre-auth RCE flaw in MikroTik RouterOS",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
+    "published": "2026-09-30T11:49:29-04:00",
+    "fetched_at": "2026-09-30T19:48:53.594890+00:00",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning of a new critical vulnerability in MikroTik RouterOS that could lead to remote code execution or cause a denial-of-service condition. [...]",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-09-30",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity and Infrastructure Security Agency (CISA) is warning of a new critical vulnerability in MikroTik RouterOS that could lead to remote code execution or cause a denial-of-service condition. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) is warning of a new critical vulnerability in MikroTik RouterOS that could lead to remote code execution or cause a denial-of-service condition. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 September 2026</h1>
-      <span class="brief-sub">11 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -35,10 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, Citrix ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -68,6 +68,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
@@ -75,19 +76,177 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="attackers exploit zimbra flaw to deploy web shells and harvest authentication secrets"
+       data-id="5213536733253d0c"
+       data-published="2026-09-30T22:16:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-30T22:16:29+05:30" title="30 September 2026, 11:46">30 September 2026, 11:46</time>
+      </div>
+      <h3 class="card-title">Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets</h3>
+      <p class="card-summary">Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5213536733253d0c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="attackers abuse msp360 to deploy screenconnect in dual-rmm phishing attacks"
+       data-id="dcacf46ac432f531"
+       data-published="2026-09-30T22:02:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-30T22:02:59+05:30" title="30 September 2026, 11:32">30 September 2026, 11:32</time>
+      </div>
+      <h3 class="card-title">Attackers Abuse MSP360 to Deploy ScreenConnect in Dual-RMM Phishing Attacks</h3>
+      <p class="card-summary">Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dcacf46ac432f531.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,zero-day"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="cisco warns of attackers exploiting critical authentication bypass in sd-wan manager"
+       data-id="0af64d0bd4dd4c4b"
+       data-published="2026-09-30T20:54:54+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-09-30T20:54:54+05:30" title="30 September 2026, 10:24">30 September 2026, 10:24</time>
+      </div>
+      <h3 class="card-title">Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager</h3>
+      <p class="card-summary">Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an advisory on September 30.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0af64d0bd4dd4c4b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="attackers abuse chatgpt custom gpts to deliver rat via clickfix lures"
+       data-id="4823d35121277c37"
+       data-published="2026-09-30T20:30:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-30T20:30:15+05:30" title="30 September 2026, 10:00">30 September 2026, 10:00</time>
+      </div>
+      <h3 class="card-title">Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures</h3>
+      <p class="card-summary">Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4823d35121277c37.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="as ai reshapes the soc career ladder, satisfaction rises for 91%, but entry gets harder for nearly half"
+       data-id="a22ce0537d7669a6"
+       data-published="2026-09-30T18:56:56+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-09-30T18:56:56+00:00" title="30 September 2026, 13:56">30 September 2026, 13:56</time>
+      </div>
+      <h3 class="card-title">As AI Reshapes the SOC Career Ladder, Satisfaction Rises for 91%, but Entry Gets Harder for Nearly Half</h3>
+      <p class="card-summary">New Swimlane research underscores a paradox: While AI detection and response is essential to giving defenders an edge, one in four security pros say AI limits their skill development.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a22ce0537d7669a6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,malware"
        data-vendors=""
@@ -182,6 +341,69 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="russia&#39;s star blizzard ditches clickfix to widen phishing net"
+       data-id="bb1d696eb9a9736d"
+       data-published="2026-09-30T15:02:25+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-30T15:02:25+00:00" title="30 September 2026, 10:02">30 September 2026, 10:02</time>
+      </div>
+      <h3 class="card-title">Russia&#39;s Star Blizzard Ditches ClickFix to Widen Phishing Net</h3>
+      <p class="card-summary">The APT actor is using a new tactic, dubbed &#34;RedFlick,&#34; against Ukrainian-linked targets such as NGOs, think tanks, and journalists to deploy its CosmicPulse backdoor.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bb1d696eb9a9736d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="over 543,000 valid credentials exposed in public github repositories"
+       data-id="cd30aceb5b002351"
+       data-published="2026-09-30T14:08:34-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-09-30T14:08:34-04:00" title="30 September 2026, 13:08">30 September 2026, 13:08</time>
+      </div>
+      <h3 class="card-title">Over 543,000 valid credentials exposed in public GitHub repositories</h3>
+      <p class="card-summary">More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform&#39;s security measures to prevent accidental leaks of sensitive data. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cd30aceb5b002351.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="exploit,patch"
        data-vendors="Citrix,Google"
        data-severity="medium"
@@ -238,6 +460,35 @@
       <div class="detail-links">
         <a href="../articles/5356343ea3b4a0d8.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa warns of critical pre-auth rce flaw in mikrotik routeros"
+       data-id="15e558a74a02938e"
+       data-published="2026-09-30T11:49:29-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-09-30T11:49:29-04:00" title="30 September 2026, 10:49">30 September 2026, 10:49</time>
+      </div>
+      <h3 class="card-title">CISA warns of critical pre-auth RCE flaw in MikroTik RouterOS</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) is warning of a new critical vulnerability in MikroTik RouterOS that could lead to remote code execution or cause a denial-of-service condition. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/15e558a74a02938e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">2 October 2026</h1>
-      <span class="brief-sub">11 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -49,6 +50,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -64,25 +66,154 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="high"
+       data-title="gitlab patches critical 9.9 ai gateway flaw allowing command execution on self-hosted servers"
+       data-id="96c6fe38c1f604d5"
+       data-published="2026-10-02T23:03:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-02T23:03:31+05:30" title="2 October 2026, 12:33">2 October 2026, 12:33</time>
+      </div>
+      <h3 class="card-title">GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers</h3>
+      <p class="card-summary">A critical flaw in GitLab&#39;s AI Gateway could let a logged-in user with Duo Agent Platform access run commands on the gateway under certain conditions, GitLab said in an advisory.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/96c6fe38c1f604d5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Cisco,Microsoft"
+       data-severity="medium"
+       data-title="antino backdoor uses outlook and onedrive for c2 in china-nexus espionage campaign"
+       data-id="bef237bae7004d77"
+       data-published="2026-10-02T23:03:16+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Cisco</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-02T23:03:16+05:30" title="2 October 2026, 12:33">2 October 2026, 12:33</time>
+      </div>
+      <h3 class="card-title">Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign</h3>
+      <p class="card-summary">Government and policy organizations across Asia have become the target of a new campaign orchestrated by a China-nexus threat actor.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bef237bae7004d77.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="dell csm flaws enable unauthenticated admin access and root on kubernetes nodes"
+       data-id="a7a596bb6bd164f8"
+       data-published="2026-10-02T22:32:12+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-02T22:32:12+05:30" title="2 October 2026, 12:02">2 October 2026, 12:02</time>
+      </div>
+      <h3 class="card-title">Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes</h3>
+      <p class="card-summary">Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a7a596bb6bd164f8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="remotethreat bets security teams need to test what happens after defenses fail"
+       data-id="515e0dc34908ce2c"
+       data-published="2026-10-02T20:18:37+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-02T20:18:37+00:00" title="2 October 2026, 15:18">2 October 2026, 15:18</time>
+      </div>
+      <h3 class="card-title">RemoteThreat Bets Security Teams Need to Test What Happens After Defenses Fail</h3>
+      <p class="card-summary">The offensive cyber operations startup looks to evolve red teaming beyond traditional methods to simulate attackers&#39; increasingly advanced capabilities.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/515e0dc34908ce2c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -144,6 +275,99 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--critical"
+       data-tags="patch,zero-day"
+       data-vendors="Citrix"
+       data-severity="critical"
+       data-title="kiteworks &amp;amp; citrix incidents show challenges of zero-day response"
+       data-id="e0be2b08708b3889"
+       data-published="2026-10-02T16:56:30+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-10-02T16:56:30+00:00" title="2 October 2026, 11:56">2 October 2026, 11:56</time>
+      </div>
+      <h3 class="card-title">Kiteworks &amp;amp; Citrix Incidents Show Challenges of Zero-Day Response</h3>
+      <p class="card-summary">One company told customers to power down its data-protection platform during a nine-hour window, while the other remained mum on reported attacks prior to releasing a patch for its product.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e0be2b08708b3889.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="swift banking &amp;amp; government middleware enables rce"
+       data-id="15a280724fd152e7"
+       data-published="2026-10-02T16:27:54+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-02T16:27:54+00:00" title="2 October 2026, 11:27">2 October 2026, 11:27</time>
+      </div>
+      <h3 class="card-title">SWIFT Banking &amp;amp; Government Middleware Enables RCE</h3>
+      <p class="card-summary">Patch middleware vulnerabilities now to avoid hardware-based MFA exploits in ultra-sensitive environments.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/15a280724fd152e7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="is your organization ready for 2027&#39;s ai accountability era?"
+       data-id="20faf9d039d7f95c"
+       data-published="2026-10-02T16:01:22+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-02T16:01:22+00:00" title="2 October 2026, 11:01">2 October 2026, 11:01</time>
+      </div>
+      <h3 class="card-title">Is Your Organization Ready for 2027&#39;s AI Accountability Era?</h3>
+      <p class="card-summary">Organizations may face an artificial intelligence (AI) reckoning over the next year. Omdia and Gartner weigh in on how to tackle the governance, security, and value challenges ahead.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/20faf9d039d7f95c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/is-your-organization-ready-for-2027-s-ai-accountability-era-" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Microsoft"
@@ -169,6 +393,73 @@
       <div class="detail-links">
         <a href="../articles/521dbb8fa05362cb.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="frontline education breach exposes school district employee data"
+       data-id="df6c38a1f156bfe4"
+       data-published="2026-10-02T15:01:40-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-02T15:01:40-04:00" title="2 October 2026, 14:01">2 October 2026, 14:01</time>
+      </div>
+      <h3 class="card-title">Frontline Education breach exposes school district employee data</h3>
+      <p class="card-summary">Frontline Education is notifying school districts of a data breach after attackers exploited a vulnerability in third-party software to gain unauthorized access to its systems and steal employee information, including Social Security numbers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/df6c38a1f156bfe4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit,malware,ransomware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="warlock ransomware breach sharepoint in water, telecom operator attacks"
+       data-id="05ae4f4ba339a379"
+       data-published="2026-10-02T14:33:01-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-02T14:33:01-04:00" title="2 October 2026, 13:33">2 October 2026, 13:33</time>
+      </div>
+      <h3 class="card-title">Warlock ransomware breach SharePoint in water, telecom operator attacks</h3>
+      <p class="card-summary">The China-linked ransomware group Warlock targeted a water utility, a telecom provider, a regional government body, and a university by exploiting SharePoint vulnerabilities to gain initial access. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/05ae4f4ba339a379.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -258,6 +549,38 @@
       <div class="detail-links">
         <a href="../articles/e73184b3d8739967.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="gitlab warns of critical rce vulnerability in ai gateway service"
+       data-id="ec9bd2a5d72a3003"
+       data-published="2026-10-02T12:20:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-02T12:20:05-04:00" title="2 October 2026, 11:20">2 October 2026, 11:20</time>
+      </div>
+      <h3 class="card-title">GitLab warns of critical RCE vulnerability in AI Gateway service</h3>
+      <p class="card-summary">GitLab warned customers today to immediately patch a critical AI Gateway vulnerability that could let attackers run arbitrary commands on vulnerable instances. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ec9bd2a5d72a3003.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -385,36 +708,6 @@
       <div class="detail-links">
         <a href="../articles/2dedce01c4c0429d.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft’s x account hacked in crypto pump-and-dump scheme"
-       data-id="ac1067dcad4a42d2"
-       data-published="2026-10-02T05:29:56-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-02T05:29:56-04:00" title="2 October 2026, 04:29">2 October 2026, 04:29</time>
-      </div>
-      <h3 class="card-title">Microsoft’s X account hacked in crypto pump-and-dump scheme</h3>
-      <p class="card-summary">On Thursday, unknown attackers hijacked the official Microsoft account on X, which has over 13 million followers, in what appeared to be a pump-and-dump scheme promoting a crypto token. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/ac1067dcad4a42d2.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

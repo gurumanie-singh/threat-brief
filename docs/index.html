@@ -28,25 +28,34 @@
       <h1 class="brief-title">4 October 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-10-04T14:10:06.564331-05:00">4 October 2026, 14:10</time>
+        <time data-iso="2026-10-04T17:43:29.213983-05:00">4 October 2026, 17:43</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
-      <span class="stat">3 articles today</span>
+      <span class="stat stat-critical">1 critical</span>
+      <span class="stat stat-action">1 action req.</span>
+      <span class="stat">4 articles today</span>
     </div>
   </div>
 
   <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">attacks<span class="trend-count">11</span></span>
-        <span class="trend-pill">citrix<span class="trend-count">9</span></span>
+        <span class="trend-pill">attacks<span class="trend-count">12</span></span>
+        <span class="trend-pill">citrix<span class="trend-count">10</span></span>
+        <span class="trend-pill">netscaler<span class="trend-count">9</span></span>
+        <span class="trend-pill">zero-day<span class="trend-count">8</span></span>
         <span class="trend-pill">critical<span class="trend-count">8</span></span>
-        <span class="trend-pill">netscaler<span class="trend-count">8</span></span>
         <span class="trend-pill">security<span class="trend-count">7</span></span>
-        <span class="trend-pill">deploy<span class="trend-count">7</span></span>
       </div>
     </div>
   </div>
@@ -77,8 +86,8 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
@@ -212,10 +221,45 @@
   <div class="day-group">
     <h2 class="day-heading">
       4 October 2026
-      <span class="day-count">3</span>
+      <span class="day-count">4</span>
     </h2>
   </div>
 
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors="Citrix"
+       data-severity="critical"
+       data-title="citrix patches netscaler saml zero-day exploited in attacks"
+       data-id="df8082a0577ff470"
+       data-published="2026-10-04T17:58:01-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-10-04T17:58:01-04:00" title="4 October 2026, 16:58">4 October 2026, 16:58</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Citrix patches NetScaler SAML zero-day exploited in attacks</h3>
+      <p class="card-summary">Citrix has released emergency updates for a new NetScaler denial-of-service vulnerability tracked as CVE-2026-88779 that has been exploited in zero-day attacks, with researchers investigating whether it can also be exploited for remote code execution. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/df8082a0577ff470.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -497,7 +541,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       2 October 2026
-      <span class="day-count">18</span>
+      <span class="day-count">17</span>
     </h2>
   </div>
 
@@ -1023,40 +1067,6 @@
       <div class="detail-links">
         <a href="articles/50d3f79f89e96891.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="cve,exploit,vulnerability,zero-day"
-       data-vendors="Fortinet"
-       data-severity="critical"
-       data-title="critical fortimail zero-day flaw exploited in attacks allows unauthenticated arbitrary file writes"
-       data-id="6be5857a0014e760"
-       data-published="2026-10-02T11:19:50+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-10-02T11:19:50+05:30" title="2 October 2026, 00:49">2 October 2026, 00:49</time>
-      </div>
-      <h3 class="card-title">Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added a critical security flaw impacting Fortinet FortiMail to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">vulnerability</span>
-          <span class="ttag">zero-day</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/6be5857a0014e760.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

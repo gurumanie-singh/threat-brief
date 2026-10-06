@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">6 October 2026</h1>
-      <span class="brief-sub">15 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
-        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>AWS, Google ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -49,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
@@ -64,26 +65,141 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="linux backdoors impersonate email security tools to evade detection in korea and taiwan"
+       data-id="f543eb7ca67d8214"
+       data-published="2026-10-06T23:54:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-06T23:54:25+05:30" title="6 October 2026, 13:24">6 October 2026, 13:24</time>
+      </div>
+      <h3 class="card-title">Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan</h3>
+      <p class="card-summary">Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and seemingly legitimate processes to blend in and evade detection.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f543eb7ca67d8214.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="clickfix attacks evolve to better hide malicious payloads"
+       data-id="e3102148e782dd8a"
+       data-published="2026-10-06T20:32:58+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-06T20:32:58+00:00" title="6 October 2026, 15:32">6 October 2026, 15:32</time>
+      </div>
+      <h3 class="card-title">ClickFix Attacks Evolve to Better Hide Malicious Payloads</h3>
+      <p class="card-summary">Threat actors are now hiding payloads by using DNS TXT records and browser cache pre-fetching, making it tougher to spot early attack stages.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e3102148e782dd8a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="critical healthcare systems aren&#39;t quantum-ready"
+       data-id="f3b5f8fc9186aa68"
+       data-published="2026-10-06T20:30:27+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-06T20:30:27+00:00" title="6 October 2026, 15:30">6 October 2026, 15:30</time>
+      </div>
+      <h3 class="card-title">Critical Healthcare Systems Aren&#39;t Quantum-Ready</h3>
+      <p class="card-summary">A study of 2.5 million devices across 50 healthcare organization suggests the sector has a long way to go in getting ready for the post-quantum cryptography era.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f3b5f8fc9186aa68.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="AWS,Google"
+       data-severity="medium"
+       data-title="google&#39;s pagebreak ai agent finds 500 flaws in its web apps"
+       data-id="a9060b23d3496d9a"
+       data-published="2026-10-06T17:56:29+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-06T17:56:29+00:00" title="6 October 2026, 12:56">6 October 2026, 12:56</time>
+      </div>
+      <h3 class="card-title">Google&#39;s PageBreak AI Agent Finds 500 Flaws in Its Web Apps</h3>
+      <p class="card-summary">The situation illustrates a trend toward using AI and deterministic validation to identify flaws and exploitability, and provide a risk assessment.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a9060b23d3496d9a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="exploit"
        data-vendors="AWS"
@@ -112,6 +228,65 @@
       <div class="detail-links">
         <a href="../articles/afeed621b2642f19.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="ians&#39; kakolowski: how ai is reshaping ciso budgets &amp;amp; security teams"
+       data-id="5fa4d48262f4436f"
+       data-published="2026-10-06T17:15:24+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-06T17:15:24+00:00" title="6 October 2026, 12:15">6 October 2026, 12:15</time>
+      </div>
+      <h3 class="card-title">IANS&#39; Kakolowski: How AI Is Reshaping CISO Budgets &amp;amp; Security Teams</h3>
+      <p class="card-summary">In this video interview, Nick Kakolowski, senior director for CISO research at IANS, talks AI: budgets, ROI, and changes inside security teams.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5fa4d48262f4436f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="ninja forms plugin flaw exploited to hack wordpress sites"
+       data-id="99af6b0000a86a90"
+       data-published="2026-10-06T17:00:27-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-06T17:00:27-04:00" title="6 October 2026, 16:00">6 October 2026, 16:00</time>
+      </div>
+      <h3 class="card-title">Ninja Forms plugin flaw exploited to hack WordPress sites</h3>
+      <p class="card-summary">Hackers are exploiting stored cross-site scripting (XSS) vulnerabilities in two unrelated WordPress plugins, Ninja Forms and WPC Product Bundles for WooCommerce, to install backdoors and create rogue admin accounts. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/99af6b0000a86a90.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ninja-forms-plugin-flaw-exploited-to-hack-wordpress-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -203,6 +378,38 @@
       <div class="detail-links">
         <a href="../articles/8a1d7df7605c150f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="hackers exploit 32 zero-days on first day of pwn2own ireland"
+       data-id="417100f325e83007"
+       data-published="2026-10-06T15:21:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-10-06T15:21:53-04:00" title="6 October 2026, 14:21">6 October 2026, 14:21</time>
+      </div>
+      <h3 class="card-title">Hackers exploit 32 zero-days on first day of Pwn2Own Ireland</h3>
+      <p class="card-summary">On the first day of the Pwn2Own Ireland 2026 competition, security researchers hacked the Samsung Galaxy S26 twice and earned $388,500 after exploiting 32 zero-days. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/417100f325e83007.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -480,69 +687,6 @@
       <div class="detail-links">
         <a href="../articles/74a65d5f135c7687.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,phishing"
-       data-vendors="Google,Microsoft"
-       data-severity="medium"
-       data-title="nikkei discloses breaches of employees’ microsoft, google email accounts"
-       data-id="716e517d71cd8ed7"
-       data-published="2026-10-06T05:25:50-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-06T05:25:50-04:00" title="6 October 2026, 04:25">6 October 2026, 04:25</time>
-      </div>
-      <h3 class="card-title">Nikkei discloses breaches of employees’ Microsoft, Google email accounts</h3>
-      <p class="card-summary">Over the weekend, Japanese publishing giant Nikkei disclosed that unknown attackers recently breached two employee email accounts and used one to send thousands of phishing emails. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/716e517d71cd8ed7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="engineer sentenced for locking over 3,000 devices on employer network"
-       data-id="d5b756b4d22cd63b"
-       data-published="2026-10-06T04:19:24-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-06T04:19:24-04:00" title="6 October 2026, 03:19">6 October 2026, 03:19</time>
-      </div>
-      <h3 class="card-title">Engineer sentenced for locking over 3,000 devices on employer network</h3>
-      <p class="card-summary">A former core infrastructure engineer at an industrial company headquartered in New Jersey was sentenced to 32 months in prison for locking thousands of devices on his employer&#39;s network in a ransomware-style attack. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/d5b756b4d22cd63b.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">9 October 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">7 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>AWS, Citrix ecosystems affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -54,16 +65,216 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="gobalance flaw lets attackers hijack .onion addresses by recovering tor-format keys"
+       data-id="5d45245165220c71"
+       data-published="2026-10-09T14:33:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-09T14:33:24+05:30" title="9 October 2026, 04:03">9 October 2026, 04:03</time>
+      </div>
+      <h3 class="card-title">GoBalance Flaw Lets Attackers Hijack .onion Addresses by Recovering Tor-Format Keys</h3>
+      <p class="card-summary">A bug in GoBalance, a tool many dark-web sites use to stay reachable during attacks, lets anyone work out the secret key that controls a site&#39;s .onion address using only public information, and then take that address over.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5d45245165220c71.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,patch"
+       data-vendors="AWS,Google"
+       data-severity="medium"
+       data-title="three teams demonstrate remote hacks of fully patched google pixel 10 at pwn2own"
+       data-id="60975a3a770f57b2"
+       data-published="2026-10-09T13:56:17+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-09T13:56:17+05:30" title="9 October 2026, 03:26">9 October 2026, 03:26</time>
+      </div>
+      <h3 class="card-title">Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own</h3>
+      <p class="card-summary">Three research teams broke into Google&#39;s Pixel 10 on October 8 at Pwn2Own Ireland, a hacking contest in Cork whose rules require every target to be fully patched. The contest pays researchers to show working exploits and passes the flaws to the vendors.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/60975a3a770f57b2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,malware,patch,vulnerability"
+       data-vendors="Citrix"
+       data-severity="critical"
+       data-title="citrix patches critical netscaler flaw that could enable rce in saml deployments"
+       data-id="402f6787128a1fb0"
+       data-published="2026-10-09T13:41:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-10-09T13:41:33+05:30" title="9 October 2026, 03:11">9 October 2026, 03:11</time>
+      </div>
+      <h3 class="card-title">Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments</h3>
+      <p class="card-summary">Citrix has released patches for yet another critical security flaw impacting NetScaler ADC and NetScaler Gateway that could result in remote code execution or denial-of-service (DoS) under certain conditions.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/402f6787128a1fb0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fbi seizes 7 domains, disrupts flax typhoon tools used in critical infrastructure intrusions"
+       data-id="66be886a100fe555"
+       data-published="2026-10-09T12:09:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-09T12:09:29+05:30" title="9 October 2026, 01:39">9 October 2026, 01:39</time>
+      </div>
+      <h3 class="card-title">FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions</h3>
+      <p class="card-summary">Federal Bureau of Investigation (FBI) and Department of Justice (DoJ) have announced the disruption of malicious tools used by a China-linked advanced persistent threat group known as Flax Typhoon.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/66be886a100fe555.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,patch,vulnerability"
+       data-vendors="Citrix"
+       data-severity="high"
+       data-title="citrix warns admins to patch new netscaler rce flaw immediately"
+       data-id="268e7bd37a4de7c6"
+       data-published="2026-10-09T04:27:42-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-10-09T04:27:42-04:00" title="9 October 2026, 03:27">9 October 2026, 03:27</time>
+      </div>
+      <h3 class="card-title">Citrix warns admins to patch new NetScaler RCE flaw immediately</h3>
+      <p class="card-summary">Citrix has warned IT administrators to patch systems immediately against a new critical vulnerability affecting NetScaler ADC networking appliances and NetScaler Gateway secure remote access solutions. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/268e7bd37a4de7c6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/citrix-warns-admins-to-patch-new-netscaler-rce-flaw-immediately/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="hackers get $1,262,000 for 98 zero-days at pwn2own ireland"
+       data-id="569f27afd451b8fa"
+       data-published="2026-10-09T01:41:04-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-10-09T01:41:04-04:00" title="9 October 2026, 00:41">9 October 2026, 00:41</time>
+      </div>
+      <h3 class="card-title">Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland</h3>
+      <p class="card-summary">The Pwn2Own Ireland 2026 hacking contest has concluded, with hackers collecting $1,262,000 in rewards after exploiting 98 zero-day flaws. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/569f27afd451b8fa.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors="AWS"

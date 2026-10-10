@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">10 October 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">2 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,10 +61,20 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
@@ -88,6 +108,41 @@
       <div class="detail-links">
         <a href="../articles/1c2fe904502bce60.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware,phishing,ransomware,vulnerability"
+       data-vendors="Adobe,Microsoft"
+       data-severity="high"
+       data-title="fbi arrests founder of ransomware negotiation firm"
+       data-id="5e9492fc1a4ef668"
+       data-published="2026-10-10T00:17:42+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Adobe</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-10T00:17:42+00:00" title="9 October 2026, 19:17">9 October 2026, 19:17</time>
+      </div>
+      <h3 class="card-title">FBI Arrests Founder of Ransomware Negotiation Firm</h3>
+      <p class="card-summary">Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.</p></div>
+      <div class="detail-links">
+        <a href="../articles/5e9492fc1a4ef668.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

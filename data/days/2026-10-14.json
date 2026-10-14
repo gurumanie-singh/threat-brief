@@ -1,5 +1,68 @@
 [
   {
+    "id": "6a69f81af25b11d5",
+    "title": "AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
+    "published": "2026-10-14T13:16:57+05:30",
+    "fetched_at": "2026-10-14T11:10:29.518757+00:00",
+    "summary": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host's memory and hijack the program that runs the virtual machine.",
+    "tags": [
+      "cve"
+    ],
+    "day": "2026-10-14",
+    "cves": [
+      "CVE-2026-74580"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host's memory and hijack the…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host's memory and hijack the program that runs the virtual machine.",
+      "technical": "The bug is tracked as CVE-2026-74580 and named Vghost. A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions.\n\nReferenced vulnerabilities: CVE-2026-74580.",
+      "impact": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. Tracked as CVE-2026-74580.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6f03225f8b8afe59",
+    "title": "Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+    "published": "2026-10-14T11:22:28+05:30",
+    "fetched_at": "2026-10-14T11:10:29.519038+00:00",
+    "summary": "Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over.",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-10-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over.",
+    "quick_take": "",
+    "sections": {
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over. The protected area is a VBS enclave, an isolated slice of memory the operating system uses to guard secrets, and the one they broke into handles passwords for a Windows anti-phishing feature.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "1f8de45e642eb24c",
     "title": "Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug",
     "source": "The Hacker News",
@@ -54,6 +117,35 @@
       "technical": "Abdulrahman Alfozan, 35, has been charged with using or endeavoring to use an electronic, mechanical, or other device to intercept oral communications."
     },
     "email_summary": "A Saudi National and employee of OpenAI has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to covertly record sensitive conversations. Abdulrahman Alfozan, 35, has been charged with using or endeavoring to use an electronic, mechanical, or other device to intercept oral communications.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "bc26102a92f89d87",
+    "title": "Microsoft: Recent Windows updates may trigger Remote Desktop failures",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
+    "published": "2026-10-14T06:48:09-04:00",
+    "fetched_at": "2026-10-14T11:10:29.910284+00:00",
+    "summary": "Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the \"Administrator protection\" security feature is enabled. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the \"Administrator protection\" security feature is enabled. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the \"Administrator protection\" security feature is enabled. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the \"Administrator protection\" security feature is enabled. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

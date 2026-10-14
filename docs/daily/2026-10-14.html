@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">14 October 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">6 articles</span>
     </div>
   </div>
 
@@ -37,6 +37,7 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -63,15 +64,19 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
@@ -79,6 +84,70 @@
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="ai-found linux kernel flaw gives local users root, and can break a guest out to the host"
+       data-id="6a69f81af25b11d5"
+       data-published="2026-10-14T13:16:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-14T13:16:57+05:30" title="14 October 2026, 02:46">14 October 2026, 02:46</time>
+      </div>
+      <h3 class="card-title">AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host</h3>
+      <p class="card-summary">A flaw in Linux&#39;s vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host&#39;s memory and hijack the…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A flaw in Linux&#39;s vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host&#39;s memory and hijack the program that runs the virtual machine.</p></div>
+      <div class="detail-links">
+        <a href="../articles/6a69f81af25b11d5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="four-byte write and timing bug let researchers run code in windows smartscreen enclave"
+       data-id="6f03225f8b8afe59"
+       data-published="2026-10-14T11:22:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-14T11:22:28+05:30" title="14 October 2026, 00:52">14 October 2026, 00:52</time>
+      </div>
+      <h3 class="card-title">Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave</h3>
+      <p class="card-summary">Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6f03225f8b8afe59.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,patch,vulnerability"
        data-vendors="AWS,Microsoft"
@@ -139,6 +208,37 @@
       <div class="detail-links">
         <a href="../articles/5fd7d9ff82d8b971.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft: recent windows updates may trigger remote desktop failures"
+       data-id="bc26102a92f89d87"
+       data-published="2026-10-14T06:48:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-14T06:48:09-04:00" title="14 October 2026, 05:48">14 October 2026, 05:48</time>
+      </div>
+      <h3 class="card-title">Microsoft: Recent Windows updates may trigger Remote Desktop failures</h3>
+      <p class="card-summary">Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the &#34;Administrator protection&#34; security feature is enabled. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bc26102a92f89d87.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -28,14 +28,14 @@
       <h1 class="brief-title">14 October 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-10-14T00:47:36.225300-05:00">14 October 2026, 00:47</time>
+        <time data-iso="2026-10-14T06:10:31.512875-05:00">14 October 2026, 06:10</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
       <span class="stat stat-critical">1 critical</span>
       <span class="stat stat-action">1 action req.</span>
-      <span class="stat">3 articles today</span>
+      <span class="stat">6 articles today</span>
     </div>
   </div>
 
@@ -45,17 +45,18 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">microsoft<span class="trend-count">9</span></span>
+        <span class="trend-pill">microsoft<span class="trend-count">10</span></span>
+        <span class="trend-pill">flaws<span class="trend-count">9</span></span>
         <span class="trend-pill">malware<span class="trend-count">9</span></span>
         <span class="trend-pill">anthropic<span class="trend-count">8</span></span>
         <span class="trend-pill">security<span class="trend-count">8</span></span>
-        <span class="trend-pill">ransomware<span class="trend-count">7</span></span>
-        <span class="trend-pill">critical<span class="trend-count">7</span></span>
+        <span class="trend-pill">windows<span class="trend-count">7</span></span>
       </div>
     </div>
   </div>
@@ -91,10 +92,10 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
       </div>
     </div>
@@ -106,10 +107,10 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
@@ -188,10 +189,74 @@
   <div class="day-group">
     <h2 class="day-heading">
       14 October 2026
-      <span class="day-count">3</span>
+      <span class="day-count">6</span>
     </h2>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="ai-found linux kernel flaw gives local users root, and can break a guest out to the host"
+       data-id="6a69f81af25b11d5"
+       data-published="2026-10-14T13:16:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-14T13:16:57+05:30" title="14 October 2026, 02:46">14 October 2026, 02:46</time>
+      </div>
+      <h3 class="card-title">AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host</h3>
+      <p class="card-summary">A flaw in Linux&#39;s vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host&#39;s memory and hijack the…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A flaw in Linux&#39;s vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host&#39;s memory and hijack the program that runs the virtual machine.</p></div>
+      <div class="detail-links">
+        <a href="articles/6a69f81af25b11d5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="four-byte write and timing bug let researchers run code in windows smartscreen enclave"
+       data-id="6f03225f8b8afe59"
+       data-published="2026-10-14T11:22:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-14T11:22:28+05:30" title="14 October 2026, 00:52">14 October 2026, 00:52</time>
+      </div>
+      <h3 class="card-title">Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave</h3>
+      <p class="card-summary">Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/6f03225f8b8afe59.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,patch,vulnerability"
        data-vendors="AWS,Microsoft"
@@ -252,6 +317,37 @@
       <div class="detail-links">
         <a href="articles/5fd7d9ff82d8b971.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft: recent windows updates may trigger remote desktop failures"
+       data-id="bc26102a92f89d87"
+       data-published="2026-10-14T06:48:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-14T06:48:09-04:00" title="14 October 2026, 05:48">14 October 2026, 05:48</time>
+      </div>
+      <h3 class="card-title">Microsoft: Recent Windows updates may trigger Remote Desktop failures</h3>
+      <p class="card-summary">Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the &#34;Administrator protection&#34; security feature is enabled. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/bc26102a92f89d87.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -916,7 +1012,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       12 October 2026
-      <span class="day-count">5</span>
+      <span class="day-count">2</span>
     </h2>
   </div>
 
@@ -979,97 +1075,6 @@
       <div class="detail-links">
         <a href="articles/0f40a13b919502d6.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="prominent ransomware negotiator faces extortion charges"
-       data-id="64ad02d2d11f5985"
-       data-published="2026-10-12T20:00:53+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-12T20:00:53+00:00" title="12 October 2026, 15:00">12 October 2026, 15:00</time>
-      </div>
-      <h3 class="card-title">Prominent Ransomware Negotiator Faces Extortion Charges</h3>
-      <p class="card-summary">Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/64ad02d2d11f5985.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="no identity, no recovery: cyber resilience starts with iam"
-       data-id="472b25c609074a11"
-       data-published="2026-10-12T18:27:25+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-12T18:27:25+00:00" title="12 October 2026, 13:27">12 October 2026, 13:27</time>
-      </div>
-      <h3 class="card-title">No Identity, No Recovery: Cyber Resilience Starts With IAM</h3>
-      <p class="card-summary">The proliferation of enterprise apps and the centrality of cloud identity providers requires an identity security rethink.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/472b25c609074a11.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="bring your own agent: your employees&#39; assistants are already logged in"
-       data-id="3dce44a965cb5c50"
-       data-published="2026-10-12T17:25:00+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-12T17:25:00+05:30" title="12 October 2026, 06:55">12 October 2026, 06:55</time>
-      </div>
-      <h3 class="card-title">Bring Your Own Agent: Your Employees&#39; Assistants Are Already Logged In</h3>
-      <p class="card-summary">The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta&#39;s Muse because it doesn&#39;t identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta&#39;s Muse because it doesn&#39;t identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal AI agent keep piling up.</p></div>
-      <div class="detail-links">
-        <a href="articles/3dce44a965cb5c50.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

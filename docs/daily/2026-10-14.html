@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">14 October 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -35,9 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -50,6 +51,7 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -65,6 +67,8 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
@@ -75,15 +79,243 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--action card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="Ivanti"
+       data-severity="high"
+       data-title="cisa urges immediate ivanti connect secure updates as honeypots log 105 exploit attempts"
+       data-id="da5baaf2e76a0338"
+       data-published="2026-10-14T18:00:42+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-10-14T18:00:42+05:30" title="14 October 2026, 07:30">14 October 2026, 07:30</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti Connect Secure (ICS) appliances and deployments to the latest version following the disclosure of an actively exploited…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti Connect Secure (ICS) appliances and deployments to the latest version following the disclosure of an actively exploited vulnerability.</p></div>
+      <div class="detail-links">
+        <a href="../articles/da5baaf2e76a0338.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="curl patches http/2 upload flaw after poc demonstrates client-side code execution"
+       data-id="43f50236d9f7e9a8"
+       data-published="2026-10-14T17:43:36+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-14T17:43:36+05:30" title="14 October 2026, 07:13">14 October 2026, 07:13</time>
+      </div>
+      <h3 class="card-title">curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution</h3>
+      <p class="card-summary">A flaw in how curl handles HTTP/2 uploads lets a malicious server receiving an upload corrupt the client&#39;s memory, and the researcher who reported it turned that into code execution on the uploading machine.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/43f50236d9f7e9a8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="how to run a deepfake readiness drill before a cloned voice calls your team"
+       data-id="50f1c4aaca7d115d"
+       data-published="2026-10-14T17:20:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-14T17:20:00+05:30" title="14 October 2026, 06:50">14 October 2026, 06:50</time>
+      </div>
+      <h3 class="card-title">How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</h3>
+      <p class="card-summary">Cloned voices and synthetic video calls now show up in payment fraud, help desk resets, and access requests. A structured drill shows security teams exactly where verification breaks down, while nothing is at stake.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/50f1c4aaca7d115d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="researchers used a public openai model to build a $250,000 chrome full-chain exploit in six days"
+       data-id="b943e854bc272b73"
+       data-published="2026-10-14T16:49:02+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-14T16:49:02+05:30" title="14 October 2026, 06:19">14 October 2026, 06:19</time>
+      </div>
+      <h3 class="card-title">Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days</h3>
+      <p class="card-summary">A team at security firm XBOW chained three then-unknown Google Chrome bugs into a single attack that runs code on a Windows computer when the user only loads a web page, the company said.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b943e854bc272b73.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,patch"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="hirudo android trojan uses patched banking apps to bypass their built-in security checks"
+       data-id="4b779f1481bc71dd"
+       data-published="2026-10-14T16:38:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-14T16:38:22+05:30" title="14 October 2026, 06:08">14 October 2026, 06:08</time>
+      </div>
+      <h3 class="card-title">Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a new Android banking trojan called Hirudo that works by replacing legitimate banking apps with purpose-built patched versions designed to bypass security checks from inside the app itself, marking a new…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have disclosed details of a new Android banking trojan called Hirudo that works by replacing legitimate banking apps with purpose-built patched versions designed to bypass security checks from inside the app itself, marking a new escalation in financial fraud.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4b779f1481bc71dd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags=""
+       data-vendors=""
+       data-severity="high"
+       data-title="an ai agent found a critical otp bypass in production. the attack was the easy part."
+       data-id="2442b6969bf4f504"
+       data-published="2026-10-14T16:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-14T16:30:00+05:30" title="14 October 2026, 06:00">14 October 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.</h3>
+      <p class="card-summary">The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website was the hard part.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2442b6969bf4f504.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="u.k. sanctions cryptomus for ru money laundering"
+       data-id="c6410238bdb06eb6"
+       data-published="2026-10-14T14:22:49+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-14T14:22:49+00:00" title="14 October 2026, 09:22">14 October 2026, 09:22</time>
+      </div>
+      <h3 class="card-title">U.K. Sanctions Cryptomus for RU Money Laundering</h3>
+      <p class="card-summary">The United Kingdom has issued economic sanctions against Cryptomus , a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The United Kingdom has issued economic sanctions against Cryptomus , a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/c6410238bdb06eb6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="cve"
        data-vendors="Linux"
@@ -113,6 +345,35 @@
       <div class="detail-links">
         <a href="../articles/6a69f81af25b11d5.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="russian influence operation widely targeting latin america"
+       data-id="9f8980513e13ab99"
+       data-published="2026-10-14T13:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-14T13:00:00+00:00" title="14 October 2026, 08:00">14 October 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Russian Influence Operation Widely Targeting Latin America</h3>
+      <p class="card-summary">The AI-enabled operation used spoofed emails, fake government documents, and the creation of a local organization to target schools in Peru and Ecuador, among other efforts.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9f8980513e13ab99.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -148,6 +409,35 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes vpn issues caused by september windows updates"
+       data-id="f31aad7767b9ae3d"
+       data-published="2026-10-14T10:27:01-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-14T10:27:01-04:00" title="14 October 2026, 09:27">14 October 2026, 09:27</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes VPN issues caused by September Windows updates</h3>
+      <p class="card-summary">Microsoft has resolved a known issue that caused Always On VPN connection issues after installing the September 2026 Windows 11 security updates. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f31aad7767b9ae3d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="exploit,patch,vulnerability"
        data-vendors="AWS,Microsoft"
@@ -177,6 +467,136 @@
       <div class="detail-links">
         <a href="../articles/1f8de45e642eb24c.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="the blind spots of agentic pentesting and how to close them"
+       data-id="fe3fdcc9bbd8666c"
+       data-published="2026-10-14T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-14T10:00:10-04:00" title="14 October 2026, 09:00">14 October 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">The Blind Spots of Agentic Pentesting and How to Close Them</h3>
+      <p class="card-summary">AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/fe3fdcc9bbd8666c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="global takedown hits network behind 1 billion phishing messages"
+       data-id="790605010cee2d68"
+       data-published="2026-10-14T09:12:52-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-14T09:12:52-04:00" title="14 October 2026, 08:12">14 October 2026, 08:12</time>
+      </div>
+      <h3 class="card-title">Global takedown hits network behind 1 billion phishing messages</h3>
+      <p class="card-summary">A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/790605010cee2d68.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,zero-day"
+       data-vendors="Ivanti"
+       data-severity="critical"
+       data-title="cisa warns admins to immediately fix ivanti flaw exploited as zero-day"
+       data-id="1742b4cfa6a4a7dd"
+       data-published="2026-10-14T08:58:07-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-10-14T08:58:07-04:00" title="14 October 2026, 07:58">14 October 2026, 07:58</time>
+      </div>
+      <h3 class="card-title">CISA warns admins to immediately fix Ivanti flaw exploited as zero-day</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) urged security teams to immediately patch an Ivanti Connect Secure (ICS) flaw exploited in zero-day attacks since at least October 1st. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1742b4cfa6a4a7dd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="hirudo android malware replaces banking apps to evade security checks"
+       data-id="0837397dc6bcba4e"
+       data-published="2026-10-14T07:41:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-14T07:41:20-04:00" title="14 October 2026, 06:41">14 October 2026, 06:41</time>
+      </div>
+      <h3 class="card-title">Hirudo Android malware replaces banking apps to evade security checks</h3>
+      <p class="card-summary">A new Android malware called Hirudo steals bank account credentials by replacing legitimate banking apps with modified versions that disable security checks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0837397dc6bcba4e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

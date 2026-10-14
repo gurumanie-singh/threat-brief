@@ -54,6 +54,48 @@
     "highlighted": false
   },
   {
+    "id": "f832664c064c4579",
+    "title": "Microsoft Patches More Than 1,400 Security Flaws",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+    "published": "2026-10-13T23:24:53+00:00",
+    "fetched_at": "2026-10-14T00:08:04.923356+00:00",
+    "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today s epic patch batch dwarfs September s record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-10-13",
+    "cves": [
+      "CVE-2026-108398",
+      "CVE-2026-96951"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Cisco",
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today s epic patch batch dwarfs September s record of nearly 1,000 fixes, which was already about ten times the normal…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today s epic patch batch dwarfs September s record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+      "technical": "At least 78 of the flaws fixed this month are rated critical, meaning they could be exploited with little or no action by the user, and most of those critical bugs allow an attacker to execute code of their choice on the vulnerable system. While Microsoft said there are no signs anyone is exploiting it yet, a security feature bypass in the .NET Framework ( CVE-2026-108398 ) was publicly disclosed prior to today, potentially giving attackers advance time to work out how to exploit the bug. Microsoft credits large language models for the high volume of bug discovery, and presumably AI gets credit for many of the patches used to fix these flaw. Just one of the weaknesses patched this week is considered a zero day, or already exploited in the wild.\n\nReferenced vulnerabilities: CVE-2026-108398, CVE-2026-96951.",
+      "impact": "CVE-2026-96951 is a security feature bypass in the Windows Shell that affects Windows 10 and 11 systems, as well as some Server versions. Windows 10 users might be wondering if they can still expect security updates after this month. At least 78 of the flaws fixed this month are rated critical, meaning they could be exploited with little or no action by the user, and most of those critical bugs allow an attacker to execute code of their choice on the vulnerable system.\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Tracked as CVE-2026-108398, CVE-2026-96951. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "97a856dd896eed7e",
     "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
     "source": "The Hacker News",
@@ -146,6 +188,59 @@
     "highlighted": false
   },
   {
+    "id": "6d2f6540d76d07d4",
+    "title": "North Korea Phishes Ukrainians for War Intel",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
+    "published": "2026-10-13T21:24:45+00:00",
+    "fetched_at": "2026-10-14T00:08:05.662841+00:00",
+    "summary": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-10-13",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+    "quick_take": "",
+    "sections": {
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "183dbf1f88ae45b3",
+    "title": "Anthropic Finds Ingredients for Future AI Worms",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
+    "published": "2026-10-13T20:35:23+00:00",
+    "fetched_at": "2026-10-14T00:08:05.663035+00:00",
+    "summary": "Anthropic's latest study combined IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-13",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Anthropic's latest study combined IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Anthropic's latest study combined IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "22c35f1c003e2594",
     "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
     "source": "The Hacker News",
@@ -171,6 +266,61 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned by Microsoft, €8.6 million ($9.62 million) for illegally relaying ​Grindr users' sensitive data to advertisers. The administrative penalty is the largest issued by the data protection watchdog, arguing the case merited a high fine because of the \"very serious\" nature of the breach.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f5b9cd61389a0068",
+    "title": "OpenAI engineer arrested for allegedly planting spy device in office",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
+    "published": "2026-10-13T18:33:02-04:00",
+    "fetched_at": "2026-10-14T00:08:05.055503+00:00",
+    "summary": "A Saudi OpenAI engineer has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to secretly record sensitive conversations. [...]",
+    "tags": [],
+    "day": "2026-10-13",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Cisco"
+    ],
+    "action_required": false,
+    "card_summary": "A Saudi OpenAI engineer has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to secretly record sensitive conversations. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A Saudi OpenAI engineer has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to secretly record sensitive conversations. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "46580e5e356f88aa",
+    "title": "Ghostscript flaw lets hackers hijack servers via PDF uploads",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
+    "published": "2026-10-13T17:33:26-04:00",
+    "fetched_at": "2026-10-14T00:08:05.055775+00:00",
+    "summary": "A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]",
+    "tags": [
+      "cve",
+      "vulnerability"
+    ],
+    "day": "2026-10-13",
+    "cves": [
+      "CVE-2026-39919"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]",
+    "quick_take": "",
+    "sections": {
+      "technical": "A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]\n\nReferenced vulnerabilities: CVE-2026-39919."
+    },
+    "email_summary": "A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]. Tracked as CVE-2026-39919. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -203,6 +353,33 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "The dangerous part of a stolen identity isn't always the initial login. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b001cd1df32a75d3",
+    "title": "Anthropic warns self-replicating AI could spread to your smart devices",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+    "published": "2026-10-13T17:16:34-04:00",
+    "fetched_at": "2026-10-14T00:08:05.055991+00:00",
+    "summary": "Anthropic is warning that small AI models could soon be able to self-replicate across consumer IoT devices, from Android TV boxes to smart ovens, creating distributed botnets capable of running AI workloads without relying on data centers. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-13",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Anthropic is warning that small AI models could soon be able to self-replicate across consumer IoT devices, from Android TV boxes to smart ovens, creating distributed botnets capable of running AI workloads without relying on data centers. [...]",
+    "quick_take": "Anthropic is warning that small AI models could soon be able to self-replicate across consumer IoT devices, from Android TV boxes to smart ovens, creating distributed botnets capable of running AI workloads without…",
+    "sections": {},
+    "email_summary": "Anthropic is warning that small AI models could soon be able to self-replicate across consumer IoT devices, from Android TV boxes to smart ovens, creating distributed botnets capable of running AI workloads without relying on data centers. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -288,7 +465,12 @@
     },
     "email_summary": "Today is Microsoft's October 2026 Patch Tuesday, with security updates addressing a record-breaking 1,411 flaws, including one actively exploited and two publicly disclosed zero-day vulnerabilities. [...]. Severity is rated critical.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "Dark Reading",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday"
+      }
+    ],
     "highlighted": false
   },
   {
@@ -387,181 +569,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Attackers took remote control of fridges and freezers at hundreds of French supermarkets on the night of October 11 and warmed them, forcing stores to throw food away, several retail chains said. The attackers reached them through the controller that runs all of a store's fridges and freezers, a device made by Danish company Danfoss that maintenance firms can manage remotely.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "fad1e0e648018469",
-    "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
-    "published": "2026-10-13T14:14:01+05:30",
-    "fetched_at": "2026-10-13T13:33:51.634642+00:00",
-    "summary": "Two of 31 newly disclosed flaws in Progress Software's MarkLogic Server database could let an account given only some management privileges take administrator control of the server, the company says.",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-10-13",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "AWS"
-    ],
-    "action_required": false,
-    "card_summary": "Two of 31 newly disclosed flaws in Progress Software's MarkLogic Server database could let an account given only some management privileges take administrator control of the server, the company says.",
-    "quick_take": "",
-    "sections": {
-      "mitigation": "Fixes have been available since September 10, in MarkLogic 11.3.7 and MarkLogic 12.1.0."
-    },
-    "email_summary": "Two of 31 newly disclosed flaws in Progress Software's MarkLogic Server database could let an account given only some management privileges take administrator control of the server, the company says. Progress published all 31 on October 12 and scored five of them critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "c09cc4a89211b86c",
-    "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
-    "published": "2026-10-13T14:13:37+05:30",
-    "fetched_at": "2026-10-13T13:33:51.634899+00:00",
-    "summary": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-10-13",
-    "cves": [],
-    "cvss": 10.0,
-    "severity": "critical",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.",
-    "quick_take": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.\n\n\"GitLab has remediated an…",
-    "sections": {
-      "technical": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.\n\n\"GitLab has remediated an issue that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD",
-      "impact": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.\n\n\"GitLab has remediated an issue that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD\n\nAssessed severity: CRITICAL. CVSS score: 10.0/10."
-    },
-    "email_summary": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution.\n\n\"GitLab has remediated an issue that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "6fd6f7de5f563852",
-    "title": "Windows 11 KB5127648 & KB5126653 cumulative updates released",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/",
-    "published": "2026-10-13T13:49:38-04:00",
-    "fetched_at": "2026-10-13T20:04:28.897500+00:00",
-    "summary": "Microsoft has released the Patch Tuesday Windows 11 KB5127648 and KB5126653 cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]",
-    "tags": [
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-10-13",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has released the Patch Tuesday Windows 11 KB5127648 and KB5126653 cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft has released the Patch Tuesday Windows 11 KB5127648 and KB5126653 cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "6178ac59df17e72a",
-    "title": "TFG London cyberattack disrupts systems at Hobbs and Whistles retailers",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
-    "published": "2026-10-13T12:44:18-04:00",
-    "fetched_at": "2026-10-13T20:04:28.897651+00:00",
-    "summary": "TFG London detected a cybersecurity incident that impacted IT systems used by the Phase Eight, Hobbs, and Whistles premium fashion brands. [...]",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-10-13",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "TFG London detected a cybersecurity incident that impacted IT systems used by the Phase Eight, Hobbs, and Whistles premium fashion brands. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "TFG London detected a cybersecurity incident that impacted IT systems used by the Phase Eight, Hobbs, and Whistles premium fashion brands. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "TFG London detected a cybersecurity incident that impacted IT systems used by the Phase Eight, Hobbs, and Whistles premium fashion brands. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "ae04aee75829d5f7",
-    "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
-    "published": "2026-10-13T11:45:50-04:00",
-    "fetched_at": "2026-10-13T20:04:28.897920+00:00",
-    "summary": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]",
-    "tags": [
-      "exploit",
-      "patch",
-      "vulnerability",
-      "zero-day"
-    ],
-    "day": "2026-10-13",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [
-      "Ivanti"
-    ],
-    "action_required": true,
-    "card_summary": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]\n\nAssessed severity: CRITICAL.",
-      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
-    },
-    "email_summary": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "ee044f07d0a5af22",
-    "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-    "published": "2026-10-13T11:30:11+05:30",
-    "fetched_at": "2026-10-13T13:33:51.635114+00:00",
-    "summary": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies.",
-    "tags": [
-      "malware"
-    ],
-    "day": "2026-10-13",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Google",
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies.",
-    "quick_take": "",
-    "sections": {
-      "impact": "The activity, which targets Android devices built on MediaTek platforms across several brands, is being tracked by Bitdefender under the moniker Midnight Mimosa.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies. The activity, which targets Android devices built on MediaTek platforms across several brands, is being tracked by Bitdefender under the moniker Midnight Mimosa.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

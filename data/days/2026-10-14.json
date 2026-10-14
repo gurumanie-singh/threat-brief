@@ -84,6 +84,68 @@
     "highlighted": false
   },
   {
+    "id": "8aa2df8febbcc96e",
+    "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+    "published": "2026-10-14T20:09:42+00:00",
+    "fetched_at": "2026-10-14T23:40:21.286895+00:00",
+    "summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
+    "tags": [],
+    "day": "2026-10-14",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "191c8fcd4d4e409e",
+    "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+    "published": "2026-10-14T18:56:47-04:00",
+    "fetched_at": "2026-10-14T23:40:20.583548+00:00",
+    "summary": "Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-10-14",
+    "cves": [
+      "CVE-2026-0322"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "Palo Alto"
+    ],
+    "action_required": false,
+    "card_summary": "Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]",
+    "quick_take": "",
+    "sections": {
+      "technical": "Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]\n\nReferenced vulnerabilities: CVE-2026-0322.",
+      "impact": "Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]. Tracked as CVE-2026-0322. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "da5baaf2e76a0338",
     "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
     "source": "The Hacker News",
@@ -114,7 +176,12 @@
     },
     "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti Connect Secure (ICS) appliances and deployments to the latest version following the disclosure of an actively exploited vulnerability. Tracked as CVE-2026-104935. Severity is rated high.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "Dark Reading",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      }
+    ],
     "highlighted": false
   },
   {
@@ -509,66 +576,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Microsoft on Tuesday shattered its own Patch Tuesday record by shipping patches for a whopping 1,413 vulnerabilities, including one that it said has come under active exploitation. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "fe3fdcc9bbd8666c",
-    "title": "The Blind Spots of Agentic Pentesting and How to Close Them",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
-    "published": "2026-10-14T10:00:10-04:00",
-    "fetched_at": "2026-10-14T16:31:25.348049+00:00",
-    "summary": "AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...]",
-    "tags": [
-      "breach",
-      "malware",
-      "vulnerability"
-    ],
-    "day": "2026-10-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach…",
-    "quick_take": "",
-    "sections": {
-      "overview": "AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...]",
-      "impact": "Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "790605010cee2d68",
-    "title": "Global takedown hits network behind 1 billion phishing messages",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
-    "published": "2026-10-14T09:12:52-04:00",
-    "fetched_at": "2026-10-14T16:31:25.348168+00:00",
-    "summary": "A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...]",
-    "tags": [
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-10-14",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

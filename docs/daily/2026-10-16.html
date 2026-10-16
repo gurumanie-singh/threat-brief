@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">16 October 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>Google, Microsoft ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -64,8 +65,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Adobe">Adobe</button>
       </div>
@@ -74,18 +76,178 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="researchers demonstrate openbsd root exploit chaining 37-year-old shared-memory bug"
+       data-id="17276530ca176b3a"
+       data-published="2026-10-16T23:18:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-10-16T23:18:45+05:30" title="16 October 2026, 12:48">16 October 2026, 12:48</time>
+      </div>
+      <h3 class="card-title">Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug</h3>
+      <p class="card-summary">A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD&#39;s KARL kernel-address randomization and its SMAP and SMEP hardware protections.…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD&#39;s KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and reported the flaws, published a detailed writeup and full proof-of-concept code after OpenBSD shipped</p></div>
+      <div class="detail-links">
+        <a href="../articles/17276530ca176b3a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="attackers tampered with aomei backupper&#39;s update servers for minutes to deliver a backdoor"
+       data-id="e517d7f729c20474"
+       data-published="2026-10-16T22:13:39+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-16T22:13:39+05:30" title="16 October 2026, 11:43">16 October 2026, 11:43</time>
+      </div>
+      <h3 class="card-title">Attackers Tampered with AOMEI Backupper&#39;s Update Servers for Minutes to Deliver a Backdoor</h3>
+      <p class="card-summary">Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor&#39;s own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor&#39;s own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e517d7f729c20474.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,phishing"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="uat-11985 uses fake event invites to target taiwan research affiliates with google aitm phishing"
+       data-id="fbcfe905a55c381f"
+       data-published="2026-10-16T21:46:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-16T21:46:44+05:30" title="16 October 2026, 11:16">16 October 2026, 11:16</time>
+      </div>
+      <h3 class="card-title">UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google account credentials and multi-factor authentication (MFA) codes.</p></div>
+      <div class="detail-links">
+        <a href="../articles/fbcfe905a55c381f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai research model spent 3rd-party test eth without permission to deploy smart contract"
+       data-id="b1402fcf184a7c79"
+       data-published="2026-10-16T19:33:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-16T19:33:04+05:30" title="16 October 2026, 09:03">16 October 2026, 09:03</time>
+      </div>
+      <h3 class="card-title">OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract</h3>
+      <p class="card-summary">OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party&#39;s wallet without authorization to complete a coding task.</p></div>
+      <div class="detail-links">
+        <a href="../articles/b1402fcf184a7c79.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai takes control of robotic arm in 16 minutes flat"
+       data-id="79f5ae1186f8631b"
+       data-published="2026-10-16T18:37:50+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-16T18:37:50+00:00" title="16 October 2026, 13:37">16 October 2026, 13:37</time>
+      </div>
+      <h3 class="card-title">AI Takes Control of Robotic Arm in 16 Minutes Flat</h3>
+      <p class="card-summary">Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/79f5ae1186f8631b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt"
        data-vendors=""
@@ -145,6 +307,37 @@
       <div class="detail-links">
         <a href="../articles/17b4f1c59c9afedb.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="targeted ads installed candiru spyware in zero-click attacks"
+       data-id="1d93313717c60bb8"
+       data-published="2026-10-16T13:20:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-16T13:20:03-04:00" title="16 October 2026, 12:20">16 October 2026, 12:20</time>
+      </div>
+      <h3 class="card-title">Targeted ads installed Candiru spyware in zero-click attacks</h3>
+      <p class="card-summary">Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim&#39;s device. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1d93313717c60bb8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

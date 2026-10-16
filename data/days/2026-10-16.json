@@ -1,5 +1,145 @@
 [
   {
+    "id": "17276530ca176b3a",
+    "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+    "published": "2026-10-16T23:18:45+05:30",
+    "fetched_at": "2026-10-16T19:17:27.296187+00:00",
+    "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and reported the flaws, published a detailed writeup and full proof-of-concept code after OpenBSD shipped",
+    "tags": [
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.…",
+    "quick_take": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and…",
+    "sections": {
+      "overview": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and reported the flaws, published a detailed writeup and full proof-of-concept code after OpenBSD shipped"
+    },
+    "email_summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e517d7f729c20474",
+    "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+    "published": "2026-10-16T22:13:39+05:30",
+    "fetched_at": "2026-10-16T19:17:27.296458+00:00",
+    "summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google",
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update…",
+    "quick_take": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup…",
+    "sections": {
+      "overview": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor."
+    },
+    "email_summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor. Google Threat Intelligence Group, Mandiant, and ManageEngine's Threat Analysis.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "fbcfe905a55c381f",
+    "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+    "published": "2026-10-16T21:46:44+05:30",
+    "fetched_at": "2026-10-16T19:17:27.296659+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google account credentials and multi-factor authentication (MFA) codes.",
+    "tags": [
+      "apt",
+      "phishing"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing…",
+    "quick_take": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an…",
+    "sections": {
+      "overview": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google account credentials and multi-factor authentication (MFA) codes.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google account credentials and multi-factor authentication (MFA) codes. The activity is being tracked by.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b1402fcf184a7c79",
+    "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+    "published": "2026-10-16T19:33:04+05:30",
+    "fetched_at": "2026-10-16T19:17:27.296847+00:00",
+    "summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to complete a coding task.",
+    "tags": [],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a…",
+    "quick_take": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test…",
+    "sections": {
+      "overview": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to complete a coding task."
+    },
+    "email_summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to complete a coding task. The incident, the AI company said, involved an internal research model part.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "79f5ae1186f8631b",
+    "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+    "published": "2026-10-16T18:37:50+00:00",
+    "fetched_at": "2026-10-16T19:17:28.275717+00:00",
+    "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "1d645f725854d494",
     "title": "AI Decision Models and Their Impact on AI SOC Platforms",
     "source": "The Hacker News",
@@ -49,6 +189,33 @@
       "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
     },
     "email_summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1d93313717c60bb8",
+    "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+    "published": "2026-10-16T13:20:03-04:00",
+    "fetched_at": "2026-10-16T19:17:27.754123+00:00",
+    "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

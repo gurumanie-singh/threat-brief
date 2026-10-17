@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">17 October 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">3 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -60,10 +70,41 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="malfex npm package &#39;imgdecode&#39; hides shellcode loader in windows native addon"
+       data-id="c116cb9b75e0da54"
+       data-published="2026-10-17T16:41:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-17T16:41:56+05:30" title="17 October 2026, 06:11">17 October 2026, 06:11</time>
+      </div>
+      <h3 class="card-title">MALFEX npm Package &#39;imgdecode&#39; Hides Shellcode Loader in Windows Native Addon</h3>
+      <p class="card-summary">Cybersecurity researchers have discovered a malicious npm package that&#39;s part of a recently disclosed software supply chain attack campaign dubbed MALFEX.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c116cb9b75e0da54.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors="Microsoft"
@@ -93,6 +134,37 @@
       <div class="detail-links">
         <a href="../articles/f5bbfac8d008e1ae.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="drupal patches critical rce flaws, warns exploits may emerge soon"
+       data-id="ab2e3b49b5177e67"
+       data-published="2026-10-17T10:32:48-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-17T10:32:48-04:00" title="17 October 2026, 09:32">17 October 2026, 09:32</time>
+      </div>
+      <h3 class="card-title">Drupal patches critical RCE flaws, warns exploits may emerge soon</h3>
+      <p class="card-summary">Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ab2e3b49b5177e67.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

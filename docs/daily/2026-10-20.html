@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 October 2026</h1>
-      <span class="brief-sub">14 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
@@ -49,8 +49,10 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -64,6 +66,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
@@ -72,17 +77,148 @@
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="Fortinet"
+       data-severity="critical"
+       data-title="critical fortisiem flaw gets public exploit poc for unauthenticated remote code execution"
+       data-id="c3b3ae05963c4f3d"
+       data-published="2026-10-20T21:08:52+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-10-20T21:08:52+05:30" title="20 October 2026, 10:38">20 October 2026, 10:38</time>
+      </div>
+      <h3 class="card-title">Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution</h3>
+      <p class="card-summary">Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c3b3ae05963c4f3d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,patch,ransomware"
+       data-vendors="Palo Alto"
+       data-severity="high"
+       data-title="qilin and inc ransomware groups exploit palo alto networks flaw to bypass mfa"
+       data-id="bdd7ba9e6f1429b9"
+       data-published="2026-10-20T21:02:27+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-10-20T21:02:27+05:30" title="20 October 2026, 10:32">20 October 2026, 10:32</time>
+      </div>
+      <h3 class="card-title">Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA</h3>
+      <p class="card-summary">Palo Alto Networks has disclosed that it&#39;s continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bdd7ba9e6f1429b9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers use autonomous ai agents to breach company websites, target over 1,200 sites"
+       data-id="24ae16858acd17dc"
+       data-published="2026-10-20T19:37:17+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T19:37:17+05:30" title="20 October 2026, 09:07">20 October 2026, 09:07</time>
+      </div>
+      <h3 class="card-title">Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites</h3>
+      <p class="card-summary">A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/24ae16858acd17dc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="Apple"
+       data-severity="medium"
+       data-title="pegasus spyware infection confirmed on serbian university rector&#39;s iphone days before election"
+       data-id="4bd0e9d54ea841c4"
+       data-published="2026-10-20T18:29:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-10-20T18:29:44+05:30" title="20 October 2026, 07:59">20 October 2026, 07:59</time>
+      </div>
+      <h3 class="card-title">Pegasus Spyware Infection Confirmed on Serbian University Rector&#39;s iPhone Days Before Election</h3>
+      <p class="card-summary">The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia&#39;s student protest movement, was infected with NSO Group&#39;s Pegasus spyware in 2026, the Citizen Lab said on October 19.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4bd0e9d54ea841c4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -242,6 +378,95 @@
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
+       data-title="close identity gaps in software development before unleashing ai"
+       data-id="0178a29b1570d9b6"
+       data-published="2026-10-20T15:35:45+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T15:35:45+00:00" title="20 October 2026, 10:35">20 October 2026, 10:35</time>
+      </div>
+      <h3 class="card-title">Close Identity Gaps in Software Development Before Unleashing AI</h3>
+      <p class="card-summary">Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0178a29b1570d9b6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers abuse ai pen-test tool cairn to automate massive attack spree"
+       data-id="ed9455455b5a7d45"
+       data-published="2026-10-20T14:36:05+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T14:36:05+00:00" title="20 October 2026, 09:36">20 October 2026, 09:36</time>
+      </div>
+      <h3 class="card-title">Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree</h3>
+      <p class="card-summary">A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ed9455455b5a7d45.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai says gpt-6.1 sol is dramatically better at migrating legacy code"
+       data-id="8131798a7f3a53c0"
+       data-published="2026-10-20T14:11:03-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T14:11:03-04:00" title="20 October 2026, 13:11">20 October 2026, 13:11</time>
+      </div>
+      <h3 class="card-title">OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code</h3>
+      <p class="card-summary">OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8131798a7f3a53c0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
        data-title="hackers hijack five ovhcloud cli releases to distribute secret-stealing malware"
        data-id="e34378a9b13a479d"
        data-published="2026-10-20T13:51:29+05:30"
@@ -327,6 +552,68 @@
       <div class="detail-links">
         <a href="../articles/fe320dfe2efdb46c.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="dhs bans deepseek products across us federal civilian agencies"
+       data-id="72686ed38da25931"
+       data-published="2026-10-20T10:19:05-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T10:19:05-04:00" title="20 October 2026, 09:19">20 October 2026, 09:19</time>
+      </div>
+      <h3 class="card-title">DHS bans DeepSeek products across US federal civilian agencies</h3>
+      <p class="card-summary">Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/72686ed38da25931.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="low"
+       data-title="cjis v6.1 compliance: 5 practical priorities for agencies"
+       data-id="d89a533606f91704"
+       data-published="2026-10-20T09:51:00-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-20T09:51:00-04:00" title="20 October 2026, 08:51">20 October 2026, 08:51</time>
+      </div>
+      <h3 class="card-title">CJIS v6.1 Compliance: 5 Practical Priorities for Agencies</h3>
+      <p class="card-summary">CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five practical priorities covering MFA, account management, passwords, logging, and audit…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five practical priorities covering MFA, account management, passwords, logging, and audit readiness. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/d89a533606f91704.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -420,97 +707,6 @@
       <div class="detail-links">
         <a href="../articles/dc676eee8ea56fcd.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ovhcloud cli releases backdoored on github to steal developer secrets"
-       data-id="ccd529dbdb517f42"
-       data-published="2026-10-20T07:31:22-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-20T07:31:22-04:00" title="20 October 2026, 06:31">20 October 2026, 06:31</time>
-      </div>
-      <h3 class="card-title">OVHcloud CLI releases backdoored on GitHub to steal developer secrets</h3>
-      <p class="card-summary">French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/ccd529dbdb517f42.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="ahold delhaize: cyberattack affects services across us and europe"
-       data-id="752034e4eeeb9e94"
-       data-published="2026-10-20T07:18:35-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-20T07:18:35-04:00" title="20 October 2026, 06:18">20 October 2026, 06:18</time>
-      </div>
-      <h3 class="card-title">Ahold Delhaize: Cyberattack affects services across US and Europe</h3>
-      <p class="card-summary">Ahold Delhaize, one of the world&#39;s largest food retail chains, confirmed that last week&#39;s cyberattack disrupted services at stores across Europe and the United States. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/752034e4eeeb9e94.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="revolut outage disrupts online banking operations worldwide"
-       data-id="8eb55e43979ad474"
-       data-published="2026-10-20T05:46:44-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-20T05:46:44-04:00" title="20 October 2026, 04:46">20 October 2026, 04:46</time>
-      </div>
-      <h3 class="card-title">Revolut outage disrupts online banking operations worldwide</h3>
-      <p class="card-summary">Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/8eb55e43979ad474.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

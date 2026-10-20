@@ -27,10 +27,20 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">20 October 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">14 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 high-severity advisories published today</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +49,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -54,16 +65,243 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="whatsapp hid instructions in help pages telling its ai chatbot not to recommend privacy regulators"
+       data-id="a94a2592d39d3151"
+       data-published="2026-10-20T17:11:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T17:11:06+05:30" title="20 October 2026, 06:41">20 October 2026, 06:41</time>
+      </div>
+      <h3 class="card-title">WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators</h3>
+      <p class="card-summary">WhatsApp&#39;s help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp&#39;s own privacy policy for Europe tells…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>WhatsApp&#39;s help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp&#39;s own privacy policy for Europe tells users they can complain to one.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a94a2592d39d3151.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="what security teams can do to tame wild code"
+       data-id="6a22dd83ee0e4a13"
+       data-published="2026-10-20T17:03:04+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T17:03:04+05:30" title="20 October 2026, 06:33">20 October 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">What Security Teams Can Do To Tame Wild Code</h3>
+      <p class="card-summary">A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6a22dd83ee0e4a13.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--high"
+       data-tags=""
+       data-vendors=""
+       data-severity="high"
+       data-title="go issues emergency update blocking eight ca keys over undisclosed security concerns"
+       data-id="d12cae6fc0d35a6d"
+       data-published="2026-10-20T17:02:59+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-20T17:02:59+05:30" title="20 October 2026, 06:32">20 October 2026, 06:32</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns</h3>
+      <p class="card-summary">Go 1.27.3 and Go 1.26.10, released on October 20, make Go&#39;s certificate verifier reject any certificate chain that passes through one of eight intermediate certificate authority keys.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d12cae6fc0d35a6d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="russian apt28 breaches nato naval shipbuilder in nato country, deploys new reflective loader"
+       data-id="2e00e38b548fae12"
+       data-published="2026-10-20T16:36:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T16:36:25+05:30" title="20 October 2026, 06:06">20 October 2026, 06:06</time>
+      </div>
+      <h3 class="card-title">Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader</h3>
+      <p class="card-summary">The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO).</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2e00e38b548fae12.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="connectwise resets credentials as cloud backup remains offline after security incident"
+       data-id="c81edf25c7eaad85"
+       data-published="2026-10-20T16:26:08+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T16:26:08+05:30" title="20 October 2026, 05:56">20 October 2026, 05:56</time>
+      </div>
+      <h3 class="card-title">ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident</h3>
+      <p class="card-summary">ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized access to application identities associated with Cloud Backup.</p></div>
+      <div class="detail-links">
+        <a href="../articles/c81edf25c7eaad85.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers hijack five ovhcloud cli releases to distribute secret-stealing malware"
+       data-id="e34378a9b13a479d"
+       data-published="2026-10-20T13:51:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T13:51:29+05:30" title="20 October 2026, 03:21">20 October 2026, 03:21</time>
+      </div>
+      <h3 class="card-title">Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware</h3>
+      <p class="card-summary">An attacker used a contributor&#39;s GitHub account to replace the download archives on five existing releases of OVHcloud&#39;s command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An attacker used a contributor&#39;s GitHub account to replace the download archives on five existing releases of OVHcloud&#39;s command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, the cloud provider says.</p></div>
+      <div class="detail-links">
+        <a href="../articles/e34378a9b13a479d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="clickfix attackers exploit siemens software center flaw to deploy remote access trojan"
+       data-id="3fa1b32c2e56712d"
+       data-published="2026-10-20T12:41:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-20T12:41:45+05:30" title="20 October 2026, 02:11">20 October 2026, 02:11</time>
+      </div>
+      <h3 class="card-title">ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan</h3>
+      <p class="card-summary">Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3fa1b32c2e56712d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors="Cisco"
@@ -120,6 +358,159 @@
       <div class="detail-links">
         <a href="../articles/108ca23584637ce2.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hacker gets 8 years for stealing $3.3 million from taxpayers"
+       data-id="75163a09c9843938"
+       data-published="2026-10-20T09:18:36-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T09:18:36-04:00" title="20 October 2026, 08:18">20 October 2026, 08:18</time>
+      </div>
+      <h3 class="card-title">Hacker gets 8 years for stealing $3.3 million from taxpayers</h3>
+      <p class="card-summary">A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/75163a09c9843938.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="windows server 2025 gets support for quick machine recovery"
+       data-id="dc676eee8ea56fcd"
+       data-published="2026-10-20T08:16:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-20T08:16:32-04:00" title="20 October 2026, 07:16">20 October 2026, 07:16</time>
+      </div>
+      <h3 class="card-title">Windows Server 2025 gets support for quick machine recovery</h3>
+      <p class="card-summary">Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dc676eee8ea56fcd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ovhcloud cli releases backdoored on github to steal developer secrets"
+       data-id="ccd529dbdb517f42"
+       data-published="2026-10-20T07:31:22-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T07:31:22-04:00" title="20 October 2026, 06:31">20 October 2026, 06:31</time>
+      </div>
+      <h3 class="card-title">OVHcloud CLI releases backdoored on GitHub to steal developer secrets</h3>
+      <p class="card-summary">French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ccd529dbdb517f42.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ahold delhaize: cyberattack affects services across us and europe"
+       data-id="752034e4eeeb9e94"
+       data-published="2026-10-20T07:18:35-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T07:18:35-04:00" title="20 October 2026, 06:18">20 October 2026, 06:18</time>
+      </div>
+      <h3 class="card-title">Ahold Delhaize: Cyberattack affects services across US and Europe</h3>
+      <p class="card-summary">Ahold Delhaize, one of the world&#39;s largest food retail chains, confirmed that last week&#39;s cyberattack disrupted services at stores across Europe and the United States. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/752034e4eeeb9e94.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="revolut outage disrupts online banking operations worldwide"
+       data-id="8eb55e43979ad474"
+       data-published="2026-10-20T05:46:44-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-20T05:46:44-04:00" title="20 October 2026, 04:46">20 October 2026, 04:46</time>
+      </div>
+      <h3 class="card-title">Revolut outage disrupts online banking operations worldwide</h3>
+      <p class="card-summary">Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8eb55e43979ad474.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

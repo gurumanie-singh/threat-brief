@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">21 October 2026</h1>
-      <span class="brief-sub">16 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
-        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>AWS, Google ecosystems affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -52,6 +53,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -66,8 +68,9 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
       </div>
     </div>
@@ -76,17 +79,113 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="litellm compromised in supply chain attack delivering credential stealer and backdoor"
+       data-id="b5c5845049c31af5"
+       data-published="2026-10-21T23:31:57+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-21T23:31:57+05:30" title="21 October 2026, 13:01">21 October 2026, 13:01</time>
+      </div>
+      <h3 class="card-title">LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor</h3>
+      <p class="card-summary">The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b5c5845049c31af5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai&#39;s gpt-6 agent removed safety monitoring, then falsely denied doing so"
+       data-id="a1b8580fb4358dfc"
+       data-published="2026-10-21T22:03:47+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-21T22:03:47+05:30" title="21 October 2026, 11:33">21 October 2026, 11:33</time>
+      </div>
+      <h3 class="card-title">OpenAI&#39;s GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So</h3>
+      <p class="card-summary">OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a1b8580fb4358dfc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="php issues emergency patches for two critical php2shell rce flaws as exploit attempts emerge"
+       data-id="b76ca744a3044b39"
+       data-published="2026-10-21T19:30:00+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-21T19:30:00+05:30" title="21 October 2026, 09:00">21 October 2026, 09:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge</h3>
+      <p class="card-summary">PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.</p></div>
+      <div class="detail-links">
+        <a href="../articles/b76ca744a3044b39.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,phishing"
        data-vendors="Google"
@@ -183,6 +282,38 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ovhcloud github compromise tied to glassworm threat actors"
+       data-id="27d7964e182e7c2a"
+       data-published="2026-10-21T16:50:15+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-21T16:50:15+00:00" title="21 October 2026, 11:50">21 October 2026, 11:50</time>
+      </div>
+      <h3 class="card-title">OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors</h3>
+      <p class="card-summary">A developer&#39;s GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/27d7964e182e7c2a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware,patch,vulnerability"
        data-vendors="AWS"
        data-severity="medium"
@@ -269,6 +400,100 @@
       <div class="detail-links">
         <a href="../articles/2163fb576e4449c4.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="optiv launches cyberbot cybersecurity awareness training program"
+       data-id="3df4dc8c23c13291"
+       data-published="2026-10-21T15:44:48+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-21T15:44:48+00:00" title="21 October 2026, 10:44">21 October 2026, 10:44</time>
+      </div>
+      <h3 class="card-title">Optiv Launches CyberBOT Cybersecurity Awareness Training Program</h3>
+      <p class="card-summary">Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3df4dc8c23c13291.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="survey finds high-profile executives feel untouchable as digital exposure turns into physical risk"
+       data-id="ae77bc5db6b5a375"
+       data-published="2026-10-21T15:29:09+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-21T15:29:09+00:00" title="21 October 2026, 10:29">21 October 2026, 10:29</time>
+      </div>
+      <h3 class="card-title">Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk</h3>
+      <p class="card-summary">360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ae77bc5db6b5a375.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="breach,cve,exploit,malware,patch,vulnerability,zero-day"
+       data-vendors="AWS,Linux"
+       data-severity="critical"
+       data-title="widespread php flaw may cause many site outages today"
+       data-id="aea1452367993c26"
+       data-published="2026-10-21T15:26:07+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-21T15:26:07+00:00" title="21 October 2026, 10:26">21 October 2026, 10:26</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Widespread PHP Flaw May Cause Many Site Outages Today</h3>
+      <p class="card-summary">Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.</p></div>
+      <div class="detail-links">
+        <a href="../articles/aea1452367993c26.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -428,6 +653,34 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai agents disabled safety monitoring, one lied about it"
+       data-id="f1f2f862c834e8db"
+       data-published="2026-10-21T12:26:53-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-21T12:26:53-04:00" title="21 October 2026, 11:26">21 October 2026, 11:26</time>
+      </div>
+      <h3 class="card-title">OpenAI agents disabled safety monitoring, one lied about it</h3>
+      <p class="card-summary">OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f1f2f862c834e8db.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors="VMware"
        data-severity="medium"
@@ -453,128 +706,6 @@
       <div class="detail-links">
         <a href="../articles/8919da8223d3cb47.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,malware,patch,vulnerability"
-       data-vendors="AWS"
-       data-severity="critical"
-       data-title="php2shell: two unpatched critical php rce flaws (cvss 9.2) trigger emergency security alert"
-       data-id="deb37a158635e763"
-       data-published="2026-10-21T10:27:50+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-21T10:27:50+05:30" title="20 October 2026, 23:57">20 October 2026, 23:57</time>
-      </div>
-      <h3 class="card-title">PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert</h3>
-      <p class="card-summary">PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/deb37a158635e763.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft powertoys adds cursorhide, button lock mouse tools"
-       data-id="f174aab4778b9039"
-       data-published="2026-10-21T08:20:34-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-21T08:20:34-04:00" title="21 October 2026, 07:20">21 October 2026, 07:20</time>
-      </div>
-      <h3 class="card-title">Microsoft PowerToys adds CursorHide, Button Lock mouse tools</h3>
-      <p class="card-summary">Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/f174aab4778b9039.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft says october updates didn’t actually fix vpn issues"
-       data-id="572026a755ab5768"
-       data-published="2026-10-21T06:14:53-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-21T06:14:53-04:00" title="21 October 2026, 05:14">21 October 2026, 05:14</time>
-      </div>
-      <h3 class="card-title">Microsoft says October updates didn’t actually fix VPN issues</h3>
-      <p class="card-summary">Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/572026a755ab5768.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,ransomware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="cisa: safepay ransomware hit over 600 critical infrastructure orgs"
-       data-id="2023993d6acb4fa3"
-       data-published="2026-10-21T04:36:24-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-21T04:36:24-04:00" title="21 October 2026, 03:36">21 October 2026, 03:36</time>
-      </div>
-      <h3 class="card-title">CISA: SafePay ransomware hit over 600 critical infrastructure orgs</h3>
-      <p class="card-summary">The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/2023993d6acb4fa3.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -1,5 +1,94 @@
 [
   {
+    "id": "b5c5845049c31af5",
+    "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+    "published": "2026-10-21T23:31:57+05:30",
+    "fetched_at": "2026-10-21T18:22:01.198798+00:00",
+    "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a1b8580fb4358dfc",
+    "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+    "published": "2026-10-21T22:03:47+05:30",
+    "fetched_at": "2026-10-21T18:22:01.199069+00:00",
+    "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.",
+    "tags": [],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI company said the incident took place on October 3 and 6, 2026, for Sol and Astra, respectively, as part of an internal deployment.\n\n\"A GPT-6.1 Sol agent repairing an.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b76ca744a3044b39",
+    "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+    "published": "2026-10-21T19:30:00+05:30",
+    "fetched_at": "2026-10-21T18:22:01.199284+00:00",
+    "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": true,
+    "card_summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully…",
+    "quick_take": "",
+    "sections": {
+      "overview": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.",
+      "technical": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The flaws, together called PHP2Shell, sit in the PHP runtime, not in any application, so a site is exposed even when its own",
+      "impact": "The flaws, together called PHP2Shell, sit in the PHP runtime, not in any application, so a site is exposed even when its own\n\nAssessed severity: CRITICAL."
+    },
+    "email_summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [
+      {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
+      }
+    ],
+    "highlighted": false
+  },
+  {
     "id": "7452d544c3d958d1",
     "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
     "source": "The Hacker News",
@@ -85,6 +174,34 @@
     "highlighted": false
   },
   {
+    "id": "27d7964e182e7c2a",
+    "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
+    "published": "2026-10-21T16:50:15+00:00",
+    "fetched_at": "2026-10-21T18:22:02.149742+00:00",
+    "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "705e085da70b78b8",
     "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
     "source": "The Hacker News",
@@ -159,6 +276,99 @@
       "technical": "Only a password login to an SSH server made through Tor between October 1 and 5, after accepting the interception"
     },
     "email_summary": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found. Exit relays are the last hop in a Tor circuit, where traffic leaves the network for its destination.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3df4dc8c23c13291",
+    "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+    "published": "2026-10-21T15:44:48+00:00",
+    "fetched_at": "2026-10-21T18:22:02.149943+00:00",
+    "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "low",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ae77bc5db6b5a375",
+    "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+    "published": "2026-10-21T15:29:09+00:00",
+    "fetched_at": "2026-10-21T18:22:02.150109+00:00",
+    "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "aea1452367993c26",
+    "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+    "source": "Krebs on Security",
+    "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+    "published": "2026-10-21T15:26:07+00:00",
+    "fetched_at": "2026-10-21T18:22:01.475379+00:00",
+    "summary": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+    "tags": [
+      "breach",
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability",
+      "zero-day"
+    ],
+    "day": "2026-10-21",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Linux"
+    ],
+    "action_required": true,
+    "card_summary": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are…",
+    "quick_take": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over…",
+    "sections": {
+      "overview": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+      "technical": "Cloudflare said it has already detected some exploitation of the flaw, and that at 3:02 am (UTC) it implemented web application firewall rules to protect websites from attack traffic seeking to exploit the bugs, which could cause a denial of service condition, remote code execution, and data exposure. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild. OpenAI , which was involved in the vulnerability research and outreach, said given the severity of these flaws and PHP s widespread use, we consider this one of the most impactful security issues in recent memory. The underlying flaws had been present for decades, but demonstrating their exploitability required an exceptionally complex chain of steps, at the edge of what human researchers could practically achieve.\n\nReferenced vulnerabilities: CVE-2026-109618, CVE-2026-109619.",
+      "impact": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Reuters reports that government websites in Europe and elsewhere went offline today after the PHP vulnerabilities were disclosed. OpenAI , which was involved in the vulnerability research and outreach, said given the severity of these flaws and PHP s widespread use, we consider this one of the most impactful security issues in recent memory.\n\nAssessed severity: CRITICAL.",
+      "mitigation": "Cloudflare said it has already detected some exploitation of the flaw, and that at 3:02 am (UTC) it implemented web application firewall rules to protect websites from attack traffic seeking to exploit the bugs, which could cause a denial of service condition, remote code execution, and data exposure. Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Earlier today, PHP released an emergency security update to fix two critical bugs that can allow an attacker to execute code of their choosing on a vulnerable server. Wiz said that prior to the PHP bugs being publicly disclosed, the company worked with the PHP team, Calif and OpenAI to measure the size of the problem and coordinate patch verification and disclosure.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Tracked as CVE-2026-109618, CVE-2026-109619. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -306,6 +516,29 @@
     "highlighted": false
   },
   {
+    "id": "f1f2f862c834e8db",
+    "title": "OpenAI agents disabled safety monitoring, one lied about it",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+    "published": "2026-10-21T12:26:53-04:00",
+    "fetched_at": "2026-10-21T18:22:01.635953+00:00",
+    "summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+    "tags": [],
+    "day": "2026-10-21",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "8919da8223d3cb47",
     "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
     "source": "The Hacker News",
@@ -328,118 +561,6 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian cybersecurity firm Solar, the activity has been attributed to a threat cluster dubbed Partisan Zmiy, which is also known as the Cyber Partisans.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "deb37a158635e763",
-    "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
-    "published": "2026-10-21T10:27:50+05:30",
-    "fetched_at": "2026-10-21T07:02:34.427148+00:00",
-    "summary": "PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.",
-    "tags": [
-      "exploit",
-      "malware",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-10-21",
-    "cves": [],
-    "cvss": 9.2,
-    "severity": "critical",
-    "vendors": [
-      "AWS"
-    ],
-    "action_required": false,
-    "card_summary": "PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.",
-    "quick_take": "",
-    "sections": {
-      "technical": "Security researchers at watchTowr say the two flaws allow remote code execution. Only the four supported PHP branches, 8.2 through 8.5, can receive the fix, and no exploitation has been reported so far.",
-      "impact": "Assessed severity: CRITICAL. CVSS score: 9.2/10."
-    },
-    "email_summary": "PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "f174aab4778b9039",
-    "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
-    "published": "2026-10-21T08:20:34-04:00",
-    "fetched_at": "2026-10-21T13:25:06.117843+00:00",
-    "summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]",
-    "tags": [],
-    "day": "2026-10-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "572026a755ab5768",
-    "title": "Microsoft says October updates didn’t actually fix VPN issues",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
-    "published": "2026-10-21T06:14:53-04:00",
-    "fetched_at": "2026-10-21T13:25:06.118065+00:00",
-    "summary": "Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates. [...]",
-    "tags": [],
-    "day": "2026-10-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "2023993d6acb4fa3",
-    "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
-    "published": "2026-10-21T04:36:24-04:00",
-    "fetched_at": "2026-10-21T13:25:06.118289+00:00",
-    "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]",
-    "tags": [
-      "breach",
-      "ransomware"
-    ],
-    "day": "2026-10-21",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness.\n\nThis fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

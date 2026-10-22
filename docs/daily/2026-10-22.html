@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">22 October 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
         <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -51,6 +53,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -66,6 +69,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
@@ -75,13 +79,168 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="emudhra to exit global ssl/tls business after 8 intermediate ca keys found easily guessable"
+       data-id="46c1aca13160884a"
+       data-published="2026-10-22T23:42:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-22T23:42:43+05:30" title="22 October 2026, 13:12">22 October 2026, 13:12</time>
+      </div>
+      <h3 class="card-title">eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable</h3>
+      <p class="card-summary">eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private keys of eight of its intermediate CA…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private keys of eight of its intermediate CA certificates.</p></div>
+      <div class="detail-links">
+        <a href="../articles/46c1aca13160884a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="threatsday: ai secrets leak, pingcap source theft, signal hang-up flaw, laravel auth bypass + 21 more"
+       data-id="9be7b5c74a651330"
+       data-published="2026-10-22T23:15:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-22T23:15:44+05:30" title="22 October 2026, 12:45">22 October 2026, 12:45</time>
+      </div>
+      <h3 class="card-title">ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More</h3>
+      <p class="card-summary">This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9be7b5c74a651330.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,vulnerability,zero-day"
+       data-vendors="AWS,Linux"
+       data-severity="critical"
+       data-title="two cvss 9.0 linux ksmbd rce flaws disclosed on public mailing lists before kernel fixes"
+       data-id="bf828b929bb8a481"
+       data-published="2026-10-22T22:31:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-22T22:31:53+05:30" title="22 October 2026, 12:01">22 October 2026, 12:01</time>
+      </div>
+      <h3 class="card-title">Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes</h3>
+      <p class="card-summary">Linux servers running KSMBD, the kernel&#39;s built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro&#39;s Zero Day Initiative, with no fix yet in the mainline kernel.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bf828b929bb8a481.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="meta ordered to pay $25 billion after court finds 43 million privacy violations"
+       data-id="b9584907be044ca3"
+       data-published="2026-10-22T21:42:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-22T21:42:31+05:30" title="22 October 2026, 11:12">22 October 2026, 11:12</time>
+      </div>
+      <h3 class="card-title">Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations</h3>
+      <p class="card-summary">Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court on Wednesday as part of a data privacy lawsuit that sprang from the company&#39;s Cambridge Analytica data scandal, which came to light in 2018.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b9584907be044ca3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="interpol arrests 1,462 suspects, disrupts 10,909 cybercrime networks in global crackdown"
+       data-id="64d28732d5a6c3a2"
+       data-published="2026-10-22T19:08:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-22T19:08:22+05:30" title="22 October 2026, 08:38">22 October 2026, 08:38</time>
+      </div>
+      <h3 class="card-title">INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown</h3>
+      <p class="card-summary">INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/64d28732d5a6c3a2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="apt"
        data-vendors=""
@@ -204,6 +363,41 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,malware,patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="arista patches new velocloud orchestrator zero-day exploited in attacks"
+       data-id="3bea16e3bc34b550"
+       data-published="2026-10-22T13:18:22-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-10-22T13:18:22-04:00" title="22 October 2026, 12:18">22 October 2026, 12:18</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Arista patches new VeloCloud Orchestrator zero-day exploited in attacks</h3>
+      <p class="card-summary">Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3bea16e3bc34b550.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="patch,vulnerability"
        data-vendors=""
@@ -299,6 +493,99 @@
       <div class="detail-links">
         <a href="../articles/3244b2c9591198f3.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="managing ai token consumption for operational resilience"
+       data-id="b0232e8939564d9e"
+       data-published="2026-10-22T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-22T12:00:00+00:00" title="22 October 2026, 07:00">22 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Managing AI Token Consumption for Operational Resilience</h3>
+      <p class="card-summary">CISA, the Canadian Centre for Cyber Security (Cyber Centre), and partners are releasing joint guidance, Managing AI Token Consumption for Operational Resilience , to help organizations understand and manage token usage in support of operations. As…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b0232e8939564d9e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/resources-tools/resources/managing-ai-token-consumption-operational-resilience" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft shares how to fix broken exchange online ews apps"
+       data-id="910f8b27e8a6527a"
+       data-published="2026-10-22T11:49:32-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-22T11:49:32-04:00" title="22 October 2026, 10:49">22 October 2026, 10:49</time>
+      </div>
+      <h3 class="card-title">Microsoft shares how to fix broken Exchange Online EWS apps</h3>
+      <p class="card-summary">Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/910f8b27e8a6527a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="machine speed attacks require machine speed detection and response"
+       data-id="4875f150627c9382"
+       data-published="2026-10-22T10:02:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-22T10:02:12-04:00" title="22 October 2026, 09:02">22 October 2026, 09:02</time>
+      </div>
+      <h3 class="card-title">Machine speed attacks require machine speed detection and response</h3>
+      <p class="card-summary">Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are critical. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/4875f150627c9382.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -422,72 +709,6 @@
       <div class="detail-links">
         <a href="../articles/a31fe766c4bc85d5.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,ransomware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="authorities disrupt nearly 11,000 cybercrime networks in africa"
-       data-id="9599991eb2151310"
-       data-published="2026-10-22T04:27:11-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-22T04:27:11-04:00" title="22 October 2026, 03:27">22 October 2026, 03:27</time>
-      </div>
-      <h3 class="card-title">Authorities disrupt nearly 11,000 cybercrime networks in Africa</h3>
-      <p class="card-summary">Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">ransomware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/9599991eb2151310.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="malware,patch,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="critical gitlab flaw (cvss 10.0) could allow unauthenticated rce across 12 years of releases"
-       data-id="84e79c1068cc389d"
-       data-published="2026-10-22T00:27:34+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-10-22T00:27:34+05:30" title="21 October 2026, 13:57">21 October 2026, 13:57</time>
-      </div>
-      <h3 class="card-title">Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases</h3>
-      <p class="card-summary">GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/84e79c1068cc389d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

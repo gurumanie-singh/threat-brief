@@ -376,12 +376,7 @@
     },
     "email_summary": "A critical flaw in 8 Atlassian Data Center products, which customers host themselves, allows an attacker with no login access to read specific files in each product's web application root directory. Tracked as CVE-2026-21589. Severity is rated high.",
     "content_model_version": 2,
-    "related_sources": [
-      {
-        "source": "BleepingComputer",
-        "link": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/"
-      }
-    ],
+    "related_sources": [],
     "highlighted": false
   },
   {
@@ -415,6 +410,152 @@
     "highlighted": false
   },
   {
+    "id": "97ce0d9bfc31783d",
+    "title": "Hitachi Energy REB500",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
+    "published": "2026-10-06T12:00:00+00:00",
+    "fetched_at": "2026-10-22T13:26:11.094282+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-06",
+    "cves": [
+      "CVE-2024-8176",
+      "CVE-2025-59375"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Hitachi Energy is aware of open-source software vulnerabilities that affect REB500 product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product.",
+      "technical": "The following versions of Hitachi Energy REB500 are affected:\n\n \n REB500 vers:REB500/<=8.3.3.1 (CVE-2024-8176, CVE-2025-59375)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 6.5 \n Hitachi Energy \n REB500 \n \n \n \n \n \n \n 2 Vulnerabilities \n \n \n \n \n Uncontrolled Recursion, Allocation of Resources Without Limits or Throttling \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2024-8176 \n A stack overflow vulnerability exists in the libexpat library used by the IEC61850 functionality supported by REB500 product. An authenticated malicious user with local access could use a crafted IEC 61850 message to exploit the vulnerability in the libexpat library. This issue could lead to denial of service (DoS) or, in some cases, exploitable memory corruption, depending on the environment and library usage. Recommended Practices \n CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.\n\nReferenced vulnerabilities: CVE-2024-8176, CVE-2025-59375.",
+      "impact": "The following versions of Hitachi Energy REB500 are affected:\n\n \n REB500 vers:REB500/<=8.3.3.1 (CVE-2024-8176, CVE-2025-59375)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 6.5 \n Hitachi Energy \n REB500 \n \n \n \n \n \n \n 2 Vulnerabilities \n \n \n \n \n Uncontrolled Recursion, Allocation of Resources Without Limits or Throttling \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2024-8176 \n A stack overflow vulnerability exists in the libexpat library used by the IEC61850 functionality supported by REB500 product. Read More \n \n 1 Affected Product \n \n REB500 versions 8.3.3.1 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate to version 8.3.4.0\n\n \n \n Additional Metrics \n Relevant CWE: CWE-674 Uncontrolled Recursion \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2025-59375 \n libexpat in Expat before 2.7.2 used by the IEC 61850 functionality supported by the REB500 product allows authenticated users to trigger large dynamic memory allocations via a small document that is submitted for parsing. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "General Mitigation Factors \n Recommended security practices and firewall configurations can help protect a process control network from attacks that originate from outside the network. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies. Read More \n \n 1 Affected Product \n \n REB500 versions 8.3.3.1 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate to version 8.3.4.0\n\n \n \n Additional Metrics \n Relevant CWE: CWE-674 Uncontrolled Recursion \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 6.5 \n MEDIUM \n CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2025-59375 \n libexpat in Expat before 2.7.2 used by the IEC 61850 functionality supported by the REB500 product allows authenticated users to trigger large dynamic memory allocations via a small document that is submitted for parsing."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Hitachi Energy is aware of open-source software vulnerabilities that affect REB500 product versions listed in this document. Tracked as CVE-2024-8176, CVE-2025-59375.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "05a83dd77c6c6aa9",
+    "title": "Hitachi Energy Asset Suite",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-03",
+    "published": "2026-10-06T12:00:00+00:00",
+    "fetched_at": "2026-10-22T13:26:11.094996+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "apt",
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-06",
+    "cves": [
+      "CVE-2026-11796",
+      "CVE-2026-7395"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Hitachi Energy is aware of unauthenticated servlet access vulnerabilities that affect Asset Suite product versions listed in this document. These vulnerabilities can be exploited to potentially cause confidentiality, integrity and availability impact on the product.",
+      "technical": "The following versions of Hitachi Energy Asset Suite are affected:\n\n \n Asset Suite vers:Asset_Suite/<=9.9.0 (CVE-2026-7395, CVE-2026-11796)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 8.1 \n Hitachi Energy \n Asset Suite \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-7395 \n Asset Suite allows unauthenticated users to access HTTPPublishAdapterTestServlet that can be used for configuration file upload, leading to information disclosure and integrity compromise. Read More \n \n 1 Affected Product \n \n Asset Suite versions 9.9.0 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate or upgrade to Asset Suite 9.9.1 when available\n\n \n \n Mitigation \nDisable the affected servlet [2] [3] [2] HTTPPublishAdapterTestServlet is meant for testing purposes used in non-production environment [3] Functionality of the servlets, PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet to be evaluated for its utility in the production environment\n\n \n \n Additional Metrics \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.1 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N \n \n \n 4.0 \n 8.5 \n HIGH \n CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2026-11796 \n Asset Suite allows unauthenticated users to access PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet, which could result in denial-of-service conditions affecting application availability. Recommended Practices \n CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability. These vulnerabilities can be exploited to potentially cause confidentiality, integrity and availability impact on the product.\n\nReferenced vulnerabilities: CVE-2026-11796, CVE-2026-7395.",
+      "impact": "The following versions of Hitachi Energy Asset Suite are affected:\n\n \n Asset Suite vers:Asset_Suite/<=9.9.0 (CVE-2026-7395, CVE-2026-11796)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 8.1 \n Hitachi Energy \n Asset Suite \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-7395 \n Asset Suite allows unauthenticated users to access HTTPPublishAdapterTestServlet that can be used for configuration file upload, leading to information disclosure and integrity compromise. Read More \n \n 1 Affected Product \n \n Asset Suite versions 9.9.0 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate or upgrade to Asset Suite 9.9.1 when available\n\n \n \n Mitigation \nDisable the affected servlet [2] [3] [2] HTTPPublishAdapterTestServlet is meant for testing purposes used in non-production environment [3] Functionality of the servlets, PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet to be evaluated for its utility in the production environment\n\n \n \n Additional Metrics \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.1 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N \n \n \n 4.0 \n 8.5 \n HIGH \n CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2026-11796 \n Asset Suite allows unauthenticated users to access PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet, which could result in denial-of-service conditions affecting application availability. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Read More \n \n 1 Affected Product \n \n Asset Suite versions 9.9.0 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate or upgrade to Asset Suite 9.9.1 when available\n\n \n \n Mitigation \nDisable the affected servlet [2] [3] [2] HTTPPublishAdapterTestServlet is meant for testing purposes used in non-production environment [3] Functionality of the servlets, PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet to be evaluated for its utility in the production environment\n\n \n \n Additional Metrics \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 8.1 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N \n \n \n 4.0 \n 8.5 \n HIGH \n CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2026-11796 \n Asset Suite allows unauthenticated users to access PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet, which could result in denial-of-service conditions affecting application availability. Read More \n \n 2 Affected Products \n \n Asset Suite versions 9.9.0 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate or upgrade to Asset Suite 9.9.1 when available\n\n \n \n Mitigation \nDisable the affected servlet [2] [3] [2] HTTPPublishAdapterTestServlet is meant for testing purposes used in non-production environment [3] Functionality of the servlets, PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet to be evaluated for its utility in the production environment\n\n \n \n Asset Suite versions 9.9.0 and prior \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate or upgrade to Asset Suite 9.9.1 when available\n\n \n \n Mitigation \nDisable the affected servlet [2] [3] [2] HTTPPublishAdapterTestServlet is meant for testing purposes used in non-production environment [3] Functionality of the servlets, PropertiesReloadServlet, CacheFlushServlet, MetadataCacheFlushServlet and ResourceBundleReloadServlet to be evaluated for its utility in the production environment\n\n \n \n Additional Metrics \n Relevant CWE: CWE-306 Missing Authentication for Critical Function \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 4.3 \n MEDIUM \n CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L \n \n \n 4.0 \n 5.1 \n MEDIUM \n CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N \n \n \n \n \n \n View CVE Details \n\n \n \n \n Acknowledgments \n \n EDF reported these vulnerabilities to CISA. General Mitigation Factors \n Recommended security practices and firewall configurations can help protect a process control network from attacks that originate from outside the network. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Hitachi Energy is aware of unauthenticated servlet access vulnerabilities that affect Asset Suite product versions listed in this document. Tracked as CVE-2026-11796, CVE-2026-7395.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a804596e60e7cb84",
+    "title": "Johnson Controls EasyIO FG",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
+    "published": "2026-10-06T12:00:00+00:00",
+    "fetched_at": "2026-10-22T13:26:11.095647+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-10-06",
+    "cves": [
+      "CVE-2026-27872",
+      "CVE-2026-27873"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to gain full unauthorized access to the device. The following versions of Johnson Controls EasyIO FG are affected:\n\n \n EasyIO FG firmware <=2.0b52 (CVE-2026-27872, CVE-2026-27873)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 7.7 \n Johnson Controls \n EasyIO FG firmware \n \n \n \n \n \n \n 2 Vulnerabilities \n \n \n \n \n Use of Hard-coded Credentials, Improper Privilege Management \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Commercial Facilities, Government Services and Facilities, Transportation Systems, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Ireland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-27872 \n A vulnerability exists in EasyIO FG relating to an attacker gaining unauthorized access to the system through hard-coded credentials and improper privilege management, potentially resulting in full device compromise.",
+      "technical": "Mitigation \nDeploy devices only within isolated BAS/OT networks\n\n \n \n Mitigation \nEnsure no direct Internet exposure\n\n \n \n Mitigation \nEnforce strict VLAN segmentation from enterprise IT networks\n\n \n \n Mitigation \nRestrict access to trusted engineering workstations only\n\n \n \n Mitigation \nBlock all remote login access from untrusted networks\n\n \n \n Mitigation \nAllow connections only from whitelisted IP addresses\n\n \n \n Mitigation \nBlock all Internet-originated traffic\n\n \n \n Mitigation \nPrevent unauthorized lateral movement across networks\n\n \n \n Mitigation \nRestrict communication to required protocols only\n\n \n \n Mitigation \nDisable insecure services (e.g., Telnet), if enabled\n\n \n \n Mitigation \nDisable any unnecessary services or exposed ports\n\n \n \n Mitigation \nMonitor for repeated login attempts\n\n \n \n Mitigation \nMonitor for unauthorized or root-level access\n\n \n \n Mitigation \nEnable logging and centralized monitoring (where supported)\n\n \n \n Mitigation \nRestrict distribution of firmware images\n\n \n \n Mitigation \nPrevent unauthorized physical and console access\n\n \n \n Mitigation \nFor more detailed mitigation instructions, please see Johnson Controls Product Security Advisory JCI-PSA-2026-12 at the following location: https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories\n\n \n \n Additional Metrics \n Relevant CWE: CWE-798 Use of Hard-coded Credentials \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.7 \n HIGH \n CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:L/I:H/A:H \n \n \n 4.0 \n 7.2 \n HIGH \n CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:H \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2026-27873 \n A vulnerability exists in EasyIO FG relating to an attacker gaining unauthorized access to the system through hard-coded credentials and improper privilege management, potentially resulting in full device compromise. Mitigation \nDeploy devices only within isolated BAS/OT networks\n\n \n \n Mitigation \nEnsure no direct Internet exposure\n\n \n \n Mitigation \nEnforce strict VLAN segmentation from enterprise IT networks\n\n \n \n Mitigation \nRestrict access to trusted engineering workstations only\n\n \n \n Mitigation \nBlock all remote login access from untrusted networks\n\n \n \n Mitigation \nAllow connections only from whitelisted IP addresses\n\n \n \n Mitigation \nBlock all Internet-originated traffic\n\n \n \n Mitigation \nPrevent unauthorized lateral movement across networks\n\n \n \n Mitigation \nRestrict communication to required protocols only\n\n \n \n Mitigation \nDisable insecure services (e.g., Telnet), if enabled\n\n \n \n Mitigation \nDisable any unnecessary services or exposed ports\n\n \n \n Mitigation \nMonitor for repeated login attempts\n\n \n \n Mitigation \nMonitor for unauthorized or root-level access\n\n \n \n Mitigation \nEnable logging and centralized monitoring (where supported)\n\n \n \n Mitigation \nRestrict distribution of firmware images\n\n \n \n Mitigation \nPrevent unauthorized physical and console access\n\n \n \n Mitigation \nFor more detailed mitigation instructions, please see Johnson Controls Product Security Advisory JCI-PSA-2026-12 at the following location: https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories\n\n \n \n Johnson Controls EasyIO FG firmware: <=2.0b52 \n \n Product Status: known_affected\n\n \n Remediations \n \n Mitigation \nJohnson Controls has determined that the EasyIO FG Series has reached End-of-Life (EOL) and End-of-Support (EOS) status. Mitigation \nDeploy devices only within isolated BAS/OT networks\n\n \n \n Mitigation \nEnsure no direct Internet exposure\n\n \n \n Mitigation \nEnforce strict VLAN segmentation from enterprise IT networks\n\n \n \n Mitigation \nRestrict access to trusted engineering workstations only\n\n \n \n Mitigation \nBlock all remote login access from untrusted networks\n\n \n \n Mitigation \nAllow connections only from whitelisted IP addresses\n\n \n \n Mitigation \nBlock all Internet-originated traffic\n\n \n \n Mitigation \nPrevent unauthorized lateral movement across networks\n\n \n \n Mitigation \nRestrict communication to required protocols only\n\n \n \n Mitigation \nDisable insecure services (e.g., Telnet), if enabled\n\n \n \n Mitigation \nDisable any unnecessary services or exposed ports\n\n \n \n Mitigation \nMonitor for repeated login attempts\n\n \n \n Mitigation \nMonitor for unauthorized or root-level access\n\n \n \n Mitigation \nEnable logging and centralized monitoring (where supported)\n\n \n \n Mitigation \nRestrict distribution of firmware images\n\n \n \n Mitigation \nPrevent unauthorized physical and console access\n\n \n \n Mitigation \nFor more detailed mitigation instructions, please see Johnson Controls Product Security Advisory JCI-PSA-2026-12 at the following location: https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories\n\n \n \n Additional Metrics \n Relevant CWE: CWE-269 Improper Privilege Management \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.7 \n HIGH \n CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:L/I:H/A:H \n \n \n 4.0 \n 7.2 \n HIGH \n CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:H \n \n \n \n \n \n View CVE Details \n\n \n \n \n Acknowledgments \n \n Gabriele Gardois, Zachary Bushell and Lorenzo De Carli of the University of Calgary (Canada) reported these vulnerabilities to Johnson Controls. The following versions of Johnson Controls EasyIO FG are affected:\n\n \n EasyIO FG firmware <=2.0b52 (CVE-2026-27872, CVE-2026-27873)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 7.7 \n Johnson Controls \n EasyIO FG firmware \n \n \n \n \n \n \n 2 Vulnerabilities \n \n \n \n \n Use of Hard-coded Credentials, Improper Privilege Management \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Commercial Facilities, Government Services and Facilities, Transportation Systems, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Ireland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-27872 \n A vulnerability exists in EasyIO FG relating to an attacker gaining unauthorized access to the system through hard-coded credentials and improper privilege management, potentially resulting in full device compromise.\n\nReferenced vulnerabilities: CVE-2026-27872, CVE-2026-27873.",
+      "impact": "The following versions of Johnson Controls EasyIO FG are affected:\n\n \n EasyIO FG firmware <=2.0b52 (CVE-2026-27872, CVE-2026-27873)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 7.7 \n Johnson Controls \n EasyIO FG firmware \n \n \n \n \n \n \n 2 Vulnerabilities \n \n \n \n \n Use of Hard-coded Credentials, Improper Privilege Management \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Commercial Facilities, Government Services and Facilities, Transportation Systems, Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Ireland\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-27872 \n A vulnerability exists in EasyIO FG relating to an attacker gaining unauthorized access to the system through hard-coded credentials and improper privilege management, potentially resulting in full device compromise. Mitigation \nDeploy devices only within isolated BAS/OT networks\n\n \n \n Mitigation \nEnsure no direct Internet exposure\n\n \n \n Mitigation \nEnforce strict VLAN segmentation from enterprise IT networks\n\n \n \n Mitigation \nRestrict access to trusted engineering workstations only\n\n \n \n Mitigation \nBlock all remote login access from untrusted networks\n\n \n \n Mitigation \nAllow connections only from whitelisted IP addresses\n\n \n \n Mitigation \nBlock all Internet-originated traffic\n\n \n \n Mitigation \nPrevent unauthorized lateral movement across networks\n\n \n \n Mitigation \nRestrict communication to required protocols only\n\n \n \n Mitigation \nDisable insecure services (e.g., Telnet), if enabled\n\n \n \n Mitigation \nDisable any unnecessary services or exposed ports\n\n \n \n Mitigation \nMonitor for repeated login attempts\n\n \n \n Mitigation \nMonitor for unauthorized or root-level access\n\n \n \n Mitigation \nEnable logging and centralized monitoring (where supported)\n\n \n \n Mitigation \nRestrict distribution of firmware images\n\n \n \n Mitigation \nPrevent unauthorized physical and console access\n\n \n \n Mitigation \nFor more detailed mitigation instructions, please see Johnson Controls Product Security Advisory JCI-PSA-2026-12 at the following location: https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories\n\n \n \n Additional Metrics \n Relevant CWE: CWE-798 Use of Hard-coded Credentials \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.7 \n HIGH \n CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:L/I:H/A:H \n \n \n 4.0 \n 7.2 \n HIGH \n CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:H \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2026-27873 \n A vulnerability exists in EasyIO FG relating to an attacker gaining unauthorized access to the system through hard-coded credentials and improper privilege management, potentially resulting in full device compromise. Mitigation \nDeploy devices only within isolated BAS/OT networks\n\n \n \n Mitigation \nEnsure no direct Internet exposure\n\n \n \n Mitigation \nEnforce strict VLAN segmentation from enterprise IT networks\n\n \n \n Mitigation \nRestrict access to trusted engineering workstations only\n\n \n \n Mitigation \nBlock all remote login access from untrusted networks\n\n \n \n Mitigation \nAllow connections only from whitelisted IP addresses\n\n \n \n Mitigation \nBlock all Internet-originated traffic\n\n \n \n Mitigation \nPrevent unauthorized lateral movement across networks\n\n \n \n Mitigation \nRestrict communication to required protocols only\n\n \n \n Mitigation \nDisable insecure services (e.g., Telnet), if enabled\n\n \n \n Mitigation \nDisable any unnecessary services or exposed ports\n\n \n \n Mitigation \nMonitor for repeated login attempts\n\n \n \n Mitigation \nMonitor for unauthorized or root-level access\n\n \n \n Mitigation \nEnable logging and centralized monitoring (where supported)\n\n \n \n Mitigation \nRestrict distribution of firmware images\n\n \n \n Mitigation \nPrevent unauthorized physical and console access\n\n \n \n Mitigation \nFor more detailed mitigation instructions, please see Johnson Controls Product Security Advisory JCI-PSA-2026-12 at the following location: https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories\n\n \n \n Johnson Controls EasyIO FG firmware: <=2.0b52 \n \n Product Status: known_affected\n\n \n Remediations \n \n Mitigation \nJohnson Controls has determined that the EasyIO FG Series has reached End-of-Life (EOL) and End-of-Support (EOS) status.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to gain full unauthorized access to the device. Tracked as CVE-2026-27872, CVE-2026-27873.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b4270192c039acc1",
+    "title": "Hitachi Energy SOI",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
+    "published": "2026-10-06T12:00:00+00:00",
+    "fetched_at": "2026-10-22T13:26:11.096270+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-06",
+    "cves": [
+      "CVE-2026-34197"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Hitachi Energy is aware of RCE (Remote Code Execution) vulnerability in Apache ActiveMQ component of SOI product versions listed in this document. These vulnerabilities can be exploited to carry out various attacks affecting confidentiality, integrity, and availability of the product.",
+      "impact": "The following versions of Hitachi Energy SOI are affected:\n\n \n SOI vers:SOI/>=2.0.0|<=2.2.0 (CVE-2026-34197)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 8.8 \n Hitachi Energy \n SOI \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Improper Control of Generation of Code ('Code Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Energy\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Switzerland\n\n \n \n Vulnerabilities \n \n CVE-2026-34197 \n Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ used in SOI product. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. These vulnerabilities can be exploited to carry out various attacks affecting confidentiality, integrity, and availability of the product.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "General Mitigation Factors \n Recommended security practices and firewall configurations can help protect a process control network from attacks that originate from outside the network. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. Read More \n \n 1 Affected Product \n \n SOI Version 2.0.0 to 2.2.0 \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nApply the patch SOI EP2, which upgrades the ActiveMQ version (JMS message broker) for the SOI Core to version 5.19.5. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Hitachi Energy is aware of RCE (Remote Code Execution) vulnerability in Apache ActiveMQ component of SOI product versions listed in this document. Tracked as CVE-2026-34197.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "731ba1512d75ceda",
     "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
     "source": "The Hacker News",
@@ -433,112 +574,6 @@
     "quick_take": "Unauthorized parties have gained access to the names, addresses, and personal identification numbers of about 8.8 million people, living and dead, in Denmark's national population register, the country's…",
     "sections": {},
     "email_summary": "Unauthorized parties have gained access to the names, addresses, and personal identification numbers of about 8.8 million people, living and dead, in Denmark's national population register, the country's digitalization ministry said on October 5. They used a private Danish company's lawful right to look up records in the Central Person Register (CPR).",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "372215619bacaeb7",
-    "title": "Fake ChatGPT, Gemini Sites steal advertising accounts, MFA codes",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
-    "published": "2026-10-06T11:16:44-04:00",
-    "fetched_at": "2026-10-06T17:55:15.917607+00:00",
-    "summary": "A new campaign targeting ad account managers uses fake ChatGPT, Gemini, Claude, and Perplexity sites that steal login credentials and multi-factor authentication (MFA) codes through browser-in-browser attacks. [...]",
-    "tags": [],
-    "day": "2026-10-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "A new campaign targeting ad account managers uses fake ChatGPT, Gemini, Claude, and Perplexity sites that steal login credentials and multi-factor authentication (MFA) codes through browser-in-browser attacks. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "A new campaign targeting ad account managers uses fake ChatGPT, Gemini, Claude, and Perplexity sites that steal login credentials and multi-factor authentication (MFA) codes through browser-in-browser attacks. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "A new campaign targeting ad account managers uses fake ChatGPT, Gemini, Claude, and Perplexity sites that steal login credentials and multi-factor authentication (MFA) codes through browser-in-browser attacks. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "69216d6aa6c4aa52",
-    "title": "ClickFix Smuggles Payloads Through Browser Cache to Bypass Windows Run Limits",
-    "source": "The Hacker News",
-    "link": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
-    "published": "2026-10-06T10:52:55+05:30",
-    "fetched_at": "2026-10-06T11:46:57.995102+00:00",
-    "summary": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-10-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.",
-    "quick_take": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.\n\n\"Instead of downloading and executing remote payloads like the typical…",
-    "sections": {
-      "technical": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.\n\n\"Instead of downloading and executing remote payloads like the typical attack pattern, in this attack, the websites pre-fetch a script payload into the browser cache disguised as a PNG file,\" the Microsoft Threat Intelligence team said in a post on X.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.\n\n\"Instead of downloading and executing remote payloads like the typical attack pattern, in this attack, the websites pre-fetch a script payload into the browser cache disguised as a PNG file,\" the Microsoft Threat Intelligence team said in a post on X.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "7603cfdd97d9dc56",
-    "title": "How to secure RMM software: 8 controls MSPs should test",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
-    "published": "2026-10-06T10:00:10-04:00",
-    "fetched_at": "2026-10-06T17:55:15.917813+00:00",
-    "summary": "RMM platforms give MSPs privileged access across customer environments, making their security controls critical to limiting risk. Acronis outlines eight controls MSPs should test when evaluating RMM software, from patching and privileged access to recovery and tenant isolation. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-10-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "RMM platforms give MSPs privileged access across customer environments, making their security controls critical to limiting risk. Acronis outlines eight controls MSPs should test when evaluating RMM software, from patching and privileged access to recovery…",
-    "quick_take": "",
-    "sections": {
-      "overview": "RMM platforms give MSPs privileged access across customer environments, making their security controls critical to limiting risk. Acronis outlines eight controls MSPs should test when evaluating RMM software, from patching and privileged access to recovery and tenant isolation. [...]",
-      "impact": "RMM platforms give MSPs privileged access across customer environments, making their security controls critical to limiting risk.\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "RMM platforms give MSPs privileged access across customer environments, making their security controls critical to limiting risk. Acronis outlines eight controls MSPs should test when evaluating RMM software, from patching and privileged access to recovery and tenant isolation. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "74a65d5f135c7687",
-    "title": "Wikimedia: Rogue OpenAI agents behind unauthorized Wikipedia edits",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits/",
-    "published": "2026-10-06T07:31:48-04:00",
-    "fetched_at": "2026-10-06T11:46:58.379670+00:00",
-    "summary": "The Wikimedia Foundation says rogue OpenAI agents made unauthorized Wikipedia edits and may have been partially responsible for a May outage. [...]",
-    "tags": [],
-    "day": "2026-10-06",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "The Wikimedia Foundation says rogue OpenAI agents made unauthorized Wikipedia edits and may have been partially responsible for a May outage. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "The Wikimedia Foundation says rogue OpenAI agents made unauthorized Wikipedia edits and may have been partially responsible for a May outage. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

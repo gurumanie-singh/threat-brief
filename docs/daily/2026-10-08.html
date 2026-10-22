@@ -35,8 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 high-severity advisories published today</li>
-        <li>AWS ecosystem affected by multiple advisories</li>
+        <li>1 high-severity advisory published today</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
         <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
@@ -51,6 +51,7 @@
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -64,23 +65,23 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
@@ -602,99 +603,123 @@
       </div>
     </div>
   </div>
-  <div class="article-card card--high"
-       data-tags="exploit,malware,vulnerability"
-       data-vendors="AWS,Cisco"
-       data-severity="high"
-       data-title="cisco warns of critical flaws allowing nexus switch takeover"
-       data-id="09f35f5d48adb37c"
-       data-published="2026-10-08T11:26:33-04:00"
+  <div class="article-card card--low"
+       data-tags="apt,cve,exploit,malware,phishing,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="grid protection alliance openpdc and openhistorian"
+       data-id="484baca6fbfcde40"
+       data-published="2026-10-08T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">AWS</span><span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-10-08T11:26:33-04:00" title="8 October 2026, 10:26">8 October 2026, 10:26</time>
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-08T12:00:00+00:00" title="8 October 2026, 07:00">8 October 2026, 07:00</time>
       </div>
-      <h3 class="card-title">Cisco warns of critical flaws allowing Nexus switch takeover</h3>
-      <p class="card-summary">Cisco released security advisories for five critical vulnerabilities in its NX-OS data center network operating system that could be exploited to run arbitrary code with root privileges on Nexus switches. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/09f35f5d48adb37c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="breach,malware"
-       data-vendors=""
-       data-severity="high"
-       data-title="tensorlake npm package compromised to deliver shai-hulud credential-stealing worm"
-       data-id="ff37c376d1f2b05c"
-       data-published="2026-10-08T11:16:20+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-10-08T11:16:20+05:30" title="8 October 2026, 00:46">8 October 2026, 00:46</time>
-      </div>
-      <h3 class="card-title">Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm</h3>
-      <p class="card-summary">The npm package known as &#34;tensorlake,&#34; a TypeScript software development kit (SDK) for Tensorlake applications, sandboxes, and cloud services, was compromised as part of a ChainDrop / Shai-Hulud supply chain attack.</p>
+      <h3 class="card-title">Grid Protection Alliance openPDC and openHistorian</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/ff37c376d1f2b05c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,exploit,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="oauth grants pile up faster than you can review them. here&#39;s how to keep up."
-       data-id="6d46c32fd7983603"
-       data-published="2026-10-08T10:00:10-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-08T10:00:10-04:00" title="8 October 2026, 09:00">8 October 2026, 09:00</time>
-      </div>
-      <h3 class="card-title">OAuth grants pile up faster than you can review them. Here&#39;s how to keep up.</h3>
-      <p class="card-summary">OAuth grants create data highways between SaaS apps, AI agents, and other tools. And, they are multiplying faster than any security team can review them.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
           <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
         </div>
       </div>
-      <span class="card-source">BleepingComputer</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   The following versions of Grid Protection Alliance openPDC and openHistorian are affected:</p>
+<p>openPDC &lt;2.9.477, &lt;2.9.482 (CVE-2026-104629, CVE-2026-100730, CVE-2026-105281, CVE-2026-85479, CVE-2026-101022)</p>
+<p>openPDC (Docker image) &lt;2.9.477, &lt;2.9.482 (CVE-2026-104629, CVE-2026-100730, CVE-2026-105281, CVE-2026-85479, CVE-2026-101022, CVE-2026-105278)</p>
+<p>openHistorian &lt;2.8.580, &lt;2.8.585 (CVE-2026-104629, CVE-2026-100730, CVE-2026-105281, CVE-2026-85479, CVE-2026-101022)</p>
+<p>CVSS   Vendor   Equipment           v3 9.8   Grid Protection Alliance   openPDC               5 Vulnerabilities           Deserialization of Untrusted Data, Missing Authentication for Critical Function, Server-Side Request Forgery (SSRF), Use of Hard-coded Credentials, Use of Externally-Controlled Input to Select Classes or Code (&#39;Unsafe Reflection&#39;)           Background     Critical Infrastructure Sectors: Energy</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities   Expand All +     CVE-2026-100730   A service console interface on openPDC and openHistorian deserializes a client-supplied data structure. On systems using Windows Authentication, an attacker must already be authenticated to reach this function; on systems without Windows Authentication, this is reachable by an unauthenticated network attacker.</p></div>
       <div class="detail-links">
-        <a href="../articles/6d46c32fd7983603.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/484baca6fbfcde40.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="satel netco design"
+       data-id="9a5bdf05ae97eef1"
+       data-published="2026-10-08T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-08T12:00:00+00:00" title="8 October 2026, 07:00">8 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Satel Netco Design</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary scripts in a user&#39;s browser, consume excessive system resources, enumerate files, create or modify files, and potentially execute arbitrary code. The following versions of Satel Netco Design are affected:</p>
+<p>Satel Netco Design</p>
+<p>CVSS   Vendor   Equipment           v3 8.8   Satel   Satel Netco Design               3 Vulnerabilities           Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;), Inefficient Regular Expression Complexity, Relative Path Traversal           Background     Critical Infrastructure Sectors: Communications</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: Finland</p>
+<p>Vulnerabilities   Expand All +     CVE-2026-105269   Satel Netco Design versions prior to v2.1.7 contains a stored cross site scripting vulnerability.</p></div>
+      <div class="detail-links">
+        <a href="../articles/9a5bdf05ae97eef1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="red lion controls n-tron 700 series (update a)"
+       data-id="4f64859ad3a7e440"
+       data-published="2026-10-08T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-08T12:00:00+00:00" title="8 October 2026, 07:00">8 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Red Lion Controls N-Tron 700 Series (Update A)</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow a malicious user to access the device and gain administrative access. This access would allow the user to view, edit, and upload configuration files.</p></div>
+      <div class="detail-links">
+        <a href="../articles/4f64859ad3a7e440.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

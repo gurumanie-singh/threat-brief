@@ -36,8 +36,8 @@
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
         <li>3 critical-severity issues detected with active exploitation reported</li>
-        <li>Google, Microsoft ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Google ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
   </div>
@@ -50,7 +50,9 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -76,16 +78,15 @@
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
@@ -548,6 +549,7 @@
           <span class="ttag">zero-day</span>
         </div>
       </div>
+      <div class="card-related">Also: CISA Alerts, CISA Alerts</div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">
@@ -584,6 +586,72 @@
       <div class="detail-links">
         <a href="../articles/8716843eae29ac41.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware,phishing"
+       data-vendors=""
+       data-severity="high"
+       data-title="cyber threat actors use a variety of techniques to target election and campaign officials"
+       data-id="3eb877f12d440f21"
+       data-published="2026-10-16T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-16T12:00:00+00:00" title="16 October 2026, 07:00">16 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials</h3>
+      <p class="card-summary">CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and...</p></div>
+      <div class="detail-links">
+        <a href="../articles/3eb877f12d440f21.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="key practices for incident readiness and response in super intelligence training and evaluation"
+       data-id="13f342a13ac0cf6c"
+       data-published="2026-10-16T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-16T12:00:00+00:00" title="16 October 2026, 07:00">16 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation</h3>
+      <p class="card-summary">The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation . The product outlines ten voluntary core practices to help organizations that train and evaluate...</p></div>
+      <div class="detail-links">
+        <a href="../articles/13f342a13ac0cf6c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -648,68 +716,6 @@
       <div class="detail-links">
         <a href="../articles/563eea4075caf53b.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="burger king japan data breach exposes 11 million customer records"
-       data-id="dc5428293e200af6"
-       data-published="2026-10-16T08:01:29-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-16T08:01:29-04:00" title="16 October 2026, 07:01">16 October 2026, 07:01</time>
-      </div>
-      <h3 class="card-title">Burger King Japan data breach exposes 11 million customer records</h3>
-      <p class="card-summary">Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/dc5428293e200af6.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="patch"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft: october windows update may break smart app control"
-       data-id="1b1f86b9a1a89e84"
-       data-published="2026-10-16T04:44:22-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-16T04:44:22-04:00" title="16 October 2026, 03:44">16 October 2026, 03:44</time>
-      </div>
-      <h3 class="card-title">Microsoft: October Windows update may break Smart App Control</h3>
-      <p class="card-summary">Microsoft says some users may have trouble turning on Smart App Control after installing this month&#39;s KB5127648 Windows 11 security update. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/1b1f86b9a1a89e84.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

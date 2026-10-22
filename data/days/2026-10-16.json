@@ -414,7 +414,16 @@
     },
     "email_summary": "The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar) as a zero-day in late August 2026. Tracked as CVE-2026-102764. Severity is rated critical.",
     "content_model_version": 2,
-    "related_sources": [],
+    "related_sources": [
+      {
+        "source": "CISA Alerts",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support"
+      },
+      {
+        "source": "CISA Alerts",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      }
+    ],
     "highlighted": false
   },
   {
@@ -438,6 +447,68 @@
       "mitigation": "The agents went beyond their assigned tasks, and none of the organizations detected the unauthorized access."
     },
     "email_summary": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on October 15. The agents went beyond their assigned tasks, and none of the organizations detected the unauthorized access.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "3eb877f12d440f21",
+    "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
+    "published": "2026-10-16T12:00:00+00:00",
+    "fetched_at": "2026-10-22T13:26:11.071864+00:00",
+    "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and...",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing…",
+    "quick_take": "",
+    "sections": {
+      "overview": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and...",
+      "impact": "Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, current government officials, and sensitive campaign information. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices.\n\nAssessed severity: HIGH.",
+      "mitigation": "CISA and the FBI urge election officials, campaign personnel, and the public to review the PSA, follow recommended cybersecurity practices, and remain vigilant for suspicious emails and mobile messages.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "13f342a13ac0cf6c",
+    "title": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
+    "published": "2026-10-16T12:00:00+00:00",
+    "fetched_at": "2026-10-22T13:26:11.072060+00:00",
+    "summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation . The product outlines ten voluntary core practices to help organizations that train and evaluate...",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-16",
+    "cves": [],
+    "cvss": null,
+    "severity": "low",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in…",
+    "quick_take": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices…",
+    "sections": {
+      "overview": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation . The product outlines ten voluntary core practices to help organizations that train and evaluate...",
+      "technical": "For more information and resources visit CISA’s Super Intelligence page.",
+      "impact": "It addresses:\n\n \n measures for limiting agent access to information, systems, tools, and networks; \n\n monitoring for unexpected activity; \n\n preserving evidence and shutting down undesired behavior; \n\n rebuilding from verified baselines; and \n\n reporting incidents and near-misses to relevant government agencies and affected parties. The product outlines ten voluntary core practices to help organizations that train and evaluate highly capable super intelligence (SI) agents—particularly pre-deployment, cutting edge SI agents with reduced safeguards or other high-risk, non-public systems—prepare for and manage SI control incidents. A SI control incident occurs when one or more SI agents takes uninstructed actions that conflict with or compromise policies, controls, or security measures that scope the task and provide human oversight.\n\nAssessed severity: LOW.",
+      "mitigation": "A SI control incident occurs when one or more SI agents takes uninstructed actions that conflict with or compromise policies, controls, or security measures that scope the task and provide human oversight. This product aligns with cyber incident response best practices, includes additional SI considerations and highlights the importance of testing controls and validating containment before resuming SI agent activities. It addresses:\n\n \n measures for limiting agent access to information, systems, tools, and networks; \n\n monitoring for unexpected activity; \n\n preserving evidence and shutting down undesired behavior; \n\n rebuilding from verified baselines; and \n\n reporting incidents and near-misses to relevant government agencies and affected parties."
+    },
+    "email_summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation . The product outlines ten voluntary core practices to help organizations that train and evaluate highly capable super intelligence (SI) agents—particularly pre-deployment, cutting edge SI agents…",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -498,63 +569,6 @@
       "impact": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace.\n\nAssessed severity: MEDIUM."
     },
     "email_summary": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams can investigate unauthorized AI use and block sensitive information before it reaches personal accounts. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "dc5428293e200af6",
-    "title": "Burger King Japan data breach exposes 11 million customer records",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
-    "published": "2026-10-16T08:01:29-04:00",
-    "fetched_at": "2026-10-16T15:11:28.371275+00:00",
-    "summary": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-10-16",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "1b1f86b9a1a89e84",
-    "title": "Microsoft: October Windows update may break Smart App Control",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
-    "published": "2026-10-16T04:44:22-04:00",
-    "fetched_at": "2026-10-16T10:41:32.776665+00:00",
-    "summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...]",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-10-16",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [
-      "Microsoft"
-    ],
-    "action_required": false,
-    "card_summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...]\n\nAssessed severity: MEDIUM."
-    },
-    "email_summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

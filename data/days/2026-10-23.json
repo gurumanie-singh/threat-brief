@@ -1,5 +1,215 @@
 [
   {
+    "id": "f85e5cd319a98125",
+    "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+    "published": "2026-10-23T16:55:43+05:30",
+    "fetched_at": "2026-10-23T12:27:43.325751+00:00",
+    "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws.",
+    "tags": [
+      "cve",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-23",
+    "cves": [
+      "CVE-2026-115560"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws.",
+    "quick_take": "",
+    "sections": {
+      "impact": "The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. Tracked as CVE-2026-115560.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "be35933cade634f5",
+    "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
+    "published": "2026-10-23T16:41:23+05:30",
+    "fetched_at": "2026-10-23T12:27:43.325957+00:00",
+    "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year.",
+    "tags": [
+      "apt",
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-10-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year.",
+    "quick_take": "",
+    "sections": {
+      "technical": "According to ESET, the attack involved UAC-0099 (aka Earth Sirrush) obtaining initial access to the target on July 16, 2025, via a spear-phishing email bearing a malware-laced attachment that led to the deployment of",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "4c9c5fbf1deb62f0",
+    "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+    "published": "2026-10-23T15:06:00+05:30",
+    "fetched_at": "2026-10-23T12:27:43.326386+00:00",
+    "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open.",
+    "tags": [
+      "cve",
+      "malware"
+    ],
+    "day": "2026-10-23",
+    "cves": [
+      "CVE-2026-112900"
+    ],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw, CVE-2026-112900, is in the way Pillow handles EPS images, which it opens by passing the file's name to Ghostscript, a separate program it runs to turn the image into pixels, without checking the name first.\n\nReferenced vulnerabilities: CVE-2026-112900."
+    },
+    "email_summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. Tracked as CVE-2026-112900. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "49599b378fe05590",
+    "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+    "published": "2026-10-23T14:10:43+05:30",
+    "fetched_at": "2026-10-23T12:27:43.326559+00:00",
+    "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-23",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Their \"Node2Shell\" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by feeding crafted data to the bundled Brotli decoder (CVE-2026-111497). Node.js disclosed the flaw\n\nReferenced vulnerabilities: CVE-2026-111497."
+    },
+    "email_summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Tracked as CVE-2026-111497. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "147b4c5cb4012a5e",
+    "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+    "published": "2026-10-23T14:05:45+05:30",
+    "fetched_at": "2026-10-23T12:27:43.326719+00:00",
+    "summary": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22.",
+    "tags": [],
+    "day": "2026-10-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default client, which set no spending limit until releases on August 18 added one.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "1a7ce0888728b955",
+    "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+    "published": "2026-10-23T13:10:45+05:30",
+    "fetched_at": "2026-10-23T12:27:43.326860+00:00",
+    "summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought.",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-23",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than…",
+    "quick_take": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that…",
+    "sections": {
+      "overview": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought."
+    },
+    "email_summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought. Tracked as CVE-2026-109618, CVE-2026-109619. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "9b9b958cf3d08b0c",
+    "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+    "published": "2026-10-23T11:38:28+00:00",
+    "fetched_at": "2026-10-23T12:27:44.223198+00:00",
+    "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-10-23",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "52f1bf014914ed2a",
     "title": "State Bank of India Suffers a Customer PII Data Leak",
     "source": "Dark Reading",

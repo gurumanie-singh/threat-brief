@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">23 October 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
       </ul>
     </div>
   </div>
@@ -61,18 +61,253 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="urgent - php warns of another unpatched rce two days after emergency php2shell patches"
+       data-id="f85e5cd319a98125"
+       data-published="2026-10-23T16:55:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-23T16:55:43+05:30" title="23 October 2026, 06:25">23 October 2026, 06:25</time>
+      </div>
+      <h3 class="card-title">URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches</h3>
+      <p class="card-summary">PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f85e5cd319a98125.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity="high"
+       data-title="russian-linked hackers used new mesh network backdoor in destructive ukraine attack"
+       data-id="be35933cade634f5"
+       data-published="2026-10-23T16:41:23+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-23T16:41:23+05:30" title="23 October 2026, 06:11">23 October 2026, 06:11</time>
+      </div>
+      <h3 class="card-title">Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack</h3>
+      <p class="card-summary">The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/be35933cade634f5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,malware"
+       data-vendors=""
+       data-severity="critical"
+       data-title="critical flaw in python’s popular pillow image library allows code execution via a crafted image"
+       data-id="4c9c5fbf1deb62f0"
+       data-published="2026-10-23T15:06:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-10-23T15:06:00+05:30" title="23 October 2026, 04:36">23 October 2026, 04:36</time>
+      </div>
+      <h3 class="card-title">Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image</h3>
+      <p class="card-summary">Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4c9c5fbf1deb62f0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="researchers demonstrate node2shell rce exploit on node.js build using crafted brotli data"
+       data-id="49599b378fe05590"
+       data-published="2026-10-23T14:10:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-23T14:10:43+05:30" title="23 October 2026, 03:40">23 October 2026, 03:40</time>
+      </div>
+      <h3 class="card-title">Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data</h3>
+      <p class="card-summary">Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/49599b378fe05590.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="critical x402 sdk flaw could let malicious apis drain ai agents’ token balances"
+       data-id="147b4c5cb4012a5e"
+       data-published="2026-10-23T14:05:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-23T14:05:45+05:30" title="23 October 2026, 03:35">23 October 2026, 03:35</time>
+      </div>
+      <h3 class="card-title">Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances</h3>
+      <p class="card-summary">AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/147b4c5cb4012a5e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="php2shell exploit attempts hit millions as attackers try to deploy mirai malware"
+       data-id="1a7ce0888728b955"
+       data-published="2026-10-23T13:10:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-23T13:10:45+05:30" title="23 October 2026, 02:40">23 October 2026, 02:40</time>
+      </div>
+      <h3 class="card-title">PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware</h3>
+      <p class="card-summary">Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought.</p></div>
+      <div class="detail-links">
+        <a href="../articles/1a7ce0888728b955.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="ai agents as insider threats: inside microsoft&#39;s bet on a unified security stack"
+       data-id="9b9b958cf3d08b0c"
+       data-published="2026-10-23T11:38:28+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-23T11:38:28+00:00" title="23 October 2026, 06:38">23 October 2026, 06:38</time>
+      </div>
+      <h3 class="card-title">AI Agents as Insider Threats: Inside Microsoft&#39;s Bet on a Unified Security Stack</h3>
+      <p class="card-summary">Microsoft&#39;s Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9b9b958cf3d08b0c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="breach"
        data-vendors=""

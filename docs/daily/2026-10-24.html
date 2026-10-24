@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">24 October 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">6 articles</span>
     </div>
   </div>
 
@@ -37,6 +37,7 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Google ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -63,6 +64,7 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
@@ -72,14 +74,136 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="cve,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="brotli decoder flaw behind node.js rce also affects bun, python and other widely used software"
+       data-id="c7df255769fd1c1c"
+       data-published="2026-10-24T16:39:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-24T16:39:29+05:30" title="24 October 2026, 06:09">24 October 2026, 06:09</time>
+      </div>
+      <h3 class="card-title">Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software</h3>
+      <p class="card-summary">A memory-corruption flaw in Google&#39;s Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c7df255769fd1c1c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="leaked litellm master key let attackers steal github tokens and hijack release pipeline"
+       data-id="5c921bcbb27cec45"
+       data-published="2026-10-24T16:33:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-24T16:33:33+05:30" title="24 October 2026, 06:03">24 October 2026, 06:03</time>
+      </div>
+      <h3 class="card-title">Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline</h3>
+      <p class="card-summary">LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5c921bcbb27cec45.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="google says gmail and photos data shared with ai search could be used for targeted ads"
+       data-id="103756327bff2577"
+       data-published="2026-10-24T16:06:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-24T16:06:33+05:30" title="24 October 2026, 05:36">24 October 2026, 05:36</time>
+      </div>
+      <h3 class="card-title">Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads</h3>
+      <p class="card-summary">Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/103756327bff2577.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="researchers push over 2 million updates to remotely disable popcorn time updater that could fuel a botnet"
+       data-id="7b2d8b8b7443c107"
+       data-published="2026-10-24T14:34:24+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-24T14:34:24+05:30" title="24 October 2026, 04:04">24 October 2026, 04:04</time>
+      </div>
+      <h3 class="card-title">Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet</h3>
+      <p class="card-summary">Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7b2d8b8b7443c107.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--action card--critical"
        data-tags="cve,exploit,malware,vulnerability"
        data-vendors="AWS"

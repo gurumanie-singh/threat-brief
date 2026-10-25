@@ -1,5 +1,68 @@
 [
   {
+    "id": "30facabe81907351",
+    "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+    "published": "2026-10-25T23:14:09+05:30",
+    "fetched_at": "2026-10-25T21:24:59.295421+00:00",
+    "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week.",
+    "tags": [
+      "patch"
+    ],
+    "day": "2026-10-25",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week.",
+    "quick_take": "",
+    "sections": {
+      "impact": "The attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls one device that the network's access rules permit to connect to the target.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week. The attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls one device that the network's access rules permit to connect to the target.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "61e85af308d8d6a8",
+    "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+    "published": "2026-10-25T22:49:46+05:30",
+    "fetched_at": "2026-10-25T21:24:59.295628+00:00",
+    "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-10-25",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.",
+    "quick_take": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and…",
+    "sections": {
+      "technical": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.\n\n\"In one case, the attackers targeted a government entity in Europe and within two hours of the initial exploitation they had successfully accessed password hashes and multi-factor\n\nReferenced vulnerabilities: CVE-2026-109618, CVE-2026-109619.",
+      "impact": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.\n\n\"In one case, the attackers targeted a government entity in Europe and within two hours of the initial exploitation they had successfully accessed password hashes and multi-factor\n\nAssessed severity: MEDIUM.",
+      "mitigation": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.\n\n\"In one case, the attackers targeted a government entity in Europe and within two hours of the initial exploitation they had successfully accessed password hashes and multi-factor"
+    },
+    "email_summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.\n\n\"In one case, the attackers targeted a government entity in Europe and within two hours of the initial exploitation they had successfully accessed password hashes and multi-factor. Tracked as CVE-2026-109618, CVE-2026-109619.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "eb79ad27bec53c81",
     "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
     "source": "The Hacker News",

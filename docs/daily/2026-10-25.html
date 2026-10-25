@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">25 October 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">4 articles</span>
     </div>
   </div>
 
@@ -51,14 +51,87 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="unpatched tailscale ssh flaws could let a hacked device reach root on other servers"
+       data-id="30facabe81907351"
+       data-published="2026-10-25T23:14:09+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-25T23:14:09+05:30" title="25 October 2026, 12:44">25 October 2026, 12:44</time>
+      </div>
+      <h3 class="card-title">Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers</h3>
+      <p class="card-summary">A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/30facabe81907351.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="php2shell exploitation hits government entity amid global scanning and signs of ai-assisted hacking"
+       data-id="61e85af308d8d6a8"
+       data-published="2026-10-25T22:49:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-25T22:49:46+05:30" title="25 October 2026, 12:19">25 October 2026, 12:19</time>
+      </div>
+      <h3 class="card-title">PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking</h3>
+      <p class="card-summary">Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/61e85af308d8d6a8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware,vulnerability"
        data-vendors=""

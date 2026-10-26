@@ -25,28 +25,37 @@
 
   <div class="brief-header">
     <div class="brief-primary">
-      <h1 class="brief-title">25 October 2026</h1>
+      <h1 class="brief-title">26 October 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-10-25T22:12:26.783295-05:00">25 October 2026, 22:12</time>
+        <time data-iso="2026-10-26T04:41:20.839473-05:00">26 October 2026, 04:41</time>
         <span class="brief-tz">CDT</span>
       </div>
     </div>
     <div class="brief-stats">
+      <span class="stat stat-critical">1 critical</span>
+      <span class="stat stat-action">1 action req.</span>
       <span class="stat">4 articles today</span>
     </div>
   </div>
 
   <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+      </ul>
+    </div>
     <div class="strip-section strip-trending">
       <span class="strip-label">Trending</span>
       <div class="trending-pills">
-        <span class="trend-pill">php2shell<span class="trend-count">9</span></span>
+        <span class="trend-pill">php2shell<span class="trend-count">11</span></span>
+        <span class="trend-pill">security<span class="trend-count">9</span></span>
+        <span class="trend-pill">flaws<span class="trend-count">9</span></span>
         <span class="trend-pill">hackers<span class="trend-count">9</span></span>
-        <span class="trend-pill">flaws<span class="trend-count">8</span></span>
         <span class="trend-pill">agents<span class="trend-count">8</span></span>
         <span class="trend-pill">breach<span class="trend-count">8</span></span>
-        <span class="trend-pill">security<span class="trend-count">8</span></span>
       </div>
     </div>
   </div>
@@ -82,8 +91,8 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
       </div>
     </div>
     <div class="adv-group">
@@ -175,8 +184,142 @@
   </div>
   <div class="day-group">
     <h2 class="day-heading">
-      25 October 2026
+      26 October 2026
       <span class="day-count">4</span>
+    </h2>
+  </div>
+
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft 365 token-replay attacks compromise 97 accounts at 79 organizations"
+       data-id="ca1a95c514dc2c15"
+       data-published="2026-10-26T14:05:51+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-26T14:05:51+05:30" title="26 October 2026, 03:35">26 October 2026, 03:35</time>
+      </div>
+      <h3 class="card-title">Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/ca1a95c514dc2c15.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="gheist uses stolen github tokens to steal private repository secrets via actions logs"
+       data-id="108416439639ed2a"
+       data-published="2026-10-26T13:19:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-26T13:19:46+05:30" title="26 October 2026, 02:49">26 October 2026, 02:49</time>
+      </div>
+      <h3 class="card-title">Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs</h3>
+      <p class="card-summary">An automated campaign is using stolen GitHub tokens to plant workflows that print a repository&#39;s secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>An automated campaign is using stolen GitHub tokens to plant workflows that print a repository&#39;s secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an analysis by cloud security company Wiz.</p></div>
+      <div class="detail-links">
+        <a href="articles/108416439639ed2a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious file in downloads folder tries to trick ai coding agent into installing malware"
+       data-id="5202b3ea89ac07a0"
+       data-published="2026-10-26T11:33:48+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-26T11:33:48+05:30" title="26 October 2026, 01:03">26 October 2026, 01:03</time>
+      </div>
+      <h3 class="card-title">Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware</h3>
+      <p class="card-summary">A malicious instruction file sitting in a developer&#39;s Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/5202b3ea89ac07a0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="php2shell security flaws now sucessfully exploited in the wild"
+       data-id="4ed272d5261ae31c"
+       data-published="2026-10-26T05:19:57-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-26T05:19:57-04:00" title="26 October 2026, 04:19">26 October 2026, 04:19</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">PHP2Shell security flaws now sucessfully exploited in the wild</h3>
+      <p class="card-summary">Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/4ed272d5261ae31c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="day-group">
+    <h2 class="day-heading">
+      25 October 2026
+      <span class="day-count">5</span>
     </h2>
   </div>
 
@@ -240,6 +383,37 @@
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
         <a href="articles/61e85af308d8d6a8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="Palo Alto"
+       data-severity="medium"
+       data-title="php2shell exploitation attempts continue amid suspected n. korea global scanning activity"
+       data-id="3746ac3ea0809b91"
+       data-published="2026-10-25T22:49:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-10-25T22:49:46+05:30" title="25 October 2026, 12:19">25 October 2026, 12:19</time>
+      </div>
+      <h3 class="card-title">PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity</h3>
+      <p class="card-summary">In an update, Palo Alto Networks Unit 42 said it&#39;s retracting its earlier assessment that the post-compromise activity targeting the European government agency involved the exploitation of the PHP2Shell flaws.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/3746ac3ea0809b91.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
@@ -535,7 +709,7 @@
   <div class="day-group">
     <h2 class="day-heading">
       23 October 2026
-      <span class="day-count">17</span>
+      <span class="day-count">12</span>
     </h2>
   </div>
 
@@ -917,161 +1091,6 @@
       <div class="detail-links">
         <a href="articles/50cae6acc83e4618.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="cve,malware"
-       data-vendors=""
-       data-severity="critical"
-       data-title="critical flaw in python’s popular pillow image library allows code execution via a crafted image"
-       data-id="4c9c5fbf1deb62f0"
-       data-published="2026-10-23T15:06:00+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-10-23T15:06:00+05:30" title="23 October 2026, 04:36">23 October 2026, 04:36</time>
-      </div>
-      <h3 class="card-title">Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image</h3>
-      <p class="card-summary">Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/4c9c5fbf1deb62f0.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="phishing"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft teams to get ai-powered, context-aware phishing detection"
-       data-id="c05442d53ece0fc0"
-       data-published="2026-10-23T14:54:41-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-23T14:54:41-04:00" title="23 October 2026, 13:54">23 October 2026, 13:54</time>
-      </div>
-      <h3 class="card-title">Microsoft Teams to get AI-powered, context-aware phishing detection</h3>
-      <p class="card-summary">Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-        </div>
-        <div class="card-tags">
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/c05442d53ece0fc0.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="cve,exploit,malware,vulnerability"
-       data-vendors="Linux"
-       data-severity="high"
-       data-title="researchers demonstrate node2shell rce exploit on node.js build using crafted brotli data"
-       data-id="49599b378fe05590"
-       data-published="2026-10-23T14:10:43+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-23T14:10:43+05:30" title="23 October 2026, 03:40">23 October 2026, 03:40</time>
-      </div>
-      <h3 class="card-title">Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data</h3>
-      <p class="card-summary">Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/49599b378fe05590.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="critical x402 sdk flaw could let malicious apis drain ai agents’ token balances"
-       data-id="147b4c5cb4012a5e"
-       data-published="2026-10-23T14:05:45+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-23T14:05:45+05:30" title="23 October 2026, 03:35">23 October 2026, 03:35</time>
-      </div>
-      <h3 class="card-title">Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances</h3>
-      <p class="card-summary">AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/147b4c5cb4012a5e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="why caribbean threats cascade into global cyber-risk"
-       data-id="2112da02262f5d7c"
-       data-published="2026-10-23T14:00:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-23T14:00:00+00:00" title="23 October 2026, 09:00">23 October 2026, 09:00</time>
-      </div>
-      <h3 class="card-title">Why Caribbean Threats Cascade Into Global Cyber-Risk</h3>
-      <p class="card-summary">The region is demonstrating what happens when exploits accelerate but assurance does not.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/2112da02262f5d7c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

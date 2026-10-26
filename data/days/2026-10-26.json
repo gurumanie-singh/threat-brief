@@ -1,5 +1,118 @@
 [
   {
+    "id": "63283e09cdedcdc6",
+    "title": "Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
+    "published": "2026-10-26T19:36:13+05:30",
+    "fetched_at": "2026-10-26T16:28:34.345031+00:00",
+    "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with.",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with.",
+      "impact": "Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with. A leaked key led to a software supply-chain\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ebaf9fe161baa2f7",
+    "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
+    "published": "2026-10-26T17:22:41+05:30",
+    "fetched_at": "2026-10-26T16:28:34.345326+00:00",
+    "summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say.",
+    "tags": [],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say.",
+    "quick_take": "",
+    "sections": {
+      "impact": "An attacker would first need a vulnerable Wasmtime build to compile a module they control, and one of the flaws affects only ARM64 systems.\n\nAssessed severity: HIGH."
+    },
+    "email_summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "8d8dbba8ff53a73e",
+    "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
+    "published": "2026-10-26T16:53:56+05:30",
+    "fetched_at": "2026-10-26T16:28:34.345571+00:00",
+    "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into one coordinated view.",
+    "tags": [],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into one coordinated view."
+    },
+    "email_summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "8490ca355c06d7dc",
+    "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
+    "published": "2026-10-26T15:24:02+05:30",
+    "fetched_at": "2026-10-26T16:28:34.345794+00:00",
+    "summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own container app.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own container app.",
+      "technical": "The kit's Telegram part matches Baohuo, a backdoor that Doctor"
+    },
+    "email_summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own container app.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "ca1a95c514dc2c15",
     "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
     "source": "The Hacker News",
@@ -24,6 +137,32 @@
       "mitigation": "Huntress, which observed the activity between July 14 and September 22, 2026, said it detected 497 successful Microsoft 365 sign-in events across"
     },
     "email_summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations. Huntress, which observed the activity between July 14 and September 22, 2026, said it detected 497 successful Microsoft 365 sign-in events across.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6860b6c8a8dd0a74",
+    "title": "10 Software Security Practices Built for the Next 250 Years",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/10-software-security-practices-built-250-years",
+    "published": "2026-10-26T14:00:00+00:00",
+    "fetched_at": "2026-10-26T16:28:35.178828+00:00",
+    "summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for generations.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "low",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for generations.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for generations.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -54,6 +193,62 @@
     "highlighted": false
   },
   {
+    "id": "da4de164854fa1b7",
+    "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
+    "published": "2026-10-26T12:27:57-04:00",
+    "fetched_at": "2026-10-26T16:28:34.743507+00:00",
+    "summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]\n\nAssessed severity: CRITICAL."
+    },
+    "email_summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ccb738e0c55073c1",
+    "title": "Microsoft releases emergency .NET patches for critical Brotli flaw",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/",
+    "published": "2026-10-26T11:38:24-04:00",
+    "fetched_at": "2026-10-26T16:28:34.743714+00:00",
+    "summary": "Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [...]",
+    "tags": [
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [...]. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "5202b3ea89ac07a0",
     "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
     "source": "The Hacker News",
@@ -76,6 +271,79 @@
       "impact": "The company caught the attempt on a real customer's machine and stopped the agent before any code ran.\n\nAssessed severity: MEDIUM."
     },
     "email_summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week. The company caught the attempt on a real customer's machine and stopped the agent before any code ran.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "48c3f5f80f58f76d",
+    "title": "When an AI Agent Is the Incident, the Identity Record Is the Evidence",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/when-an-ai-agent-is-the-incident-the-identity-record-is-the-evidence/",
+    "published": "2026-10-26T10:00:10-04:00",
+    "fetched_at": "2026-10-26T16:28:34.743915+00:00",
+    "summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that answer has to exist before the incident does. [...]",
+    "tags": [],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that answer has to exist before the incident does. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that answer has to exist before the incident does. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "81e3031bb113fdeb",
+    "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/",
+    "published": "2026-10-26T09:56:44-04:00",
+    "fetched_at": "2026-10-26T16:28:34.744111+00:00",
+    "summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United States. [...]",
+    "tags": [],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United States. [...]",
+    "quick_take": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United…",
+    "sections": {
+      "impact": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United States. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United States. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "062b2688d7b01fe4",
+    "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+    "published": "2026-10-26T06:26:52-04:00",
+    "fetched_at": "2026-10-26T16:28:34.744318+00:00",
+    "summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
+    "tags": [],
+    "day": "2026-10-26",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

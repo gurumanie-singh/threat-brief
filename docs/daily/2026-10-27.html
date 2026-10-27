@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 October 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">12 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -63,6 +65,9 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
@@ -70,13 +75,201 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--action card--medium"
+       data-tags="cve"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="microsoft authenticator flaw let permissionless android apps steal work account tokens"
+       data-id="8cd520dbee07da24"
+       data-published="2026-10-27T17:39:50+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-27T17:39:50+05:30" title="27 October 2026, 07:09">27 October 2026, 07:09</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens</h3>
+      <p class="card-summary">Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim&#39;s work account.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8cd520dbee07da24.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="keystone to destroy 18,835 hardware wallets after hackers steal device verification key"
+       data-id="9b6f39ff2cf0dbc6"
+       data-published="2026-10-27T17:16:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-27T17:16:00+05:30" title="27 October 2026, 06:46">27 October 2026, 06:46</time>
+      </div>
+      <h3 class="card-title">Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key</h3>
+      <p class="card-summary">An attacker who gained access to Keystone&#39;s website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9b6f39ff2cf0dbc6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai-generated fake login pages are making account takeovers easier"
+       data-id="396fe15171b8a468"
+       data-published="2026-10-27T17:02:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-27T17:02:46+05:30" title="27 October 2026, 06:32">27 October 2026, 06:32</time>
+      </div>
+      <h3 class="card-title">AI-Generated Fake Login Pages Are Making Account Takeovers Easier</h3>
+      <p class="card-summary">Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/396fe15171b8a468.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="lazarus abuses south korean security software to deploy malware using post-quantum encryption"
+       data-id="a271b455f56f6989"
+       data-published="2026-10-27T17:02:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-27T17:02:31+05:30" title="27 October 2026, 06:32">27 October 2026, 06:32</time>
+      </div>
+      <h3 class="card-title">Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption</h3>
+      <p class="card-summary">The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a271b455f56f6989.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="australia gets into amadey malware backend, cuts off access to 180,000 infected computers"
+       data-id="706bb492477453a0"
+       data-published="2026-10-27T15:03:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-27T15:03:06+05:30" title="27 October 2026, 04:33">27 October 2026, 04:33</time>
+      </div>
+      <h3 class="card-title">Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers</h3>
+      <p class="card-summary">A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency&#39;s operators gained access to the criminal&#39;s…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency&#39;s operators gained access to the criminal&#39;s operation&#39;s backend and cut it off from those computers.</p></div>
+      <div class="detail-links">
+        <a href="../articles/706bb492477453a0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai compaction flaw let researchers bypass hidden reasoning protections"
+       data-id="58ba9a3ab2b1b7a1"
+       data-published="2026-10-27T13:52:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-27T13:52:43+05:30" title="27 October 2026, 03:22">27 October 2026, 03:22</time>
+      </div>
+      <h3 class="card-title">OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections</h3>
+      <p class="card-summary">OpenAI&#39;s compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model&#39;s hidden reasoning out in plain text, security firm Xint has shown.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/58ba9a3ab2b1b7a1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -139,6 +332,102 @@
       <div class="detail-links">
         <a href="../articles/904fa7650e07e007.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,patch,zero-day"
+       data-vendors="Apple"
+       data-severity="critical"
+       data-title="apple backports coregraphics zero-day patches to older iphones"
+       data-id="3d61fcb9645b0576"
+       data-published="2026-10-27T06:36:12-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-10-27T06:36:12-04:00" title="27 October 2026, 05:36">27 October 2026, 05:36</time>
+      </div>
+      <h3 class="card-title">Apple backports CoreGraphics zero-day patches to older iPhones</h3>
+      <p class="card-summary">​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in &#34;extremely sophisticated&#34; targeted attacks on iOS devices. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3d61fcb9645b0576.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="energy giant engie discloses data breach affecting customers"
+       data-id="37b55e6643fe75a5"
+       data-published="2026-10-27T05:25:50-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-27T05:25:50-04:00" title="27 October 2026, 04:25">27 October 2026, 04:25</time>
+      </div>
+      <h3 class="card-title">Energy giant ENGIE discloses data breach affecting customers</h3>
+      <p class="card-summary">French energy giant ENGIE, one of the world&#39;s largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/37b55e6643fe75a5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="cisa confirms php2shell vulnerabilities now exploited in attacks"
+       data-id="8dc36f771bd2432a"
+       data-published="2026-10-27T04:20:54-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-27T04:20:54-04:00" title="27 October 2026, 03:20">27 October 2026, 03:20</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA confirms PHP2Shell vulnerabilities now exploited in attacks</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8dc36f771bd2432a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

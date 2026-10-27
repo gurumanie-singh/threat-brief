@@ -1,5 +1,114 @@
 [
   {
+    "id": "f33b455f13d5f0be",
+    "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+    "published": "2026-10-27T23:56:46+05:30",
+    "fetched_at": "2026-10-27T19:15:22.954846+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator. TrendAI, which analyzed three exposed server environments used by threat actors to conduct the malicious cyber operations, described them as distinct from previously published.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "bf2c73563bf07574",
+    "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+    "published": "2026-10-27T19:29:48+05:30",
+    "fetched_at": "2026-10-27T19:15:22.955150+00:00",
+    "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups.",
+    "tags": [],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server checks a client certificate and vice versa, and a revocation list is configured to block revoked"
+    },
+    "email_summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups. The flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server checks a client certificate and vice versa, and a revocation list is configured to block revoked.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "17113d016ac2c2e8",
+    "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+    "published": "2026-10-27T19:29:09+05:30",
+    "fetched_at": "2026-10-27T19:15:22.955381+00:00",
+    "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.",
+    "tags": [
+      "cve",
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-27",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "cvss": 8.8,
+    "severity": "high",
+    "vendors": [
+      "Apple"
+    ],
+    "action_required": false,
+    "card_summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.",
+    "quick_take": "",
+    "sections": {
+      "impact": "The vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a maliciously crafted file.\n\nAssessed severity: HIGH. CVSS score: 8.8/10."
+    },
+    "email_summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. Tracked as CVE-2026-86950. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "48072cd60e10703c",
+    "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+    "published": "2026-10-27T17:43:07+00:00",
+    "fetched_at": "2026-10-27T19:15:23.756171+00:00",
+    "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+    "tags": [],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "8cd520dbee07da24",
     "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
     "source": "The Hacker News",
@@ -111,6 +220,34 @@
     "highlighted": false
   },
   {
+    "id": "be365b941f06973b",
+    "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+    "published": "2026-10-27T16:47:20+00:00",
+    "fetched_at": "2026-10-27T19:15:23.756387+00:00",
+    "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+    "tags": [
+      "breach",
+      "malware"
+    ],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "706bb492477453a0",
     "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
     "source": "The Hacker News",
@@ -133,6 +270,36 @@
       "overview": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those computers."
     },
     "email_summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those computers.\n\n\"The next steps that we took were to disconnect that Amadey controller from all those.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "526c9abb9fe34f54",
+    "title": "Microsoft releases Windows OOB updates to distrust eMudhra certificates",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/",
+    "published": "2026-10-27T14:20:28-04:00",
+    "fetched_at": "2026-10-27T19:15:23.427286+00:00",
+    "summary": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]",
+    "quick_take": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust…",
+    "sections": {
+      "impact": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -163,6 +330,34 @@
     "highlighted": false
   },
   {
+    "id": "93483e51f083572c",
+    "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+    "published": "2026-10-27T12:15:39-04:00",
+    "fetched_at": "2026-10-27T19:15:23.427498+00:00",
+    "summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "f75403e1b673fed6",
     "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
     "source": "The Hacker News",
@@ -185,6 +380,116 @@
       "mitigation": "The Computer Emergency Response Team of Ukraine (CERT-UA) has issued an alert warning of unauthorized remote access to video surveillance systems manufactured by Dahua.\n\n\"Cases of compromising IP cameras and DVRs with access to the video stream, changing the device configuration and creating third-party accounts have been recorded,\" the State Special Communications Service of Ukraine (SSSCIP)"
     },
     "email_summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has issued an alert warning of unauthorized remote access to video surveillance systems manufactured by Dahua.\n\n\"Cases of compromising IP cameras and DVRs with access to the video stream, changing the device configuration and creating third-party accounts have been recorded,\" the State Special Communications Service of Ukraine (SSSCIP).",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d53a85c1bc587fac",
+    "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+    "published": "2026-10-27T12:00:00+00:00",
+    "fetched_at": "2026-10-27T19:15:28.743453+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-10-27",
+    "cves": [
+      "CVE-2023-4863",
+      "CVE-2026-16436",
+      "CVE-2026-16437",
+      "CVE-2026-16438"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform…",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz are affected:\n\n \n Mitsubishi Electric GENESIS64 >=10.97|<=10.97.2 (CVE-2023-4863)\n\n Mitsubishi Electric ICONICS Suite >=10.97|<=10.97.2 (CVE-2023-4863)\n\n Mitsubishi Electric GENESIS <=11.03 (CVE-2026-16436, CVE-2026-16437)\n\n Mitsubishi Electric GENESIS64 <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric ICONICS Suite <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric Hyper Historian <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric AnalytiX <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric MobileHMI <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric IoTWorX <=10.97.3 (CVE-2026-16436, CVE-2026-16437)\n\n Mitsubishi Electric MC Works64 vers:all/* (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric GENESIS32 vers:all/* (CVE-2026-16436, CVE-2026-16437)\n\n Mitsubishi Electric BizViz vers:all/* (CVE-2026-16436, CVE-2026-16437)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.1 \n Mitsubishi Electric \n Mitsubishi Electric GENESIS64 \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Out-of-bounds Write, Weak Password Recovery Mechanism for Forgotten Password, Incorrect Privilege Assignment \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2023-4863 \n Out-of-bounds Write (CWE-787) vulnerability caused by libwebp, an internal component in GENESIS64 and ICONICS Suite could allow an authenticated local attacker to cause a heap-based buffer overflow and execute arbitrary code by importing a crafted file as an administrator for the affected product.",
+      "technical": "The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz are affected:\n\n \n Mitsubishi Electric GENESIS64 >=10.97|<=10.97.2 (CVE-2023-4863)\n\n Mitsubishi Electric ICONICS Suite >=10.97|<=10.97.2 (CVE-2023-4863)\n\n Mitsubishi Electric GENESIS <=11.03 (CVE-2026-16436, CVE-2026-16437)\n\n Mitsubishi Electric GENESIS64 <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric ICONICS Suite <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric Hyper Historian <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric AnalytiX <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric MobileHMI <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric IoTWorX <=10.97.3 (CVE-2026-16436, CVE-2026-16437)\n\n Mitsubishi Electric MC Works64 vers:all/* (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438)\n\n Mitsubishi Electric GENESIS32 vers:all/* (CVE-2026-16436, CVE-2026-16437)\n\n Mitsubishi Electric BizViz vers:all/* (CVE-2026-16436, CVE-2026-16437)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.1 \n Mitsubishi Electric \n Mitsubishi Electric GENESIS64 \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Out-of-bounds Write, Weak Password Recovery Mechanism for Forgotten Password, Incorrect Privilege Assignment \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: United States\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2023-4863 \n Out-of-bounds Write (CWE-787) vulnerability caused by libwebp, an internal component in GENESIS64 and ICONICS Suite could allow an authenticated local attacker to cause a heap-based buffer overflow and execute arbitrary code by importing a crafted file as an administrator for the affected product. Mitigation \nFor customers using the affected product who cannot immediately update it, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend preventing the user from clicking on web links in emails from untrusted sources, or from opening attachments in untrusted emails, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers using the affected product who cannot immediately update it, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend preventing the user from clicking on web links in emails from untrusted sources, or from opening attachments in untrusted emails, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers using the affected product who cannot immediately update it, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend preventing the user from clicking on web links in emails from untrusted sources, or from opening attachments in untrusted emails, to minimize the risk of exploitation of this vulnerability.\n\nReferenced vulnerabilities: CVE-2023-4863, CVE-2026-16436, CVE-2026-16437, CVE-2026-16438.",
+      "impact": "Mitigation \nFor customers using the affected product who cannot immediately update it, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend using the PCs with the affected product installed in the LAN and blocking remote login from untrusted networks and hosts, and from non-administrator users, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers using the affected product who cannot immediately update it, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend preventing the user from clicking on web links in emails from untrusted sources, or from opening attachments in untrusted emails, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers using the affected product who cannot immediately update it, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend using the PCs with the affected product installed in the LAN and blocking remote login from untrusted networks and hosts, and from non-administrator users, to minimize the risk of exploitation of this vulnerability.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Mitigation \nFor customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend blocking unauthorized access by using a firewall, virtual private network (VPN), etc. and allowing remote login only to administrator when internet access is required, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend blocking unauthorized access by using a firewall, virtual private network (VPN), etc. and allowing remote login only to administrator when internet access is required, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend blocking unauthorized access by using a firewall, virtual private network (VPN), etc. and allowing remote login only to administrator when internet access is required, to minimize the risk of exploitation of this vulnerability. Mitigation \nFor customers of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions recommend blocking unauthorized access by using a firewall, virtual private network (VPN), etc. and allowing remote login only to administrator when internet access is required, to minimize the risk of exploitation of this vulnerability."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. Tracked as CVE-2023-4863, CVE-2026-16436, CVE-2026-16437.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a58a16b5c6db83b1",
+    "title": "EPICS Base",
+    "source": "CISA Alerts",
+    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+    "published": "2026-10-27T12:00:00+00:00",
+    "fetched_at": "2026-10-27T19:15:28.744870+00:00",
+    "summary": "View CSAF ",
+    "tags": [
+      "cve",
+      "exploit",
+      "malware",
+      "phishing",
+      "vulnerability"
+    ],
+    "day": "2026-10-27",
+    "cves": [
+      "CVE-2026-114595",
+      "CVE-2026-114596",
+      "CVE-2026-114597",
+      "CVE-2026-114598"
+    ],
+    "cvss": 3.1,
+    "severity": "low",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "View CSAF",
+    "quick_take": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary…",
+    "sections": {
+      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected:\n\n \n EPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.8 \n The EPICS Community \n EPICS Base release \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Integer Overflow or Wraparound, Improper Handling of Length Parameter Inconsistency, Access of Resource Using Incompatible Type ('Type Confusion') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Global\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-114595 \n In EPICS Base release 7.0.10 and prior, an integer overflow in network request processing can cause memory to be allocated with an incorrect size.",
+      "impact": "The following versions of EPICS Base are affected:\n\n \n EPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.8 \n The EPICS Community \n EPICS Base release \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Integer Overflow or Wraparound, Improper Handling of Length Parameter Inconsistency, Access of Resource Using Incompatible Type ('Type Confusion') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Global\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-114595 \n In EPICS Base release 7.0.10 and prior, an integer overflow in network request processing can cause memory to be allocated with an incorrect size. Affected users should update to the 7.0.11 release. Affected users should update to the 7.0.11 release.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
+      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . Read More \n \n 1 Affected Product \n \n The EPICS Community EPICS Base release: <=7.0.10 \n \n Product Status: known_affected\n\n \n Remediations \n \n Mitigation \nThe EPICS Community has made available updates to the epics-base GitHub repositories. Affected users should update to the 7.0.11 release. Read More \n \n 2 Affected Products \n \n The EPICS Community EPICS Base release: <=7.0.10 \n \n Product Status: known_affected\n\n \n Remediations \n \n Mitigation \nThe EPICS Community has made available updates to the epics-base GitHub repositories.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. Tracked as CVE-2026-114595, CVE-2026-114596, CVE-2026-114597.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a35eab3a917fd663",
+    "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/",
+    "published": "2026-10-27T10:09:46-04:00",
+    "fetched_at": "2026-10-27T19:15:23.427693+00:00",
+    "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]\n\nAssessed severity: HIGH."
+    },
+    "email_summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]. Severity is rated high.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -226,6 +531,34 @@
     "highlighted": false
   },
   {
+    "id": "1fe7458d81cf20d4",
+    "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
+    "published": "2026-10-27T10:01:11-04:00",
+    "fetched_at": "2026-10-27T19:15:23.427899+00:00",
+    "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...]",
+    "tags": [],
+    "day": "2026-10-27",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...]",
+      "impact": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "3d61fcb9645b0576",
     "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
     "source": "BleepingComputer",
@@ -253,88 +586,6 @@
       "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
     },
     "email_summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "37b55e6643fe75a5",
-    "title": "Energy giant ENGIE discloses data breach affecting customers",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
-    "published": "2026-10-27T05:25:50-04:00",
-    "fetched_at": "2026-10-27T13:56:42.433863+00:00",
-    "summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
-    "tags": [
-      "breach"
-    ],
-    "day": "2026-10-27",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
-    "quick_take": "",
-    "sections": {
-      "impact": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]\n\nAssessed severity: MEDIUM.",
-      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
-    },
-    "email_summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "8dc36f771bd2432a",
-    "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-    "source": "BleepingComputer",
-    "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
-    "published": "2026-10-27T04:20:54-04:00",
-    "fetched_at": "2026-10-27T13:56:42.434034+00:00",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
-    "tags": [
-      "exploit",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-10-27",
-    "cves": [],
-    "cvss": null,
-    "severity": "critical",
-    "vendors": [
-      "AWS"
-    ],
-    "action_required": true,
-    "card_summary": "Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]. Severity is rated critical.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "e94647a1637cc293",
-    "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
-    "source": "Dark Reading",
-    "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
-    "published": "2026-10-27T00:26:50+00:00",
-    "fetched_at": "2026-10-27T01:06:42.757897+00:00",
-    "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
-    "tags": [
-      "patch"
-    ],
-    "day": "2026-10-27",
-    "cves": [],
-    "cvss": null,
-    "severity": "medium",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
-    "quick_take": "",
-    "sections": {},
-    "email_summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

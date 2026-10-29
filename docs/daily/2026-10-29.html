@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">29 October 2026</h1>
-      <span class="brief-sub">3 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>4 items require immediate action — patches or mitigations available</li>
+        <li>Microsoft, Linux ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -48,7 +50,9 @@
     </div>
     <div class="quick-filters" id="quickFilters">
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -62,8 +66,12 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
       </div>
     </div>
@@ -72,13 +80,411 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="google&#39;s gemini 4 carbon leads benchmarks for finding, exploiting, and patching vulnerabilities"
+       data-id="50dc5bcf0f4936ed"
+       data-published="2026-10-29T19:12:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-29T19:12:40+05:30" title="29 October 2026, 08:42">29 October 2026, 08:42</time>
+      </div>
+      <h3 class="card-title">Google&#39;s Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities</h3>
+      <p class="card-summary">Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/50dc5bcf0f4936ed.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="webinar: how to build ai threat readiness into your security operations"
+       data-id="323dc78e92ae0210"
+       data-published="2026-10-29T17:09:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-29T17:09:41+05:30" title="29 October 2026, 06:39">29 October 2026, 06:39</time>
+      </div>
+      <h3 class="card-title">Webinar: How to Build AI Threat Readiness Into Your Security Operations</h3>
+      <p class="card-summary">Security teams have spent years trying to detect threats faster. AI is changing the harder part: how much time defenders have left to act.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/323dc78e92ae0210.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="telegram android flaw lets attackers run code when users answer voice calls"
+       data-id="34b06a2c469c55dd"
+       data-published="2026-10-29T17:09:18+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-10-29T17:09:18+05:30" title="29 October 2026, 06:39">29 October 2026, 06:39</time>
+      </div>
+      <h3 class="card-title">Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls</h3>
+      <p class="card-summary">A flaw in Telegram for Android allowed an attacker to run code on a victim&#39;s phone via a voice call once the victim answered, according to security startup NebuSec.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/34b06a2c469c55dd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="the rise of the threat operator: how ai will redefine security operations and careers"
+       data-id="31c003a48a8662d6"
+       data-published="2026-10-29T17:03:41+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-29T17:03:41+05:30" title="29 October 2026, 06:33">29 October 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers</h3>
+      <p class="card-summary">AI is beginning to take over much of the work that has traditionally defined the security analyst&#39;s job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI is beginning to take over much of the work that has traditionally defined the security analyst&#39;s job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can perform on their own. As these capabilities mature, security operations centers (SOCs) will see major changes in how work is organized, how</p></div>
+      <div class="detail-links">
+        <a href="../articles/31c003a48a8662d6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="26,400 valid cloud and ai credentials found exposed in public gitee repositories"
+       data-id="8ee95c132ac01d22"
+       data-published="2026-10-29T17:03:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-29T17:03:15+05:30" title="29 October 2026, 06:33">29 October 2026, 06:33</time>
+      </div>
+      <h3 class="card-title">26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories</h3>
+      <p class="card-summary">26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8ee95c132ac01d22.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="apt,cve,exploit,malware,patch,vulnerability"
+       data-vendors="Cisco"
+       data-severity="critical"
+       data-title="cisco patches actively exploited asa and ftd vpn flaw that can crash firewalls"
+       data-id="b756336be6b1c13a"
+       data-published="2026-10-29T16:14:46+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-10-29T16:14:46+05:30" title="29 October 2026, 05:44">29 October 2026, 05:44</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls</h3>
+      <p class="card-summary">Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b756336be6b1c13a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="github launches npm firewall to block malicious packages before installation"
+       data-id="ba5c532723a0bda8"
+       data-published="2026-10-29T15:56:33+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-29T15:56:33+05:30" title="29 October 2026, 05:26">29 October 2026, 05:26</time>
+      </div>
+      <h3 class="card-title">GitHub Launches npm Firewall to Block Malicious Packages Before Installation</h3>
+      <p class="card-summary">GitHub has announced that it&#39;s introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ba5c532723a0bda8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="critical"
+       data-title="attacker tried to exploit alpine linux’s gitlab via cvss 10.0 flaw its ruby left open"
+       data-id="d319fa6cbd2237fa"
+       data-published="2026-10-29T14:35:39+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-29T14:35:39+05:30" title="29 October 2026, 04:05">29 October 2026, 04:05</time>
+      </div>
+      <h3 class="card-title">Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open</h3>
+      <p class="card-summary">An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project&#39;s own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d319fa6cbd2237fa.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware"
+       data-vendors="Cisco"
+       data-severity="medium"
+       data-title="hackers exploited cisco sd-wan flaw to plant malware built to steal encryption keys"
+       data-id="c32ba395309f88bf"
+       data-published="2026-10-29T13:54:22+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-10-29T13:54:22+05:30" title="29 October 2026, 03:24">29 October 2026, 03:24</time>
+      </div>
+      <h3 class="card-title">Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys</h3>
+      <p class="card-summary">Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization&#39;s SD-WAN network.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c32ba395309f88bf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="low"
+       data-title="hitachi energy coretec product"
+       data-id="0507262a71a766e9"
+       data-published="2026-10-29T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-29T12:00:00+00:00" title="29 October 2026, 07:00">29 October 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hitachi Energy CoreTec Product</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product.</p></div>
+      <div class="detail-links">
+        <a href="../articles/0507262a71a766e9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="apt,cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="siemens mendix saml module"
+       data-id="aac6815c4169350c"
+       data-published="2026-10-29T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-29T12:00:00+00:00" title="29 October 2026, 07:00">29 October 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Mendix SAML Module</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions.</p></div>
+      <div class="detail-links">
+        <a href="../articles/aac6815c4169350c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="hitachi energy tro600 series products"
+       data-id="625d8be509574198"
+       data-published="2026-10-29T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-10-29T12:00:00+00:00" title="29 October 2026, 07:00">29 October 2026, 07:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Hitachi Energy TRO600 series products</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information.</p></div>
+      <div class="detail-links">
+        <a href="../articles/625d8be509574198.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability,zero-day"
        data-vendors="VMware"
@@ -144,6 +550,155 @@
       <div class="detail-links">
         <a href="../articles/da787720d3eca76b.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes remote desktop failures caused by recent windows updates"
+       data-id="d39e6a7fcd010b9b"
+       data-published="2026-10-29T10:35:40-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-29T10:35:40-04:00" title="29 October 2026, 09:35">29 October 2026, 09:35</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes Remote Desktop failures caused by recent Windows updates</h3>
+      <p class="card-summary">Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the &#34;Administrator protection&#34; security feature is enabled. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d39e6a7fcd010b9b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="3 ways ai agents already operate in your browser"
+       data-id="40c1c88cb8288f36"
+       data-published="2026-10-29T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-29T10:00:10-04:00" title="29 October 2026, 09:00">29 October 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">3 Ways AI Agents Already Operate in Your Browser</h3>
+      <p class="card-summary">AI agents can control authenticated browsers, interact with corporate applications, and access sensitive data while appearing to act as legitimate employees. Keep Aware examines three ways agents operate inside browsers and why traditional security tools…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>AI agents can control authenticated browsers, interact with corporate applications, and access sensitive data while appearing to act as legitimate employees. Keep Aware examines three ways agents operate inside browsers and why traditional security tools may struggle to distinguish their activity from human users. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/40c1c88cb8288f36.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="shadowy ai relay disables openai codex, claude code sandboxes"
+       data-id="df76adf9fd08a587"
+       data-published="2026-10-29T10:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-29T10:00:00+00:00" title="29 October 2026, 05:00">29 October 2026, 05:00</time>
+      </div>
+      <h3 class="card-title">Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes</h3>
+      <p class="card-summary">The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with key security features turned off.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/df76adf9fd08a587.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="patch,vulnerability"
+       data-vendors="AWS,Linux"
+       data-severity="high"
+       data-title="cisa warns of fragnesia linux flaw chained in php2shell attacks"
+       data-id="72189fd1dd4c0589"
+       data-published="2026-10-29T09:59:48-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-10-29T09:59:48-04:00" title="29 October 2026, 08:59">29 October 2026, 08:59</time>
+      </div>
+      <h3 class="card-title">CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the PHP2Shell flaws in the wild. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/72189fd1dd4c0589.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="windows 11 kb5127936 update released with 41 changes and fixes"
+       data-id="1c06bda4d6db1eda"
+       data-published="2026-10-29T08:00:07-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-29T08:00:07-04:00" title="29 October 2026, 07:00">29 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">Windows 11 KB5127936 update released with 41 changes and fixes</h3>
+      <p class="card-summary">Microsoft released the KB5127936 preview cumulative update for Windows 11 versions 25H2 and 26H2, with 41 changes, including File Explorer and Cloud rebuild improvements. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1c06bda4d6db1eda.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127936-update-released-with-41-changes-and-fixes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

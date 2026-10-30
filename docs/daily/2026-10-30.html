@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 October 2026</h1>
-      <span class="brief-sub">13 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>3 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
         <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
@@ -67,6 +68,7 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
@@ -75,8 +77,8 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
@@ -84,6 +86,103 @@
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chinese hackers use ai-powered artex to target over 200 organizations worldwide"
+       data-id="d9b18b86f077bfef"
+       data-published="2026-10-30T22:28:44+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T22:28:44+05:30" title="30 October 2026, 11:58">30 October 2026, 11:58</time>
+      </div>
+      <h3 class="card-title">Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide</h3>
+      <p class="card-summary">Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d9b18b86f077bfef.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="teamviewer flaw lets remote computers attack users who connect to control them"
+       data-id="7da9ae9edfc11130"
+       data-published="2026-10-30T20:47:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T20:47:28+05:30" title="30 October 2026, 10:17">30 October 2026, 10:17</time>
+      </div>
+      <h3 class="card-title">TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them</h3>
+      <p class="card-summary">TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host.</p></div>
+      <div class="detail-links">
+        <a href="../articles/7da9ae9edfc11130.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="wordpress rce flaw draws nearly 63,000 attack attempts in just 24 hours"
+       data-id="ba09f69f04b1074c"
+       data-published="2026-10-30T19:38:14+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-30T19:38:14+05:30" title="30 October 2026, 09:08">30 October 2026, 09:08</time>
+      </div>
+      <h3 class="card-title">WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours</h3>
+      <p class="card-summary">Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ba09f69f04b1074c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -172,6 +271,34 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="l’italia è afflitta da vulnerabilità informatiche, senza una causa chiara"
+       data-id="0328984d5d8b85a7"
+       data-published="2026-10-30T15:39:54+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T15:39:54+00:00" title="30 October 2026, 10:39">30 October 2026, 10:39</time>
+      </div>
+      <h3 class="card-title">L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara</h3>
+      <p class="card-summary">I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0328984d5d8b85a7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
        data-severity="medium"
@@ -197,6 +324,35 @@
       <div class="detail-links">
         <a href="../articles/55a867c86a955b6f.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="undead software projects continue to raise security risks"
+       data-id="fa0e6093652b12e7"
+       data-published="2026-10-30T14:10:37+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T14:10:37+00:00" title="30 October 2026, 09:10">30 October 2026, 09:10</time>
+      </div>
+      <h3 class="card-title">Undead Software Projects Continue to Raise Security Risks</h3>
+      <p class="card-summary">A security firm patched a decade-old app to prevent the takeover of millions of machines, highlighting that abandoned domains remain a boon to attackers.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fa0e6093652b12e7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -262,6 +418,130 @@
       <div class="detail-links">
         <a href="../articles/1adb502a0ac43d79.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,cve,exploit,malware,patch,vulnerability"
+       data-vendors="Ivanti"
+       data-severity="high"
+       data-title="cisa adds two known exploited vulnerabilities to catalog"
+       data-id="90438601826ea3b2"
+       data-published="2026-10-30T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-10-30T12:00:00+00:00" title="30 October 2026, 07:00">30 October 2026, 07:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds Two Known Exploited Vulnerabilities to Catalog</h3>
+      <p class="card-summary">CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/90438601826ea3b2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="trezor warns of suspected crypto-theft implant in hardware wallet"
+       data-id="79206d6b06c92003"
+       data-published="2026-10-30T11:58:20-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T11:58:20-04:00" title="30 October 2026, 10:58">30 October 2026, 10:58</time>
+      </div>
+      <h3 class="card-title">Trezor warns of suspected crypto-theft implant in hardware wallet</h3>
+      <p class="card-summary">Hardware wallet device maker Trezor has received credible reports about a suspected hardware crypto-theft implant in a Trezor Safe 5 sold by its reseller CryptoBilis in Southeast Asia. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/79206d6b06c92003.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious claude code extension on cursor planted ssh backdoors"
+       data-id="3748f37c280f0bab"
+       data-published="2026-10-30T10:36:54-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T10:36:54-04:00" title="30 October 2026, 09:36">30 October 2026, 09:36</time>
+      </div>
+      <h3 class="card-title">Malicious Claude Code extension on Cursor planted SSH backdoors</h3>
+      <p class="card-summary">A malicious version of Anthropic&#39;s Claude Code VS Code extension was distributed through Cursor&#39;s extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3748f37c280f0bab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="ss7 and diameter attacks: how signaling flaws expose your phone"
+       data-id="cb02433524a6164f"
+       data-published="2026-10-30T10:00:10-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-10-30T10:00:10-04:00" title="30 October 2026, 09:00">30 October 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone</h3>
+      <p class="card-summary">Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their devices. Cape explains how these attacks exploit trust between…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their devices. Cape explains how these attacks exploit trust between networks and how its security-focused mobile service helps defend against them. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/cb02433524a6164f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -414,70 +694,6 @@
       <div class="detail-links">
         <a href="../articles/2da5ac6f7fa4ad4d.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="apt,breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="binance links $6.3 billion crypto theft to compromised devops laptop"
-       data-id="da3e8549037049b7"
-       data-published="2026-10-30T05:18:13-04:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-30T05:18:13-04:00" title="30 October 2026, 04:18">30 October 2026, 04:18</time>
-      </div>
-      <h3 class="card-title">Binance links $6.3 billion crypto theft to compromised DevOps laptop</h3>
-      <p class="card-summary">Binance, the world&#39;s largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer&#39;s compromised laptop. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">apt</span>
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/da3e8549037049b7.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="exploit,malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="threatsday: critical firewall flaws, banking trojans rented, weaponized pdf, token theft + 26 more stories"
-       data-id="4295d2b0ee531119"
-       data-published="2026-10-30T00:41:58+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-10-30T00:41:58+05:30" title="29 October 2026, 14:11">29 October 2026, 14:11</time>
-      </div>
-      <h3 class="card-title">ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories</h3>
-      <p class="card-summary">Some attacks take real skill. Others just need someone to leave a door open.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/4295d2b0ee531119.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

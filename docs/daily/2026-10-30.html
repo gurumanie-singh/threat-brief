@@ -27,10 +27,20 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">30 October 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">13 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>2 items require immediate action — patches or mitigations available</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +49,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,15 +63,208 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="trezor warns of suspected hardware implant in one of its wallets sold by cryptobilis"
+       data-id="f78c9f8be926071c"
+       data-published="2026-10-30T17:51:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T17:51:56+05:30" title="30 October 2026, 07:21">30 October 2026, 07:21</time>
+      </div>
+      <h3 class="card-title">Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis</h3>
+      <p class="card-summary">A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f78c9f8be926071c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="why urgent security fixes aren&#39;t fixed. observe, prove, act, confirm gets them moving"
+       data-id="fedb12826bdc731b"
+       data-published="2026-10-30T17:28:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T17:28:53+05:30" title="30 October 2026, 06:58">30 October 2026, 06:58</time>
+      </div>
+      <h3 class="card-title">Why Urgent Security Fixes Aren&#39;t Fixed. Observe, Prove, Act, Confirm Gets Them Moving</h3>
+      <p class="card-summary">The alert is critical. The fix is known.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fedb12826bdc731b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="syrian hacker behind fake tweet that triggered $136 billion market drop gets 42 months in prison"
+       data-id="387521f33a0325db"
+       data-published="2026-10-30T16:10:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T16:10:45+05:30" title="30 October 2026, 05:40">30 October 2026, 05:40</time>
+      </div>
+      <h3 class="card-title">Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison</h3>
+      <p class="card-summary">Ahmad Umar Agha, a Syrian Electronic Army hacker known online as &#34;Th3Pr0,&#34; has been sentenced by a U.S. federal court to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/387521f33a0325db.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="official claude code extension on cursor marketplace trojanized with persistent ssh backdoor"
+       data-id="55a867c86a955b6f"
+       data-published="2026-10-30T14:25:47+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T14:25:47+05:30" title="30 October 2026, 03:55">30 October 2026, 03:55</time>
+      </div>
+      <h3 class="card-title">Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed that a trojanized version of Anthropic&#39;s official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/55a867c86a955b6f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers actively exploit highly critical drupal commerce core authorization bypass flaw"
+       data-id="1b9f9cdf2cfc6336"
+       data-published="2026-10-30T13:15:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-10-30T13:15:30+05:30" title="30 October 2026, 02:45">30 October 2026, 02:45</time>
+      </div>
+      <h3 class="card-title">Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw</h3>
+      <p class="card-summary">Drupal has warned that threat actors are exploiting a &#34;highly critical&#34; security flaw in its Commerce Core component.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1b9f9cdf2cfc6336.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="AWS,Cisco"
+       data-severity="critical"
+       data-title="cisa adds actively exploited gitlab rce and cisco firewall dos flaws to kev"
+       data-id="1adb502a0ac43d79"
+       data-published="2026-10-30T12:57:05+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Cisco</span>        <time class="meta-time" data-iso="2026-10-30T12:57:05+05:30" title="30 October 2026, 02:27">30 October 2026, 02:27</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1adb502a0ac43d79.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors=""
@@ -88,6 +293,159 @@
       <div class="detail-links">
         <a href="../articles/54f19158371adc37.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/binance-suffers-security-breach.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa says max severity gitlab flaw now exploited in the wild"
+       data-id="a559c25c5e7b8db7"
+       data-published="2026-10-30T09:00:32-04:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-10-30T09:00:32-04:00" title="30 October 2026, 08:00">30 October 2026, 08:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">CISA says max severity GitLab flaw now exploited in the wild</h3>
+      <p class="card-summary">Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a559c25c5e7b8db7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="as russia&#39;s cyberwar evolves, belarus steps forward"
+       data-id="16e6cc103d5a5ce7"
+       data-published="2026-10-30T08:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T08:00:00+00:00" title="30 October 2026, 03:00">30 October 2026, 03:00</time>
+      </div>
+      <h3 class="card-title">As Russia&#39;s Cyberwar Evolves, Belarus Steps Forward</h3>
+      <p class="card-summary">The &#34;FrostyNeighbor&#34; advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/16e6cc103d5a5ce7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft finally fixes vpn issues caused by september updates"
+       data-id="da23e24a34ee8a4a"
+       data-published="2026-10-30T07:20:26-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-10-30T07:20:26-04:00" title="30 October 2026, 06:20">30 October 2026, 06:20</time>
+      </div>
+      <h3 class="card-title">Microsoft finally fixes VPN issues caused by September updates</h3>
+      <p class="card-summary">Microsoft has resolved Always On VPN connection failures triggered after installing the September 2026 Windows 11 security updates. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/da23e24a34ee8a4a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="drupal warns of critical commerce core flaw exploited in attacks"
+       data-id="2da5ac6f7fa4ad4d"
+       data-published="2026-10-30T06:16:07-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T06:16:07-04:00" title="30 October 2026, 05:16">30 October 2026, 05:16</time>
+      </div>
+      <h3 class="card-title">Drupal warns of critical Commerce Core flaw exploited in attacks</h3>
+      <p class="card-summary">Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2da5ac6f7fa4ad4d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="binance links $6.3 billion crypto theft to compromised devops laptop"
+       data-id="da3e8549037049b7"
+       data-published="2026-10-30T05:18:13-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-30T05:18:13-04:00" title="30 October 2026, 04:18">30 October 2026, 04:18</time>
+      </div>
+      <h3 class="card-title">Binance links $6.3 billion crypto theft to compromised DevOps laptop</h3>
+      <p class="card-summary">Binance, the world&#39;s largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer&#39;s compromised laptop. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/da3e8549037049b7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">31 October 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">7 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 high-severity advisory published today</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,7 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,13 +61,86 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chainalysis confirms intrusion into internal tools and exposure of customer identity data"
+       data-id="3aa827a1fa23b729"
+       data-published="2026-10-31T17:31:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-31T17:31:56+05:30" title="31 October 2026, 07:01">31 October 2026, 07:01</time>
+      </div>
+      <h3 class="card-title">Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data</h3>
+      <p class="card-summary">American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3aa827a1fa23b729.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="AWS,Ivanti"
+       data-severity="high"
+       data-title="attackers chain three ivanti connect secure flaws to gain unauthenticated root access"
+       data-id="70d82182f705a0ce"
+       data-published="2026-10-31T13:57:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span><span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-10-31T13:57:43+05:30" title="31 October 2026, 03:27">31 October 2026, 03:27</time>
+      </div>
+      <h3 class="card-title">Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/70d82182f705a0ce.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="malware"
        data-vendors=""
@@ -116,6 +199,93 @@
       <div class="detail-links">
         <a href="../articles/62c13a39ccf10584.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="reddit to lock content behind logins to fight scrapers"
+       data-id="4f68b07e5ddd05cf"
+       data-published="2026-10-31T10:05:15-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-31T10:05:15-04:00" title="31 October 2026, 09:05">31 October 2026, 09:05</time>
+      </div>
+      <h3 class="card-title">Reddit to lock content behind logins to fight scrapers</h3>
+      <p class="card-summary">Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a &#34;logged-in service,&#34; offering limited access to visitors without accounts. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4f68b07e5ddd05cf.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="from beginner to bug hunter: learning cybersecurity in the ai era."
+       data-id="ad91f8f08b625a8a"
+       data-published="2026-10-31T09:10:19-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-31T09:10:19-04:00" title="31 October 2026, 08:10">31 October 2026, 08:10</time>
+      </div>
+      <h3 class="card-title">From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.</h3>
+      <p class="card-summary">[...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ad91f8f08b625a8a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chainalysis discloses data breach from &#34;offensive agentic techniques&#34;"
+       data-id="9e660133cc9adff9"
+       data-published="2026-10-31T08:50:09-04:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-10-31T08:50:09-04:00" title="31 October 2026, 07:50">31 October 2026, 07:50</time>
+      </div>
+      <h3 class="card-title">Chainalysis discloses data breach from &#34;offensive agentic techniques&#34;</h3>
+      <p class="card-summary">Blockchain analytics firm Chainalysis disclosed a data breach after attackers used &#34;offensive agentic techniques&#34; to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9e660133cc9adff9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

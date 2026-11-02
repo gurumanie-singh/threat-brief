@@ -1,5 +1,285 @@
 [
   {
+    "id": "201d1d7a86f9b16f",
+    "title": "Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "published": "2026-11-02T22:27:56+05:30",
+    "fetched_at": "2026-11-02T19:10:10.217244+00:00",
+    "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.",
+    "tags": [
+      "malware",
+      "phishing"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Google",
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against\n\nAssessed severity: HIGH.",
+      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
+    },
+    "email_summary": "Some attacks this week didn't need much of a trick. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "be9b28d02678e983",
+    "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "published": "2026-11-02T21:20:26+05:30",
+    "fetched_at": "2026-11-02T19:10:10.217520+00:00",
+    "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Google"
+    ],
+    "action_required": false,
+    "card_summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.",
+    "quick_take": "",
+    "sections": {
+      "technical": "Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals."
+    },
+    "email_summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals.",
+    "content_model_version": 2,
+    "related_sources": [
+      {
+        "source": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"
+      }
+    ],
+    "highlighted": false
+  },
+  {
+    "id": "69af85782e1e1dfc",
+    "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+    "published": "2026-11-02T20:16:05+05:30",
+    "fetched_at": "2026-11-02T19:10:10.217785+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.",
+    "tags": [],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.",
+    "quick_take": "",
+    "sections": {
+      "impact": "According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "6ef9e863bc7a2486",
+    "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+    "published": "2026-11-02T17:20:00+05:30",
+    "fetched_at": "2026-11-02T19:10:10.218050+00:00",
+    "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0."
+    },
+    "email_summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "92922afd96134a68",
+    "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+    "published": "2026-11-02T17:00:00+05:30",
+    "fetched_at": "2026-11-02T19:10:10.218273+00:00",
+    "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their own SOC is ready.",
+    "tags": [
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f0fbf68cc9e424e3",
+    "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+    "published": "2026-11-02T16:38:45+05:30",
+    "fetched_at": "2026-11-02T19:10:10.218486+00:00",
+    "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller.",
+    "tags": [],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller."
+    },
+    "email_summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "8cac31760cb86335",
+    "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+    "published": "2026-11-02T16:19:59+05:30",
+    "fetched_at": "2026-11-02T19:10:10.218689+00:00",
+    "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux",
+      "Palo Alto"
+    ],
+    "action_required": false,
+    "card_summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the moniker CL-UNK-1211, where \"CL\" refers to cluster and \"UNK\" stands for unknown.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "06b59d0e742fe938",
+    "title": "Microsoft's AI Risk Report Misses This Key Detail",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+    "published": "2026-11-02T15:00:00+00:00",
+    "fetched_at": "2026-11-02T19:10:12.992902+00:00",
+    "summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
+    "tags": [],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "00b4eb62e4cfb2fd",
+    "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+    "published": "2026-11-02T14:00:45-05:00",
+    "fetched_at": "2026-11-02T19:10:10.637974+00:00",
+    "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "dc6dd3f5c2aa0133",
+    "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
+    "published": "2026-11-02T14:00:00+00:00",
+    "fetched_at": "2026-11-02T19:10:12.993137+00:00",
+    "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "8c9c501f14ce793a",
     "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
     "source": "The Hacker News",
@@ -26,6 +306,204 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from Chromium-based web browsers; data from Outlook profiles and Slack workspaces;.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e2cf41ffdad496b2",
+    "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "published": "2026-11-02T10:03:07-05:00",
+    "fetched_at": "2026-11-02T19:10:10.638397+00:00",
+    "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a8efd0384270424e",
+    "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+    "published": "2026-11-02T10:01:11-05:00",
+    "fetched_at": "2026-11-02T19:10:10.638597+00:00",
+    "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service…",
+    "quick_take": "",
+    "sections": {
+      "overview": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]",
+      "impact": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached.\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "ca63df736941de90",
+    "title": "Hackers disrupt refrigeration systems at European supermarkets",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+    "published": "2026-11-02T09:28:39-05:00",
+    "fetched_at": "2026-11-02T19:10:10.638785+00:00",
+    "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "aa48cc970c674752",
+    "title": "Microsoft fixes Smart App Control broken by October Windows update",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
+    "published": "2026-11-02T08:57:29-05:00",
+    "fetched_at": "2026-11-02T19:10:10.639026+00:00",
+    "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]",
+    "tags": [
+      "patch"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "c461d9c9105181d9",
+    "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+    "published": "2026-11-02T07:47:00-05:00",
+    "fetched_at": "2026-11-02T19:10:10.639206+00:00",
+    "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]",
+    "tags": [
+      "exploit",
+      "patch",
+      "vulnerability"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]\n\nAssessed severity: CRITICAL."
+    },
+    "email_summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "743b73466c74f791",
+    "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+    "published": "2026-11-02T06:28:42-05:00",
+    "fetched_at": "2026-11-02T19:10:10.639388+00:00",
+    "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]",
+    "tags": [
+      "ransomware"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This aligns with ongoing ransomware campaigns targeting operational continuity and recovery readiness."
+    },
+    "email_summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "d187c868fee0127d",
+    "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+    "published": "2026-11-02T04:33:26-05:00",
+    "fetched_at": "2026-11-02T19:10:10.639569+00:00",
+    "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
+    "tags": [
+      "patch",
+      "zero-day"
+    ],
+    "day": "2026-11-02",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS",
+      "Ivanti"
+    ],
+    "action_required": false,
+    "card_summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
+    "quick_take": "",
+    "sections": {
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

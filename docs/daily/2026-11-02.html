@@ -27,10 +27,21 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">2 November 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">18 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Microsoft, Google ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +50,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -53,19 +66,332 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="malware,phishing"
+       data-vendors="Google,Linux"
+       data-severity="high"
+       data-title="weekly recap: critical cves, linux ddos botnet, device-code phishing, android spyware and more"
+       data-id="201d1d7a86f9b16f"
+       data-published="2026-11-02T22:27:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Google</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-02T22:27:56+05:30" title="2 November 2026, 10:57">2 November 2026, 10:57</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More</h3>
+      <p class="card-summary">Some attacks this week didn&#39;t need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/201d1d7a86f9b16f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Google"
+       data-severity="medium"
+       data-title="google disrupts 1.3 million-device android botnet, says tv box maker sold criminal access"
+       data-id="be9b28d02678e983"
+       data-published="2026-11-02T21:20:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-02T21:20:26+05:30" title="2 November 2026, 09:50">2 November 2026, 09:50</time>
+      </div>
+      <h3 class="card-title">Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access</h3>
+      <p class="card-summary">A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <div class="card-related">Also: BleepingComputer</div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/be9b28d02678e983.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/google-disrupts-13-million-device.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="darkblinders compromises israeli target and iraqi kurdish government cloud environment"
+       data-id="69af85782e1e1dfc"
+       data-published="2026-11-02T20:16:05+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T20:16:05+05:30" title="2 November 2026, 08:46">2 November 2026, 08:46</time>
+      </div>
+      <h3 class="card-title">DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/69af85782e1e1dfc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="critical langflow flaws could let unauthenticated attackers run code on servers"
+       data-id="6ef9e863bc7a2486"
+       data-published="2026-11-02T17:20:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-02T17:20:00+05:30" title="2 November 2026, 05:50">2 November 2026, 05:50</time>
+      </div>
+      <h3 class="card-title">Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers</h3>
+      <p class="card-summary">Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6ef9e863bc7a2486.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="is your soc ready for ai agents? a maturity check before you deploy"
+       data-id="92922afd96134a68"
+       data-published="2026-11-02T17:00:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T17:00:00+05:30" title="2 November 2026, 05:30">2 November 2026, 05:30</time>
+      </div>
+      <h3 class="card-title">Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy</h3>
+      <p class="card-summary">Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security&#39;s State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/92922afd96134a68.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="attackers pose as it support on microsoft teams, abuse ad cs to steal company data"
+       data-id="f0fbf68cc9e424e3"
+       data-published="2026-11-02T16:38:45+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-02T16:38:45+05:30" title="2 November 2026, 05:08">2 November 2026, 05:08</time>
+      </div>
+      <h3 class="card-title">Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data</h3>
+      <p class="card-summary">Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller.</p></div>
+      <div class="detail-links">
+        <a href="../articles/f0fbf68cc9e424e3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux,Palo Alto"
+       data-severity="medium"
+       data-title="government linux servers targeted with sysgorat and suspected ai-generated scripts"
+       data-id="8cac31760cb86335"
+       data-published="2026-11-02T16:19:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span><span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-11-02T16:19:59+05:30" title="2 November 2026, 04:49">2 November 2026, 04:49</time>
+      </div>
+      <h3 class="card-title">Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8cac31760cb86335.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft&#39;s ai risk report misses this key detail"
+       data-id="06b59d0e742fe938"
+       data-published="2026-11-02T15:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-02T15:00:00+00:00" title="2 November 2026, 09:00">2 November 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Microsoft&#39;s AI Risk Report Misses This Key Detail</h3>
+      <p class="card-summary">The latest &#34;Digital Defense Report&#34; identifies government agencies as prime targets for AI attacks but doesn&#39;t mention that they are broadly being targeted through Microsoft bugs.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/06b59d0e742fe938.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fintech platform sageworks taken offline after suspected cyberattack"
+       data-id="00b4eb62e4cfb2fd"
+       data-published="2026-11-02T14:00:45-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T14:00:45-05:00" title="2 November 2026, 13:00">2 November 2026, 13:00</time>
+      </div>
+      <h3 class="card-title">Fintech platform Sageworks taken offline after suspected cyberattack</h3>
+      <p class="card-summary">Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by &#34;irregular activity&#34; in its environment. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/00b4eb62e4cfb2fd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="paprat cyber-espionage campaign leaves a &#39;bitter&#39; taste in south asia"
+       data-id="dc6dd3f5c2aa0133"
+       data-published="2026-11-02T14:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-02T14:00:00+00:00" title="2 November 2026, 08:00">2 November 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">PapRAT Cyber-Espionage Campaign Leaves a &#39;Bitter&#39; Taste in South Asia</h3>
+      <p class="card-summary">Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/dc6dd3f5c2aa0133.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,malware"
        data-vendors="Google,Microsoft"
@@ -95,6 +421,226 @@
       <div class="detail-links">
         <a href="../articles/8c9c501f14ce793a.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="btcpay server warns of hot wallet crypto thefts on outdated instances"
+       data-id="e2cf41ffdad496b2"
+       data-published="2026-11-02T10:03:07-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T10:03:07-05:00" title="2 November 2026, 09:03">2 November 2026, 09:03</time>
+      </div>
+      <h3 class="card-title">BTCPay Server warns of hot wallet crypto thefts on outdated instances</h3>
+      <p class="card-summary">The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining &#34;hot wallets&#34; on instances running older versions. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e2cf41ffdad496b2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="your mobile carrier stores your call logs for years"
+       data-id="a8efd0384270424e"
+       data-published="2026-11-02T10:01:11-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T10:01:11-05:00" title="2 November 2026, 09:01">2 November 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">Your Mobile Carrier Stores Your Call Logs for Years</h3>
+      <p class="card-summary">Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers&#39; relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers&#39; relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/a8efd0384270424e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers disrupt refrigeration systems at european supermarkets"
+       data-id="ca63df736941de90"
+       data-published="2026-11-02T09:28:39-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T09:28:39-05:00" title="2 November 2026, 08:28">2 November 2026, 08:28</time>
+      </div>
+      <h3 class="card-title">Hackers disrupt refrigeration systems at European supermarkets</h3>
+      <p class="card-summary">A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ca63df736941de90.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes smart app control broken by october windows update"
+       data-id="aa48cc970c674752"
+       data-published="2026-11-02T08:57:29-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-02T08:57:29-05:00" title="2 November 2026, 07:57">2 November 2026, 07:57</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes Smart App Control broken by October Windows update</h3>
+      <p class="card-summary">Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/aa48cc970c674752.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="over 1,000 gitlab servers vulnerable to ongoing rce attacks"
+       data-id="c461d9c9105181d9"
+       data-published="2026-11-02T07:47:00-05:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-02T07:47:00-05:00" title="2 November 2026, 06:47">2 November 2026, 06:47</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Over 1,000 GitLab servers vulnerable to ongoing RCE attacks</h3>
+      <p class="card-summary">Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c461d9c9105181d9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="synology warns of c3rb3r ransomware attacks targeting nas devices"
+       data-id="743b73466c74f791"
+       data-published="2026-11-02T06:28:42-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-02T06:28:42-05:00" title="2 November 2026, 05:28">2 November 2026, 05:28</time>
+      </div>
+      <h3 class="card-title">Synology warns of C3RB3R ransomware attacks targeting NAS devices</h3>
+      <p class="card-summary">Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/743b73466c74f791.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,zero-day"
+       data-vendors="AWS,Ivanti"
+       data-severity="critical"
+       data-title="ivanti patches two more connect secure zero-days chained in attacks"
+       data-id="d187c868fee0127d"
+       data-published="2026-11-02T04:33:26-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Ivanti</span>        <time class="meta-time" data-iso="2026-11-02T04:33:26-05:00" title="2 November 2026, 03:33">2 November 2026, 03:33</time>
+      </div>
+      <h3 class="card-title">Ivanti patches two more Connect Secure zero-days chained in attacks</h3>
+      <p class="card-summary">Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d187c868fee0127d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

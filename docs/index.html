@@ -28,15 +28,15 @@
       <h1 class="brief-title">5 November 2026</h1>
       <div class="brief-update">
         <span class="brief-pulse"></span>
-        <time data-iso="2026-11-05T10:06:54.283290-06:00">5 November 2026, 10:06</time>
+        <time data-iso="2026-11-05T16:31:35.231109-06:00">5 November 2026, 16:31</time>
         <span class="brief-tz">CST</span>
       </div>
     </div>
     <div class="brief-stats">
       <span class="stat stat-critical">1 critical</span>
-      <span class="stat stat-high">2 high</span>
+      <span class="stat stat-high">3 high</span>
       <span class="stat stat-action">1 action req.</span>
-      <span class="stat">11 articles today</span>
+      <span class="stat">20 articles today</span>
     </div>
   </div>
 
@@ -46,8 +46,8 @@
       <ul class="strip-bullets">
         <li>1 critical-severity issue detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>Apple ecosystem affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Linux ecosystem affected by multiple advisories</li>
+        <li>Multiple phishing campaigns identified targeting enterprises</li>
       </ul>
     </div>
     <div class="strip-section strip-trending">
@@ -55,10 +55,10 @@
       <div class="trending-pills">
         <span class="trend-pill">hackers<span class="trend-count">13</span></span>
         <span class="trend-pill">attacks<span class="trend-count">12</span></span>
-        <span class="trend-pill">breach<span class="trend-count">9</span></span>
+        <span class="trend-pill">linux<span class="trend-count">10</span></span>
+        <span class="trend-pill">breach<span class="trend-count">10</span></span>
         <span class="trend-pill">security<span class="trend-count">9</span></span>
-        <span class="trend-pill">linux<span class="trend-count">8</span></span>
-        <span class="trend-pill">android<span class="trend-count">7</span></span>
+        <span class="trend-pill">attackers<span class="trend-count">8</span></span>
       </div>
     </div>
   </div>
@@ -89,9 +89,9 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Ivanti">Ivanti</button>
@@ -108,8 +108,8 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
@@ -189,10 +189,135 @@
   <div class="day-group">
     <h2 class="day-heading">
       5 November 2026
-      <span class="day-count">11</span>
+      <span class="day-count">20</span>
     </h2>
   </div>
 
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="openssh issues emergency fix for flaw letting long passwords bypass ssh auth on alpine linux"
+       data-id="af95ad0093b0912d"
+       data-published="2026-11-05T22:12:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-05T22:12:46+05:30" title="5 November 2026, 10:42">5 November 2026, 10:42</time>
+      </div>
+      <h3 class="card-title">OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux</h3>
+      <p class="card-summary">Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long.</p></div>
+      <div class="detail-links">
+        <a href="articles/af95ad0093b0912d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,patch,phishing,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="researchers bypass chatgpt lockdown mode to exfiltrate chats without user interaction"
+       data-id="8cbf356ccf208ed0"
+       data-published="2026-11-05T22:12:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T22:12:32+05:30" title="5 November 2026, 10:42">5 November 2026, 10:42</time>
+      </div>
+      <h3 class="card-title">Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/8cbf356ccf208ed0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="us government email systems open to abuse thanks to typos"
+       data-id="e9d2dc70727c4091"
+       data-published="2026-11-05T21:35:05+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T21:35:05+00:00" title="5 November 2026, 15:35">5 November 2026, 15:35</time>
+      </div>
+      <h3 class="card-title">US Government Email Systems Open to Abuse Thanks to Typos</h3>
+      <p class="card-summary">Erroneous or outdated DNS records can give attackers surprising powers over organizations&#39; email systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e9d2dc70727c4091.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="what we missed: knicks phishing test goes out of bounds"
+       data-id="23f34ef5cce1a2b7"
+       data-published="2026-11-05T21:00:47+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T21:00:47+00:00" title="5 November 2026, 15:00">5 November 2026, 15:00</time>
+      </div>
+      <h3 class="card-title">What We Missed: Knicks Phishing Test Goes Out of Bounds</h3>
+      <p class="card-summary">In this video conversation, Dark Reading editors discuss some of the news they didn&#39;t get a chance to cover, from an ill-conceived phishing simulation to a hacktivist attack on a US government agency.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/23f34ef5cce1a2b7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach,patch,vulnerability"
        data-vendors=""
@@ -227,6 +352,35 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="apt29&#39;s watering holes target thousands of mobile users"
+       data-id="613b452628c2a0db"
+       data-published="2026-11-05T20:05:39+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T20:05:39+00:00" title="5 November 2026, 14:05">5 November 2026, 14:05</time>
+      </div>
+      <h3 class="card-title">APT29&#39;s Watering Holes Target Thousands of Mobile Users</h3>
+      <p class="card-summary">After compromising websites, the Russian state-sponsored threat group is fingerprinting victims, then harvesting information from the interesting ones.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/613b452628c2a0db.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="vulnerability"
        data-vendors=""
        data-severity="medium"
@@ -254,6 +408,67 @@
       <div class="detail-links">
         <a href="articles/1cbc81c6a1151a76.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/is-your-exposure-management-platform.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="securitydatapipeline.com launches as a new educational resource for the ai era"
+       data-id="a96cfa9f62c33249"
+       data-published="2026-11-05T16:48:36+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T16:48:36+00:00" title="5 November 2026, 10:48">5 November 2026, 10:48</time>
+      </div>
+      <h3 class="card-title">SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era</h3>
+      <p class="card-summary">The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/a96cfa9f62c33249.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="fake openai, spacex events used to steal microsoft, google accounts"
+       data-id="d01d0e7c1012ba6f"
+       data-published="2026-11-05T16:30:30-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-05T16:30:30-05:00" title="5 November 2026, 15:30">5 November 2026, 15:30</time>
+      </div>
+      <h3 class="card-title">Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts</h3>
+      <p class="card-summary">Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/d01d0e7c1012ba6f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -293,6 +508,36 @@
   </div>
   <div class="article-card card--medium"
        data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="nearly 1.5 million exposed secrets targeted in new revocation program"
+       data-id="e59a6c92bd767694"
+       data-published="2026-11-05T15:15:08-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T15:15:08-05:00" title="5 November 2026, 14:15">5 November 2026, 14:15</time>
+      </div>
+      <h3 class="card-title">Nearly 1.5 million exposed secrets targeted in new revocation program</h3>
+      <p class="card-summary">Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/e59a6c92bd767694.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
        data-vendors="Apple"
        data-severity="medium"
        data-title="apple to start scanning publicly shared icloud photos and files for harmful content"
@@ -318,6 +563,34 @@
       <div class="detail-links">
         <a href="articles/6e3a4177f76d9e26.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="openai’s gpt-6 astra silently obstructed safety research tasks"
+       data-id="65ef0f3fbeeb2025"
+       data-published="2026-11-05T14:24:26-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-05T14:24:26-05:00" title="5 November 2026, 13:24">5 November 2026, 13:24</time>
+      </div>
+      <h3 class="card-title">OpenAI’s GPT-6 Astra silently obstructed safety research tasks</h3>
+      <p class="card-summary">OpenAI has disclosed another AI alignment incident where GPT-6 Astra was found to sometimes quietly withhold help on safety research. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/65ef0f3fbeeb2025.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -350,6 +623,35 @@
       <div class="detail-links">
         <a href="articles/3fffda767b9e53e1.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="openssh flaw lets attackers log into password-disabled linux accounts"
+       data-id="bfe8953620d856ca"
+       data-published="2026-11-05T12:45:29-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-05T12:45:29-05:00" title="5 November 2026, 11:45">5 November 2026, 11:45</time>
+      </div>
+      <h3 class="card-title">OpenSSH flaw lets attackers log into password-disabled Linux accounts</h3>
+      <p class="card-summary">A newly disclosed OpenSSH vulnerability dubbed &#34;*sshole&#34; allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/bfe8953620d856ca.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -387,119 +689,54 @@
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="cve,exploit,malware,patch,vulnerability"
-       data-vendors="Apple"
-       data-severity="medium"
-       data-title="hackers exploit patched apple flaw to deliver info-stealing malware, cisa says"
-       data-id="ae66479eb1730ab2"
-       data-published="2026-11-05T10:47:04+05:30"
+  <div class="article-card card--low"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="post-quantum questions to ask your vendors"
+       data-id="789eb4b2e339f046"
+       data-published="2026-11-05T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-11-05T10:47:04+05:30" title="4 November 2026, 23:17">4 November 2026, 23:17</time>
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-11-05T12:00:00+00:00" title="5 November 2026, 06:00">5 November 2026, 06:00</time>
       </div>
-      <h3 class="card-title">Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ae66479eb1730ab2.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="exploit,malware,patch,vulnerability"
-       data-vendors="Linux"
-       data-severity="high"
-       data-title="openai ai pipeline generates 948 linux root escalation exploits in 30-hour run"
-       data-id="7c16bd5e054b649e"
-       data-published="2026-11-05T10:01:16+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-05T10:01:16+05:30" title="4 November 2026, 22:31">4 November 2026, 22:31</time>
-      </div>
-      <h3 class="card-title">OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run</h3>
-      <p class="card-summary">OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.</p>
+      <h3 class="card-title">Post-Quantum Questions to Ask Your Vendors</h3>
+      <p class="card-summary">CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning…</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
-          <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
           <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">The Hacker News</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise...</p></div>
       <div class="detail-links">
-        <a href="articles/7c16bd5e054b649e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="phishing"
-       data-vendors=""
-       data-severity="medium"
-       data-title="closing the identity gap at the service desk"
-       data-id="e95327194071ac63"
-       data-published="2026-11-05T10:00:10-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-05T10:00:10-05:00" title="5 November 2026, 09:00">5 November 2026, 09:00</time>
-      </div>
-      <h3 class="card-title">Closing the Identity Gap at the Service Desk</h3>
-      <p class="card-summary">Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">phishing</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and how organizations can secure account recovery against social engineering risks. [...]</p></div>
-      <div class="detail-links">
-        <a href="articles/e95327194071ac63.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/789eb4b2e339f046.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
   <div class="article-card card--high"
-       data-tags="exploit,malware,patch,vulnerability"
-       data-vendors="Microsoft"
+       data-tags="exploit,malware,patch,phishing,vulnerability"
+       data-vendors="AWS"
        data-severity="high"
-       data-title="want to rent an internet address at the white house?"
-       data-id="c52971ef3fe5e039"
-       data-published="2026-11-05T04:36:17+00:00"
+       data-title="us government partners urge hardening industrial refrigeration and cold chain monitoring systems"
+       data-id="cddd910c39714cb0"
+       data-published="2026-11-05T12:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
         <span class="sev-badge sev-high">high</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-05T04:36:17+00:00" title="4 November 2026, 22:36">4 November 2026, 22:36</time>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-05T12:00:00+00:00" title="5 November 2026, 06:00">5 November 2026, 06:00</time>
       </div>
-      <h3 class="card-title">Want to Rent an Internet Address at the White House?</h3>
-      <p class="card-summary">Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian…</p>
+      <h3 class="card-title">US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems</h3>
+      <p class="card-summary">Overview</p>
       <div class="card-bottom">
         <div class="card-hints">
 <span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
@@ -507,52 +744,84 @@
           <span class="ttag">exploit</span>
           <span class="ttag">malware</span>
           <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
+          <span class="ttag">phishing</span>
         </div>
       </div>
-      <span class="card-source">Krebs on Security</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder s web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.</p></div>
+      <div class="detail-text"><p>Overview   The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally.</p></div>
       <div class="detail-links">
-        <a href="articles/c52971ef3fe5e039.html" class="detail-read">Read full analysis →</a>
-        <a href="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/cddd910c39714cb0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="vulnerability"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="ghostmap android flaw lets malicious app trigger persistent boot loop"
-       data-id="ea6c7aa73e4a5222"
-       data-published="2026-11-05T04:18:29-05:00"
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="hackers backdoor linux servers using trojanized cwp web server"
+       data-id="8910ee00af3f0031"
+       data-published="2026-11-05T11:24:26-05:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-05T04:18:29-05:00" title="5 November 2026, 03:18">5 November 2026, 03:18</time>
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-05T11:24:26-05:00" title="5 November 2026, 10:24">5 November 2026, 10:24</time>
       </div>
-      <h3 class="card-title">GhostMap Android flaw lets malicious app trigger persistent boot loop</h3>
-      <p class="card-summary">Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed. [...]</p>
+      <h3 class="card-title">Hackers backdoor Linux servers using trojanized CWP web server</h3>
+      <p class="card-summary">A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]</p>
       <div class="card-bottom">
         <div class="card-tags">
-          <span class="ttag">vulnerability</span>
+          <span class="ttag">malware</span>
         </div>
       </div>
       <span class="card-source">BleepingComputer</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="articles/ea6c7aa73e4a5222.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="articles/8910ee00af3f0031.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="digicert data breach exposes customer information, identity documents"
+       data-id="7f36b10c0f1f6be1"
+       data-published="2026-11-05T11:12:46-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-05T11:12:46-05:00" title="5 November 2026, 10:12">5 November 2026, 10:12</time>
+      </div>
+      <h3 class="card-title">DigiCert data breach exposes customer information, identity documents</h3>
+      <p class="card-summary">DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="articles/7f36b10c0f1f6be1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
   <div class="day-group">
     <h2 class="day-heading">
       4 November 2026
-      <span class="day-count">17</span>
+      <span class="day-count">8</span>
     </h2>
   </div>
 
@@ -801,285 +1070,6 @@
       <div class="detail-links">
         <a href="articles/4641cb9ef6c04a2e.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="china-aligned hackers hijack sogou input method dns requests to deploy darkvigil backdoor"
-       data-id="5ef1a68356981dde"
-       data-published="2026-11-04T16:54:31+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-04T16:54:31+05:30" title="4 November 2026, 05:24">4 November 2026, 05:24</time>
-      </div>
-      <h3 class="card-title">China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor</h3>
-      <p class="card-summary">A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP).</p></div>
-      <div class="detail-links">
-        <a href="articles/5ef1a68356981dde.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="vercel rolls out new protection against stolen session cookie attacks"
-       data-id="5c3d8a2992898681"
-       data-published="2026-11-04T16:31:18-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-04T16:31:18-05:00" title="4 November 2026, 15:31">4 November 2026, 15:31</time>
-      </div>
-      <h3 class="card-title">Vercel rolls out new protection against stolen session cookie attacks</h3>
-      <p class="card-summary">Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/5c3d8a2992898681.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="google, partners disrupt 1.3 million-device-strong xcpe botnet"
-       data-id="5ced6c97e4c9065c"
-       data-published="2026-11-04T16:24:08+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-04T16:24:08+00:00" title="4 November 2026, 10:24">4 November 2026, 10:24</time>
-      </div>
-      <h3 class="card-title">Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet</h3>
-      <p class="card-summary">Google alleges that Android device manufacturer Videostrong ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/5ced6c97e4c9065c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="exploit,malware,patch,vulnerability,zero-day"
-       data-vendors=""
-       data-severity="critical"
-       data-title="zyxel fixes zero-day exploited to hack nearly 1,000 network switches"
-       data-id="e0e3864281b119fb"
-       data-published="2026-11-04T15:58:19-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-11-04T15:58:19-05:00" title="4 November 2026, 14:58">4 November 2026, 14:58</time>
-      </div>
-      <h3 class="card-title">Zyxel fixes zero-day exploited to hack nearly 1,000 network switches</h3>
-      <p class="card-summary">Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/e0e3864281b119fb.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="incidents move too fast for pen &amp;amp; paper"
-       data-id="33c921dfda24aced"
-       data-published="2026-11-04T14:17:00+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-04T14:17:00+00:00" title="4 November 2026, 08:17">4 November 2026, 08:17</time>
-      </div>
-      <h3 class="card-title">Incidents Move Too Fast for Pen &amp;amp; Paper</h3>
-      <p class="card-summary">Organizations may not be ready for completely autonomous communication processes, but there are places where automating information updates would alleviate pressure.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">Dark Reading</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/33c921dfda24aced.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach"
-       data-vendors=""
-       data-severity="medium"
-       data-title="dreamhost confirms data breach exposed ftp logins and webmail sessions"
-       data-id="ab2e4a7ce0a76dec"
-       data-published="2026-11-04T14:05:19-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-04T14:05:19-05:00" title="4 November 2026, 13:05">4 November 2026, 13:05</time>
-      </div>
-      <h3 class="card-title">DreamHost confirms data breach exposed FTP logins and webmail sessions</h3>
-      <p class="card-summary">DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers&#39; FTP/SFTP usernames and passwords. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/ab2e4a7ce0a76dec.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="russian police arrest 3 suspected vasygrek hackers, dismantle criminal infrastructure"
-       data-id="7cf9c64e37b2cfc9"
-       data-published="2026-11-04T13:47:11+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-04T13:47:11+05:30" title="4 November 2026, 02:17">4 November 2026, 02:17</time>
-      </div>
-      <h3 class="card-title">Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure</h3>
-      <p class="card-summary">Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/7cf9c64e37b2cfc9.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="cve,patch,vulnerability"
-       data-vendors="Google"
-       data-severity="medium"
-       data-title="google issues patches for critical android flaw that could allow rce without user interaction"
-       data-id="27c9645b0533e5ec"
-       data-published="2026-11-04T13:16:15+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-04T13:16:15+05:30" title="4 November 2026, 01:46">4 November 2026, 01:46</time>
-      </div>
-      <h3 class="card-title">Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction</h3>
-      <p class="card-summary">A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/27c9645b0533e5ec.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="cyberattack disrupts blood storage refrigeration systems in france"
-       data-id="949221d66735054d"
-       data-published="2026-11-04T13:02:56-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-04T13:02:56-05:00" title="4 November 2026, 12:02">4 November 2026, 12:02</time>
-      </div>
-      <h3 class="card-title">Cyberattack disrupts blood storage refrigeration systems in France</h3>
-      <p class="card-summary">France&#39;s national blood service has confirmed that a cyberattack targeting a refrigeration equipment provider raised temperature and defrost settings at three of its facilities, threatening stored blood products. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="articles/949221d66735054d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

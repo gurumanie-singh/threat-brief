@@ -1,5 +1,181 @@
 [
   {
+    "id": "f28e98739ef4fcee",
+    "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+    "published": "2026-11-06T21:38:38+05:30",
+    "fetched_at": "2026-11-06T18:52:58.705248+00:00",
+    "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it.",
+    "tags": [
+      "exploit",
+      "patch"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [],
+    "action_required": true,
+    "card_summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The researcher advises blocking web access to the Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it."
+    },
+    "email_summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "f42eeef2558e100e",
+    "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+    "published": "2026-11-06T20:51:49+05:30",
+    "fetched_at": "2026-11-06T18:52:58.705538+00:00",
+    "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian.",
+    "tags": [
+      "cve",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-11-06",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "cvss": 8.1,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,"
+    },
+    "email_summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. Tracked as CVE-2026-123158. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "768d4d953db58882",
+    "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+    "published": "2026-11-06T20:28:32+05:30",
+    "fetched_at": "2026-11-06T18:52:58.705787+00:00",
+    "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment.",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment.",
+    "quick_take": "",
+    "sections": {
+      "mitigation": "The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said."
+    },
+    "email_summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "a649e4e837437b9e",
+    "title": "AI Gave Your Incident Archive a Second Job",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
+    "published": "2026-11-06T18:27:30+00:00",
+    "fetched_at": "2026-11-06T18:52:59.519405+00:00",
+    "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
+    "tags": [],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b55fd347c05f0dbd",
+    "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+    "published": "2026-11-06T17:36:43+05:30",
+    "fetched_at": "2026-11-06T18:52:58.706024+00:00",
+    "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.",
+    "tags": [
+      "cve",
+      "malware",
+      "vulnerability"
+    ],
+    "day": "2026-11-06",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Microsoft"
+    ],
+    "action_required": false,
+    "card_summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.",
+    "quick_take": "",
+    "sections": {
+      "technical": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. The flaw is an out-of-bounds read that could let an attacker run code over a network.\n\nReferenced vulnerabilities: CVE-2026-83844."
+    },
+    "email_summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Tracked as CVE-2026-83844. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "62e0c3df488f3844",
+    "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+    "published": "2026-11-06T17:36:35+05:30",
+    "fetched_at": "2026-11-06T18:52:58.706242+00:00",
+    "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.",
+    "tags": [
+      "exploit",
+      "patch"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.",
+    "quick_take": "",
+    "sections": {
+      "technical": "The flaw that makes this possible can still be exploited, the researchers said earlier this A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.",
+      "mitigation": "The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop."
+    },
+    "email_summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "63f99ac29810d50f",
     "title": "The Flood is Coming And The Pipes Were Already Full",
     "source": "The Hacker News",
@@ -20,6 +196,56 @@
       "overview": "An update on Athena, and some unsolicited predictions on what's coming next\n\nOn Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him."
     },
     "email_summary": "An update on Athena, and some unsolicited predictions on what's coming next\n\nOn Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "01eb6b7285a29551",
+    "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+    "published": "2026-11-06T14:00:00+00:00",
+    "fetched_at": "2026-11-06T18:52:59.519610+00:00",
+    "summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
+    "tags": [],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "b1dcd65f4dced7e0",
+    "title": "Fake security tools on GitHub push backdoors and infostealers",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+    "published": "2026-11-06T13:46:52-05:00",
+    "fetched_at": "2026-11-06T18:52:59.127746+00:00",
+    "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]",
+    "tags": [
+      "malware"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -50,6 +276,36 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.\n\n\"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "151ad398c379993b",
+    "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+    "published": "2026-11-06T12:04:23-05:00",
+    "fetched_at": "2026-11-06T18:52:59.127964+00:00",
+    "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]",
+    "tags": [
+      "breach",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...].",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false
@@ -117,6 +373,82 @@
     "highlighted": false
   },
   {
+    "id": "c8089ad1fce98228",
+    "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
+    "published": "2026-11-06T10:25:31-05:00",
+    "fetched_at": "2026-11-06T18:52:59.128162+00:00",
+    "summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...]",
+    "tags": [],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...]\n\nAssessed severity: MEDIUM."
+    },
+    "email_summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "34221309e615526f",
+    "title": "IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
+    "published": "2026-11-06T10:00:10-05:00",
+    "fetched_at": "2026-11-06T18:52:59.128366+00:00",
+    "summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking. [...]",
+    "tags": [],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking. [...]",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "c3c38761cad2257b",
+    "title": "Chainalysis says breach exposed credentials for all customers",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/",
+    "published": "2026-11-06T09:17:07-05:00",
+    "fetched_at": "2026-11-06T18:52:59.128554+00:00",
+    "summary": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]\n\nAssessed severity: MEDIUM.",
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...].",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "2111d188058a8199",
     "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
     "source": "Dark Reading",
@@ -135,6 +467,37 @@
     "quick_take": "",
     "sections": {},
     "email_summary": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e33ef4cd86ecced9",
+    "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+    "source": "BleepingComputer",
+    "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+    "published": "2026-11-06T07:37:22-05:00",
+    "fetched_at": "2026-11-06T18:52:59.128739+00:00",
+    "summary": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]",
+    "tags": [
+      "patch",
+      "zero-day"
+    ],
+    "day": "2026-11-06",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]",
+    "quick_take": "",
+    "sections": {
+      "impact": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]. Severity is rated critical.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

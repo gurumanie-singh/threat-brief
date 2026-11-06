@@ -27,10 +27,21 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">6 November 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">19 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>2 critical-severity issues detected with active exploitation reported</li>
+        <li>1 item requires immediate action — patches or mitigations available</li>
+        <li>Linux, AWS ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +50,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -55,20 +68,214 @@
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--action card--critical"
+       data-tags="exploit,patch"
+       data-vendors=""
+       data-severity="critical"
+       data-title="installing the fix for an exploited wordpress flaw can expose some sites one last time"
+       data-id="f28e98739ef4fcee"
+       data-published="2026-11-06T21:38:38+05:30"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-06T21:38:38+05:30" title="6 November 2026, 10:08">6 November 2026, 10:08</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time</h3>
+      <p class="card-summary">Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f28e98739ef4fcee.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="hackers target openssh sshole flaw within hours of disclosure, gain root on honeypot"
+       data-id="f42eeef2558e100e"
+       data-published="2026-11-06T20:51:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-06T20:51:49+05:30" title="6 November 2026, 09:21">6 November 2026, 09:21</time>
+      </div>
+      <h3 class="card-title">Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot</h3>
+      <p class="card-summary">Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f42eeef2558e100e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="openai launches gpt-6 cyber after ai helps find 81 firefox flaws, 948 linux exploits"
+       data-id="768d4d953db58882"
+       data-published="2026-11-06T20:28:32+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-06T20:28:32+05:30" title="6 November 2026, 08:58">6 November 2026, 08:58</time>
+      </div>
+      <h3 class="card-title">OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits</h3>
+      <p class="card-summary">OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/768d4d953db58882.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="ai gave your incident archive a second job"
+       data-id="a649e4e837437b9e"
+       data-published="2026-11-06T18:27:30+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T18:27:30+00:00" title="6 November 2026, 12:27">6 November 2026, 12:27</time>
+      </div>
+      <h3 class="card-title">AI Gave Your Incident Archive a Second Job</h3>
+      <p class="card-summary">Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a649e4e837437b9e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,malware,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="microsoft paint rce fix now available, but windows update won&#39;t deliver it"
+       data-id="b55fd347c05f0dbd"
+       data-published="2026-11-06T17:36:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-06T17:36:43+05:30" title="6 November 2026, 06:06">6 November 2026, 06:06</time>
+      </div>
+      <h3 class="card-title">Microsoft Paint RCE Fix Now Available, but Windows Update Won&#39;t Deliver It</h3>
+      <p class="card-summary">A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b55fd347c05f0dbd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="malicious browser extensions could use claude dispatch to run code on users&#39; computers"
+       data-id="62e0c3df488f3844"
+       data-published="2026-11-06T17:36:35+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T17:36:35+05:30" title="6 November 2026, 06:06">6 November 2026, 06:06</time>
+      </div>
+      <h3 class="card-title">Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users&#39; Computers</h3>
+      <p class="card-summary">A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person&#39;s computer, researchers at Forever Security, an endpoint security company, showed in a test.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/62e0c3df488f3844.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -102,6 +309,65 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="why europe&#39;s freezer hacks spread so far, so fast"
+       data-id="01eb6b7285a29551"
+       data-published="2026-11-06T14:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T14:00:00+00:00" title="6 November 2026, 08:00">6 November 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Why Europe&#39;s Freezer Hacks Spread So Far, So Fast</h3>
+      <p class="card-summary">Europe&#39;s supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/01eb6b7285a29551.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="fake security tools on github push backdoors and infostealers"
+       data-id="b1dcd65f4dced7e0"
+       data-published="2026-11-06T13:46:52-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T13:46:52-05:00" title="6 November 2026, 12:46">6 November 2026, 12:46</time>
+      </div>
+      <h3 class="card-title">Fake security tools on GitHub push backdoors and infostealers</h3>
+      <p class="card-summary">Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b1dcd65f4dced7e0.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="breach,vulnerability"
        data-vendors=""
        data-severity="medium"
@@ -130,6 +396,39 @@
       <div class="detail-links">
         <a href="../articles/43f5fe1006a62e91.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="qnap says hackers breaching nas devices in plex2shell attacks"
+       data-id="151ad398c379993b"
+       data-published="2026-11-06T12:04:23-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T12:04:23-05:00" title="6 November 2026, 11:04">6 November 2026, 11:04</time>
+      </div>
+      <h3 class="card-title">QNAP says hackers breaching NAS devices in Plex2Shell attacks</h3>
+      <p class="card-summary">QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/151ad398c379993b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -201,6 +500,95 @@
        data-tags=""
        data-vendors=""
        data-severity="medium"
+       data-title="veeam warns of software appliance boot failures on amd epyc hosts"
+       data-id="c8089ad1fce98228"
+       data-published="2026-11-06T10:25:31-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T10:25:31-05:00" title="6 November 2026, 09:25">6 November 2026, 09:25</time>
+      </div>
+      <h3 class="card-title">Veeam warns of Software Appliance boot failures on AMD EPYC hosts</h3>
+      <p class="card-summary">​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c8089ad1fce98228.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="imsi vs imei: what your phone broadcasts and who can read it"
+       data-id="34221309e615526f"
+       data-published="2026-11-06T10:00:10-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T10:00:10-05:00" title="6 November 2026, 09:00">6 November 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It</h3>
+      <p class="card-summary">IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/34221309e615526f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="chainalysis says breach exposed credentials for all customers"
+       data-id="c3c38761cad2257b"
+       data-published="2026-11-06T09:17:07-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-06T09:17:07-05:00" title="6 November 2026, 08:17">6 November 2026, 08:17</time>
+      </div>
+      <h3 class="card-title">Chainalysis says breach exposed credentials for all customers</h3>
+      <p class="card-summary">Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c3c38761cad2257b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
        data-title="uk warns its critical infrastructure faces grave risk"
        data-id="2111d188058a8199"
        data-published="2026-11-06T09:00:00+00:00"
@@ -222,6 +610,38 @@
       <div class="detail-links">
         <a href="../articles/2111d188058a8199.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,zero-day"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="d-link warns of multiple zero-days in dgs-3130 series switches"
+       data-id="e33ef4cd86ecced9"
+       data-published="2026-11-06T07:37:22-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-06T07:37:22-05:00" title="6 November 2026, 06:37">6 November 2026, 06:37</time>
+      </div>
+      <h3 class="card-title">D-Link warns of multiple zero-days in DGS-3130 Series switches</h3>
+      <p class="card-summary">D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e33ef4cd86ecced9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

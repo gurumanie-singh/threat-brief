@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">9 November 2026</h1>
-      <span class="brief-sub">2 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,8 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 high-severity advisory published today</li>
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -47,8 +48,9 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
-      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -60,71 +62,234 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Fortinet">Fortinet</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
   <div class="article-card card--medium"
-       data-tags="exploit,malware,patch,vulnerability"
-       data-vendors=""
+       data-tags="breach,exploit"
+       data-vendors="AWS"
        data-severity="medium"
-       data-title="u.s. agencies warn refrigeration controller attacks could cause fires and inventory losses"
-       data-id="64d9f77f061c13b5"
-       data-published="2026-11-09T11:45:10+05:30"
+       data-title="hackers exploit qubole&#39;s trusted aws access to breach customer accounts and steal data"
+       data-id="e985b07e237ded9e"
+       data-published="2026-11-09T23:21:21+05:30"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
         <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-09T11:45:10+05:30" title="9 November 2026, 00:15">9 November 2026, 00:15</time>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-09T23:21:21+05:30" title="9 November 2026, 11:51">9 November 2026, 11:51</time>
       </div>
-      <h3 class="card-title">U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses</h3>
-      <p class="card-summary">U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory.</p>
+      <h3 class="card-title">Hackers Exploit Qubole&#39;s Trusted AWS Access to Breach Customer Accounts and Steal Data</h3>
+      <p class="card-summary">An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today.</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        </div>
         <div class="card-tags">
+          <span class="ttag">breach</span>
           <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
         </div>
       </div>
       <span class="card-source">The Hacker News</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="../articles/64d9f77f061c13b5.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/e985b07e237ded9e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--high"
-       data-tags="cve,exploit,vulnerability"
+  <div class="article-card card--medium"
+       data-tags="malware"
        data-vendors=""
-       data-severity="high"
-       data-title="cisa flags sonicwall sonicos mfa bypass flaw amid reports of possible exploitation"
-       data-id="b985c19cc74d2dca"
-       data-published="2026-11-09T11:35:24+05:30"
+       data-severity="medium"
+       data-title="hackers compromise ethersphere&#39;s bee-js and swarm desktop to deliver wallet-stealing malware"
+       data-id="58ea59b3ca089668"
+       data-published="2026-11-09T23:06:28+05:30"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-11-09T11:35:24+05:30" title="9 November 2026, 00:05">9 November 2026, 00:05</time>
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T23:06:28+05:30" title="9 November 2026, 11:36">9 November 2026, 11:36</time>
       </div>
-      <h3 class="card-title">CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation</h3>
-      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks.</p>
+      <h3 class="card-title">Hackers Compromise Ethersphere&#39;s bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware</h3>
+      <p class="card-summary">Attackers used the Ethersphere project&#39;s own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2.</p>
       <div class="card-bottom">
         <div class="card-hints">
 <span class="sec-hint">Technical</span>        </div>
         <div class="card-tags">
-          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/58ea59b3ca089668.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt"
+       data-vendors=""
+       data-severity="medium"
+       data-title="cisa announces enhanced reporting form for cyber incidents"
+       data-id="207e7f7e01aa3736"
+       data-published="2026-11-09T21:38:20+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T21:38:20+00:00" title="9 November 2026, 15:38">9 November 2026, 15:38</time>
+      </div>
+      <h3 class="card-title">CISA Announces Enhanced Reporting Form for Cyber Incidents</h3>
+      <p class="card-summary">New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/207e7f7e01aa3736.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes rce bug in windows paint after weeks of confusion"
+       data-id="b348d07784f61bb7"
+       data-published="2026-11-09T21:12:24+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-09T21:12:24+00:00" title="9 November 2026, 15:12">9 November 2026, 15:12</time>
+      </div>
+      <h3 class="card-title">Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion</h3>
+      <p class="card-summary">Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b348d07784f61bb7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="black hat india 2026 makes a landmark debut in bengaluru, bringing the global cybersecurity community to india"
+       data-id="c46c23274c96efe3"
+       data-published="2026-11-09T20:19:56+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T20:19:56+00:00" title="9 November 2026, 14:19">9 November 2026, 14:19</time>
+      </div>
+      <h3 class="card-title">Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India</h3>
+      <p class="card-summary">Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c46c23274c96efe3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors="Fortinet"
+       data-severity="medium"
+       data-title="bitter hackers deploy new paprat backdoor in cyberespionage campaign targeting south asia"
+       data-id="f1327ead8ca41ca8"
+       data-published="2026-11-09T20:01:29+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Fortinet</span>        <time class="meta-time" data-iso="2026-11-09T20:01:29+05:30" title="9 November 2026, 08:31">9 November 2026, 08:31</time>
+      </div>
+      <h3 class="card-title">Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia</h3>
+      <p class="card-summary">The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f1327ead8ca41ca8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,exploit,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="weekly recap: sshole exploited, apt root rce, robot takeovers, 15k hacked sites, and more"
+       data-id="6b72b8e8a1f4acd5"
+       data-published="2026-11-09T18:58:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T18:58:25+05:30" title="9 November 2026, 07:28">9 November 2026, 07:28</time>
+      </div>
+      <h3 class="card-title">Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More</h3>
+      <p class="card-summary">A system doesn&#39;t always need a complicated bug to let someone in. Sometimes, a blank password is enough.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
           <span class="ttag">exploit</span>
           <span class="ttag">vulnerability</span>
         </div>
@@ -133,8 +298,401 @@
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="../articles/b985c19cc74d2dca.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/6b72b8e8a1f4acd5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="vanderbilt university hit in byod ransomware attack, data theft claimed"
+       data-id="5b6da2210a360157"
+       data-published="2026-11-09T18:52:12-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T18:52:12-05:00" title="9 November 2026, 17:52">9 November 2026, 17:52</time>
+      </div>
+      <h3 class="card-title">Vanderbilt University hit in BYOD ransomware attack, data theft claimed</h3>
+      <p class="card-summary">Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university&#39;s databases and stolen sensitive student, employee, and research data. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5b6da2210a360157.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="attackers crash claude&#39;s &#39;office party&#39; flaw to run malicious code on linux"
+       data-id="bf92cf346a0e5508"
+       data-published="2026-11-09T18:08:30+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-09T18:08:30+00:00" title="9 November 2026, 12:08">9 November 2026, 12:08</time>
+      </div>
+      <h3 class="card-title">Attackers Crash Claude&#39;s &#39;Office Party&#39; Flaw to Run Malicious Code on Linux</h3>
+      <p class="card-summary">Attackers can exploit a flaw in Claude&#39;s document-processing tool by creating a temporary file that Anthropic&#39;s AI assistant can access and run on a user&#39;s machine.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/bf92cf346a0e5508.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="pwc&#39;s ciso on ai, robots &amp;amp; what&#39;s next for security"
+       data-id="51693f8a537dfc1d"
+       data-published="2026-11-09T17:17:23+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T17:17:23+00:00" title="9 November 2026, 11:17">9 November 2026, 11:17</time>
+      </div>
+      <h3 class="card-title">PwC&#39;s CISO on AI, Robots &amp;amp; What&#39;s Next for Security</h3>
+      <p class="card-summary">As AI accelerates change across the enterprise, PwC&#39;s James Shira explains why security teams must rethink their approach to risk and adapt their strategies.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/51693f8a537dfc1d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="sega newsletter data breach exposes 2.2 million email addresses"
+       data-id="2131700776f77d02"
+       data-published="2026-11-09T17:09:33-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T17:09:33-05:00" title="9 November 2026, 16:09">9 November 2026, 16:09</time>
+      </div>
+      <h3 class="card-title">SEGA newsletter data breach exposes 2.2 million email addresses</h3>
+      <p class="card-summary">Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/2131700776f77d02.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="default &#39;admin:admin&#39; server password helps researchers hack two automakers, unlock and start cars"
+       data-id="e6962b8a0ff586dc"
+       data-published="2026-11-09T16:57:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T16:57:53+05:30" title="9 November 2026, 05:27">9 November 2026, 05:27</time>
+      </div>
+      <h3 class="card-title">Default &#39;admin:admin&#39; Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars</h3>
+      <p class="card-summary">The login systems behind two car brands&#39; mobile apps could be taken over completely, two security researchers found, allowing them to access any customer&#39;s account and, for an owner with a connected car, unlock the doors and start the engine.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/e6962b8a0ff586dc.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/default-adminadmin-server-password.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="n-able takes cloud platform offline after 30+ &#34;zero-days&#34; published"
+       data-id="7ec1c7a3c2bd1c8a"
+       data-published="2026-11-09T16:26:25-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-09T16:26:25-05:00" title="9 November 2026, 15:26">9 November 2026, 15:26</time>
+      </div>
+      <h3 class="card-title">N-able takes cloud platform offline after 30+ &#34;zero-days&#34; published</h3>
+      <p class="card-summary">N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/7ec1c7a3c2bd1c8a.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors="Apple,Google"
+       data-severity="medium"
+       data-title="web3auth flaw exploited to steal keplr crypto, provider empties other wallets for safety"
+       data-id="183aec93270ffc7d"
+       data-published="2026-11-09T16:26:25+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Apple</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-09T16:26:25+05:30" title="9 November 2026, 04:56">9 November 2026, 04:56</time>
+      </div>
+      <h3 class="card-title">Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety</h3>
+      <p class="card-summary">Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/183aec93270ffc7d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="york university breach exposed personal information dating to 2007"
+       data-id="f080fdd1b3751c51"
+       data-published="2026-11-09T16:22:31-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T16:22:31-05:00" title="9 November 2026, 15:22">9 November 2026, 15:22</time>
+      </div>
+      <h3 class="card-title">York University breach exposed personal information dating to 2007</h3>
+      <p class="card-summary">York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f080fdd1b3751c51.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags=""
+       data-vendors=""
+       data-severity="low"
+       data-title="nist: solo shouldn&#39;t mean less secure"
+       data-id="fc33c0e5d57160a9"
+       data-published="2026-11-09T15:46:10+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-11-09T15:46:10+00:00" title="9 November 2026, 09:46">9 November 2026, 09:46</time>
+      </div>
+      <h3 class="card-title">NIST: Solo Shouldn&#39;t Mean Less Secure</h3>
+      <p class="card-summary">New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/fc33c0e5d57160a9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="lnbits urges all operators to shut down their bitcoin lightning wallet servers amid attacks"
+       data-id="c8514fce7f6dc465"
+       data-published="2026-11-09T15:31:21+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T15:31:21+05:30" title="9 November 2026, 04:01">9 November 2026, 04:01</time>
+      </div>
+      <h3 class="card-title">LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks</h3>
+      <p class="card-summary">Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c8514fce7f6dc465.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors=""
+       data-severity="medium"
+       data-title="taiwan-based hacker used bossai ai agents to steal taipei emergency dispatch records"
+       data-id="ba8bc4c6eed10735"
+       data-published="2026-11-09T14:31:50+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T14:31:50+05:30" title="9 November 2026, 03:01">9 November 2026, 03:01</time>
+      </div>
+      <h3 class="card-title">Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records</h3>
+      <p class="card-summary">A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis&#39;s Threat Research Unit said last week.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/ba8bc4c6eed10735.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="france blames iranian hackers for supermarket attacks that sparked fires"
+       data-id="c0e07134e2e4dbf5"
+       data-published="2026-11-09T13:32:42-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T13:32:42-05:00" title="9 November 2026, 12:32">9 November 2026, 12:32</time>
+      </div>
+      <h3 class="card-title">France blames Iranian hackers for supermarket attacks that sparked fires</h3>
+      <p class="card-summary">France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers, saying the attacks caused food losses and sparked at least 15 fires. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c0e07134e2e4dbf5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="russian cloud firm beget rebuilds from scratch after data wiper attack"
+       data-id="153bab885e47077b"
+       data-published="2026-11-09T12:50:32-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-09T12:50:32-05:00" title="9 November 2026, 11:50">9 November 2026, 11:50</time>
+      </div>
+      <h3 class="card-title">Russian cloud firm Beget rebuilds from scratch after data wiper attack</h3>
+      <p class="card-summary">A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/153bab885e47077b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

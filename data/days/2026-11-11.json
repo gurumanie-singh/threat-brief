@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f3aac5b23d909ad9",
+    "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+    "published": "2026-11-11T00:53:10+05:30",
+    "fetched_at": "2026-11-10T22:49:53.481916+00:00",
+    "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.",
+    "tags": [
+      "cve",
+      "patch"
+    ],
+    "day": "2026-11-11",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2,…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.",
+      "technical": "The flaw, tracked as CVE-2026-111760, is an integer truncation in how Git handles its index. A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules.\n\nReferenced vulnerabilities: CVE-2026-111760."
+    },
+    "email_summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. Tracked as CVE-2026-111760.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "4efd3e2fa51360c9",
+    "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+    "published": "2026-11-11T00:49:39+05:30",
+    "fetched_at": "2026-11-10T22:49:53.482114+00:00",
+    "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday.",
+    "tags": [
+      "breach",
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-11-11",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  }
+]

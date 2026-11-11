@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">11 November 2026</h1>
-      <span class="brief-sub">8 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,10 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>2 items require immediate action — patches or mitigations available</li>
-        <li>Microsoft, AWS ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -66,24 +66,244 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="cve,vulnerability"
+       data-vendors="AWS,Microsoft"
+       data-severity="critical"
+       data-title="critical zoom workplace flaw could allow unauthenticated remote privilege escalation"
+       data-id="c49d0b44d7d2ff50"
+       data-published="2026-11-11T21:42:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-11T21:42:46+05:30" title="11 November 2026, 10:12">11 November 2026, 10:12</time>
+      </div>
+      <h3 class="card-title">Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation</h3>
+      <p class="card-summary">Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/c49d0b44d7d2ff50.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="antifox ai pentesting platform linked to attacks that accessed aws production secrets"
+       data-id="5a3bc9a9bf04e41b"
+       data-published="2026-11-11T21:04:27+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-11T21:04:27+05:30" title="11 November 2026, 09:34">11 November 2026, 09:34</time>
+      </div>
+      <h3 class="card-title">AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5a3bc9a9bf04e41b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers target qlik sense servers with reverse shells, stage activemq and veeam exploits"
+       data-id="5f3ca1f3b85d09e4"
+       data-published="2026-11-11T19:31:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-11T19:31:00+05:30" title="11 November 2026, 08:01">11 November 2026, 08:01</time>
+      </div>
+      <h3 class="card-title">Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits</h3>
+      <p class="card-summary">Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/5f3ca1f3b85d09e4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="breach,exploit,malware,ransomware,vulnerability"
+       data-vendors="Google"
+       data-severity="critical"
+       data-title="who runs the ransomware group qilin?"
+       data-id="2524db0734291ba3"
+       data-published="2026-11-11T18:06:01+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-11T18:06:01+00:00" title="11 November 2026, 12:06">11 November 2026, 12:06</time>
+      </div>
+      <h3 class="card-title">Who Runs the Ransomware Group Qilin?</h3>
+      <p class="card-summary">The cybercrime group Qilin has emerged as the world s most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Krebs on Security</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The cybercrime group Qilin has emerged as the world s most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2524db0734291ba3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="over 35,000 grok-built apps exposed online, some leaking confidential data and passwords"
+       data-id="be0460a25c3efa19"
+       data-published="2026-11-11T17:49:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-11T17:49:40+05:30" title="11 November 2026, 06:19">11 November 2026, 06:19</time>
+      </div>
+      <h3 class="card-title">Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords</h3>
+      <p class="card-summary">Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/be0460a25c3efa19.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="we built an agent that broke all of our security rules. here&#39;s what we learned."
+       data-id="626ffb33792b5fd8"
+       data-published="2026-11-11T17:31:59+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-11T17:31:59+05:30" title="11 November 2026, 06:01">11 November 2026, 06:01</time>
+      </div>
+      <h3 class="card-title">We Built An Agent That Broke All of Our Security Rules. Here&#39;s What We Learned.</h3>
+      <p class="card-summary">We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/626ffb33792b5fd8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="emudhra revokes 8 more cas it previously declared unaffected by key compromise"
+       data-id="f628f0bc1bc806d6"
+       data-published="2026-11-11T17:30:53+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-11T17:30:53+05:30" title="11 November 2026, 06:00">11 November 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise</h3>
+      <p class="card-summary">The in-house Python script behind eMudhra&#39;s October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f628f0bc1bc806d6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="cve,exploit,patch,vulnerability"
        data-vendors="AWS,Microsoft"
@@ -209,6 +429,168 @@
       <div class="detail-links">
         <a href="../articles/e9250ee7282dc538.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="maersk confirms data breach as whitearmor ransomware demands $5 million"
+       data-id="57e3cc0e3fdb0745"
+       data-published="2026-11-11T11:24:18-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-11T11:24:18-05:00" title="11 November 2026, 10:24">11 November 2026, 10:24</time>
+      </div>
+      <h3 class="card-title">Maersk confirms data breach as WhiteArmor ransomware demands $5 million</h3>
+      <p class="card-summary">Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/57e3cc0e3fdb0745.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="hackers use antifox ai agents in aws credential-theft attacks"
+       data-id="cdcc0811ca672b8b"
+       data-published="2026-11-11T10:12:59-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-11T10:12:59-05:00" title="11 November 2026, 09:12">11 November 2026, 09:12</time>
+      </div>
+      <h3 class="card-title">Hackers use AntiFox AI agents in AWS credential-theft attacks</h3>
+      <p class="card-summary">Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cdcc0811ca672b8b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors="Linux"
+       data-severity="medium"
+       data-title="ebpf rootkits: why underground actors are taking notice"
+       data-id="087c321064d93a61"
+       data-published="2026-11-11T10:01:11-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-11T10:01:11-05:00" title="11 November 2026, 09:01">11 November 2026, 09:01</time>
+      </div>
+      <h3 class="card-title">eBPF Rootkits: Why Underground Actors Are Taking Notice</h3>
+      <p class="card-summary">Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code,…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/087c321064d93a61.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="n-able releases security hotfixes for zero-day vulnerabilities"
+       data-id="8d02686b94712733"
+       data-published="2026-11-11T07:32:27-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-11T07:32:27-05:00" title="11 November 2026, 06:32">11 November 2026, 06:32</time>
+      </div>
+      <h3 class="card-title">N-able releases security hotfixes for zero-day vulnerabilities</h3>
+      <p class="card-summary">N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+          <span class="ttag">zero-day</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8d02686b94712733.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft fixes audio issues caused by september security updates"
+       data-id="d8caa0d674499481"
+       data-published="2026-11-11T06:18:36-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-11T06:18:36-05:00" title="11 November 2026, 05:18">11 November 2026, 05:18</time>
+      </div>
+      <h3 class="card-title">Microsoft fixes audio issues caused by September security updates</h3>
+      <p class="card-summary">Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d8caa0d674499481.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -23,6 +23,114 @@
     "highlighted": false
   },
   {
+    "id": "09e5b86de75b899c",
+    "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+    "published": "2026-11-12T13:50:37+05:30",
+    "fetched_at": "2026-11-12T09:17:14.147713+00:00",
+    "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections.",
+    "tags": [],
+    "day": "2026-11-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including…",
+    "quick_take": "",
+    "sections": {
+      "overview": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections.",
+      "mitigation": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1."
+    },
+    "email_summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "703f389400b49253",
+    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+    "published": "2026-11-12T12:12:47+05:30",
+    "fetched_at": "2026-11-12T09:17:14.147891+00:00",
+    "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company.",
+    "tags": [],
+    "day": "2026-11-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company.",
+    "quick_take": "",
+    "sections": {},
+    "email_summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "05fd4cd66cfb82cb",
+    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+    "published": "2026-11-12T10:42:26+05:30",
+    "fetched_at": "2026-11-12T09:17:14.148036+00:00",
+    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.",
+    "tags": [
+      "cve"
+    ],
+    "day": "2026-11-12",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [
+      "Linux"
+    ],
+    "action_required": false,
+    "card_summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.\n\nAssessed severity: HIGH."
+    },
+    "email_summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
+    "id": "e69b9ec432f17bcf",
+    "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+    "published": "2026-11-12T10:09:48+05:30",
+    "fetched_at": "2026-11-12T09:17:14.148150+00:00",
+    "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access.",
+    "tags": [
+      "vulnerability"
+    ],
+    "day": "2026-11-12",
+    "cves": [],
+    "cvss": null,
+    "severity": "high",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access.",
+    "quick_take": "",
+    "sections": {
+      "technical": "In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software.\n\n\"Our initial assessment suggests the activity may involve",
+      "impact": "In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software.\n\n\"Our initial assessment suggests the activity may involve\n\nAssessed severity: HIGH."
+    },
+    "email_summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. Severity is rated high.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "cb4bd91435d4b86e",
     "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
     "source": "Dark Reading",

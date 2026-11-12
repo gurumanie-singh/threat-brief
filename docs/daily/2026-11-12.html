@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">12 November 2026</h1>
-      <span class="brief-sub">7 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,7 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>2 high-severity advisories published today</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>5 items require immediate action — patches or mitigations available</li>
+        <li>Google, Microsoft ecosystems affected by multiple advisories</li>
       </ul>
     </div>
   </div>
@@ -47,8 +49,10 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -62,20 +66,309 @@
     <div class="adv-group">
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Citrix">Citrix</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="exploit"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="critical red hat quay flaw lets attackers read and overwrite all private container images in a registry"
+       data-id="a41215558a92446b"
+       data-published="2026-11-12T21:57:01+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-12T21:57:01+05:30" title="12 November 2026, 10:27">12 November 2026, 10:27</time>
+      </div>
+      <h3 class="card-title">Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry</h3>
+      <p class="card-summary">A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a41215558a92446b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,patch,vulnerability"
+       data-vendors="AWS,Citrix"
+       data-severity="critical"
+       data-title="citrix patches 12 netscaler and secure access client flaws, including authentication bypass"
+       data-id="682b7a09d5010bd3"
+       data-published="2026-11-12T21:08:49+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span><span class="vtag">Citrix</span>        <time class="meta-time" data-iso="2026-11-12T21:08:49+05:30" title="12 November 2026, 09:38">12 November 2026, 09:38</time>
+      </div>
+      <h3 class="card-title">Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass</h3>
+      <p class="card-summary">Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/682b7a09d5010bd3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="186 fake ai domains redirect users to clickfix lures, browser malware, and search hijackers"
+       data-id="9c2b76860e48b44c"
+       data-published="2026-11-12T20:45:40+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-12T20:45:40+05:30" title="12 November 2026, 09:15">12 November 2026, 09:15</time>
+      </div>
+      <h3 class="card-title">186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers</h3>
+      <p class="card-summary">Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9c2b76860e48b44c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="sckit malware turns screenconnect support sessions into potential msp attack paths"
+       data-id="d70dcb1163ded7b1"
+       data-published="2026-11-12T18:38:28+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-12T18:38:28+05:30" title="12 November 2026, 07:08">12 November 2026, 07:08</time>
+      </div>
+      <h3 class="card-title">SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths</h3>
+      <p class="card-summary">The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d70dcb1163ded7b1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="AWS,Google"
+       data-severity="medium"
+       data-title="google cloud warns three amd turin cpu flaws could leak data across processes in vms"
+       data-id="b0979dea0311c452"
+       data-published="2026-11-12T17:39:14+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-12T17:39:14+05:30" title="12 November 2026, 06:09">12 November 2026, 06:09</time>
+      </div>
+      <h3 class="card-title">Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs</h3>
+      <p class="card-summary">Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b0979dea0311c452.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="webinar: see how identity blind spots put your soc at risk and how to close them"
+       data-id="3d30a3da3e7c8973"
+       data-published="2026-11-12T17:32:51+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-12T17:32:51+05:30" title="12 November 2026, 06:02">12 November 2026, 06:02</time>
+      </div>
+      <h3 class="card-title">Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them</h3>
+      <p class="card-summary">Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access?</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/3d30a3da3e7c8973.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="exploit,malware,patch,vulnerability"
+       data-vendors="Microsoft"
+       data-severity="low"
+       data-title="new n-central exploits work against patched servers, enable root rce and windows system access"
+       data-id="f3289160a83b349f"
+       data-published="2026-11-12T17:21:43+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-12T17:21:43+05:30" title="12 November 2026, 05:51">12 November 2026, 05:51</time>
+      </div>
+      <h3 class="card-title">New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access</h3>
+      <p class="card-summary">N-able on Thursday said it&#39;s investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f3289160a83b349f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,phishing"
+       data-vendors="Google,Microsoft"
+       data-severity="medium"
+       data-title="calendar invites and live proxies: inside a google session hijacking campaign"
+       data-id="6ad114ad74ea14b3"
+       data-published="2026-11-12T17:21:31+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-12T17:21:31+05:30" title="12 November 2026, 05:51">12 November 2026, 05:51</time>
+      </div>
+      <h3 class="card-title">Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign</h3>
+      <p class="card-summary">Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/6ad114ad74ea14b3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="ptc patches critical windchill and flexplm flaw that could enable remote code execution"
+       data-id="b29bb1b05f4b3890"
+       data-published="2026-11-12T17:03:15+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-12T17:03:15+05:30" title="12 November 2026, 05:33">12 November 2026, 05:33</time>
+      </div>
+      <h3 class="card-title">PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution</h3>
+      <p class="card-summary">PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b29bb1b05f4b3890.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -101,6 +394,38 @@
       <div class="detail-links">
         <a href="../articles/9e6f2eeeb781769f.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/events/virtual-event-what-every-enterprise-know-securing-cloud-2026" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve"
+       data-vendors=""
+       data-severity="high"
+       data-title="critical pre-auth mongodb flaw (cve-2026-118383) can crash lagging servers on failover"
+       data-id="73d10aa1e0ffb7af"
+       data-published="2026-11-12T14:55:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-12T14:55:00+05:30" title="12 November 2026, 03:25">12 November 2026, 03:25</time>
+      </div>
+      <h3 class="card-title">Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover</h3>
+      <p class="card-summary">A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.</p></div>
+      <div class="detail-links">
+        <a href="../articles/73d10aa1e0ffb7af.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -163,127 +488,252 @@
       </div>
     </div>
   </div>
-  <div class="article-card card--high"
-       data-tags="cve"
-       data-vendors="Linux"
-       data-severity="high"
-       data-title="critical apache http/2 flaw could let unauthenticated attackers execute code remotely"
-       data-id="05fd4cd66cfb82cb"
-       data-published="2026-11-12T10:42:26+05:30"
-       data-action="">
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Google,Microsoft"
+       data-severity="low"
+       data-title="siemens desigo, gridscale"
+       data-id="0fa4e5ad2f79a09f"
+       data-published="2026-11-12T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-12T10:42:26+05:30" title="11 November 2026, 23:12">11 November 2026, 23:12</time>
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Google</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-12T12:00:00+00:00" title="12 November 2026, 06:00">12 November 2026, 06:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</h3>
-      <p class="card-summary">A critical flaw in Apache HTTP Server&#39;s HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.</p>
+      <h3 class="card-title">Siemens Desigo, Gridscale</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
           <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
         </div>
       </div>
-      <span class="card-source">The Hacker News</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as &#34;Node2Shell&#34; (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code.</p></div>
       <div class="detail-links">
-        <a href="../articles/05fd4cd66cfb82cb.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/0fa4e5ad2f79a09f.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--high"
-       data-tags="vulnerability"
-       data-vendors=""
-       data-severity="high"
-       data-title="screenconnect attacks target at least 288 endpoints across 48 organizations with rogue clients"
-       data-id="e69b9ec432f17bcf"
-       data-published="2026-11-12T10:09:48+05:30"
-       data-action="">
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="low"
+       data-title="siemens ruggedcom ape1808"
+       data-id="bf1f96f4ad146b83"
+       data-published="2026-11-12T12:00:00+00:00"
+       data-action="true">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-11-12T10:09:48+05:30" title="11 November 2026, 22:39">11 November 2026, 22:39</time>
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-11-12T12:00:00+00:00" title="12 November 2026, 06:00">12 November 2026, 06:00</time>
+        <span class="action-badge">Action</span>
       </div>
-      <h3 class="card-title">ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients</h3>
-      <p class="card-summary">ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access.</p>
+      <h3 class="card-title">Siemens RUGGEDCOM APE1808</h3>
+      <p class="card-summary">View CSAF</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span>        </div>
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
         <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities.</p></div>
+      <div class="detail-links">
+        <a href="../articles/bf1f96f4ad146b83.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Google,Palo Alto"
+       data-severity="low"
+       data-title="siemens ruggedcom ape1808"
+       data-id="a4d6a1312d4bd9d6"
+       data-published="2026-11-12T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Google</span><span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-11-12T12:00:00+00:00" title="12 November 2026, 06:00">12 November 2026, 06:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens RUGGEDCOM APE1808</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a4d6a1312d4bd9d6.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,patch,vulnerability"
+       data-vendors="Linux,Microsoft"
+       data-severity="low"
+       data-title="siemens building automation and energy products"
+       data-id="bd9b09c6c79a61c7"
+       data-published="2026-11-12T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Linux</span><span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-12T12:00:00+00:00" title="12 November 2026, 06:00">12 November 2026, 06:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Building Automation and Energy Products</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as &#34;php2shell&#34; (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of impact of various Siemens software products.</p></div>
+      <div class="detail-links">
+        <a href="../articles/bd9b09c6c79a61c7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--action card--low"
+       data-tags="cve,exploit,malware,vulnerability"
+       data-vendors="Google"
+       data-severity="low"
+       data-title="siemens industrial edge management"
+       data-id="159751c0b28e1c6d"
+       data-published="2026-11-12T12:00:00+00:00"
+       data-action="true">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+<span class="vtag">Google</span>        <time class="meta-time" data-iso="2026-11-12T12:00:00+00:00" title="12 November 2026, 06:00">12 November 2026, 06:00</time>
+        <span class="action-badge">Action</span>
+      </div>
+      <h3 class="card-title">Siemens Industrial Edge Management</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
           <span class="ttag">vulnerability</span>
         </div>
       </div>
-      <span class="card-source">The Hacker News</span>
+      <span class="card-source">CISA Alerts</span>
     </div>
     <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required.</p></div>
       <div class="detail-links">
-        <a href="../articles/e69b9ec432f17bcf.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/159751c0b28e1c6d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
-  <div class="article-card card--medium"
-       data-tags="exploit"
-       data-vendors=""
-       data-severity="medium"
-       data-title="chinese ai project scouts spies in taiwan chip industry"
-       data-id="cb4bd91435d4b86e"
-       data-published="2026-11-12T01:00:00+00:00"
+  <div class="article-card card--critical"
+       data-tags="exploit,zero-day"
+       data-vendors="Microsoft"
+       data-severity="critical"
+       data-title="new windows signdrop zero-day gives hackers system privileges"
+       data-id="3bf5013b807763fe"
+       data-published="2026-11-12T11:04:00-05:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-12T01:00:00+00:00" title="11 November 2026, 19:00">11 November 2026, 19:00</time>
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-12T11:04:00-05:00" title="12 November 2026, 10:04">12 November 2026, 10:04</time>
       </div>
-      <h3 class="card-title">Chinese AI Project Scouts Spies in Taiwan Chip Industry</h3>
-      <p class="card-summary">The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.</p>
+      <h3 class="card-title">New Windows SignDrop zero-day gives hackers SYSTEM privileges</h3>
+      <p class="card-summary">Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]</p>
       <div class="card-bottom">
         <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
+        </div>
         <div class="card-tags">
           <span class="ttag">exploit</span>
+          <span class="ttag">zero-day</span>
         </div>
       </div>
-      <span class="card-source">Dark Reading</span>
+      <span class="card-source">BleepingComputer</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="../articles/cb4bd91435d4b86e.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/3bf5013b807763fe.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
   <div class="article-card card--medium"
-       data-tags="breach"
+       data-tags="breach,malware"
        data-vendors=""
        data-severity="medium"
-       data-title="japan pushes emergency funding for cybersecurity as ai-assisted breaches rise"
-       data-id="86232ea38320b22c"
-       data-published="2026-11-12T00:00:00+00:00"
+       data-title="inside an ai attack against a us retailer"
+       data-id="9adb393033413954"
+       data-published="2026-11-12T11:00:00+00:00"
        data-action="">
     <div class="card-body">
       <div class="card-meta">
         <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-12T00:00:00+00:00" title="11 November 2026, 18:00">11 November 2026, 18:00</time>
+        <time class="meta-time" data-iso="2026-11-12T11:00:00+00:00" title="12 November 2026, 05:00">12 November 2026, 05:00</time>
       </div>
-      <h3 class="card-title">Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise</h3>
-      <p class="card-summary">The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government&#39;s new active cyber-defense powers.</p>
+      <h3 class="card-title">Inside an AI Attack Against a US Retailer</h3>
+      <p class="card-summary">When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.</p>
       <div class="card-bottom">
         <div class="card-hints">
         </div>
         <div class="card-tags">
           <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
         </div>
       </div>
       <span class="card-source">Dark Reading</span>
     </div>
     <div class="card-detail" aria-hidden="true">
       <div class="detail-links">
-        <a href="../articles/86232ea38320b22c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+        <a href="../articles/9adb393033413954.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

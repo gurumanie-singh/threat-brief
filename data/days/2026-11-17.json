@@ -147,6 +147,33 @@
     "highlighted": false
   },
   {
+    "id": "2006f1183f7099b6",
+    "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
+    "source": "Dark Reading",
+    "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+    "published": "2026-11-17T18:38:37+00:00",
+    "fetched_at": "2026-11-18T19:58:06.857086+00:00",
+    "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+    "tags": [
+      "breach"
+    ],
+    "day": "2026-11-17",
+    "cves": [],
+    "cvss": null,
+    "severity": "medium",
+    "vendors": [],
+    "action_required": false,
+    "card_summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+    "quick_take": "",
+    "sections": {
+      "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
+    },
+    "email_summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "0e2cd972f9dd5820",
     "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
     "source": "BleepingComputer",
@@ -539,41 +566,6 @@
       "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version. Read More \n \n 1 Affected Product \n \n .NET Client Library for SIMATIC S7 Webserver API < V3.3.61 \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate to V3.3.61 or later version\n\n \n \n Additional Metrics \n Relevant CWE: CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.5 \n HIGH \n CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N \n \n \n \n \n \n View CVE Details \n\n \n \n \n CVE-2026-85115 \n Affected applications do not properly redact PLC restore passwords from HTTP error exception messages. Read More \n \n 2 Affected Products \n \n .NET Client Library for SIMATIC S7 Webserver API < V3.3.61 \n \n Product Status: known_affected\n\n \n Remediations \n \n .NET Client Library for SIMATIC S7 Webserver API < V3.3.62 \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nUpdate to V3.3.62 or later version\n\n \n \n Additional Metrics \n Relevant CWE: CWE-209 Generation of Error Message Containing Sensitive Information \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 5.5 \n MEDIUM \n CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N \n \n \n \n \n \n View CVE Details \n\n \n \n \n Acknowledgments \n \n Siemens ProductCERT reported these vulnerabilities to CISA."
     },
     "email_summary": "View CSAF \n\n Summary \n .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Tracked as CVE-2026-85114, CVE-2026-85115.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "73152db6d216b1c8",
-    "title": "Siemens meta-iot2050",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
-    "published": "2026-11-17T12:00:00+00:00",
-    "fetched_at": "2026-11-17T19:36:22.848904+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "patch",
-      "vulnerability"
-    ],
-    "day": "2026-11-17",
-    "cves": [
-      "CVE-2026-109830"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": true,
-    "card_summary": "View CSAF",
-    "quick_take": "View CSAF \n\n Summary \n meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to…",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available.",
-      "technical": "View CSAF \n\n Summary \n meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. The following versions of Siemens meta-iot2050 are affected:\n\n \n meta-iot2050 vers:intdot/>=01.03.01 (CVE-2026-109830)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 7.3 \n Siemens \n meta-iot2050 \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n CVE-2026-109830 \n Affected devices take parts from a configuration file and execute them unchecked. Read More \n \n 1 Affected Product \n \n meta-iot2050 >= V01.03.01 \n \n Product Status: known_affected\n\n \n Remediations \n \n None available \nCurrently no fix is available\n\n \n \n Additional Metrics \n Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n\n \n \n \n \n CVSS Version \n Base Score \n Base Severity \n Vector String \n \n \n \n \n 3.1 \n 7.3 \n HIGH \n CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H \n \n \n \n \n \n View CVE Details \n\n \n \n \n Acknowledgments \n \n Siemens ProductCERT reported this vulnerability to CISA. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity\n\n \n Additional Resources \n For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories\n\n \n Terms of Use \n The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use.\n\nReferenced vulnerabilities: CVE-2026-109830.",
-      "impact": "The following versions of Siemens meta-iot2050 are affected:\n\n \n meta-iot2050 vers:intdot/>=01.03.01 (CVE-2026-109830)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 7.3 \n Siemens \n meta-iot2050 \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: Germany\n\n \n \n Vulnerabilities \n \n CVE-2026-109830 \n Affected devices take parts from a configuration file and execute them unchecked. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. This could allow an attacker which is able to manipulate the configuration file to make the user execute arbitrary code on the device.\n\nAssessed severity: LOW. CVSS score: 3.1/10."
-    },
-    "email_summary": "View CSAF \n\n Summary \n meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Tracked as CVE-2026-109830.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

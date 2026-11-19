@@ -35,10 +35,10 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>3 critical-severity issues detected with active exploitation reported</li>
+        <li>2 critical-severity issues detected with active exploitation reported</li>
         <li>1 item requires immediate action — patches or mitigations available</li>
         <li>Microsoft, Google ecosystems affected by multiple advisories</li>
-        <li>Several new data breach disclosures reported</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -53,6 +53,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -69,7 +70,6 @@
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Google">Google</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Apple">Apple</button>
       </div>
     </div>
     <div class="adv-group">
@@ -78,11 +78,12 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
@@ -153,6 +154,100 @@
     </div>
   </div>
   <div class="article-card card--medium"
+       data-tags="apt,breach,phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="russia&#39;s cold relic apt turns one cloud breach into another"
+       data-id="541d9ae64f505ea7"
+       data-published="2026-11-18T21:59:46+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-18T21:59:46+00:00" title="18 November 2026, 15:59">18 November 2026, 15:59</time>
+      </div>
+      <h3 class="card-title">Russia&#39;s Cold Relic APT Turns One Cloud Breach Into Another</h3>
+      <p class="card-summary">The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/541d9ae64f505ea7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="low"
+       data-title="strike graph launches integration ai to automate continuous compliance evidence using any existing tool"
+       data-id="9640a83c6b29208c"
+       data-published="2026-11-18T20:45:49+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-11-18T20:45:49+00:00" title="18 November 2026, 14:45">18 November 2026, 14:45</time>
+      </div>
+      <h3 class="card-title">Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool</h3>
+      <p class="card-summary">New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9640a83c6b29208c.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="apt,ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="attackiq research reveals how iranian cyber groups hand off network access to enable destructive attacks"
+       data-id="0a09388ba5fdb1d4"
+       data-published="2026-11-18T20:38:42+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-18T20:38:42+00:00" title="18 November 2026, 14:38">18 November 2026, 14:38</time>
+      </div>
+      <h3 class="card-title">AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks</h3>
+      <p class="card-summary">Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0a09388ba5fdb1d4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
        data-tags="apt,malware"
        data-vendors="Microsoft"
        data-severity="medium"
@@ -181,6 +276,37 @@
       <div class="detail-links">
         <a href="../articles/77633b104b629a02.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="ransomware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="ukraine, fbi arrest ransomware gang members tied to $40m in ransoms"
+       data-id="1b560631c3251bb1"
+       data-published="2026-11-18T18:08:33-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-18T18:08:33-05:00" title="18 November 2026, 17:08">18 November 2026, 17:08</time>
+      </div>
+      <h3 class="card-title">Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms</h3>
+      <p class="card-summary">Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/1b560631c3251bb1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -304,6 +430,37 @@
       <div class="detail-links">
         <a href="../articles/20ba39b72c54c742.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="coinbase blocks $4.7 million in transfers to elon musk deepfake scam"
+       data-id="8b1ccb3dd0f828ab"
+       data-published="2026-11-18T15:49:32-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-18T15:49:32-05:00" title="18 November 2026, 14:49">18 November 2026, 14:49</time>
+      </div>
+      <h3 class="card-title">Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam</h3>
+      <p class="card-summary">Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8b1ccb3dd0f828ab.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -468,6 +625,40 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="apt,breach,cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="cisa adds four known exploited vulnerabilities to catalog"
+       data-id="0b804c95909809e3"
+       data-published="2026-11-18T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-18T12:00:00+00:00" title="18 November 2026, 06:00">18 November 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds Four Known Exploited Vulnerabilities to Catalog</h3>
+      <p class="card-summary">CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0b804c95909809e3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="breach"
        data-vendors="Google"
@@ -529,190 +720,6 @@
       <div class="detail-links">
         <a href="../articles/9bf0e679613d568e.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="cve,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="java4shell flaw (cve-2026-114938) enables pre-auth rce in jira, jenkins, keycloak and more"
-       data-id="e789f98d584a04f9"
-       data-published="2026-11-18T09:57:41+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-11-18T09:57:41+05:30" title="17 November 2026, 22:27">17 November 2026, 22:27</time>
-      </div>
-      <h3 class="card-title">Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More</h3>
-      <p class="card-summary">A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/e789f98d584a04f9.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors=""
-       data-severity="medium"
-       data-title="dizigom illegal streaming service with 21m monthly visits shuts down"
-       data-id="d49ec6e9dcbf2609"
-       data-published="2026-11-18T06:50:25-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-18T06:50:25-05:00" title="18 November 2026, 05:50">18 November 2026, 05:50</time>
-      </div>
-      <h3 class="card-title">Dizigom illegal streaming service with 21M monthly visits shuts down</h3>
-      <p class="card-summary">The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey&#39;s largest piracy sites, after a settlement agreement with the site&#39;s operators. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/d49ec6e9dcbf2609.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="exploit,patch,vulnerability"
-       data-vendors=""
-       data-severity="high"
-       data-title="apache warns of roller rce vulnerability exploited in attacks"
-       data-id="a41dfba8b35db43c"
-       data-published="2026-11-18T05:35:05-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-11-18T05:35:05-05:00" title="18 November 2026, 04:35">18 November 2026, 04:35</time>
-      </div>
-      <h3 class="card-title">Apache warns of Roller RCE vulnerability exploited in attacks</h3>
-      <p class="card-summary">Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/a41dfba8b35db43c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="malware"
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft announces windows server 2028 with hardened security"
-       data-id="a16bd3d8df2b4a38"
-       data-published="2026-11-18T04:24:31-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-18T04:24:31-05:00" title="18 November 2026, 03:24">18 November 2026, 03:24</time>
-      </div>
-      <h3 class="card-title">Microsoft announces Windows Server 2028 with hardened security</h3>
-      <p class="card-summary">Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">malware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/a16bd3d8df2b4a38.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors=""
-       data-severity="medium"
-       data-title="british scattered spider hacker sentenced to 6 years in prison"
-       data-id="46b21b5d7933f0f1"
-       data-published="2026-11-18T03:24:18-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-18T03:24:18-05:00" title="18 November 2026, 02:24">18 November 2026, 02:24</time>
-      </div>
-      <h3 class="card-title">British Scattered Spider hacker sentenced to 6 years in prison</h3>
-      <p class="card-summary">A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/46b21b5d7933f0f1.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="breach,exploit,malware,vulnerability"
-       data-vendors="Apple"
-       data-severity="high"
-       data-title="attackers used optimizely to a/b test malware on top websites"
-       data-id="1ccbe3d437e1e67c"
-       data-published="2026-11-18T02:52:04+00:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-<span class="vtag">Apple</span>        <time class="meta-time" data-iso="2026-11-18T02:52:04+00:00" title="17 November 2026, 20:52">17 November 2026, 20:52</time>
-      </div>
-      <h3 class="card-title">Attackers Used Optimizely to A/B Test Malware on Top Websites</h3>
-      <p class="card-summary">At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely , a company that helps websites customize user experiences and test out new…</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Technical</span><span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">exploit</span>
-          <span class="ttag">malware</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">Krebs on Security</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-text"><p>At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely , a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC , CNN ,  Equifax ...</p></div>
-      <div class="detail-links">
-        <a href="../articles/1ccbe3d437e1e67c.html" class="detail-read">Read full analysis →</a>
-        <a href="https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

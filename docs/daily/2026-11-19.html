@@ -27,10 +27,19 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">19 November 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">6 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>AWS ecosystem affected by multiple advisories</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,6 +48,8 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
@@ -51,14 +62,178 @@
 
   <div class="adv-filters" id="advFilters" hidden>
     <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+      </div>
+    </div>
+    <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--critical"
+       data-tags="exploit,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="ruby releases fixes for 7 regex and string flaws, warns 5 have proof-of-concept rce"
+       data-id="13168d1596c28ce8"
+       data-published="2026-11-19T14:12:11+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-19T14:12:11+05:30" title="19 November 2026, 02:42">19 November 2026, 02:42</time>
+      </div>
+      <h3 class="card-title">Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE</h3>
+      <p class="card-summary">Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/13168d1596c28ce8.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,malware,vulnerability"
+       data-vendors=""
+       data-severity="medium"
+       data-title="researcher demonstrates database rce exploits affecting postgresql, mysql and oracle"
+       data-id="19d0d765dd205f0b"
+       data-published="2026-11-19T13:44:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-19T13:44:00+05:30" title="19 November 2026, 02:14">19 November 2026, 02:14</time>
+      </div>
+      <h3 class="card-title">Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle</h3>
+      <p class="card-summary">Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/19d0d765dd205f0b.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="php warns of critical security flaws affecting all supported versions, fixes coming november 19"
+       data-id="90f73a645a2ec530"
+       data-published="2026-11-19T10:03:46+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-19T10:03:46+05:30" title="18 November 2026, 22:33">18 November 2026, 22:33</time>
+      </div>
+      <h3 class="card-title">PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19</h3>
+      <p class="card-summary">The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/90f73a645a2ec530.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="africa retakes top spot as most attacked region, led by nigeria surge"
+       data-id="f4cb31c4d1beda93"
+       data-published="2026-11-19T08:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-19T08:00:00+00:00" title="19 November 2026, 02:00">19 November 2026, 02:00</time>
+      </div>
+      <h3 class="card-title">Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge</h3>
+      <p class="card-summary">Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/f4cb31c4d1beda93.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,ransomware"
+       data-vendors=""
+       data-severity="high"
+       data-title="nvidia investigating gentlemen ransomware breach claims"
+       data-id="eb7c1d21f8a01c3d"
+       data-published="2026-11-19T04:23:21-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-19T04:23:21-05:00" title="19 November 2026, 03:23">19 November 2026, 03:23</time>
+      </div>
+      <h3 class="card-title">NVIDIA investigating Gentlemen ransomware breach claims</h3>
+      <p class="card-summary">NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/eb7c1d21f8a01c3d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags="cve,vulnerability"
        data-vendors=""

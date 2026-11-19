@@ -27,7 +27,7 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">19 November 2026</h1>
-      <span class="brief-sub">6 articles</span>
+      <span class="brief-sub">20 articles</span>
     </div>
   </div>
 
@@ -35,8 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
         <li>AWS ecosystem affected by multiple advisories</li>
+        <li>Elevated ransomware activity reported across multiple sources</li>
       </ul>
     </div>
   </div>
@@ -51,6 +52,7 @@
       <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
       <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-low" data-filter-group="severity" data-filter-value="low">low</button>
       <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
         More
@@ -65,6 +67,10 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="VMware">VMware</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
       </div>
     </div>
     <div class="adv-group">
@@ -73,13 +79,211 @@
         <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="apt">apt</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="ransomware">ransomware</button>
       </div>
     </div>
   </div>
 
+  <div class="article-card card--high"
+       data-tags="cve,malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="phpaftershell explained: how hackers could turn a php session flaw into code execution"
+       data-id="c0ddb109ab8d5fc5"
+       data-published="2026-11-19T22:29:56+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-19T22:29:56+05:30" title="19 November 2026, 10:59">19 November 2026, 10:59</time>
+      </div>
+      <h3 class="card-title">phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution</h3>
+      <p class="card-summary">PHP&#39;s default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>PHP&#39;s default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server.</p></div>
+      <div class="detail-links">
+        <a href="../articles/c0ddb109ab8d5fc5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="critical"
+       data-title="php fixes 7 critical flaws, including bugs that could allow remote code execution"
+       data-id="87dd701ce51adfff"
+       data-published="2026-11-19T20:48:07+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-19T20:48:07+05:30" title="19 November 2026, 09:18">19 November 2026, 09:18</time>
+      </div>
+      <h3 class="card-title">PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution</h3>
+      <p class="card-summary">The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/87dd701ce51adfff.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags=""
+       data-vendors="VMware"
+       data-severity="critical"
+       data-title="critical vmware vcenter flaw (cvss 9.8) lets network attackers bypass authentication"
+       data-id="9f3342e2915c5e2d"
+       data-published="2026-11-19T20:41:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+<span class="vtag">VMware</span>        <time class="meta-time" data-iso="2026-11-19T20:41:06+05:30" title="19 November 2026, 09:11">19 November 2026, 09:11</time>
+      </div>
+      <h3 class="card-title">Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication</h3>
+      <p class="card-summary">A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9f3342e2915c5e2d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="drupal patches critical installer flaw that could give unauthenticated attackers control of sites"
+       data-id="0b88c37b4ee0375e"
+       data-published="2026-11-19T20:03:06+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-19T20:03:06+05:30" title="19 November 2026, 08:33">19 November 2026, 08:33</time>
+      </div>
+      <h3 class="card-title">Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites</h3>
+      <p class="card-summary">Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0b88c37b4ee0375e.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="cve,exploit,vulnerability"
+       data-vendors="AWS,Palo Alto"
+       data-severity="medium"
+       data-title="everything is a web application, including your firewall"
+       data-id="9c2f9abbd8134ce5"
+       data-published="2026-11-19T17:22:23+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-11-19T17:22:23+05:30" title="19 November 2026, 05:52">19 November 2026, 05:52</time>
+      </div>
+      <h3 class="card-title">Everything Is a Web Application, Including Your Firewall</h3>
+      <p class="card-summary">One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.</p></div>
+      <div class="detail-links">
+        <a href="../articles/9c2f9abbd8134ce5.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/everything-is-web-application-including.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="hackers breach n-able cloud server, disrupting email security management across 3 regions"
+       data-id="b4d4049ca55a0e62"
+       data-published="2026-11-19T15:01:26+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-19T15:01:26+05:30" title="19 November 2026, 03:31">19 November 2026, 03:31</time>
+      </div>
+      <h3 class="card-title">Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions</h3>
+      <p class="card-summary">N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b4d4049ca55a0e62.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="exploit,vulnerability"
        data-vendors="AWS"
@@ -109,6 +313,37 @@
       <div class="detail-links">
         <a href="../articles/13168d1596c28ce8.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="phishing"
+       data-vendors=""
+       data-severity="medium"
+       data-title="why holiday security can&#39;t wait for black friday"
+       data-id="b90f3353916cb9bd"
+       data-published="2026-11-19T14:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-19T14:00:00+00:00" title="19 November 2026, 08:00">19 November 2026, 08:00</time>
+      </div>
+      <h3 class="card-title">Why Holiday Security Can&#39;t Wait for Black Friday</h3>
+      <p class="card-summary">Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">Dark Reading</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b90f3353916cb9bd.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -143,6 +378,227 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="apt,exploit,ransomware,vulnerability"
+       data-vendors="AWS"
+       data-severity="medium"
+       data-title="cisa warns of 4 exploited flaws linked to ransomware, cryptomining, and llmjacking attacks"
+       data-id="834a29ebd1f33aba"
+       data-published="2026-11-19T13:30:00+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-19T13:30:00+05:30" title="19 November 2026, 02:00">19 November 2026, 02:00</time>
+      </div>
+      <h3 class="card-title">CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks</h3>
+      <p class="card-summary">Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">ransomware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.</p></div>
+      <div class="detail-links">
+        <a href="../articles/834a29ebd1f33aba.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach"
+       data-vendors=""
+       data-severity="medium"
+       data-title="transport for london breach exposes 265,000 oyster card users&#39; data"
+       data-id="8bf863eb5515fd64"
+       data-published="2026-11-19T13:20:01-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-19T13:20:01-05:00" title="19 November 2026, 12:20">19 November 2026, 12:20</time>
+      </div>
+      <h3 class="card-title">Transport for London breach exposes 265,000 Oyster card users&#39; data</h3>
+      <p class="card-summary">Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/8bf863eb5515fd64.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="apt,cve,exploit,malware,patch,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="elecbrakes eb2, vm1, elbc2000"
+       data-id="a5204ad17dfb775d"
+       data-published="2026-11-19T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-11-19T12:00:00+00:00" title="19 November 2026, 06:00">19 November 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">Elecbrakes EB2, VM1, ELBC2000</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">apt</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features. The following versions of Elecbrakes EB2, VM1, ELBC2000 are affected:</p>
+<p>EB2 &lt;=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)</p>
+<p>ELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)</p>
+<p>VM1 &lt;1.3.4.2.1 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)</p>
+<p>CVSS   Vendor   Equipment           v3 9.6   Elecbrakes   EB2               3 Vulnerabilities           Exposed Dangerous Method or Function, Authentication Bypass by Capture-replay, Missing Authentication for Critical Function           Background     Critical Infrastructure Sectors: Transportation Systems</p>
+<p>Countries/Areas Deployed: Australia, New Zealand</p>
+<p>Company Headquarters Location: Australia</p>
+<p>Vulnerabilities   Expand All +     CVE-2026-124281   The affected product uses an unprotected firmware-update channel, which may allow for unauthorized firmware modification.</p></div>
+      <div class="detail-links">
+        <a href="../articles/a5204ad17dfb775d.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="libumqtt"
+       data-id="7e1e27d993cf7bf9"
+       data-published="2026-11-19T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-11-19T12:00:00+00:00" title="19 November 2026, 06:00">19 November 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">libumqtt</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected:</p>
+<p>libumqtt &lt;=1.1.1 (CVE-2026-125132)</p>
+<p>CVSS   Vendor   Equipment           v3 8.6   libumqtt   libumqtt               1 Vulnerability           Integer Underflow (Wrap or Wraparound)           Background     Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Water and Wastewater</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: China</p>
+<p>Vulnerabilities     CVE-2026-125132   The affected product is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.</p></div>
+      <div class="detail-links">
+        <a href="../articles/7e1e27d993cf7bf9.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--low"
+       data-tags="cve,exploit,malware,phishing,vulnerability"
+       data-vendors=""
+       data-severity="low"
+       data-title="autonomy logic openplc runtime"
+       data-id="2c7a73f687a86f10"
+       data-published="2026-11-19T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-low">low</span>
+        <time class="meta-time" data-iso="2026-11-19T12:00:00+00:00" title="19 November 2026, 06:00">19 November 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">Autonomy Logic OpenPLC Runtime</h3>
+      <p class="card-summary">View CSAF</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+          <span class="ttag">phishing</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>View CSAF</p>
+<p>Summary   Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy Logic OpenPLC Runtime are affected:</p>
+<p>OpenPLC Runtime &lt;=4.2.4 (CVE-2026-126088)</p>
+<p>CVSS   Vendor   Equipment           v3 8.1   Autonomy Logic   OpenPLC Runtime               1 Vulnerability           Concurrent Execution using Shared Resource with Improper Synchronization (&#39;Race Condition&#39;)           Background     Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems, Water and Wastewater Systems</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: United States</p>
+<p>Vulnerabilities     CVE-2026-126088   In Autonomy Logic OpenPLC Runtime versions 4.2.4 and prior, a race condition allows multiple concurrent requests to pass the existence check before any user is committed, resulting in several unauthenticated admin accounts being created.</p></div>
+      <div class="detail-links">
+        <a href="../articles/2c7a73f687a86f10.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="patch,vulnerability"
+       data-vendors="AWS"
+       data-severity="high"
+       data-title="php security updates fix 18 flaws, including critical rce bugs"
+       data-id="7c33fcc14b3350e1"
+       data-published="2026-11-19T11:28:23-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">AWS</span>        <time class="meta-time" data-iso="2026-11-19T11:28:23-05:00" title="19 November 2026, 10:28">19 November 2026, 10:28</time>
+      </div>
+      <h3 class="card-title">PHP security updates fix 18 flaws, including critical RCE bugs</h3>
+      <p class="card-summary">The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/7c33fcc14b3350e1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--high"
        data-tags="vulnerability"
        data-vendors="AWS"
@@ -174,6 +630,100 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--high"
+       data-tags="breach,ransomware"
+       data-vendors="Microsoft"
+       data-severity="high"
+       data-title="five warning signs of ransomware breach before encryption or data theft"
+       data-id="81622259a4d721e4"
+       data-published="2026-11-19T10:00:10-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-19T10:00:10-05:00" title="19 November 2026, 09:00">19 November 2026, 09:00</time>
+      </div>
+      <h3 class="card-title">Five warning signs of ransomware breach before encryption or data theft</h3>
+      <p class="card-summary">Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity,…</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">ransomware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-text"><p>Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups. [...]</p></div>
+      <div class="detail-links">
+        <a href="../articles/81622259a4d721e4.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware,vulnerability"
+       data-vendors="AWS,Linux"
+       data-severity="medium"
+       data-title="critical nginx ‘nginx2root’ bugs let attackers hijack servers"
+       data-id="37844cf8cbc50991"
+       data-published="2026-11-19T09:57:24-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">AWS</span><span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-19T09:57:24-05:00" title="19 November 2026, 08:57">19 November 2026, 08:57</time>
+      </div>
+      <h3 class="card-title">Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers</h3>
+      <p class="card-summary">Two critical NGINX vulnerabilities dubbed &#34;nginx2root&#34; allow unauthenticated attackers to execute code remotely on vulnerable web servers, with researchers demonstrating how the flaws can be chained with a Linux kernel bug to gain root access. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/37844cf8cbc50991.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="drupal patches critical rce flaw, warns exploits may surface quickly"
+       data-id="4b959dd55b1443e7"
+       data-published="2026-11-19T08:08:08-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-19T08:08:08-05:00" title="19 November 2026, 07:08">19 November 2026, 07:08</time>
+      </div>
+      <h3 class="card-title">Drupal patches critical RCE flaw, warns exploits may surface quickly</h3>
+      <p class="card-summary">The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/4b959dd55b1443e7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
@@ -199,70 +749,6 @@
       <div class="detail-links">
         <a href="../articles/f4cb31c4d1beda93.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--high"
-       data-tags="breach,ransomware"
-       data-vendors=""
-       data-severity="high"
-       data-title="nvidia investigating gentlemen ransomware breach claims"
-       data-id="eb7c1d21f8a01c3d"
-       data-published="2026-11-19T04:23:21-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-high">high</span>
-        <time class="meta-time" data-iso="2026-11-19T04:23:21-05:00" title="19 November 2026, 03:23">19 November 2026, 03:23</time>
-      </div>
-      <h3 class="card-title">NVIDIA investigating Gentlemen ransomware breach claims</h3>
-      <p class="card-summary">NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">ransomware</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/eb7c1d21f8a01c3d.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="cve,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="10-year-old nginx http/2 flaw lets unauthenticated attackers execute code on servers"
-       data-id="4ba2496f02544c42"
-       data-published="2026-11-19T00:01:17+05:30"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-19T00:01:17+05:30" title="18 November 2026, 12:31">18 November 2026, 12:31</time>
-      </div>
-      <h3 class="card-title">10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers</h3>
-      <p class="card-summary">A flaw in NGINX&#39;s HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Mitigation</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">cve</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">The Hacker News</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/4ba2496f02544c42.html" class="detail-read">Read full analysis →</a>
-        <a href="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

@@ -119,6 +119,36 @@
     "highlighted": false
   },
   {
+    "id": "e4c7efeccc79a349",
+    "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+    "published": "2026-11-19T20:41:06+05:30",
+    "fetched_at": "2026-11-20T09:39:35.647854+00:00",
+    "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.",
+    "tags": [
+      "zero-day"
+    ],
+    "day": "2026-11-19",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "VMware"
+    ],
+    "action_required": false,
+    "card_summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.",
+    "quick_take": "",
+    "sections": {
+      "impact": "Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines.\n\nAssessed severity: CRITICAL.",
+      "context": "This story is part of the recurring zero-day pattern where exploitation pressure is highest before broad patch adoption."
+    },
+    "email_summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "54944e50098bc7ae",
     "title": "Second Norwegian Energy Company Breached in Two Days",
     "source": "Dark Reading",
@@ -408,6 +438,36 @@
     "highlighted": false
   },
   {
+    "id": "f73f051c338c1b30",
+    "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
+    "source": "The Hacker News",
+    "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "published": "2026-11-19T14:12:11+05:30",
+    "fetched_at": "2026-11-20T09:39:35.648248+00:00",
+    "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.",
+    "tags": [
+      "exploit",
+      "vulnerability"
+    ],
+    "day": "2026-11-19",
+    "cves": [],
+    "cvss": null,
+    "severity": "critical",
+    "vendors": [
+      "AWS"
+    ],
+    "action_required": false,
+    "card_summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.",
+    "quick_take": "",
+    "sections": {
+      "technical": "For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.\n\n\"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said. Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code."
+    },
+    "email_summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. Severity is rated critical.",
+    "content_model_version": 2,
+    "related_sources": [],
+    "highlighted": false
+  },
+  {
     "id": "b90f3353916cb9bd",
     "title": "Why Holiday Security Can't Wait for Black Friday",
     "source": "Dark Reading",
@@ -518,82 +578,6 @@
       "context": "This fits the broader data-exposure trend where follow-on abuse of leaked information is common."
     },
     "email_summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...].",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "a5204ad17dfb775d",
-    "title": "Elecbrakes EB2, VM1, ELBC2000",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
-    "published": "2026-11-19T12:00:00+00:00",
-    "fetched_at": "2026-11-19T18:51:04.110805+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "apt",
-      "cve",
-      "exploit",
-      "malware",
-      "patch",
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-11-19",
-    "cves": [
-      "CVE-2026-124281",
-      "CVE-2026-125273",
-      "CVE-2026-96805"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "View CSAF",
-    "quick_take": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions…",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features. The following versions of Elecbrakes EB2, VM1, ELBC2000 are affected:\n\n \n EB2 <=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n ELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n VM1 <1.3.4.2.1 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.6 \n Elecbrakes \n EB2 \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Exposed Dangerous Method or Function, Authentication Bypass by Capture-replay, Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Transportation Systems\n\n Countries/Areas Deployed: Australia, New Zealand\n\n Company Headquarters Location: Australia\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-124281 \n The affected product uses an unprotected firmware-update channel, which may allow for unauthorized firmware modification.",
-      "impact": "The following versions of Elecbrakes EB2, VM1, ELBC2000 are affected:\n\n \n EB2 <=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n ELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n VM1 <1.3.4.2.1 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.6 \n Elecbrakes \n EB2 \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Exposed Dangerous Method or Function, Authentication Bypass by Capture-replay, Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Transportation Systems\n\n Countries/Areas Deployed: Australia, New Zealand\n\n Company Headquarters Location: Australia\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-124281 \n The affected product uses an unprotected firmware-update channel, which may allow for unauthorized firmware modification. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. Read More \n \n 3 Affected Products \n \n Elecbrakes EB2 <=3.0.4.2.0 \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nElecbrakes has released updated firmware (EB2 3.0.4.4.3).\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . The following versions of Elecbrakes EB2, VM1, ELBC2000 are affected:\n\n \n EB2 <=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n ELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n VM1 <1.3.4.2.1 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 9.6 \n Elecbrakes \n EB2 \n \n \n \n \n \n \n 3 Vulnerabilities \n \n \n \n \n Exposed Dangerous Method or Function, Authentication Bypass by Capture-replay, Missing Authentication for Critical Function \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Transportation Systems\n\n Countries/Areas Deployed: Australia, New Zealand\n\n Company Headquarters Location: Australia\n\n \n \n Vulnerabilities \n Expand All + \n \n CVE-2026-124281 \n The affected product uses an unprotected firmware-update channel, which may allow for unauthorized firmware modification. Read More \n \n 3 Affected Products \n \n Elecbrakes EB2 <=3.0.4.2.0 \n \n Product Status: known_affected\n\n \n Remediations \n \n Vendor fix \nElecbrakes has released updated firmware (EB2 3.0.4.4.3). Users should open the Elecbrakes app and install the firmware update.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features. Tracked as CVE-2026-124281, CVE-2026-125273, CVE-2026-96805.",
-    "content_model_version": 2,
-    "related_sources": [],
-    "highlighted": false
-  },
-  {
-    "id": "7e1e27d993cf7bf9",
-    "title": "libumqtt",
-    "source": "CISA Alerts",
-    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
-    "published": "2026-11-19T12:00:00+00:00",
-    "fetched_at": "2026-11-19T18:51:04.111436+00:00",
-    "summary": "View CSAF ",
-    "tags": [
-      "cve",
-      "exploit",
-      "malware",
-      "phishing",
-      "vulnerability"
-    ],
-    "day": "2026-11-19",
-    "cves": [
-      "CVE-2026-125132"
-    ],
-    "cvss": 3.1,
-    "severity": "low",
-    "vendors": [],
-    "action_required": false,
-    "card_summary": "View CSAF",
-    "quick_take": "",
-    "sections": {
-      "overview": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected:\n\n \n libumqtt <=1.1.1 (CVE-2026-125132)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 8.6 \n libumqtt \n libumqtt \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Integer Underflow (Wrap or Wraparound) \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: China\n\n \n \n Vulnerabilities \n \n CVE-2026-125132 \n The affected product is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.",
-      "impact": "The following versions of libumqtt are affected:\n\n \n libumqtt <=1.1.1 (CVE-2026-125132)\n\n \n \n \n \n \n CVSS \n Vendor \n Equipment \n \n \n \n \n v3 8.6 \n libumqtt \n libumqtt \n \n \n \n \n \n \n 1 Vulnerability \n \n \n \n \n Integer Underflow (Wrap or Wraparound) \n \n \n \n \n Background \n \n Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Water and Wastewater\n\n Countries/Areas Deployed: Worldwide\n\n Company Headquarters Location: China\n\n \n \n Vulnerabilities \n \n CVE-2026-125132 \n The affected product is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. Read More \n \n 1 Affected Product \n \n libumqtt libumqtt <=1.1.1 \n \n Product Status: known_affected\n\n \n Remediations \n \n None available \nThe repository owners of libumqtt did not respond to CISA's request for coordination.\n\nAssessed severity: LOW. CVSS score: 3.1/10.",
-      "mitigation": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets . CISA also recommends users take the following measures to protect themselves from social engineering attacks:\n\n \n Do not click web links or open attachments in unsolicited email messages.",
-      "context": "This reflects continued use of phishing as an initial-access path in broader intrusion chains."
-    },
-    "email_summary": "View CSAF \n\n Summary \n Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. Tracked as CVE-2026-125132.",
     "content_model_version": 2,
     "related_sources": [],
     "highlighted": false

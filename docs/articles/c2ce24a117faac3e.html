@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schneider Electric EcoStruxure Power Build Rapsody software — Threat Brief</title>
+  <meta name="description" content="Daily cybersecurity intelligence briefing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo">Threat Brief</a>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">Latest</a>
+      <a href="../archive/index.html" class="nav-link">Archive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main>
+<div class="section-inner">
+  <div class="article-page">
+    <a href="../daily/2026-11-24.html" class="back-link">← 24 November 2026 briefing</a>
+
+    <header class="article-header">
+      <div class="meta-row">
+        <span class="card-source">CISA Alerts</span>
+        <span class="card-date">24 November 2026, 06:00</span>
+        <span class="card-severity low">low</span>
+        <span class="card-action-badge">Action Required</span>
+      </div>
+
+      <h1 class="title">Schneider Electric EcoStruxure Power Build Rapsody software</h1>
+
+      <p class="subtitle">View CSAF 
+
+ Summary 
+ Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. Tracked as CVE-2026-119055.</p>
+
+      <div class="article-action-banner">
+        <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        This item may require immediate action — see Mitigation section below
+      </div>
+
+      <div class="article-tags">
+        <span class="tag">cve</span>
+        <span class="tag">exploit</span>
+        <span class="tag">malware</span>
+        <span class="tag">vulnerability</span>
+      </div>
+
+      <ul class="article-cve-list">
+        <li class="article-cve" data-cve="CVE-2026-119055">CVE-2026-119055<button class="cve-copy" title="Copy CVE" aria-label="Copy CVE-2026-119055"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></li>
+      </ul>
+    </header>
+
+    <div class="quick-take">
+      <div class="quick-take-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Quick Take
+      </div>
+      <p class="quick-take-action">Action recommended — see Mitigation section below.</p>
+    </div>
+
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Overview</div>
+        <div class="article-section-content">
+          <p>View CSAF</p>
+<p>Summary   Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Technical Details</div>
+        <div class="article-section-content">
+          <p>Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versions of Schneider Electric EcoStruxure Power Build Rapsody software are affected:</p>
+<p>EcoStruxure Power Build Rapsody software vers:generic/&lt;=2.9.1.0_FR, 2.9.12.0101_FR, vers:generic/&lt;=2.8.5.0301_ESP, 2.9.5.0000_ESP, vers:generic/&lt;=2.8.7.0101_PT, 2.9.7.0000_PT, vers:generic/&lt;=2.8.8.0201_BEL(FR), 2.9.8.0000_BELFR, vers:generic/&lt;=2.8.3.0201_BEL(EN), 2.9.3.0000_BELEN, vers:generic/&lt;=2.8.4.0401_INT(EN), 2.9.4.0000_INTEN, vers:generic/&lt;=2.8.6.0000_INT(FR), 2.9.6.0000_INTFR, vers:generic/&lt;=2.8.2.0000_NL, 2.9.6.0000_NL (CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055)</p>
+<p>CVSS   Vendor   Equipment           v3 5.3   Schneider Electric   EcoStruxure Power Build Rapsody software               1 Vulnerability           Use After Free           Background     Critical Infrastructure Sectors: Energy, Critical Manufacturing, Commercial Facilities</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: France</p>
+<p>Vulnerabilities     CVE-2026-119055   A CWE- 416: Use After Free vulnerability exists that could cause arbitrary code execution when a local attacker could trick the end user to open a specially crafted malicious SSD file. Read More     8 Affected Products     EcoStruxure Power Build Rapsody software Versions FR 2.9.1.0 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions ESP 2.8.5.0301 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions PT 2.8.7.0101 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions BEL(FR) 2.8.8.0201 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions BEL(EN) 2.8.3.0201 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions INT(EN) 2.8.4.0401 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions INT(FR) 2.8.6.0000 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions NL 2.8.2.0000 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>Additional Metrics   Relevant CWE: CWE-416 Use After Free</p>
+<p>CVSS Version   Base Score   Base Severity   Vector String           3.1   5.3   MEDIUM   CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L             View CVE Details</p>
+<p>Acknowledgments     Schneider Electric CPCERT reported this vulnerability to CISA. View CSAF</p>
+<p>Summary   Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product.</p>
+<p>Referenced vulnerabilities: CVE-2026-119055.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Impact</div>
+        <div class="article-section-content">
+          <p>The following versions of Schneider Electric EcoStruxure Power Build Rapsody software are affected:</p>
+<p>EcoStruxure Power Build Rapsody software vers:generic/&lt;=2.9.1.0_FR, 2.9.12.0101_FR, vers:generic/&lt;=2.8.5.0301_ESP, 2.9.5.0000_ESP, vers:generic/&lt;=2.8.7.0101_PT, 2.9.7.0000_PT, vers:generic/&lt;=2.8.8.0201_BEL(FR), 2.9.8.0000_BELFR, vers:generic/&lt;=2.8.3.0201_BEL(EN), 2.9.3.0000_BELEN, vers:generic/&lt;=2.8.4.0401_INT(EN), 2.9.4.0000_INTEN, vers:generic/&lt;=2.8.6.0000_INT(FR), 2.9.6.0000_INTFR, vers:generic/&lt;=2.8.2.0000_NL, 2.9.6.0000_NL (CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055)</p>
+<p>CVSS   Vendor   Equipment           v3 5.3   Schneider Electric   EcoStruxure Power Build Rapsody software               1 Vulnerability           Use After Free           Background     Critical Infrastructure Sectors: Energy, Critical Manufacturing, Commercial Facilities</p>
+<p>Countries/Areas Deployed: Worldwide</p>
+<p>Company Headquarters Location: France</p>
+<p>Vulnerabilities     CVE-2026-119055   A CWE- 416: Use After Free vulnerability exists that could cause arbitrary code execution when a local attacker could trick the end user to open a specially crafted malicious SSD file. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. Read More     8 Affected Products     EcoStruxure Power Build Rapsody software Versions FR 2.9.1.0 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions ESP 2.8.5.0301 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions PT 2.8.7.0101 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions BEL(FR) 2.8.8.0201 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions BEL(EN) 2.8.3.0201 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions INT(EN) 2.8.4.0401 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions INT(FR) 2.8.6.0000 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions NL 2.8.2.0000 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>Additional Metrics   Relevant CWE: CWE-416 Use After Free</p>
+<p>CVSS Version   Base Score   Base Severity   Vector String           3.1   5.3   MEDIUM   CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L             View CVE Details</p>
+<p>Acknowledgments     Schneider Electric CPCERT reported this vulnerability to CISA.</p>
+<p>Assessed severity: LOW. CVSS score: 3.1/10.</p>
+        </div>
+      </div>
+
+      <div class="article-section">
+        <div class="article-section-label"><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mitigation</div>
+        <div class="article-section-content">
+          <p>Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets . Read More     8 Affected Products     EcoStruxure Power Build Rapsody software Versions FR 2.9.1.0 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions ESP 2.8.5.0301 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions PT 2.8.7.0101 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions BEL(FR) 2.8.8.0201 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions BEL(EN) 2.8.3.0201 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions INT(EN) 2.8.4.0401 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions INT(FR) 2.8.6.0000 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>EcoStruxure Power Build Rapsody software Versions NL 2.8.2.0000 and prior     Product Status: fixed, known_affected</p>
+<p>Remediations     Vendor fix  Versions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&amp;sourceId=2309</p>
+<p>Additional Metrics   Relevant CWE: CWE-416 Use After Free</p>
+<p>CVSS Version   Base Score   Base Severity   Vector String           3.1   5.3   MEDIUM   CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L             View CVE Details</p>
+<p>Acknowledgments     Schneider Electric CPCERT reported this vulnerability to CISA.</p>
+        </div>
+      </div>
+
+
+
+      <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02" class="source-card" target="_blank" rel="noopener">
+        <div class="source-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <div class="source-card-text">
+          <div class="source-card-label">Original source</div>
+          <div class="source-card-name">Read full article at CISA Alerts</div>
+        </div>
+        <span class="source-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../index.html" class="footer-logo">Threat Brief</a>
+    <p class="footer-text">Auto-generated from public RSS feeds</p>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

@@ -35,9 +35,9 @@
     <div class="strip-section">
       <span class="strip-label">Situation</span>
       <ul class="strip-bullets">
-        <li>5 critical-severity issues detected with active exploitation reported</li>
-        <li>1 item requires immediate action — patches or mitigations available</li>
-        <li>AWS, Microsoft ecosystems affected by multiple advisories</li>
+        <li>4 critical-severity issues detected with active exploitation reported</li>
+        <li>AWS, Palo Alto ecosystems affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
       </ul>
     </div>
   </div>
@@ -66,21 +66,20 @@
       <span class="adv-label">Vendor / Technology</span>
       <div class="adv-pills">
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="AWS">AWS</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
-        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
         <button class="filter-btn" data-filter-group="vendor" data-filter-value="Palo Alto">Palo Alto</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Cisco">Cisco</button>
       </div>
     </div>
     <div class="adv-group">
       <span class="adv-label">Threat Type</span>
       <div class="adv-pills">
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
-        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
         <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="phishing">phishing</button>
       </div>
     </div>
   </div>
@@ -183,6 +182,38 @@
       </div>
     </div>
   </div>
+  <div class="article-card card--medium"
+       data-tags="exploit,vulnerability"
+       data-vendors="Palo Alto"
+       data-severity="medium"
+       data-title="palo alto networks warns of fragnesia flaw exploited in pan-os attacks"
+       data-id="d2a83b9f710a3436"
+       data-published="2026-11-25T17:05:09-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Palo Alto</span>        <time class="meta-time" data-iso="2026-11-25T17:05:09-05:00" title="25 November 2026, 16:05">25 November 2026, 16:05</time>
+      </div>
+      <h3 class="card-title">Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks</h3>
+      <p class="card-summary">Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">exploit</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d2a83b9f710a3436.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--critical"
        data-tags="cve,exploit,vulnerability"
        data-vendors=""
@@ -213,6 +244,38 @@
       <div class="detail-links">
         <a href="../articles/6abc694597ccd413.html" class="detail-read">Read full analysis →</a>
         <a href="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="1password customer data stolen after employee github account breach"
+       data-id="b2bab7d2fb301792"
+       data-published="2026-11-25T16:33:33-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-25T16:33:33-05:00" title="25 November 2026, 15:33">25 November 2026, 15:33</time>
+      </div>
+      <h3 class="card-title">1Password customer data stolen after employee GitHub account breach</h3>
+      <p class="card-summary">1Password has disclosed a data breach after a an employee&#39;s corporate GitHub account was hacked and used to deploy malicious code to the company&#39;s backend services to steal customer data. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/b2bab7d2fb301792.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -328,6 +391,37 @@
       <div class="detail-links">
         <a href="../articles/9990cffc5a391479.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="italy and switzerland warn of autonomous ai-driven cyberattacks"
+       data-id="9c39c582cd4f44da"
+       data-published="2026-11-25T14:39:31-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-25T14:39:31-05:00" title="25 November 2026, 13:39">25 November 2026, 13:39</time>
+      </div>
+      <h3 class="card-title">Italy and Switzerland warn of autonomous AI-driven cyberattacks</h3>
+      <p class="card-summary">Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9c39c582cd4f44da.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>
@@ -457,6 +551,40 @@
     </div>
   </div>
   <div class="article-card card--critical"
+       data-tags="breach,cve,exploit,malware,patch,vulnerability"
+       data-vendors=""
+       data-severity="critical"
+       data-title="cisa adds 10 known exploited vulnerabilities to catalog"
+       data-id="0bce7f9968a5f452"
+       data-published="2026-11-25T12:00:00+00:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-25T12:00:00+00:00" title="25 November 2026, 06:00">25 November 2026, 06:00</time>
+      </div>
+      <h3 class="card-title">CISA Adds 10 Known Exploited Vulnerabilities to Catalog</h3>
+      <p class="card-summary">CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">CISA Alerts</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/0bce7f9968a5f452.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
        data-tags="malware"
        data-vendors=""
        data-severity="critical"
@@ -581,132 +709,6 @@
       <div class="detail-links">
         <a href="../articles/cde551f95115595d.html" class="detail-read">Read full analysis →</a>
         <a href="https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags=""
-       data-vendors="Microsoft"
-       data-severity="medium"
-       data-title="microsoft fixes microsoft 365 bug blocking access to office apps"
-       data-id="54d9ae67339398c6"
-       data-published="2026-11-25T06:16:32-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-25T06:16:32-05:00" title="25 November 2026, 05:16">25 November 2026, 05:16</time>
-      </div>
-      <h3 class="card-title">Microsoft fixes Microsoft 365 bug blocking access to Office apps</h3>
-      <p class="card-summary">Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/54d9ae67339398c6.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--action card--critical"
-       data-tags="exploit,patch,vulnerability"
-       data-vendors=""
-       data-severity="critical"
-       data-title="hackers now exploit critical drupal rce flaw to hijack sites"
-       data-id="020b0b28364e62ce"
-       data-published="2026-11-25T05:10:20-05:00"
-       data-action="true">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-        <time class="meta-time" data-iso="2026-11-25T05:10:20-05:00" title="25 November 2026, 04:10">25 November 2026, 04:10</time>
-        <span class="action-badge">Action</span>
-      </div>
-      <h3 class="card-title">Hackers now exploit critical Drupal RCE flaw to hijack sites</h3>
-      <p class="card-summary">The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]</p>
-      <div class="card-bottom">
-        <div class="card-tags">
-          <span class="ttag">exploit</span>
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/020b0b28364e62ce.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--critical"
-       data-tags="patch,vulnerability"
-       data-vendors="Microsoft"
-       data-severity="critical"
-       data-title="microsoft confirms authentication issues after november updates"
-       data-id="0a5b0ae1d0349a8a"
-       data-published="2026-11-25T04:02:57-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-critical">critical</span>
-<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-25T04:02:57-05:00" title="25 November 2026, 03:02">25 November 2026, 03:02</time>
-      </div>
-      <h3 class="card-title">Microsoft confirms authentication issues after November updates</h3>
-      <p class="card-summary">Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">patch</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/0a5b0ae1d0349a8a.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
-      </div>
-    </div>
-  </div>
-  <div class="article-card card--medium"
-       data-tags="breach,vulnerability"
-       data-vendors=""
-       data-severity="medium"
-       data-title="hackers reportedly breached cia intelligence analysis system"
-       data-id="e103fec24c328d49"
-       data-published="2026-11-25T02:45:03-05:00"
-       data-action="">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="sev-badge sev-medium">medium</span>
-        <time class="meta-time" data-iso="2026-11-25T02:45:03-05:00" title="25 November 2026, 01:45">25 November 2026, 01:45</time>
-      </div>
-      <h3 class="card-title">Hackers reportedly breached CIA intelligence analysis system</h3>
-      <p class="card-summary">Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]</p>
-      <div class="card-bottom">
-        <div class="card-hints">
-<span class="sec-hint">Impact</span>        </div>
-        <div class="card-tags">
-          <span class="ttag">breach</span>
-          <span class="ttag">vulnerability</span>
-        </div>
-      </div>
-      <span class="card-source">BleepingComputer</span>
-    </div>
-    <div class="card-detail" aria-hidden="true">
-      <div class="detail-links">
-        <a href="../articles/e103fec24c328d49.html" class="detail-read">Read full analysis →</a>
-        <a href="https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
       </div>
     </div>
   </div>

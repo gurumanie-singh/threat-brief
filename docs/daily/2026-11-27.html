@@ -27,10 +27,20 @@
   <div class="brief-header">
     <div class="brief-primary">
       <h1 class="brief-title">27 November 2026</h1>
-      <span class="brief-sub">1 article</span>
+      <span class="brief-sub">10 articles</span>
     </div>
   </div>
 
+  <div class="summary-strip">
+    <div class="strip-section">
+      <span class="strip-label">Situation</span>
+      <ul class="strip-bullets">
+        <li>1 critical-severity issue detected with active exploitation reported</li>
+        <li>Microsoft ecosystem affected by multiple advisories</li>
+        <li>Several new data breach disclosures reported</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="controls-bar" id="controlsBar">
     <div class="search-wrap">
@@ -39,13 +49,322 @@
       <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
     </div>
     <div class="quick-filters" id="quickFilters">
+      <button class="qf-btn qf-critical" data-filter-group="severity" data-filter-value="critical">critical</button>
+      <button class="qf-btn qf-high" data-filter-group="severity" data-filter-value="high">high</button>
       <button class="qf-btn qf-medium" data-filter-group="severity" data-filter-value="medium">medium</button>
+      <button class="qf-btn qf-more" id="moreFiltersBtn" aria-expanded="false">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+        More
+      </button>
     </div>
   </div>
 
   <div class="filter-results-count" id="filterCount" style="display:none"></div>
 
+  <div class="adv-filters" id="advFilters" hidden>
+    <div class="adv-group">
+      <span class="adv-label">Vendor / Technology</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Microsoft">Microsoft</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="SAP">SAP</button>
+        <button class="filter-btn" data-filter-group="vendor" data-filter-value="Linux">Linux</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <span class="adv-label">Threat Type</span>
+      <div class="adv-pills">
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="malware">malware</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="patch">patch</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="vulnerability">vulnerability</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="breach">breach</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="cve">cve</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="exploit">exploit</button>
+        <button class="filter-btn" data-filter-group="tag" data-filter-value="zero-day">zero-day</button>
+      </div>
+    </div>
+  </div>
 
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors=""
+       data-severity="medium"
+       data-title="how to keep your security picture current when attackers move at ai speed"
+       data-id="eb898b5b750cc3b7"
+       data-published="2026-11-27T16:02:18+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-27T16:02:18+05:30" title="27 November 2026, 04:32">27 November 2026, 04:32</time>
+      </div>
+      <h3 class="card-title">How to Keep Your Security Picture Current When Attackers Move at AI Speed</h3>
+      <p class="card-summary">Most security metrics are not built to be used. They are built to be shown.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/eb898b5b750cc3b7.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="malware"
+       data-vendors=""
+       data-severity="high"
+       data-title="hackers trojanize official q-dir and desktopok downloads to deliver remote access malware"
+       data-id="a099c37acc455ea2"
+       data-published="2026-11-27T14:59:30+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-27T14:59:30+05:30" title="27 November 2026, 03:29">27 November 2026, 03:29</time>
+      </div>
+      <h3 class="card-title">Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware</h3>
+      <p class="card-summary">Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span><span class="sec-hint">Mitigation</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a099c37acc455ea2.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="breach,malware"
+       data-vendors=""
+       data-severity="medium"
+       data-title="switzerland confirms ai-assisted cyberattacks breached critical infrastructure operators"
+       data-id="d2a2e2a0617246d3"
+       data-published="2026-11-27T11:34:20+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+        <time class="meta-time" data-iso="2026-11-27T11:34:20+05:30" title="27 November 2026, 00:04">27 November 2026, 00:04</time>
+      </div>
+      <h3 class="card-title">Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators</h3>
+      <p class="card-summary">Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country&#39;s cybersecurity agency said yesterday.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/d2a2e2a0617246d3.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--critical"
+       data-tags="cve,exploit,patch,vulnerability,zero-day"
+       data-vendors=""
+       data-severity="critical"
+       data-title="unpatched cacti zero-day enables rce in just four http requests via guest access"
+       data-id="91cf8b85b37ffd38"
+       data-published="2026-11-27T11:18:20+05:30"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-critical">critical</span>
+        <time class="meta-time" data-iso="2026-11-27T11:18:20+05:30" title="26 November 2026, 23:48">26 November 2026, 23:48</time>
+      </div>
+      <h3 class="card-title">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</h3>
+      <p class="card-summary">Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">The Hacker News</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/91cf8b85b37ffd38.html" class="detail-read">Read full analysis →</a>
+        <a href="https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="malware"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft removes wsus server role in windows server 2028"
+       data-id="cec7580bcd02f847"
+       data-published="2026-11-27T06:18:36-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-27T06:18:36-05:00" title="27 November 2026, 05:18">27 November 2026, 05:18</time>
+      </div>
+      <h3 class="card-title">Microsoft removes WSUS server role in Windows Server 2028</h3>
+      <p class="card-summary">Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system. [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">malware</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/cec7580bcd02f847.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="breach,exploit,patch,vulnerability"
+       data-vendors=""
+       data-severity="high"
+       data-title="drupal warns of new site takeover flaw exploited in attacks"
+       data-id="a1209dda13eb00b1"
+       data-published="2026-11-27T05:10:15-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+        <time class="meta-time" data-iso="2026-11-27T05:10:15-05:00" title="27 November 2026, 04:10">27 November 2026, 04:10</time>
+      </div>
+      <h3 class="card-title">Drupal warns of new site takeover flaw exploited in attacks</h3>
+      <p class="card-summary">The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">breach</span>
+          <span class="ttag">exploit</span>
+          <span class="ttag">patch</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/a1209dda13eb00b1.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags=""
+       data-vendors="SAP"
+       data-severity="medium"
+       data-title="sap confirms security incident after suspicious github activity"
+       data-id="065b174ef594d408"
+       data-published="2026-11-27T04:56:36-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">SAP</span>        <time class="meta-time" data-iso="2026-11-27T04:56:36-05:00" title="27 November 2026, 03:56">27 November 2026, 03:56</time>
+      </div>
+      <h3 class="card-title">SAP confirms security incident after suspicious GitHub activity</h3>
+      <p class="card-summary">SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Impact</span>        </div>
+        <div class="card-tags">
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/065b174ef594d408.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--medium"
+       data-tags="patch"
+       data-vendors="Microsoft"
+       data-severity="medium"
+       data-title="microsoft pushes emergency hotpatch to fix windows server crashes"
+       data-id="9d6fad42aed97338"
+       data-published="2026-11-27T04:08:16-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-medium">medium</span>
+<span class="vtag">Microsoft</span>        <time class="meta-time" data-iso="2026-11-27T04:08:16-05:00" title="27 November 2026, 03:08">27 November 2026, 03:08</time>
+      </div>
+      <h3 class="card-title">Microsoft pushes emergency hotpatch to fix Windows Server crashes</h3>
+      <p class="card-summary">Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month&#39;s security hotpatch update (KB5131077). [...]</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="ttag">patch</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/9d6fad42aed97338.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="article-card card--high"
+       data-tags="cve,vulnerability"
+       data-vendors="Linux"
+       data-severity="high"
+       data-title="new nfs2root linux flaw can let attackers gain root privileges"
+       data-id="63edadda513b7589"
+       data-published="2026-11-27T03:06:58-05:00"
+       data-action="">
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="sev-badge sev-high">high</span>
+<span class="vtag">Linux</span>        <time class="meta-time" data-iso="2026-11-27T03:06:58-05:00" title="27 November 2026, 02:06">27 November 2026, 02:06</time>
+      </div>
+      <h3 class="card-title">New NFS2ROOT Linux flaw can let attackers gain root privileges</h3>
+      <p class="card-summary">​A 12-year-old critical vulnerability in the Linux kernel&#39;s Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges. [...]</p>
+      <div class="card-bottom">
+        <div class="card-hints">
+<span class="sec-hint">Technical</span>        </div>
+        <div class="card-tags">
+          <span class="ttag">cve</span>
+          <span class="ttag">vulnerability</span>
+        </div>
+      </div>
+      <span class="card-source">BleepingComputer</span>
+    </div>
+    <div class="card-detail" aria-hidden="true">
+      <div class="detail-links">
+        <a href="../articles/63edadda513b7589.html" class="detail-read">Read full analysis →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/" class="detail-source" target="_blank" rel="noopener">Original source ↗</a>
+      </div>
+    </div>
+  </div>
   <div class="article-card card--medium"
        data-tags=""
        data-vendors=""
